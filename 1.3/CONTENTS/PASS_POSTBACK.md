@@ -9,7 +9,7 @@ All the postbacks are sent as HTTP POST requests on the URL you have used to set
 <p><a name="the_xml_bundle1"></a> <strong>The GENERATE PASS XML Bundle:</strong></p>
 <p>The XML bundle has the following structure:</p>
 <pre>
-&lt;POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/pass-postback.xsd"&gt;
+&lt;POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation ="http://www.skycore.com/platform/schema/pass-postback.xsd"&gt;
     &lt;ORIGIN&gt;GENERATE_PASS&lt;/ORIGIN&gt;
     &lt;STATUSCODE&gt;N801&lt;/STATUSCODE&gt;
     &lt;REFERENCEDBY&gt;Email&lt;/REFERENCEDBY&gt;
