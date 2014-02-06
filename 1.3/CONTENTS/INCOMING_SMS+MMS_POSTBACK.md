@@ -15,6 +15,7 @@ the MMS MO moderation panel then the postback notifictions will only be sent upo
 <p><a name="the_xml_bundle1"></a> <strong>The SMS MO XML:</strong></p>
 <p>The XML has the following anatomy:</p>
 <p>
+<pre>
 &lt;POSTBACK&gt;<br />
 &lt;ORIGIN&gt;SMS_MO&lt;/ORIGIN&gt;<br />
 &lt;CODE&gt;N211&lt;/CODE&gt;<br />
@@ -23,8 +24,10 @@ the MMS MO moderation panel then the postback notifictions will only be sent upo
 &lt;TEXT&gt;STOP&lt;/TEXT&gt;<br />
 &lt;RECEIVED&gt;2011-09-28T17:31:02-04:00&lt;/RECEIVED&gt;<br />
 &lt;/POSTBACK&gt;</p>
+</pre>
 <p><a name="the_xml_bundle"></a> <strong>The MMS MO XML:</strong></p>
 <p>The XML has the following anatomy:</p>
+<pre>
 <p>&lt;POSTBACK&gt;<br />
 &lt;ORIGIN&gt;MMS_MO&lt;/ORIGIN&gt;<br />
 &lt;CODE&gt;N401&lt;/CODE&gt;<br />
@@ -40,6 +43,7 @@ the MMS MO moderation panel then the postback notifictions will only be sent upo
 &lt;FILE&gt;&#8230;URL of Content Here&#8230;&lt;/FILE&gt;<br />
 &lt;/CONTENT&gt;<br />
 &lt;/POSTBACK&gt;</p>
+</pre>
 
 <p>Each MMS MO message is represented by a &lt;POSTBACK&gt; tag and all of the nodes and data contained within. When
 new MMS MO are received by our system, and approved in the moderation panel, postback message is generated and instantly sent to your postback URL.</p>
