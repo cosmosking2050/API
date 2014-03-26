@@ -81,7 +81,7 @@ For more info see below for Mandatory/Optional fields and Error codes.</p>
         &lt;RELTEXT10&gt;relText10&lt;/RELTEXT10&gt;
         &lt;EMAIL&gt;email&lt;/EMAIL&gt;
         &lt;PHONE&gt;phone&lt;/PHONE&gt;
-        &lt;CUSTOMDATAID&gt;customDataId&lt;/CUSTOMDATAID&gt;
+        &lt;CUSTOMID&gt;customId&lt;/CUSTOMID&gt;
     &lt;/PASSDATA&gt;    
 &lt;/REQUEST&gt;</pre>
 <div><strong>Request: GET</strong></div>
@@ -108,7 +108,7 @@ For more info see below for Mandatory/Optional fields and Error codes.</p>
 &amp;pd_rellatitude8=relLatitude8&amp;pd_rellongitude8=relLongitude8&amp;pd_reltext8=relText8
 &amp;pd_rellatitude9=relLatitude9&amp;pd_rellongitude9=relLongitude9&amp;pd_reltext9=relText9
 &amp;pd_rellatitude10=relLatitude10&amp;pd_rellongitude10=relLongitude10&amp;pd_reltext10=relText10
-&amp;pd_email=email&amp;pd_phone=phone&amp;pd_customdataid=customDataId</pre>
+&amp;pd_email=email&amp;pd_phone=phone&amp;pd_customid=customId</pre>
 
 <div><strong>Request Parameters:</strong></div>
 <pre><strong>Mandatory:</strong>
@@ -134,7 +134,7 @@ relLatitude7, relLongitude7, relText7,
 relLatitude8, relLongitude8, relText8,
 relLatitude9, relLongitude9, relText9,
 relLatitude10, relLongitude10, relText10,
-email, phone, customDataId </pre>
+email, phone, customId </pre>
 <strong>Response Parameters:</strong><br />
 status, passDataID, passTemplateId, Errorcode, Errorinfo
 
@@ -172,7 +172,7 @@ E870, E871, E872, E873, E874, E875, E876, E877, E878, E879, E880, E881, E882, E8
         &lt;RELTEXT1&gt;Event at HYNES CONVENTION CENTRE&lt;/RELTEXT1&gt;
         &lt;EMAIL&gt;vik.muth@mail.com&lt;/EMAIL&gt;
         &lt;PHONE&gt;16501234123&lt;/PHONE&gt;
-        &lt;CUSTOMDATAID&gt;AC34573&lt;/CUSTOMDATAID&gt;
+        &lt;CUSTOMID&gt;AC34573&lt;/CUSTOMID&gt;
     &lt;/PASSDATA&gt;    
 &lt;/REQUEST&gt;</pre>
 <div><strong>Response Example: Success</strong></div>
