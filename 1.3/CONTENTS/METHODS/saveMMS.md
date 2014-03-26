@@ -97,7 +97,7 @@ and if it still does not fit it will be delivered as XHTML/SMS. Each request MUS
 contain text and/or image and/or video and/or sound. The API SHALL support up to 8 slides for each MMS submission.
 The API SHALL NOT support multiple files of the same MIME type on the same slide. Slides with image SHALL NOT support 
 video but SHALL support audio. Slides with audio SHALL NOT support video. Slides with video SHALL only support text. 
-Slides with text SHALL support up to 500 characters in any slide.
+Slides with text SHALL support up to 5000 characters in any slide.
 URLS within the text MAY be replaced by a link shortening URL depending on the API account settings.
 All slides MAY contain a duration for playback. Default slide duration is 5 seconds. Slide duration will be overwritten 
 if the file duration exceeds the xml duration.
