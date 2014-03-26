@@ -31,7 +31,7 @@
 </tr>
 <tr>
 <td>E106 You can call API every X seconds</td>
-<td>E829 'customdataid' is the invalid. Only Alphabet, Numbers or a Space is allowed</td>
+<td>E829 'custom identifier value' is invalid. Only Alphabet, Numbers or a Space is allowed</td>
 </tr>
 <tr>
 <td>E107 This account has no rights to use this action</td>
@@ -43,7 +43,7 @@
 </tr>
 <tr>
 <td>E109 API not activated</td>
-<td>E833 This Pass Template is set to send Personalized Passes. Atleast 'email' or 'phone' or 'customdataid' is required with the Pass Data</td>
+<td>E833 This Pass Template is set to send Personalized Passes. Atleast 'email' or 'phone' or 'custom identifier' is required with the Pass Data</td>
 </tr>
 <tr>
 <td>E110 Invalid receiver number</td>
