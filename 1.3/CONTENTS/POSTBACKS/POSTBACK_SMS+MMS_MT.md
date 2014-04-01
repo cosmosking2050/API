@@ -34,6 +34,7 @@ xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;
   &lt;ORIGIN&gt;SMS_MT&lt;/ORIGIN&gt;
   &lt;CODE&gt;N201&lt;/CODE&gt;
   &lt;STATUS&gt;Message Sent&lt;/STATUS&gt;
+  &lt;FROM&gt;60856&lt;/FROM&gt;
   &lt;TO&gt;16503333058&lt;/TO&gt;
   &lt;TRACKINGID&gt;U01TXzgwNjc4&lt;/TRACKINGID&gt;
   &lt;SPID&gt;0001470&lt;/SPID&gt;
@@ -47,6 +48,7 @@ xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;
 <strong><p>This postback will contain the following nodes:</p></strong>
 CODE, ORIGIN<BR/>
 STATUS &#8211; Indicate if the SMS was sent out successfully - allowed values are "Message Sent/Delivered" or "Message Sent/Failed"<BR/>
+FROM &#8211; shortcode the SMS is sent from<BR/>
 TO &#8211; SMS receiver<BR/>
 TRACKINGID &#8211; ID returned via API &#8211; this postback can be matched with API response using this field.<BR/>
 SPID &#8211; Carrier Identification - please reffer to <a href="/1.3/CONTENTS/APPENDIX/APPENDIX_E.md">APPENDIX E</a> for more details<BR/>
@@ -62,6 +64,7 @@ xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;
   &lt;ORIGIN&gt;SMS_MT&lt;/ORIGIN&gt;
   &lt;CODE&gt;N202&lt;/CODE&gt;
   &lt;STATUS&gt;Message Sent/Delivered&lt;/STATUS&gt;
+  &lt;FROM&gt;60856&lt;/FROM&gt;
   &lt;TO&gt;16503333058&lt;/TO&gt;
   &lt;TRACKINGID&gt;U01TXzgwNjc4&lt;/TRACKINGID&gt;
   &lt;SPID&gt;0001470&lt;/SPID&gt;
@@ -77,6 +80,7 @@ xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;
 CODE, ORIGIN<BR/>
 SENTAS &#8211; indicates if the MMS was delivered as MMS (binary delivery) or SMS (xHTML). Binary delivery will always be MMS<BR/>
 MMSID &#8211; ID of the MMS<BR/>
+FROM &#8211; shortcode the MMS is sent from<BR/>
 TO &#8211; MMS receiver<BR/>
 SPID &#8211; carrier ID &#8211; please check API documentation <a href="/1.3/CONTENTS/APPENDIX/APPENDIX_E.md">APPENDIX E</a><BR/>
 TRACKINGID &#8211; ID returned via API &#8211; this postback can be matched with API response using this field.<BR/>
@@ -85,6 +89,7 @@ HANDSET &#8211; handset profile returned inside Delivery Receipt. This is presen
 STATUS &#8211; For N101 notification status can be "Message Sent". For N102 notification status can be "Message Sent/Delivered", "Message Sent/Expired" or "Message Sent/Rejected"<BR/>
 STATUSDETAILS &#8211; For N101 notification when status is "Message Failed" postback will contain this node with error details.<BR/>
 AGGREGATORID &#8211; Only in N102 notification, contain Aggregator ID of the sending.<BR/>
+OS &#8211; Optional. Only in N102 notification for binary sending, contains detected operating system of the handset.<BR/>
 
 <p><strong>The N101 anatomy:</strong></p>
 <pre>
@@ -96,6 +101,7 @@ xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;
   &lt;SENTAS&gt;MMS&lt;/SENTAS&gt;
   &lt;STATUS&gt;Message Sent&lt;/STATUS&gt;
   &lt;MMSID&gt;39597&lt;/MMSID&gt;
+  &lt;FROM&gt;60856&lt;/FROM&gt;
   &lt;TO&gt;16501112222&lt;/TO&gt;
   &lt;TRACKINGID&gt;TU1TXzU5Nzg3OQ==&lt;/TRACKINGID&gt;
   &lt;SPID&gt;0001570&lt;/SPID&gt;
@@ -113,12 +119,14 @@ xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;
   &lt;SENTAS&gt;MMS&lt;/SENTAS&gt;
   &lt;STATUS&gt;Message Sent/Delivered&lt;/STATUS&gt;
   &lt;MMSID&gt;39597&lt;/MMSID&gt;
+  &lt;FROM&gt;60856&lt;/FROM&gt;
   &lt;TO&gt;16501112222&lt;/TO&gt;
   &lt;TRACKINGID&gt;TU1TXzU5Nzg3OQ==&lt;/TRACKINGID&gt;
   &lt;SPID&gt;0001570&lt;/SPID&gt;
   &lt;TIMESTAMP&gt;2012-06-07T07:27:34-05:00&lt;/TIMESTAMP&gt;
   &lt;HANDSET&gt;motol7c&lt;/HANDSET&gt;
   &lt;AGGREGATORID&gt;11529-64807-97508-73852-97658&lt;/AGGREGATORID&gt;
+  &lt;OS&gt;iOS&lt;/OS&gt;
 &lt;/POSTBACK&gt;
 </pre>
 [Back To The Top](#DocTop)<BR />
@@ -129,6 +137,7 @@ xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;
 CODE, ORIGIN<BR/>
 SENTAS &#8211; this node indicate if MMS was delivered as MMS (binary delivery) or SMS (xHTML). For xHTML delivery it will always be SMS<BR/>
 MMSID &#8211; ID of the MMS<BR/>
+FROM &#8211; shortcode the MMS is sent from<BR/>
 TO &#8211; MMS receiver<BR/>
 SPID &#8211; carrier ID &#8211; please check API documentation <a href="/1.3/CONTENTS/APPENDIX/APPENDIX_E.md">APPENDIX E</a><BR/>
 TRACKINGID &#8211; ID returned via API &#8211; this postback can be matched with API response using this field.<BR/>
@@ -147,6 +156,7 @@ xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;
   &lt;SENTAS&gt;SMS&lt;/SENTAS&gt;
   &lt;STATUS&gt;Message Sent&lt;/STATUS&gt;
   &lt;MMSID&gt;39755&lt;/MMSID&gt;
+  &lt;FROM&gt;60856&lt;/FROM&gt;
   &lt;TO&gt;16502424956&lt;/TO&gt;
   &lt;TRACKINGID&gt;TU1TXzU5Nzg3Nw==&lt;/TRACKINGID&gt;
   &lt;SPID&gt;0001140&lt;/SPID&gt;
@@ -163,6 +173,7 @@ xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;
   &lt;CODE&gt;N202&lt;/CODE&gt;
   &lt;SENTAS&gt;SMS&lt;/SENTAS&gt;
   &lt;STATUS&gt;Message Sent/Delivered&lt;/STATUS&gt;
+  &lt;FROM&gt;60856&lt;/FROM&gt;
   &lt;TO&gt;16502424956&lt;/TO&gt;
   &lt;TRACKINGID&gt;TU1TXzU5Nzg3Nw==&lt;/TRACKINGID&gt;
   &lt;SPID&gt;0001140&lt;/SPID&gt;
@@ -178,6 +189,7 @@ xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;
 CODE, ORIGIN<BR/>
 SENTAS &#8211; this node indicate if MMS was delivered as MMS (binary delivery) or SMS (xHTML). For xHTML delivery it will always be SMS<BR/>
 MMSID &#8211; ID of the MMS<BR/>
+FROM &#8211; shortcode the MMS is sent from<BR/>
 TO &#8211; MMS receiver<BR/>
 SPID &#8211; carrier ID &#8211; please check API documentation <a href="/1.3/CONTENTS/APPENDIX/APPENDIX_E.md">APPENDIX E</a><BR/>
 TRACKINGID &#8211; ID returned via API &#8211; this postback can be matched with API response using this field.<BR/>
@@ -196,6 +208,7 @@ xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;
   &lt;SENTAS&gt;SMS&lt;/SENTAS&gt;
   &lt;STATUS&gt;Message Sent&lt;/STATUS&gt;
   &lt;MMSID&gt;39755&lt;/MMSID&gt;
+  &lt;FROM&gt;60856&lt;/FROM&gt;
   &lt;TO&gt;16502424956&lt;/TO&gt;
   &lt;TRACKINGID&gt;TU1TXzU5Nzg3Nw==&lt;/TRACKINGID&gt;
   &lt;SPID&gt;0001140&lt;/SPID&gt;
@@ -213,6 +226,7 @@ xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;
   &lt;CODE&gt;N202&lt;/CODE&gt;
   &lt;SENTAS&gt;SMS&lt;/SENTAS&gt;
   &lt;STATUS&gt;Message Sent/Delivered&lt;/STATUS&gt;
+  &lt;FROM&gt;60856&lt;/FROM&gt;
   &lt;TO&gt;16502424956&lt;/TO&gt;
   &lt;TRACKINGID&gt;TU1TXzU5Nzg3Nw==&lt;/TRACKINGID&gt;
   &lt;SPID&gt;0001140&lt;/SPID&gt;
@@ -227,6 +241,7 @@ xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;
 <strong><p>This postback will contain the following nodes:</p></strong>
 CODE, ORIGIN<BR/>
 MMSID &#8211; ID of the MMS<BR/>
+FROM &#8211; shortcode the MMS is sent from<BR/>
 TO &#8211; MMS receiver<BR/>
 SPID &#8211; carrier ID &#8211; please check API documentation <a href="/1.3/CONTENTS/APPENDIX/APPENDIX_E.md">APPENDIX E</a><BR/>
 TRACKINGID &#8211; ID returned via API &#8211; this postback can be matched with API response using this field.<BR/>
@@ -243,6 +258,7 @@ xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;
   &lt;CODE&gt;E101&lt;/CODE&gt;
   &lt;STATUS&gt;Message Failed&lt;/STATUS&gt;
   &lt;MMSID&gt;39755&lt;/MMSID&gt;
+  &lt;FROM&gt;60856&lt;/FROM&gt;
   &lt;TO&gt;16502424956&lt;/TO&gt;
   &lt;TRACKINGID&gt;TU1TXzU5Nzg3Nw==&lt;/TRACKINGID&gt;
   &lt;SPID&gt;0001140&lt;/SPID&gt;
