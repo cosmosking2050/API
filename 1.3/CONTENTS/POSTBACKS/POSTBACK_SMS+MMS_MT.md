@@ -21,6 +21,7 @@ This document will provide a technical description of the MMS/SMS MT postback AP
 <strong><p>This postback will contain the following nodes:</p></strong>
 CODE, ORIGIN<BR/>
 STATUS &#8211; Indicate if the SMS was sent out successfully - allowed values are "Message Sent" or "Message Failed"<BR/>
+FROM &#8211; shortcode the SMS is sent from<BR/>
 TO &#8211; SMS receiver<BR/>
 TRACKINGID &#8211; ID returned via API &#8211; this postback can be matched with API response using this field<BR/>
 SPID &#8211; Carrier Identification - please reffer to <a href="/1.3/CONTENTS/APPENDIX/APPENDIX_E.md">APPENDIX E</a> for more details<BR/>
