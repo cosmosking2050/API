@@ -171,6 +171,7 @@ E915, E916, E917, E918
     &lt;CAMPAIGNID&gt;1233&lt;/CAMPAIGNID&gt;
     &lt;PASSDATA&gt;
         &lt;CUSTOMPASSID&gt;CONT-ID-SKU:112324&lt;/CUSTOMPASSID&gt;
+        &lt;THUMBNAILURL&gt;http://andreas.com/pixs/steve-jobs.png&lt;/THUMBNAILURL&gt;
         &lt;BARCODEVALUE&gt;1234578961A&lt;/BARCODEVALUE&gt;
         &lt;BARCODETEXT&gt;PASS-123-457&lt;/BARCODETEXT&gt;
         &lt;HEADERLABEL1&gt;SEAT&lt;/HEADERLABEL1&gt;
