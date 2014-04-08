@@ -125,6 +125,7 @@ API_URL?action=sendpassinmms&amp;api_key=apiKey&amp;mmsid=mmsId&amp;to=phone
 &amp;from=shortcode&amp;campaignref=campaignId&amp;ddmtitle=ddmTitle&amp;ddmtext=ddmText&amp;ddmtimeout=ddmTimeout&amp;device=deviceId
 &amp;customtext_1=customTextSlide1&amp;customsubject=customSubject
 &amp;data_first_name=firstName&amp;data_last_name=lastName&amp;data_age=age&amp;pd_custompassid=customPassId
+&amp;pd_thumbnailurl=thumbnailUrl
 &amp;pd_barcodevalue=barcodeValue&amp;pd_barcodetext=barcodeText&amp;pd_headerlabel1=headerLabel1
 &amp;pd_headervalue1=headerValue1&amp;pd_primarylabel1=primaryLabel1
 &amp;pd_primaryvalue1=primaryValue1&amp;pd_primarylabel2=primaryLabel2
