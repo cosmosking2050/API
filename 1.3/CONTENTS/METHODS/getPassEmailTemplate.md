@@ -1,8 +1,7 @@
 <a href="/1.3/README.md">Back to the Table of Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="API_METHODS.md">Back to API Methods</a>
 <h2>getPassEmailTemplate</h2>
 <p><strong>Synopsis:</strong><br />
-'getPassEmailTemplate' API is used to get the stored email template html with an embedded passbook pass in it for the specified email address. 
-The pass data in the request is used in limitation to the pass template settings to generate this pass.
+This API is used to get the stored email template html with an embedded passbook pass in it for the specified email address. The pass data in the request is used in limitation to the pass template settings to generate this pass.
 Custom pass ID is your system generated unique ID that will represent this pass data. In the case of Relevance, Relevant Text is considered only when Relevance Lat and Long values are passed in the API otherwise ignored.
 Also, it requires a reference email campaign to which this email address will be subscribed to. 
 If any case, the subscription fails then the email address is added to the email campaign's audience manager as 'unsubscribed' and you will receive a warning code and warning status in the response. 
@@ -37,6 +36,7 @@ subscriber's data is referenced by 'DATA' and the pass data is referenced by 'PA
 	&lt;/DATA&gt;
     &lt;PASSDATA&gt;
         &lt;CUSTOMPASSID&gt;customPassId&lt;/CUSTOMPASSID&gt;
+        &lt;THUMBNAILURL&gt;thumbnailUrl&lt;/THUMBNAILURL&gt;
         &lt;BARCODEVALUE&gt;barcodeValue&lt;/BARCODEVALUE&gt;
         &lt;BARCODETEXT&gt;barcodeText&lt;/BARCODETEXT&gt;
         &lt;HEADERLABEL1&gt;headerLabel1&lt;/HEADERLABEL1&gt;
@@ -105,7 +105,8 @@ subscriber's data is referenced by 'DATA' and the pass data is referenced by 'PA
 <pre>
 API_URL?action=getpassemailtemplate&amp;api_key=apiKey&amp;emailtemplateid=emailTemplateId&amp;email=email&amp;campaignid=emailCampaignId
 &amp;data_first_name=firstName&amp;data_last_name=lastName&amp;data_age=age&amp;data_pet=pet
-&amp;pd_custompassid=customPassId&amp;pd_barcodevalue=barcodeValue&amp;pd_barcodetext=barcodeText
+&amp;pd_custompassid=customPassId&amp;pd_thumbnailurl=thumbnailUrl
+&amp;pd_barcodevalue=barcodeValue&amp;pd_barcodetext=barcodeText
 &amp;pd_headerlabel1=headerLabel1&amp;pd_headervalue1=headerValue1
 &amp;pd_primarylabel1=primaryLabel1&amp;pd_primaryvalue1=primaryValue1&amp;pd_primarylabel2=primaryLabel2
 &amp;pd_primaryvalue2=primaryValue2&amp;pd_seclabel1=secLabel1&amp;pd_secvalue1=secValue1
@@ -133,7 +134,7 @@ action, apiKey, email, emailTemplateId, emailCampaignId,
 barcodeValue (if "Barcode=Allowed" &amp;&amp; "BarcodeType=Dynamic" &amp;&amp; "BarcodeValueSource=Dynamic Value" for Pass Template otherwise IGNORED),
 
 <strong>Optional: </strong>
-customPassId,
+customPassId, thumbnailUrl,
 barcodeText (if "Barcode = Allowed" &amp;&amp; "Barcode Alternate Text = Dynamic Text" for Pass Template otherwise IGNORED), 
 headerLabel1, headerValue1, 
 primaryLabel1, primaryValue1, 
