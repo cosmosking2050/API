@@ -16,6 +16,7 @@ You cannot update Email (or) Phone in this request but the pass data. On success
     &lt;API_KEY&gt;apiKey&lt;/API_KEY&gt;
     &lt;PASSDATAID&gt;passDataId&lt;/PASSDATAID&gt;
     &lt;PASSDATA&gt;
+        &lt;THUMBNAILURL&gt;thumbnailUrl&lt;/THUMBNAILURL&gt;
         &lt;BARCODEVALUE&gt;barcodeValue&lt;/BARCODEVALUE&gt;
         &lt;BARCODETEXT&gt;barcodeText&lt;/BARCODETEXT&gt;
         &lt;HEADERLABEL1&gt;headerLabel1&lt;/HEADERLABEL1&gt;
@@ -82,6 +83,7 @@ You cannot update Email (or) Phone in this request but the pass data. On success
 &lt;/REQUEST&gt;</pre>
 <div><strong>Request: GET</strong></div>
 <pre>API_URL?action=updatepass&amp;api_key=apiKey&amp;passdataid=passDataId
+&amp;pd_thumbnailurl=thumbnailUrl
 &amp;pd_barcodevalue=barcodeValue&amp;pd_barcodetext=barcodeText
 &amp;pd_headerlabel1=headerLabel1&amp;pd_headervalue1=headerValue1
 &amp;pd_primarylabel1=primaryLabel1&amp;pd_primaryvalue1=primaryValue1
@@ -143,6 +145,7 @@ E870, E871, E872, E873, E874, E875, E876, E877, E878, E879, E880, E881, E882, E8
     &lt;API_KEY&gt;qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ&lt;/API_KEY&gt;
     &lt;PASSDATAID&gt;1233&lt;/PASSDATAID&gt;
     &lt;PASSDATA&gt;
+        &lt;THUMBNAILURL&gt;http://andreas.com/pixs/steve-jobs.png&lt;/THUMBNAILURL&gt;
         &lt;BARCODEVALUE&gt;3434578961A&lt;/BARCODEVALUE&gt;
         &lt;BARCODETEXT&gt;PASS-343-457&lt;/BARCODETEXT&gt;
         &lt;HEADERLABEL1&gt;SEAT&lt;/HEADERLABEL1&gt;
