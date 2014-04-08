@@ -112,6 +112,7 @@ You cannot update Email (or) Phone in this request but the pass data. On success
 action, apiKey, passDataId
 
 <strong>Optional: </strong>
+thumbnailUrl,
 barcodeText (if "Barcode = Allowed" &amp;&amp; "Barcode Alternate Text = Dynamic Text" for Pass Template otherwise IGNORED), 
 barcodeValue (if "Barcode=Allowed" &amp; "BarcodeType=Dynamic" &amp; "BarcodeValueSource=Dynamic Value" for Pass Template otherwise IGNORED),
 headerLabel1, headerValue1, 
