@@ -54,6 +54,7 @@ On success, it will return the MMSTrackingID. For more info see below for Mandat
 	&lt;/DATA&gt;
     &lt;PASSDATA&gt;
     	&lt;CUSTOMPASSID&gt;customPassId&lt;/CUSTOMPASSID&gt;
+    	&lt;THUMBNAILURL&gt;thumbnailUrl&lt;/THUMBNAILURL&gt;
         &lt;BARCODEVALUE&gt;barcodeValue&lt;/BARCODEVALUE&gt;
         &lt;BARCODETEXT&gt;barcodeText&lt;/BARCODETEXT&gt;
         &lt;HEADERLABEL1&gt;headerLabel1&lt;/HEADERLABEL1&gt;
@@ -153,6 +154,7 @@ barcodevalue (if "Barcode=Allowed" &amp;&amp; "BarcodeType=Dynamic" &amp;&amp; "
 
 <strong>Optional: </strong>
 campaignref, ddmtitle, ddmtext, ddmtimeout, device, customsubject, customText, data, 
+thumbnailUrl,
 barcodetext (if "Barcode = Allowed" &amp;&amp; "Barcode Alternate Text = Dynamic Text" for Pass Template otherwise IGNORED), 
 headerlabel1, headervalue1, 
 primarylabel1, primaryvalue1, 
@@ -202,6 +204,7 @@ E870, E871, E872, E873, E874, E875, E876, E877, E878, E879, E880, E881, E882, E8
 		&lt;GENDER&gt;Male&lt;/GENDER&gt;
 	&lt;/DATA&gt;        
     &lt;PASSDATA&gt;
+    	&lt;THUMBNAILURL&gt;http://andreas.com/pixs/steve-jobs.png&lt;/THUMBNAILURL&gt;
         &lt;BARCODEVALUE&gt;1234578961A&lt;/BARCODEVALUE&gt;
         &lt;BARCODETEXT&gt;PASS-123-457&lt;/BARCODETEXT&gt;
         &lt;HEADERLABEL1&gt;SEAT&lt;/HEADERLABEL1&gt;
