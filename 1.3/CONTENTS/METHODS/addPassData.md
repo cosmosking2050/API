@@ -17,6 +17,7 @@ For more info see below for Mandatory/Optional fields and Error codes.</p>
     &lt;PASSTEMPLATEID&gt;passTemplateId&lt;/PASSTEMPLATEID&gt;
     &lt;PASSDATA&gt;
         &lt;CUSTOMPASSID&gt;customPassId&lt;/CUSTOMPASSID&gt;
+        &lt;THUMBNAILURL&gt;thumbnailUrl&lt;/THUMBNAILURL&gt;
         &lt;BARCODEVALUE&gt;barcodeValue&lt;/BARCODEVALUE&gt;
         &lt;BARCODETEXT&gt;barcodeText&lt;/BARCODETEXT&gt;
         &lt;HEADERLABEL1&gt;headerLabel1&lt;/HEADERLABEL1&gt;
@@ -86,7 +87,8 @@ For more info see below for Mandatory/Optional fields and Error codes.</p>
 &lt;/REQUEST&gt;</pre>
 <div><strong>Request: GET</strong></div>
 <pre>API_URL?action=addpassdata&amp;api_key=apiKey&amp;passtemplateid=passTemplateId
-&amp;pd_custompassid=customPassId&amp;pd_barcodevalue=barcodeValue&amp;pd_barcodetext=barcodeText
+&amp;pd_custompassid=customPassId&amp;pd_thumbnailurl=thumbnailUrl
+&amp;pd_barcodevalue=barcodeValue&amp;pd_barcodetext=barcodeText
 &amp;pd_headerlabel1=headerLabel1&amp;pd_headervalue1=headerValue1
 &amp;pd_primarylabel1=primaryLabel1&amp;pd_primaryvalue1=primaryValue1
 &amp;pd_primarylabel2=primaryLabel2&amp;pd_primaryvalue2=primaryValue2
