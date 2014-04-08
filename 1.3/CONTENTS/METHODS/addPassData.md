@@ -118,7 +118,7 @@ action, apiKey, passTemplateId,
 barcodeValue (if "Barcode=Allowed" &amp;&amp; "BarcodeType=Dynamic" &amp;&amp; "BarcodeValueSource=Dynamic Value" for Pass Template otherwise IGNORED)
 
 <strong>Optional: </strong>
-customPassId,
+customPassId, thumbnailUrl,
 barcodeText (if "Barcode = Allowed" &amp;&amp; "Barcode Alternate Text = Dynamic Text" for Pass Template otherwise IGNORED), 
 headerLabel1, headerValue1, 
 primaryLabel1, primaryValue1, 
@@ -151,6 +151,7 @@ E870, E871, E872, E873, E874, E875, E876, E877, E878, E879, E880, E881, E882, E8
     &lt;PASSTEMPLATEID&gt;100&lt;/PASSTEMPLATEID&gt;
     &lt;PASSDATA&gt;
         &lt;CUSTOMPASSID&gt;GM-12345-M&lt;/CUSTOMPASSID&gt;
+        &lt;THUMBNAILURL&gt;http://andreas.com/pixs/steve-jobs.png&lt;/THUMBNAILURL&gt;
         &lt;BARCODEVALUE&gt;1234578961A&lt;/BARCODEVALUE&gt;
         &lt;BARCODETEXT&gt;PASS-123-457&lt;/BARCODETEXT&gt;
         &lt;HEADERLABEL1&gt;SEAT&lt;/HEADERLABEL1&gt;
