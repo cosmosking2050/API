@@ -116,7 +116,7 @@ action, apikey, passTemplateId,
 barcodeValue (if "Barcode=Allowed" &amp;&amp; "BarcodeType=Dynamic" &amp;&amp; "BarcodeValueSource=Dynamic Value" for Pass Template otherwise IGNORED),
 
 <strong>Optional: </strong>
-customPassId,
+customPassId, thumbnailUrl,
 barcodeText (if "Barcode = Allowed" &amp;&amp; "Barcode Alternate Text = Dynamic Text" for Pass Template otherwise IGNORED), 
 headerLabel1, headerValue1, 
 primaryLabel1, primaryValue1, 
