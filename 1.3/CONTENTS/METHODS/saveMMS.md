@@ -94,7 +94,7 @@ The API SHALL reformat the content when necessary so that it can be delivered to
 possible way.Delivery success takes precedence over audio and video content quality and occasionally the picture quality
 will be reduced to fit handset message size requirements. Video SHALL be reduced in quality to fit delivery limitations 
 and if it still does not fit it will be delivered as XHTML/SMS. Each request MUST contain at least one slide which MAY 
-contain text and/or image and/or video and/or sound. The API SHALL support up to 8 slides for each MMS submission.
+contain text and/or image and/or video and/or sound. The API SHALL support up to 80 characters in the MMS subject. The API SHALL support up to 8 slides for each MMS submission.
 The API SHALL NOT support multiple files of the same MIME type on the same slide. Slides with image SHALL NOT support 
 video but SHALL support audio. Slides with audio SHALL NOT support video. Slides with video SHALL only support text. 
 Slides with text SHALL support up to 5000 characters in any slide.
