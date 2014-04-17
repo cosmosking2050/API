@@ -9,7 +9,7 @@ Every binary MMS we deliver can be transcoded for the destination handset and ev
 <p>Our API allows you to customize DDM by setting 3 parameters:<br />
 DDMTITLE &#8211; this is the DDM title (optional, if not set default will be used)<br />
 DDMTEXT &#8211; this is the DDM body (mandatory)<br />
-DDMTIMEOUT &#8211; when we send DDM we wait for the Delivery Report which contain the handset profile. In some cases we don&#8217;t receive it or it takes very long (handset turned off or out of range). This variable tells the system how long should it wait for DDM Delivery Report before sending actual content using Default parameters. Default value of this parameter is 5 minutes.</p>
+DDMTIMEOUT &#8211; (in minutes) when we send DDM we wait for the Delivery Report which contain the handset profile. In some cases we don&#8217;t receive it or it takes very long (handset turned off or out of range). This variable tells the system how long should it wait for DDM Delivery Report before sending actual content using Default parameters. Default value of this parameter is 5 minutes.</p>
 
 <p>SendSavedMMS allow you to pass HandsetID inside DEVICE parameter. 
 We will store this information and (if HandsetID is recognized by our system) use handset profile to adapt content for current and future MMS delivery.
