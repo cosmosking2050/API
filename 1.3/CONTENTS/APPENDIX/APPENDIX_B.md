@@ -363,6 +363,15 @@
 <td>N102 - when we get the Delivery report with either success or error</td>
 </tr>
 <tr>
+<td>N201 - SMS Message Sent</td>
+</tr>
+<tr>
+<td>N202 - SMS Sent/Delivered (or) SMS Sent/Failed</td>
+</tr>
+<tr>
+<td>N211 - SMS MO received</td>
+</tr>
+<tr>
 <td>N301 - number subscribed</td>
 </tr>
 <tr>
