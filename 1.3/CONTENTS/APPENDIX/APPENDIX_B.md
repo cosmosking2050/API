@@ -351,13 +351,16 @@
 <td>E101 - Error occured. Impossible to send MMS</td>
 </tr>
 <tr>
-<td>N003 - content was stored / encoded correctly</td>
+<td>N002 - Encoding of mobile video successful</td>
 </tr>
 <tr>
-<td>N013 - content was stored / encoded correctly and sending was triggered</td>
+<td>N003 - Content was stored / encoded correctly</td>
 </tr>
 <tr>
-<td>N101 - when content sending started</td>
+<td>N013 - Content was stored / encoded correctly and sending was triggered</td>
+</tr>
+<tr>
+<td>N101 - When content sending started</td>
 </tr>
 <tr>
 <td>N102 - when we get the Delivery report with either success or error</td>
