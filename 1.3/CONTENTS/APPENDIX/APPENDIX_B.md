@@ -378,6 +378,9 @@
 <td>N302 - number unsubscribed</td>
 </tr>
 <tr>
+<td>N401 - MMS MO received successfuly</td>
+</tr>
+<tr>
 <td>N801 - Pass was generated succesfully.</td>
 </tr>
 <tr>
