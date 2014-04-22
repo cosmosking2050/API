@@ -333,19 +333,22 @@
 <table class="toc" id="toc" style="font-size:11px;">
 <tbody>
 <tr>
-<td>E001 - encoding of mobile video failed</td>
+<td>E001 - Encoding of mobile video failed</td>
 </tr>
 <tr>
-<td>E002 - encoding of MMS audio failed</td>
+<td>E002 - Encoding of MMS audio failed</td>
 </tr>
 <tr>
-<td>E003 - encoding of MMS video failed</td>
+<td>E003 - Encoding of MMS video failed</td>
 </tr>
 <tr>
-<td>E012 - encoding of MMS audio failed</td>
+<td>E011 - Encoding of mobile video failed</td>
 </tr>
 <tr>
-<td>E013 - encoding of MMS video failed</td>
+<td>E012 - Encoding of MMS audio failed</td>
+</tr>
+<tr>
+<td>E013 - Encoding of MMS video failed</td>
 </tr>
 <tr>
 <td>E101 - Error occured. Impossible to send MMS</td>
@@ -363,7 +366,7 @@
 <td>N101 - When content sending started</td>
 </tr>
 <tr>
-<td>N102 - when we get the Delivery report with either success or error</td>
+<td>N102 - When we get the Delivery report with either success or error</td>
 </tr>
 <tr>
 <td>N201 - SMS Message Sent</td>
