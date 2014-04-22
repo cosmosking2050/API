@@ -372,10 +372,16 @@
 <td>N211 - SMS MO received</td>
 </tr>
 <tr>
-<td>N301 - number subscribed</td>
+<td>N301 - Number subscribed</td>
 </tr>
 <tr>
-<td>N302 - number unsubscribed</td>
+<td>N302 - Number unsubscribed</td>
+</tr>
+<tr>
+<td>N303 - Email subscribed</td>
+</tr>
+<tr>
+<td>N304 - Email unsubscribed</td>
 </tr>
 <tr>
 <td>N401 - MMS MO received successfuly</td>
