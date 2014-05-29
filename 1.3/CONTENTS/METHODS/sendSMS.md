@@ -1,8 +1,7 @@
 <a href="/1.3/README.md">Back to the Table of Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="API_METHODS.md">Back to API Methods</a>
 <h2>sendSMS</h2>
 <p><strong>Synopsis: </strong><br />
-This API function sends an SMS containing <i>text</i> from the specified account and <i>shortcode</i> to a recipient’s mobile number. 
-If 'Enforce Campaign Check' is turned ON this function will require the ID of MMS campaign that receiver's number is subscribed to passed inside <i>campaignref</i> node.
+This API function sends an SMS containing <i>text</i> from the specified account and <i>shortcode</i> to a recipient’s mobile number. If the aggregator allows masking longcode/sender with some brand or string, 'from_mask' can be set in the API. If 'Enforce Campaign Check' is turned ON this function will require the ID of MMS campaign that receiver's number is subscribed to passed inside <i>campaignref</i> node.
 <div><strong>Request:</strong></div>
 <pre>&lt;REQUEST&gt;
   &lt;ACTION&gt;sendSMS &lt;/ACTION&gt;
@@ -10,6 +9,7 @@ If 'Enforce Campaign Check' is turned ON this function will require the ID of MM
 	&lt;SPID&gt;SPID&lt;/SPID&gt;
 	&lt;TO&gt;Recipient Number&lt;/TO&gt;
 	&lt;FROM&gt;shortcode&lt;/FROM&gt;
+	&lt;FROM_MASK&gt;shortcode&lt;/FROM_MASK&gt;
 	&lt;CAMPAIGNREF&gt;CampaignID&lt;/CAMPAIGNREF&gt;
 	&lt;TEXT&gt;SMS Text message text&lt;/TEXT&gt;
 &lt;/REQUEST&gt;</pre>
@@ -20,13 +20,13 @@ If 'Enforce Campaign Check' is turned ON this function will require the ID of MM
 
 <strong>Mandatory:</strong> Action, API_KEY, To, Text, From
 	
-<strong>Optional:</strong>SPID, CampaignRef
+<strong>Optional:</strong>SPID, CampaignRef, From_Mask
 
 <strong>(If "Enforce Campaign Check" IS Enabled)</strong>
 
 <strong>Mandatory:</strong> Action, API_KEY, To, Text, From, CampaignRef
 	
-<strong>Optional:</strong>SPID
+<strong>Optional:</strong>SPID, From_Mask
 
 </pre>
 	
