@@ -22,6 +22,7 @@ This document will provide a technical description of the MMS/SMS MT postback AP
 CODE, ORIGIN<BR/>
 STATUS &#8211; Indicate if the SMS was sent out successfully - allowed values are "Message Sent" or "Message Failed"<BR/>
 FROM &#8211; shortcode the SMS is sent from<BR/>
+FROM_MASK &#8211; from sender name or brand that was used to mask longcode/sender for the SMS sent<BR/>
 TO &#8211; SMS receiver<BR/>
 TRACKINGID &#8211; ID returned via API &#8211; this postback can be matched with API response using this field<BR/>
 SPID &#8211; Carrier Identification - please reffer to <a href="/1.3/CONTENTS/APPENDIX/APPENDIX_E.md">APPENDIX E</a> for more details<BR/>
@@ -36,6 +37,7 @@ xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;
   &lt;CODE&gt;N201&lt;/CODE&gt;
   &lt;STATUS&gt;Message Sent&lt;/STATUS&gt;
   &lt;FROM&gt;60856&lt;/FROM&gt;
+  &lt;FROM_MASK&gt;&lt;/FROM_MASK&gt;
   &lt;TO&gt;16503333058&lt;/TO&gt;
   &lt;TRACKINGID&gt;U01TXzgwNjc4&lt;/TRACKINGID&gt;
   &lt;SPID&gt;0001470&lt;/SPID&gt;
@@ -50,6 +52,7 @@ xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;
 CODE, ORIGIN<BR/>
 STATUS &#8211; Indicate if the SMS was sent out successfully - allowed values are "Message Sent/Delivered" or "Message Sent/Failed"<BR/>
 FROM &#8211; shortcode the SMS is sent from<BR/>
+FROM_MASK &#8211; from sender name or brand that was used to mask longcode/sender for the SMS sent<BR/>
 TO &#8211; SMS receiver<BR/>
 TRACKINGID &#8211; ID returned via API &#8211; this postback can be matched with API response using this field.<BR/>
 SPID &#8211; Carrier Identification - please reffer to <a href="/1.3/CONTENTS/APPENDIX/APPENDIX_E.md">APPENDIX E</a> for more details<BR/>
@@ -66,6 +69,7 @@ xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;
   &lt;CODE&gt;N202&lt;/CODE&gt;
   &lt;STATUS&gt;Message Sent/Delivered&lt;/STATUS&gt;
   &lt;FROM&gt;60856&lt;/FROM&gt;
+  &lt;FROM_MASK&gt;&lt;/FROM_MASK&gt;
   &lt;TO&gt;16503333058&lt;/TO&gt;
   &lt;TRACKINGID&gt;U01TXzgwNjc4&lt;/TRACKINGID&gt;
   &lt;SPID&gt;0001470&lt;/SPID&gt;
