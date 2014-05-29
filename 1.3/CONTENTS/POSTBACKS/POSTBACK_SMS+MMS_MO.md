@@ -28,6 +28,7 @@ FROM &#8211; SMS sender mobile number<BR/>
 TO &#8211; shortcode the SMS was sent to<BR/>
 TEXT &#8211; this is actuall text that was sent by the sender<BR/>
 RECEIVED &#8211; timestamp of the SMS received by our server<BR/>
+TRANSACTIONID &#8211; transactionId for the SMS MO transaction that occurred<BR/>
 
 <p><strong>This postback has the following anatomy:</strong></p>
 <pre>
@@ -38,6 +39,7 @@ RECEIVED &#8211; timestamp of the SMS received by our server<BR/>
   &lt;TO&gt;86717&lt;/TO&gt;
   &lt;TEXT&gt;STOP&lt;/TEXT&gt;
   &lt;RECEIVED&gt;2011-09-28T17:31:02-04:00&lt;/RECEIVED&gt;
+  &lt;TRANSACTIONID&gt;511XG-02294-192SA-482H8&lt;/TRANSACTIONID&gt;
 &lt;/POSTBACK&gt;
 </pre>
 
