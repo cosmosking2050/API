@@ -9,7 +9,7 @@ This API function sends an SMS containing <i>text</i> from the specified account
 	&lt;SPID&gt;SPID&lt;/SPID&gt;
 	&lt;TO&gt;Recipient Number&lt;/TO&gt;
 	&lt;FROM&gt;shortcode&lt;/FROM&gt;
-	&lt;FROM_MASK&gt;shortcode&lt;/FROM_MASK&gt;
+	&lt;FROM_MASK&gt;senderName&lt;/FROM_MASK&gt;
 	&lt;CAMPAIGNREF&gt;CampaignID&lt;/CAMPAIGNREF&gt;
 	&lt;TEXT&gt;SMS Text message text&lt;/TEXT&gt;
 &lt;/REQUEST&gt;</pre>
