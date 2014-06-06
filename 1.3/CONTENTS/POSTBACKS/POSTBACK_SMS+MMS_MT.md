@@ -1,7 +1,7 @@
 <a name="DocTop"><a href="/1.3/README.md">Back to the Table of Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/1.3/CONTENTS/POSTBACKS/POSTBACK_SYSTEM_OVERVIEW.md">Postback System Overview</a>
 <h2>SMS/MMS MT Postbacks</h2>
 <div id="page-content"><strong>Brief Overview:</strong>
-This document will provide a technical description of the MMS/SMS MT postback API.  Briefly, this API allows those with SMS/MMS MT postbacks enabled to generate and forward SMS/MMS MT postbacks to their server.  For MMS, we have two methods for delivering content; Binary and xHTML. We send different postbacks depending on which method is used.
+This document will provide a technical overview of the MMS MT / SMS MT Postback API.  Briefly, this API allows each account to receive notifications  to their server about the delivery status of each message they sent.  For MMS, we have two methods for delivering content; Binary and xHTML. We send different postback notification formats depending on which method is used.
 
 <strong>Current list of the SMS/MMS MT Postback Types</strong>
  
@@ -11,12 +11,11 @@ This document will provide a technical description of the MMS/SMS MT postback AP
 [MMS MT (xHTML)](#xHTML)                        
 [MMS MT (Binary degrade to xHTML and sent as SMS link)](#Degrade)  
 [MMS MT (Sending Failure)](#SendFail)      
-[MMS MT (Save MMS)](#SaveMMS) <BR />
-[MMS MT (Save MMS Content Failure)](#ContentFail)
+[Save MMS MT (Save MMS Success)](#SaveMMS) <BR />
+[Save MMS MT (Save MMS Failure)](#ContentFail)
 
-<h3>MT Postback Definitions</h3>
 
-<a name="Sent"><strong>SMS MT Sent</strong>
+<h3><a name="Sent"><strong>SMS MT Sent</strong></h3>
 <p><strong>Synopsis:</strong>This postback provides a notification when the SMS is sent out from our server.</p>
 <strong><p>This postback will contain the following nodes:</p></strong>
 CODE, ORIGIN<BR/>
@@ -46,7 +45,7 @@ xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;
 </pre>
 [Back To The Top](#DocTop)<BR />
 <BR />
-<a name="Status"><strong>SMS MT Status</strong>
+<h3><a name="Status"><strong>SMS MT Status</strong></h3>
 <p><strong>Synopsis:</strong> This postback provides a notification about the status of an SMS.</p>
 <strong><p>This postback will contain the following nodes:</p></strong>
 CODE, ORIGIN<BR/>
@@ -79,7 +78,7 @@ xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;
 </pre>
 [Back To The Top](#DocTop)<BR />
 <BR />
-<a name="Binary"><strong>MMS MT (Binary)</strong>
+<h3><a name="Binary"><strong>MMS MT (Binary)</strong></h3>
 <p><strong>Synopsis:</strong> In binary sending, we deliver a postback notification called &#8220;N101&#8243; immediately after we begin to process the MMS. Upon receiving Delivery Report (DLR), the system generates Postback notification &#8220;N102&#8243; with the handset name. N101 and N102 notifications are linked by TRACKINGID.<p>
 <strong><p>These postbacks will contain the following nodes:</p></strong>
 CODE, ORIGIN<BR/>
@@ -136,7 +135,7 @@ xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;
 </pre>
 [Back To The Top](#DocTop)<BR />
 <BR />
-<a name="xHTML"><strong>MMS MT (xHTML)</strong>
+<h3><a name="xHTML"><strong>MMS MT (xHTML)</strong></h3>
 <p><strong>Synopsis:</strong> In this method we deliver MMS as SMS link to the content, we send one Postback N101 notifying that we started to process the message. When we receive Delivery Report(DLR) for SMS, we generate Postback notification N202.</p>
 <strong><p>These postbacks will contain the following nodes:</p></strong>
 CODE, ORIGIN<BR/>
@@ -241,7 +240,7 @@ xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;
 </pre>
 [Back To The Top](#DocTop)<BR />
 <BR />
-<a name="SendFail"><strong>MMS MT (Sending Failure)</strong>
+<h3><a name="SendFail"><strong>MMS MT (Sending Failure)</strong></h3>
 <p><strong>Synopsis:</strong> Sometimes the system is unable to send an MMS out. In this situations we send a postback E101. 
 <strong><p>This postback will contain the following nodes:</p></strong>
 CODE, ORIGIN<BR/>
@@ -272,7 +271,7 @@ xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;
 </pre>
 [Back To The Top](#DocTop)<BR />
 <BR />
-<a name="SaveMMS"> <strong>MMS MT (Save MMS)</strong>
+<h3><a name="SaveMMS"> <strong>Save MMS MT (Save MMS Success)</strong></h3>
 <p><strong>Synopsis:</strong> When MMS is saved (using API or our MMS Composer) we generate postback notification. When saving was successful we generate N003.</p>
 <strong><p>This postback will contain the following nodes:</p></strong>
 CODE, ORIGIN<BR/>
@@ -289,7 +288,7 @@ MMSID &#8211; ID of the MMS<BR/>
 </pre>
 [Back To The Top](#DocTop)<BR />
 <BR />
-<a name="ContentFail"> <strong>MMS MT (Save MMS Content Failure)</strong>
+<h3><a name="ContentFail"> <strong>Save MMS MT (Save MMS Failure)</strong></h3>
 <p><strong>Synopsis:</strong> If encoding of the Content failed we generate postback E002 containgin MMSID and AUDIONAME/VIDEONAME pointing to the content that failed to encode properly.</p>
 <strong><p>This postback will contain the following nodes:</p></strong>
 CODE, ORIGIN<BR/>
