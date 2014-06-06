@@ -1,7 +1,7 @@
 <a name="DocTop"><a href="/1.3/README.md">Back to the Table of Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/1.3/CONTENTS/POSTBACKS/POSTBACK_SYSTEM_OVERVIEW.md">Postback System Overview</a>
 <h2>SMS/MMS MT Postbacks</h2>
 <div id="page-content"><strong>Brief Overview:</strong>
-This document will provide a technical overview of the MMS MT / SMS MT Postback API.  Briefly, this API allows each account to receive notifications  to their server about the delivery status of each message they sent.  For MMS, we have two methods for delivering content; Binary and xHTML. We send different postback notification formats depending on which method is used.
+This document will provide a technical overview of the MMS MT / SMS MT Postback API.  This API allows each account to receive notifications from Skycore to their server about the delivery status of each message they send.  For MMS, we have two methods for delivering content; Binary and xHTML. We send different postback notification formats depending on which method is used.
 
 <strong>Current list of the SMS/MMS MT Postback Types</strong>
  
@@ -9,7 +9,6 @@ This document will provide a technical overview of the MMS MT / SMS MT Postback 
 [SMS MT Status](#Status)                        
 [MMS MT (Binary)](#Binary)                       
 [MMS MT (xHTML)](#xHTML)                        
-[MMS MT (Binary degrade to xHTML and sent as SMS link)](#Degrade)  
 [MMS MT (Sending Failure)](#SendFail)      
 [Save MMS MT (Save MMS Success)](#SaveMMS) <BR />
 [Save MMS MT (Save MMS Failure)](#ContentFail)
@@ -136,7 +135,7 @@ xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;
 [Back To The Top](#DocTop)<BR />
 <BR />
 <h3><a name="xHTML"><strong>MMS MT (xHTML)</strong></h3>
-<p><strong>Synopsis:</strong> In this method we deliver MMS as SMS link to the content, we send one Postback N101 notifying that we started to process the message. When we receive Delivery Report(DLR) for SMS, we generate Postback notification N202.</p>
+<p><strong>Synopsis:</strong> In this method we deliver the MMS as an SMS containing a link to the content. The subject of the MMS is included in the SMS message and in the content. We first send one Postback N101 notifying that we started to process the message. When we receive Delivery Report(DLR) for SMS, we generate Postback notification N202. Typically this delivery method is used when the mobile network operator does not suport MMS or the destination handset does not support the size of the content within the MMS. </p>
 <strong><p>These postbacks will contain the following nodes:</p></strong>
 CODE, ORIGIN<BR/>
 SENTAS &#8211; this node indicate if MMS was delivered as MMS (binary delivery) or SMS (xHTML). For xHTML delivery it will always be SMS<BR/>
@@ -165,6 +164,7 @@ xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;
   &lt;TRACKINGID&gt;TU1TXzU5Nzg3Nw==&lt;/TRACKINGID&gt;
   &lt;SPID&gt;0001140&lt;/SPID&gt;
   &lt;TIMESTAMP&gt;2012-06-07T07:27:34-05:00&lt;/TIMESTAMP&gt;
+  &lt;STATUSDETAILS&gt;Handset setting: mms with pass via xHTML;&lt;/STATUSDETAILS&gt;
 &lt;/POSTBACK&gt;
 </pre>
 
@@ -172,59 +172,6 @@ xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;
 <pre>
 &lt;?xml version='1.0'?&gt;
 &lt;POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;
-  &lt;ORIGIN&gt;MMS_MT&lt;/ORIGIN&gt;
-  &lt;CODE&gt;N202&lt;/CODE&gt;
-  &lt;SENTAS&gt;SMS&lt;/SENTAS&gt;
-  &lt;STATUS&gt;Message Sent/Delivered&lt;/STATUS&gt;
-  &lt;FROM&gt;60856&lt;/FROM&gt;
-  &lt;TO&gt;16502424956&lt;/TO&gt;
-  &lt;TRACKINGID&gt;TU1TXzU5Nzg3Nw==&lt;/TRACKINGID&gt;
-  &lt;SPID&gt;0001140&lt;/SPID&gt;
-  &lt;TIMESTAMP&gt;2012-06-07T07:28:09-05:00&lt;/TIMESTAMP&gt;
-  &lt;AGGREGATORID&gt;11529-64807-97508-73852-97658&lt;/AGGREGATORID&gt;
-&lt;/POSTBACK&gt;
-</pre>
-[Back To The Top](#DocTop)<BR />
-<BR />
-<a name="Degrade"><strong>MMS MT (Binary Degraded to xHTML and Delivered as an SMS Link)</strong>
-<p><strong>Synopsis:</strong> In some rare cases we degrade the binary MMS and deliver it as an SMS link; this may be due to the MMS being too big to deliver as binary.  We send one Postback N101 notifying that we started to process the message - in this case the postback will contain an additional STATUSDETAILS node describing why it is being delivered as xHTML (This is the only difference from xHTML delivery).  When we receive the Delivery Report(DLR) for SMS, we generate a Postback N202. 
-<strong><p>These postbacks will contain the following nodes:</p></strong>
-CODE, ORIGIN<BR/>
-SENTAS &#8211; this node indicate if MMS was delivered as MMS (binary delivery) or SMS (xHTML). For xHTML delivery it will always be SMS<BR/>
-MMSID &#8211; ID of the MMS<BR/>
-FROM &#8211; shortcode the MMS is sent from<BR/>
-TO &#8211; MMS receiver<BR/>
-SPID &#8211; carrier ID &#8211; please check API documentation <a href="/1.3/CONTENTS/APPENDIX/APPENDIX_E.md">APPENDIX E</a><BR/>
-TRACKINGID &#8211; ID returned via API &#8211; this postback can be matched with API response using this field.<BR/>
-TIMESTAMP &#8211; timestamp of the MMS was sent (N101) or when SMS was delivered (N202)<BR/>
-STATUS &#8211; For N101 notification status can be "Message Sent". For N202 notification status can be "Message Sent/Delivered" or "Message Sent/Failed"<BR/>
-STATUSDETAILS &#8211; For N101 notification this node will contain details why the MMS is being delivered as xHTML.<BR/>
-AGGREGATORID &#8211; Only in N202 notification, contain Aggregator ID of the sending.<BR/>
-
-<p><strong>The N101 anatomy:</strong></p>
-<pre>
-&lt;?xml version='1.0'?&gt;
-&lt;POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;
-  &lt;ORIGIN&gt;MMS_MT&lt;/ORIGIN&gt;
-  &lt;CODE&gt;N101&lt;/CODE&gt;
-  &lt;SENTAS&gt;SMS&lt;/SENTAS&gt;
-  &lt;STATUS&gt;Message Sent&lt;/STATUS&gt;
-  &lt;MMSID&gt;39755&lt;/MMSID&gt;
-  &lt;FROM&gt;60856&lt;/FROM&gt;
-  &lt;TO&gt;16502424956&lt;/TO&gt;
-  &lt;TRACKINGID&gt;TU1TXzU5Nzg3Nw==&lt;/TRACKINGID&gt;
-  &lt;SPID&gt;0001140&lt;/SPID&gt;
-  &lt;TIMESTAMP&gt;2012-06-07T07:27:34-05:00&lt;/TIMESTAMP&gt;
-  &lt;STATUSDETAILS&gt;Handset setting: mms with pass via xHTML;&lt;/STATUSDETAILS&gt;
-&lt;/POSTBACK&gt;
-</pre>
-
-<p><strong><strong>The N202 anatomy:</strong></strong></p>
-<pre>
-&lt;?xml version='1.0'?&gt;
-&lt;POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;
   &lt;ORIGIN&gt;MMS_MT&lt;/ORIGIN&gt;
   &lt;CODE&gt;N202&lt;/CODE&gt;
