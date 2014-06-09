@@ -1,7 +1,7 @@
 <a href="/1.3/README.md">Back to the Table of Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="API_METHODS.md">Back to API Methods</a>
 <h2>removeMMSInboxContent</h2>
 <p><strong>Synopsis:</strong><br />
-Immediately removes all stored inbox content and text files attached to the MMS inbox and return the status of operation. Removing content files does not remove the transaction record. The content to remove is identified using the mmsinboxid tag, which can be obtained from MMS MO Postback notification XML inside TRACKINGID node (for details go to <a href="/SMS+MMS%20MO.md">SMS MO / MMS MO</a>) or from UI under MMS Inbox &gt;&gt; Moderation Panel</p>
+Immediately removes all stored inbox content and text files attached to the MMS inbox and return the status of operation. Removing content files does not remove the transaction record. The content to remove is identified using the mmsinboxid tag, which can be obtained from MMS MO Postback notification XML inside TRACKINGID node (for details go to <a href="/SMS+MMS_MO.md">SMS MO / MMS MO</a>) or from UI under MMS Inbox &gt;&gt; Moderation Panel</p>
 <div><strong>Request:</strong></div>
 <pre>&lt;REQUEST&gt;
   &lt;ACTION&gt;removeMMSInboxContent&lt;/ACTION&gt;
