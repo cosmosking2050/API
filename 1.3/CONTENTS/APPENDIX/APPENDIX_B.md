@@ -257,15 +257,15 @@
 <td>E892 'rellongitude3' value is invalid</td>
 </tr>
 <tr>
-<td>E641 Invalid MMS Inbox ID</td>
+<td>E641 Invalid MMS Inbox Message ID</td>
 <td>E893 'rellongitude4' value is invalid</td>
 </tr>
 <tr>
-<td>E642 MMS Inbox content is empty.</td>
+<td>E642 MMS Inbox message has no content.</td>
 <td>E894 'rellongitude5' value is invalid</td>
 </tr>
 <tr>
-<td>E643 Could not clean up MMS Inbox content.</td>
+<td>E643 Could not clean up MMS Inbox message content.</td>
 <td>E895 'rellongitude6' value is invalid</td>
 </tr>
 <tr>
