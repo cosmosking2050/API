@@ -19,7 +19,7 @@
     <li><a href="CONTENTS/METHODS/subscribe+unsubscribe.md">subscribe + unsubscribe</a></li>
     <li><a href="CONTENTS/METHODS/createMMSCampaign.md">createMMSCampaign</a></li>
     <li><a href="CONTENTS/METHODS/getSendingStatistics.md">getSendingStatistics</a></li>
-    <li><a href="CONTENTS/METHODS/removeMMSInboxContent.md">removeMMSInboxContent</a></li>
+    <li><a href="CONTENTS/METHODS/removeMMSInboxMessage.md">removeMMSInboxMessage</a></li>
     <li><a href="CONTENTS/METHODS/getEmailIds.md">getEmailIds</a></li>
     <li><a href="CONTENTS/METHODS/getEmailCampaigns.md">getEmailCampaigns</a></li>
     <li><a href="CONTENTS/METHODS/createEmailCampaign.md">createEmailCampaign</a></li>
