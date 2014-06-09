@@ -34,5 +34,5 @@ GET:
 <pre>&lt;RESPONSE&gt;
     &lt;STATUS&gt;Failure&lt;/STATUS&gt;
     &lt;ERRORCODE&gt;E641&lt;/ERRORCODE&gt;
-    &lt;ERRORINFO&gt;Invalid MMS Inbox ID&lt;/ERRORINFO&gt;
+    &lt;ERRORINFO&gt;Invalid MMS Inbox Message ID&lt;/ERRORINFO&gt;
 &lt;/RESPONSE&gt;</pre>
