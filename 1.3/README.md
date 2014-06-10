@@ -3,6 +3,42 @@
 <h3> Overview</h3>
 Developers! Do you want to add Skycore's capabilities into your backend or campaign? Use our APIs below to integrate with us. Make sure to read this document before you get started. <a href="http://www.skycore.com/contact">Contact us</a> if you need assistance. The use of our API is only available for accounts with a Paid Plan. There is a free trial available to test message deliverability, formatting and latency through the user interface at <a href="http://www.skycore.com">Skycore.com</a>.
 
+
+<h3>Fining your API Key</h3>
+
+You must first request access to the API from your account manager. When the API is turned on, you can find your API Key in the API Settings page under your Account tab. 
+
+<h3>Using the API</h3>
+
+There are two ways of making API requests:
+
+<code>GET Request</code>  - with URL encoded key/value pairs.
+
+<code>POST Request</code> - with XML data passed inside an 'xml' variable. 
+
+<h3>Authentication</h3>
+
+Authenticating your API call can be done in two ways:
+
+<code>apikey</code> – Each request must contain the accounts API KEY and MD5() encoded password. 
+
+<code>username</code> - Each request must contain the username and MD5() encoded password.
+
+
+<b>Related Error codes:</b>
+E100, E101, E102, E103, E104, E105, E106, E107, E108, E109
+
+
+*Error Example:*
+```xml
+<RESPONSE>
+  <STATUS>Failure</STATUS>
+  <ERRORCODE>E101</ERRORCODE>
+  <ERRORINFO> 'action' required</ERRORINFO>
+</RESPONSE>
+```
+
+
 <h2>Table of Contents</h2>
 <ul>
   <li> <a href="CONTENTS/METHODS/API_METHODS.md">API Methods</a></li>
@@ -54,39 +90,4 @@ Developers! Do you want to add Skycore's capabilities into your backend or campa
       <li><a href="CONTENTS/APPENDIX/APPENDIX_E.md">APPENDIX E [Carrier / SPID Reference Table]</a></li>
    </ul>
 </ul>
-
-<h3>Fining your API Key</h3>
-
-You must first request access to the API from your account manager. When the API is turned on, you can find your API Key in the API Settings page under your Account tab. 
-
-<h3>Using the API</h3>
-
-There are two ways of making API requests:
-
-<code>GET Request</code>  - with URL encoded key/value pairs.
-
-<code>POST Request</code> - with XML data passed inside an 'xml' variable. 
-
-<h3>Authentication</h3>
-
-Authenticating your API call can be done in two ways:
-
-<code>apikey</code> – Each request must contain the accounts API KEY and MD5() encoded password. 
-
-<code>username</code> - Each request must contain the username and MD5() encoded password.
-
-
-<b>Related Error codes:</b>
-E100, E101, E102, E103, E104, E105, E106, E107, E108, E109
-
-
-*Error Example:*
-~~~ .xml
-<RESPONSE>
-  <STATUS>Failure</STATUS>
-  <ERRORCODE>E101</ERRORCODE>
-  <ERRORINFO> 'action' required</ERRORINFO>
-</RESPONSE>
-~~~ 
-
 
