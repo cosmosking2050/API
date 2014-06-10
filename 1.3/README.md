@@ -23,9 +23,9 @@ You must first request access to the API from your Skycore account manager. Once
 
 <h4>Receiving API callbacks:</h4>
 
-<code>POST XML</code> - to the Postback URL defined in your Account's API Settings page. 
+<code>POST XML</code> - to the Postback URL defined in your Account's API Settings page. Postback notifications are forwarded to your server individually every second and require an HTTP STATUS 200 response.
 
-> If establishing a connection to your Postback URL takes longer than 10 seconds, the connection will time out and fail. We expect your server to respond with an successful status header containing HTTP STATUS 200. If no response is given or the HTTP code is not 200 we will consider it a failed request and will retry five minutes later up to 5 times.
+> We expect your server to accept our postback within 10 seconds by responding with a stanard HTTP STATUS 200 header (success). If establishing a connection to your Postback URL takes longer than 10 seconds, the connection will time out and be dropped.  If the connection times out or the HTTP code is not 200 we will retry the notification again five minutes later for a maximum of 5 retries per notification.
 
 <h4>API Limitations</h4>
 
