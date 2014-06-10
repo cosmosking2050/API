@@ -58,7 +58,7 @@ E100, E101, E102, E103, E104, E105, E106, E107, E108, E109
 
 <h2>Table of Contents</h2>
 <ul>
-  <li> <a href="CONTENTS/METHODS/API_METHODS.md">API Methods</a></li>
+  <li> <b>API Methods</b></li>
     <ul>
     <li><a href="CONTENTS/METHODS/createUser.md">createUser</a></li>
     <li><a href="CONTENTS/METHODS/loginUser.md">loginUser</a></li>
@@ -90,7 +90,7 @@ E100, E101, E102, E103, E104, E105, E106, E107, E108, E109
     <li><a href="CONTENTS/METHODS/getPassEmailTemplate.md">getPassEmailTemplate</a></li>
     </ul>
    <br/>
-  <li><a href="CONTENTS/POSTBACKS/POSTBACK_SYSTEM_OVERVIEW.md">Postback Notifications</a></li>
+  <li><b>Postback Notifications</b></li>
     <ul>
     <li><a href="CONTENTS/POSTBACKS/POSTBACK_SMS+MMS_MO.md">SMS MO/MMS MO (Mobile Originated) Postbacks</a></li>
     <li><a href="CONTENTS/POSTBACKS/POSTBACK_SMS+MMS_MT.md">SMS MT/MMS MT (Mobile Terminated) Postbacks</a> </li>
@@ -98,7 +98,7 @@ E100, E101, E102, E103, E104, E105, E106, E107, E108, E109
     <li><a href="CONTENTS/POSTBACKS/POSTBACK_SUB+UNSUB.md">Subscribe + Unsubscribe Postbacks</a> </li>
     </ul>
     <br/>
-  <li> <a href="CONTENTS/APPENDIX/API_APPENDIX.md">APPENDIX</a> </li>
+  <li><b>APPENDIX</b></li>
     <ul>
       <li><a href="CONTENTS/APPENDIX/APPENDIX_A.md">APPENDIX A [Key Term Definitions]</a></li>
       <li><a href="CONTENTS/APPENDIX/APPENDIX_B.md">APPENDIX B [API Error Codes]</a></li>
