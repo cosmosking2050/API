@@ -51,7 +51,7 @@ E100, E101, E102, E103, E104, E105, E106, E107, E108, E109
 ```
 <h3>Special Considerations</h3>
 
-<b>Use International Number Format:</b> You must use international format when sending SMS or MMS. International format includes both the country code with the phone number. We use the country code to determine routing of the message. There should be no dialing prefixes (eg 00 or 001) or special characters such as the plus symbol when submitting messages. (e.g. ’642111111′ not ‘+642111111′)
+<b>Always Use International Number Format!</b> You must use international format when sending SMS or MMS. International format includes both the country code with the phone number. We use the country code to determine routing of the message. There should be no dialing prefixes (eg 00 or 001) or special characters such as the plus symbol when submitting messages. (e.g. ’642111111′ not ‘+642111111′)
 
 > For example the US number (774)-319-9144 in international number format would be 17743199144 because the USA country code is 1.
 
