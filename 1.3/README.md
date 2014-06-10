@@ -1,5 +1,9 @@
 <h2>Table of Contents</h2>
 <h3> Overview</h3>
+Developers! Want to integrate Skycore into your own service or application? Use our APIs to integrate our functionality into your business or campaign. Make sure to read this document before you get started.
+
+Note: Use of our API is only available for accounts with a Paid Plan.
+
 <ul>
   <li> <a href="CONTENTS/METHODS/API_METHODS.md">API Methods</a></li>
     <ul>
@@ -53,21 +57,21 @@
 
 <h3>Fining your API Key</h3>
 
-You must request access to the API from your account manager. When the API is turned on you will have a link in the Account tab to API Settings. You can find or reset your API Key on this page.
+You must first request access to the API from your account manager. When the API is turned on, you can find your API Key in the API Settings page under your Account tab. 
 
 <h3>Using the API</h3>
 
 There are two ways of making API requests:<br/>
 
-<code>GET Request</code> with URL encoded key/value pairs
+<code>GET Request</code>  - with URL encoded key/value pairs.
 
-<code>POST Request</code> with XML – XML needs to be passed inside an 'xml' variable. 
+<code>POST Request</code> - with XML data passed inside an 'xml' variable. 
 
 <h3>Authentication</h3>
 Authenticating an API call can be done in two ways:
-Using apikey    – Each request must contain API KEY that is used for authentication. The API KEY is a random, unique string that can be retrieved from the API Settings page.
-Using user/pass - Each request must contain username and MD5() encoded password.
-<br/><br/>
+<code>apikey</code> – Each request must contain the accounts API KEY and MD5() encoded password. 
+<code>username</code> - Each request must contain the username and MD5() encoded password.
+
 
 <b>Related Error codes:</b><br/>
 E100, E101, E102, E103, E104, E105, E106, E107, E108, E109
