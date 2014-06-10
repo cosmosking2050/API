@@ -10,15 +10,31 @@ You must first request access to the API from your Skycore account manager. Once
 
 <h3>Using the API</h3>
 
-There are two ways of making API requests:
+<h4>Making API requests:</h4>
 
 <code>GET Request</code>  - with URL encoded key/value pairs.
 
 <code>POST Request</code> - with XML data passed inside an 'xml' variable. 
 
-There is one way of receiving API callbacks:
+> Note: You must URL Encode the values in the query string of your GET Requests. Failure to do so may result in the API failing to fully interpret your request. 
+
+Before encoding:
+
+<code>&data_full_name=John Smith&data_age=35</code>
+
+After encoding: (space replaced with plus sign)
+
+<code>&data_full_name=John+Smith&data_age=35</code>
+
+<h4>Receiving API callbacks:</h4>
 
 <code>POST XML</code> - to the Postback URL defined in your Account's API Settings page. 
+
+> If establishing a connection to your Postback URL takes longer than 10 seconds, the connection will time out and fail. We expect your server to respond with an successful status header containing HTTP STATUS 200. If no response is given or the HTTP code is not 200 we will consider it a failed request and will retry five minutes later up to 5 times.
+
+<h4>Limitations</h4>
+
+You may have a throughput limit on your account. If your API requests exceed the throughput on your account then you may have some latency in the delivery of your messages.
 
 <h3>Authentication</h3>
 
