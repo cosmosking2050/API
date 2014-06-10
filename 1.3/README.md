@@ -1,6 +1,6 @@
 <h2>Table of Contents</h2>
+<h3> Overview</h3>
 <ul>
-  <li> <a href="CONTENTS/API_XML_OVERVIEW.md">API XML Overview</a> </li>
 
   <li> <a href="CONTENTS/LANGUAGE_AND_ABBREVIATIONS.md">Language and Abbreviations</a> </li>  
  
@@ -68,8 +68,7 @@ There are two ways of making API requests:<br/>
 
 <code>POST Request</code> with XML – XML needs to be passed inside an 'xml' variable. 
 
-<br/><br/>
-<h3>Authentication<h3>
+<h3>Authentication</h3>
 Authenticating an API call can be done in two ways:
 Using apikey    – Each request must contain API KEY that is used for authentication. The API KEY is a random, unique string that can be retrieved from the API Settings page.
 Using user/pass - Each request must contain username and MD5() encoded password.
@@ -77,11 +76,13 @@ Using user/pass - Each request must contain username and MD5() encoded password.
 
 <b>Related Error codes:</b><br/>
 E100, E101, E102, E103, E104, E105, E106, E107, E108, E109
-<br/><br/>
-<b>Response Example:</b><br/>
-&lt;RESPONSE&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;STATUS&gt;Failure&lt;/STATUS&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;ERRORCODE&gt;E101&lt;/ERRORCODE&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;ERRORINFO&gt; 'action' required&lt;/ERRORINFO&gt;<br/>
-&lt;/RESPONSE&gt;
 
+
+*Response Example:*
+~~~ .xml
+<RESPONSE>
+  <STATUS>Failure</STATUS>
+  <ERRORCODE>E101</ERRORCODE>
+  <ERRORINFO> 'action' required</ERRORINFO>
+</RESPONSE>
+~~~ 
