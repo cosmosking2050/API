@@ -6,7 +6,7 @@ Developers! Do you want to add Skycore's capabilities into your backend or campa
 
 <h3>Fining your API Key</h3>
 
-You must first request access to the API from your account manager. When the API is turned on, you can find your API Key in the API Settings page under your Account tab. 
+You must first request access to the API from your Skycore account manager. Once the API is turned on, you can find your API_KEY in the API Settings page under your 'Account' dropown. 
 
 <h3>Using the API</h3>
 
