@@ -27,7 +27,7 @@
 <li> The following tags are always a part of our postbacks:
   <ul>
   <li>ORIGIN &#8211; identifies origin type of the postback</li>
-  <li>CODE &#8211; identifies situation for which the postback was generated. See <a href="/1.3/CONTENTS/APPENDIX/APPENDIX_B.md">APPENDIX B</a> for all notification code definitions.</li>
+  <li>CODE &#8211; identifies situation for which the postback was generated. See <a href="/1.3/CONTENTS/APPENDIX/APPENDIX_D.md">APPENDIX D</a> for all notification code definitions.</li>
   </ul>
 </ul>
 
