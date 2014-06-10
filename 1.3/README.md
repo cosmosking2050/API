@@ -68,8 +68,11 @@ There are two ways of making API requests:
 <code>POST Request</code> - with XML data passed inside an 'xml' variable. 
 
 <h3>Authentication</h3>
+
 Authenticating an API call can be done in two ways:
+
 <code>apikey</code> – Each request must contain the accounts API KEY and MD5() encoded password. 
+
 <code>username</code> - Each request must contain the username and MD5() encoded password.
 
 
