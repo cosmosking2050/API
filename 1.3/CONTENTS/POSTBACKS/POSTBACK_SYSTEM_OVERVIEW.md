@@ -31,10 +31,4 @@
   </ul>
 </ul>
 
-<strong>Postback Groups</strong>
-<ul>
-<li><a href="/1.3/CONTENTS/POSTBACKS/POSTBACK_SUB+UNSUB.md">Sub/Unsub Phone&Email</a></li>
-<li><a href="/1.3/CONTENTS/POSTBACKS/POSTBACK_SMS+MMS_MO.md">SMS/MMS MO(Mobile Originated)</a></li>
-<li><a href="/1.3/CONTENTS/POSTBACKS/POSTBACK_SMS+MMS_MT.md">SMS/MMS MT(Mobile Terminated)</a></li>
-<li><a href="/1.3/CONTENTS/POSTBACKS/POSTBACK_PASSES.md">Pass Generation</a></li>
-</ul>
+
