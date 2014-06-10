@@ -61,7 +61,7 @@ You must first request access to the API from your account manager. When the API
 
 <h3>Using the API</h3>
 
-There are two ways of making API requests:<br/>
+There are two ways of making API requests:
 
 <code>GET Request</code>  - with URL encoded key/value pairs.
 
@@ -73,7 +73,7 @@ Authenticating an API call can be done in two ways:
 <code>username</code> - Each request must contain the username and MD5() encoded password.
 
 
-<b>Related Error codes:</b><br/>
+<b>Related Error codes:</b>
 E100, E101, E102, E103, E104, E105, E106, E107, E108, E109
 
 
@@ -88,7 +88,7 @@ E100, E101, E102, E103, E104, E105, E106, E107, E108, E109
 
 
 <h3>Language</h3>
-<p>The following words in this documentation are to be interpreted literally:
+The following words in this documentation are to be interpreted literally:
 <ul>
  <li>"MUST"</li>
  <li>"MUST NOT"</li>
@@ -100,4 +100,4 @@ E100, E101, E102, E103, E104, E105, E106, E107, E108, E109
  <li>"MAY"</li> 
  <li>"OPTIONAL"</li>
 </ul>
-</p>
+
