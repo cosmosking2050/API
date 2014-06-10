@@ -16,6 +16,10 @@ There are two ways of making API requests:
 
 <code>POST Request</code> - with XML data passed inside an 'xml' variable. 
 
+There is one way of receiving API callbacks:
+
+<code>POST XML</code> - to the Postback URL defined in your Account's API Settings page. 
+
 <h3>Authentication</h3>
 
 Authenticating your API call can be done in two ways:
