@@ -38,8 +38,8 @@ Authenticating your API call can be done in two ways:
 <code>apikey</code> – Each API request must contain the accounts APIKEY. Some API requests may also require an MD5 encrypted password. 
 
 
-<b>Authentication Error codes:</b>
-E100, E101, E102, E103, E104, E105, E106, E107, E108, E109
+<b>Authentication Error codes:</b> E100, E101, E102, E103, E104, E105, E106, E107, E108, E109
+
 See <a href="CONTENTS/APPENDIX/APPENDIX_B.md">APPENDIX B [API Error Codes]</a>
 
 *Error Example:*
