@@ -42,7 +42,7 @@ Authenticating your API call can be done in two ways:
 
 See <a href="CONTENTS/APPENDIX/APPENDIX_B.md">APPENDIX B [API Error Codes]</a>
 
-*Error Example:*
+*Error XML Example:*
 ```xml
 <RESPONSE>
   <STATUS>Failure</STATUS>
