@@ -9,8 +9,8 @@ in <a href="/1.3/CONTENTS/APPENDIX/APPENDIX_C.md">Appendix C</a>.
 <pre>&lt;REQUEST&gt;
     &lt;ACTION&gt;getSendingStatus &lt;/ACTION&gt;
     &lt;API_KEY&gt;API KEY&lt;/API_KEY&gt;
-    &lt;START_DATE&gt;StartDate&lt;/START_DATE&gt;
-    &lt;END_DATE&gt;EndDate&lt;/ END_DATE&gt;
+    &lt;START_DATE&gt;UTC StartDate&lt;/START_DATE&gt;
+    &lt;END_DATE&gt;UTC EndDate&lt;/ END_DATE&gt;
 &lt;/REQUEST&gt;</pre>
 <div><strong>Request Parameters:</strong></div>
 <pre><strong>Mandatory:</strong> Action, API_KEY, End_Date, Start_Date
