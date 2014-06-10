@@ -17,8 +17,8 @@
 <p>Here is the example of SMS sending XML:</p>
 <pre>&lt;TEXT id="455118" to="11112233444" carrier="Verizon Wireless" from="60856" 
  body="Jack: Hello My friend!"&gt;
-   &lt;ACK gw="10" net="0" time="2012-04-30 08:30:12.327558-04"&gt;
-   &lt;DLR gw="20" net="0" time="2012-04-30 08:30:12.327558-04"&gt;
+   &lt;ACK gw="10" net="0" time="2012-04-30T08:30:12.327558Z"&gt;
+   &lt;DLR gw="20" net="0" time="2012-04-30T08:30:12.327558Z"&gt;
 &lt;/TEXT&gt;</pre>
 <p><strong>MMS sending XML</strong></p>
 <p>All data related to sending one MMS are encapsulated inside <em>&lt;CONTENT&gt;</em> tag which contain few attributes:</p>
@@ -57,10 +57,10 @@
 <pre>&lt;CONTENT id="455076" carrier="T-Mobile" to="11112233444" delivery="binary" 
  contentid="40301" contentname="Flowers" from="60856"&gt; 
    &lt;MSG_STATUS&gt; 
-      &lt;INQUE time="2012-04-24 04:45:15.655766-04" /&gt; 
-      &lt;INIT gw="0" net="0" time="2012-04-24 04:45:16.831756-04"/&gt; 
-      &lt;ACK gw="9" net="0" time="2012-04-24 04:45:18.80118-04"/&gt; 
-      &lt;DLR gw="20" net="1000" time="2012-04-24 04:45:23.953745-04"/&gt; 
+      &lt;INQUE time="2012-04-24T04:45:15.655766Z" /&gt; 
+      &lt;INIT gw="0" net="0" time="2012-04-24T04:45:16.831756Z"/&gt; 
+      &lt;ACK gw="9" net="0" time="2012-04-24T04:45:18.80118Z"/&gt; 
+      &lt;DLR gw="20" net="1000" time="2012-04-24T04:45:23.953745Z"/&gt; 
    &lt;/MSG_STATUS&gt; 
    &lt;MM7_HANDSETID&gt;motol7c&lt;/MM7_HANDSETID&gt; 
 &lt;/CONTENT&gt;</pre>
@@ -68,11 +68,11 @@
 <pre>&lt;CONTENT id="455119" to="48111222333" carrier="All Carriers" delivery="xhtml" 
  contentid="39755" contentname="Flowers" from="+447624805892" &gt;
    &lt;MSG_STATUS&gt;
-      &lt;INQUE time="2012-04-30 09:06:07.5649-04" /&gt;
-      &lt;INIT gw="0" net="0" time="2012-04-30 09:06:08.338719-04"/&gt;
-      &lt;ACK gw="10" net="0" time="2012-04-30 09:06:08.918484-04"/&gt;
-      &lt;OPENED gw="11" net="0" time="2012-04-30 09:06:39.258603-04"/&gt;
-      &lt;DLR gw="20" net="0" time="2012-04-30 09:06:08.783382-04"&gt;
+      &lt;INQUE time="2012-04-30T09:06:07.5649Z" /&gt;
+      &lt;INIT gw="0" net="0" time="2012-04-30T09:06:08.338719Z"/&gt;
+      &lt;ACK gw="10" net="0" time="2012-04-30T09:06:08.918484Z"/&gt;
+      &lt;OPENED gw="11" net="0" time="2012-04-30T09:06:39.258603Z"/&gt;
+      &lt;DLR gw="20" net="0" time="2012-04-30T09:06:08.783382Z"&gt;
    &lt;/MSG_STATUS&gt;
    &lt;XHTML_HANDSETID&gt;Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 
     (KHTML, like Gecko) Chrome/18.0.1025.162 Safari/535.19&lt;/XHTML_HANDSETID&gt;
@@ -97,10 +97,10 @@
     contentname="Flowers" /&gt;
       &lt;CONTENT id="150838" carrier="Verizon Wireless" to="11112233444" delivery="binary"&gt;
          &lt;MSG_STATUS&gt;
-            &lt;INQUE time="2010-10-12 06:32:46.620197-04" /&gt;
-            &lt;INIT gw="0" net="0" time="2010-10-12 06:33:12.115367-04"/&gt;
-            &lt;ACK gw="9" net="1000" time="2010-10-12 06:33:12.508827-04"/&gt;
-            &lt;DLR gw="20" net="1000" time="2010-10-12 06:33:19.579773-04"/&gt;
+            &lt;INQUE time="2010-10-12T06:32:46.620197Z" /&gt;
+            &lt;INIT gw="0" net="0" time="2010-10-12T06:33:12.115367Z"/&gt;
+            &lt;ACK gw="9" net="1000" time="2010-10-12T06:33:12.508827Z"/&gt;
+            &lt;DLR gw="20" net="1000" time="2010-10-12T06:33:19.579773Z"/&gt;
          &lt;/MSG_STATUS&gt;
          &lt;MM7_HANDSETID&gt;VX8000v1&lt;/MM7_HANDSETID&gt;
       &lt;/CONTENT&gt;
@@ -112,15 +112,15 @@
 &lt;/BATCHES&gt;</pre>
 <p>Here is SMS sending inside alert batch</p>
 <pre>&lt;BATCHES&gt;
-   &lt;BATCH id="21896" from="60856" scheduled_date="2012-04-27 13:00:00-04@server localtime" 
+   &lt;BATCH id="21896" from="60856" scheduled_date="2012-04-27T13:00:00Z@server localtime" 
     campaignid="1442" campaignname="MyCampaign" body="Sample SMS for Campaign" /&gt; 
       &lt;TEXT id="455110" to="11112233444"&gt;
-         &lt;ACK gw="10" net="0" time="2012-04-27 13:05:05.89278-04"&gt;
-         &lt;DLR gw="20" net="0" time="2012-04-27 13:05:05.89278-04"&gt; 
+         &lt;ACK gw="10" net="0" time="2012-04-27T13:05:05.89278Z"&gt;
+         &lt;DLR gw="20" net="0" time="2012-04-27T13:05:05.89278Z"&gt; 
       &lt;/TEXT&gt;
       &lt;TEXT id="455109" to="11112233444"&gt;
-         &lt;ACK gw="10" net="0" time="2012-04-27 13:05:05.881257-04"&gt;
-         &lt;DLR gw="20" net="0" time="2012-04-27 13:05:05.881257-04"&gt;
+         &lt;ACK gw="10" net="0" time="2012-04-27T13:05:05.881257Z"&gt;
+         &lt;DLR gw="20" net="0" time="2012-04-27T13:05:05.881257Z"&gt;
       &lt;/TEXT&gt; 
       ....
       ....
@@ -143,10 +143,10 @@
     contentid="40301" contentname="Flowers" /&gt; 
       &lt;CONTENT id="455076" carrier="T-Mobile" to="11112233444" delivery="binary"&gt; 
          &lt;MSG_STATUS&gt; 
-            &lt;INQUE time="2012-04-24 04:45:15.655766-04" /&gt; 
-            &lt;INIT gw="0" net="0" time="2012-04-24 04:45:16.831756-04"/&gt; 
-            &lt;ACK gw="9" net="0" time="2012-04-24 04:45:18.80118-04"/&gt; 
-            &lt;DLR gw="20" net="1000" time="2012-04-24 04:45:23.953745-04"/&gt; 
+            &lt;INQUE time="2012-04-24T04:45:15.655766Z" /&gt; 
+            &lt;INIT gw="0" net="0" time="2012-04-24T04:45:16.831756Z"/&gt; 
+            &lt;ACK gw="9" net="0" time="2012-04-24T04:45:18.80118Z"/&gt; 
+            &lt;DLR gw="20" net="1000" time="2012-04-24T04:45:23.953745Z"/&gt; 
          &lt;/MSG_STATUS&gt; 
          &lt;MM7_HANDSETID&gt;motol7c&lt;/MM7_HANDSETID&gt; 
       &lt;/CONTENT&gt;
@@ -161,12 +161,12 @@
    &lt;AUTORESPONDER id="352" from="60856" campaignid="1442" campaignname="MyCampaign" 
     body="text autoresponder" /&gt;
       &lt;TEXT id="455078" to="11112233444"&gt;
-         &lt;ACK gw="10" net="0" time="2012-04-24 04:45:48.133354-04"&gt;
-         &lt;DLR gw="20" net="0" time="2012-04-24 04:45:48.133354-04"&gt;
+         &lt;ACK gw="10" net="0" time="2012-04-24T04:45:48.133354Z"&gt;
+         &lt;DLR gw="20" net="0" time="2012-04-24T04:45:48.133354Z"&gt;
       &lt;/TEXT&gt;
       &lt;TEXT id="455077" to="11112233444"&gt;
-         &lt;ACK gw="10" net="0" time="2012-04-24 04:45:17.278337-04"&gt;
-         &lt;DLR gw="20" net="0" time="2012-04-24 04:45:17.278337-04"&gt;
+         &lt;ACK gw="10" net="0" time="2012-04-24T04:45:17.278337Z"&gt;
+         &lt;DLR gw="20" net="0" time="2012-04-24T04:45:17.278337Z"&gt;
       &lt;/TEXT&gt;
       .... 
       .... 
@@ -184,8 +184,8 @@
    &lt;SUB to="11112233444" carrier="AT&amp;T" from="60856"&gt; 
       &lt;TEXT id="455037" text="MyBrand: Confirmed to MyCampaign, msg/. Msg&amp;Data rates may 
        apply. Reply STOP to cancel, HELP for help. Enterprisem.ms" &gt;
-         &lt;ACK gw="10" net="0" time="2012-04-10 06:38:56.090705-04"&gt;
-         &lt;DLR gw="20" net="0" time="2012-04-10 06:38:56.090705-04"&gt;
+         &lt;ACK gw="10" net="0" time="2012-04-10T06:38:56.090705Z"&gt;
+         &lt;DLR gw="20" net="0" time="2012-04-10T06:38:56.090705Z"&gt;
       &lt;/TEXT&gt; 
    &lt;/SUB&gt;
    ....
@@ -196,16 +196,16 @@
    &lt;SUB to="11112233444" carrier="T-Mobile" from="60856"&gt;
       &lt;CONTENT id="455112" contentid="39755" contentname="Flowers" delivery="binary"&gt;
          &lt;MSG_STATUS&gt;
-            &lt;INQUE time="2012-04-27 13:32:21.798528-04" /&gt;
-      &lt;INIT gw="0" net="0" time="2012-04-27 13:32:22.204127-04"/&gt;
-	    &lt;ACK gw="9" net="0" time="2012-04-27 13:32:24.200166-04"/&gt;	    
+            &lt;INQUE time="2012-04-27T13:32:21.798528Z" /&gt;
+      &lt;INIT gw="0" net="0" time="2012-04-27T13:32:22.204127Z"/&gt;
+	    &lt;ACK gw="9" net="0" time="2012-04-27T13:32:24.200166Z"/&gt;	    
          &lt;/MSG_STATUS&gt;
          &lt;MM7_HANDSETID&gt;Default&lt;/MM7_HANDSETID&gt;
       &lt;/CONTENT&gt;
       &lt;TEXT id="455111" text="MyBrand: To follow MyCampaign,  msg/, reply YES. 
        Msg&amp;Data rates may apply. Reply HELP for help. Enterprisem.ms." &gt;
-         &lt;ACK gw="10" net="0" time="2012-04-27 13:32:12.892155-04"&gt;
-         &lt;DLR gw="20" net="0" time="2012-04-27 13:32:12.892155-04"&gt;
+         &lt;ACK gw="10" net="0" time="2012-04-27T13:32:12.892155Z"&gt;
+         &lt;DLR gw="20" net="0" time="2012-04-27T13:32:12.892155Z"&gt;
       &lt;/TEXT&gt;
    &lt;/SUB&gt;
    ....
@@ -217,10 +217,10 @@ Below is example of MMS:</p>
    &lt;CONTENT id="455043" carrier="All Carriers" to="48111222333" delivery="xhtml" 
     contentid="39755" contentname="Flowers" from="+447624805892" &gt;
       &lt;MSG_STATUS&gt;
-         &lt;INQUE time="2012-04-23 09:04:57.353055-04" /&gt;
-         &lt;INIT gw="0" net="0" time="2012-04-23 09:04:58.048795-04"/&gt;
-         &lt;ACK gw="10" net="0" time="2012-04-23 09:05:03.516081-04"/&gt;
-         &lt;ERROR info="delivery failure" time="2012-04-23 09:05:02.982315-04"&gt;	    
+         &lt;INQUE time="2012-04-23T09:04:57.353055Z" /&gt;
+         &lt;INIT gw="0" net="0" time="2012-04-23T09:04:58.048795Z"/&gt;
+         &lt;ACK gw="10" net="0" time="2012-04-23T09:05:03.516081Z"/&gt;
+         &lt;ERROR info="delivery failure" time="2012-04-23T09:05:02.982315Z"&gt;	    
       &lt;/MSG_STATUS&gt;
    &lt;/CONTENT&gt;
    ....
@@ -229,8 +229,8 @@ Below is example of MMS:</p>
 <p>Below is example of SMS:</p>
 <pre>&lt;SENDING_LIST&gt;
    &lt;TEXT id="150283" to="11112233444" text="Hello my friend. Where do you want to go today?"&gt;
-      &lt;ACK gw="10" net="0" time="2010-10-05 12:21:40.947088-04"&gt;
-      &lt;DLR gw="20" net="0" time="2010-10-05 12:21:40.947088-04"&gt;
+      &lt;ACK gw="10" net="0" time="2010-10-05T12:21:40.947088Z"&gt;
+      &lt;DLR gw="20" net="0" time="2010-10-05T12:21:40.947088Z"&gt;
    &lt;/TEXT&gt;
    ....
    ....
