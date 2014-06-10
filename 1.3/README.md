@@ -16,15 +16,10 @@ You must first request access to the API from your Skycore account manager. Once
 
 <code>POST Request</code> - with XML data passed inside an 'xml' variable. 
 
-> Note: You must URL Encode the values in the query string of your GET Requests. Failure to do so may result in the API failing to fully interpret your request. 
+> Note: You must URL Encode the values in the query string of your GET Requests. Failure to do so may result in the API failing to fully interpret your request. For example this query string <code>&data_full_name=John Smith&data_age=35</code> would need to be encoded <code>&data_full_name=John+Smith&data_age=35</code> (space replaced with plus sign)
 
-Before encoding:
 
-<code>&data_full_name=John Smith&data_age=35</code>
 
-After encoding: (space replaced with plus sign)
-
-<code>&data_full_name=John+Smith&data_age=35</code>
 
 <h4>Receiving API callbacks:</h4>
 
