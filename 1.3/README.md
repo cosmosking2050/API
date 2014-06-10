@@ -1,6 +1,6 @@
 <h2>Table of Contents</h2>
 <h3> Overview</h3>
-Developers! Want to integrate Skycore capabilities into your backend or campaign? Use our APIs to integrate the following functionality into your business. Make sure to read this document before you get started. 
+Developers! Want to integrate Skycore capabilities into your backend or campaign? Use our APIs to integrate the following functionality into your business. Make sure to read this document before you get started. Contact us if you need assistance.
 
 Note: Use of our API is only available for accounts with a Paid Plan.
 
