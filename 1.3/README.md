@@ -51,7 +51,7 @@ Note: Use of our API is only available for accounts with a Paid Plan.
       <li><a href="CONTENTS/APPENDIX/APPENDIX_B.md">APPENDIX B [Error/Notification/Protocol Code References]</a></li>
       <li><a href="CONTENTS/APPENDIX/APPENDIX_C.md">APPENDIX C [XML Report Export Format]</a></li>
       <li><a href="CONTENTS/APPENDIX/APPENDIX_D.md">APPENDIX D [Special API Considerations]</a></li>
-      <li><a href="CONTENTS/APPENDIX/APPENDIX_E.md">APPENDIX E [SPID Reference Table]</a></li>
+      <li><a href="CONTENTS/APPENDIX/APPENDIX_E.md">APPENDIX E [Carrier / SPID Reference Table]</a></li>
    </ul>
 </ul>
 
