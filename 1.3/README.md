@@ -56,7 +56,8 @@ E100, E101, E102, E103, E104, E105, E106, E107, E108, E109
 > For example the US number (774)-319-9144 in international number format would be 17743199144 because the USA country code is 1.
 
 
-<h2>API Methods</h2>
+<h2>Table Of Contents</h2>
+<h3>API Methods</h3>
 <li><b>User</b></li>
     <ul>
     <li><a href="CONTENTS/METHODS/createUser.md">createUser</a></li>
@@ -98,7 +99,7 @@ E100, E101, E102, E103, E104, E105, E106, E107, E108, E109
     <li><a href="CONTENTS/METHODS/getPassEmailTemplate.md">getPassEmailTemplate</a></li>
     </ul>
 
-<h2>Postback Notifications</h2>
+<h3>Postback Notifications</h3>
     <ul>
     <li><a href="CONTENTS/POSTBACKS/POSTBACK_SMS+MMS_MO.md">SMS MO/MMS MO (Mobile Originated) Postbacks</a></li>
     <li><a href="CONTENTS/POSTBACKS/POSTBACK_SMS+MMS_MT.md">SMS MT/MMS MT (Mobile Terminated) Postbacks</a> </li>
@@ -106,13 +107,13 @@ E100, E101, E102, E103, E104, E105, E106, E107, E108, E109
     <li><a href="CONTENTS/POSTBACKS/POSTBACK_SUB+UNSUB.md">Subscribe + Unsubscribe Postbacks</a> </li>
     </ul>
 
-<h4>APPENDIX</h4>
-    <ul>
+<h3>Postback Notifications</h3>
+      <ul>
       <li><a href="CONTENTS/APPENDIX/APPENDIX_A.md">APPENDIX A [Key Term Definitions]</a></li>
       <li><a href="CONTENTS/APPENDIX/APPENDIX_B.md">APPENDIX B [API Error Codes]</a></li>
       <li><a href="CONTENTS/APPENDIX/APPENDIX_C.md">APPENDIX C [XML Report Export Format]</a></li>
       <li><a href="CONTENTS/APPENDIX/APPENDIX_D.md">APPENDIX D [Postback Notification Codes]</a></li>
       <li><a href="CONTENTS/APPENDIX/APPENDIX_E.md">APPENDIX E [Carrier / SPID Reference Table]</a></li>
-   </ul>
-</ul>
+      </ul>
+  
 
