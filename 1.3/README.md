@@ -3,7 +3,7 @@
 <h3> Overview</h3>
 Developers! Do you want to integrate Skycore capabilities into your backend or campaign? Use our APIs below to integrate with us. Make sure to read this document before you get started. Contact us if you need assistance.
 
-Note: Use of our API is only available for accounts with a Paid Plan. There is a free trial available through the user interface to test our deliverability and content encoding services. 
+Note: The user of our API is only available for accounts with a Paid Plan. There is a free trial available through the user interface to test our deliverability and content encoding services. 
 
 <h2>Table of Contents</h2>
 <ul>
