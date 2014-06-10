@@ -54,6 +54,34 @@
       <li><a href="CONTENTS/APPENDIX/APPENDIX_D.md">APPENDIX D [Special Considerations regarding API Implementation]</a></li>
       <li><a href="CONTENTS/APPENDIX/APPENDIX_E.md">APPENDIX E [SPID Reference Table]</a></li>
    </ul>
-   
 </ul>
+
+<h3>Fining your API Key</h3>
+
+You must request access to the API from your account manager. When the API is turned on you will have a link in the Account tab to API Settings. You can find or reset your API Key on this page.
+
+<h3>Using the API</h3>
+
+There are two ways of making API requests:<br/>
+
+<code>GET Request</code> with URL encoded key/value pairs
+
+<code>POST Request</code> with XML – XML needs to be passed inside an 'xml' variable. 
+
+<br/><br/>
+<h3>Authentication<h3>
+Authenticating an API call can be done in two ways:
+Using apikey    – Each request must contain API KEY that is used for authentication. The API KEY is a random, unique string that can be retrieved from the API Settings page.
+Using user/pass - Each request must contain username and MD5() encoded password.
+<br/><br/>
+
+<b>Related Error codes:</b><br/>
+E100, E101, E102, E103, E104, E105, E106, E107, E108, E109
+<br/><br/>
+<b>Response Example:</b><br/>
+&lt;RESPONSE&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;STATUS&gt;Failure&lt;/STATUS&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;ERRORCODE&gt;E101&lt;/ERRORCODE&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;ERRORINFO&gt; 'action' required&lt;/ERRORINFO&gt;<br/>
+&lt;/RESPONSE&gt;
 
