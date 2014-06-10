@@ -77,7 +77,7 @@ Authenticating an API call can be done in two ways:
 E100, E101, E102, E103, E104, E105, E106, E107, E108, E109
 
 
-*Response Example:*
+*Error Example:*
 ~~~ .xml
 <RESPONSE>
   <STATUS>Failure</STATUS>
