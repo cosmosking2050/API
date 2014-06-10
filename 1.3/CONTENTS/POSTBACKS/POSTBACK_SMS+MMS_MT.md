@@ -231,10 +231,10 @@ When MMS is saved (using API or the MMS Composer) we generate postback notificat
 ```
 [Back To The Top](#DocTop)
 
-##ToDo
-[ ] Add an SMS failure example XML
-[ ] Show an additional MMS failure Example XML
-[ ] Show applicable error codes inline
-[ ] Reference nodes back to original API XML responses
-[ ] Provie a better explanation of the timestamps and when the N101 is triggered
+## ToDo
+- [ ] Add an SMS failure example XML
+- [ ] Show an additional MMS failure Example XML
+- [ ] Show applicable error codes inline
+- [ ] Reference nodes back to original API XML responses
+- [ ] Provie a better explanation of the timestamps and when the N101 is triggered
 
