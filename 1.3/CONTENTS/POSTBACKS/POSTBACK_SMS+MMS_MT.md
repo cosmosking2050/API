@@ -7,7 +7,7 @@ The MMS MT / SMS MT Postback API notifies you of the delivery status of each mes
  
 [SMS Delivery Status](#SMSStatus)                        
 [MMS Delivery Status](#MMSStatus)                       
-[SaveMMS Status](#SaveMMSStatus)
+[SaveMMS Encoding Status](#SaveMMSStatus)
 
 
 <h3><a name="SMSStatus">SMS MT Status</a></h3>
