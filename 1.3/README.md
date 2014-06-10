@@ -27,9 +27,9 @@ You must first request access to the API from your Skycore account manager. Once
 
 > If establishing a connection to your Postback URL takes longer than 10 seconds, the connection will time out and fail. We expect your server to respond with an successful status header containing HTTP STATUS 200. If no response is given or the HTTP code is not 200 we will consider it a failed request and will retry five minutes later up to 5 times.
 
-<h4>Limitations</h4>
+<h4>API Limitations</h4>
 
-You may have a throughput limit on your account. If your API requests exceed the throughput on your account then you may have some latency in the delivery of your messages.
+You may have a throughput limit on your account. If your API requests exceed the throughput on your account then you may have some latency in the delivery of your messages. There may also be limits on the number of API calls allowed per second/minute/day. These limits will be published in your API Settings page. 
 
 <h3>Authentication</h3>
 
