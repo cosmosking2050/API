@@ -90,17 +90,3 @@ E100, E101, E102, E103, E104, E105, E106, E107, E108, E109
 ~~~ 
 
 
-<h3>Language</h3>
-The following words in this documentation are to be interpreted literally:
-<ul>
- <li>"MUST"</li>
- <li>"MUST NOT"</li>
- <li>"REQUIRED"</li>
- <li>"SHALL"</li>
- <li>"SHALL NOT"</li>
- <li>"SHOULD"</li>
- <li>"SHOULD NOT"</li>
- <li>"MAY"</li> 
- <li>"OPTIONAL"</li>
-</ul>
-
