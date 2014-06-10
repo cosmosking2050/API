@@ -105,8 +105,8 @@ E100, E101, E102, E103, E104, E105, E106, E107, E108, E109
     <li><a href="CONTENTS/POSTBACKS/POSTBACK_PASSES.md">Passbook Postbacks</a> </li>
     <li><a href="CONTENTS/POSTBACKS/POSTBACK_SUB+UNSUB.md">Subscribe + Unsubscribe Postbacks</a> </li>
     </ul>
-    <br/>
-  <h3>APPENDIX</h3>
+
+<h4>APPENDIX</h4>
     <ul>
       <li><a href="CONTENTS/APPENDIX/APPENDIX_A.md">APPENDIX A [Key Term Definitions]</a></li>
       <li><a href="CONTENTS/APPENDIX/APPENDIX_B.md">APPENDIX B [API Error Codes]</a></li>
