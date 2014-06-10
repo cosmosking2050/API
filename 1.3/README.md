@@ -1,6 +1,6 @@
 <h2>Table of Contents</h2>
 <h3> Overview</h3>
-Developers! Want to integrate Skycore into your own service or application? Use our APIs to integrate our functionality into your business or campaign. Make sure to read this document before you get started.
+Developers! Want to integrate Skycore into your backend or campaign? Use our APIs to integrate MMS/SMS/EMAIL/PASSBOOK functionality into your business. Make sure to read this document before you get started.
 
 Note: Use of our API is only available for accounts with a Paid Plan.
 
