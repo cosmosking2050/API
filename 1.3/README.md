@@ -1,4 +1,4 @@
-<h2>Skycore API</h2>
+<h2>Skycore API v1.3</h2>
 
 <h3> Overview</h3>
 Developers! Do you want to add Skycore's capabilities into your backend or campaign? Use our APIs below to integrate with us. Make sure to read this document before you get started. <a href="http://www.skycore.com/contact">Contact us</a> if you need assistance. The use of our API is only available for accounts with a Paid Plan. There is a free trial available to test message deliverability, formatting and latency through the user interface at <a href="http://www.skycore.com">Skycore.com</a>.
