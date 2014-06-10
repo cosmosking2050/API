@@ -1,6 +1,6 @@
 <a href="/1.3/README.md">Back to the Table of Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="API_APPENDIX.md">Back to Appendix List</a>
 <h2>APPENDIX B</h2>
-<div class="text-2"><a id="appendix-b"></a><strong>Error/Notification/Protocol Code Reference</strong></div>
+<div class="text-2"><a id="appendix-b"></a><strong>Error Code Reference</strong></div>
 <br/>
 <p><strong>i. Error Codes </strong></p>
 <table class="toc" style="font-size:11px;">
