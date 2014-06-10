@@ -12,7 +12,7 @@ You can set your pass postback URL by logging into your account and going to &#8
 <strong>Synopsis:</strong> This postback provides a bundle of pass generation postbacks.
 <strong><p>This postback will contain the following nodes:</p></strong>
 CODE, ORIGIN<BR/>
-STATUSCODE &#8211; contains the notification code for success/failure. These codes are explained under <a href="/1.3/CONTENTS/APPENDIX/APPENDIX_B.md">APPENDIX B</a><BR />
+STATUSCODE &#8211; contains the notification code for success/failure. These codes are explained under <a href="/1.3/CONTENTS/APPENDIX/APPENDIX_D.md">APPENDIX D</a><BR />
 REFERENCEDBY &#8211; contains the reference value type that was used to generate this pass i.e., email, phone, etc.<BR />
 REFERENCEVALUE &#8211;contains a reference value that was used to generate the pass.<BR />
 CUSTOMPASSID &#8211; contains the custom pass id. This is the optional pass id that is passed when making a Pass generate/Add pass data API request to reference this pass in future requests.<BR />
