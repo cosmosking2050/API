@@ -20,9 +20,7 @@ There are two ways of making API requests:
 
 Authenticating your API call can be done in two ways:
 
-<code>apikey</code> – Each request must contain the accounts API KEY and MD5() encoded password. 
-
-<code>username</code> - Each request must contain the username and MD5() encoded password.
+<code>apikey</code> – Each API request must contain the accounts API KEY. Some sensitive API requests must also contain an MD5 encrypted password. 
 
 
 <b>Related Error codes:</b>
