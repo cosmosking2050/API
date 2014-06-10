@@ -101,9 +101,9 @@ E100, E101, E102, E103, E104, E105, E106, E107, E108, E109
   <li> <a href="CONTENTS/APPENDIX/API_APPENDIX.md">APPENDIX</a> </li>
     <ul>
       <li><a href="CONTENTS/APPENDIX/APPENDIX_A.md">APPENDIX A [Key Term Definitions]</a></li>
-      <li><a href="CONTENTS/APPENDIX/APPENDIX_B.md">APPENDIX B [Error/Notification/Protocol Code References]</a></li>
+      <li><a href="CONTENTS/APPENDIX/APPENDIX_B.md">APPENDIX B [API Error Codes]</a></li>
       <li><a href="CONTENTS/APPENDIX/APPENDIX_C.md">APPENDIX C [XML Report Export Format]</a></li>
-      <li><a href="CONTENTS/APPENDIX/APPENDIX_D.md">APPENDIX D [Special API Considerations]</a></li>
+      <li><a href="CONTENTS/APPENDIX/APPENDIX_D.md">APPENDIX D [Postback Notification Codes]</a></li>
       <li><a href="CONTENTS/APPENDIX/APPENDIX_E.md">APPENDIX E [Carrier / SPID Reference Table]</a></li>
    </ul>
 </ul>
