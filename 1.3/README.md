@@ -103,7 +103,6 @@ E100, E101, E102, E103, E104, E105, E106, E107, E108, E109
 
 <h3>Postback Notifications</h3>
 
-<li><b>Postbacks</b></li>
 * <a href="CONTENTS/POSTBACKS/POSTBACK_SMS+MMS_MO.md">SMS MO/MMS MO (Mobile Originated) Postbacks</a>
 * <a href="CONTENTS/POSTBACKS/POSTBACK_SMS+MMS_MT.md">SMS MT/MMS MT (Mobile Terminated) Postbacks</a> 
 * <a href="CONTENTS/POSTBACKS/POSTBACK_PASSES.md">Passbook Postbacks</a> 
