@@ -9,13 +9,12 @@ not &#8216;+642111111&#8242;). For example the US number (774)-319-9144 in inter
 messages into multiple texts in the SMS system.</p>
 <p><strong>Sending limitations:</strong> We have implemented throughput limit on your account. If your API requests 
 exceed the throughput on your account then you may have some latency in the delivery of your messages.</p>
-<p><strong>Postback:</strong> All pending notification are bulked together and wrapped with tag then sent in one http 
-request to the Postback URL. If establishing a connection to the Postback URL takes longer than 10 seconds, the 
+<p><strong>Postback:</strong>  If establishing a connection to your Postback URL takes longer than 10 seconds, the 
 connection will time out and fail. We expect the remote server to respond with a proper http header containing 200 HTTP 
 code, which is considered as successful status. If no response is given or the HTTP code is not 200 we will consider it
 a failed request and will retry five minutes later up to 5 times.</p>
-<p><strong>GET Requests:</strong> We strongly recommend url encoding the values in the query string of your API GET 
-requests. Failure to do so may result in the API failing to interpret or process your request. For example, your 
+<p><strong>GET Requests:</strong> You must URL Encode the values in the query string of your HTTP GET 
+requests. Failure to do so may result in the API failing to fully interpret your request. For example, your 
 unencoded query string may look like this:</p>
 
 <p><u>Before encoding</u>:<br /><pre>&data_full_name=John Smith&data_age=35</pre></p>
