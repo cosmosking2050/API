@@ -1,9 +1,10 @@
-<h2>Table of Contents</h2>
+<h2>Skycore API</h2>
+
 <h3> Overview</h3>
 Developers! Want to integrate Skycore capabilities into your backend or campaign? Use our APIs to integrate the following functionality into your business. Make sure to read this document before you get started. Contact us if you need assistance.
 
 Note: Use of our API is only available for accounts with a Paid Plan.
-
+<h2>Table of Contents</h2>
 <ul>
   <li> <a href="CONTENTS/METHODS/API_METHODS.md">API Methods</a></li>
     <ul>
