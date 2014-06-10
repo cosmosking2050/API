@@ -1,11 +1,7 @@
 <h2>Table of Contents</h2>
 <h3> Overview</h3>
 <ul>
-
-  <li> <a href="CONTENTS/LANGUAGE_AND_ABBREVIATIONS.md">Language and Abbreviations</a> </li>  
- 
   <li> <a href="CONTENTS/METHODS/API_METHODS.md">API Methods</a></li>
-  
     <ul>
     <li><a href="CONTENTS/METHODS/createUser.md">createUser</a></li>
     <li><a href="CONTENTS/METHODS/loginUser.md">loginUser</a></li>
@@ -39,19 +35,18 @@
    <br/>
   <li><a href="CONTENTS/POSTBACKS/POSTBACK_SYSTEM_OVERVIEW.md">Postback Notifications</a></li>
     <ul>
-    <li><a href="CONTENTS/POSTBACKS/POSTBACK_SMS+MMS_MO.md">SMS/MMS MO (Mobile Originated) Postbacks</a></li>
-    <li><a href="CONTENTS/POSTBACKS/POSTBACK_SMS+MMS_MT.md">SMS/MMS MT (Mobile Terminated) Postbacks</a> </li>
-    <li><a href="CONTENTS/POSTBACKS/POSTBACK_PASSES.md">Pass Generation Postbacks</a> </li>
+    <li><a href="CONTENTS/POSTBACKS/POSTBACK_SMS+MMS_MO.md">SMS MO/MMS MO (Mobile Originated) Postbacks</a></li>
+    <li><a href="CONTENTS/POSTBACKS/POSTBACK_SMS+MMS_MT.md">SMS MT/MMS MT (Mobile Terminated) Postbacks</a> </li>
+    <li><a href="CONTENTS/POSTBACKS/POSTBACK_PASSES.md">Passbook Postbacks</a> </li>
     <li><a href="CONTENTS/POSTBACKS/POSTBACK_SUB+UNSUB.md">Subscribe + Unsubscribe Postbacks</a> </li>
     </ul>
     <br/>
-    <li> <a href="CONTENTS/APPENDIX/API_APPENDIX.md">APPENDIX</a> </li>
-  
+  <li> <a href="CONTENTS/APPENDIX/API_APPENDIX.md">APPENDIX</a> </li>
     <ul>
       <li><a href="CONTENTS/APPENDIX/APPENDIX_A.md">APPENDIX A [Key Term Definitions]</a></li>
       <li><a href="CONTENTS/APPENDIX/APPENDIX_B.md">APPENDIX B [Error/Notification/Protocol Code References]</a></li>
-      <li><a href="CONTENTS/APPENDIX/APPENDIX_C.md">APPENDIX C [XML Reports, Campaign Batches/Autoresponders/Subscriptions and Sending Lists]</a></li>
-      <li><a href="CONTENTS/APPENDIX/APPENDIX_D.md">APPENDIX D [Special Considerations regarding API Implementation]</a></li>
+      <li><a href="CONTENTS/APPENDIX/APPENDIX_C.md">APPENDIX C [XML Report Export Format]</a></li>
+      <li><a href="CONTENTS/APPENDIX/APPENDIX_D.md">APPENDIX D [Special API Considerations]</a></li>
       <li><a href="CONTENTS/APPENDIX/APPENDIX_E.md">APPENDIX E [SPID Reference Table]</a></li>
    </ul>
 </ul>
@@ -88,7 +83,7 @@ E100, E101, E102, E103, E104, E105, E106, E107, E108, E109
 ~~~ 
 
 
-<h2>Language and Abbreviations</h2>
+<h3>Language</h3>
 <p>The following words in this documentation are to be interpreted literally:
 <ul>
  <li>"MUST"</li>
@@ -98,7 +93,6 @@ E100, E101, E102, E103, E104, E105, E106, E107, E108, E109
  <li>"SHALL NOT"</li>
  <li>"SHOULD"</li>
  <li>"SHOULD NOT"</li>
- <li>"RECOMMENDED"</li>
  <li>"MAY"</li> 
  <li>"OPTIONAL"</li>
 </ul>
