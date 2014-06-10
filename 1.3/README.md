@@ -86,3 +86,20 @@ E100, E101, E102, E103, E104, E105, E106, E107, E108, E109
   <ERRORINFO> 'action' required</ERRORINFO>
 </RESPONSE>
 ~~~ 
+
+
+<h2>Language and Abbreviations</h2>
+<p>The following words in this documentation are to be interpreted literally:
+<ul>
+ <li>"MUST"</li>
+ <li>"MUST NOT"</li>
+ <li>"REQUIRED"</li>
+ <li>"SHALL"</li>
+ <li>"SHALL NOT"</li>
+ <li>"SHOULD"</li>
+ <li>"SHOULD NOT"</li>
+ <li>"RECOMMENDED"</li>
+ <li>"MAY"</li> 
+ <li>"OPTIONAL"</li>
+</ul>
+</p>
