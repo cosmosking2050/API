@@ -61,11 +61,6 @@ See <a href="CONTENTS/APPENDIX/APPENDIX_B.md">APPENDIX B [API Error Codes]</a>
 
 <h3>API Methods</h3>
 
-<li><b>User</b></li>
-    <ul>
-    <li><a href="CONTENTS/METHODS/createUser.md">createUser</a></li>
-    <li><a href="CONTENTS/METHODS/loginUser.md">loginUser</a></li>
-    </ul>
 <li><b>SMS/MMS</b></li>
     <ul>
     <li><a href="CONTENTS/METHODS/sendSMS.md">sendSMS</a></li>
@@ -100,6 +95,11 @@ See <a href="CONTENTS/APPENDIX/APPENDIX_B.md">APPENDIX B [API Error Codes]</a>
     <li><a href="CONTENTS/METHODS/generatePassById.md">generatePassById</a></li>
     <li><a href="CONTENTS/METHODS/generatePass.md">generatePass</a></li>
     <li><a href="CONTENTS/METHODS/getPassEmailTemplate.md">getPassEmailTemplate</a></li>
+    </ul>
+<li><b>User / Widget</b></li>
+    <ul>
+    <li><a href="CONTENTS/METHODS/createUser.md">createUser</a></li>
+    <li><a href="CONTENTS/METHODS/loginUser.md">loginUser</a></li>
     </ul>
 
 <h3>Postback Notifications</h3>
