@@ -1,4 +1,4 @@
-<p><strong>iii. SMS Protocols</strong></p>
+<p><strong>iii. SMS Protocol Reference</strong></p>
 <table class="SMS-code-look-up" style="font-size:11px;">
 <tbody>
 <tr>
