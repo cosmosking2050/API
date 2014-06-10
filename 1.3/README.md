@@ -57,7 +57,9 @@ E100, E101, E102, E103, E104, E105, E106, E107, E108, E109
 
 
 <h2>Table Of Contents</h2>
+
 <h3>API Methods</h3>
+
 <li><b>User</b></li>
     <ul>
     <li><a href="CONTENTS/METHODS/createUser.md">createUser</a></li>
@@ -100,14 +102,16 @@ E100, E101, E102, E103, E104, E105, E106, E107, E108, E109
     </ul>
 
 <h3>Postback Notifications</h3>
-    <ul>
-    <li><a href="CONTENTS/POSTBACKS/POSTBACK_SMS+MMS_MO.md">SMS MO/MMS MO (Mobile Originated) Postbacks</a></li>
-    <li><a href="CONTENTS/POSTBACKS/POSTBACK_SMS+MMS_MT.md">SMS MT/MMS MT (Mobile Terminated) Postbacks</a> </li>
-    <li><a href="CONTENTS/POSTBACKS/POSTBACK_PASSES.md">Passbook Postbacks</a> </li>
-    <li><a href="CONTENTS/POSTBACKS/POSTBACK_SUB+UNSUB.md">Subscribe + Unsubscribe Postbacks</a> </li>
-    </ul>
 
-<h3>Postback Notifications</h3>
+<li><b>Postbacks</b></li>
+*<a href="CONTENTS/POSTBACKS/POSTBACK_SMS+MMS_MO.md">SMS MO/MMS MO (Mobile Originated) Postbacks</a>
+*<a href="CONTENTS/POSTBACKS/POSTBACK_SMS+MMS_MT.md">SMS MT/MMS MT (Mobile Terminated) Postbacks</a> 
+*<a href="CONTENTS/POSTBACKS/POSTBACK_PASSES.md">Passbook Postbacks</a> 
+*<a href="CONTENTS/POSTBACKS/POSTBACK_SUB+UNSUB.md">Subscribe + Unsubscribe Postbacks</a> 
+
+
+<h3>Appendix</h3>
+
       <ul>
       <li><a href="CONTENTS/APPENDIX/APPENDIX_A.md">APPENDIX A [Key Term Definitions]</a></li>
       <li><a href="CONTENTS/APPENDIX/APPENDIX_B.md">APPENDIX B [API Error Codes]</a></li>
