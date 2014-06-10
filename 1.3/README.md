@@ -59,9 +59,15 @@ E100, E101, E102, E103, E104, E105, E106, E107, E108, E109
 <h2>Table of Contents</h2>
 <ul>
   <li> <b>API Methods</b></li>
+      </ul>
+<li><b>User</b></li>
+    <ul>
     <ul>
     <li><a href="CONTENTS/METHODS/createUser.md">createUser</a></li>
     <li><a href="CONTENTS/METHODS/loginUser.md">loginUser</a></li>
+    </ul>
+<li><b>SMS/MMS</b></li>
+    <ul>
     <li><a href="CONTENTS/METHODS/sendSMS.md">sendSMS</a></li>
     <li><a href="CONTENTS/METHODS/getMmsIds.md">getMmsIds</a></li>
     <li><a href="CONTENTS/METHODS/getMmsCampaigns.md">getMmsCampaigns</a></li>
@@ -73,11 +79,17 @@ E100, E101, E102, E103, E104, E105, E106, E107, E108, E109
     <li><a href="CONTENTS/METHODS/createMMSCampaign.md">createMMSCampaign</a></li>
     <li><a href="CONTENTS/METHODS/getSendingStatistics.md">getSendingStatistics</a></li>
     <li><a href="CONTENTS/METHODS/removeMMSInboxMessage.md">removeMMSInboxMessage</a></li>
+   </ul>
+<li><b>Email</b></li>
+    <ul>
     <li><a href="CONTENTS/METHODS/getEmailIds.md">getEmailIds</a></li>
     <li><a href="CONTENTS/METHODS/getEmailCampaigns.md">getEmailCampaigns</a></li>
     <li><a href="CONTENTS/METHODS/createEmailCampaign.md">createEmailCampaign</a></li>
     <li><a href="CONTENTS/METHODS/sendSavedEmail.md">sendSavedEmail</a></li>
     <li><a href="CONTENTS/METHODS/subscribeEmail+unsubscribeEmail.md">subscribeEmail + unsubscribeEmail</a></li>
+    </ul>
+<li><b>Passbook</b></li>
+    <ul>
     <li><a href="CONTENTS/METHODS/getPassTemplate.md">getPassTemplate</a></li>
     <li><a href="CONTENTS/METHODS/getPassTemplateIds.md">getPassTemplateIds</a></li>
     <li><a href="CONTENTS/METHODS/addPassData.md">addPassData</a></li>
