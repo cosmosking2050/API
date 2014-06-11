@@ -1,7 +1,7 @@
 <a href="/1.3/README.md">Back to the Table of Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="API_METHODS.md">Back to API Methods</a>
 <h2>sendSMS</h2>
 <p><strong>Synopsis: </strong><br />
-This API function sends an SMS containing <i>text</i> from the specified account and <i>shortcode</i> to a recipient’s mobile number. If the aggregator allows masking longcode/sender with some brand or string, 'from_mask' can be set in the API. If 'Enforce Campaign Check' is turned ON this function will require the ID of MMS campaign that receiver's number is subscribed to passed inside <i>campaignref</i> node.
+This API function sends an SMS containing <i>text</i> from the specified account and <i>shortcode</i> to a recipient’s mobile number. If the aggregator allows masking longcode/sender with some brand or string, 'from_mask' can be set in the API which is limited to 11 characters, 'from_mask' beyond 11 characters will be cut-off. If 'Enforce Campaign Check' is turned ON this function will require the ID of MMS campaign that receiver's number is subscribed to passed inside <i>campaignref</i> node.
 <div><strong>Request:</strong></div>
 <pre>&lt;REQUEST&gt;
   &lt;ACTION&gt;sendSMS &lt;/ACTION&gt;
