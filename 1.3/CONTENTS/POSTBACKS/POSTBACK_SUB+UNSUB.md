@@ -12,7 +12,7 @@ This postback notification triggers when a mobile phone number subscribes to a s
 | -------- | ----------- |
 | CODE | N301|
 | ORIGIN | SUB | 
-| MOBILE | subscriber's mobile |
+| MOBILE | subscriber's mobile number|
 | CAMPAIGNID | ID of the campaign |
 | SUBID | subscription ID |
 
@@ -34,7 +34,7 @@ This postback notification triggers when a mobile phone number unsubscribes to a
 | -------- | ----------- |
 | CODE | N302 |
 | ORIGIN | SUB | 
-| MOBILE | subscriber's mobile |
+| MOBILE | subscriber's mobile number |
 | CAMPAIGNID | ID of the campaign |
 | SUBID | subscription ID |
 
@@ -56,7 +56,7 @@ This postback notification triggers when an email address subscribes to a specif
 | -------- | ----------- |
 | CODE | N303 |
 | ORIGIN | EMAIL_SUB | 
-| EMAIL | subscriber's mobile |
+| EMAIL | subscriber's emai |
 | CAMPAIGNID | ID of the campaign |
 | SUBID | subscription ID |
 
@@ -72,19 +72,20 @@ This postback notification triggers when an email address subscribes to a specif
 ```
 
 <a name="EmailUnsub"><strong>Email Unsubscribe</strong></a>
+
 This postback notification triggers when an email address unsubscribes to a specific campaign.</p>
 
 | Variable | Description |
 | -------- | ----------- |
 | CODE | N304 |
 | ORIGIN | EMAIL_SUB | 
-| EMAIL | subscriber's mobile |
-| CAMPAIGNID | ID of the campaign |
+| EMAIL | email address of the subscriber |
+| CAMPAIGNID | The ID of the campaign |
 | SUBID | subscription ID |
 
 ```xml
 <?xml version='1.0'?>
-<POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation ="https://www.skycore.com/platform/platform/schema/pass-postback.xsd">
+<POSTBACK>
   <ORIGIN>EMAIL_SUB</ORIGIN>
   <CODE>N304</CODE>
   <EMAIL>info@skycore.com</EMAIL>
