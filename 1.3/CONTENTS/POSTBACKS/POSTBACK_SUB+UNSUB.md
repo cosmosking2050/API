@@ -18,7 +18,7 @@ This postback notification triggers when a mobile phone number subscribes to a s
 
 ```xml
 <?xml version='1.0'?>
-<POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation ="https://www.skycore.com/platform/platform/schema/pass-postback.xsd">
+<POSTBACK>
   <ORIGIN>SUB</ORIGIN>
   <CODE>N301</CODE>
   <MOBILE>16501112222</MOBILE>
@@ -40,7 +40,7 @@ This postback notification triggers when a mobile phone number unsubscribes to a
 
 ```xml
 <?xml version='1.0'?>
-<POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation ="https://www.skycore.com/platform/platform/schema/pass-postback.xsd">
+<POSTBACK>
   <ORIGIN>SUB</ORIGIN>
   <CODE>N302</CODE>
   <MOBILE>16502424956</MOBILE>
@@ -62,7 +62,7 @@ This postback notification triggers when an email address subscribes to a specif
 
 ```xml
 <?xml version='1.0'?>
-<POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation ="https://www.skycore.com/platform/platform/schema/pass-postback.xsd">
+<POSTBACK>
   <ORIGIN>EMAIL_SUB</ORIGIN>
   <CODE>N303</CODE>
   <EMAIL>info@skycore.com</EMAIL>
