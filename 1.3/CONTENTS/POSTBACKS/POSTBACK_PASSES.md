@@ -4,7 +4,7 @@
 This postback notification service will send mobile wallet / passbook information back to your server whenever pass generation is triggered in your account.
 
 <strong>Pass-Specific Postback URL:</strong>
-You can set your pass postback URL seperatey from other postback notifications. You can log into your account and enter the URL under the setting Pass Postback URL. Make sure that the setting is ON. Every pass generation triggered will start sending messages to your URL in the XML format shown here.
+You can set your pass postback URL seperately from other postback notifications. You can log into your account and enter the URL under the setting Pass Postback URL. Make sure that the setting is ON. Every pass generation triggered will start sending messages to your URL in the XML format shown here.
 
 <h3>Generate Pass Bundle</h3>
 
