@@ -4,7 +4,7 @@
 
 The Subscribe / Unsubscribe Postback API notifies you of the an opt-in or opt-out status change for each number or email address subscribed to your campaigns. 
 
-<a name="MobileSub"><strong>Mobile Subscribe</strong></a>
+<h3>Mobile Subscribe</h3>
 
 This postback notification triggers when a mobile phone number subscribes to a specific campaign.
 
@@ -27,7 +27,7 @@ This postback notification triggers when a mobile phone number subscribes to a s
 </POSTBACK>
 ```
 
-<a name="MobileUnsub"><strong>Mobile Unsubscribe</strong></a>
+<h3>Mobile Unsubscribe</h3>
 This postback notification triggers when a mobile phone number unsubscribes to a specific campaign.
 
 | Variable | Description |
@@ -49,7 +49,7 @@ This postback notification triggers when a mobile phone number unsubscribes to a
 </POSTBACK>
 ```
 
-<a name="EmailSub"><strong>Email Subscribe</strong></a>
+<h3>Email Subscribe</h3>
 This postback notification triggers when an email address subscribes to a specific campaign.</p>
 
 | Variable | Description |
@@ -71,7 +71,7 @@ This postback notification triggers when an email address subscribes to a specif
 </POSTBACK>
 ```
 
-<a name="EmailUnsub"><strong>Email Unsubscribe</strong></a>
+<h3>Email Unsubscribe</h3>
 
 This postback notification triggers when an email address unsubscribes to a specific campaign.</p>
 
