@@ -104,10 +104,10 @@ See <a href="CONTENTS/APPENDIX/APPENDIX_B.md">APPENDIX B [API Error Codes]</a>
 
 <h3>Postback Notifications</h3>
 
-* <a href="CONTENTS/POSTBACKS/POSTBACK_SMS+MMS_MO.md">SMS MO/MMS MO (Mobile Originated) Postbacks</a>
-* <a href="CONTENTS/POSTBACKS/POSTBACK_SMS+MMS_MT.md">SMS MT/MMS MT (Mobile Terminated) Postbacks</a> 
+* <a href="CONTENTS/POSTBACKS/POSTBACK_MESSAGE_INBOX.md">Message Inbox Postbacks</a>
+* <a href="CONTENTS/POSTBACKS/POSTBACK_DELIVERY_REPORTS.md">Deivery Status Postbacks</a> 
 * <a href="CONTENTS/POSTBACKS/POSTBACK_PASSES.md">Passbook Postbacks</a> 
-* <a href="CONTENTS/POSTBACKS/POSTBACK_SUB+UNSUB.md">Subscribe + Unsubscribe Postbacks</a> 
+* <a href="CONTENTS/POSTBACKS/SUBSCRIBER_STATUS_POSTBACK.md">Subscriber Status Postbacks</a> 
 
 
 <h3>Appendix</h3>
