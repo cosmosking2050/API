@@ -1,6 +1,6 @@
 <a href="/1.3/README.md">Back to the Table of Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/1.3/CONTENTS/POSTBACKS/POSTBACK_SYSTEM_OVERVIEW.md">Postback System Overview</a>
 
-<h2>Subscribe and Unsubscribe Postbacks</h2>
+<h2>Subscriber Status Postback</h2>
 
 The Subscribe / Unsubscribe Postback API notifies you of the an opt-in or opt-out status change for each number or email address subscribed to your campaigns. 
 
