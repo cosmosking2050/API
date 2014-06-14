@@ -9,6 +9,10 @@ The MMS MT / SMS MT Postback API notifies you of the delivery status of each mes
 [MMS Delivery Status](#MMSStatus)                       
 [SaveMMS Encoding Status](#SaveMMSStatus)
 
+<strong>Schema:</strong>
+
+https://www.skycore.com/platform/schema/postback.xsd
+
 
 <h3><a name="SMSStatus">SMS MT Delivery Status</a></h3>
 
