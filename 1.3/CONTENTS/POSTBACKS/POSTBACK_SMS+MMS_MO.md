@@ -48,14 +48,14 @@ This postback notifies you when an MMS MO is received.
 | CODE | N401 |
 | ORIGIN | MMS_MO |
 | NOTIFICATION | SMS sender mobile number | 
-| FROM | tags contain the phone number, including the country code, of the sender. | 
-| TO | tags contain the destination shortcode. | 
-| KEYWORD | tags contain the keyword recognized that was passed in the MMS. | 
-| TRACKINGID | tags contain a tracking ID, which contains the ID we've assigned this MMS MO on our system. | 
-| SPID | tags contain the SPID of the sender's carrier. | 
-| TIMESTAMP | tags contain the timestamp that our system received the MMS MO. | 
+| FROM | the phone number, including the country code, of the sender. | 
+| TO |  the recipient shortcode or longcode . | 
+| KEYWORD | if a keyword was recognized in the first word of the subject or the first word body of the message and it matched to a MMS Inbox Keyword campaign that keyword will be passed in this node. | 
+| TRACKINGID | a tracking ID, skycore has assigned this message. | 
+| SPID | The SPID of the sender's carrier. | 
+| TIMESTAMP | the timestamp that our system received the MMS MO. | 
 | CONTENT | contains the file nodes sent in the MMS MO | 
-| FILE |  contains a single URL to a picture, video, audio or text file sent in the MMS MO.  The URL points to the location of the content on our servers. For those developing the back-end handling of the postback URL, you may choose to download/store these content files for whatever purpose you see fit. You may also choose to store the URLs for download at a future time. The file will be removed based on the terms of your contract. | 
+| FILE |  a series of sub-nodes that contains a single URL to a picture, video, audio or text file sent in the MMS MO within each node.  The URL points to the location of the content on our servers. For those developing the back-end handling of the postback URL, you may choose to download/store these content files for whatever purpose you see fit. You may also choose to store the URLs for download at a future time. The file will be removed based on the terms of your contract. | 
 
 ```xml
 
