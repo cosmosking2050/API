@@ -6,11 +6,6 @@ This postback notification service will send mobile wallet / passbook informatio
 <strong>Pass-Specific Postback URL:</strong>
 You can set your pass postback URL seperately from other postback notifications. You can log into your account and enter the URL under the setting Pass Postback URL. Make sure that the setting is ON. Every pass generation triggered will start sending messages to your URL in the XML format shown here.
 
-<h3>Generate Pass Bundle</h3>
-
-This postback provides a bundle of pass generation postbacks.
-
-
 | Variable | Description |
 | -------- | ----------- |
 | CODE | N801 |
