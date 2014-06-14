@@ -32,8 +32,7 @@ Postback notification when an SMS is sent to the mobile network operator.
 
 ```xml
 <?xml version='1.0'?>
-<POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd">
+<POSTBACK>
   <ORIGIN>SMS_MT</ORIGIN>
   <CODE>N201</CODE>
   <STATUS>Message Sent</STATUS>
@@ -50,8 +49,7 @@ xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd">
 
 ```xml
 <?xml version='1.0'?>
-<POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd">
+<POSTBACK>
   <ORIGIN>SMS_MT</ORIGIN>
   <CODE>N202</CODE>
   <STATUS>Message Sent/Delivered</STATUS>
@@ -93,8 +91,7 @@ When the mobile network operator does not suport MMS or the destination handset 
 
 ```xml
 <?xml version='1.0'?>
-<POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd">
+<POSTBACK>
   <ORIGIN>MMS_MT</ORIGIN>
   <CODE>N101</CODE>
   <SENTAS>MMS</SENTAS>
@@ -112,8 +109,7 @@ xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd">
 
 ```xml
 <?xml version='1.0'?>
-<POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd">
+<POSTBACK>
   <ORIGIN>MMS_MT</ORIGIN>
   <CODE>N101</CODE>
   <SENTAS>SMS</SENTAS>
@@ -133,8 +129,7 @@ xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd">
 
 ```xml
 <?xml version='1.0'?>
-<POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd">
+<POSTBACK>
   <ORIGIN>MMS_MT</ORIGIN>
   <CODE>N102</CODE>
   <SENTAS>MMS</SENTAS>
@@ -155,8 +150,7 @@ xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd">
 
 ```xml
 <?xml version='1.0'?>
-<POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd">
+<POSTBACK>
   <ORIGIN>MMS_MT</ORIGIN>
   <CODE>N202</CODE>
   <SENTAS>SMS</SENTAS>
@@ -176,8 +170,7 @@ When the system is unable to send an MMS we return a postback E101.
 
 ```xml
 <?xml version='1.0'?>
-<POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd">
+<POSTBACK>
   <ORIGIN>MMS_MT</ORIGIN>
   <CODE>E101</CODE>
   <STATUS>Message Failed</STATUS>
