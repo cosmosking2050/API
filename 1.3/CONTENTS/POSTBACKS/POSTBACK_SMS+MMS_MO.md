@@ -11,7 +11,7 @@ To receive MMS MO postback you need to configure it within the particular MMS In
 
 
 
-<a name="SMS"><strong>The SMS MO</strong></a>
+<h3>The SMS MO</h3>
 
 This postback notifies you when an SMS MO is received.
 
@@ -39,7 +39,7 @@ This postback notifies you when an SMS MO is received.
 ```
 
 
-<a name="MMS"><p><strong>The MMS MO</strong></p></a>
+<h3>The MMS MO</h3>
 
 This postback notifies you when an MMS MO is received.
 
