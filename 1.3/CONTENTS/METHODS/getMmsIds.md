@@ -23,9 +23,11 @@ action, apikey
 </pre>
 
 <strong>Response Parameters:</strong>
+
 status, mmsids, Errorcode, Errorinfo
 
 <strong>Related Errorcodes:</strong>
+
 E200
 
 <strong>Request Examples</strong>
