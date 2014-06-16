@@ -1,14 +1,9 @@
-<a href="/1.3/README.md">Back to the Table of Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="API_METHODS.md">Back to API Methods</a>
-<h2>sendPassInMMS</h2>
-<p><strong>Synopsis:</strong><br />
-This API request triggers sending an MMS with Dynamic Pass. Dynamic pass data passed in the API request will be used to create a Passbook pass sent via MMS. 
-The pass data gets locked with the Phone number in the request and is used in limitation to the Pass Template settings. All the other/extra pass data is ignored.
-CustomPassId is your system generated Unique Id that will represent this pass data. You can optinally pass it along with pass data to be saved along with pass data and this can be used to refer this pass.
-In the case of Relevance, Relevant Text is considered only when Relevance lat,long values are passed in the API otherwise ignored.
-MMS is sent from a specified account using a MMSID to a single mobile number. 
-FROM must be one of shortcodes allowed for your account. 
-In case the number is from a different country than the FROM shortcode is assigned to &#8211; default shortcode for those countries will be used.</p>
-<p><strong>Content Transcoding:</strong><br />
+[Back to the Table of Contents](/1.3/README.md)&nbsp;&nbsp;|&nbsp;&nbsp;[Back to API Methods](API_METHODS.md)
+## sendPassInMMS
+__Synopsis:__  
+This API request triggers sending an MMS with Dynamic Pass. Dynamic pass data passed in the API request will be used to create a Passbook pass sent via MMS. The pass data gets locked with the Phone number in the request and is used in limitation to the Pass Template settings. All the other/extra pass data is ignored. CustomPassId is your system generated Unique Id that will represent this pass data. You can optinally pass it along with pass data to be saved along with pass data and this can be used to refer this pass. In the case of Relevance, Relevant Text is considered only when Relevance lat,long values are passed in the API otherwise ignored. MMS is sent from a specified account using a MMSID to a single mobile number. FROM must be one of shortcodes allowed for your account. In case the number is from a different country than the FROM shortcode is assigned to, the default shortcode for those countries will be used.
+
+__Content Transcoding:__  
 Every binary MMS we deliver can be transcoded for the destination handset and every web page we deliver is transcoded for the browsing handset. 
 To transcode a binary MMS we must know what type of handset the user has. 
 We are able to obtain this handset type information from delivery receipts and store the record in a handset cache for later use. 
