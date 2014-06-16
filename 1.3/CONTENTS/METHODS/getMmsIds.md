@@ -3,7 +3,7 @@
 <strong>Synopsis:</strong>  
 This API function returns a list of comma separated MMSIDS for that account.
 
-<strong>Request: XML</strong>
+__Request: XML__
 ```xml
 <REQUEST>
     <ACTION>getMmsIds</ACTION>
@@ -11,23 +11,24 @@ This API function returns a list of comma separated MMSIDS for that account.
 </REQUEST>
 ```
 
-<strong>Request: GET</strong>  
-<pre>API_URL?action=getmmsids&amp;api_key=apiKey</pre>
+__Request: GET__  
 
-<strong>Request Parameters:</strong>  
+    API_URL?action=getmmsids&api_key=apiKey
+    
+__Request Parameters:__  
 <pre><strong>Mandatory:</strong>
 action, apikey
 <strong>Optional:</strong>
 --
 </pre>
 
-<strong>Response Parameters:</strong>  
+__Response Parameters:__  
 status, mmsids, Errorcode, Errorinfo
 
-<strong>Related Errorcodes:</strong>  
+__Related Errorcodes:__  
 E200
 
-<strong>Request Examples</strong>
+__Request Examples__
 
 XML:
 ```xml
@@ -38,9 +39,10 @@ XML:
 ```
 
 GET:
+
     https://secure.skycore.com/API/wxml/1.3/index.php?action=getmmsids&api_key=qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ
 
-<strong>Response Example: Success</strong>
+__Response Example: Success__
 ```xml
 <RESPONSE>
     <STATUS>Success</STATUS>
@@ -48,7 +50,7 @@ GET:
 </RESPONSE>
 ```
 
-<strong>Response Example: Failure</strong>
+__Response Example: Failure__
 ```xml
 <RESPONSE>
     <STATUS>Failure</STATUS>
