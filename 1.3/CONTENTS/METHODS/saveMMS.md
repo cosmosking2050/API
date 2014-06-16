@@ -52,8 +52,7 @@ __Request Example:__
 </REQUEST>
 ```
 
-__Response Example:__  
-Success
+__Response Example: Success__  
 ```xml
 <RESPONSE>
     <STATUS>Success</STATUS>
