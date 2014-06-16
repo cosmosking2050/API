@@ -1,116 +1,113 @@
-<a href="/1.3/README.md">Back to the Table of Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="API_METHODS.md">Back to API Methods</a>
-<h2>updatePass</h2>
-<p><strong>Synopsis:</strong><br />
-This API request updates the pass data for that passDataId if exists. 
-If this pass data was already used to generate a Passbook Pass which is installed on the device,
-then this request will also trigger a pass update on that device. 
-Only the dynamic pas data is allowed to be updated and rest of the data stays the same. 
-If the pass template associated with this pass was updated with new images, colors, data types and number of fields then
-those updates will be also reflected in the pass update.
-All the data is updated in limitation to the settings on the pass template and all the other/extra data is ignored. 
-You cannot update Email (or) Phone in this request but the pass data. On success, it will return the UpdateStatusId. For more info see below for Mandatory/Optional fields and Error codes.
-</p>
-<div><strong>Request: XML</strong></div>
-<pre>&lt;REQUEST&gt;
-    &lt;ACTION&gt;updatePass&lt;/ACTION&gt;
-    &lt;API_KEY&gt;apiKey&lt;/API_KEY&gt;
-    &lt;PASSDATAID&gt;passDataId&lt;/PASSDATAID&gt;
-    &lt;PASSDATA&gt;
-        &lt;THUMBNAILURL&gt;thumbnailUrl&lt;/THUMBNAILURL&gt;
-        &lt;BARCODEVALUE&gt;barcodeValue&lt;/BARCODEVALUE&gt;
-        &lt;BARCODETEXT&gt;barcodeText&lt;/BARCODETEXT&gt;
-        &lt;HEADERLABEL1&gt;headerLabel1&lt;/HEADERLABEL1&gt;
-        &lt;HEADERVALUE1&gt;headerValue1&lt;/HEADERVALUE1&gt;
-        &lt;PRIMARYLABEL1&gt;primaryLabel1&lt;/PRIMARYLABEL1&gt;
-        &lt;PRIMARYVALUE1&gt;primaryValue1&lt;/PRIMARYVALUE1&gt; 
-        &lt;PRIMARYLABEL2&gt;primaryLabel2&lt;/PRIMARYLABEL2&gt;
-        &lt;PRIMARYVALUE2&gt;primaryValue2&lt;/PRIMARYVALUE2&gt; 
-        &lt;SECLABEL1&gt;secLabel1&lt;/SECLABEL1&gt;
-        &lt;SECVALUE1&gt;secValue1&lt;/SECVALUE1&gt;
-        &lt;SECLABEL2&gt;sedLabel2&lt;/SECLABEL2&gt;
-        &lt;SECVALUE2&gt;secValue2&lt;/SECVALUE2&gt;
-        &lt;SECLABEL3&gt;sedLabel3&lt;/SECLABEL3&gt;
-        &lt;SECVALUE3&gt;secValue3&lt;/SECVALUE3&gt;
-        &lt;SECLABEL4&gt;sedLabel4&lt;/SECLABEL4&gt;
-        &lt;SECVALUE4&gt;secValue4&lt;/SECVALUE4&gt;
-        &lt;AUXLABEL1&gt;auxLabel1&lt;/AUXLABEL1&gt;
-        &lt;AUXVALUE1&gt;auxValue1&lt;/AUXVALUE1&gt;
-        &lt;AUXLABEL2&gt;auxLabel2&lt;/AUXLABEL2&gt;
-        &lt;AUXVALUE2&gt;auxValue2&lt;/AUXVALUE2&gt;
-        &lt;AUXLABEL3&gt;auxLabel3&lt;/AUXLABEL3&gt;
-        &lt;AUXVALUE3&gt;auxValue3&lt;/AUXVALUE3&gt;
-        &lt;AUXLABEL4&gt;auxLabel4&lt;/AUXLABEL4&gt;
-        &lt;AUXVALUE4&gt;auxValue4&lt;/AUXVALUE4&gt;
-        &lt;BACKLABEL1&gt;backLabel1&lt;/BACKLABEL1&gt;
-        &lt;BACKVALUE1&gt;backValue1&lt;/BACKVALUE1&gt;
-        &lt;BACKLABEL2&gt;backLabel2&lt;/BACKLABEL2&gt;
-        &lt;BACKVALUE2&gt;backValue2&lt;/BACKVALUE2&gt;
-        &lt;BACKLABEL3&gt;backLabel3&lt;/BACKLABEL3&gt;
-        &lt;BACKVALUE3&gt;backValue3&lt;/BACKVALUE3&gt;
-        &lt;BACKLABEL4&gt;backLabel4&lt;/BACKLABEL4&gt;
-        &lt;BACKVALUE4&gt;backValue4&lt;/BACKVALUE4&gt;
-        &lt;RELLATITUDE1&gt;relLatitude1&lt;/RELLATITUDE1&gt;
-        &lt;RELLONGITUDE1&gt;relLongitude1&lt;/RELLONGITUDE1&gt;
-        &lt;RELTEXT1&gt;relText1&lt;/RELTEXT1&gt;
-        &lt;RELLATITUDE2&gt;relLatitude2&lt;/RELLATITUDE2&gt;
-        &lt;RELLONGITUDE2&gt;relLongitude2&lt;/RELLONGITUDE2&gt;
-        &lt;RELTEXT2&gt;relText2&lt;/RELTEXT2&gt;
-        &lt;RELLATITUDE3&gt;relLatitude3&lt;/RELLATITUDE3&gt;
-        &lt;RELLONGITUDE3&gt;relLongitude3&lt;/RELLONGITUDE3&gt;
-        &lt;RELTEXT3&gt;relText3&lt;/RELTEXT3&gt;
-        &lt;RELLATITUDE4&gt;relLatitude4&lt;/RELLATITUDE4&gt;
-        &lt;RELLONGITUDE4&gt;relLongitude4&lt;/RELLONGITUDE4&gt;
-        &lt;RELTEXT4&gt;relText4&lt;/RELTEXT4&gt;
-        &lt;RELLATITUDE5&gt;relLatitude5&lt;/RELLATITUDE5&gt;
-        &lt;RELLONGITUDE5&gt;relLongitude5&lt;/RELLONGITUDE5&gt;
-        &lt;RELTEXT5&gt;relText5&lt;/RELTEXT5&gt;
-        &lt;RELLATITUDE6&gt;relLatitude6&lt;/RELLATITUDE6&gt;
-        &lt;RELLONGITUDE6&gt;relLongitude6&lt;/RELLONGITUDE6&gt;
-        &lt;RELTEXT6&gt;relText6&lt;/RELTEXT6&gt;
-        &lt;RELLATITUDE7&gt;relLatitude7&lt;/RELLATITUDE7&gt;
-        &lt;RELLONGITUDE7&gt;relLongitude7&lt;/RELLONGITUDE7&gt;
-        &lt;RELTEXT7&gt;relText7&lt;/RELTEXT7&gt;
-        &lt;RELLATITUDE8&gt;relLatitude8&lt;/RELLATITUDE8&gt;
-        &lt;RELLONGITUDE8&gt;relLongitude8&lt;/RELLONGITUDE8&gt;
-        &lt;RELTEXT8&gt;relText8&lt;/RELTEXT8&gt;
-        &lt;RELLATITUDE9&gt;relLatitude9&lt;/RELLATITUDE9&gt;
-        &lt;RELLONGITUDE9&gt;relLongitude9&lt;/RELLONGITUDE9&gt;
-        &lt;RELTEXT9&gt;relText9&lt;/RELTEXT9&gt;
-        &lt;RELLATITUDE10&gt;relLatitude10&lt;/RELLATITUDE10&gt;
-        &lt;RELLONGITUDE10&gt;relLongitude10&lt;/RELLONGITUDE10&gt;
-        &lt;RELTEXT10&gt;relText10&lt;/RELTEXT10&gt;
-    &lt;/PASSDATA&gt;    
-&lt;/REQUEST&gt;</pre>
-<div><strong>Request: GET</strong></div>
-<pre>API_URL?action=updatepass&amp;api_key=apiKey&amp;passdataid=passDataId
-&amp;pd_thumbnailurl=thumbnailUrl
-&amp;pd_barcodevalue=barcodeValue&amp;pd_barcodetext=barcodeText
-&amp;pd_headerlabel1=headerLabel1&amp;pd_headervalue1=headerValue1
-&amp;pd_primarylabel1=primaryLabel1&amp;pd_primaryvalue1=primaryValue1
-&amp;pd_primarylabel2=primaryLabel2&amp;pd_primaryvalue2=primaryValue2
-&amp;pd_seclabel1=secLabel1&amp;pd_secvalue1=secValue1&amp;pd_seclabel2=secLabel2
-&amp;pd_secvalue2=secValue2&amp;pd_seclabel3=secLabel3&amp;pd_secvalue3=secValue3
-&amp;pd_seclabel4=secLabel4&amp;pd_secvalue4=secValue4&amp;pd_auxlabel1=auxLabel1
-&amp;pd_auxvalue1=auxValue1&amp;pd_auxlabel2=auxLabel2&amp;pd_auxvalue2=auxValue2
-&amp;pd_auxlabel3=auxLabel3&amp;pd_auxvalue3=auxValue3&amp;pd_auxlabel4=auxLabel4
-&amp;pd_auxvalue4=auxValue4&amp;pd_backlabel1=backLabel1&amp;pd_backvalue1=backValue1
-&amp;pd_backlabel2=backLabel2&amp;pd_backvalue2=backValue2&amp;pd_backlabel3=backLabel3
-&amp;pd_backvalue3=backValue3&amp;pd_backlabel4=backLabel4&amp;pd_backvalue4=backValue4
-&amp;pd_rellatitude1=relLatitude1&amp;pd_rellongitude1=relLongitude1&amp;pd_reltext1=relText1
-&amp;pd_rellatitude2=relLatitude2&amp;pd_rellongitude2=relLongitude2&amp;pd_reltext2=relText2
-&amp;pd_rellatitude3=relLatitude3&amp;pd_rellongitude3=relLongitude3&amp;pd_reltext3=relText3
-&amp;pd_rellatitude4=relLatitude4&amp;pd_rellongitude4=relLongitude4&amp;pd_reltext4=relText4
-&amp;pd_rellatitude5=relLatitude5&amp;pd_rellongitude5=relLongitude5&amp;pd_reltext5=relText5
-&amp;pd_rellatitude6=relLatitude6&amp;pd_rellongitude6=relLongitude6&amp;pd_reltext6=relText6
-&amp;pd_rellatitude7=relLatitude7&amp;pd_rellongitude7=relLongitude7&amp;pd_reltext7=relText7
-&amp;pd_rellatitude8=relLatitude8&amp;pd_rellongitude8=relLongitude8&amp;pd_reltext8=relText8
-&amp;pd_rellatitude9=relLatitude9&amp;pd_rellongitude9=relLongitude9&amp;pd_reltext9=relText9
-&amp;pd_rellatitude10=relLatitude10&amp;pd_rellongitude10=relLongitude10&amp;pd_reltext10=relText10
-</pre>
-<div><strong>Request Parameters:</strong></div>
-<pre><strong>Mandatory:</strong> 
-action, apiKey, passDataId
+[Back to the Table of Contents](/1.3/README.md)&nbsp;&nbsp;|&nbsp;&nbsp;[Back to API Methods](API_METHODS.md)
+## updatePass
+__Synopsis:__  
+This API request updates the pass data for that passDataId if exists. If this pass data was already used to generate a Passbook Pass which is installed on the device, then this request will also trigger a pass update on that device. Only the dynamic pas data is allowed to be updated and rest of the data stays the same. If the pass template associated with this pass was updated with new images, colors, data types and number of fields then those updates will be also reflected in the pass update. All the data is updated in limitation to the settings on the pass template and all the other/extra data is ignored. You cannot update Email (or) Phone in this request but the pass data. On success, it will return the UpdateStatusId. For more info see below for Mandatory/Optional fields and Error codes.
 
+__Request: XML__
+```xml
+<REQUEST>
+    <ACTION>updatePass</ACTION>
+    <API_KEY>apiKey</API_KEY>
+    <PASSDATAID>passDataId</PASSDATAID>
+    <PASSDATA>
+        <THUMBNAILURL>thumbnailUrl</THUMBNAILURL>
+        <BARCODEVALUE>barcodeValue</BARCODEVALUE>
+        <BARCODETEXT>barcodeText</BARCODETEXT>
+        <HEADERLABEL1>headerLabel1</HEADERLABEL1>
+        <HEADERVALUE1>headerValue1</HEADERVALUE1>
+        <PRIMARYLABEL1>primaryLabel1</PRIMARYLABEL1>
+        <PRIMARYVALUE1>primaryValue1</PRIMARYVALUE1> 
+        <PRIMARYLABEL2>primaryLabel2</PRIMARYLABEL2>
+        <PRIMARYVALUE2>primaryValue2</PRIMARYVALUE2> 
+        <SECLABEL1>secLabel1</SECLABEL1>
+        <SECVALUE1>secValue1</SECVALUE1>
+        <SECLABEL2>sedLabel2</SECLABEL2>
+        <SECVALUE2>secValue2</SECVALUE2>
+        <SECLABEL3>sedLabel3</SECLABEL3>
+        <SECVALUE3>secValue3</SECVALUE3>
+        <SECLABEL4>sedLabel4</SECLABEL4>
+        <SECVALUE4>secValue4</SECVALUE4>
+        <AUXLABEL1>auxLabel1</AUXLABEL1>
+        <AUXVALUE1>auxValue1</AUXVALUE1>
+        <AUXLABEL2>auxLabel2</AUXLABEL2>
+        <AUXVALUE2>auxValue2</AUXVALUE2>
+        <AUXLABEL3>auxLabel3</AUXLABEL3>
+        <AUXVALUE3>auxValue3</AUXVALUE3>
+        <AUXLABEL4>auxLabel4</AUXLABEL4>
+        <AUXVALUE4>auxValue4</AUXVALUE4>
+        <BACKLABEL1>backLabel1</BACKLABEL1>
+        <BACKVALUE1>backValue1</BACKVALUE1>
+        <BACKLABEL2>backLabel2</BACKLABEL2>
+        <BACKVALUE2>backValue2</BACKVALUE2>
+        <BACKLABEL3>backLabel3</BACKLABEL3>
+        <BACKVALUE3>backValue3</BACKVALUE3>
+        <BACKLABEL4>backLabel4</BACKLABEL4>
+        <BACKVALUE4>backValue4</BACKVALUE4>
+        <RELLATITUDE1>relLatitude1</RELLATITUDE1>
+        <RELLONGITUDE1>relLongitude1</RELLONGITUDE1>
+        <RELTEXT1>relText1</RELTEXT1>
+        <RELLATITUDE2>relLatitude2</RELLATITUDE2>
+        <RELLONGITUDE2>relLongitude2</RELLONGITUDE2>
+        <RELTEXT2>relText2</RELTEXT2>
+        <RELLATITUDE3>relLatitude3</RELLATITUDE3>
+        <RELLONGITUDE3>relLongitude3</RELLONGITUDE3>
+        <RELTEXT3>relText3</RELTEXT3>
+        <RELLATITUDE4>relLatitude4</RELLATITUDE4>
+        <RELLONGITUDE4>relLongitude4</RELLONGITUDE4>
+        <RELTEXT4>relText4</RELTEXT4>
+        <RELLATITUDE5>relLatitude5</RELLATITUDE5>
+        <RELLONGITUDE5>relLongitude5</RELLONGITUDE5>
+        <RELTEXT5>relText5</RELTEXT5>
+        <RELLATITUDE6>relLatitude6</RELLATITUDE6>
+        <RELLONGITUDE6>relLongitude6</RELLONGITUDE6>
+        <RELTEXT6>relText6</RELTEXT6>
+        <RELLATITUDE7>relLatitude7</RELLATITUDE7>
+        <RELLONGITUDE7>relLongitude7</RELLONGITUDE7>
+        <RELTEXT7>relText7</RELTEXT7>
+        <RELLATITUDE8>relLatitude8</RELLATITUDE8>
+        <RELLONGITUDE8>relLongitude8</RELLONGITUDE8>
+        <RELTEXT8>relText8</RELTEXT8>
+        <RELLATITUDE9>relLatitude9</RELLATITUDE9>
+        <RELLONGITUDE9>relLongitude9</RELLONGITUDE9>
+        <RELTEXT9>relText9</RELTEXT9>
+        <RELLATITUDE10>relLatitude10</RELLATITUDE10>
+        <RELLONGITUDE10>relLongitude10</RELLONGITUDE10>
+        <RELTEXT10>relText10</RELTEXT10>
+    </PASSDATA>    
+</REQUEST>
+```
+
+__Request: GET__
+
+    API_URL?action=updatepass&api_key=apiKey&passdataid=passDataId
+    &pd_thumbnailurl=thumbnailUrl
+    &pd_barcodevalue=barcodeValue&pd_barcodetext=barcodeText
+    &pd_headerlabel1=headerLabel1&pd_headervalue1=headerValue1
+    &pd_primarylabel1=primaryLabel1&pd_primaryvalue1=primaryValue1
+    &pd_primarylabel2=primaryLabel2&pd_primaryvalue2=primaryValue2
+    &pd_seclabel1=secLabel1&pd_secvalue1=secValue1&pd_seclabel2=secLabel2
+    &pd_secvalue2=secValue2&pd_seclabel3=secLabel3&pd_secvalue3=secValue3
+    &pd_seclabel4=secLabel4&pd_secvalue4=secValue4&pd_auxlabel1=auxLabel1
+    &pd_auxvalue1=auxValue1&pd_auxlabel2=auxLabel2&pd_auxvalue2=auxValue2
+    &pd_auxlabel3=auxLabel3&pd_auxvalue3=auxValue3&pd_auxlabel4=auxLabel4
+    &pd_auxvalue4=auxValue4&pd_backlabel1=backLabel1&pd_backvalue1=backValue1
+    &pd_backlabel2=backLabel2&pd_backvalue2=backValue2&pd_backlabel3=backLabel3
+    &pd_backvalue3=backValue3&pd_backlabel4=backLabel4&pd_backvalue4=backValue4
+    &pd_rellatitude1=relLatitude1&pd_rellongitude1=relLongitude1&pd_reltext1=relText1
+    &pd_rellatitude2=relLatitude2&pd_rellongitude2=relLongitude2&pd_reltext2=relText2
+    &pd_rellatitude3=relLatitude3&pd_rellongitude3=relLongitude3&pd_reltext3=relText3
+    &pd_rellatitude4=relLatitude4&pd_rellongitude4=relLongitude4&pd_reltext4=relText4
+    &pd_rellatitude5=relLatitude5&pd_rellongitude5=relLongitude5&pd_reltext5=relText5
+    &pd_rellatitude6=relLatitude6&pd_rellongitude6=relLongitude6&pd_reltext6=relText6
+    &pd_rellatitude7=relLatitude7&pd_rellongitude7=relLongitude7&pd_reltext7=relText7
+    &pd_rellatitude8=relLatitude8&pd_rellongitude8=relLongitude8&pd_reltext8=relText8
+    &pd_rellatitude9=relLatitude9&pd_rellongitude9=relLongitude9&pd_reltext9=relText9
+    &pd_rellatitude10=relLatitude10&pd_rellongitude10=relLongitude10&pd_reltext10=relText10
+
+__Request Parameters:__  
+<pre>
+<strong>Mandatory:</strong> 
+action, apiKey, passDataId
 <strong>Optional: </strong>
 thumbnailUrl,
 barcodeText (if "Barcode = Allowed" &amp;&amp; "Barcode Alternate Text = Dynamic Text" for Pass Template otherwise IGNORED), 
@@ -130,45 +127,53 @@ relLatitude6, relLongitude6, relText6,
 relLatitude7, relLongitude7, relText7,
 relLatitude8, relLongitude8, relText8,
 relLatitude9, relLongitude9, relText9,
-relLatitude10, relLongitude10, relText10,
+relLatitude10, relLongitude10, relText10
 </pre>
 
-<strong>Response Parameters:</strong><br />
+__Response Parameters:__  
 status, passDataId, updateStatusID, Errorcode, Errorinfo
 
-<strong>Related Errorcodes: </strong><br />
+__Related Errorcodes:__  
 E802, E803, E807, E808, E809, E840, E841, E842, E843, E844, E845, E846, E847, E848, E849, E850, E851, E852, E853, E854, E855, E856, E857, E858, E859, E860, E861, E862, E863, E864, E865, E866, E867, E868, E869
 E870, E871, E872, E873, E874, E875, E876, E877, E878, E879, E880, E881, E882, E883, E884, E885, E886, E887, E888, E889, E890, E891, E892, E893, E894, E895, E896, E897, E898, E899
 
-<div><strong>Request Example:</strong></div>
-<pre>&lt;REQUEST&gt;
-    &lt;ACTION&gt;updatePass&lt;/ACTION&gt;
-    &lt;API_KEY&gt;qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ&lt;/API_KEY&gt;
-    &lt;PASSDATAID&gt;1233&lt;/PASSDATAID&gt;
-    &lt;PASSDATA&gt;
-        &lt;THUMBNAILURL&gt;http://andreas.com/pixs/steve-jobs.png&lt;/THUMBNAILURL&gt;
-        &lt;BARCODEVALUE&gt;3434578961A&lt;/BARCODEVALUE&gt;
-        &lt;BARCODETEXT&gt;PASS-343-457&lt;/BARCODETEXT&gt;
-        &lt;HEADERLABEL1&gt;SEAT&lt;/HEADERLABEL1&gt;
-        &lt;HEADERVALUE1&gt;100C&lt;/HEADERVALUE1&gt;
-        &lt;SECLABEL1&gt;Date&lt;/SECLABEL1&gt;
-        &lt;SECVALUE1&gt;3rd July, 2013&lt;/SECVALUE1&gt;
-        &lt;BACKVALUE4&gt;Important - Change&lt;/BACKVALUE4&gt;
-        &lt;BACKVALUE4&gt;New ticket issued. Schedule preponed by one day.&lt;/BACKVALUE4&gt;
-        &lt;RELLATITUDE2&gt;42.347888&lt;/RELLATITUDE2&gt;
-        &lt;RELLONGITUDE2&gt;-71.087903&lt;/RELLONGITUDE2&gt;
-        &lt;RELTEXT2&gt;Event at HYNES CONVENTION CENTRE&lt;/RELTEXT2&gt;
-    &lt;/PASSDATA&gt;    
-&lt;/REQUEST&gt;</pre>
-<div><strong>Response Example: Success</strong></div>
-<pre>&lt;RESPONSE&gt;
-    &lt;STATUS&gt;Success&lt;/STATUS&gt;
-    &lt;PASSDATAID&gt;1233&lt;/PASSDATAID&gt;
-    &lt;UPDATESTATUSID&gt;1007&lt;/UPDATESTATUSID&gt;
-&lt;/RESPONSE&gt;</pre>
-<div><strong>Response Example: Failure</strong></div>
-<pre>&lt;RESPONSE&gt;
-    &lt;STATUS&gt;Failure&lt;/STATUS&gt;
-    &lt;ERRORCODE&gt;E809&lt;/ERRORCODE&gt;
-    &lt;ERRORINFO&gt;Pass was not updated. Internal error occured.&lt;/ERRORINFO&gt;
-&lt;/RESPONSE&gt;</pre>
+__Request Example:__
+```xml
+<REQUEST>
+    <ACTION>updatePass</ACTION>
+    <API_KEY>qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ</API_KEY>
+    <PASSDATAID>1233</PASSDATAID>
+    <PASSDATA>
+        <THUMBNAILURL>http://andreas.com/pixs/steve-jobs.png</THUMBNAILURL>
+        <BARCODEVALUE>3434578961A</BARCODEVALUE>
+        <BARCODETEXT>PASS-343-457</BARCODETEXT>
+        <HEADERLABEL1>SEAT</HEADERLABEL1>
+        <HEADERVALUE1>100C</HEADERVALUE1>
+        <SECLABEL1>Date</SECLABEL1>
+        <SECVALUE1>3rd July, 2013</SECVALUE1>
+        <BACKVALUE4>Important - Change</BACKVALUE4>
+        <BACKVALUE4>New ticket issued. Schedule preponed by one day.</BACKVALUE4>
+        <RELLATITUDE2>42.347888</RELLATITUDE2>
+        <RELLONGITUDE2>-71.087903</RELLONGITUDE2>
+        <RELTEXT2>Event at HYNES CONVENTION CENTRE</RELTEXT2>
+    </PASSDATA>    
+</REQUEST>
+```
+
+__Response Example: Success__
+```xml
+<RESPONSE>
+    <STATUS>Success</STATUS>
+    <PASSDATAID>1233</PASSDATAID>
+    <UPDATESTATUSID>1007</UPDATESTATUSID>
+</RESPONSE>
+```
+
+__Response Example: Failure__
+```xml
+<RESPONSE>
+    <STATUS>Failure</STATUS>
+    <ERRORCODE>E809</ERRORCODE>
+    <ERRORINFO>Pass was not updated. Internal error occured.</ERRORINFO>
+</RESPONSE>
+```
