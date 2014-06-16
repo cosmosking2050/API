@@ -1,70 +1,86 @@
-<a href="/1.3/README.md">Back to the Table of Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="API_METHODS.md">Back to API Methods</a>
-<h2>subscribeEmail + unsubscribeEmail</h2>
-<p><strong>Synopsis:</strong><br/>
-'subscribeEmail' API will subscribe the email address to a particular campaign. Email address is referenced by 'EMAIL' and the campaign is referenced by 'CAMPAIGNID' in the API request. 
-After the email address is subscribed to a campaign they will receive all auto responders and scheduled messages for that campaign until they are unsubscribed through the 'unsubscribeEmail' API or UI<br/>
-'unsubscribeEmail' API will unsubscribe the email address from a particular campaign. You can unsubscribe all the subscribers from the campaign by passing 'ALL' as the email address.
-Email address is referenced by 'EMAIL' in the API, and the campaign is referenced by 'CAMPAIGNID'.
-</p>
-<div><strong>Request: subscribeEmail</strong></div>
-<pre>&lt;REQUEST&gt;
-  &lt;ACTION&gt;subscribeEmail&lt;/ACTION&gt;
-	&lt;API_KEY&gt;apiKey&lt;/API_KEY&gt;
-	&lt;CAMPAIGNID&gt;Campaign ID&lt;/CAMPAIGNID&gt;
-	&lt;EMAIL&gt;Email address to subscribe&lt;/EMAIL&gt;
-	&lt;DATA&gt;
-		&lt;FIRST_NAME&gt;First Name&lt;/FIRST_NAME&gt;
-		&lt;LAST_NAME&gt;Last Name&lt;/LAST_NAME&gt;
-		&lt;GENDER&gt;Gender&lt;/GENDER&gt;
-		...
-	&lt;/DATA&gt;	
-	&lt;NOTIFY&gt;'yes/no' on whether to notify user on successful opt in&lt;/NOTIFY&gt;
-&lt;/REQUEST&gt;</pre>
-<div><strong>Request: unsubscribeEmail</strong></div>
-<pre>&lt;REQUEST&gt;
-    &lt;ACTION&gt;unsubscribeEmail&lt;/ACTION&gt;
-    &lt;API_KEY&gt;apiKey&lt;/API_KEY&gt;
-    &lt;CAMPAIGNID&gt;Campaign ID&lt;/CAMPAIGNID&gt;
-    &lt;EMAIL&gt;Email address to subscribe&lt;/EMAIL&gt;
-&lt;/REQUEST&gt;</pre>
-<div><strong>Request Parameters:</strong></div>
-<pre><strong>Mandatory:</strong> Action, API_KEY, CAMPAIGNID, Email
-<strong>Optional:</strong> Data, Notify</pre>
-<strong>Response Parameters:</strong><br />
+[Back to the Table of Contents](/1.3/README.md)&nbsp;&nbsp;|&nbsp;&nbsp;[Back to API Methods](API_METHODS.md)
+## subscribeEmail + unsubscribeEmail
+__Synopsis:__  
+'subscribeEmail' API will subscribe the email address to a particular campaign. Email address is referenced by 'EMAIL' and the campaign is referenced by 'CAMPAIGNID' in the API request. After the email address is subscribed to a campaign they will receive all auto responders and scheduled messages for that campaign until they are unsubscribed through the 'unsubscribeEmail' API or UI. 'unsubscribeEmail' API will unsubscribe the email address from a particular campaign. You can unsubscribe all the subscribers from the campaign by passing 'ALL' as the email address. Email address is referenced by 'EMAIL' in the API, and the campaign is referenced by 'CAMPAIGNID'.
 
-    CAMPAIGNID, Errorcode, Errorinfo, Email, Status
+__Request: subscribeEmail__
+```xml
+<REQUEST>
+  <ACTION>subscribeEmail</ACTION>
+    <API_KEY>apiKey</API_KEY>
+    <CAMPAIGNID>Campaign ID</CAMPAIGNID>
+    <EMAIL>Email address to subscribe</EMAIL>
+    <DATA>
+        <FIRST_NAME>First Name</FIRST_NAME>
+        <LAST_NAME>Last Name</LAST_NAME>
+        <GENDER>Gender</GENDER>
+        ...
+    </DATA>   
+    <NOTIFY>'yes/no' on whether to notify user on successful opt in</NOTIFY>
+</REQUEST>
+```
 
-<strong>Related Errorcodes: </strong><br />
+__Request: unsubscribeEmail__
+```xml
+<REQUEST>
+    <ACTION>unsubscribeEmail</ACTION>
+    <API_KEY>apiKey</API_KEY>
+    <CAMPAIGNID>Campaign ID</CAMPAIGNID>
+    <EMAIL>Email address to subscribe</EMAIL>
+</REQUEST>
+```
 
-    E911, E912, E913, E914
+__Request Parameters:__
+<pre>
+<strong>Mandatory:</strong>
+Action, API_KEY, CAMPAIGNID, Email
+<strong>Optional:</strong>
+Data, Notify
+</pre>
 
-<div><strong>Request Examples</strong></div>
+__Response Parameters:__  
+CAMPAIGNID, Errorcode, Errorinfo, Email, Status
+
+__Related Errorcodes:__  
+E911, E912, E913, E914
+
+__Request Example:__  
 XML:
-<pre>&lt;REQUEST&gt;
-	&lt;ACTION&gt;subscribeEmail&lt;/ACTION&gt;
-	&lt;API_KEY&gt;qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ&lt;/API_KEY&gt;
-	&lt;CAMPAIGNID&gt;1116&lt;/CAMPAIGNID&gt;
-	&lt;EMAIL&gt;john@email.com&lt;/EMAIL&gt;
-	&lt;DATA&gt;
-		&lt;FIRST_NAME&gt;John&lt;/FIRST_NAME&gt;
-		&lt;LAST_NAME&gt;Smith&lt;/LAST_NAME&gt;
-		&lt;AGE&gt;30&lt;/AGE&gt;
-		&lt;PET&gt;Dog&lt;/PET&gt;
-	&lt;/DATA&gt;	
-	&lt;NOTIFY&gt;yes&lt;/NOTIFY&gt;
-&lt;/REQUEST&gt;</pre>
+```xml
+<REQUEST>
+    <ACTION>subscribeEmail</ACTION>
+    <API_KEY>qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ</API_KEY>
+    <CAMPAIGNID>1116</CAMPAIGNID>
+    <EMAIL>john@email.com</EMAIL>
+    <DATA>
+        <FIRST_NAME>John</FIRST_NAME>
+        <LAST_NAME>Smith</LAST_NAME>
+        <AGE>30</AGE>
+        <PET>Dog</PET>
+    </DATA>   
+    <NOTIFY>yes</NOTIFY>
+</REQUEST>
+```
+
 GET:
-<pre>https://secure.skycore.com/API/wxml/1.3/index.php?action=subscribeemail&api_key=qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ
-&email=john@email.com&campaignid=1116&notify=yes&data_first_name=John&data_last_name=Smith&data_age=30&data_pet=Dog</pre>
-<div><strong>Response Example: Success</strong></div>
-<pre>&lt;RESPONSE&gt;
-    &lt;STATUS&gt;Success&lt;/STATUS&gt;
-    &lt;CAMPAIGNID&gt;1116&lt;/CAMPAIGNID&gt;
-    &lt;EMAIL&gt;john@email.com&lt;/EMAIL&gt;
-&lt;/RESPONSE&gt;</pre>
-<div><strong>Response Example: Failure</strong></div>
-<pre>&lt;RESPONSE&gt;
-    &lt;STATUS&gt;Failure&lt;/STATUS&gt;
-    &lt;ERRORCODE&gt;E912&lt;/ERRORCODE&gt;
-    &lt;ERRORINFO&gt; Invalid CAMPAIGNID &lt;/ERRORINFO&gt;
-&lt;/RESPONSE&gt;</pre>
+
+    https://secure.skycore.com/API/wxml/1.3/index.php?action=subscribeemail&api_key=qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ
+    &email=john@email.com&campaignid=1116&notify=yes&data_first_name=John&data_last_name=Smith&data_age=30&data_pet=Dog
+    
+__Response Example: Success__
+```xml
+<RESPONSE>
+    <STATUS>Success</STATUS>
+    <CAMPAIGNID>1116</CAMPAIGNID>
+    <EMAIL>john@email.com</EMAIL>
+</RESPONSE>
+```
+
+__Response Example: Failure__
+```xml
+<RESPONSE>
+    <STATUS>Failure</STATUS>
+    <ERRORCODE>E912</ERRORCODE>
+    <ERRORINFO> Invalid CAMPAIGNID </ERRORINFO>
+</RESPONSE>
+```
