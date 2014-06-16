@@ -2,7 +2,7 @@
 ## sendSavedMMSCampaign
 __*Postback Notifications for this action are the same as for SendSavedMMS__
 
-__Synopsis:__
+__Synopsis:__  
 This API function sends stored MMS from a specified account using a MMSID to a list of mobile numbers that are currently subscribed to a campaign. Recipient addresses are not specified, only the CampaignID is specified. Content will be sent from campaign default shortcode.
 
 __Request:__
