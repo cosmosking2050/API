@@ -103,7 +103,7 @@ GET:
 For more details please visit <a href="https://github.com/SkycoreMobile/API/blob/master/1.3/CONTENTS/POSTBACK_NOTIFICATION_SYSTEM.md">postback doc</a></p>
 <pre>&lt;?xml version='1.0'?&gt;
 &lt;POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;
+xsi:noNamespaceSchemaLocation ="http://www.skycore.com/platform/schema/postback.xsd"&gt;
 &lt;ORIGIN&gt;MMS_MT&lt;/ORIGIN&gt;
 &lt;CODE&gt;N101&lt;/CODE&gt;
 &lt;SENTAS&gt;MMS&lt;/SENTAS&gt;
@@ -117,7 +117,7 @@ xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;
 <p>When an MMS delivery report is received the system will generate a Postback notification. Not all carriers provide MMS delivery receipts.</p>
 <pre>&lt;?xml version='1.0'?&gt;
 &lt;POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;
+xsi:noNamespaceSchemaLocation ="http://www.skycore.com/platform/schema/postback.xsd"&gt;
 &lt;ORIGIN&gt;MMS_MT&lt;/ORIGIN&gt;
 &lt;CODE&gt;N102&lt;/CODE&gt;
 &lt;SENTAS&gt;MMS&lt;/SENTAS&gt;
