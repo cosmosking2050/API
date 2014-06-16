@@ -1,10 +1,9 @@
-<a href="/1.3/README.md">Back to the Table of Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="API_METHODS.md">Back to API Methods</a>
-<h2>sendSMS</h2>
-<strong>Synopsis:</strong>
-
+[Back to the Table of Contents](/1.3/README.md)&nbsp;&nbsp;|&nbsp;&nbsp;[Back to API Methods](API_METHODS.md)
+## sendSMS
+__Synopsis:__  
 This API function sends an SMS containing _text_ from the specified account and _shortcode_ to a recipient’s mobile number. If the aggregator allows masking longcode/sender with some brand or string, 'from_mask' can be set in the API. 'from_mask' is limited to 11 characters beyond which it will be cut-off. If 'Enforce Campaign Check' is turned ON this function will require the ID of MMS campaign that receiver's number is subscribed to passed inside _campaignref_ node.
 
-<strong>Request:</strong>
+__Request:__
 
 ```xml
 <REQUEST>
@@ -19,7 +18,7 @@ This API function sends an SMS containing _text_ from the specified account and 
 </REQUEST>
 ```
 
-<strong>Request Parameters:</strong>
+__Request Parameters:__
 
 <pre>
 <strong>(If "Enforce Campaign Check" is NOT Enabled)</strong>
@@ -35,18 +34,16 @@ This API function sends an SMS containing _text_ from the specified account and 
 <strong>Optional:</strong> SPID, From_Mask
 </pre>
 	
-<strong>Response Parameters:</strong>
+__Response Parameters:__
 
-<pre>Status, TrackingID, To, Errorcode, Errorinfo</pre>
+    Status, TrackingID, To, Errorcode, Errorinfo
 	
-<strong>Related Error codes:</strong>
+__Related Error codes:__
 
-<pre>E712, E201, E713, E110, E628, E111</pre>
+    E712, E201, E713, E110, E628, E111
 	
-<strong>Request Examples</strong>
-
+__Request Examples__  
 XML:
-
 ```xml
 <REQUEST>
     <ACTION>sendSMS</ACTION>
@@ -60,11 +57,9 @@ XML:
 
 GET:
 
-<pre>https://secure.skycore.com/API/wxml/1.3/index.php?action=sendsms&api_key=Y6r74u6Br4hAVgrolveksjEiiu8yJX
-&to=15551234888&from=60856&text=Hello+Jerry%2C+Greetings+from+Marc</pre>
+    https://secure.skycore.com/API/wxml/1.3/index.php?action=sendsms&api_key=Y6r74u6Br4hAVgrolveksjEiiu8yJX&to=15551234888&from=60856&text=Hello+Jerry%2C+Greetings+from+Marc
 
-<strong>Response Example: Success</strong>
-
+__Response Example: Success__
 ```xml
 <RESPONSE>
     <STATUS>Success</STATUS>
@@ -73,8 +68,7 @@ GET:
  </RESPONSE>
 ```
 
-<strong>Response Example: Failure</strong>
-
+__Response Example: Failure__
 ```xml
 <RESPONSE>
     <STATUS>Failure</STATUS>
@@ -84,10 +78,8 @@ GET:
 </RESPONSE>
 ```
 
-<strong>Postback Notification:</strong>
-
+__Postback Notification:__  
 When the SMS is sent we will generate a Postback notification.
-
 ```xml
 <NOTIFICATION ID="325" CREATED="2011-07-26 10:22:26.975911-04">
     <ORIGIN>SMS_MT</ORIGIN>
@@ -102,7 +94,6 @@ When the SMS is sent we will generate a Postback notification.
 ```
 
 When we get an SMS delivery receipt we will generate another Postback notification. Not all carriers provide SMS delivery receipts.
-
 ```xml
 <NOTIFICATION ID="326" CREATED="2011-07-26 10:22:27.146582-04">
     <ORIGIN>SMS_MT</ORIGIN>
