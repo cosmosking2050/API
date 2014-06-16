@@ -1,42 +1,60 @@
 <a href="/1.3/README.md">Back to the Table of Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="API_METHODS.md">Back to API Methods</a>
 <h2>getMmsIds</h2>
-<p><strong>Synopsis:</strong><br />
-This API function returns a list of comma separated MMSIDS for that account.</p>
-<div><strong>Request: XML</strong></div>
-<pre>&lt;REQUEST&gt;
-    &lt;ACTION&gt;getMmsIds&lt;/ACTION&gt;
-    &lt;API_KEY&gt;apiKey&lt;/API_KEY&gt;
-&lt;/REQUEST&gt;</pre>
-<div><strong>Request: GET</strong></div>
+<strong>Synopsis:</strong>
+
+This API function returns a list of comma separated MMSIDS for that account.
+
+<strong>Request: XML</strong>
+
+```xml
+<REQUEST>
+    <ACTION>getMmsIds</ACTION>
+    <API_KEY>apiKey</API_KEY>
+</REQUEST>
+```
+
+<strong>Request: GET</strong>
 <pre>API_URL?action=getmmsids&amp;api_key=apiKey</pre>
-<div><strong>Request Parameters:</strong></div>
+
+<strong>Request Parameters:</strong>
 <pre><strong>Mandatory:</strong>
 action, apikey
 <strong>Optional:</strong>
 --
 </pre>
 
-<strong>Response Parameters:</strong><br />
+<strong>Response Parameters:</strong>
 status, mmsids, Errorcode, Errorinfo
 
-<strong>Related Errorcodes: </strong><br />
+<strong>Related Errorcodes:</strong>
 E200
-<div><strong>Request Examples</strong></div>
+
+<strong>Request Examples</strong>
+
 XML:
-<pre>&lt;REQUEST&gt;
-    &lt;ACTION&gt;getmmsids&lt;/ACTION&gt;
-    &lt;API_KEY&gt;qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ&lt;/API_KEY&gt;    
-&lt;/REQUEST&gt;</pre>
+```xml
+<REQUEST>
+    <ACTION>getmmsids</ACTION>
+    <API_KEY>qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ</API_KEY>    
+</REQUEST>
+```
+
 GET:
 <pre>https://secure.skycore.com/API/wxml/1.3/index.php?action=getmmsids&api_key=qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ</pre>
-<div><strong>Response Example: Success</strong></div>
-<pre>&lt;RESPONSE&gt;
-    &lt;STATUS&gt;Success&lt;/STATUS&gt;
-    &lt;MMSIDS&gt;10011,10234,10634&lt;/MMSIDS&gt;
-&lt;/RESPONSE&gt;</pre>
-<div><strong>Response Example: Failure</strong></div>
-<pre>&lt;RESPONSE&gt;
-    &lt;STATUS&gt;Failure&lt;/STATUS&gt;
-    &lt;ERRORCODE&gt;E200&lt;/ERRORCODE&gt;
-    &lt;ERRORINFO&gt;No MMS Templates were created in this account.&lt;/ERRORINFO&gt;
-&lt;/RESPONSE&gt;</pre>
+
+<strong>Response Example: Success</strong>
+```xml
+<RESPONSE>
+    <STATUS>Success</STATUS>
+    <MMSIDS>10011,10234,10634</MMSIDS>
+</RESPONSE>
+```
+
+<strong>Response Example: Failure</strong>
+```xml
+<RESPONSE>
+    <STATUS>Failure</STATUS>
+    <ERRORCODE>E200</ERRORCODE>
+    <ERRORINFO>No MMS Templates were created in this account.</ERRORINFO>
+</RESPONSE>
+```
