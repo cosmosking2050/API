@@ -73,7 +73,7 @@ __Postback Notifications__
 When an MMS is saved, the system will generate a Postback notification and unlock MMS for further use. If an MMS contain audio/video, Postback will be sent when the encoding of the MMS audio/video is finished, otherwise Postback notification will be sent instantly. Below is an example of Postback notification when an MMS is saved successfully:
 
 ```xml
-<NOTIFICATION CREATED="2011-01-01 20:09:12.975911-04" ID="325">
+<NOTIFICATION ID="325" CREATED="2011-01-01 20:09:12.975911-04">
     <ORIGIN>MMS_MT</ORIGIN>
     <CODE>N003</CODE>
     <BODY>
