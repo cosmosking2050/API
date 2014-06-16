@@ -4,7 +4,6 @@ __Synopsis:__
 This API function sends an SMS containing _text_ from the specified account and _shortcode_ to a recipient’s mobile number. If the aggregator allows masking longcode/sender with some brand or string, 'from_mask' can be set in the API. 'from_mask' is limited to 11 characters beyond which it will be cut-off. If 'Enforce Campaign Check' is turned ON this function will require the ID of MMS campaign that receiver's number is subscribed to passed inside _campaignref_ node.
 
 __Request:__
-
 ```xml
 <REQUEST>
     <ACTION>sendSMS</ACTION>
@@ -19,7 +18,6 @@ __Request:__
 ```
 
 __Request Parameters:__
-
 <pre>
 <strong>(If "Enforce Campaign Check" is NOT Enabled)</strong>
 
