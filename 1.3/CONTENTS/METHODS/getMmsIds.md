@@ -1,10 +1,9 @@
 <a href="/1.3/README.md">Back to the Table of Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="API_METHODS.md">Back to API Methods</a>
 <h2>getMmsIds</h2>
-<strong>Synopsis:</strong>
-
+<strong>Synopsis:</strong>  
 This API function returns a list of comma separated MMSIDS for that account.
 
-<strong>Request: XML</strong>
+<strong>Request: XML</strong>  
 ```xml
 <REQUEST>
     <ACTION>getMmsIds</ACTION>
@@ -12,10 +11,10 @@ This API function returns a list of comma separated MMSIDS for that account.
 </REQUEST>
 ```
 
-<strong>Request: GET</strong>
+<strong>Request: GET</strong>  
 <pre>API_URL?action=getmmsids&amp;api_key=apiKey</pre>
 
-<strong>Request Parameters:</strong>
+<strong>Request Parameters:</strong>  
 <pre><strong>Mandatory:</strong>
 action, apikey
 <strong>Optional:</strong>
