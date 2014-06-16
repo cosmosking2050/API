@@ -10,16 +10,13 @@ Our API allows you to dynamically change the text of each slide by setting up op
 
 A Device Discovery Message (DDM) is a short textual MMS message that is sent to the number to discover what handset the end user is using. We store this handset information in our system and reuse it, so a DDM is sent only to new numbers. If the DDM settings are not included within your API call and the number is not in the handset cache, we will deliver the MMS with generic settings. If the handset is in the handset cache, the DDM will not be sent and the MMS message will be transcoded and delivered immediately. You can force sending of DDM (regardless if number is cached) by setting DDMFORCE to 'true'
 
-Our API allows you to customize DDM by setting 3 parameters:
-
-DDMTITLE - this is the DDM title (optional, if not set then "Device Discovry" text will be used)
-DDMTEXT - this is the DDM body (mandatory)
+Our API allows you to customize DDM by setting 3 parameters:  
+DDMTITLE - this is the DDM title (optional, if not set then "Device Discovry" text will be used)  
+DDMTEXT - this is the DDM body (mandatory)  
 DDMTIMEOUT - (in minutes) when we send DDM we wait for the Delivery Report which contain the handset profile. In some cases we do not receive it or it takes very long (handset turned off or out of range). This variable tells the system how long should it wait for DDM Delivery Report before sending actual content using Default parameters. Default value of this parameter is 5 minutes.
 
-SendSavedMMS allow you to pass HandsetID inside DEVICE parameter. We will store this information and (if HandsetID is recognized by our system) use handset profile to adapt content for current and future MMS delivery.
-
-NOTE: Once we receive Delivery Receipt with HandsetID we overwrite current value assigned to that number, we consider HandsetID from Delivery Receipt more up-to-date.
-
+SendSavedMMS allow you to pass HandsetID inside DEVICE parameter. We will store this information and (if HandsetID is recognized by our system) use handset profile to adapt content for current and future MMS delivery.  
+NOTE: Once we receive Delivery Receipt with HandsetID we overwrite current value assigned to that number, we consider HandsetID from Delivery Receipt more up-to-date.  
 DEVICE parameter can be used with DDM as a fallback mechanism. If HandsetID passed in API call is not recognized by our system, it will send DDM (if specified in the request) to the handset to detect it. If there was no DDM specified in the request, system will use generic settings for MMS delivery.
 
 __Request:__
