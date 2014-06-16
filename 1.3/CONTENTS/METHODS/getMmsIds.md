@@ -5,7 +5,6 @@
 This API function returns a list of comma separated MMSIDS for that account.
 
 <strong>Request: XML</strong>
-
 ```xml
 <REQUEST>
     <ACTION>getMmsIds</ACTION>
