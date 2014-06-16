@@ -42,7 +42,7 @@ __Request:__
         <VALUE>customText</VALUE>
         <SLIDE>slideId</SLIDE>
     </CUSTOMTEXT>
-    </CUSTOMSUBJECT>MMSCustomSubject</CUSTOMSUBJECT>
+    <CUSTOMSUBJECT>MMSCustomSubject</CUSTOMSUBJECT>
     <DATA>
         <FIRST_NAME>firstName</FIRST_NAME>
         <LAST_NAME>lastName</LAST_NAME>
@@ -66,8 +66,9 @@ mmsid, status, to, trackingid, errorcode, errorinfo
 __Related Errorcodes:__  
 E110, E111, E241, E620, E621, E623, E626, E628, E629, E630, E631, E632, E633, E713, E714, E715
   
-__Request Example:__
+__Request Example:__  
 XML:
+```xml
 <REQUEST>
     <ACTION>sendMMSBarcode</ACTION>
     <API_KEY>qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ</API_KEY>
@@ -92,6 +93,7 @@ XML:
         <GENDER>Male</GENDER>
     </DATA>        
 </REQUEST>
+```
 
 GET:
 
