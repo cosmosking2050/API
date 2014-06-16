@@ -26,8 +26,7 @@ action, apikey
 
 status, mmsids, Errorcode, Errorinfo
 
-<strong>Related Errorcodes:</strong>
-
+<strong>Related Errorcodes:</strong>  
 E200
 
 <strong>Request Examples</strong>
