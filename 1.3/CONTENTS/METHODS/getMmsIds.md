@@ -1,4 +1,4 @@
-[Back to the Table of Contents](/1.3/README.md)&nbsp;&nbsp;|&nbsp;&nbsp;<a href="API_METHODS.md">Back to API Methods</a>
+[Back to the Table of Contents](/1.3/README.md) | [Back to API Methods](API_METHODS.md)
 <h2>getMmsIds</h2>
 <strong>Synopsis:</strong>  
 This API function returns a list of comma separated MMSIDS for that account.
