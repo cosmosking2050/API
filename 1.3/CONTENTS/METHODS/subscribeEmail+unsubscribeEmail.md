@@ -81,6 +81,6 @@ __Response Example: Failure__
 <RESPONSE>
     <STATUS>Failure</STATUS>
     <ERRORCODE>E912</ERRORCODE>
-    <ERRORINFO> Invalid CAMPAIGNID </ERRORINFO>
+    <ERRORINFO>Invalid CAMPAIGNID</ERRORINFO>
 </RESPONSE>
 ```
