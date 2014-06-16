@@ -2,6 +2,7 @@
 ## sendSavedEmail
 __Synopsis:__  
 'sendSavedEmail' API sends a stored email template to an email address. Also, it requires a reference email campaign to which this email address will be subscribed to. If any case, the subscription fails then the email address is added to the email campaign's audience manager as 'unsubscribed'. Subscription to the campaign may fail if:
+
 1. The _email address_ has already opted-out of a campaign in your account.  
 2. The _email address_ has unsubscribed from any campaign associated with the SMTP server you are using.  
 3. The _email address_ has filed a spam complaint.  
