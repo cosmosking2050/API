@@ -36,7 +36,7 @@ __Request:__
         <VALUE>Custom Text for slide</VALUE>
         <SLIDE>Slide ID</SLIDE>
     </CUSTOMTEXT>
-    </CUSTOMSUBJECT>MMS Custom Subject</CUSTOMSUBJECT>
+    <CUSTOMSUBJECT>MMS Custom Subject</CUSTOMSUBJECT>
     <DATA>
         <FIRST_NAME>First Name</FIRST_NAME>
         <LAST_NAME>Last Name</LAST_NAME>
