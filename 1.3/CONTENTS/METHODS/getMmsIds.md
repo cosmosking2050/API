@@ -22,8 +22,7 @@ action, apikey
 --
 </pre>
 
-<strong>Response Parameters:</strong>
-
+<strong>Response Parameters:</strong>  
 status, mmsids, Errorcode, Errorinfo
 
 <strong>Related Errorcodes:</strong>  
@@ -40,7 +39,7 @@ XML:
 ```
 
 GET:
-<pre>https://secure.skycore.com/API/wxml/1.3/index.php?action=getmmsids&api_key=qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ</pre>
+    https://secure.skycore.com/API/wxml/1.3/index.php?action=getmmsids&api_key=qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ
 
 <strong>Response Example: Success</strong>
 ```xml
