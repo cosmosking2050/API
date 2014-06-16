@@ -18,7 +18,8 @@ DDMTIMEOUT - when we send DDM we wait for the Delivery Report which contain the 
 
 This API allow you to pass DeviceId/HandsetId inside DEVICE parameter. We will store this information and (if HandsetID is recognized by our system) use handset profile to adapt content for current and future MMS delivery.  
 NOTE: Once we receive Delivery Receipt with HandsetId we overwrite current value assigned to that number, we consider HandsetId from Delivery Receipt more up-to-date.  
-DEVICE parameter can be used with DDM as a fallback mechanism. If HandsetId passed in API call is not recognized by our system, it will send DDM (if specified in the request) to the handset to detect it. If there was no DDM specified in the request, system will use generic settings for MMS delivery.  
+DEVICE parameter can be used with DDM as a fallback mechanism. If HandsetId passed in API call is not recognized by our system, it will send DDM (if specified in the request) to the handset to detect it. If there was no DDM specified in the request, system will use generic settings for MMS delivery.
+
 On success, it will return the MMSTrackingID. For more info see below for Mandatory/Optional fields and Error codes.  
 
 __NOTE:__ BarcodeID passed in an API call will always be used even for Databases with 'Always generate new IDs' switch set to 'Yes'  
