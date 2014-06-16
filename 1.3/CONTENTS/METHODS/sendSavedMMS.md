@@ -78,7 +78,7 @@ XML:
             <VALUE>My Custom text in first slide</VALUE>
             <SLIDE>1</SLIDE>
         </CUSTOMTEXT>
-        <CUSTOMSUBJECT>My Custom Subject</CUSTOMSUBJECT>
+        </CUSTOMSUBJECT>My Custom Subject</CUSTOMSUBJECT>
     <DATA>
         <FIRST_NAME>John</FIRST_NAME>
         <LAST_NAME>Smith</LAST_NAME>
