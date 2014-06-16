@@ -17,7 +17,7 @@ __Request: GET__
     
 __Request Parameters:__
 <pre>
-<strong>(If "Enforce Campaign Check" is NOT Enabled)</strong>
+<strong>Mandatory:</strong>
 action, apikey
 <strong>Optional:</strong>
 --
