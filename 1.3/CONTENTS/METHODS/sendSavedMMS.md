@@ -124,15 +124,15 @@ When the MMS delivery is processed successfully the system will generate a Postb
 <?xml version='1.0'?>
 <POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:noNamespaceSchemaLocation ="http://www.skycore.com/platform/schema/postback.xsd">
-<ORIGIN>MMS_MT</ORIGIN>
-<CODE>N101</CODE>
-<SENTAS>MMS</SENTAS>
-<STATUS>Message Sent</STATUS>
-<MMSID>35674</MMSID>
-<TO>16501234123</TO>
-<TRACKINGID>TU1TXzU5Nzg3OQ==</TRACKINGID>
-<SPID>0001570</SPID>
-<TIMESTAMP>2012-06-07T07:27:29-05:00</TIMESTAMP>
+    <ORIGIN>MMS_MT</ORIGIN>
+    <CODE>N101</CODE>
+    <SENTAS>MMS</SENTAS>
+    <STATUS>Message Sent</STATUS>
+    <MMSID>35674</MMSID>
+    <TO>16501234123</TO>
+    <TRACKINGID>TU1TXzU5Nzg3OQ==</TRACKINGID>
+    <SPID>0001570</SPID>
+    <TIMESTAMP>2012-06-07T07:27:29-05:00</TIMESTAMP>
 </POSTBACK>
 ```
 
@@ -141,16 +141,16 @@ When an MMS delivery report is received the system will generate a Postback noti
 <?xml version='1.0'?>
 <POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:noNamespaceSchemaLocation ="http://www.skycore.com/platform/schema/postback.xsd">
-<ORIGIN>MMS_MT</ORIGIN>
-<CODE>N102</CODE>
-<SENTAS>MMS</SENTAS>
-<STATUS>Message Sent/Delivered</STATUS>
-<MMSID>35674</MMSID>
-<TO>16501234123</TO>
-<TRACKINGID>TU1TXzU5Nzg3OQ==</TRACKINGID>
-<SPID>0001570</SPID>
-<TIMESTAMP>2012-06-07T07:27:34-05:00</TIMESTAMP>
-<HANDSET>motol7c</HANDSET>
-<AGGREGATORID>11529-64807-97508-73852-97658</AGGREGATORID>
+    <ORIGIN>MMS_MT</ORIGIN>
+    <CODE>N102</CODE>
+    <SENTAS>MMS</SENTAS>
+    <STATUS>Message Sent/Delivered</STATUS>
+    <MMSID>35674</MMSID>
+    <TO>16501234123</TO>
+    <TRACKINGID>TU1TXzU5Nzg3OQ==</TRACKINGID>
+    <SPID>0001570</SPID>
+    <TIMESTAMP>2012-06-07T07:27:34-05:00</TIMESTAMP>
+    <HANDSET>motol7c</HANDSET>
+    <AGGREGATORID>11529-64807-97508-73852-97658</AGGREGATORID>
 </POSTBACK>
 ```
