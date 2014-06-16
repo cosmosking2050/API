@@ -70,7 +70,7 @@ __Response Example: Failure__
 ```
 
 __Postback Notifications__  
-When the MMS is saved, the system will generate a Postback notification and unlock MMS for further use. If the MMS contain an audio/video, Postback will be sent when the encoding of the MMS Audio/Video is finished, otherwise Postback notification will be sent instantly. Below is an example of Postback notification when MMS is saved successfully:
+When an MMS is saved, the system will generate a Postback notification and unlock MMS for further use. If an MMS contain audio/video, Postback will be sent when the encoding of the MMS audio/video is finished, otherwise Postback notification will be sent instantly. Below is an example of Postback notification when an MMS is saved successfully:
 
 ```xml
 <NOTIFICATION CREATED="2011-01-01 20:09:12.975911-04" ID="325">
