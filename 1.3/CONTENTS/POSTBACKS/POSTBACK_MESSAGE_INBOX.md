@@ -1,17 +1,15 @@
-<a href="/1.3/README.md">Back to the Table of Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/1.3/CONTENTS/POSTBACKS/POSTBACK_SYSTEM_OVERVIEW.md">Postback System Overview</a>
-<h2>SMS/MMS MO Postbacks</h2>
+[Back to the Table of Contents](/1.3/README.md)&nbsp;&nbsp;|&nbsp;&nbsp;[Postback System Overview](/1.3/CONTENTS/POSTBACKS/POSTBACK_SYSTEM_OVERVIEW.md)
+## SMS/MMS MO Postbacks
 
 The MMS MO / SMS MO Postback API notifies you that a customer has replied to your messsage, or interacted to one of your keywords. To receive SMS MO postback notifications you need to have that option enabled in your account API. You can setup a separate Postback URL specifically for SMS/MMS MO's.
 
-<strong>SMS MO Information:</strong>
+__SMS MO Information:__
  Once enabled you will receive an notification immediately when someone interacts with your shared shortcode campaign or your dedicated shortcode. Each message comes back in its own postback notification. 
 
-<strong>MMS MO Information</strong>
+__MMS MO Information:__
 To receive MMS MO postback you need to configure it within the particular MMS Inbox keyword campaign.  Once the MMS MO postback is enabled in the MMS Inbox campaign you will start receiving postbacks for each MMS MO received on the MMS MO Keyword or replies to an SMS sent. If you have opted to enable the MMS MO moderation panel, then the postback notifictions will only be sent upon approval by the moderator.
 
-
-
-<h3>The SMS MO</h3>
+### The SMS MO
 
 This postback notifies you when an SMS MO is received.
 
@@ -38,8 +36,7 @@ This postback notifies you when an SMS MO is received.
 </POSTBACK>
 ```
 
-
-<h3>The MMS MO</h3>
+### The MMS MO
 
 This postback notifies you when an MMS MO is received.
 
@@ -58,7 +55,6 @@ This postback notifies you when an MMS MO is received.
 | FILE |  a series of sub-nodes that contains a single URL to a picture, video, audio or text file sent in the MMS MO within each node.  The URL points to the location of the content on our servers. For those developing the back-end handling of the postback URL, you may choose to download/store these content files for whatever purpose you see fit. You may also choose to store the URLs for download at a future time. The file will be removed based on the terms of your contract. | 
 
 ```xml
-
 <POSTBACK>
   <NOTIFICATION>
     <ORIGIN>MMS_MO</ORIGIN>
