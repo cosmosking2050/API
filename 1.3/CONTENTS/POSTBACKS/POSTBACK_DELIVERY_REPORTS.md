@@ -14,7 +14,7 @@ __Schema:__
 https://www.skycore.com/platform/schema/postback.xsd
 
 
-### [SMS MT Delivery Status](SMSStatus)
+### <a name="SMSStatus">SMS MT Delivery Status</a>
 
 Postback notification when an SMS is sent to the mobile network operator.
 
@@ -67,7 +67,7 @@ _N202 Example:_
 [Back To The Top](#smsmms-mt-postbacks)
 
 
-### [MMS MT Delivery Status](MMSStatus)
+### <a name="MMSStatus">MMS MT Delivery Status</a>
 
 A postback notification called `N101` is immediately sent after we begin to process the MMS. Upon receiving Delivery Report (DLR) from the carrier, the system generates Postback notification `N102` with the handset information. The N101 and N102 notifications are linked by TRACKINGID.
 
@@ -182,7 +182,7 @@ _E101 Example:_
 [Back To The Top](#DocTop)
 
 
-<h3><a name="SaveMMSStatus">SaveMMS Encoding Status</h3>
+<h3><a name="SaveMMSStatus">SaveMMS Encoding Status</a></h3>
 
 When MMS is saved (using API or the MMS Composer) we generate postback notification. When saving and encoding of the content is successful we generate N003. If encoding of the content failed we generate postback E002 containgin MMSID and AUDIONAME/VIDEONAME pointing to the content that failed to encode properly. When E002 is returned the MMSID should be considered corrupted.
 
