@@ -64,7 +64,7 @@ _N202 Example:_
   <AGGREGATORID>11529-64807-97508-73852-97658</AGGREGATORID>
 </POSTBACK>
 ```
-[Back To The Top](#smsmms-mt-postbacks)
+[Back To The Top](#DocTop)
 
 
 ### <a name="MMSStatus">MMS MT Delivery Status</a>
