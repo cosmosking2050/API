@@ -1,8 +1,7 @@
 <a href="/1.3/README.md">Back to the Table of Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="API_METHODS.md">Back to API Methods</a>
 <h2>getSendingStatistics</h2>
 <p><strong>Synopsis:</strong><br />
-This API requests a report of all messaging transactions between two dates. The server returns
-the path to an XML file containing the report. All results are saved to file which must be 
+This API requests a report of all messaging transactions between two dates. The Dates should be given in UTC. The server returns the path to an XML file containing the report. All results are saved to file which must be 
 downloaded by the requestor. Detailed Information about the report will be 
 in <a href="/1.3/CONTENTS/APPENDIX/APPENDIX_C.md">Appendix C</a>.  
 <div><strong>Request:</strong></div>
