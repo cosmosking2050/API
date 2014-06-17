@@ -193,7 +193,7 @@ __Request Example:__
             <VALUE>Hyes Convention Event Ticket</VALUE>
             <SLIDE>1</SLIDE>
         </CUSTOMTEXT>
-        </CUSTOMSUBJECT>Your Event Ticket</CUSTOMSUBJECT>
+        <CUSTOMSUBJECT>Your Event Ticket</CUSTOMSUBJECT>
     <DATA>
         <FIRST_NAME>John</FIRST_NAME>
         <LAST_NAME>Smith</LAST_NAME>
