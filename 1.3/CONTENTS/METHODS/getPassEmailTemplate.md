@@ -5,7 +5,8 @@ This API is used to get the stored email template html with an embedded passbook
 Custom pass ID is your system generated unique ID that will represent this pass data. In the case of Relevance, Relevant Text is considered only when Relevance Lat and Long values are passed in the API otherwise ignored.
 Also, it requires a reference email campaign to which this email address will be subscribed to. 
 If any case, the subscription fails then the email address is added to the email campaign's audience manager as 'unsubscribed' and you will receive a warning code and warning status in the response. 
-The subscriber's data passed in the request will be saved and profiled for this email address. The email campaign subscription might fail due to the following reasons:  
+The subscriber's data passed in the request will be saved and profiled for this email address. The email campaign subscription might fail due to the following reasons:
+
 1. The _email address_ has already opted-out of a campaign in your account.  
 2. The _email address_ has unsubscribed from any campaign associated with the SMTP server you are using.  
 3. The _email address_ has filed a spam complaint.  
