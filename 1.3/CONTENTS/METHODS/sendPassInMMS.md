@@ -1,5 +1,6 @@
 [Back to the Table of Contents](/1.3/README.md)&nbsp;&nbsp;|&nbsp;&nbsp;[Back to API Methods](API_METHODS.md)
 ## sendPassInMMS
+
 __Synopsis:__  
 This API request triggers sending an MMS with Dynamic Pass. Dynamic pass data passed in the API request will be used to create a Passbook pass sent via MMS. The pass data gets locked with the Phone number in the request and is used in limitation to the Pass Template settings. All the other/extra pass data is ignored. CustomPassId is your system generated Unique Id that will represent this pass data. You can optinally pass it along with pass data to be saved along with pass data and this can be used to refer this pass. In the case of Relevance, Relevant Text is considered only when Relevance lat,long values are passed in the API otherwise ignored. MMS is sent from a specified account using a MMSID to a single mobile number. FROM must be one of shortcodes allowed for your account. In case the number is from a different country than the FROM shortcode is assigned to, the default shortcode for those countries will be used.
 
@@ -144,37 +145,38 @@ __Request: GET__
     &pd_rellatitude10=relLatitude10&pd_rellongitude10=relLongitude10&pd_reltext10=relText10
 	
 __Request Parameters:__
-<pre>
-<strong>Mandatory:</strong> 
-action, apiKey, mmsid, to, from, 
-barcodevalue (if "Barcode=Allowed" && "BarcodeType=Dynamic" && "Barcode value source=Dynamic Value" for Pass Template otherwise IGNORED)
-<strong>Optional:</strong>
-campaignref, ddmtitle, ddmtext, ddmtimeout, device, customsubject, customText, data, 
-thumbnailUrl,
-barcodetext (if "Barcode = Allowed" && "Barcode Alternate Text = Dynamic Text" for Pass Template otherwise IGNORED), 
-headerlabel1, headervalue1, 
-primarylabel1, primaryvalue1, 
-primarylabel2, primaryvalue2 - if "Pass template type = Boarding Pass" otherwise IGNORED, 
-seclabel1, secvalue1, seclabel2, secvalue2, seclabel3, secvalue3, seclabel4, secvalue4, 
-auxlabel1, auxvalue1, auxlabel2, auxvalue2, auxlabel3, auxvalue3, auxlabel4, auxvalue4, 
-backlabel1, backvalue1, backlabel2, backvalue2, backlabel3, backvalue3, backlabel4, backvalue4,
-rellatitude1, rellongitude1, reltext1,
-rellatitude2, rellongitude2, reltext2,
-rellatitude3, rellongitude3, reltext3,
-rellatitude4, rellongitude4, reltext4,
-rellatitude5, rellongitude5, reltext5,
-rellatitude6, rellongitude6, reltext6,
-rellatitude7, rellongitude7, reltext7,
-rellatitude8, rellongitude8, reltext8,
-rellatitude9, rellongitude9, reltext9,
-rellatitude10, rellongitude10, reltext10
-</pre>
 
-__Response Parameters:__  
-status, to, mmsid, trackingid, errorcode, errorinfo
+    Mandatory: action, apiKey, mmsid, to, from, 
+    barcodevalue (if "Barcode=Allowed" && "BarcodeType=Dynamic" && "Barcode value source=Dynamic Value" for Pass Template otherwise IGNORED)
+    Optional: campaignref, ddmtitle, ddmtext, ddmtimeout, device, customsubject, customText, data, thumbnailUrl,
+    barcodetext (if "Barcode = Allowed" && "Barcode Alternate Text = Dynamic Text" for Pass Template otherwise IGNORED), 
+    headerlabel1, headervalue1, 
+    primarylabel1, primaryvalue1, 
+    primarylabel2, primaryvalue2 - if "Pass template type = Boarding Pass" otherwise IGNORED, 
+    seclabel1, secvalue1, seclabel2, secvalue2, seclabel3, secvalue3, seclabel4, secvalue4, 
+    auxlabel1, auxvalue1, auxlabel2, auxvalue2, auxlabel3, auxvalue3, auxlabel4, auxvalue4, 
+    backlabel1, backvalue1, backlabel2, backvalue2, backlabel3, backvalue3, backlabel4, backvalue4,
+    rellatitude1, rellongitude1, reltext1,
+    rellatitude2, rellongitude2, reltext2,
+    rellatitude3, rellongitude3, reltext3,
+    rellatitude4, rellongitude4, reltext4,
+    rellatitude5, rellongitude5, reltext5,
+    rellatitude6, rellongitude6, reltext6,
+    rellatitude7, rellongitude7, reltext7,
+    rellatitude8, rellongitude8, reltext8,
+    rellatitude9, rellongitude9, reltext9,
+    rellatitude10, rellongitude10, reltext10
 
-__Related Errorcodes:__  
-E110, E111, E241, E620, E621, E626, E628, E629, E713, E714, E715, E802, E803, E806, E822, E840, E841, E842, E843, E844, E845, E846, E847, E848, E849, E850, E851, E852, E853, E854, E855, E856, E857, E858, E859, E860, E861, E862, E863, E864, E865, E866, E867, E868, E869, E870, E871, E872, E873, E874, E875, E876, E877, E878, E879, E880, E881, E882, E883, E884, E885, E886, E887, E888, E889, E890, E891, E892, E893, E894, E895, E896, E897, E898, E899
+__Response Parameters:__
+
+    status, to, mmsid, trackingid, errorcode, errorinfo
+
+__Related Errorcodes:__
+    
+    E110, E111, E241, E620, E621, E626, E628, E629, E713, E714, E715, E802, E803, E806, E822, E840, E841, E842, E843,
+    E844, E845, E846, E847, E848, E849, E850, E851, E852, E853, E854, E855, E856, E857, E858, E859, E860, E861, E862,
+    E863, E864, E865, E866, E867, E868, E869, E870, E871, E872, E873, E874, E875, E876, E877, E878, E879, E880, E881,
+    E882, E883, E884, E885, E886, E887, E888, E889, E890, E891, E892, E893, E894, E895, E896, E897, E898, E899
 
 __Request Example:__
 ```xml
