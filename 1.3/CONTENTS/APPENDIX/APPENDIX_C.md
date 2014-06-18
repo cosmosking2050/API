@@ -1,5 +1,7 @@
 [Back to the Table of Contents](/1.3/README.md)
 
+## APPENDIX C
+
 __XML Reports, Campaign Batches, Autoresponders, Subscriptions and Sending Lists__
 
 __Request Limit for getSendingStatistics()__
