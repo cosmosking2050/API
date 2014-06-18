@@ -1,5 +1,6 @@
 [Back to the Table of Contents](/1.3/README.md)&nbsp;&nbsp;|&nbsp;&nbsp;[Back to API Methods](API_METHODS.md)
 ## removeMMSInboxMessage
+
 __Synopsis:__  
 Immediately removes stored MMS inbox content and text files for the specified message ID (mmsinboxid), and returns the status of operation. Removing content files does not remove the transaction record. The content to remove is identified using the mmsinboxid tag, which can be obtained from MMS MO Postback notification XML inside TRACKINGID node (for details go to [SMS MO / MMS MO](https://github.com/SkycoreMobile/API/blob/master/1.3/CONTENTS/POSTBACKS/POSTBACK_SMS+MMS_MO.md)) or from UI under MMS Inbox >> Moderation Panel.
 
@@ -13,18 +14,17 @@ __Request:__
 ```
 
 __Request Parameters:__
-<pre>
-<strong>Mandatory:</strong>
-Action, API_KEY, MMSInboxID
-<strong>Optional:</strong>
-N/A
-</pre>
 
-__Response Parameters:__  
-Status, MMSInboxID, Errorcode, Errorinfo
+    Mandatory: Action, API_KEY, MMSInboxID
+    Optional: N/A
 
-__Related Error codes:__  
-E640, E641, E642, E643
+__Response Parameters:__
+
+    Status, MMSInboxID, Errorcode, Errorinfo
+
+__Related Error codes:__
+
+    E640, E641, E642, E643
 
 __Request Example:__  
 XML:
