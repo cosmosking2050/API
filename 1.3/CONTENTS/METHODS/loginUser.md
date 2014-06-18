@@ -1,5 +1,6 @@
 [Back to the Table of Contents](/1.3/README.md)&nbsp;&nbsp;|&nbsp;&nbsp;[Back to API Methods](API_METHODS.md)
 ## loginUser
+
 __Synopsis:__  
 This API function creates a session for an account so that widgets can be launched and linked to it such as the SWF MMS Composer Object or the MMS Preview SWF Objects.
 
@@ -12,18 +13,17 @@ __Request:__
 ```
 
 __Request Parameters:__
-<pre>
-<strong>Mandatory:</strong>
-Action, API_KEY
-<strong>Optional:</strong>
-N/A
-</pre>
 
-__Response Parameters:__  
-Status, SessionID
+    Mandatory: Action, API_KEY
+    Optional: N/A
 
-__Related Error codes:__   
-N/A
+__Response Parameters:__
+
+    Status, SessionID
+
+__Related Error codes:__
+
+    N/A
 
 __Request Examples__  
 XML:
