@@ -1,5 +1,4 @@
-[Back to the Table of Contents](/1.3/README.md)&nbsp;&nbsp;|&nbsp;&nbsp;[Back to API Methods](API_METHODS.md)
-## createUser
+[Back to the Table of Contents](/1.3/README.md)
 
 __Synopsis:__  
 Creates new user with given username and password. The rest of the parameters required for account creation are inherited from creator’s account.
