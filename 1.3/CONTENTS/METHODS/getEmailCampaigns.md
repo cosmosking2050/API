@@ -1,5 +1,6 @@
 [Back to the Table of Contents](/1.3/README.md)&nbsp;&nbsp;|&nbsp;&nbsp;[Back to API Methods](API_METHODS.md)
 ## getEmailCampaigns
+
 __Synopsis:__  
 This API function returns a list of Email Campaigns for that account. Returned data consists of a campaign ID and Name.
 
@@ -16,18 +17,17 @@ __Request: GET__
     API_URL?action=getemailcampaigns&api_key=apiKey
 
 __Request Parameters:__
-<pre>
-<strong>Mandatory:</strong>
-action, apikey
-<strong>Optional:</strong>
---
-</pre>
 
-__Response Parameters:__  
-status, campaign, id, name, Errorcode, Errorinfo
+    Mandatory: action, apikey
+    Optional: N/A
 
-__Related Errorcodes:__  
-E404
+__Response Parameters:__
+
+    status, campaign, id, name, Errorcode, Errorinfo
+
+__Related Errorcodes:__
+
+    E404
 
 __Request Example:__  
 XML:
