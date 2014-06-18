@@ -3,7 +3,7 @@
 
 __KEY TERM DEFINITIONS__
 
-| Variable | Description |
+| Term | Description |
 | -------- | ----------- |
 | ACTION | This is the name of the function you want to execute with the API. |
 | API_KEY | Random key that is assigned to an account that can be used for authorization instead of USER/PASS. You can find and regenerate this key on the 'API Settings' page. |
