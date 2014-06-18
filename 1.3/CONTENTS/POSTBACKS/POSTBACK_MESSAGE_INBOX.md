@@ -1,4 +1,5 @@
-[Back to the Table of Contents](/1.3/README.md)&nbsp;&nbsp;|&nbsp;&nbsp;[Postback System Overview](/1.3/CONTENTS/POSTBACKS/POSTBACK_SYSTEM_OVERVIEW.md)
+[Back to the Table of Contents](/1.3/README.md)
+
 ## SMS/MMS MO Postbacks
 
 The MMS MO / SMS MO Postback API notifies you that a customer has replied to your messsage, or interacted to one of your keywords. To receive SMS MO postback notifications you need to have that option enabled in your account API. You can setup a separate Postback URL specifically for SMS/MMS MO's.
