@@ -1,5 +1,6 @@
 [Back to the Table of Contents](/1.3/README.md)&nbsp;&nbsp;|&nbsp;&nbsp;[Back to API Methods](API_METHODS.md)
 ## getPassTemplate
+
 __Synopsis:__  
 This API function returns the pass template information when given passTemplateId or mmsId or emailId.
 
@@ -34,18 +35,17 @@ __Request: GET__
 <pre>API_URL?action=getpasstemplate&amp;api_key=apiKey&amp;mmsid=mmsId</pre>
 
 __Request Parameters:__
-<pre>
-<strong>Mandatory:</strong>
-action, apikey, mmsid, emailid, passtemplateid
-<strong>Optional:</strong>
---
-</pre>
 
-__Response Parameters:__  
-status, Errorcode, Errorinfo, passTemplateId, passTemplate
+    Mandatory: action, apikey, mmsid, emailid, passtemplateid
+    Optional: N/A
 
-__Related Errorcodes:__  
-E174, E402, E802, E822, E823, E828, E827
+__Response Parameters:__
+
+    status, Errorcode, Errorinfo, passTemplateId, passTemplate
+
+__Related Errorcodes:__
+
+    E174, E402, E802, E822, E823, E828, E827
 
 __Request Example:__
 ```xml
