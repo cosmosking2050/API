@@ -1,5 +1,6 @@
 [Back to the Table of Contents](/1.3/README.md)&nbsp;&nbsp;|&nbsp;&nbsp;[Back to API Methods](API_METHODS.md)
 ## getMmsIds
+
 __Synopsis:__  
 This API function returns a list of comma separated MMSIDS for that account.
 
@@ -16,21 +17,19 @@ __Request: GET__
     API_URL?action=getmmsids&api_key=apiKey
     
 __Request Parameters:__
-<pre>
-<strong>Mandatory:</strong>
-action, apikey
-<strong>Optional:</strong>
---
-</pre>
+
+    Mandatory: action, apikey
+    Optional: N/A
 
 __Response Parameters:__  
-status, mmsids, Errorcode, Errorinfo
+
+    status, mmsids, Errorcode, Errorinfo
 
 __Related Errorcodes:__  
-E200
+
+    E200
 
 __Request Examples__
-
 XML:
 ```xml
 <REQUEST>
