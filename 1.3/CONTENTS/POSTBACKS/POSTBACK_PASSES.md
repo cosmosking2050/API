@@ -1,4 +1,5 @@
-[Back to the Table of Contents](/1.3/README.md)&nbsp;&nbsp;|&nbsp;&nbsp;[Postback System Overview](/1.3/CONTENTS/POSTBACKS/POSTBACK_SYSTEM_OVERVIEW.md)
+[Back to the Table of Contents](/1.3/README.md)
+
 ## Passes Postback
 
 This postback notification service will send mobile wallet / passbook information back to your server whenever pass generation is triggered in your account.
