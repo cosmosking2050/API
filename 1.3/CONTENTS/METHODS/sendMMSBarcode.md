@@ -1,5 +1,6 @@
 [Back to the Table of Contents](/1.3/README.md)&nbsp;&nbsp;|&nbsp;&nbsp;[Back to API Methods](API_METHODS.md)
 ## sendMMSBarcode
+
 __Synopsis:__  
 This API function sends stored MMS containing a barcode database template from a specified account using a MMSID to a one number. BarcodeID passed in the request along with the phone number is added to Database. The BarcodeID is encoded into a barcode image which is inserted into the MMS and delivered to the number. MMS is sent from a specified account using a MMSID to a single mobile number. FROM must be one of shortcodes allowed for your account. In case the number is from a different country than the FROM shortcode is assigned to, the default shortcode for those countries will be used.
 
@@ -53,18 +54,17 @@ __Request:__
 ```
 
 __Request Parameters:__
-<pre>
-<strong>Mandatory:</strong>
-action, api_key, mmsid, to, barcodeid, from
-<strong>Optional: </strong>
-campaignref, ddmtitle, ddmtext, ddmtimeout, device, customsubject, customText, data
-</pre>
 
-__Response Parameters:__  
-mmsid, status, to, trackingid, errorcode, errorinfo
+    Mandatory: action, api_key, mmsid, to, barcodeid, from
+    Optional: campaignref, ddmtitle, ddmtext, ddmtimeout, device, customsubject, customText, data
 
-__Related Errorcodes:__  
-E110, E111, E241, E620, E621, E623, E626, E628, E629, E630, E631, E632, E633, E713, E714, E715
+__Response Parameters:__
+
+    mmsid, status, to, trackingid, errorcode, errorinfo
+
+__Related Errorcodes:__
+
+    E110, E111, E241, E620, E621, E623, E626, E628, E629, E630, E631, E632, E633, E713, E714, E715
   
 __Request Example:__  
 XML:
