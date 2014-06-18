@@ -1,5 +1,8 @@
 [Back to the Table of Contents](/1.3/README.md)
 
+## deletePassData
+
+
 __Synopsis:__  
 This API request deletes the pass data from the pass database. All the delivered passes with this data are not affected but any future requests to deliver/update/generate Passbook pass with this data will result in failure. For more info see below for Mandatory/Optional fields and Error codes.
 
