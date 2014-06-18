@@ -1,5 +1,6 @@
 [Back to the Table of Contents](/1.3/README.md)&nbsp;&nbsp;|&nbsp;&nbsp;[Back to API Methods](API_METHODS.md)
 ## sendSavedEmail
+
 __Synopsis:__  
 'sendSavedEmail' API sends a stored email template to an email address. Also, it requires a reference email campaign to which this email address will be subscribed to. If any case, the subscription fails then the email address is added to the email campaign's audience manager as 'unsubscribed'. Subscription to the campaign may fail if:
 
@@ -29,18 +30,17 @@ __Request:__
 ```
 
 __Request Parameters:__
-<pre>
-<strong>Mandatory:</strong>
-ACTION, API_KEY, EMAILTEMPLATEID, EMAIL, CAMPAIGNID
-<strong>Optional:</strong>
-N/A
-</pre>
 
-__Response Parameters:__  
-EMAILTEMPLATEID, CAMPAIGNID, EMAIL, STATUS, TRACKINGID, ERRORCODE, ERRORINFO
+    Mandatory: ACTION, API_KEY, EMAILTEMPLATEID, EMAIL, CAMPAIGNID
+    Optional: N/A
 
-__Related Errorcodes:__  
-E401, E402, E403, E713, E915, E916, E917
+__Response Parameters:__
+
+    EMAILTEMPLATEID, CAMPAIGNID, EMAIL, STATUS, TRACKINGID, ERRORCODE, ERRORINFO
+
+__Related Errorcodes:__
+
+    E401, E402, E403, E713, E915, E916, E917
 
 __Request Example:__  
 XML:
