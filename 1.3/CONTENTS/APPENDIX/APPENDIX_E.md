@@ -1,2722 +1,549 @@
-<a href="/1.3/README.md">Back to the Table of Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="API_APPENDIX.md">Back to Appendix List</a>
-<h2>APPENDIX E</h2>
-<div class="text-2"><a id="appendix-e" name="appendix-e"></a><strong>SPID Reference Table</strong></div>
-<table class="SMS-code-look-up" style="font-size:11px;" width="100%" cellspacing="0" cellpadding="0">
-<tbody>
-<tr>
-<th align="left" width="35%"><strong>Country</strong></th>
-<th align="left" width="50%"><strong>Carrier</strong></th>
-<th align="left" width="15%"><strong>SPID</strong></th>
-</tr>
-<tr>
-<td> Albania</td>
-<td> Albanian Mobile Communications</td>
-<td> 0355920</td>
-</tr>
-<tr>
-<td> Albania</td>
-<td> All Carriers</td>
-<td> 0355000</td>
-</tr>
-<tr>
-<td> Albania</td>
-<td> Vodafone</td>
-<td> 0355620</td>
-</tr>
-<tr>
-<td> Algeria</td>
-<td> All Carriers</td>
-<td> 0213000</td>
-</tr>
-<tr>
-<td> Algeria</td>
-<td> AMN (MPTT)</td>
-<td> 0213280</td>
-</tr>
-<tr>
-<td> Algeria</td>
-<td> Orascom</td>
-<td> 0213570</td>
-</tr>
-<tr>
-<td> Andorra</td>
-<td> All Carriers</td>
-<td> 0376000</td>
-</tr>
-<tr>
-<td> Andorra</td>
-<td> STA (Mobiland)</td>
-<td> 0376310</td>
-</tr>
-<tr>
-<td> Angola</td>
-<td> All Carriers</td>
-<td> 0244000</td>
-</tr>
-<tr>
-<td> Anguilla</td>
-<td> All Carriers</td>
-<td> 1264000</td>
-</tr>
-<tr>
-<td> Antigua and Barbuda</td>
-<td> All Carriers</td>
-<td> 1268000</td>
-</tr>
-<tr>
-<td> Argentina</td>
-<td> All Carriers</td>
-<td> 0054000</td>
-</tr>
-<tr>
-<td> Armenia</td>
-<td> ArmenTel</td>
-<td> 0374750</td>
-</tr>
-<tr>
-<td> Armenia</td>
-<td> All Carriers</td>
-<td> 0374000</td>
-</tr>
-<tr>
-<td> Aruba</td>
-<td> All Carriers</td>
-<td> 0297000</td>
-</tr>
-<tr>
-<td> Aruba</td>
-<td> Setar</td>
-<td> 0297480</td>
-</tr>
-<tr>
-<td> Australia</td>
-<td> Telstra (CDMA)</td>
-<td> 0061760</td>
-</tr>
-<tr>
-<td> Australia</td>
-<td> All Carriers</td>
-<td> 0061000</td>
-</tr>
-<tr>
-<td> Australia</td>
-<td> Virgin Mobile</td>
-<td> 0061930</td>
-</tr>
-<tr>
-<td> Australia</td>
-<td> Vodafone</td>
-<td> 0061890</td>
-</tr>
-<tr>
-<td> Australia</td>
-<td> Telstra (GSM)</td>
-<td> 0061270</td>
-</tr>
-<tr>
-<td> Australia</td>
-<td> 3 (Hutchinson)</td>
-<td> 0061860</td>
-</tr>
-<tr>
-<td> Australia</td>
-<td> Optus</td>
-<td> 0061610</td>
-</tr>
-<tr>
-<td> Australia</td>
-<td> Orange (CDMA)</td>
-<td> 0061790</td>
-</tr>
-<tr>
-<td> Austria</td>
-<td> Mobilkom</td>
-<td> 0043190</td>
-</tr>
-<tr>
-<td> Austria</td>
-<td> Telering</td>
-<td> 0043730</td>
-</tr>
-<tr>
-<td> Austria</td>
-<td> All Carriers</td>
-<td> 0043000</td>
-</tr>
-<tr>
-<td> Austria</td>
-<td> Connect Austria</td>
-<td> 0043940</td>
-</tr>
-<tr>
-<td> Austria</td>
-<td> T-Mobile</td>
-<td> 0043540</td>
-</tr>
-<tr>
-<td> Azerbaijan</td>
-<td> J.V. Bakcell</td>
-<td> 0994470</td>
-</tr>
-<tr>
-<td> Azerbaijan</td>
-<td> Azercell Telekom</td>
-<td> 0994110</td>
-</tr>
-<tr>
-<td> Azerbaijan</td>
-<td> All Carriers</td>
-<td> 0994000</td>
-</tr>
-<tr>
-<td> Bahamas</td>
-<td> All Carriers</td>
-<td> 1242000</td>
-</tr>
-<tr>
-<td> Bahrain</td>
-<td> Batelco (BHR Mobile Plus)</td>
-<td> 0973370</td>
-</tr>
-<tr>
-<td> Bahrain</td>
-<td> All Carriers</td>
-<td> 0973000</td>
-</tr>
-<tr>
-<td> Bangladesh</td>
-<td> All Carriers</td>
-<td> 0880000</td>
-</tr>
-<tr>
-<td> Bangladesh</td>
-<td> GrameenPhone</td>
-<td> 0880500</td>
-</tr>
-<tr>
-<td> Barbados</td>
-<td> All Carriers</td>
-<td> 1246000</td>
-</tr>
-<tr>
-<td> Belarus</td>
-<td> MTS</td>
-<td> 0375220</td>
-</tr>
-<tr>
-<td> Belarus</td>
-<td> All Carriers</td>
-<td> 0375000</td>
-</tr>
-<tr>
-<td> Belarus</td>
-<td> JV Mobile Digital Communications</td>
-<td> 0375790</td>
-</tr>
-<tr>
-<td> Belgium</td>
-<td> All Carriers</td>
-<td> 0032000</td>
-</tr>
-<tr>
-<td> Belgium</td>
-<td> Proximus</td>
-<td> 0032330</td>
-</tr>
-<tr>
-<td> Belgium</td>
-<td> Base</td>
-<td> 0032600</td>
-</tr>
-<tr>
-<td> Belgium</td>
-<td> Mobistar</td>
-<td> 0032420</td>
-</tr>
-<tr>
-<td> Belize</td>
-<td> All Carriers</td>
-<td> 0501000</td>
-</tr>
-<tr>
-<td> Benin</td>
-<td> All Carriers</td>
-<td> 0229000</td>
-</tr>
-<tr>
-<td> Bermuda</td>
-<td> All Carriers</td>
-<td> 1441000</td>
-</tr>
-<tr>
-<td> Bermuda</td>
-<td> Mobility</td>
-<td> 1441920</td>
-</tr>
-<tr>
-<td> Bermuda</td>
-<td> Telecom Bermuda</td>
-<td> 1441210</td>
-</tr>
-<tr>
-<td> Bhutan</td>
-<td> All Carriers</td>
-<td> 0975000</td>
-</tr>
-<tr>
-<td> Bolivia</td>
-<td> Entel</td>
-<td> 0591190</td>
-</tr>
-<tr>
-<td> Bolivia</td>
-<td> All Carriers</td>
-<td> 0591000</td>
-</tr>
-<tr>
-<td> Bolivia</td>
-<td> Nuevatel</td>
-<td> 0591930</td>
-</tr>
-<tr>
-<td> Bosnia and Herzegovina</td>
-<td> All Carriers</td>
-<td> 0387000</td>
-</tr>
-<tr>
-<td> Bosnia and Herzegovina</td>
-<td> Mobilna Srpske</td>
-<td> 0387520</td>
-</tr>
-<tr>
-<td> Bosnia and Herzegovina</td>
-<td> Eronet</td>
-<td> 0387660</td>
-</tr>
-<tr>
-<td> Bosnia and Herzegovina</td>
-<td> PTT BIH</td>
-<td> 0387410</td>
-</tr>
-<tr>
-<td> Botswana</td>
-<td> Mascom Wireless</td>
-<td> 0267410</td>
-</tr>
-<tr>
-<td> Botswana</td>
-<td> All Carriers</td>
-<td> 0267000</td>
-</tr>
-<tr>
-<td> Botswana</td>
-<td> Orange</td>
-<td> 0267690</td>
-</tr>
-<tr>
-<td> Brazil</td>
-<td> Norte Brasil Telecom</td>
-<td> 0055840</td>
-</tr>
-<tr>
-<td> Brazil</td>
-<td> All Carriers</td>
-<td> 0055000</td>
-</tr>
-<tr>
-<td> Brazil</td>
-<td> Claro Digital</td>
-<td> 0055800</td>
-</tr>
-<tr>
-<td> Brazil</td>
-<td> BCP Telecom</td>
-<td> 0055420</td>
-</tr>
-<tr>
-<td> Brazil</td>
-<td> Telefonica (Rio Grande de Sol)</td>
-<td> 0055870</td>
-</tr>
-<tr>
-<td> Brazil</td>
-<td> Tess</td>
-<td> 0055210</td>
-</tr>
-<tr>
-<td> Brazil</td>
-<td> TIM Brasil</td>
-<td> 0055220</td>
-</tr>
-<tr>
-<td> Brazil</td>
-<td> TeleSP</td>
-<td> 0055630</td>
-</tr>
-<tr>
-<td> Brazil</td>
-<td> Telefonica (Rio)</td>
-<td> 0055710</td>
-</tr>
-<tr>
-<td> Brazil</td>
-<td> Nextel</td>
-<td> 0055820</td>
-</tr>
-<tr>
-<td> Brazil</td>
-<td> Americel</td>
-<td> 0055190</td>
-</tr>
-<tr>
-<td> Brazil</td>
-<td> ATL</td>
-<td> 0055180</td>
-</tr>
-<tr>
-<td> Brazil</td>
-<td> Oi (TNL)</td>
-<td> 0055350</td>
-</tr>
-<tr>
-<td> Brazil</td>
-<td> TCO</td>
-<td> 0055960</td>
-</tr>
-<tr>
-<td> Brunei</td>
-<td> All Carriers</td>
-<td> 0673000</td>
-</tr>
-<tr>
-<td> Bulgaria</td>
-<td> All Carriers</td>
-<td> 0359000</td>
-</tr>
-<tr>
-<td> Bulgaria</td>
-<td> Globul</td>
-<td> 0359890</td>
-</tr>
-<tr>
-<td> Bulgaria</td>
-<td> MobilTEL AD</td>
-<td> 0359390</td>
-</tr>
-<tr>
-<td> Burkina Faso</td>
-<td> All Carriers</td>
-<td> 0226000</td>
-</tr>
-<tr>
-<td> Burkina Faso</td>
-<td> Celtel</td>
-<td> 0226140</td>
-</tr>
-<tr>
-<td> Burundi</td>
-<td> Telecel</td>
-<td> 0257280</td>
-</tr>
-<tr>
-<td> Burundi</td>
-<td> All Carriers</td>
-<td> 0257000</td>
-</tr>
-<tr>
-<td> Cambodia</td>
-<td> CamGSM</td>
-<td> 0855330</td>
-</tr>
-<tr>
-<td> Cambodia</td>
-<td> All Carriers</td>
-<td> 0855000</td>
-</tr>
-<tr>
-<td> Cambodia</td>
-<td> CASACOM</td>
-<td> 0855440</td>
-</tr>
-<tr>
-<td> Cambodia</td>
-<td> Cambodia Shinawatra</td>
-<td> 0855130</td>
-</tr>
-<tr>
-<td> Cameroon</td>
-<td> All Carriers</td>
-<td> 0237000</td>
-</tr>
-<tr>
-<td> Cameroon</td>
-<td> MTN</td>
-<td> 0237320</td>
-</tr>
-<tr>
-<td> Cameroon</td>
-<td> Orange</td>
-<td> 0237950</td>
-</tr>
-<tr>
-<td> Canada</td>
-<td> Fido (Microcell)</td>
-<td> 0001700</td>
-</tr>
-<tr>
-<td> Canada</td>
-<td> Bell Mobility</td>
-<td> 0001400</td>
-</tr>
-<tr>
-<td> Canada</td>
-<td> Aliant</td>
-<td> 0001640</td>
-</tr>
-<tr>
-<td> Canada</td>
-<td> Telus</td>
-<td> 0001220</td>
-</tr>
-<tr>
-<td> Canada</td>
-<td> Rogers AT&amp;T (TDMA)</td>
-<td> 0001880</td>
-</tr>
-<tr>
-<td> Canada</td>
-<td> All Carriers</td>
-<td> 0001000</td>
-</tr>
-<tr>
-<td> Canada</td>
-<td> Rogers AT&amp;T (GSM)</td>
-<td> 0001290</td>
-</tr>
-<tr>
-<td> Canada</td>
-<td> MTS</td>
-<td> 0001440</td>
-</tr>
-<tr>
-<td> Canada</td>
-<td> NorthernTel</td>
-<td> 0001760</td>
-</tr>
-<tr>
-<td> Canada</td>
-<td> Virgin Mobile</td>
-<td> 0001800</td>
-</tr>
-<tr>
-<td> Canada</td>
-<td> Sasktel</td>
-<td> 0001580</td>
-</tr>
-<tr>
-<td> Canada</td>
-<td> Telebec</td>
-<td> 0001730</td>
-</tr>
-<tr>
-<td> Cape Verde</td>
-<td> Cabo Verde Telecom</td>
-<td> 0238130</td>
-</tr>
-<tr>
-<td> Cape Verde</td>
-<td> All Carriers</td>
-<td> 0238000</td>
-</tr>
-<tr>
-<td> Cayman Islands</td>
-<td> All Carriers</td>
-<td> 1345000</td>
-</tr>
-<tr>
-<td> Chad</td>
-<td> All Carriers</td>
-<td> 0235000</td>
-</tr>
-<tr>
-<td> Chad</td>
-<td> Celtel</td>
-<td> 0235620</td>
-</tr>
-<tr>
-<td> Chile</td>
-<td> Entel Telefonia Movil</td>
-<td> 0056770</td>
-</tr>
-<tr>
-<td> Chile</td>
-<td> All Carriers</td>
-<td> 0056000</td>
-</tr>
-<tr>
-<td> China</td>
-<td> All Carriers</td>
-<td> 0086000</td>
-</tr>
-<tr>
-<td> Columbia</td>
-<td> All Carriers</td>
-<td> 0057000</td>
-</tr>
-<tr>
-<td> Comoros Island</td>
-<td> All Carriers</td>
-<td> 0269000</td>
-</tr>
-<tr>
-<td> Congo(RC)</td>
-<td> All Carriers</td>
-<td> 0242000</td>
-</tr>
-<tr>
-<td> Congo (RDC)</td>
-<td> All Carriers</td>
-<td> 0243000</td>
-</tr>
-<tr>
-<td> Congo (RDC)</td>
-<td> Celtel</td>
-<td> 0243620</td>
-</tr>
-<tr>
-<td> Cook Islands</td>
-<td> All Carriers</td>
-<td> 0682000</td>
-</tr>
-<tr>
-<td> Costa Rica</td>
-<td> All Carriers</td>
-<td> 0506000</td>
-</tr>
-<tr>
-<td> Croatia</td>
-<td> All Carriers</td>
-<td> 0385000</td>
-</tr>
-<tr>
-<td> Croatia</td>
-<td> HT Mobile Communications</td>
-<td>0385550</td>
-</tr>
-<tr>
-<td> Croatia</td>
-<td> Vipnet GSM</td>
-<td> 0385300</td>
-</tr>
-<tr>
-<td> Cuba</td>
-<td> All Carriers</td>
-<td> 0053000</td>
-</tr>
-<tr>
-<td> Cyprus</td>
-<td> All Carriers</td>
-<td> 0357000</td>
-</tr>
-<tr>
-<td> Cyprus</td>
-<td> Cyprus Telecom Authority</td>
-<td> 0357560</td>
-</tr>
-<tr>
-<td> Czech Republic</td>
-<td> Cesky Mobil</td>
-<td> 0420260</td>
-</tr>
-<tr>
-<td> Czech Republic</td>
-<td> All Carriers</td>
-<td> 0420000</td>
-</tr>
-<tr>
-<td> Czech Republic</td>
-<td> Eurotel Praha</td>
-<td> 0420890</td>
-</tr>
-<tr>
-<td> Czech Republic</td>
-<td> T-Mobile</td>
-<td> 0420900</td>
-</tr>
-<tr>
-<td> Denmark</td>
-<td> TDC Mobil</td>
-<td> 0045400</td>
-</tr>
-<tr>
-<td> Denmark</td>
-<td> Telia</td>
-<td> 0045360</td>
-</tr>
-<tr>
-<td> Denmark</td>
-<td> All Carriers</td>
-<td> 0045000</td>
-</tr>
-<tr>
-<td> Denmark</td>
-<td> Sonofon</td>
-<td> 0045830</td>
-</tr>
-<tr>
-<td> Denmark</td>
-<td> Orange</td>
-<td> 0045660</td>
-</tr>
-<tr>
-<td> Djibouti</td>
-<td> All Carriers</td>
-<td> 0253000</td>
-</tr>
-<tr>
-<td> Dominica Islands</td>
-<td> All Carriers</td>
-<td> 1767000</td>
-</tr>
-<tr>
-<td> Dominican Republic</td>
-<td> All Carriers</td>
-<td> 1809000</td>
-</tr>
-<tr>
-<td> Dominican Republic</td>
-<td> Orange</td>
-<td> 1809510</td>
-</tr>
-<tr>
-<td> Ecuador</td>
-<td> All Carriers</td>
-<td> 0593000</td>
-</tr>
-<tr>
-<td> Egypt</td>
-<td> Vodafone</td>
-<td> 0020160</td>
-</tr>
-<tr>
-<td> Egypt</td>
-<td> ECMS MoBiNil</td>
-<td> 0020920</td>
-</tr>
-<tr>
-<td> Egypt</td>
-<td> All Carriers</td>
-<td> 0020000</td>
-</tr>
-<tr>
-<td> El Salvador</td>
-<td> Digicel</td>
-<td> 0503230</td>
-</tr>
-<tr>
-<td> El Salvador</td>
-<td> All Carriers</td>
-<td> 0503000</td>
-</tr>
-<tr>
-<td> El Salvador</td>
-<td> CTE Telecom Personal</td>
-<td> 0503190</td>
-</tr>
-<tr>
-<td> Equatorial Guinea</td>
-<td> All Carriers</td>
-<td> 0240000</td>
-</tr>
-<tr>
-<td> Eritrea</td>
-<td> All Carriers</td>
-<td> 0291000</td>
-</tr>
-<tr>
-<td> Estonia</td>
-<td> AS EMT</td>
-<td> 0372680</td>
-</tr>
-<tr>
-<td> Estonia</td>
-<td> Radiolinja Eesti AS</td>
-<td> 0372800</td>
-</tr>
-<tr>
-<td> Estonia</td>
-<td> Tele2 Eesti Aktsiaselts</td>
-<td> 0372230</td>
-</tr>
-<tr>
-<td> Estonia</td>
-<td> All Carriers</td>
-<td> 0372000</td>
-</tr>
-<tr>
-<td> Ethiopia</td>
-<td> All Carriers</td>
-<td> 0251000</td>
-</tr>
-<tr>
-<td> Faeroe Islands</td>
-<td> All Carriers</td>
-<td> 0298000</td>
-</tr>
-<tr>
-<td> Falkland Islands</td>
-<td> All Carriers</td>
-<td> 0500000</td>
-</tr>
-<tr>
-<td> Fiji</td>
-<td> Vodafone</td>
-<td> 0679930</td>
-</tr>
-<tr>
-<td> Fiji</td>
-<td> All Carriers</td>
-<td> 0679000</td>
-</tr>
-<tr>
-<td> Finland</td>
-<td> Telia</td>
-<td> 0358350</td>
-</tr>
-<tr>
-<td> Finland</td>
-<td> Radiolinja</td>
-<td> 0358740</td>
-</tr>
-<tr>
-<td> Finland</td>
-<td> Sonera</td>
-<td> 0358500</td>
-</tr>
-<tr>
-<td> Finland</td>
-<td> Alands Mobiltelefon</td>
-<td> 0358600</td>
-</tr>
-<tr>
-<td> Finland</td>
-<td> All Carriers</td>
-<td> 0358000</td>
-</tr>
-<tr>
-<td> Finland</td>
-<td> Suomen</td>
-<td> 0358830</td>
-</tr>
-<tr>
-<td> France</td>
-<td> Bouygues Telecom</td>
-<td> 0033560</td>
-</tr>
-<tr>
-<td> France</td>
-<td> Orange</td>
-<td> 0033140</td>
-</tr>
-<tr>
-<td> France</td>
-<td> SFR</td>
-<td> 0033230</td>
-</tr>
-<tr>
-<td> France</td>
-<td> All Carriers</td>
-<td> 0033000</td>
-</tr>
-<tr>
-<td> French Guiana</td>
-<td> All Carriers</td>
-<td> 0594000</td>
-</tr>
-<tr>
-<td> French Polynesia</td>
-<td> All Carriers</td>
-<td> 0689000</td>
-</tr>
-<tr>
-<td> Gabon</td>
-<td> All Carriers</td>
-<td> 0241000</td>
-</tr>
-<tr>
-<td> Gambia</td>
-<td> All Carriers</td>
-<td> 0220000</td>
-</tr>
-<tr>
-<td> Gambia</td>
-<td> Gamcell</td>
-<td> 0220240</td>
-</tr>
-<tr>
-<td> Georgia</td>
-<td> Geocell</td>
-<td> 0995770</td>
-</tr>
-<tr>
-<td> Georgia</td>
-<td> All Carriers</td>
-<td> 0995000</td>
-</tr>
-<tr>
-<td> Georgia</td>
-<td> Magticom</td>
-<td> 0995390</td>
-</tr>
-<tr>
-<td> Germany</td>
-<td> Vodafone</td>
-<td> 0049370</td>
-</tr>
-<tr>
-<td> Germany</td>
-<td> E Plus</td>
-<td> 0049180</td>
-</tr>
-<tr>
-<td> Germany</td>
-<td> Mobilcom</td>
-<td> 0049550</td>
-</tr>
-<tr>
-<td> Germany</td>
-<td> All Carriers</td>
-<td> 0049000</td>
-</tr>
-<tr>
-<td> Germany</td>
-<td> O20</td>
-<td> 0049980</td>
-</tr>
-<tr>
-<td> Germany</td>
-<td> T-Mobile</td>
-<td> 0049540</td>
-</tr>
-<tr>
-<td> Ghana</td>
-<td> Mobitel</td>
-<td> 0233730</td>
-</tr>
-<tr>
-<td> Ghana</td>
-<td> All Carriers</td>
-<td> 0233000</td>
-</tr>
-<tr>
-<td> Ghana</td>
-<td> Spacefon (ScanCom)</td>
-<td> 0233710</td>
-</tr>
-<tr>
-<td> Gibraltar</td>
-<td> Gibtel</td>
-<td> 0350420</td>
-</tr>
-<tr>
-<td> Gibraltar</td>
-<td> All Carriers</td>
-<td> 0350000</td>
-</tr>
-<tr>
-<td> Greece</td>
-<td> Q-Telecom (Info Quest)</td>
-<td> 0030160</td>
-</tr>
-<tr>
-<td> Greece</td>
-<td> Telestet (Stet Hellas)</td>
-<td> 0030700</td>
-</tr>
-<tr>
-<td> Greece</td>
-<td> Cosmote</td>
-<td> 0030530</td>
-</tr>
-<tr>
-<td> Greece</td>
-<td> All Carriers</td>
-<td> 0030000</td>
-</tr>
-<tr>
-<td> Greece</td>
-<td> Vodafone</td>
-<td> 0030770</td>
-</tr>
-<tr>
-<td> Greenland</td>
-<td> TELE Greenland A/S</td>
-<td> 0299690</td>
-</tr>
-<tr>
-<td> Greenland</td>
-<td> All Carriers</td>
-<td> 0299000</td>
-</tr>
-<tr>
-<td> Grenada</td>
-<td> All Carriers</td>
-<td> 1473000</td>
-</tr>
-<tr>
-<td> Guadeloupe</td>
-<td> All Carriers</td>
-<td> 0590000</td>
-</tr>
-<tr>
-<td> Guam</td>
-<td> All Carriers</td>
-<td> 1671000</td>
-</tr>
-<tr>
-<td> Guatemala</td>
-<td> All Carriers</td>
-<td> 0502000</td>
-</tr>
-<tr>
-<td> Guinea Bissau</td>
-<td> All Carriers</td>
-<td> 0245000</td>
-</tr>
-<tr>
-<td> Guinea Republic</td>
-<td> All Carriers</td>
-<td> 0224000</td>
-</tr>
-<tr>
-<td> Guyana</td>
-<td> All Carriers</td>
-<td> 0592000</td>
-</tr>
-<tr>
-<td> Haiti</td>
-<td> All Carriers</td>
-<td> 0509000</td>
-</tr>
-<tr>
-<td> Honduras</td>
-<td> All Carriers</td>
-<td> 0504000</td>
-</tr>
-<tr>
-<td> Hong Kong</td>
-<td> Orange</td>
-<td> 0852820</td>
-</tr>
-<tr>
-<td> Hong Kong</td>
-<td> Sunday</td>
-<td> 0852950</td>
-</tr>
-<tr>
-<td> Hong Kong</td>
-<td> New World Mobility</td>
-<td> 0852560</td>
-</tr>
-<tr>
-<td> Hong Kong</td>
-<td> Peoples</td>
-<td> 0852160</td>
-</tr>
-<tr>
-<td> Hong Kong</td>
-<td> All Carriers</td>
-<td> 0852000</td>
-</tr>
-<tr>
-<td> Hong Kong</td>
-<td> CSL</td>
-<td> 0852660</td>
-</tr>
-<tr>
-<td> Hong Kong</td>
-<td> SmarTone</td>
-<td> 0852420</td>
-</tr>
-<tr>
-<td> Hungary</td>
-<td> All Carriers</td>
-<td> 0036000</td>
-</tr>
-<tr>
-<td> Hungary</td>
-<td> Vodafone</td>
-<td> 0036860</td>
-</tr>
-<tr>
-<td> Hungary</td>
-<td> Pannon</td>
-<td> 0036660</td>
-</tr>
-<tr>
-<td> Hungary</td>
-<td> Westel</td>
-<td> 0036790</td>
-</tr>
-<tr>
-<td> Iceland</td>
-<td> Iceland Telecom</td>
-<td> 0354680</td>
-</tr>
-<tr>
-<td> Iceland</td>
-<td> All Carriers</td>
-<td> 0354000</td>
-</tr>
-<tr>
-<td> Iceland</td>
-<td> TAL</td>
-<td> 0354570</td>
-</tr>
-<tr>
-<td> India</td>
-<td> Bharti Mobile</td>
-<td> 0091110</td>
-</tr>
-<tr>
-<td> India</td>
-<td> Bharti Mobinet</td>
-<td> 0091920</td>
-</tr>
-<tr>
-<td> India</td>
-<td> Aircel</td>
-<td> 0091790</td>
-</tr>
-<tr>
-<td> India</td>
-<td> IDEA Cellular Gujarat</td>
-<td> 0091310</td>
-</tr>
-<tr>
-<td> India</td>
-<td> IDEA Cellular New Delhi</td>
-<td> 0091680</td>
-</tr>
-<tr>
-<td> India</td>
-<td> Sterling Cellular</td>
-<td> 0091860</td>
-</tr>
-<tr>
-<td> India</td>
-<td> RPG Cellular Services</td>
-<td> 0091650</td>
-</tr>
-<tr>
-<td> India</td>
-<td> BPL Mobile</td>
-<td> 0091820</td>
-</tr>
-<tr>
-<td> India</td>
-<td> BPL Cellular</td>
-<td> 0091120</td>
-</tr>
-<tr>
-<td> India</td>
-<td> Hutchison Telecom East</td>
-<td> 0091990</td>
-</tr>
-<tr>
-<td> India</td>
-<td> All Carriers</td>
-<td> 0091000</td>
-</tr>
-<tr>
-<td> India</td>
-<td> Spice Communications</td>
-<td> 0091600</td>
-</tr>
-<tr>
-<td> India</td>
-<td> Bharti Cellular</td>
-<td> 0091930</td>
-</tr>
-<tr>
-<td> India</td>
-<td> Hutchison Max Telecom</td>
-<td> 0091170</td>
-</tr>
-<tr>
-<td> India</td>
-<td> Hexacom India</td>
-<td> 0091130</td>
-</tr>
-<tr>
-<td> India</td>
-<td> IDEA Cellular</td>
-<td> 0091980</td>
-</tr>
-<tr>
-<td> India</td>
-<td> Escotel</td>
-<td> 0091530</td>
-</tr>
-<tr>
-<td> India</td>
-<td> Fascel Limited</td>
-<td> 0091160</td>
-</tr>
-<tr>
-<td> India</td>
-<td> IDEA Cellular Maharashtra Goa</td>
-<td> 0091730</td>
-</tr>
-<tr>
-<td> India</td>
-<td> Bharti Mobitel</td>
-<td> 0091700</td>
-</tr>
-<tr>
-<td> Indonesia</td>
-<td> Telkomsel</td>
-<td> 0062580</td>
-</tr>
-<tr>
-<td> Indonesia</td>
-<td> Indosat</td>
-<td> 0062330</td>
-</tr>
-<tr>
-<td> Indonesia</td>
-<td> Satelindo</td>
-<td> 0062460</td>
-</tr>
-<tr>
-<td> Indonesia</td>
-<td> Excelcom</td>
-<td> 0062950</td>
-</tr>
-<tr>
-<td> Indonesia</td>
-<td> All Carriers</td>
-<td> 0062000</td>
-</tr>
-<tr>
-<td> Iran</td>
-<td> All Carriers</td>
-<td> 0098000</td>
-</tr>
-<tr>
-<td> Iraq</td>
-<td> All Carriers</td>
-<td> 0964000</td>
-</tr>
-<tr>
-<td> Ireland</td>
-<td> Meteor</td>
-<td> 0353780</td>
-</tr>
-<tr>
-<td> Ireland</td>
-<td> Vodafone</td>
-<td> 0353360</td>
-</tr>
-<tr>
-<td> Ireland</td>
-<td> All Carriers</td>
-<td> 0035000</td>
-</tr>
-<tr>
-<td> Ireland</td>
-<td> O20</td>
-<td> 0353750</td>
-</tr>
-<tr>
-<td> Israel</td>
-<td> Palestine Cellular (Jawwal)</td>
-<td> 0972520</td>
-</tr>
-<tr>
-<td> Israel</td>
-<td> Orange (Partner Communications)</td>
-<td> 0972940</td>
-</tr>
-<tr>
-<td> Israel</td>
-<td> Cellcom</td>
-<td> 0972580</td>
-</tr>
-<tr>
-<td> Israel</td>
-<td> All Carriers</td>
-<td> 0972000</td>
-</tr>
-<tr>
-<td> Italy</td>
-<td> Vodafone</td>
-<td> 0039640</td>
-</tr>
-<tr>
-<td> Italy</td>
-<td> All Carriers</td>
-<td> 0039000</td>
-</tr>
-<tr>
-<td> Italy</td>
-<td> Wind Telecomunicazioni</td>
-<td> 0039510</td>
-</tr>
-<tr>
-<td> Italy</td>
-<td> Telecom Italia Mobile</td>
-<td> 0039900</td>
-</tr>
-<tr>
-<td> Ivory Coast</td>
-<td> All Carriers</td>
-<td> 0225000</td>
-</tr>
-<tr>
-<td> Jamaica</td>
-<td> Digicel (Mossel)</td>
-<td> 1876310</td>
-</tr>
-<tr>
-<td> Jamaica</td>
-<td> All Carriers</td>
-<td> 1876000</td>
-</tr>
-<tr>
-<td> Japan</td>
-<td> All Carriers</td>
-<td> 0081000</td>
-</tr>
-<tr>
-<td> Jordan</td>
-<td> MobileCom</td>
-<td> 0962800</td>
-</tr>
-<tr>
-<td> Jordan</td>
-<td> All Carriers</td>
-<td> 0962000</td>
-</tr>
-<tr>
-<td> Jordan</td>
-<td> Jordan Mobile Telephone</td>
-<td> 0962870</td>
-</tr>
-<tr>
-<td> Kazakstan</td>
-<td> GSM Kazakhstan, KCell</td>
-<td> 0007820</td>
-</tr>
-<tr>
-<td> Kazakstan</td>
-<td> All Carriers</td>
-<td> 0007000</td>
-</tr>
-<tr>
-<td> Kazakstan</td>
-<td> KaR-Tel LLC</td>
-<td> 0007920</td>
-</tr>
-<tr>
-<td> Kenya</td>
-<td> Safaricom</td>
-<td> 0254790</td>
-</tr>
-<tr>
-<td> Kenya</td>
-<td> All Carriers</td>
-<td> 0254000</td>
-</tr>
-<tr>
-<td> Kenya</td>
-<td> Kencell</td>
-<td> 0254800</td>
-</tr>
-<tr>
-<td> Kiribati</td>
-<td> All Carriers</td>
-<td> 0686000</td>
-</tr>
-<tr>
-<td> Korea, North</td>
-<td> All Carriers</td>
-<td> 0850000</td>
-</tr>
-<tr>
-<td> Korea (South)</td>
-<td> All Carriers</td>
-<td> 0082000</td>
-</tr>
-<tr>
-<td> Kuwait</td>
-<td> All Carriers</td>
-<td> 0965000</td>
-</tr>
-<tr>
-<td> Kuwait</td>
-<td> Mobile Telecom (K.S.C.)</td>
-<td> 0965690</td>
-</tr>
-<tr>
-<td> Kuwait</td>
-<td> Wataniya Telecom</td>
-<td> 0965790</td>
-</tr>
-<tr>
-<td> Kyrgyzstan</td>
-<td> All Carriers</td>
-<td> 0996000</td>
-</tr>
-<tr>
-<td> Laos</td>
-<td> All Carriers</td>
-<td> 0856000</td>
-</tr>
-<tr>
-<td> Latvia</td>
-<td> All Carriers</td>
-<td> 0371000</td>
-</tr>
-<tr>
-<td> Latvia</td>
-<td> Latvian Mobile</td>
-<td> 0371550</td>
-</tr>
-<tr>
-<td> Latvia</td>
-<td> Tele 20</td>
-<td> 0371730</td>
-</tr>
-<tr>
-<td> Lebanon</td>
-<td> All Carriers</td>
-<td> 0961000</td>
-</tr>
-<tr>
-<td> Lebanon</td>
-<td> FTML</td>
-<td> 0961800</td>
-</tr>
-<tr>
-<td> Lebanon</td>
-<td> LibanCell</td>
-<td> 0961200</td>
-</tr>
-<tr>
-<td> Lesotho</td>
-<td> All Carriers</td>
-<td> 0266000</td>
-</tr>
-<tr>
-<td> Liberia</td>
-<td> All Carriers</td>
-<td> 0231000</td>
-</tr>
-<tr>
-<td> Libya</td>
-<td> All Carriers</td>
-<td> 0218000</td>
-</tr>
-<tr>
-<td> Liechtenstein</td>
-<td> Mobilkom</td>
-<td> 0423650</td>
-</tr>
-<tr>
-<td> Liechtenstein</td>
-<td> Tele 20</td>
-<td> 0423740</td>
-</tr>
-<tr>
-<td> Liechtenstein</td>
-<td> Telecom FL</td>
-<td> 0423310</td>
-</tr>
-<tr>
-<td> Liechtenstein</td>
-<td> All Carriers</td>
-<td> 0423000</td>
-</tr>
-<tr>
-<td> Lithuania</td>
-<td> Omnitel</td>
-<td> 0370540</td>
-</tr>
-<tr>
-<td> Lithuania</td>
-<td> Tele 20</td>
-<td> 0370390</td>
-</tr>
-<tr>
-<td> Lithuania</td>
-<td> Bite (Vilnius)</td>
-<td> 0370890</td>
-</tr>
-<tr>
-<td> Lithuania</td>
-<td> All Carriers</td>
-<td> 0370000</td>
-</tr>
-<tr>
-<td> Luxembourg</td>
-<td> All Carriers</td>
-<td> 0352000</td>
-</tr>
-<tr>
-<td> Macau</td>
-<td> All Carriers</td>
-<td> 0853000</td>
-</tr>
-<tr>
-<td> Macedonia</td>
-<td> Post and Telecom Makedonija</td>
-<td> 0389890</td>
-</tr>
-<tr>
-<td> Macedonia</td>
-<td> All Carriers</td>
-<td> 0389000</td>
-</tr>
-<tr>
-<td> Madagascar</td>
-<td> All Carriers</td>
-<td> 0261000</td>
-</tr>
-<tr>
-<td> Madagascar</td>
-<td> Madacom</td>
-<td> 0261130</td>
-</tr>
-<tr>
-<td> Madagascar</td>
-<td> Antaris (SMM)</td>
-<td> 0261140</td>
-</tr>
-<tr>
-<td> Malawi</td>
-<td> Celtel</td>
-<td> 0265600</td>
-</tr>
-<tr>
-<td> Malawi</td>
-<td> All Carriers</td>
-<td> 0265000</td>
-</tr>
-<tr>
-<td> Malaysia</td>
-<td> All Carriers</td>
-<td> 0060000</td>
-</tr>
-<tr>
-<td> Malaysia</td>
-<td> TMTouch</td>
-<td> 0060560</td>
-</tr>
-<tr>
-<td> Malaysia</td>
-<td> TimeCel</td>
-<td> 0060290</td>
-</tr>
-<tr>
-<td> Malaysia</td>
-<td> Celcom</td>
-<td> 0060920</td>
-</tr>
-<tr>
-<td> Malaysia</td>
-<td> Maxis Telecommunication</td>
-<td> 0060300</td>
-</tr>
-<tr>
-<td> Malaysia</td>
-<td> DiGi Telecommunications</td>
-<td> 0060990</td>
-</tr>
-<tr>
-<td> Maldives</td>
-<td> Dhiraagu</td>
-<td> 0960340</td>
-</tr>
-<tr>
-<td> Maldives</td>
-<td> All Carriers</td>
-<td> 0960000</td>
-</tr>
-<tr>
-<td> Mali</td>
-<td> All Carriers</td>
-<td> 0223000</td>
-</tr>
-<tr>
-<td> Malta</td>
-<td> All Carriers</td>
-<td> 0356000</td>
-</tr>
-<tr>
-<td> Malta</td>
-<td> Vodafone</td>
-<td> 0356900</td>
-</tr>
-<tr>
-<td> Malta</td>
-<td> Go mobile</td>
-<td> 0356320</td>
-</tr>
-<tr>
-<td> Martinique</td>
-<td> All Carriers</td>
-<td> 0596000</td>
-</tr>
-<tr>
-<td> Mauritania</td>
-<td> Mattel</td>
-<td> 0222440</td>
-</tr>
-<tr>
-<td> Mauritania</td>
-<td> Mauritel</td>
-<td> 0222730</td>
-</tr>
-<tr>
-<td> Mauritania</td>
-<td> All Carriers</td>
-<td> 0222000</td>
-</tr>
-<tr>
-<td> Mauritius</td>
-<td> Cellplus Mobile Telecom</td>
-<td> 0230600</td>
-</tr>
-<tr>
-<td> Mauritius</td>
-<td> Emtel</td>
-<td> 0230860</td>
-</tr>
-<tr>
-<td> Mauritius</td>
-<td> All Carriers</td>
-<td> 0230000</td>
-</tr>
-<tr>
-<td> Mayotte Islands</td>
-<td> All Carriers</td>
-<td> 0262000</td>
-</tr>
-<tr>
-<td> Mexico</td>
-<td> All Carriers</td>
-<td> 0052000</td>
-</tr>
-<tr>
-<td> Mexico</td>
-<td> Nextel</td>
-<td> 0052430</td>
-</tr>
-<tr>
-<td> Mexico</td>
-<td> Telcel</td>
-<td> 0052250</td>
-</tr>
-<tr>
-<td> Micronesia</td>
-<td> All Carriers</td>
-<td> 0691000</td>
-</tr>
-<tr>
-<td> Moldova</td>
-<td> All Carriers</td>
-<td> 0373000</td>
-</tr>
-<tr>
-<td> Monaco</td>
-<td> Covered by France Telecom/SFR/Bouygues</td>
-<td> 0377370</td>
-</tr>
-<tr>
-<td> Monaco</td>
-<td> Monaco Telecom</td>
-<td> 0377490</td>
-</tr>
-<tr>
-<td> Monaco</td>
-<td> All Carriers</td>
-<td> 0377000</td>
-</tr>
-<tr>
-<td> Mongolia</td>
-<td> Mobicom</td>
-<td> 0976750</td>
-</tr>
-<tr>
-<td> Mongolia</td>
-<td> All Carriers</td>
-<td> 0976000</td>
-</tr>
-<tr>
-<td> Montserrat</td>
-<td> All Carriers</td>
-<td> 1664000</td>
-</tr>
-<tr>
-<td> Morocco</td>
-<td> All Carriers</td>
-<td> 0212000</td>
-</tr>
-<tr>
-<td> Morocco</td>
-<td> Meditelecom</td>
-<td> 0212200</td>
-</tr>
-<tr>
-<td> Morocco</td>
-<td> Itissalat Al Maghrib SA</td>
-<td> 0212390</td>
-</tr>
-<tr>
-<td> Mozambique</td>
-<td> Telecomunicacoes de Mocambique</td>
-<td> 0258310</td>
-</tr>
-<tr>
-<td> Mozambique</td>
-<td> All Carriers</td>
-<td> 0258000</td>
-</tr>
-<tr>
-<td> Myanmar (Burma)</td>
-<td> All Carriers</td>
-<td> 0095000</td>
-</tr>
-<tr>
-<td> Namibia</td>
-<td> All Carriers</td>
-<td> 0264000</td>
-</tr>
-<tr>
-<td> Nauru</td>
-<td> All Carriers</td>
-<td> 0674000</td>
-</tr>
-<tr>
-<td> Nepal</td>
-<td> All Carriers</td>
-<td> 0977000</td>
-</tr>
-<tr>
-<td> Nepal</td>
-<td> Nepal Mobile</td>
-<td> 0977480</td>
-</tr>
-<tr>
-<td> Netherlands</td>
-<td> All Carriers</td>
-<td> 0031000</td>
-</tr>
-<tr>
-<td> Netherlands</td>
-<td> Orange</td>
-<td> 0031750</td>
-</tr>
-<tr>
-<td> Netherlands</td>
-<td> Vodafone</td>
-<td> 0031960</td>
-</tr>
-<tr>
-<td> Netherlands</td>
-<td> KPN Telecom BV</td>
-<td> 0031980</td>
-</tr>
-<tr>
-<td> Netherlands</td>
-<td> T-Mobile</td>
-<td> 0031950</td>
-</tr>
-<tr>
-<td> Netherlands</td>
-<td> O20</td>
-<td> 0031300</td>
-</tr>
-<tr>
-<td>Netherlands Antilles</td>
-<td> All Carriers</td>
-<td> 0599000</td>
-</tr>
-<tr>
-<td> New Caledonia</td>
-<td> All Carriers</td>
-<td> 0687000</td>
-</tr>
-<tr>
-<td> New Zealand</td>
-<td> All Carriers</td>
-<td> 0064000</td>
-</tr>
-<tr>
-<td> New Zealand</td>
-<td> Vodafone</td>
-<td> 0064840</td>
-</tr>
-<tr>
-<td> Nicaragua</td>
-<td> All Carriers</td>
-<td> 0505000</td>
-</tr>
-<tr>
-<td> Niger</td>
-<td> All Carriers</td>
-<td> 0227000</td>
-</tr>
-<tr>
-<td> Niger</td>
-<td> Celtel</td>
-<td> 0234760</td>
-</tr>
-<tr>
-<td> Nigeria</td>
-<td> Econet</td>
-<td> 0234750</td>
-</tr>
-<tr>
-<td> Nigeria</td>
-<td> All Carriers</td>
-<td> 0234000</td>
-</tr>
-<tr>
-<td> Nigeria</td>
-<td> MTN</td>
-<td> 0234430</td>
-</tr>
-<tr>
-<td> Niue Island</td>
-<td> All Carriers</td>
-<td> 0683000</td>
-</tr>
-<tr>
-<td> Norfolk Island</td>
-<td> All Carriers</td>
-<td> 0672000</td>
-</tr>
-<tr>
-<td> Northern Mariana Islands</td>
-<td> All Carriers</td>
-<td> 1670000</td>
-</tr>
-<tr>
-<td> Norway</td>
-<td> Telenor</td>
-<td> 0047440</td>
-</tr>
-<tr>
-<td> Norway</td>
-<td> Netcom GSM</td>
-<td> 0047530</td>
-</tr>
-<tr>
-<td> Norway</td>
-<td> All Carriers</td>
-<td> 0047000</td>
-</tr>
-<tr>
-<td> Oman</td>
-<td> GTO, Ministry of PTT</td>
-<td> 0968120</td>
-</tr>
-<tr>
-<td> Oman</td>
-<td> All Carriers</td>
-<td> 0968000</td>
-</tr>
-<tr>
-<td> Pakistan</td>
-<td> All Carriers</td>
-<td> 0092000</td>
-</tr>
-<tr>
-<td> Pakistan</td>
-<td> Mobilink (Pakistan Mobile)</td>
-<td> 0092170</td>
-</tr>
-<tr>
-<td> Pakistan</td>
-<td> Ufone (PTML)</td>
-<td> 0092470</td>
-</tr>
-<tr>
-<td> Palau</td>
-<td> All Carriers</td>
-<td> 0680000</td>
-</tr>
-<tr>
-<td> Palestine</td>
-<td> All Carriers</td>
-<td> 0970000</td>
-</tr>
-<tr>
-<td> Panama</td>
-<td> All Carriers</td>
-<td> 0507000</td>
-</tr>
-<tr>
-<td> Papua New Guinea</td>
-<td> All Carriers</td>
-<td> 0675000</td>
-</tr>
-<tr>
-<td> Paraguay</td>
-<td> All Carriers</td>
-<td> 0595000</td>
-</tr>
-<tr>
-<td> Paraguay</td>
-<td> VOX (Hola Paraguay)</td>
-<td> 0595510</td>
-</tr>
-<tr>
-<td> Peru</td>
-<td> All Carriers</td>
-<td> 0051000</td>
-</tr>
-<tr>
-<td> Peru</td>
-<td> Nextel</td>
-<td> 0051260</td>
-</tr>
-<tr>
-<td> Peru</td>
-<td> TIM</td>
-<td> 0051710</td>
-</tr>
-<tr>
-<td> Philippines</td>
-<td> All Carriers</td>
-<td> 0063000</td>
-</tr>
-<tr>
-<td> Philippines</td>
-<td> Smart</td>
-<td> 0063130</td>
-</tr>
-<tr>
-<td> Philippines</td>
-<td> Globe Telecom</td>
-<td> 0063180</td>
-</tr>
-<tr>
-<td> Philippines</td>
-<td> Nextel</td>
-<td> 0063940</td>
-</tr>
-<tr>
-<td> Poland</td>
-<td> All Carriers</td>
-<td> 0048000</td>
-</tr>
-<tr>
-<td> Poland</td>
-<td> IDEA (Centertel)</td>
-<td> 0048940</td>
-</tr>
-<tr>
-<td> Poland</td>
-<td> ERA (Polska Telefonia Cyfrowa)</td>
-<td> 0048670</td>
-</tr>
-<tr>
-<td> Poland</td>
-<td> Plus GSM (Polkomtel)</td>
-<td> 0048120</td>
-</tr>
-<tr>
-<td> Portugal</td>
-<td> Optimus</td>
-<td> 0351130</td>
-</tr>
-<tr>
-<td> Portugal</td>
-<td> TMN</td>
-<td> 0351700</td>
-</tr>
-<tr>
-<td> Portugal</td>
-<td> All Carriers</td>
-<td> 0351000</td>
-</tr>
-<tr>
-<td> Portugal</td>
-<td> Vodafone</td>
-<td> 0351730</td>
-</tr>
-<tr>
-<td> Puerto Rico</td>
-<td> All Carriers</td>
-<td> 1787000</td>
-</tr>
-<tr>
-<td> Qatar</td>
-<td> All Carriers</td>
-<td> 0974000</td>
-</tr>
-<tr>
-<td> Qatar</td>
-<td> Qatar Telecommunications Corp.</td>
-<td> 0974930</td>
-</tr>
-<tr>
-<td> Reunion</td>
-<td> All Carriers</td>
-<td> 0262000</td>
-</tr>
-<tr>
-<td> Reunion</td>
-<td> Ste Reunionnaise du Radiotelephone</td>
-<td> 0262870</td>
-</tr>
-<tr>
-<td> Romania</td>
-<td> All Carriers</td>
-<td> 0040000</td>
-</tr>
-<tr>
-<td> Romania</td>
-<td> Cosmorom</td>
-<td> 0040590</td>
-</tr>
-<tr>
-<td> Romania</td>
-<td> MobiFon</td>
-<td> 0040620</td>
-</tr>
-<tr>
-<td> Romania</td>
-<td> Orange</td>
-<td> 0040480</td>
-</tr>
-<tr>
-<td> Russia</td>
-<td> All Carriers</td>
-<td> 0007000</td>
-</tr>
-<tr>
-<td> Rwanda</td>
-<td> MTN Rwandacell</td>
-<td> 0250350</td>
-</tr>
-<tr>
-<td> Rwanda</td>
-<td> All Carriers</td>
-<td> 0250000</td>
-</tr>
-<tr>
-<td> Saint Vincent and  Grenadines</td>
-<td> All Carriers</td>
-<td> 1784000</td>
-</tr>
-<tr>
-<td> Samoa (American)</td>
-<td> All Carriers</td>
-<td> 1684000</td>
-</tr>
-<tr>
-<td> Samoa (Western)</td>
-<td> All Carriers</td>
-<td> 0685000</td>
-</tr>
-<tr>
-<td> San Marino</td>
-<td> All Carriers</td>
-<td> 0378000</td>
-</tr>
-<tr>
-<td> Sao Tome &amp; Principe</td>
-<td> All Carriers</td>
-<td> 0239000</td>
-</tr>
-<tr>
-<td> Saudi Arabia</td>
-<td> All Carriers</td>
-<td> 0966000</td>
-</tr>
-<tr>
-<td> Saudi Arabia</td>
-<td> Saudi Telecom Company (AL JAWAL)</td>
-<td> 0966420</td>
-</tr>
-<tr>
-<td> Senegal</td>
-<td> All Carriers</td>
-<td> 0221000</td>
-</tr>
-<tr>
-<td> Serbia</td>
-<td> All Carriers</td>
-<td> 0381000</td>
-</tr>
-<tr>
-<td> Seychelles</td>
-<td> Cable &amp; Wireless</td>
-<td> 0248560</td>
-</tr>
-<tr>
-<td> Seychelles</td>
-<td> All Carriers</td>
-<td> 0248000</td>
-</tr>
-<tr>
-<td> Seychelles</td>
-<td> Telecom Seychelles (Airtel)</td>
-<td> 0248120</td>
-</tr>
-<tr>
-<td> Sierra Leone</td>
-<td> All Carriers</td>
-<td> 0232000</td>
-</tr>
-<tr>
-<td> Singapore</td>
-<td> All Carriers</td>
-<td> 0065000</td>
-</tr>
-<tr>
-<td> Singapore</td>
-<td> MobileOne</td>
-<td> 0065610</td>
-</tr>
-<tr>
-<td> Singapore</td>
-<td> SingTel (Singapore Telecom Mobile)</td>
-<td> 0065870</td>
-</tr>
-<tr>
-<td> Singapore</td>
-<td> StarHub</td>
-<td> 0065760</td>
-</tr>
-<tr>
-<td> Slovak Republic</td>
-<td> All Carriers</td>
-<td> 0421000</td>
-</tr>
-<tr>
-<td> Slovenia</td>
-<td> Vega (Western Wireless)</td>
-<td> 0386620</td>
-</tr>
-<tr>
-<td> Slovenia</td>
-<td> SI.MOBIL</td>
-<td> 0386420</td>
-</tr>
-<tr>
-<td> Slovenia</td>
-<td> All Carriers</td>
-<td> 0386000</td>
-</tr>
-<tr>
-<td> Slovenia</td>
-<td> Mobitel</td>
-<td> 0386260</td>
-</tr>
-<tr>
-<td> Solomon Islands</td>
-<td> All Carriers</td>
-<td> 0677000</td>
-</tr>
-<tr>
-<td> Somalia</td>
-<td> All Carriers</td>
-<td> 0252000</td>
-</tr>
-<tr>
-<td> South Africa</td>
-<td> MTN</td>
-<td> 0027150</td>
-</tr>
-<tr>
-<td> South Africa</td>
-<td> Vodacom</td>
-<td> 0027950</td>
-</tr>
-<tr>
-<td> South Africa</td>
-<td> Cell C</td>
-<td> 0027510</td>
-</tr>
-<tr>
-<td> South Africa</td>
-<td> All Carriers</td>
-<td> 0027000</td>
-</tr>
-<tr>
-<td> Spain</td>
-<td> All Carriers</td>
-<td> 0034000</td>
-</tr>
-<tr>
-<td> Spain</td>
-<td> Xfera</td>
-<td> 0034650</td>
-</tr>
-<tr>
-<td> Spain</td>
-<td> Amena (Retevision Movil)</td>
-<td> 0034640</td>
-</tr>
-<tr>
-<td> Spain</td>
-<td> Movistar (Telefonica Moviles)</td>
-<td> 0034930</td>
-</tr>
-<tr>
-<td> Spain</td>
-<td> Vodafone</td>
-<td> 0034750</td>
-</tr>
-<tr>
-<td> Sri Lanka</td>
-<td> All Carriers</td>
-<td> 0094000</td>
-</tr>
-<tr>
-<td> Sri Lanka</td>
-<td> Celltel Infiniti</td>
-<td> 0094930</td>
-</tr>
-<tr>
-<td> Sri Lanka</td>
-<td> Dialog (MTN Networks)</td>
-<td> 0094430</td>
-</tr>
-<tr>
-<td> St Helena</td>
-<td> All Carriers</td>
-<td> 0290000</td>
-</tr>
-<tr>
-<td> St Kitts and Nevis</td>
-<td> All Carriers</td>
-<td> 1869000</td>
-</tr>
-<tr>
-<td> St Lucia</td>
-<td> All Carriers</td>
-<td> 1758000</td>
-</tr>
-<tr>
-<td> Sudan</td>
-<td> All Carriers</td>
-<td> 0249000</td>
-</tr>
-<tr>
-<td> Suriname</td>
-<td> NV ICMS</td>
-<td> 0597790</td>
-</tr>
-<tr>
-<td> Suriname</td>
-<td> All Carriers</td>
-<td> 0597000</td>
-</tr>
-<tr>
-<td> Swaziland</td>
-<td> All Carriers</td>
-<td> 0268000</td>
-</tr>
-<tr>
-<td> Swaziland</td>
-<td> MTN</td>
-<td> 0268950</td>
-</tr>
-<tr>
-<td> Sweden</td>
-<td> All Carriers</td>
-<td> 0046000</td>
-</tr>
-<tr>
-<td> Sweden</td>
-<td> Vodafone</td>
-<td> 0046290</td>
-</tr>
-<tr>
-<td> Sweden</td>
-<td> Telia</td>
-<td> 0046710</td>
-</tr>
-<tr>
-<td> Sweden</td>
-<td> Tele 20</td>
-<td> 0046780</td>
-</tr>
-<tr>
-<td> Switzerland</td>
-<td> Swisscom</td>
-<td> 0041220</td>
-</tr>
-<tr>
-<td> Switzerland</td>
-<td> All Carriers</td>
-<td> 0041000</td>
-</tr>
-<tr>
-<td> Switzerland</td>
-<td> Orange</td>
-<td> 0041100</td>
-</tr>
-<tr>
-<td> Switzerland</td>
-<td> TDC Switzerland</td>
-<td> 0041610</td>
-</tr>
-<tr>
-<td> Syria</td>
-<td> All Carriers</td>
-<td> 0963000</td>
-</tr>
-<tr>
-<td> Taiwan</td>
-<td> All Carriers</td>
-<td> 0886000</td>
-</tr>
-<tr>
-<td> Tajikistan</td>
-<td> All Carriers</td>
-<td> 0992000</td>
-</tr>
-<tr>
-<td> Tanzania</td>
-<td> All Carriers</td>
-<td> 0255000</td>
-</tr>
-<tr>
-<td> Thailand</td>
-<td> Orange</td>
-<td> 0066740</td>
-</tr>
-<tr>
-<td> Thailand</td>
-<td> DTAC (Total Access Communication)</td>
-<td> 0066910</td>
-</tr>
-<tr>
-<td> Thailand</td>
-<td> AIS (Advanced Info Service)</td>
-<td> 0066130</td>
-</tr>
-<tr>
-<td> Thailand</td>
-<td> All Carriers</td>
-<td> 0066000</td>
-</tr>
-<tr>
-<td> Togo</td>
-<td> All Carriers</td>
-<td> 0228000</td>
-</tr>
-<tr>
-<td> Tonga</td>
-<td> All Carriers</td>
-<td> 0676000</td>
-</tr>
-<tr>
-<td> Trinidad and Tobago</td>
-<td> All Carriers</td>
-<td> 1868000</td>
-</tr>
-<tr>
-<td> Tunisia</td>
-<td> All Carriers</td>
-<td> 0216000</td>
-</tr>
-<tr>
-<td> Tunisia</td>
-<td> Tunisie Telecom (Tunicell)</td>
-<td> 0216490</td>
-</tr>
-<tr>
-<td> Turkey</td>
-<td> Telsim</td>
-<td> 0090920</td>
-</tr>
-<tr>
-<td> Turkey</td>
-<td> IS-TIM</td>
-<td> 0090790</td>
-</tr>
-<tr>
-<td> Turkey</td>
-<td> All Carriers</td>
-<td> 0090000</td>
-</tr>
-<tr>
-<td> Turkey</td>
-<td> Turkcell</td>
-<td> 0090630</td>
-</tr>
-<tr>
-<td> Turkey</td>
-<td> Aycell</td>
-<td> 0090740</td>
-</tr>
-<tr>
-<td> Turkmenistan</td>
-<td> All Carriers</td>
-<td> 0993000</td>
-</tr>
-<tr>
-<td> Turkmenistan</td>
-<td> BCTI</td>
-<td> 0993540</td>
-</tr>
-<tr>
-<td> Turks and Caicos Islands</td>
-<td> All Carriers</td>
-<td> 1649000</td>
-</tr>
-<tr>
-<td> Tuvalu</td>
-<td> All Carriers</td>
-<td> 0688000</td>
-</tr>
-<tr>
-<td> Uganda</td>
-<td> All Carriers</td>
-<td> 0256000</td>
-</tr>
-<tr>
-<td> Uganda</td>
-<td> UTL Telecel</td>
-<td> 0256680</td>
-</tr>
-<tr>
-<td> Uganda</td>
-<td> CelTel Cellular</td>
-<td> 0256650</td>
-</tr>
-<tr>
-<td> Uganda</td>
-<td> MTN</td>
-<td> 0256700</td>
-</tr>
-<tr>
-<td> Ukraine</td>
-<td> Kyivstar GSM JSC</td>
-<td> 0380250</td>
-</tr>
-<tr>
-<td> Ukraine</td>
-<td> All Carriers</td>
-<td> 0380000</td>
-</tr>
-<tr>
-<td> Ukraine</td>
-<td> Ukrainian Radio Systems</td>
-<td> 0380930</td>
-</tr>
-<tr>
-<td> Ukraine</td>
-<td> Golden Telecom Bancomsvyaz</td>
-<td> 0380360</td>
-</tr>
-<tr>
-<td> Ukraine</td>
-<td> Ukrainian Mobile Communications</td>
-<td> 0380450</td>
-</tr>
-<tr>
-<td> United Arab Emirates</td>
-<td> All Carriers</td>
-<td> 0971000</td>
-</tr>
-<tr>
-<td> United Kingdom</td>
-<td> Vodafone</td>
-<td> 0044640</td>
-</tr>
-<tr>
-<td> United Kingdom</td>
-<td> Orange</td>
-<td> 0044730</td>
-</tr>
-<tr>
-<td> United Kingdom</td>
-<td> Virgin Mobile</td>
-<td> 0044270</td>
-</tr>
-<tr>
-<td> United Kingdom</td>
-<td> O20</td>
-<td> 0044170</td>
-</tr>
-<tr>
-<td> United Kingdom</td>
-<td> T-Mobile</td>
-<td> 0044220</td>
-</tr>
-<tr>
-<td> United Kingdom</td>
-<td> All Carriers</td>
-<td> 0044000</td>
-</tr>
-<tr>
-<td> United Kingdom</td>
-<td> Three</td>
-<td> 0044880</td>
-</tr>
-<tr>
-<td> United States</td>
-<td> Sprint</td>
-<td> 0001650</td>
-</tr>
-<tr>
-<td> United States</td>
-<td> West Central Wireless</td>
-<td> 0001130</td>
-</tr>
-<tr>
-<td> United States</td>
-<td> Union Telephone</td>
-<td> 0001360</td>
-</tr>
-<tr>
-<td> United States</td>
-<td> TracFone (Cingular Orange)</td>
-<td> 0001630</td>
-</tr>
-<tr>
-<td> United States</td>
-<td> Centennial</td>
-<td> 0001790</td>
-</tr>
-<tr>
-<td> United States</td>
-<td> Boost Mobile iDEN</td>
-<td> 0001510</td>
-</tr>
-<tr>
-<td> United States</td>
-<td> Virgin Mobile</td>
-<td> 0001910</td>
-</tr>
-<tr>
-<td> United States</td>
-<td> Airadigm</td>
-<td> 0001160</td>
-</tr>
-<tr>
-<td> United States</td>
-<td> AT&amp;amp;T (Cingular GSM) unused</td>
-<td> 0001350</td>
-</tr>
-<tr>
-<td> United States</td>
-<td> Suncom</td>
-<td> 0001270</td>
-</tr>
-<tr>
-<td> United States</td>
-<td> Cellular South</td>
-<td> 0001370</td>
-</tr>
-<tr>
-<td> United States</td>
-<td> Conestoga Wireless</td>
-<td> 0001430</td>
-</tr>
-<tr>
-<td> United States</td>
-<td> AT&amp;amp;T (Blue GSM) unused</td>
-<td> 0001100</td>
-</tr>
-<tr>
-<td> United States</td>
-<td> AT&amp;amp;T (Blue TDMA) unused</td>
-<td> 0001410</td>
-</tr>
-<tr>
-<td> United States</td>
-<td> Cincinnati Bell</td>
-<td> 0001680</td>
-</tr>
-<tr>
-<td> United States</td>
-<td> Hickory Tech</td>
-<td> 0001560</td>
-</tr>
-<tr>
-<td> United States</td>
-<td> Midwest Wireless</td>
-<td> 0001500</td>
-</tr>
-<tr>
-<td> United States</td>
-<td> Nextel</td>
-<td> 0001950</td>
-</tr>
-<tr>
-<td> United States</td>
-<td> Qwest</td>
-<td> 0001480</td>
-</tr>
-<tr>
-<td> United States</td>
-<td> Metro PCS</td>
-<td> 0001770</td>
-</tr>
-<tr>
-<td> United States</td>
-<td> Cricket (Leap Wireless)</td>
-<td> 0001670</td>
-</tr>
-<tr>
-<td> United States</td>
-<td> NPI Wireless</td>
-<td> 0001200</td>
-</tr>
-<tr>
-<td> United States</td>
-<td> AT&amp;T</td>
-<td> 0001470</td>
-</tr>
-<tr>
-<td> United States</td>
-<td> Iowa Wireless</td>
-<td> 0001830</td>
-</tr>
-<tr>
-<td> United States</td>
-<td> Alltel</td>
-<td> 0001280</td>
-</tr>
-<tr>
-<td> United States</td>
-<td> Verizon Wireless</td>
-<td> 0001890</td>
-</tr>
-<tr>
-<td> United States</td>
-<td> T-MobileÂŽ</td>
-<td> 0001570</td>
-</tr>
-<tr>
-<td> United States</td>
-<td> US Cellular</td>
-<td> 0001840</td>
-</tr>
-<tr>
-<td> United States</td>
-<td> All Carriers</td>
-<td> 0000010</td>
-</tr>
-<tr>
-<td> Uruguay</td>
-<td> All Carriers</td>
-<td> 0598000</td>
-</tr>
-<tr>
-<td> Uzbekistan</td>
-<td> Coscom</td>
-<td> 0998760</td>
-</tr>
-<tr>
-<td> Uzbekistan</td>
-<td> All Carriers</td>
-<td> 0998000</td>
-</tr>
-<tr>
-<td> Vanuatu</td>
-<td> All Carriers</td>
-<td> 0678000</td>
-</tr>
-<tr>
-<td> Venezuela</td>
-<td> Digicel</td>
-<td> 0058480</td>
-</tr>
-<tr>
-<td> Venezuela</td>
-<td> Infonet</td>
-<td> 0058110</td>
-</tr>
-<tr>
-<td> Venezuela</td>
-<td> Corporacion Digitel C.A.</td>
-<td> 0058890</td>
-</tr>
-<tr>
-<td> Venezuela</td>
-<td> All Carriers</td>
-<td> 0058000</td>
-</tr>
-<tr>
-<td> Vietnam</td>
-<td> All Carriers</td>
-<td> 0084000</td>
-</tr>
-<tr>
-<td> Vietnam</td>
-<td> Vietnam Mobile Telecom</td>
-<td> 0084660</td>
-</tr>
-<tr>
-<td> Vietnam</td>
-<td> VinaPhone (GPC)</td>
-<td> 0084100</td>
-</tr>
-<tr>
-<td> Virgin Islands (British)</td>
-<td> All Carriers</td>
-<td> 1284000</td>
-</tr>
-<tr>
-<td> Virgin Islands (US)</td>
-<td> All Carriers</td>
-<td> 1340000</td>
-</tr>
-<tr>
-<td> Wallis and Futuna Islands</td>
-<td> All Carriers</td>
-<td> 0681000</td>
-</tr>
-<tr>
-<td> Yemen</td>
-<td> Sabafon</td>
-<td> 0967830</td>
-</tr>
-<tr>
-<td> Yemen</td>
-<td> Spacetel</td>
-<td> 0967990</td>
-</tr>
-<tr>
-<td> Yemen</td>
-<td> All Carriers</td>
-<td> 0967000</td>
-</tr>
-<tr>
-<td> Zambia</td>
-<td> All Carriers</td>
-<td> 0260000</td>
-</tr>
-<tr>
-<td> Zambia</td>
-<td> Celtel</td>
-<td> 0260190</td>
-</tr>
-<tr>
-<td> Zambia</td>
-<td> Telecel</td>
-<td> 0260700</td>
-</tr>
-<tr>
-<td> Zimbabwe</td>
-<td> Econet</td>
-<td> 0263750</td>
-</tr>
-<tr>
-<td> Zimbabwe</td>
-<td> NetOne</td>
-<td> 0263200</td>
-</tr>
-</tbody>
-</table>
+[Back to the Table of Contents](/1.3/README.md)&nbsp;&nbsp;|&nbsp;&nbsp;[Back to Appendix List](API_APPENDIX.md)
+## APPENDIX E
+
+__SPID Reference Table__
+
+| Country | Carrier | SPID |
+| ------- | ------- | ---- |
+| Albania | Albanian Mobile Communications | 0355920 |
+| Albania | All Carriers | 0355000 |
+| Albania | Vodafone | 0355620 |
+| Algeria | All Carriers | 0213000 |
+| Algeria | AMN (MPTT) | 0213280 |
+| Algeria | Orascom | 0213570 |
+| Andorra | All Carriers | 0376000 |
+| Andorra | STA (Mobiland) | 0376310 |
+| Angola | All Carriers | 0244000 |
+| Anguilla | All Carriers | 1264000 |
+| Antigua and Barbuda | All Carriers | 1268000 |
+| Argentina | All Carriers | 0054000 |
+| Armenia | ArmenTel | 0374750 |
+| Armenia | All Carriers | 0374000 |
+| Aruba | All Carriers | 0297000 |
+| Aruba | Setar | 0297480 |
+| Australia | Telstra (CDMA) | 0061760 |
+| Australia | All Carriers | 0061000 |
+| Australia | Virgin Mobile | 0061930 |
+| Australia | Vodafone | 0061890 |
+| Australia | Telstra (GSM) | 0061270 |
+| Australia | 3 (Hutchinson) | 0061860 |
+| Australia | Optus | 0061610 |
+| Australia | Orange (CDMA) | 0061790 |
+| Austria | Mobilkom | 0043190 |
+| Austria | Telering | 0043730 |
+| Austria | All Carriers | 0043000 |
+| Austria | Connect Austria | 0043940 |
+| Austria | T-Mobile | 0043540 |
+| Azerbaijan | J.V. Bakcell | 0994470 |
+| Azerbaijan | Azercell Telekom | 0994110 |
+| Azerbaijan | All Carriers | 0994000 |
+| Bahamas | All Carriers | 1242000 |
+| Bahrain | Batelco (BHR Mobile Plus) | 0973370 |
+| Bahrain | All Carriers | 0973000 |
+| Bangladesh | All Carriers | 0880000 |
+| Bangladesh | GrameenPhone | 0880500 |
+| Barbados | All Carriers | 1246000 |
+| Belarus | MTS | 0375220 |
+| Belarus | All Carriers | 0375000 |
+| Belarus | JV Mobile Digital Communications | 0375790 |
+| Belgium | All Carriers | 0032000 |
+| Belgium | Proximus | 0032330 |
+| Belgium | Base | 0032600 |
+| Belgium | Mobistar | 0032420 |
+| Belize | All Carriers | 0501000 |
+| Benin | All Carriers | 0229000 |
+| Bermuda | All Carriers | 1441000 |
+| Bermuda | Mobility | 1441920 |
+| Bermuda | Telecom Bermuda | 1441210 |
+| Bhutan | All Carriers | 0975000 |
+| Bolivia | Entel | 0591190 |
+| Bolivia | All Carriers | 0591000 |
+| Bolivia | Nuevatel | 0591930 |
+| Bosnia and Herzegovina | All Carriers | 0387000 |
+| Bosnia and Herzegovina | Mobilna Srpske | 0387520 |
+| Bosnia and Herzegovina | Eronet | 0387660 |
+| Bosnia and Herzegovina | PTT BIH | 0387410 |
+| Botswana | Mascom Wireless | 0267410 |
+| Botswana | All Carriers | 0267000 |
+| Botswana | Orange | 0267690 |
+| Brazil | Norte Brasil Telecom | 0055840 |
+| Brazil | All Carriers | 0055000 |
+| Brazil | Claro Digital | 0055800 |
+| Brazil | BCP Telecom | 0055420 |
+| Brazil | Telefonica (Rio Grande de Sol) | 0055870 |
+| Brazil | Tess | 0055210 |
+| Brazil | TIM Brasil | 0055220 |
+| Brazil | TeleSP | 0055630 |
+| Brazil | Telefonica (Rio) | 0055710 |
+| Brazil | Nextel | 0055820 |
+| Brazil | Americel | 0055190 |
+| Brazil | ATL | 0055180 |
+| Brazil | Oi (TNL) | 0055350 |
+| Brazil | TCO | 0055960 |
+| Brunei | All Carriers | 0673000 |
+| Bulgaria | All Carriers | 0359000 |
+| Bulgaria | Globul | 0359890 |
+| Bulgaria | MobilTEL AD | 0359390 |
+| Burkina Faso | All Carriers | 0226000 |
+| Burkina Faso | Celtel | 0226140 |
+| Burundi | Telecel | 0257280 |
+| Burundi | All Carriers | 0257000 |
+| Cambodia | CamGSM | 0855330 |
+| Cambodia | All Carriers | 0855000 |
+| Cambodia | CASACOM | 0855440 |
+| Cambodia | Cambodia Shinawatra | 0855130 |
+| Cameroon | All Carriers | 0237000 |
+| Cameroon | MTN | 0237320 |
+| Cameroon | Orange | 0237950 |
+| Canada | Fido (Microcell) | 0001700 |
+| Canada | Bell Mobility | 0001400 |
+| Canada | Aliant | 0001640 |
+| Canada | Telus | 0001220 |
+| Canada | Rogers AT&T (TDMA) | 0001880 |
+| Canada | All Carriers | 0001000 |
+| Canada | Rogers AT&T (GSM) | 0001290 |
+| Canada | MTS | 0001440 |
+| Canada | NorthernTel | 0001760 |
+| Canada | Virgin Mobile | 0001800 |
+| Canada | Sasktel | 0001580 |
+| Canada | Telebec | 0001730 |
+| Cape Verde | Cabo Verde Telecom | 0238130 |
+| Cape Verde | All Carriers | 0238000 |
+| Cayman Islands | All Carriers | 1345000 |
+| Chad | All Carriers | 0235000 |
+| Chad | Celtel | 0235620 |
+| Chile | Entel Telefonia Movil | 0056770 |
+| Chile | All Carriers | 0056000 |
+| China | All Carriers | 0086000 |
+| Columbia | All Carriers | 0057000 |
+| Comoros Island | All Carriers | 0269000 |
+| Congo(RC) | All Carriers | 0242000 |
+| Congo (RDC) | All Carriers | 0243000 |
+| Congo (RDC) | Celtel | 0243620 |
+| Cook Islands | All Carriers | 0682000 |
+| Costa Rica | All Carriers | 0506000 |
+| Croatia | All Carriers | 0385000 |
+| Croatia | HT Mobile Communications |0385550 |
+| Croatia | Vipnet GSM | 0385300 |
+| Cuba | All Carriers | 0053000 |
+| Cyprus | All Carriers | 0357000 |
+| Cyprus | Cyprus Telecom Authority | 0357560 |
+| Czech Republic | Cesky Mobil | 0420260 |
+| Czech Republic | All Carriers | 0420000 |
+| Czech Republic | Eurotel Praha | 0420890 |
+| Czech Republic | T-Mobile | 0420900 |
+| Denmark | TDC Mobil | 0045400 |
+| Denmark | Telia | 0045360 |
+| Denmark | All Carriers | 0045000 |
+| Denmark | Sonofon | 0045830 |
+| Denmark | Orange | 0045660 |
+| Djibouti | All Carriers | 0253000 |
+| Dominica Islands | All Carriers | 1767000 |
+| Dominican Republic | All Carriers | 1809000 |
+| Dominican Republic | Orange | 1809510 |
+| Ecuador | All Carriers | 0593000 |
+| Egypt | Vodafone | 0020160 |
+| Egypt | ECMS MoBiNil | 0020920 |
+| Egypt | All Carriers | 0020000 |
+| El Salvador | Digicel | 0503230 |
+| El Salvador | All Carriers | 0503000 |
+| El Salvador | CTE Telecom Personal | 0503190 |
+| Equatorial Guinea | All Carriers | 0240000 |
+| Eritrea | All Carriers | 0291000 |
+| Estonia | AS EMT | 0372680 |
+| Estonia | Radiolinja Eesti AS | 0372800 |
+| Estonia | Tele2 Eesti Aktsiaselts | 0372230 |
+| Estonia | All Carriers | 0372000 |
+| Ethiopia | All Carriers | 0251000 |
+| Faeroe Islands | All Carriers | 0298000 |
+| Falkland Islands | All Carriers | 0500000 |
+| Fiji | Vodafone | 0679930 |
+| Fiji | All Carriers | 0679000 |
+| Finland | Telia | 0358350 |
+| Finland | Radiolinja | 0358740 |
+| Finland | Sonera | 0358500 |
+| Finland | Alands Mobiltelefon | 0358600 |
+| Finland | All Carriers | 0358000 |
+| Finland | Suomen | 0358830 |
+| France | Bouygues Telecom | 0033560 |
+| France | Orange | 0033140 |
+| France | SFR | 0033230 |
+| France | All Carriers | 0033000 |
+| French Guiana | All Carriers | 0594000 |
+| French Polynesia | All Carriers | 0689000 |
+| Gabon | All Carriers | 0241000 |
+| Gambia | All Carriers | 0220000 |
+| Gambia | Gamcell | 0220240 |
+| Georgia | Geocell | 0995770 |
+| Georgia | All Carriers | 0995000 |
+| Georgia | Magticom | 0995390 |
+| Germany | Vodafone | 0049370 |
+| Germany | E Plus | 0049180 |
+| Germany | Mobilcom | 0049550 |
+| Germany | All Carriers | 0049000 |
+| Germany | O20 || 0049980 |
+| Germany | T-Mobile | 0049540 |
+| Ghana | Mobitel | 0233730 |
+| Ghana | All Carriers | 0233000 |
+| Ghana | Spacefon (ScanCom) | 0233710 |
+| Gibraltar | Gibtel | 0350420 |
+| Gibraltar | All Carriers | 0350000 |
+| Greece | Q-Telecom (Info Quest) | 0030160 |
+| Greece | Telestet (Stet Hellas) | 0030700 |
+| Greece | Cosmote | 0030530 |
+| Greece | All Carriers | 0030000 |
+| Greece | Vodafone | 0030770 |
+| Greenland | TELE Greenland A/S | 0299690 |
+| Greenland | All Carriers | 0299000 |
+| Grenada | All Carriers | 1473000 |
+| Guadeloupe | All Carriers | 0590000 |
+| Guam | All Carriers | 1671000 |
+| Guatemala | All Carriers | 0502000 |
+| Guinea Bissau | All Carriers | 0245000 |
+| Guinea Republic | All Carriers | 0224000 |
+| Guyana | All Carriers | 0592000 |
+| Haiti | All Carriers | 0509000 |
+| Honduras | All Carriers | 0504000 |
+| Hong Kong | Orange | 0852820 |
+| Hong Kong | Sunday | 0852950 |
+| Hong Kong | New World Mobility | 0852560 |
+| Hong Kong | Peoples | 0852160 |
+| Hong Kong | All Carriers | 0852000 |
+| Hong Kong | CSL | 0852660 |
+| Hong Kong | SmarTone | 0852420 |
+| Hungary | All Carriers | 0036000 |
+| Hungary | Vodafone | 0036860 |
+| Hungary | Pannon | 0036660 |
+| Hungary | Westel | 0036790 |
+| Iceland | Iceland Telecom | 0354680 |
+| Iceland | All Carriers | 0354000 |
+| Iceland | TAL | 0354570 |
+| India | Bharti Mobile | 0091110 |
+| India | Bharti Mobinet | 0091920 |
+| India | Aircel | 0091790 |
+| India | IDEA Cellular Gujarat | 0091310 |
+| India | IDEA Cellular New Delhi | 0091680 |
+| India | Sterling Cellular | 0091860 |
+| India | RPG Cellular Services | 0091650 |
+| India | BPL Mobile | 0091820 |
+| India | BPL Cellular | 0091120 |
+| India | Hutchison Telecom East | 0091990 |
+| India | All Carriers | 0091000 |
+| India | Spice Communications | 0091600 |
+| India | Bharti Cellular | 0091930 |
+| India | Hutchison Max Telecom | 0091170 |
+| India | Hexacom India | 0091130 |
+| India | IDEA Cellular | 0091980 |
+| India | Escotel | 0091530 |
+| India | Fascel Limited | 0091160 |
+| India | IDEA Cellular Maharashtra Goa | 0091730 |
+| India | Bharti Mobitel | 0091700 |
+| Indonesia | Telkomsel | 0062580 |
+| Indonesia | Indosat | 0062330 |
+| Indonesia | Satelindo | 0062460 |
+| Indonesia | Excelcom | 0062950 |
+| Indonesia | All Carriers | 0062000 |
+| Iran | All Carriers | 0098000 |
+| Iraq | All Carriers | 0964000 |
+| Ireland | Meteor | 0353780 |
+| Ireland | Vodafone | 0353360 |
+| Ireland | All Carriers | 0035000 |
+| Ireland | O20 || 0353750 |
+| Israel | Palestine Cellular (Jawwal) | 0972520 |
+| Israel | Orange (Partner Communications) | 0972940 |
+| Israel | Cellcom | 0972580 |
+| Israel | All Carriers | 0972000 |
+| Italy | Vodafone | 0039640 |
+| Italy | All Carriers | 0039000 |
+| Italy | Wind Telecomunicazioni | 0039510 |
+| Italy | Telecom Italia Mobile | 0039900 |
+| Ivory Coast | All Carriers | 0225000 |
+| Jamaica | Digicel (Mossel) | 1876310 |
+| Jamaica | All Carriers | 1876000 |
+| Japan | All Carriers | 0081000 |
+| Jordan | MobileCom | 0962800 |
+| Jordan | All Carriers | 0962000 |
+| Jordan | Jordan Mobile Telephone | 0962870 |
+| Kazakstan | GSM Kazakhstan, KCell | 0007820 |
+| Kazakstan | All Carriers | 0007000 |
+| Kazakstan | KaR-Tel LLC | 0007920 |
+| Kenya | Safaricom | 0254790 |
+| Kenya | All Carriers | 0254000 |
+| Kenya | Kencell | 0254800 |
+| Kiribati | All Carriers | 0686000 |
+| Korea, North | All Carriers | 0850000 |
+| Korea (South) | All Carriers | 0082000 |
+| Kuwait | All Carriers | 0965000 |
+| Kuwait | Mobile Telecom (K.S.C.) | 0965690 |
+| Kuwait | Wataniya Telecom | 0965790 |
+| Kyrgyzstan | All Carriers | 0996000 |
+| Laos | All Carriers | 0856000 |
+| Latvia | All Carriers | 0371000 |
+| Latvia | Latvian Mobile | 0371550 |
+| Latvia | Tele 20 || 0371730 |
+| Lebanon | All Carriers | 0961000 |
+| Lebanon | FTML | 0961800 |
+| Lebanon | LibanCell | 0961200 |
+| Lesotho | All Carriers | 0266000 |
+| Liberia | All Carriers | 0231000 |
+| Libya | All Carriers | 0218000 |
+| Liechtenstein | Mobilkom | 0423650 |
+| Liechtenstein | Tele 20 || 0423740 |
+| Liechtenstein | Telecom FL | 0423310 |
+| Liechtenstein | All Carriers | 0423000 |
+| Lithuania | Omnitel | 0370540 |
+| Lithuania | Tele 20 || 0370390 |
+| Lithuania | Bite (Vilnius) | 0370890 |
+| Lithuania | All Carriers | 0370000 |
+| Luxembourg | All Carriers | 0352000 |
+| Macau | All Carriers | 0853000 |
+| Macedonia | Post and Telecom Makedonija | 0389890 |
+| Macedonia | All Carriers | 0389000 |
+| Madagascar | All Carriers | 0261000 |
+| Madagascar | Madacom | 0261130 |
+| Madagascar | Antaris (SMM) | 0261140 |
+| Malawi | Celtel | 0265600 |
+| Malawi | All Carriers | 0265000 |
+| Malaysia | All Carriers | 0060000 |
+| Malaysia | TMTouch | 0060560 |
+| Malaysia | TimeCel | 0060290 |
+| Malaysia | Celcom | 0060920 |
+| Malaysia | Maxis Telecommunication | 0060300 |
+| Malaysia | DiGi Telecommunications | 0060990 |
+| Maldives | Dhiraagu | 0960340 |
+| Maldives | All Carriers | 0960000 |
+| Mali | All Carriers | 0223000 |
+| Malta | All Carriers | 0356000 |
+| Malta | Vodafone | 0356900 |
+| Malta | Go mobile | 0356320 |
+| Martinique | All Carriers | 0596000 |
+| Mauritania | Mattel | 0222440 |
+| Mauritania | Mauritel | 0222730 |
+| Mauritania | All Carriers | 0222000 |
+| Mauritius | Cellplus Mobile Telecom | 0230600 |
+| Mauritius | Emtel | 0230860 |
+| Mauritius | All Carriers | 0230000 |
+| Mayotte Islands | All Carriers | 0262000 |
+| Mexico | All Carriers | 0052000 |
+| Mexico | Nextel | 0052430 |
+| Mexico | Telcel | 0052250 |
+| Micronesia | All Carriers | 0691000 |
+| Moldova | All Carriers | 0373000 |
+| Monaco | Covered by France Telecom/SFR/Bouygues | 0377370 |
+| Monaco | Monaco Telecom | 0377490 |
+| Monaco | All Carriers | 0377000 |
+| Mongolia | Mobicom | 0976750 |
+| Mongolia | All Carriers | 0976000 |
+| Montserrat | All Carriers | 1664000 |
+| Morocco | All Carriers | 0212000 |
+| Morocco | Meditelecom | 0212200 |
+| Morocco | Itissalat Al Maghrib SA | 0212390 |
+| Mozambique | Telecomunicacoes de Mocambique | 0258310 |
+| Mozambique | All Carriers | 0258000 |
+| Myanmar (Burma) | All Carriers | 0095000 |
+| Namibia | All Carriers | 0264000 |
+| Nauru | All Carriers | 0674000 |
+| Nepal | All Carriers | 0977000 |
+| Nepal | Nepal Mobile | 0977480 |
+| Netherlands | All Carriers | 0031000 |
+| Netherlands | Orange | 0031750 |
+| Netherlands | Vodafone | 0031960 |
+| Netherlands | KPN Telecom BV | 0031980 |
+| Netherlands | T-Mobile | 0031950 |
+| Netherlands | O20 || 0031300 |
+| Netherlands Antilles | All Carriers | 0599000 |
+| New Caledonia | All Carriers | 0687000 |
+| New Zealand | All Carriers | 0064000 |
+| New Zealand | Vodafone | 0064840 |
+| Nicaragua | All Carriers | 0505000 |
+| Niger | All Carriers | 0227000 |
+| Niger | Celtel | 0234760 |
+| Nigeria | Econet | 0234750 |
+| Nigeria | All Carriers | 0234000 |
+| Nigeria | MTN | 0234430 |
+| Niue Island | All Carriers | 0683000 |
+| Norfolk Island | All Carriers | 0672000 |
+| Northern Mariana Islands | All Carriers | 1670000 |
+| Norway | Telenor | 0047440 |
+| Norway | Netcom GSM | 0047530 |
+| Norway | All Carriers | 0047000 |
+| Oman | GTO, Ministry of PTT | 0968120 |
+| Oman | All Carriers | 0968000 |
+| Pakistan | All Carriers | 0092000 |
+| Pakistan | Mobilink (Pakistan Mobile) | 0092170 |
+| Pakistan | Ufone (PTML) | 0092470 |
+| Palau | All Carriers | 0680000 |
+| Palestine | All Carriers | 0970000 |
+| Panama | All Carriers | 0507000 |
+| Papua New Guinea | All Carriers | 0675000 |
+| Paraguay | All Carriers | 0595000 |
+| Paraguay | VOX (Hola Paraguay) | 0595510 |
+| Peru | All Carriers | 0051000 |
+| Peru | Nextel | 0051260 |
+| Peru | TIM | 0051710 |
+| Philippines | All Carriers | 0063000 |
+| Philippines | Smart | 0063130 |
+| Philippines | Globe Telecom | 0063180 |
+| Philippines | Nextel | 0063940 |
+| Poland | All Carriers | 0048000 |
+| Poland | IDEA (Centertel) | 0048940 |
+| Poland | ERA (Polska Telefonia Cyfrowa) | 0048670 |
+| Poland | Plus GSM (Polkomtel) | 0048120 |
+| Portugal | Optimus | 0351130 |
+| Portugal | TMN | 0351700 |
+| Portugal | All Carriers | 0351000 |
+| Portugal | Vodafone | 0351730 |
+| Puerto Rico | All Carriers | 1787000 |
+| Qatar | All Carriers | 0974000 |
+| Qatar | Qatar Telecommunications Corp. | 0974930 |
+| Reunion | All Carriers | 0262000 |
+| Reunion | Ste Reunionnaise du Radiotelephone | 0262870 |
+| Romania | All Carriers | 0040000 |
+| Romania | Cosmorom | 0040590 |
+| Romania | MobiFon | 0040620 |
+| Romania | Orange | 0040480 |
+| Russia | All Carriers | 0007000 |
+| Rwanda | MTN Rwandacell | 0250350 |
+| Rwanda | All Carriers | 0250000 |
+| Saint Vincent and  Grenadines | All Carriers | 1784000 |
+| Samoa (American) | All Carriers | 1684000 |
+| Samoa (Western) | All Carriers | 0685000 |
+| San Marino | All Carriers | 0378000 |
+| Sao Tome & Principe | All Carriers | 0239000 |
+| Saudi Arabia | All Carriers | 0966000 |
+| Saudi Arabia | Saudi Telecom Company (AL JAWAL) | 0966420 |
+| Senegal | All Carriers | 0221000 |
+| Serbia | All Carriers | 0381000 |
+| Seychelles | Cable & Wireless | 0248560 |
+| Seychelles | All Carriers | 0248000 |
+| Seychelles | Telecom Seychelles (Airtel) | 0248120 |
+| Sierra Leone | All Carriers | 0232000 |
+| Singapore | All Carriers | 0065000 |
+| Singapore | MobileOne | 0065610 |
+| Singapore | SingTel (Singapore Telecom Mobile) | 0065870 |
+| Singapore | StarHub | 0065760 |
+| Slovak Republic | All Carriers | 0421000 |
+| Slovenia | Vega (Western Wireless) | 0386620 |
+| Slovenia | SI.MOBIL | 0386420 |
+| Slovenia | All Carriers | 0386000 |
+| Slovenia | Mobitel | 0386260 |
+| Solomon Islands | All Carriers | 0677000 |
+| Somalia | All Carriers | 0252000 |
+| South Africa | MTN | 0027150 |
+| South Africa | Vodacom | 0027950 |
+| South Africa | Cell C | 0027510 |
+| South Africa | All Carriers | 0027000 |
+| Spain | All Carriers | 0034000 |
+| Spain | Xfera | 0034650 |
+| Spain | Amena (Retevision Movil) | 0034640 |
+| Spain | Movistar (Telefonica Moviles) | 0034930 |
+| Spain | Vodafone | 0034750 |
+| Sri Lanka | All Carriers | 0094000 |
+| Sri Lanka | Celltel Infiniti | 0094930 |
+| Sri Lanka | Dialog (MTN Networks) | 0094430 |
+| St Helena | All Carriers | 0290000 |
+| St Kitts and Nevis | All Carriers | 1869000 |
+| St Lucia | All Carriers | 1758000 |
+| Sudan | All Carriers | 0249000 |
+| Suriname | NV ICMS | 0597790 |
+| Suriname | All Carriers | 0597000 |
+| Swaziland | All Carriers | 0268000 |
+| Swaziland | MTN | 0268950 |
+| Sweden | All Carriers | 0046000 |
+| Sweden | Vodafone | 0046290 |
+| Sweden | Telia | 0046710 |
+| Sweden | Tele 20 || 0046780 |
+| Switzerland | Swisscom | 0041220 |
+| Switzerland | All Carriers | 0041000 |
+| Switzerland | Orange | 0041100 |
+| Switzerland | TDC Switzerland | 0041610 |
+| Syria | All Carriers | 0963000 |
+| Taiwan | All Carriers | 0886000 |
+| Tajikistan | All Carriers | 0992000 |
+| Tanzania | All Carriers | 0255000 |
+| Thailand | Orange | 0066740 |
+| Thailand | DTAC (Total Access Communication) | 0066910 |
+| Thailand | AIS (Advanced Info Service) | 0066130 |
+| Thailand | All Carriers | 0066000 |
+| Togo | All Carriers | 0228000 |
+| Tonga | All Carriers | 0676000 |
+| Trinidad and Tobago | All Carriers | 1868000 |
+| Tunisia | All Carriers | 0216000 |
+| Tunisia | Tunisie Telecom (Tunicell) | 0216490 |
+| Turkey | Telsim | 0090920 |
+| Turkey | IS-TIM | 0090790 |
+| Turkey | All Carriers | 0090000 |
+| Turkey | Turkcell | 0090630 |
+| Turkey | Aycell | 0090740 |
+| Turkmenistan | All Carriers | 0993000 |
+| Turkmenistan | BCTI | 0993540 |
+| Turks and Caicos Islands | All Carriers | 1649000 |
+| Tuvalu | All Carriers | 0688000 |
+| Uganda | All Carriers | 0256000 |
+| Uganda | UTL Telecel | 0256680 |
+| Uganda | CelTel Cellular | 0256650 |
+| Uganda | MTN | 0256700 |
+| Ukraine | Kyivstar GSM JSC | 0380250 |
+| Ukraine | All Carriers | 0380000 |
+| Ukraine | Ukrainian Radio Systems | 0380930 |
+| Ukraine | Golden Telecom Bancomsvyaz | 0380360 |
+| Ukraine | Ukrainian Mobile Communications | 0380450 |
+| United Arab Emirates | All Carriers | 0971000 |
+| United Kingdom | Vodafone | 0044640 |
+| United Kingdom | Orange | 0044730 |
+| United Kingdom | Virgin Mobile | 0044270 |
+| United Kingdom | O20 || 0044170 |
+| United Kingdom | T-Mobile | 0044220 |
+| United Kingdom | All Carriers | 0044000 |
+| United Kingdom | Three | 0044880 |
+| United States | Sprint | 0001650 |
+| United States | West Central Wireless | 0001130 |
+| United States | Union Telephone | 0001360 |
+| United States | TracFone (Cingular Orange) | 0001630 |
+| United States | Centennial | 0001790 |
+| United States | Boost Mobile iDEN | 0001510 |
+| United States | Virgin Mobile | 0001910 |
+| United States | Airadigm | 0001160 |
+| United States | AT&T (Cingular GSM) unused | 0001350 |
+| United States | Suncom | 0001270 |
+| United States | Cellular South | 0001370 |
+| United States | Conestoga Wireless | 0001430 |
+| United States | AT&T (Blue GSM) unused | 0001100 |
+| United States | AT&T (Blue TDMA) unused | 0001410 |
+| United States | Cincinnati Bell | 0001680 |
+| United States | Hickory Tech | 0001560 |
+| United States | Midwest Wireless | 0001500 |
+| United States | Nextel | 0001950 |
+| United States | Qwest | 0001480 |
+| United States | Metro PCS | 0001770 |
+| United States | Cricket (Leap Wireless) | 0001670 |
+| United States | NPI Wireless | 0001200 |
+| United States | AT&T | 0001470 |
+| United States | Iowa Wireless | 0001830 |
+| United States | Alltel | 0001280 |
+| United States | Verizon Wireless | 0001890 |
+| United States | T-MobileÂŽ | 0001570 |
+| United States | US Cellular | 0001840 |
+| United States | All Carriers | 0000010 |
+| Uruguay | All Carriers | 0598000 |
+| Uzbekistan | Coscom | 0998760 |
+| Uzbekistan | All Carriers | 0998000 |
+| Vanuatu | All Carriers | 0678000 |
+| Venezuela | Digicel | 0058480 |
+| Venezuela | Infonet | 0058110 |
+| Venezuela | Corporacion Digitel C.A. | 0058890 |
+| Venezuela | All Carriers | 0058000 |
+| Vietnam | All Carriers | 0084000 |
+| Vietnam | Vietnam Mobile Telecom | 0084660 |
+| Vietnam | VinaPhone (GPC) | 0084100 |
+| Virgin Islands (British) | All Carriers | 1284000 |
+| Virgin Islands (US) | All Carriers | 1340000 |
+| Wallis and Futuna Islands | All Carriers | 0681000 |
+| Yemen | Sabafon | 0967830 |
+| Yemen | Spacetel | 0967990 |
+| Yemen | All Carriers | 0967000 |
+| Zambia | All Carriers | 0260000 |
+| Zambia | Celtel | 0260190 |
+| Zambia | Telecel | 0260700 |
+| Zimbabwe | Econet | 0263750 |
+| Zimbabwe | NetOne | 0263200 |
