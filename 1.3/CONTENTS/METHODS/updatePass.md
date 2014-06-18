@@ -1,5 +1,7 @@
-[Back to the Table of Contents](/1.3/README.md)&nbsp;&nbsp;|&nbsp;&nbsp;[Back to API Methods](API_METHODS.md)
+[Back to the Table of Contents](/1.3/README.md)
+
 ## updatePass
+
 __Synopsis:__  
 This API request updates the pass data for that passDataId if exists. If this pass data was already used to generate a Passbook Pass which is installed on the device, then this request will also trigger a pass update on that device. Only the dynamic pas data is allowed to be updated and rest of the data stays the same. If the pass template associated with this pass was updated with new images, colors, data types and number of fields then those updates will be also reflected in the pass update. All the data is updated in limitation to the settings on the pass template and all the other/extra data is ignored. You cannot update Email (or) Phone in this request but the pass data. On success, it will return the UpdateStatusId. For more info see below for Mandatory/Optional fields and Error codes.
 
