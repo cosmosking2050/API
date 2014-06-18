@@ -1,11 +1,12 @@
-[Back to the Table of Contents](/1.3/README.md)&nbsp;&nbsp;|&nbsp;&nbsp;[Postback System Overview](/1.3/CONTENTS/POSTBACKS/POSTBACK_SYSTEM_OVERVIEW.md)
+[Back to the Table of Contents](/1.3/README.md)
+
 ## Subscriber Status Postback
 
 The Subscribe / Unsubscribe Postback API notifies you of the an opt-in or opt-out status change for each number or email address subscribed to your campaigns. 
 
 ### Mobile Subscribe
 
-This postback notification triggers when a mobile phone number subscribes to a specific campaign.
+This postback notification triggers when a mobile phone number subscribes to a specific campaign.  We send the notification again even if someone who is already opt-in triggers the opt-in process a second time.
 
 | Variable | Description |
 | -------- | ----------- |
