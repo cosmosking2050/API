@@ -17,6 +17,7 @@ __Request:__
 __Request Parameters:__
 
     Mandatory: Action, API_KEY, NewUser, NewPass
+    Optional: N/A
 
 __Response Parameters:__
 
