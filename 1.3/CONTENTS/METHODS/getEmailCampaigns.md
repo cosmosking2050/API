@@ -1,5 +1,4 @@
-[Back to the Table of Contents](/1.3/README.md)&nbsp;&nbsp;|&nbsp;&nbsp;[Back to API Methods](API_METHODS.md)
-## getEmailCampaigns
+[Back to the Table of Contents](/1.3/README.md)
 
 __Synopsis:__  
 This API function returns a list of Email Campaigns for that account. Returned data consists of a campaign ID and Name.
