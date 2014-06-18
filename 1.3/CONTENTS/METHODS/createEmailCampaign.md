@@ -1,5 +1,6 @@
 [Back to the Table of Contents](/1.3/README.md)&nbsp;&nbsp;|&nbsp;&nbsp;[Back to API Methods](API_METHODS.md)
 ## createEmailCampaign
+
 __Synopsis:__  
 This API function creates new email campaign within the account holders account and returns a CampaignID. Campaign will be created under _campaignname_ in our system. _Campaignname_ will be sent to users in opt-in/opt-out emails. _Brandname_ will be used in 'from' field of all sent emails. _Mailingadress_ will be inserted into email footer.
 
@@ -15,18 +16,17 @@ __Request:__
 ```
 
 __Request Parameters:__
-<pre>
-<strong>Mandatory:</strong>
-Action, API_KEY, CampaignName, BrandName, MailingAddress
-<strong>Optional:</strong>
---
-</pre>
 
-__Response Parameters:__  
-CampaignID, CampaignName, BrandName, MailingAddress, ErrorInfo, Errorcode
+    Mandatory: Action, API_KEY, CampaignName, BrandName, MailingAddress
+    Optional: N/A
 
-__Related Errorcodes:__  
-E170, E171, E172, E173    
+__Response Parameters:__
+
+    CampaignID, CampaignName, BrandName, MailingAddress, ErrorInfo, Errorcode
+
+__Related Errorcodes:__
+
+    E170, E171, E172, E173    
 
 __Request Example:__  
 XML:
