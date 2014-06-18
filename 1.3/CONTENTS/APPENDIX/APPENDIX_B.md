@@ -1,5 +1,7 @@
 [Back to the Table of Contents](/1.3/README.md)
 
+## APPENDIX B
+
 __Error Code Reference__
 
 | Code | Description |
