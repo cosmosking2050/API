@@ -1,5 +1,6 @@
 [Back to the Table of Contents](/1.3/README.md)&nbsp;&nbsp;|&nbsp;&nbsp;[Back to API Methods](API_METHODS.md)
 ## subscribeEmail + unsubscribeEmail
+
 __Synopsis:__  
 'subscribeEmail' API will subscribe the email address to a particular campaign. Email address is referenced by 'EMAIL' and the campaign is referenced by 'CAMPAIGNID' in the API request. After the email address is subscribed to a campaign they will receive all auto responders and scheduled messages for that campaign until they are unsubscribed through the 'unsubscribeEmail' API or UI. 'unsubscribeEmail' API will unsubscribe the email address from a particular campaign. You can unsubscribe all the subscribers from the campaign by passing 'ALL' as the email address. Email address is referenced by 'EMAIL' in the API, and the campaign is referenced by 'CAMPAIGNID'.
 
@@ -31,18 +32,17 @@ __Request: unsubscribeEmail__
 ```
 
 __Request Parameters:__
-<pre>
-<strong>Mandatory:</strong>
-Action, API_KEY, CAMPAIGNID, Email
-<strong>Optional:</strong>
-Data, Notify
-</pre>
 
-__Response Parameters:__  
-CAMPAIGNID, Errorcode, Errorinfo, Email, Status
+    Mandatory: Action, API_KEY, CAMPAIGNID, Email
+    Optional: Data, Notify
 
-__Related Errorcodes:__  
-E911, E912, E913, E914
+__Response Parameters:__
+
+    CAMPAIGNID, Errorcode, Errorinfo, Email, Status
+
+__Related Errorcodes:__
+
+    E911, E912, E913, E914
 
 __Request Example:__  
 XML:
