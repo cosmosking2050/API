@@ -21,11 +21,11 @@ __Request Parameters:__
     Mandatory: action, apikey
     Optional: N/A
 
-__Response Parameters:__  
+__Response Parameters:__
 
     status, campaign, id, name, Errorcode, Errorinfo
 
-__Related Errorcodes:__  
+__Related Errorcodes:__
 
     E405
 
