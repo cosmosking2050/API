@@ -1,8 +1,9 @@
 [Back to the Table of Contents](/1.3/README.md)&nbsp;&nbsp;|&nbsp;&nbsp;[Back to API Methods](API_METHODS.md)
 ## createMMSCampaign
+
 __Synopsis:__  
 This API function creates new MMS/SMS campaign within the account holders account and returns a CampaignID. 
-Campaign will be created under _campaignname_ in our system. _Campaignname_ will be sent to users in opt-in/opt-out messages. _Brandname_ will be shown on opt-in, help and opt-out messages to the end user to identify who is running the campaign.
+Campaign will be created under *campaignname* in our system. *Campaignname* will be sent to users in opt-in/opt-out messages. *Brandname* will be shown on opt-in, help and opt-out messages to the end user to identify who is running the campaign.
 
 __Request:__
 ```xml
@@ -15,18 +16,17 @@ __Request:__
 ```
 
 __Request Parameters:__
-<pre>
-<strong>Mandatory:</strong>
-Action, API_KEY, CampaignName, BrandName
-<strong>Optional:</strong>
-N/A
-</pre>
 
-__Response Parameters:__  
-CampaignID, CampaignName, BrandName, ErrorInfo, Errorcode
+    Mandatory: Action, API_KEY, CampaignName, BrandName
+    Optional: N/A
 
-__Related Error codes:__  
-E170, E171, E172
+__Response Parameters:__
+
+    CampaignID, CampaignName, BrandName, ErrorInfo, Errorcode
+
+__Related Error codes:__
+
+    E170, E171, E172
 
 __Request Example:__  
 XML:
