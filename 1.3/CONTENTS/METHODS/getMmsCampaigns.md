@@ -1,5 +1,6 @@
 [Back to the Table of Contents](/1.3/README.md)&nbsp;&nbsp;|&nbsp;&nbsp;[Back to API Methods](API_METHODS.md)
 ## getMmsCampaigns
+
 __Synopsis:__  
 This API function returns a list of MMS Campaigns for that account. Returned data consists of the campaign's ID and Name.
 
@@ -16,18 +17,17 @@ __Request: GET__
     API_URL?action=getmmscampaigns&api_key=apiKey
 
 __Request Parameters:__
-<pre>
-<strong>Mandatory:</strong>
-action, apikey
-<strong>Optional:</strong>
---
-</pre>
+
+    Mandatory: action, apikey
+    Optional: N/A
 
 __Response Parameters:__  
-status, campaign, id, name, Errorcode, Errorinfo
+
+    status, campaign, id, name, Errorcode, Errorinfo
 
 __Related Errorcodes:__  
-E405
+
+    E405
 
 __Request Examples__  
 XML:
