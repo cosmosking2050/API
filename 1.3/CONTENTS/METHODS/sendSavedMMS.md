@@ -1,5 +1,6 @@
 [Back to the Table of Contents](/1.3/README.md)&nbsp;&nbsp;|&nbsp;&nbsp;[Back to API Methods](API_METHODS.md)
 ## sendSavedMMS
+
 __Synopsis:__  
 This API sends stored content from a specified account using an MMSID to a single mobile number. FROM must be one of the shortcodes allowed for your account. In case the number is from a different country than the FROM shortcode is assigned to, the default shortcode for those countries will be used.
 
@@ -8,10 +9,10 @@ Every binary MMS we deliver can be transcoded for the destination handset and ev
 
 Our API allows you to dynamically change the text of each slide by setting up optional CUSTOMTEXT (CUSTOMTEXT must include mandatory fields: value and slide) and MMS Subject by setting CUSTOMSUBJECT.
 
-A Device Discovery Message (DDM) is a short textual MMS message that is sent to the number to discover what handset the end user is using. We store this handset information in our system and reuse it, so a DDM is sent only to new numbers. If the DDM settings are not included within your API call and the number is not in the handset cache, we will deliver the MMS with generic settings. If the handset is in the handset cache, the DDM will not be sent and the MMS message will be transcoded and delivered immediately. You can force sending of DDM (regardless if number is cached) by setting DDMFORCE to 'true'
+A Device Discovery Message (DDM) is a short textual MMS message that is sent to the number to discover what handset the end user is using. We store this handset information in our system and reuse it, so a DDM is sent only to new numbers. If the DDM settings are not included within your API call and the number is not in the handset cache we will deliver the MMS with generic settings. If the handset is in the handset cache the DDM will not be sent and the MMS message will be transcoded and delivered immediately. You can force sending of DDM (regardless if number is cached) by setting DDMFORCE to 'true'
 
 Our API allows you to customize DDM by setting 3 parameters:  
-DDMTITLE - this is the DDM title (optional, if not set then "Device Discovry" text will be used)  
+DDMTITLE - this is the DDM title (optional, if not set then "Device Discovery" text will be used)  
 DDMTEXT - this is the DDM body (mandatory)  
 DDMTIMEOUT - (in minutes) when we send DDM we wait for the Delivery Report which contain the handset profile. In some cases we do not receive it or it takes very long (handset turned off or out of range). This variable tells the system how long should it wait for DDM Delivery Report before sending actual content using Default parameters. Default value of this parameter is 5 minutes.
 
@@ -47,18 +48,17 @@ __Request:__
 ```
 
 __Request Parameters:__
-<pre>
-<strong>Mandatory:</strong>
-Action, API_KEY, MMSID, To, From
-<strong>Optional:</strong>
-CampaignRef, CustomSubject, CustomText, Data, DDMTitle, DDMText, DDMTimeout, Device
-</pre>
 
-__Response Parameters:__  
-MMSID, Status, To, TrackingID, Errorcode, Errorinfo
+    Mandatory: Action, API_KEY, MMSID, To, From
+    Optional: CampaignRef, CustomSubject, CustomText, Data, DDMTitle, DDMText, DDMTimeout, Device
 
-__Related Errorcodes:__  
-E110, E111, E241, E620, E621, E623, E626, E628, E629, E713, E714, E715
+__Response Parameters:__
+
+    MMSID, Status, To, TrackingID, Errorcode, Errorinfo
+
+__Related Errorcodes:__
+
+    E110, E111, E241, E620, E621, E623, E626, E628, E629, E713, E714, E715
 
 __Request Example:__  
 XML:
