@@ -1,5 +1,6 @@
 [Back to the Table of Contents](/1.3/README.md)&nbsp;&nbsp;|&nbsp;&nbsp;[Back to API Methods](API_METHODS.md)
 ## createUser
+
 __Synopsis:__  
 Creates new user with given username and password. The rest of the parameters required for account creation are inherited from creator’s account.
 
@@ -14,16 +15,16 @@ __Request:__
 ```
 
 __Request Parameters:__
-<pre>
-<strong>Mandatory:</strong>
-Action, API_KEY, NewUser, NewPass
-</pre>
 
-__Response Parameters:__  
-Status, Username, Password, API_KEY, Errorcode, Errorinfo
+    Mandatory: Action, API_KEY, NewUser, NewPass
 
-__Related Errorcodes:__  
-E150, E151, E152, E153, E154
+__Response Parameters:__
+
+    Status, Username, Password, API_KEY, Errorcode, Errorinfo
+
+__Related Errorcodes:__
+
+    E150, E151, E152, E153, E154
 
 __Request Example:__  
 XML:
