@@ -1,5 +1,6 @@
 [Back to the Table of Contents](/1.3/README.md)&nbsp;&nbsp;|&nbsp;&nbsp;[Back to API Methods](API_METHODS.md)
 ## getPassTemplateIds
+
 __Synopsis:__  
 This API function returns a list of Pass Template Ids for that account.
 
@@ -16,18 +17,17 @@ __Request: GET__
     API_URL?action=getpasstemplateids&api_key=apiKey
     
 __Request Parameters:__
-<pre>
-<strong>Mandatory:</strong>
-action, apikey
-<strong>Optional:</strong>
---
-</pre>
 
-__Response Parameters:__  
-status, passtemplateids, Errorcode, Errorinfo
+    Mandatory: action, apikey
+    Optional: N/A
 
-__Related Errorcodes:__  
-E800
+__Response Parameters:__
+
+    status, passtemplateids, Errorcode, Errorinfo
+
+__Related Errorcodes:__
+
+    E800
 
 __Request Example:__
 ```xml
