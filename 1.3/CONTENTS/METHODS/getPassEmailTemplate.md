@@ -1,5 +1,6 @@
 [Back to the Table of Contents](/1.3/README.md)&nbsp;&nbsp;|&nbsp;&nbsp;[Back to API Methods](API_METHODS.md)
 ##getPassEmailTemplate
+
 __Synopsis:__  
 This API is used to get the stored email template html with an embedded passbook pass in it for the specified email address. The pass data in the request is used in limitation to the pass template settings to generate this pass.
 Custom pass ID is your system generated unique ID that will represent this pass data. In the case of Relevance, Relevant Text is considered only when Relevance Lat and Long values are passed in the API otherwise ignored.
@@ -7,11 +8,11 @@ Also, it requires a reference email campaign to which this email address will be
 If any case, the subscription fails then the email address is added to the email campaign's audience manager as 'unsubscribed' and you will receive a warning code and warning status in the response. 
 The subscriber's data passed in the request will be saved and profiled for this email address. The email campaign subscription might fail due to the following reasons:
 
-1. The _email address_ has already opted-out of a campaign in your account.  
-2. The _email address_ has unsubscribed from any campaign associated with the SMTP server you are using.  
-3. The _email address_ has filed a spam complaint.  
-4. The _email address_ bounced during a previous delivery.  
-5. The _email address_ was opted by this user or account.  
+1. The *email address* has already opted-out of a campaign in your account.  
+2. The *email address* has unsubscribed from any campaign associated with the SMTP server you are using.  
+3. The *email address* has filed a spam complaint.  
+4. The *email address* bounced during a previous delivery.  
+5. The *email address* was opted by this user or account.  
 
 
 The returned email template HTML can be directly plugged into the email body and can be sent from your email servers. Although, you need to set your email headers properly to support html sent in the email. The email html contains an 'unsubscription' link in the footer which could be used by subscriber or email address to unsubscribe from the email campaign to which it was subscribed to during this process. Also, contains a tracking link to keep track of opened/read emails.  
@@ -129,36 +130,39 @@ __Request: GET__
     &pd_rellatitude10=relLatitude10&pd_rellongitude10=relLongitude10&pd_reltext10=relText10
 
 __Request Parameters:__
-<pre>
-<strong>Mandatory:</strong>
-action, apiKey, email, emailTemplateId, emailCampaignId,
-barcodeValue (if "Barcode=Allowed" && "BarcodeType=Dynamic" && "BarcodeValueSource=Dynamic Value" for Pass Template otherwise IGNORED)
-<strong>Optional:</strong>
-customPassId, thumbnailUrl,
-barcodeText (if "Barcode = Allowed" && "Barcode Alternate Text = Dynamic Text" for Pass Template otherwise IGNORED), 
-headerLabel1, headerValue1, 
-primaryLabel1, primaryValue1, 
-primaryLabel2, primaryValue2 - if "Pass Template Type = Boarding Pass" otherwise IGNORED, 
-secLabel1, secValue1, secLabel2, secValue2, secLabel3, secValue3, secLabel4, secValue4, 
-auxLabel1, auxValue1, auxLabel2, auxValue2, auxLabel3, auxValue3, auxLabel4, auxValue4, 
-backLabel1, backValue1, backLabel2, backValue2, backLabel3, backValue3, backLabel4, backValue4,
-relLatitude1, relLongitude1, relText1,
-relLatitude2, relLongitude2, relText2,
-relLatitude3, relLongitude3, relText3,
-relLatitude4, relLongitude4, relText4,
-relLatitude5, relLongitude5, relText5,
-relLatitude6, relLongitude6, relText6,
-relLatitude7, relLongitude7, relText7,
-relLatitude8, relLongitude8, relText8,
-relLatitude9, relLongitude9, relText9,
-relLatitude10, relLongitude10, relText10
-</pre>
 
-__Response Parameters:__  
-status, email, emailTemplateId, passDataId, serialNumber, customPassId, warningCode, warningInfo, emailSubject, emailHtml, errorCode, errorInfo
+    Mandatory: action, apiKey, email, emailTemplateId, emailCampaignId,
+    barcodeValue (if "Barcode=Allowed" && "BarcodeType=Dynamic" && "BarcodeValueSource=Dynamic Value" for Pass Template otherwise IGNORED)
+    Optional: customPassId, thumbnailUrl,
+    barcodeText (if "Barcode = Allowed" && "Barcode Alternate Text = Dynamic Text" for Pass Template otherwise IGNORED), 
+    headerLabel1, headerValue1, 
+    primaryLabel1, primaryValue1, 
+    primaryLabel2, primaryValue2 - if "Pass Template Type = Boarding Pass" otherwise IGNORED, 
+    secLabel1, secValue1, secLabel2, secValue2, secLabel3, secValue3, secLabel4, secValue4, 
+    auxLabel1, auxValue1, auxLabel2, auxValue2, auxLabel3, auxValue3, auxLabel4, auxValue4, 
+    backLabel1, backValue1, backLabel2, backValue2, backLabel3, backValue3, backLabel4, backValue4,
+    relLatitude1, relLongitude1, relText1,
+    relLatitude2, relLongitude2, relText2,
+    relLatitude3, relLongitude3, relText3,
+    relLatitude4, relLongitude4, relText4,
+    relLatitude5, relLongitude5, relText5,
+    relLatitude6, relLongitude6, relText6,
+    relLatitude7, relLongitude7, relText7,
+    relLatitude8, relLongitude8, relText8,
+    relLatitude9, relLongitude9, relText9,
+    relLatitude10, relLongitude10, relText10
 
-__Related Errorcodes:__  
-E401, E402, E713, E714, E802, E803, E806, E823, E840, E841, E842, E843, E844, E845, E846, E847, E848, E849, E850, E851, E852, E853, E854, E855, E856, E857, E858, E859, E860, E861, E862, E863, E864, E865, E866, E867, E868, E869, E870, E871, E872, E873, E874, E875, E876, E877, E878, E879, E880, E881, E882, E883, E884, E885, E886, E887, E888, E889, E890, E891, E892, E893, E894, E895, E896, E897, E898, E899
+__Response Parameters:__
+
+    status, email, emailTemplateId, passDataId, serialNumber, customPassId, warningCode, warningInfo, emailSubject,
+    emailHtml, errorCode, errorInfo
+
+__Related Errorcodes:__
+
+    E401, E402, E713, E714, E802, E803, E806, E823, E840, E841, E842, E843, E844, E845, E846, E847, E848, E849, E850,
+    E851, E852, E853, E854, E855, E856, E857, E858, E859, E860, E861, E862, E863, E864, E865, E866, E867, E868, E869,
+    E870, E871, E872, E873, E874, E875, E876, E877, E878, E879, E880, E881, E882, E883, E884, E885, E886, E887, E888,
+    E889, E890, E891, E892, E893, E894, E895, E896, E897, E898, E899
 
 __Related Warningcodes:__  
 E915, E916, E917, E918
