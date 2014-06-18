@@ -2,7 +2,7 @@
 ## getSendingStatistics
 
 __Synopsis:__  
-This API requests a report of all messaging transactions between two dates. The server returns the path to an XML file containing the report. All results are saved to file which must be downloaded by the requestor. Detailed Information about the report will be in [Appendix C](/1.3/CONTENTS/APPENDIX/APPENDIX_C.md).
+This API requests a report of all messaging transactions between two dates.  The Dates should be given in UTC. The server returns the path to an XML file containing the report. All results are saved to file which must be downloaded by the requestor. Detailed Information about the report will be in [Appendix C](/1.3/CONTENTS/APPENDIX/APPENDIX_C.md).
 
 __Request:__
 ```xml
