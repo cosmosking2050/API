@@ -1,20 +1,19 @@
-<a href="/1.3/README.md">Back to the Table of Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/1.3/CONTENTS/POSTBACKS/POSTBACK_SYSTEM_OVERVIEW.md">Postback System Overview</a>
-
-<h2>Subscriber Status Postback</h2>
+[Back to the Table of Contents](/1.3/README.md)&nbsp;&nbsp;|&nbsp;&nbsp;[Postback System Overview](/1.3/CONTENTS/POSTBACKS/POSTBACK_SYSTEM_OVERVIEW.md)
+## Subscriber Status Postback
 
 The Subscribe / Unsubscribe Postback API notifies you of the an opt-in or opt-out status change for each number or email address subscribed to your campaigns. 
 
-<h3>Mobile Subscribe</h3>
+### Mobile Subscribe
 
 This postback notification triggers when a mobile phone number subscribes to a specific campaign.
 
 | Variable | Description |
 | -------- | ----------- |
-| CODE | N301|
-| ORIGIN | SUB | 
-| MOBILE | subscriber's mobile number|
-| CAMPAIGNID | ID of the campaign |
-| SUBID | subscription ID |
+| CODE | N301. |
+| ORIGIN | SUB. | 
+| MOBILE | Subscriber's mobile number. |
+| CAMPAIGNID | ID of the campaign. |
+| SUBID | Subscription ID. |
 
 ```xml
 <?xml version='1.0'?>
@@ -27,16 +26,17 @@ This postback notification triggers when a mobile phone number subscribes to a s
 </POSTBACK>
 ```
 
-<h3>Mobile Unsubscribe</h3>
+### Mobile Unsubscribe
+
 This postback notification triggers when a mobile phone number unsubscribes to a specific campaign.
 
 | Variable | Description |
 | -------- | ----------- |
-| CODE | N302 |
-| ORIGIN | SUB | 
-| MOBILE | subscriber's mobile number |
-| CAMPAIGNID | ID of the campaign |
-| SUBID | subscription ID |
+| CODE | N302. |
+| ORIGIN | SUB. | 
+| MOBILE | Subscriber's mobile number. |
+| CAMPAIGNID | ID of the campaign. |
+| SUBID | Subscription ID. |
 
 ```xml
 <?xml version='1.0'?>
@@ -49,16 +49,17 @@ This postback notification triggers when a mobile phone number unsubscribes to a
 </POSTBACK>
 ```
 
-<h3>Email Subscribe</h3>
-This postback notification triggers when an email address subscribes to a specific campaign.</p>
+### Email Subscribe
+
+This postback notification triggers when an email address subscribes to a specific campaign.
 
 | Variable | Description |
 | -------- | ----------- |
-| CODE | N303 |
-| ORIGIN | EMAIL_SUB | 
-| EMAIL | subscriber's emai |
-| CAMPAIGNID | ID of the campaign |
-| SUBID | subscription ID |
+| CODE | N303. |
+| ORIGIN | EMAIL_SUB. | 
+| EMAIL | Subscriber's email. |
+| CAMPAIGNID | ID of the campaign. |
+| SUBID | Subscription ID. |
 
 ```xml
 <?xml version='1.0'?>
@@ -71,17 +72,17 @@ This postback notification triggers when an email address subscribes to a specif
 </POSTBACK>
 ```
 
-<h3>Email Unsubscribe</h3>
+### Email Unsubscribe
 
-This postback notification triggers when an email address unsubscribes to a specific campaign.</p>
+This postback notification triggers when an email address unsubscribes to a specific campaign.
 
 | Variable | Description |
 | -------- | ----------- |
-| CODE | N304 |
-| ORIGIN | EMAIL_SUB | 
-| EMAIL | email address of the subscriber |
-| CAMPAIGNID | The ID of the campaign |
-| SUBID | subscription ID |
+| CODE | N304. |
+| ORIGIN | EMAIL_SUB. | 
+| EMAIL | Email address of the subscriber. |
+| CAMPAIGNID | The ID of the campaign. |
+| SUBID | Subscription ID. |
 
 ```xml
 <?xml version='1.0'?>

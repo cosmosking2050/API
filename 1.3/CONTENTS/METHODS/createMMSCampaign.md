@@ -1,44 +1,64 @@
-<a href="/1.3/README.md">Back to the Table of Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="API_METHODS.md">Back to API Methods</a>
-<h2>createMMSCampaign</h2>
-<p><strong>Synopsis:</strong><br />
-This API function creates new MMS/SMS campaign within the account holders account and returns a CampaignID. 
-Campaign will be created under <i>campaignname</i> in our system. <i>Campaignname</i> will be sent to users in opt-in/opt-out messages. 
-<i>Brandname</i> will be shown on opt-in, help and opt-out messages to the end user to identify who is running the campaign 
+[Back to the Table of Contents](/1.3/README.md)&nbsp;&nbsp;|&nbsp;&nbsp;[Back to API Methods](API_METHODS.md)
+## createMMSCampaign
 
-<div><strong>Request:</strong></div>
-<pre>&lt;REQUEST&gt;
-  &lt;ACTION&gt;createMMSCampaign&lt;/ACTION&gt;
-	&lt;API_KEY&gt;API KEY&lt;/API_KEY&gt;
-	&lt;CAMPAIGNNAME&gt;Camapign Name&lt;/CAMPAIGNNAME&gt;
-	&lt;BRANDNAME&gt;Brand&lt;/BRANDNAME&gt;
-&lt;/REQUEST&gt;</pre>
-<div><strong>Request Parameters:</strong></div>
-<pre><strong>Mandatory:</strong> Action, API_KEY, CampaignName, BrandName,</pre>
-<strong>Response Parameters:</strong><br />
-CampaignID, CampaignName, BrandName, ErrorInfo, Errorcode
-<strong>Related Error codes:</strong><br />
-E170, E171, E172
-<div><strong>Request Examples</strong></div>
+__Synopsis:__  
+This API function creates new MMS/SMS campaign within the account holders account and returns a CampaignID. 
+Campaign will be created under *campaignname* in our system. *Campaignname* will be sent to users in opt-in/opt-out messages. *Brandname* will be shown on opt-in, help and opt-out messages to the end user to identify who is running the campaign.
+
+__Request:__
+```xml
+<REQUEST>
+  <ACTION>createMMSCampaign</ACTION>
+    <API_KEY>API KEY</API_KEY>
+    <CAMPAIGNNAME>Camapign Name</CAMPAIGNNAME>
+    <BRANDNAME>Brand</BRANDNAME>
+</REQUEST>
+```
+
+__Request Parameters:__
+
+    Mandatory: Action, API_KEY, CampaignName, BrandName
+    Optional: N/A
+
+__Response Parameters:__
+
+    CampaignID, CampaignName, BrandName, ErrorInfo, Errorcode
+
+__Related Error codes:__
+
+    E170, E171, E172
+
+__Request Example:__  
 XML:
-<pre>&lt;REQUEST&gt;
-	&lt;ACTION&gt;createMMSCampaign&lt;/ACTION&gt;
-	&lt;API_KEY&gt;qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ&lt;/API_KEY&gt;
-	&lt;CAMPAIGNNAME&gt;Winter Sale&lt;/CAMPAIGNNAME&gt;
-	&lt;BRANDNAME&gt;Gap&lt;/BRANDNAME&gt;
-&lt;/REQUEST&gt;</pre>
+```xml
+<REQUEST>
+    <ACTION>createMMSCampaign</ACTION>
+    <API_KEY>qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ</API_KEY>
+    <CAMPAIGNNAME>Winter Sale</CAMPAIGNNAME>
+    <BRANDNAME>Gap</BRANDNAME>
+</REQUEST>
+```
+
 GET:
-<pre>https://secure.skycore.com/API/wxml/1.3/index.php?action=createmmscampaign&api_key=qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ
-&campaignname=Winter+Sale&brandname=Gap</pre>
-<div><strong>Response Example: Success</strong></div>
-<pre>&lt;RESPONSE&gt;
-	&lt;STATUS&gt;Success&lt;/STATUS&gt;
-	&lt;CAMPAIGNID&gt;1116&lt;/CAMPAIGNID&gt;
-	&lt;CAMPAIGNNAME&gt;Winter Sale&lt;/CAMPAIGNNAME&gt;
- 	&lt;BRANDNAME&gt;Gap&lt;/BRANDNAME&gt;
-&lt;/RESPONSE&gt;</pre>
-<div><strong>Response Example: Failure</strong></div>
-<pre>&lt;RESPONSE&gt;
-	&lt;STATUS&gt;Failure&lt;/STATUS&gt;
-	&lt;ERRORCODE&gt;E170&lt;/ERRORCODE&gt;
-	&lt;ERRORINFO&gt;campaignname is required&lt;/ERRORINFO&gt;
-&lt;/RESPONSE&gt;</pre>
+
+    https://secure.skycore.com/API/wxml/1.3/index.php?action=createmmscampaign&api_key=qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ
+    &campaignname=Winter+Sale&brandname=Gap
+    
+__Response Example: Success__
+```xml
+<RESPONSE>
+    <STATUS>Success</STATUS>
+    <CAMPAIGNID>1116</CAMPAIGNID>
+    <CAMPAIGNNAME>Winter Sale</CAMPAIGNNAME>
+    <BRANDNAME>Gap</BRANDNAME>
+</RESPONSE>
+```
+
+__Response Example: Failure__
+```xml
+<RESPONSE>
+    <STATUS>Failure</STATUS>
+    <ERRORCODE>E170</ERRORCODE>
+    <ERRORINFO>campaignname is required</ERRORINFO>
+</RESPONSE>
+```

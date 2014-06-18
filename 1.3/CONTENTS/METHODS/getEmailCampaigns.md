@@ -1,55 +1,73 @@
-<a href="/1.3/README.md">Back to the Table of Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="API_METHODS.md">Back to API Methods</a>
-<h2>getEmailCampaigns</h2>
-<p><strong>Synopsis:</strong><br />
-This API function returns a list of Email Campaigns for that account. Returned data consists of a campaign ID and Name.</p>
-<div><strong>Request: XML</strong></div>
-<pre>&lt;REQUEST&gt;
-    &lt;ACTION&gt;getEmailCampaigns&lt;/ACTION&gt;
-    &lt;API_KEY&gt;apiKey&lt;/API_KEY&gt;
-&lt;/REQUEST&gt;</pre>
-<div><strong>Request: GET</strong></div>
-<pre>API_URL?action=getemailcampaigns&amp;api_key=apiKey</pre>
-<div><strong>Request Parameters:</strong></div>
-<pre><strong>Mandatory:</strong>
-action, apikey
-<strong>Optional:</strong>
---
-</pre>
+[Back to the Table of Contents](/1.3/README.md)&nbsp;&nbsp;|&nbsp;&nbsp;[Back to API Methods](API_METHODS.md)
+## getEmailCampaigns
 
-<strong>Response Parameters:</strong><br />
-status, campaign, id, name, Errorcode, Errorinfo
+__Synopsis:__  
+This API function returns a list of Email Campaigns for that account. Returned data consists of a campaign ID and Name.
 
-<strong>Related Errorcodes: </strong><br />
-E404
-<div><strong>Request Examples</strong></div>
+__Request: XML__
+```xml
+<REQUEST>
+    <ACTION>getEmailCampaigns</ACTION>
+    <API_KEY>apiKey</API_KEY>
+</REQUEST>
+```
+
+__Request: GET__
+
+    API_URL?action=getemailcampaigns&api_key=apiKey
+
+__Request Parameters:__
+
+    Mandatory: action, apikey
+    Optional: N/A
+
+__Response Parameters:__
+
+    status, campaign, id, name, Errorcode, Errorinfo
+
+__Related Errorcodes:__
+
+    E404
+
+__Request Example:__  
 XML:
-<pre>&lt;REQUEST&gt;
-    &lt;ACTION&gt;getEmailCampaigns&lt;/ACTION&gt;
-    &lt;API_KEY&gt;qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ&lt;/API_KEY&gt;    
-&lt;/REQUEST&gt;</pre>
+```xml
+<REQUEST>
+    <ACTION>getEmailCampaigns</ACTION>
+    <API_KEY>qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ</API_KEY>    
+</REQUEST>
+```
+
 GET:
-<pre>https://secure.skycore.com/API/wxml/1.3/index.php?action=getemailcampaigns&api_key=qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ</pre>
-<div><strong>Response Example: Success</strong></div>
-<pre>&lt;RESPONSE&gt;
-    &lt;STATUS&gt;Success&lt;/STATUS&gt;
-    &lt;EMAILCAMPAIGNS&gt;    
-        &lt;CAMPAIGN&gt;
-            &lt;ID&gt;1233&lt;/ID&gt;
-            &lt;NAME&gt;Winter Sale&lt;/NAME&gt;
-        &lt;/CAMPAIGN&gt;
-        &lt;CAMPAIGN&gt;
-            &lt;ID&gt;1234&lt;/ID&gt;
-            &lt;NAME&gt;Summer Sale&lt;/NAME&gt;
-        &lt;/CAMPAIGN&gt;
-        &lt;CAMPAIGN&gt;
-            &lt;ID&gt;1235&lt;/ID&gt;
-            &lt;NAME&gt;Store opening&lt;/NAME&gt;
-        &lt;/CAMPAIGN&gt;
-    &lt;/EMAILCAMPAIGNS&gt;
-&lt;/RESPONSE&gt;</pre>
-<div><strong>Response Example: Failure</strong></div>
-<pre>&lt;RESPONSE&gt;
-    &lt;STATUS&gt;Failure&lt;/STATUS&gt;
-    &lt;ERRORCODE&gt;E404&lt;/ERRORCODE&gt;
-    &lt;ERRORINFO&gt;No Email Campaigns were created in this account&lt;/ERRORINFO&gt;
-&lt;/RESPONSE&gt;</pre>
+
+    https://secure.skycore.com/API/wxml/1.3/index.php?action=getemailcampaigns&api_key=qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ
+
+__Response Example: Success__
+```xml
+<RESPONSE>
+    <STATUS>Success</STATUS>
+    <EMAILCAMPAIGNS>    
+        <CAMPAIGN>
+            <ID>1233</ID>
+            <NAME>Winter Sale</NAME>
+        </CAMPAIGN>
+        <CAMPAIGN>
+            <ID>1234</ID>
+            <NAME>Summer Sale</NAME>
+        </CAMPAIGN>
+        <CAMPAIGN>
+            <ID>1235</ID>
+            <NAME>Store opening</NAME>
+        </CAMPAIGN>
+    </EMAILCAMPAIGNS>
+</RESPONSE>
+```
+
+__Response Example: Failure__
+```xml
+<RESPONSE>
+    <STATUS>Failure</STATUS>
+    <ERRORCODE>E404</ERRORCODE>
+    <ERRORINFO>No Email Campaigns were created in this account</ERRORINFO>
+</RESPONSE>
+```

@@ -1,35 +1,56 @@
-<a href="/1.3/README.md">Back to the Table of Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="API_METHODS.md">Back to API Methods</a>
-<h2>loginUser</h2>
-<p><strong>Synopsis:</strong><br />
-This API function creates a session for an account so that widgets can be launched and linked to it such as the SWF MMS Composer Object or the MMS Preview SWF Objects.</p>
-<div><strong>Request:</strong></div>
-<pre>&lt;REQUEST&gt;
-  &lt;ACTION&gt;loginUser&lt;/ACTION&gt;
-	&lt;API_KEY&gt;API KEY&lt;/API_KEY&gt;
-&lt;/REQUEST&gt;</pre>
-<div><strong>Request Parameters:</strong></div>
-<pre><strong>Mandatory:</strong> Action, API_KEY
-<strong>Optional:</strong> N/A</pre>
-<strong>Response Parameters:</strong><br />
-Status, SessionID    
-<strong>Related Error codes:</strong> 
-N/A
-<div><strong>Request Examples</strong></div>
+[Back to the Table of Contents](/1.3/README.md)&nbsp;&nbsp;|&nbsp;&nbsp;[Back to API Methods](API_METHODS.md)
+## loginUser
+
+__Synopsis:__  
+This API function creates a session for an account so that widgets can be launched and linked to it such as the SWF MMS Composer Object or the MMS Preview SWF Objects.
+
+__Request:__
+```xml
+<REQUEST>
+    <ACTION>loginUser</ACTION>
+    <API_KEY>API KEY</API_KEY>
+</REQUEST>
+```
+
+__Request Parameters:__
+
+    Mandatory: Action, API_KEY
+    Optional: N/A
+
+__Response Parameters:__
+
+    Status, SessionID
+
+__Related Error codes:__
+
+    N/A
+
+__Request Examples__  
 XML:
-<pre>&lt;REQUEST&gt;
-	&lt;ACTION&gt;loginUSer&lt;/ACTION&gt;
-	&lt;API_KEY&gt;qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ&lt;/API_KEY&gt;
-&lt;/REQUEST&gt;</pre>
+```xml
+<REQUEST>
+    <ACTION>loginUSer</ACTION>
+    <API_KEY>qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ</API_KEY>
+</REQUEST>
+```
+
 GET:
-<pre>https://secure.skycore.com/API/wxml/1.3/index.php?action=loginuser&api_key=qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ</pre>
-<div><strong>Response Example: Success</strong></div>
-<pre>&lt;RESPONSE&gt;
-	&lt;STATUS&gt;Success&lt;/STATUS&gt;
-	&lt;SESSIONID&gt;asdfsadfsadfsdf&lt;/SESSIONID&gt;
-&lt;/RESPONSE&gt;</pre>
-<div><strong>Response Example: Failure</strong></div>
-<pre>&lt;RESPONSE&gt;
-	&lt;STATUS&gt;Failure&lt;/STATUS&gt;
-	&lt;ERRORCODE&gt;E170&lt;/ERRORCODE&gt;
-	&lt;ERRORINFO&gt; Invalid &lt;/ERRORINFO&gt;
-&lt;/RESPONSE&gt;</pre>
+
+    https://secure.skycore.com/API/wxml/1.3/index.php?action=loginuser&api_key=qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ
+    
+__Response Example: Success__
+```xml
+<RESPONSE>
+    <STATUS>Success</STATUS>
+    <SESSIONID>asdfsadfsadfsdf</SESSIONID>
+</RESPONSE>
+```
+
+__Response Example: Failure__
+```xml
+<RESPONSE>
+    <STATUS>Failure</STATUS>
+    <ERRORCODE>E170</ERRORCODE>
+    <ERRORINFO>Invalid</ERRORINFO>
+</RESPONSE>
+```
