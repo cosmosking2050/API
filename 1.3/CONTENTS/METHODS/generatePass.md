@@ -1,5 +1,8 @@
 [Back to the Table of Contents](/1.3/README.md)
 
+## generatePass
+
+
 __Synopsis:__  
 This API request is used to create Passbook Passes dynamically. Passes are created based on the dynamic pass data passed in the request which is used in restriction to the Pass Template Settings. 'CustomPassId' is your system generated unique identifier that will represent this pass data. You can optionally pass it along with the pass data and use this as a reference for any future queries to this pass or pass data. In the case of Relevance, Relevant Text is considered only when Relevance lat,long values are passed in the API otherwise ignored. On success, the API returns important values such as 'passDataId', 'serialNumber', 'customPassId', 'passLink' and 'downloadUrl'. All these values need to be stored along with passData on your side which will come in use for making pass updates in the future. More explanation about these values are given below:
 
