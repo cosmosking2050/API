@@ -1,4 +1,4 @@
-[Back to the Table of Contents](/1.3/README.md)&nbsp;&nbsp;|&nbsp;&nbsp;[Back to Appendix List](API_APPENDIX.md)</a>
+[Back to the Table of Contents](/1.3/README.md)&nbsp;&nbsp;|&nbsp;&nbsp;[Back to Appendix List](API_APPENDIX.md)
 ## APPENDIX A
 
 __KEY TERM DEFINITIONS__
