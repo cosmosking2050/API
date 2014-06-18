@@ -1,5 +1,6 @@
 [Back to the Table of Contents](/1.3/README.md)&nbsp;&nbsp;|&nbsp;&nbsp;[Back to API Methods](API_METHODS.md)
 ## saveMMS
+
 __Synopsis:__  
 This API stores an MMS from XML. The MMS may contain slides embedded with video, audio, images and text. Once the MMS is saved, it can be utilized by other functions through the MMSID returned. The legacy format is still supported at this time, but it is recommended that developers update to the most recent format at their earliest convenience.
 
@@ -23,18 +24,17 @@ __Request:__
 ```
 
 __Request Parameters:__
-<pre>
-<strong>Mandatory:</strong>
-Action, API_KEY, Name, Subject, Slide
-<strong>Optional:</strong>
-Image, Audio, Video, URL, Text, Duration
-</pre>
 
-__Response Parameters:__  
-Status, TrackingID, Errorcode, Errorinfo, MMSID
+    Mandatory: Action, API_KEY, Name, Subject, Slide
+    Optional: Image, Audio, Video, URL, Text, Duration
 
-__Related Errorcodes:__  
-E225, E226, E227, E228, E229, E230, E331, E332, E333, E334, E341, E351
+__Response Parameters:__
+
+    Status, TrackingID, Errorcode, Errorinfo, MMSID
+
+__Related Errorcodes:__
+
+    E225, E226, E227, E228, E229, E230, E331, E332, E333, E334, E341, E351
 
 __Request Example:__
 ```xml
