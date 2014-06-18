@@ -3,7 +3,7 @@
 
 __Error Code Reference__
 
-| Error Code | Description |
+| Code | Description |
 | -------- | ----------- |
 | E100 | Invalid request. Make request via GET method or send valid XML inside 'xml' field via POST. |
 | E101 | 'action' required/Invalid Action. |
