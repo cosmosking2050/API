@@ -1,5 +1,6 @@
 [Back to the Table of Contents](/1.3/README.md)&nbsp;&nbsp;|&nbsp;&nbsp;[Back to API Methods](API_METHODS.md)
 ## deletePassData
+
 __Synopsis:__  
 This API request deletes the pass data from the pass database. All the delivered passes with this data are not affected but any future requests to deliver/update/generate Passbook pass with this data will result in failure. For more info see below for Mandatory/Optional fields and Error codes.
 
@@ -17,18 +18,17 @@ __Request: GET__
     API_URL?action=deletepassdata&api_key=apiKey&passdataid=passDataId
 
 __Request Parameters:__
-<pre>
-<strong>Mandatory:</strong>
-action, apiKey, passDataId
-<strong>Optional:</strong>
-N/A
-</pre>
 
-__Response Parameters:__  
-status, Errorcode, Errorinfo
+    Mandatory: action, apiKey, passDataId
+    Optional: N/A
 
-__Related Errorcodes:__  
-E807, E808, E821
+__Response Parameters:__
+
+    status, Errorcode, Errorinfo
+
+__Related Errorcodes:__
+
+    E807, E808, E821
     
 __Request Example:__
 ```xml
