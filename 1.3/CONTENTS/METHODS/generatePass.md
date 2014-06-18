@@ -1,5 +1,6 @@
 [Back to the Table of Contents](/1.3/README.md)&nbsp;&nbsp;|&nbsp;&nbsp;[Back to API Methods](API_METHODS.md)
 ## generatePass
+
 __Synopsis:__  
 This API request is used to create Passbook Passes dynamically. Passes are created based on the dynamic pass data passed in the request which is used in restriction to the Pass Template Settings. 'CustomPassId' is your system generated unique identifier that will represent this pass data. You can optionally pass it along with the pass data and use this as a reference for any future queries to this pass or pass data. In the case of Relevance, Relevant Text is considered only when Relevance lat,long values are passed in the API otherwise ignored. On success, the API returns important values such as 'passDataId', 'serialNumber', 'customPassId', 'passLink' and 'downloadUrl'. All these values need to be stored along with passData on your side which will come in use for making pass updates in the future. More explanation about these values are given below:  
 __passDataId__ - This is our system generated unique Identifier to identify every pass data.  
@@ -113,36 +114,38 @@ __Request: GET__
     &pd_rellatitude10=relLatitude10&pd_rellongitude10=relLongitude10&pd_reltext10=relText10
 
 __Request Parameters:__
-<pre>
-<strong>Mandatory:</strong>
-action, apikey, passTemplateId, 
-barcodeValue (if "Barcode=Allowed" &amp;&amp; "BarcodeType=Dynamic" &amp;&amp; "BarcodeValueSource=Dynamic Value" for Pass Template otherwise IGNORED)
-<strong>Optional:</strong>
-customPassId, thumbnailUrl,
-barcodeText (if "Barcode = Allowed" &amp;&amp; "Barcode Alternate Text = Dynamic Text" for Pass Template otherwise IGNORED), 
-headerLabel1, headerValue1, 
-primaryLabel1, primaryValue1, 
-primaryLabel2, primaryValue2 - if "Pass Template Type = Boarding Pass" otherwise IGNORED, 
-secLabel1, secValue1, secLabel2, secValue2, secLabel3, secValue3, secLabel4, secValue4, 
-auxLabel1, auxValue1, auxLabel2, auxValue2, auxLabel3, auxValue3, auxLabel4, auxValue4, 
-backLabel1, backValue1, backLabel2, backValue2, backLabel3, backValue3, backLabel4, backValue4,
-relLatitude1, relLongitude1, relText1,
-relLatitude2, relLongitude2, relText2,
-relLatitude3, relLongitude3, relText3,
-relLatitude4, relLongitude4, relText4,
-relLatitude5, relLongitude5, relText5,
-relLatitude6, relLongitude6, relText6,
-relLatitude7, relLongitude7, relText7,
-relLatitude8, relLongitude8, relText8,
-relLatitude9, relLongitude9, relText9,
-relLatitude10, relLongitude10, relText10
-</pre>
 
-__Response Parameters:__  
-status, passDataID, passTemplateId, Errorcode, Errorinfo, passDownloadLink
+    Mandatory: action, apikey, passTemplateId, 
+    barcodeValue (if "Barcode=Allowed" &amp;&amp; "BarcodeType=Dynamic" &amp;&amp; "BarcodeValueSource=Dynamic Value" for Pass Template otherwise IGNORED)
+    Optional: customPassId, thumbnailUrl,
+    barcodeText (if "Barcode = Allowed" && "Barcode Alternate Text = Dynamic Text" for Pass Template otherwise IGNORED), 
+    headerLabel1, headerValue1, 
+    primaryLabel1, primaryValue1, 
+    primaryLabel2, primaryValue2 - if "Pass Template Type = Boarding Pass" otherwise IGNORED, 
+    secLabel1, secValue1, secLabel2, secValue2, secLabel3, secValue3, secLabel4, secValue4, 
+    auxLabel1, auxValue1, auxLabel2, auxValue2, auxLabel3, auxValue3, auxLabel4, auxValue4, 
+    backLabel1, backValue1, backLabel2, backValue2, backLabel3, backValue3, backLabel4, backValue4,
+    relLatitude1, relLongitude1, relText1,
+    relLatitude2, relLongitude2, relText2,
+    relLatitude3, relLongitude3, relText3,
+    relLatitude4, relLongitude4, relText4,
+    relLatitude5, relLongitude5, relText5,
+    relLatitude6, relLongitude6, relText6,
+    relLatitude7, relLongitude7, relText7,
+    relLatitude8, relLongitude8, relText8,
+    relLatitude9, relLongitude9, relText9,
+    relLatitude10, relLongitude10, relText10
 
-__Related Errorcodes:__  
-E801, E802, E803, E806, E830, E831, E840, E841, E842, E843, E844, E845, E846, E847, E848, E849, E850, E851, E852, E853, E854, E855, E856, E857, E858, E859, E860, E861, E862, E863, E864, E865, E866, E867, E868, E869, E870, E871, E872, E873, E874, E875, E876, E877, E878, E879, E880, E881, E882, E883, E884, E885, E886, E887, E888, E889, E890, E891, E892, E893, E894, E895, E896, E897, E898, E899
+__Response Parameters:__
+
+    status, passDataID, passTemplateId, Errorcode, Errorinfo, passDownloadLink
+
+__Related Errorcodes:__
+
+    E801, E802, E803, E806, E830, E831, E840, E841, E842, E843, E844, E845, E846, E847, E848, E849, E850, E851, E852,
+    E853, E854, E855, E856, E857, E858, E859, E860, E861, E862, E863, E864, E865, E866, E867, E868, E869, E870, E871,
+    E872, E873, E874, E875, E876, E877, E878, E879, E880, E881, E882, E883, E884, E885, E886, E887, E888, E889, E890,
+    E891, E892, E893, E894, E895, E896, E897, E898, E899
 
 __Request Example:__
 ```xml
