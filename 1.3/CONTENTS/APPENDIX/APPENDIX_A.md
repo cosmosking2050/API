@@ -42,7 +42,7 @@ __KEY TERM DEFINITIONS__
 | SCHEDULEDID | This is a reference ID(integer) for a sending campaign. It is used for every number belonging to that campaign. When campaign sending is processed, the system will generate postback notifications linking SCHEDULEDID with TRACKINGID and HISTORYID. |
 | SEQUENCE | This encloses all MMS slide presentation data from one or multiple slides (up to a maximum of 8). |
 | SLIDE | This represents a single slide within the MMS sequence the could include IMAGE/URL/TEXT/PIC etc. (There are special rules for slides within the 'saveMMS' special consideration section). |
-| SPID | The carrier ID(integer). See <a href="/1.3/CONTENTS/APPENDIX/APPENDIX_E.md">Appendix E</a>. |
+| SPID | The carrier ID(integer). See [Appendix E](/1.3/CONTENTS/APPENDIX/APPENDIX_E.md). |
 | START_DATE | The start date for sending statistics used in the 'getSendingStatistics' function. The format should be "YYYY-MM-DD hh:mm:ss" (ignoring quotations). |
 | TEXT | The SMS message limit is 160 characters(string). |
 | TO | This is the message recipient's phone number in an international format. |
