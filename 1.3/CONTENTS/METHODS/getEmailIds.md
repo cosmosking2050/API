@@ -1,5 +1,6 @@
 [Back to the Table of Contents](/1.3/README.md)&nbsp;&nbsp;|&nbsp;&nbsp;[Back to API Methods](API_METHODS.md)
 ## getEmailIds
+
 __Synopsis:__  
 This API function returns a comma separated list of Email Template Ids for that account.
 
@@ -16,18 +17,17 @@ __Request: GET__
     API_URL?action=getemailids&api_key=apiKey
 
 __Request Parameters:__
-<pre>
-<strong>Mandatory:</strong>
-action, apikey
-<strong>Optional:</strong>
---
-</pre>
 
-__Response Parameters:__  
-status, emailids, Errorcode, Errorinfo
+    Mandatory: action, apikey
+    Optional: N/A
 
-__Related Errorcodes:__  
-E400
+__Response Parameters:__
+
+    status, emailids, Errorcode, Errorinfo
+
+__Related Errorcodes:__
+
+    E400
 
 __Request Example:__  
 XML:
