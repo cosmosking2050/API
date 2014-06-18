@@ -16,13 +16,13 @@ This postback notifies you when an SMS MO is received.
 
 | Variable | Description |
 | -------- | ----------- |
-| CODE | N211 |
-| ORIGIN | SMS_MO |
-| FROM | SMS senders mobile number | 
-| TO | shortcode or longcode the SMS was sent to | 
-| TEXT |  this is actuall text that was sent by the sender | 
-| RECEIVED |  timestamp of the SMS received by our server | 
-| TRANSACTIONID |  transactionId for the SMS MO transaction that occurred | 
+| CODE | N211. |
+| ORIGIN | SMS_MO. |
+| FROM | SMS senders mobile number. | 
+| TO | Shortcode or longcode the SMS was sent to. | 
+| TEXT |  The actual text that was sent by the sender. | 
+| RECEIVED |  Timestamp of the SMS received by our server. | 
+| TRANSACTIONID |  TransactionId for the SMS MO transaction that occurred. | 
 
 ```xml
 <POSTBACK>
@@ -42,17 +42,17 @@ This postback notifies you when an MMS MO is received.
 
 | Variable | Description |
 | -------- | ----------- |
-| CODE | N401 |
-| ORIGIN | MMS_MO |
-| NOTIFICATION | SMS sender mobile number | 
-| FROM | the phone number, including the country code, of the sender. | 
-| TO |  the recipient shortcode or longcode . | 
-| KEYWORD | if a keyword was recognized in the first word of the subject or the first word body of the message and it matched to a MMS Inbox Keyword campaign that keyword will be passed in this node. | 
-| TRACKINGID | a tracking ID, skycore has assigned this message. | 
+| CODE | N401. |
+| ORIGIN | MMS_MO. |
+| NOTIFICATION | SMS sender mobile number. | 
+| FROM | The phone number, including the country code, of the sender. | 
+| TO |  The recipient shortcode or longcode. | 
+| KEYWORD | If a keyword was recognized in the first word of the subject or the first word body of the message and it matched to a MMS Inbox Keyword campaign that keyword will be passed in this node. | 
+| TRACKINGID | A tracking ID, skycore has assigned this message. | 
 | SPID | The SPID of the sender's carrier. | 
-| TIMESTAMP | the timestamp that our system received the MMS MO. | 
-| CONTENT | contains the file nodes sent in the MMS MO | 
-| FILE |  a series of sub-nodes that contains a single URL to a picture, video, audio or text file sent in the MMS MO within each node.  The URL points to the location of the content on our servers. For those developing the back-end handling of the postback URL, you may choose to download/store these content files for whatever purpose you see fit. You may also choose to store the URLs for download at a future time. The file will be removed based on the terms of your contract. | 
+| TIMESTAMP | The timestamp that our system received the MMS MO. | 
+| CONTENT | Contains the file nodes sent in the MMS MO. | 
+| FILE |  A series of sub-nodes that contains a single URL to a picture, video, audio or text file sent in the MMS MO within each node. The URL points to the location of the content on our servers. For those developing the back-end handling of the postback URL, you may choose to download/store these content files for whatever purpose you see fit. You may also choose to store the URLs for download at a future time. The file will be removed based on the terms of your contract. | 
 
 ```xml
 <POSTBACK>
