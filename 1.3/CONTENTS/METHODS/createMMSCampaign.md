@@ -1,5 +1,4 @@
-[Back to the Table of Contents](/1.3/README.md)&nbsp;&nbsp;|&nbsp;&nbsp;[Back to API Methods](API_METHODS.md)
-## createMMSCampaign
+[Back to the Table of Contents](/1.3/README.md)
 
 __Synopsis:__  
 This API function creates new MMS/SMS campaign within the account holders account and returns a CampaignID. 
