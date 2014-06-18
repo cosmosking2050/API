@@ -13,7 +13,6 @@ This postback notification triggers when a mobile phone number subscribes to a s
 | ORIGIN | SUB. | 
 | MOBILE | Subscriber's mobile number. |
 | CAMPAIGNID | ID of the campaign. |
-| SUBID | Subscription ID. |
 
 ```xml
 <?xml version='1.0'?>
@@ -22,7 +21,6 @@ This postback notification triggers when a mobile phone number subscribes to a s
   <CODE>N301</CODE>
   <MOBILE>16501112222</MOBILE>
   <CAMPAIGNID>1478</CAMPAIGNID>
-  <SUBID>656655</SUBID>
 </POSTBACK>
 ```
 
@@ -36,7 +34,7 @@ This postback notification triggers when a mobile phone number unsubscribes to a
 | ORIGIN | SUB. | 
 | MOBILE | Subscriber's mobile number. |
 | CAMPAIGNID | ID of the campaign. |
-| SUBID | Subscription ID. |
+
 
 ```xml
 <?xml version='1.0'?>
@@ -45,7 +43,6 @@ This postback notification triggers when a mobile phone number unsubscribes to a
   <CODE>N302</CODE>
   <MOBILE>16502424956</MOBILE>
   <CAMPAIGNID>1478</CAMPAIGNID>
-  <SUBID>656655</SUBID>
 </POSTBACK>
 ```
 
@@ -59,7 +56,6 @@ This postback notification triggers when an email address subscribes to a specif
 | ORIGIN | EMAIL_SUB. | 
 | EMAIL | Subscriber's email. |
 | CAMPAIGNID | ID of the campaign. |
-| SUBID | Subscription ID. |
 
 ```xml
 <?xml version='1.0'?>
@@ -68,7 +64,6 @@ This postback notification triggers when an email address subscribes to a specif
   <CODE>N303</CODE>
   <EMAIL>info@skycore.com</EMAIL>
   <CAMPAIGNID>89</CAMPAIGNID>
-  <SUBID>12913</SUBID>
 </POSTBACK>
 ```
 
@@ -82,7 +77,6 @@ This postback notification triggers when an email address unsubscribes to a spec
 | ORIGIN | EMAIL_SUB. | 
 | EMAIL | Email address of the subscriber. |
 | CAMPAIGNID | The ID of the campaign. |
-| SUBID | Subscription ID. |
 
 ```xml
 <?xml version='1.0'?>
@@ -91,6 +85,5 @@ This postback notification triggers when an email address unsubscribes to a spec
   <CODE>N304</CODE>
   <EMAIL>info@skycore.com</EMAIL>
   <CAMPAIGNID>89</CAMPAIGNID>
-  <SUBID>12913</SUBID>
 </POSTBACK>
 ```
