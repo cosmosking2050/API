@@ -1,5 +1,8 @@
 [Back to the Table of Contents](/1.3/README.md)
 
+## createUser
+
+
 __Synopsis:__  
 Creates new user with given username and password. The rest of the parameters required for account creation are inherited from creator’s account.
 
