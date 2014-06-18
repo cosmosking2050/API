@@ -182,7 +182,7 @@ _E101 Example:_
 [Back To The Top](#DocTop)
 
 
-<h3><a name="SaveMMSStatus">SaveMMS Encoding Status</a></h3>
+### <a name="SaveMMSStatus">SaveMMS Encoding Status</a>
 
 When MMS is saved (using API or the MMS Composer) we generate postback notification. When saving and encoding of the content is successful we generate N003. If encoding of the content failed we generate postback E002 containgin MMSID and AUDIONAME/VIDEONAME pointing to the content that failed to encode properly. When E002 is returned the MMSID should be considered corrupted.
 
