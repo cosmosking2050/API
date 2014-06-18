@@ -1,5 +1,8 @@
 [Back to the Table of Contents](/1.3/README.md)
 
+## generatePassById
+
+
 __Synopsis:__  
 This API function triggers the passbook pass generation for the given 'passDataID'. 'passDataID' is generated whenever pass data is added to the pass database using the addPassData () API request. On success, the API returns important values such as 'passDataId', 'serialNumber', 'customPassId', 'passLink' and 'downloadUrl'. All these values need to be stored along with passData on your side which will come in use for making pass updates in the future. More explanation about these values are given below:
 
