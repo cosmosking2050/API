@@ -1,5 +1,6 @@
 [Back to the Table of Contents](/1.3/README.md)&nbsp;&nbsp;|&nbsp;&nbsp;[Back to API Methods](API_METHODS.md)
 ## sendSavedMMSCampaign
+
 __*Postback Notifications for this action are the same as for SendSavedMMS__
 
 __Synopsis:__  
@@ -16,18 +17,17 @@ __Request:__
 ```
 
 __Request Parameters:__
-<pre>
-<strong>Mandatory:</strong>
-Action, API_KEY, MMSID, ToCampaign
-<strong>Optional:</strong>
-N/A
-</pre>
 
-__Response Parameters:__  
-MMSID, Status, To, ScheduledID, Errorcode, Errorinfo
+    Mandatory: Action, API_KEY, MMSID, ToCampaign
+    Optional: N/A
 
-__Related Errorcodes:__  
-E241, E620, E624, E626, E629, E714
+__Response Parameters:__
+
+    MMSID, Status, To, ScheduledID, Errorcode, Errorinfo
+
+__Related Errorcodes:__
+
+    E241, E620, E624, E626, E629, E714
 
 __Request Example:__  
 XML:
