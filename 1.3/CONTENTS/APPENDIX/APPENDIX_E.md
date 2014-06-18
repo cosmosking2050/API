@@ -1,5 +1,4 @@
-[Back to the Table of Contents](/1.3/README.md)&nbsp;&nbsp;|&nbsp;&nbsp;[Back to Appendix List](API_APPENDIX.md)
-## APPENDIX E
+[Back to the Table of Contents](/1.3/README.md)
 
 __SPID Reference Table__
 
