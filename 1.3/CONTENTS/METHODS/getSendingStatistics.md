@@ -1,5 +1,6 @@
 [Back to the Table of Contents](/1.3/README.md)&nbsp;&nbsp;|&nbsp;&nbsp;[Back to API Methods](API_METHODS.md)
 ## getSendingStatistics
+
 __Synopsis:__  
 This API requests a report of all messaging transactions between two dates. The server returns the path to an XML file containing the report. All results are saved to file which must be downloaded by the requestor. Detailed Information about the report will be in [Appendix C](/1.3/CONTENTS/APPENDIX/APPENDIX_C.md).
 
@@ -14,18 +15,17 @@ __Request:__
 ```
 
 __Request Parameters:__
-<pre>
-<strong>Mandatory:</strong>
-Action, API_KEY, End_Date, Start_Date
-<strong>Optional:</strong>
-N/A
-</pre>
 
-__Response Parameters:__  
-Errorcode, Errorinfo, MMSID, Status
+    Mandatory: Action, API_KEY, End_Date, Start_Date
+    Optional: N/A
 
-__Related Errorcodes:__  
-E506, E507, E508, E509, E510
+__Response Parameters:__
+
+    Errorcode, Errorinfo, MMSID, Status
+
+__Related Errorcodes:__
+
+    E506, E507, E508, E509, E510
 
 __Request Example:__  
 XML:
