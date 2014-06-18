@@ -22,13 +22,13 @@ Postback notification when an SMS is sent to the mobile network operator.
 | -------- | ----------- |
 | ORIGIN | SMS_MT means an SMS terminated on a mobile. |
 | CODE | Code 201 means the SMS was submitted to the carrier. |
-| STATUS | Whether the message was forwarded successfully - "Message Sent" or "Message Failed". Whether the message was delivered successfully - "Message Sent/Delivered" or "Message Sent/Failed" |
+| STATUS | Whether the message was forwarded successfully - "Message Sent" or "Message Failed". Whether the message was delivered successfully - "Message Sent/Delivered" or "Message Sent/Failed". |
 | FROM | The shortcode the message is sent from. |
 | FROM_MASK | If Alpha-Numeric Sender ID was passed. |
 | TO | The recipient of the message. |
 | TRACKINGID | The ID to correleate API requests, and delivery receipts. |
 | SPID |  Carrier Identification - please refer to [APPENDIX E](/1.3/CONTENTS/APPENDIX/APPENDIX_E.md). |
-| TIMESTAMP | The timestamp the message sent (N201) or when MMS was delivered (N202) |
+| TIMESTAMP | The timestamp the message sent (N201) or when MMS was delivered (N202). |
 | AGGREGATORID | SMS aggregator or carrier transaction ID. |
 | STATUSDETAILS | Any additional information passed back from the aggregator/carrier. |
 
@@ -79,13 +79,13 @@ When the mobile network operator does not suport MMS or the destination handset 
 | CODE | Code 201 means the SMS was submitted to the carrier. |
 | SENTAS | Indicates if the MMS was delivered as MMS (binary) or SMS (xHTML).|
 | MMSID | ID of the MMS Template. |
-| STATUS | For N101 notification status can be "Message Sent". For N102 notification status can be "Message Sent/Delivered", "Message Sent/Expired" or "Message Sent/Rejected" |
+| STATUS | For N101 notification status can be "Message Sent". For N102 notification status can be "Message Sent/Delivered", "Message Sent/Expired" or "Message Sent/Rejected". |
 | FROM | The shortcode the message is sent from. |
 | HANDSET | Handset profile returned inside Delivery Receipt. This is present only in N102 notification. |
 | TO | The recipient of the message. |
 | TRACKINGID | The ID to correleate API requests, and delivery receipts. |
 | SPID |  Carrier Identification - please refer to [APPENDIX E](/1.3/CONTENTS/APPENDIX/APPENDIX_E.md). |
-| TIMESTAMP | The timestamp the MMS was sent (N101) or when MMS was delivered (N102) |
+| TIMESTAMP | The timestamp the MMS was sent (N101) or when MMS was delivered (N102). |
 | AGGREGATORID | SMS aggregator or carrier transaction ID. |
 | STATUSDETAILS | Any additional information passed back from the aggregator/carrier. |
 | OS | Only in N102 notification for binary sending, contains detected operating system of the handset. |
