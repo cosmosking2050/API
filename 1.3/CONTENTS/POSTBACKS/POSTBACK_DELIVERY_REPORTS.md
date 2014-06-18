@@ -1,4 +1,5 @@
-<a name="DocTop">[Back to the Table of Contents](/1.3/README.md)</a>&nbsp;&nbsp;|&nbsp;&nbsp;[Postback System Overview](/1.3/CONTENTS/POSTBACKS/POSTBACK_SYSTEM_OVERVIEW.md)
+<a name="DocTop">[Back to the Table of Contents](/1.3/README.md)</a>
+
 ## SMS/MMS MT Postbacks
 
 The MMS MT / SMS MT Postback API notifies you of the delivery status of each message you send.  For MMS, we have two methods for delivering content; Binary and xHTML. We send different postback notification formats depending on which method is used.
