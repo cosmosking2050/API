@@ -105,37 +105,38 @@ __Request: GET__
     &pd_rellatitude10=relLatitude10&pd_rellongitude10=relLongitude10&pd_reltext10=relText10
 
 __Request Parameters:__  
-<pre>
-<strong>Mandatory:</strong> 
-action, apiKey, passDataId
-<strong>Optional: </strong>
-thumbnailUrl,
-barcodeText (if "Barcode = Allowed" &amp;&amp; "Barcode Alternate Text = Dynamic Text" for Pass Template otherwise IGNORED), 
-barcodeValue (if "Barcode=Allowed" &amp; "BarcodeType=Dynamic" &amp; "BarcodeValueSource=Dynamic Value" for Pass Template otherwise IGNORED),
-headerLabel1, headerValue1, 
-primaryLabel1, primaryValue1, 
-primaryLabel2, primaryValue2 - if "Pass Template Type = Boarding Pass" otherwise IGNORED, 
-secLabel1, secValue1, secLabel2, secValue2, secLabel3, secValue3, secLabel4, secValue4, 
-auxLabel1, auxValue1, auxLabel2, auxValue2, auxLabel3, auxValue3, auxLabel4, auxValue4, 
-backLabel1, backValue1, backLabel2, backValue2, backLabel3, backValue3, backLabel4, backValue4,
-relLatitude1, relLongitude1, relText1,
-relLatitude2, relLongitude2, relText2,
-relLatitude3, relLongitude3, relText3,
-relLatitude4, relLongitude4, relText4,
-relLatitude5, relLongitude5, relText5,
-relLatitude6, relLongitude6, relText6,
-relLatitude7, relLongitude7, relText7,
-relLatitude8, relLongitude8, relText8,
-relLatitude9, relLongitude9, relText9,
-relLatitude10, relLongitude10, relText10
-</pre>
 
-__Response Parameters:__  
-status, passDataId, updateStatusID, Errorcode, Errorinfo
+    Mandatory: action, apiKey, passDataId
+    Optional: thumbnailUrl,
+    barcodeText (if "Barcode = Allowed" &amp;&amp; "Barcode Alternate Text = Dynamic Text" for Pass Template otherwise IGNORED), 
+    barcodeValue (if "Barcode=Allowed" &amp; "BarcodeType=Dynamic" &amp; "BarcodeValueSource=Dynamic Value" for Pass Template otherwise IGNORED),
+    headerLabel1, headerValue1, 
+    primaryLabel1, primaryValue1, 
+    primaryLabel2, primaryValue2 - if "Pass Template Type = Boarding Pass" otherwise IGNORED, 
+    secLabel1, secValue1, secLabel2, secValue2, secLabel3, secValue3, secLabel4, secValue4, 
+    auxLabel1, auxValue1, auxLabel2, auxValue2, auxLabel3, auxValue3, auxLabel4, auxValue4, 
+    backLabel1, backValue1, backLabel2, backValue2, backLabel3, backValue3, backLabel4, backValue4,
+    relLatitude1, relLongitude1, relText1,
+    relLatitude2, relLongitude2, relText2,
+    relLatitude3, relLongitude3, relText3,
+    relLatitude4, relLongitude4, relText4,
+    relLatitude5, relLongitude5, relText5,
+    relLatitude6, relLongitude6, relText6,
+    relLatitude7, relLongitude7, relText7,
+    relLatitude8, relLongitude8, relText8,
+    relLatitude9, relLongitude9, relText9,
+    relLatitude10, relLongitude10, relText10
 
-__Related Errorcodes:__  
-E802, E803, E807, E808, E809, E840, E841, E842, E843, E844, E845, E846, E847, E848, E849, E850, E851, E852, E853, E854, E855, E856, E857, E858, E859, E860, E861, E862, E863, E864, E865, E866, E867, E868, E869
-E870, E871, E872, E873, E874, E875, E876, E877, E878, E879, E880, E881, E882, E883, E884, E885, E886, E887, E888, E889, E890, E891, E892, E893, E894, E895, E896, E897, E898, E899
+__Response Parameters:__
+
+    status, passDataId, updateStatusID, Errorcode, Errorinfo
+
+__Related Errorcodes:__
+
+    E802, E803, E807, E808, E809, E840, E841, E842, E843, E844, E845, E846, E847, E848, E849, E850, E851, E852, E853, E854, 
+    E855, E856, E857, E858, E859, E860, E861, E862, E863, E864, E865, E866, E867, E868, E869, E870, E871, E872, E873, E874, 
+    E875, E876, E877, E878, E879, E880, E881, E882, E883, E884, E885, E886, E887, E888, E889, E890, E891, E892, E893, E894, 
+    E895, E896, E897, E898, E899
 
 __Request Example:__
 ```xml
