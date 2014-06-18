@@ -27,7 +27,7 @@ Postback notification when an SMS is sent to the mobile network operator.
 | FROM_MASK | If Alpha-Numeric Sender ID was passed. |
 | TO | The recipient of the message. |
 | TRACKINGID | The ID to correleate API requests, and delivery receipts. |
-| SPID |  Carrier Identification - please refer to [APPENDIX E](/1.3/CONTENTS/APPENDIX/APPENDIX_E.md). |
+| SPID | Carrier Identification - please refer to [APPENDIX E](/1.3/CONTENTS/APPENDIX/APPENDIX_E.md). |
 | TIMESTAMP | The timestamp the message sent (N201) or when MMS was delivered (N202). |
 | AGGREGATORID | SMS aggregator or carrier transaction ID. |
 | STATUSDETAILS | Any additional information passed back from the aggregator/carrier. |
@@ -84,7 +84,7 @@ When the mobile network operator does not suport MMS or the destination handset 
 | HANDSET | Handset profile returned inside Delivery Receipt. This is present only in N102 notification. |
 | TO | The recipient of the message. |
 | TRACKINGID | The ID to correleate API requests, and delivery receipts. |
-| SPID |  Carrier Identification - please refer to [APPENDIX E](/1.3/CONTENTS/APPENDIX/APPENDIX_E.md). |
+| SPID | Carrier Identification - please refer to [APPENDIX E](/1.3/CONTENTS/APPENDIX/APPENDIX_E.md). |
 | TIMESTAMP | The timestamp the MMS was sent (N101) or when MMS was delivered (N102). |
 | AGGREGATORID | SMS aggregator or carrier transaction ID. |
 | STATUSDETAILS | Any additional information passed back from the aggregator/carrier. |
