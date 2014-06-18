@@ -1,5 +1,6 @@
 [Back to the Table of Contents](/1.3/README.md)&nbsp;&nbsp;|&nbsp;&nbsp;[Back to API Methods](API_METHODS.md)
 ## subscribe + unsubscribe
+
 __Synopsis:__  
 This API will subscribe or unsubscribe users to a particular campaign. Once a user is subscribed to a campaign they will receive all auto responders and scheduled messages for that campaign until they are unsubscribed through the API or through normal STOP or STOP ALL SMS request. You may not re-subscribe someone who has unsubscribed themselves from a campaign. You may re-subscribe someone who you have unsubscribed through the API.
 
@@ -35,18 +36,17 @@ __Request: unsubscribe__
 ```
 
 __Request Parameters:__
-<pre>
-<strong>Mandatory:</strong>
-Action, API_KEY, CAMPAIGNID, Mobile
-<strong>Optional:</strong>
-CTA, Notify, SPID, TZ
-</pre>
 
-__Response Parameters:__  
-CAMPAIGNID, Errorcode, Errorinfo, mobile, Status
+    Mandatory: Action, API_KEY, CAMPAIGNID, Mobile
+    Optional: CTA, Notify, SPID, TZ
 
-__Related Errorcodes:__  
-E901, E902, E903, E904, E905
+__Response Parameters:__
+
+    CAMPAIGNID, Errorcode, Errorinfo, mobile, Status
+
+__Related Errorcodes:__
+
+    E901, E902, E903, E904, E905
 
 __Request Example:__  
 XML:
