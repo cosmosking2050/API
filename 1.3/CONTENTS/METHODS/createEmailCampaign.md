@@ -1,5 +1,4 @@
-[Back to the Table of Contents](/1.3/README.md)&nbsp;&nbsp;|&nbsp;&nbsp;[Back to API Methods](API_METHODS.md)
-## createEmailCampaign
+[Back to the Table of Contents](/1.3/README.md)
 
 __Synopsis:__  
 This API function creates new email campaign within the account holders account and returns a CampaignID. Campaign will be created under _campaignname_ in our system. _Campaignname_ will be sent to users in opt-in/opt-out emails. _Brandname_ will be used in 'from' field of all sent emails. _Mailingadress_ will be inserted into email footer.
