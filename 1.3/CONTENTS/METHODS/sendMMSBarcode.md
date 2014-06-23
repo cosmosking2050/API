@@ -1,6 +1,6 @@
 [Back to the Table of Contents](/1.3/README.md)
 
-## sendMMSBarcode
+## sendMMSBarcode (deprecated) 
 
 __Synopsis:__  
 This API function sends stored MMS containing a barcode database template from a specified account using a MMSID to a one number. BarcodeID passed in the request along with the phone number is added to Database. The BarcodeID is encoded into a barcode image which is inserted into the MMS and delivered to the number. MMS is sent from a specified account using a MMSID to a single mobile number. FROM must be one of shortcodes allowed for your account. In case the number is from a different country than the FROM shortcode is assigned to, the default shortcode for those countries will be used.
