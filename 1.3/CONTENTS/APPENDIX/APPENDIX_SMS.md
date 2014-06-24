@@ -214,8 +214,8 @@ __SMS Protocol Reference__
 | 2 | 4052 | no | Transaction failed: Received notification of account deactivation; failed by OpenMarket |
 | 2 | 4054 | no | Renewal error: Subscription already revoked |
 | 2 | 4055 | no | Conclude error: Subscription cannot be concluded while a renewal is pending |
-| 3 | 1 | yes | delivery success |
-| 3 | 2 | no | delivery failure |
+| 3 | 1 | yes | Delivery success |
+| 3 | 2 | no | Delivery failure |
 | 3 | 4 | yes | msg buffered |
 | 3 | 8 | yes | smsc submit |
 | 3 | 16 | no | smsc reject (error) |
