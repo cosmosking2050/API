@@ -38,7 +38,7 @@ Prototype:
 
 __Request Parameters:__
 
-    Mandatory: Action, User, Pass, To, SPID, From, Name,, Content, Sequence, Slide
+    Mandatory: Action, User, Pass, To, SPID, From, Name, Content, Sequence, Slide
     Optional: Subject, SPID, From, Image, Audio, Video, URL, Text, Duration, Campaignref
 
 __Response Parameters:__
