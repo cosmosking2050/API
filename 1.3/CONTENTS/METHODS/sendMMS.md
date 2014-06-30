@@ -3,7 +3,7 @@
 ## sendMMS
 
 __Synopsis:__  
-Sends an MMS defined in the XML containing slides of embedded with video, audio, images and/or text to a single or list of mobile numbers in international number format. SendMMS is a minor extension of the saveMMS function. This API function is only available on Dedicated Shortcodes
+Sends an MMS defined in the XML containing slides of embedded with video, audio, images and/or text to a single or list of mobile numbers in international number format. SendMMS is a minor extension of the saveMMS function. This API function is only available on Dedicated Shortcodes.
 
 Prototype:
 ```xml
