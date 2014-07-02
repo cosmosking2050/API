@@ -14,7 +14,12 @@ This postback notification triggers when a mobile phone number subscribes to a s
 | ORIGIN | SUB. | 
 | MOBILE | Subscriber's mobile number. |
 | CAMPAIGNID | ID of the campaign. |
-
+| TIMESTAMP | Timestamp of the subscription. |
+| SHORTCODE | The shortcode. | 
+| CAMPAIGNTITLE | The title of the Campaign |
+| BRANDNAME | The brand name associated with the account or campaign |
+| SOURCE | The source of the subscription: MANAGER, API, MO, WEB. MANAGER indicates the number was imported or manually added in your campaign audience manager. API indicates it came from a subscription call to our API. MO indicates the 
+phone number opted-in by texting campaign keyword. WEB indicates they subscribed via mobile web landing page.
 ```xml
 <?xml version='1.0'?>
 <POSTBACK>
@@ -22,6 +27,11 @@ This postback notification triggers when a mobile phone number subscribes to a s
   <CODE>N301</CODE>
   <MOBILE>16501112222</MOBILE>
   <CAMPAIGNID>1478</CAMPAIGNID>
+  <TIMESTAMP>2014-07-02 14:32:23-04</TIMESTAMP>
+  <SHORTCODE>123456</SHORTCODE>
+  <CAMPAIGNTITLE>My Campaign Name</CAMPAIGNTITLE>
+  <BRANDNAME>My Brand Name</BRANDNAME>
+  <SOURCE>API</SOURCE>
 </POSTBACK>
 ```
 
