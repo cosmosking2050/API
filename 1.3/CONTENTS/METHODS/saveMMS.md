@@ -121,3 +121,4 @@ will be reduced to fit handset message size requirements.
 * Supported Media: TEXT/PLAIN, GIF/JPG/PNG, MP3/WAV, 3GP, MP4, MPEG, MPG, AVI, WMV.
 * There is a maximum source file size for each supported source file submitted.
 * You can find out what the current maximum is by visiting your API settings.
+* MMS messages are delivered in B64 encoding To estimate the final size of Base64-encoded binary data multiply the filesize by 1.37 times the original data size + 814 bytes (for headers). 
