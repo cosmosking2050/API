@@ -19,6 +19,7 @@ __Error Code Reference__
 | E110 | Invalid receiver number. |
 | E111 | Invalid shortcode. |
 | E112 | IP was not whitelisted. API call rejected. |
+| E113 | Set throughput exceeded for this API action. API call rejected. |
 | E120 | Account has reached the API request limit. |
 | E150 | The 'newuser' is required. |
 | E151 | 'newuser' already exists. |
