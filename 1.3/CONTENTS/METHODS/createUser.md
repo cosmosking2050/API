@@ -22,7 +22,7 @@ __Request:__
         <element name="ACTION">
             <zeroOrMore>
                 <element name="API_KEY">
-                  </text>
+                    </text>
                 </element>
                 <element name="NEWUSER">
                     </text>
@@ -66,7 +66,7 @@ XML:
         <element name="ACTION">
             <zeroOrMore>
                 <element name="API_KEY">
-                  </text>
+                    </text>
                 </element>
                 <element name="NEWUSER">
                     </text>
