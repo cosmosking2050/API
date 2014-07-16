@@ -15,6 +15,22 @@ __Request: XML__
 </REQUEST>
 ```
 
+```xml
+<element name="REQUEST">
+    <zeroOrMore>
+        <element name="ACTION">
+            </text>
+        </element>
+        <element name="API_KEY">
+            </text>
+        </element>
+        <element name="PASSDATAID">
+            </text>
+        </element>
+    </zeroOrMore>
+</element>
+```
+
 __Request: GET__
 
     API_URL?action=deletepassdata&api_key=apiKey&passdataid=passDataId
@@ -41,11 +57,37 @@ __Request Example:__
 </REQUEST>
 ```
 
+```xml
+<element name="REQUEST">
+    <zeroOrMore>
+        <element name="ACTION">
+            </text>
+        </element>
+        <element name="API_KEY">
+            </text>
+        </element>
+        <element name="PASSDATAID">
+            </text>
+        </element>
+    </zeroOrMore>
+</element>
+```
+
 __Response Example: Success__
 ```xml
 <RESPONSE>
     <STATUS>Success</STATUS>
 </RESPONSE>
+```
+
+```xml
+<element name="RESPONSE">
+    <zeroOrMore>
+        <element name="STATUS">
+            </text>
+        </element>
+    </zeroOrMore>
+</element>
 ```
 
 __Response Example: Failure__
@@ -55,4 +97,20 @@ __Response Example: Failure__
     <ERRORCODE>E821</ERRORCODE>
     <ERRORINFO>Pass was not deleted. Internal error occured.</ERRORINFO>
 </RESPONSE>
+```
+
+```xml
+<element name="RESPONSE">
+    <zeroOrMore>
+        <element name="STATUS">
+            </text>
+        </element>
+        <element name="ERRORCODE">
+            </text>
+        </element>
+        <element name="ERRORINFO">
+            </text>
+        </element>
+    </zeroOrMore>
+</element>
 ```
