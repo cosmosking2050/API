@@ -35,6 +35,50 @@ Here is the example of SMS sending XML:
 </TEXT>
 ```
 
+```xml
+<element name="TEXT">
+  <attribute name="id">
+    <text/>
+  </attribute>
+  <attribute name="to">
+    <text/>
+  </attribute>
+  <attribute name="carrier">
+    <text/>
+  </attribute>
+  <attribute name="from">
+    <text/>
+  </attribute>
+  <attribute name="body">
+    <text/>
+  </attribute>
+  <zeroOrMore>
+    <element name="ACK">
+      <attribute name="gw">
+        <text/>
+      </attribute>
+      <attribute name="net">
+        <text/>
+      </attribute>
+      <attribute name="time">
+        <text/>
+      </attribute>
+    </element>
+    <element name="DLR">
+      <attribute name="gw">
+        <text/>
+      </attribute>
+      <attribute name="net">
+        <text/>
+      </attribute>
+      <attribute name="time">
+        <text/>
+      </attribute>
+    </element>
+  </zeroOrMore>
+</element>
+```
+
 __MMS sending XML__
 
 All data related to sending one MMS are encapsulated inside the _&lt;CONTENT&gt;_ tag which contain few attributes:
@@ -90,6 +134,79 @@ Here is the example of MMS sending XML (binary delivery):
 </CONTENT>
 ```
 
+```xml
+<element name="CONTENT">
+  <attribute name="id">
+    <text/>
+  </attribute>
+  <attribute name="carrier">
+    <text/>
+  </attribute>
+  <attribute name="to">
+    <text/>
+  </attribute>
+  <attribute name="delivery">
+    <text/>
+  </attribute>
+  <attribute name="contentid">
+    <text/>
+  </attribute>
+  <attribute name="contentname">
+    <text/>
+  </attribute>
+  <attribute name="from">
+    <text/>
+  </attribute>
+  <zeroOrMore>
+    <element name="MSG_STATUS">
+      <zeroOrMore>
+        <element name="INQUE">
+          <attribute name="time">
+            <text/>
+          </attribute>
+        </element>
+        <element name="INIT">
+          <attribute name="gw">
+            <text/>
+          </attribute>
+          <attribute name="net">
+            <text/>
+          </attribute>
+          <attribute name="time">
+            <text/>
+          </attribute>
+        </element>
+        <element name="ACK">
+          <attribute name="gw">
+            <text/>
+          </attribute>
+          <attribute name="net">
+            <text/>
+          </attribute>
+          <attribute name="time">
+            <text/>
+          </attribute>
+        </element>
+        <element name="DLR">
+          <attribute name="gw">
+            <text/>
+          </attribute>
+          <attribute name="net">
+            <text/>
+          </attribute>
+          <attribute name="time">
+            <text/>
+          </attribute>
+        </element>
+      </zeroOrMore>
+    </element>
+    <element name="MM7_HANDSETID">
+      <text/>
+    </element>
+  </zeroOrMore>
+</element>
+```
+
 Here is the example of MMS sending XML (xhtml delivery):
 ```xml
 <CONTENT id="455119" to="48111222333" carrier="All Carriers" delivery="xhtml" 
@@ -106,6 +223,89 @@ Here is the example of MMS sending XML (xhtml delivery):
 </CONTENT>
 ```
 
+```xml
+<element name="CONTENT">
+  <attribute name="id">
+    <text/>
+  </attribute>
+  <attribute name="to">
+    <text/>
+  </attribute>
+  <attribute name="carrier">
+    <text/>
+  </attribute>
+  <attribute name="delivery">
+    <text/>
+  </attribute>
+  <attribute name="contentid">
+    <text/>
+  </attribute>
+  <attribute name="contentname">
+    <text/>
+  </attribute>
+  <attribute name="from">
+    <text/>
+  </attribute>
+  <zeroOrMore>
+    <element name="MSG_STATUS">
+      <zeroOrMore>
+        <element name="INQUE">
+          <attribute name="time">
+            <text/>
+          </attribute>
+        </element>
+        <element name="INIT">
+          <attribute name="gw">
+            <text/>
+          </attribute>
+          <attribute name="net">
+            <text/>
+          </attribute>
+          <attribute name="time">
+            <text/>
+          </attribute>
+        </element>
+        <element name="ACK">
+          <attribute name="gw">
+            <text/>
+          </attribute>
+          <attribute name="net">
+            <text/>
+          </attribute>
+          <attribute name="time">
+            <text/>
+          </attribute>
+        </element>
+        <element name="OPENED">
+          <attribute name="gw">
+            <text/>
+          </attribute>
+          <attribute name="net">
+            <text/>
+          </attribute>
+          <attribute name="time">
+            <text/>
+          </attribute>
+        </element>
+        <element name="DLR">
+          <attribute name="gw">
+            <text/>
+          </attribute>
+          <attribute name="net">
+            <text/>
+          </attribute>
+          <attribute name="time">
+            <text/>
+          </attribute>
+        </element>
+      </zeroOrMore>
+    </element>
+    <element name="XHTML_HANDSETID">
+      <text/>
+    </element>
+  </zeroOrMore>
+</element>
+```
 
 ### Report
 
@@ -148,6 +348,103 @@ Here is MMS sending inside Campaign batch:
 </BATCHES>
 ```
 
+```xml
+<element name="BATCHES">
+  <zeroOrMore>
+    <element name="BATCH">
+      <attribute name="id">
+        <text/>
+      </attribute>
+      <attribute name="from">
+        <text/>
+      </attribute>
+      <attribute name="campaignid">
+        <text/>
+      </attribute>
+      <attribute name="campaignname">
+        <text/>
+      </attribute>
+      <attribute name="scheduled_date">
+        <text/>
+      </attribute>
+      <attribute name="contentid">
+        <text/>
+      </attribute>
+      <attribute name="contentname">
+        <text/>
+      </attribute>
+      <zeroOrMore>
+        <element name="CONTENT">
+          <attribute name="id">
+            <text/>
+          </attribute>
+          <attribute name="carrier">
+            <text/>
+          </attribute>
+          <attribute name="to">
+            <text/>
+          </attribute>
+          <attribute name="delivery">
+            <text/>
+          </attribute>
+          <zeroOrMore>
+            <element name="MSG_STATUS">
+              <zeroOrMore>
+                <element name="INQUE">
+                  <attribute name="time">
+                    <text/>
+                  </attribute>
+                </element>
+                <element name="INIT">
+                  <attribute name="gw">
+                    <text/>
+                  </attribute>
+                  <attribute name="net">
+                    <text/>
+                  </attribute>
+                  <attribute name="time">
+                    <text/>
+                  </attribute>
+                </element>
+                <element name="ACK">
+                  <attribute name="gw">
+                    <text/>
+                  </attribute>
+                  <attribute name="net">
+                    <text/>
+                  </attribute>
+                  <attribute name="time">
+                    <text/>
+                  </attribute>
+                </element>
+                <element name="DLR">
+                  <attribute name="gw">
+                    <text/>
+                  </attribute>
+                  <attribute name="net">
+                    <text/>
+                  </attribute>
+                  <attribute name="time">
+                    <text/>
+                  </attribute>
+                </element>
+              </zeroOrMore>
+            </element>
+            <element name="MM7_HANDSETID">
+              </text>
+            </element>
+          </zeroOrMore>
+        </element>        
+        ....
+        ....
+      </zeroOrMore>
+    </element>
+    ....
+    ....
+  </zeroOrMore>
+</element>
+```
+
 Here is SMS sending inside alert batch:
 ```xml
 <BATCHES>
@@ -167,6 +464,71 @@ Here is SMS sending inside alert batch:
    ....
    ....
 </BATCHES>
+```
+
+```xml
+<element name="BATCHES">
+  <zeroOrMore>
+    <element name="BATCH">
+      <attribute name="id">
+        <text/>
+      </attribute>
+      <attribute name="from">
+        <text/>
+      </attribute>
+      <attribute name="scheduled_date">
+        <text/>
+      </attribute>
+      <attribute name="campaignid">
+        <text/>
+      </attribute>
+      <attribute name="campaignname">
+        <text/>
+      </attribute>
+      <attribute name="body">
+        <text/>
+      </attribute>
+      <zeroOrMore>
+        <element name="TEXT">
+          <attribute name="id">
+            <text/>
+          </attribute>
+          <attribute name="to">
+            <text/>
+          </attribute>
+          <zeroOrMore>
+            <element name="ACK">
+              <attribute name="gw">
+                <text/>
+              </attribute>
+              <attribute name="net">
+                <text/>
+              </attribute>
+              <attribute name="time">
+                <text/>
+              </attribute>
+            </element>
+            <element name="DLR">
+              <attribute name="gw">
+                <text/>
+              </attribute>
+              <attribute name="net">
+                <text/>
+              </attribute>
+              <attribute name="time">
+                <text/>
+              </attribute>
+            </element>
+          </zeroOrMore>
+        </element>
+        ....
+        ....
+      </zeroOrMore>
+    </element>
+    ....
+    ....
+  </zeroOrMore>
+</element>
 ```
 
 __B) Campaign autoresponder__ are encapsulated inside *&lt;AUTORESPONDERS&gt;&lt;/AUTORESPONDERS&gt;*. Each MMS/SMS autoresponder contain a list of SMS/MMS XML that is encalpsulated inside *&lt;AUTORESPONDER&gt;&lt;/AUTORESPONDER&gt;* tag. Autoresponders represent all MMS/SMS sendings of one Campaign autoresponder. Each *&lt;AUTORESPONDER&gt;* tag contain attributes:
@@ -204,6 +566,100 @@ Here is MMS Autoresponder example:
 </AUTORESPONDERS>
 ```
 
+```xml
+<element name="AUTORESPONDERS">
+  <zeroOrMore>
+    <element name="AUTORESPONDER">
+      <attribute name="id">
+        <text/>
+      </attribute>
+      <attribute name="from">
+        <text/>
+      </attribute>
+      <attribute name="campaignid">
+        <text/>
+      </attribute>
+      <attribute name="campaignname">
+        <text/>
+      </attribute>
+      <attribute name="contentid">
+        <text/>
+      </attribute>
+      <attribute name="contentname">
+        <text/>
+      </attribute>
+      <zeroOrMore>
+        <element name="CONTENT">
+          <attribute name="id">
+            <text/>
+          </attribute>
+          <attribute name="carrier">
+            <text/>
+          </attribute>
+          <attribute name="to">
+            <text/>
+          </attribute>
+          <attribute name="delivery">
+            <text/>
+          </attribute>
+          <zeroOrMore>
+            <element name="MSG_STATUS">
+              <zeroOrMore>
+                <element name="INQUE">
+                  <attribute name="time">
+                    <text/>
+                  </attribute>
+                </element>
+                <element name="INIT">
+                  <attribute name="gw">
+                    <text/>
+                  </attribute>
+                  <attribute name="net">
+                    <text/>
+                  </attribute>
+                  <attribute name="time">
+                    <text/>
+                  </attribute>
+                </element>
+                <element name="ACK">
+                  <attribute name="gw">
+                    <text/>
+                  </attribute>
+                  <attribute name="net">
+                    <text/>
+                  </attribute>
+                  <attribute name="time">
+                    <text/>
+                  </attribute>
+                </element>
+                <element name="DLR">
+                  <attribute name="gw">
+                    <text/>
+                  </attribute>
+                  <attribute name="net">
+                    <text/>
+                  </attribute>
+                  <attribute name="time">
+                    <text/>
+                  </attribute>
+                </element>
+              </zeroOrMore>
+            </element>
+            <element name="MM7_HANDSETID">
+              </text>
+            </element>
+          </zeroOrMore>
+        </element>        
+        ....
+        ....
+      </zeroOrMore>
+    </element>
+    ....
+    ....
+  </zeroOrMore>
+</element>
+```
+
 Here is SMS Autoresponder example:
 ```xml
 <AUTORESPONDERS>
@@ -223,6 +679,68 @@ Here is SMS Autoresponder example:
    ....
    ....
 </AUTORESPONDERS>
+```
+
+```xml
+<element name="AUTORESPONDERS">
+  <zeroOrMore>
+    <element name="AUTORESPONDER">
+      <attribute name="id">
+        <text/>
+      </attribute>
+      <attribute name="from">
+        <text/>
+      </attribute>
+      <attribute name="campaignid">
+        <text/>
+      </attribute>
+      <attribute name="campaignname">
+        <text/>
+      </attribute>
+      <attribute name="body">
+        <text/>
+      </attribute>
+      <zeroOrMore>
+        <element name="TEXT">
+          <attribute name="id">
+            <text/>
+          </attribute>
+          <attribute name="to">
+            <text/>
+          </attribute>
+          <zeroOrMore>
+            <element name="ACK">
+              <attribute name="gw">
+                <text/>
+              </attribute>
+              <attribute name="net">
+                <text/>
+              </attribute>
+              <attribute name="time">
+                <text/>
+              </attribute>
+            </element>
+            <element name="DLR">
+              <attribute name="gw">
+                <text/>
+              </attribute>
+              <attribute name="net">
+                <text/>
+              </attribute>
+              <attribute name="time">
+                <text/>
+              </attribute>
+            </element>
+          </zeroOrMore>
+        </element>
+        ....
+        ....
+      </zeroOrMore>
+    </element>
+    ....
+    ....
+  </zeroOrMore>
+</element>
 ```
 
 __C) Campaign Subscriptions__ are encapsulated inside *&lt;SUBSCRIPTIONS&gt;&lt;/SUBSCRIPTIONS&gt;*. Traffic generated for each subscription contain a list of SMS/MMS XML that is encalpsulated inside *&lt;SUB&gt;&lt;/SUB&gt;* tag. Each *&lt;SUB&gt;* tag contain attributes:
@@ -249,6 +767,60 @@ Here is the example of the traffic for the Single Opt-In subscription with SMS C
 </SUBSCRIPTIONS>
 ```
 
+```xml
+<element name="SUBSCRIPTIONS">
+  <zeroOrMore>
+    <element name="SUB">
+      <attribute name="to">
+        <text/>
+      </attribute>
+      <attribute name="carrier">
+        <text/>
+      </attribute>
+      <attribute name="from">
+        <text/>
+      </attribute>
+      <zeroOrMore>
+        <element name="TEXT">
+          <attribute name="id">
+            <text/>
+          </attribute>
+          <attribute name="text">
+            <text/>
+          </attribute>
+          <zeroOrMore>
+            <element name="ACK">
+              <attribute name="gw">
+                <text/>
+              </attribute>
+              <attribute name="net">
+                <text/>
+              </attribute>
+              <attribute name="time">
+                <text/>
+              </attribute>
+            </element>
+            <element name="DLR">
+              <attribute name="gw">
+                <text/>
+              </attribute>
+              <attribute name="net">
+                <text/>
+              </attribute>
+              <attribute name="time">
+                <text/>
+              </attribute>
+            </element>
+          </zeroOrMore>
+        </element>
+      </zeroOrMore>
+    </element>
+    ....
+    ....
+  </zeroOrMore>
+</element>
+```
+
 Here is the example of the traffic for the Double Opt-In subscription with MMS Confirmation:
 ```xml
 <SUBSCRIPTIONS>
@@ -272,6 +844,110 @@ Here is the example of the traffic for the Double Opt-In subscription with MMS C
 </SUBSCRIPTIONS>
 ```
 
+```xml
+<element name="SUBSCRIPTIONS">
+  <zeroOrMore>
+    <element name="SUB">
+      <attribute name="to">
+        <text/>
+      </attribute>
+      <attribute name="carrier">
+        <text/>
+      </attribute>
+      <attribute name="from">
+        <text/>
+      </attribute>
+      <zeroOrMore>
+        <element name="CONTENT">
+          <attribute name="id">
+            <text/>
+          </attribute>
+          <attribute name="contentid">
+            <text/>
+          </attribute>
+          <attribute name="contentname">
+            <text/>
+          </attribute>
+          <attribute name="delivery">
+            <text/>
+          </attribute>
+          <zeroOrMore>
+            <element name="MSG_STATUS">
+              <zeroOrMore>
+                <element name="INQUE">
+                  <attribute name="time">
+                    <text/>
+                  </attribute>
+                </element>
+                <element name="INIT">
+                  <attribute name="gw">
+                    <text/>
+                  </attribute>
+                  <attribute name="net">
+                    <text/>
+                  </attribute>
+                  <attribute name="time">
+                    <text/>
+                  </attribute>
+                </element>
+                <element name="ACK">
+                  <attribute name="gw">
+                    <text/>
+                  </attribute>
+                  <attribute name="net">
+                    <text/>
+                  </attribute>
+                  <attribute name="time">
+                    <text/>
+                  </attribute>
+                </element>
+              </zeroOrMore>
+            </element>
+            <element name="MM7_HANDSETID">
+              </text>
+            </element>
+          </zeroOrMore>
+        </element>
+        <element name="TEXT">
+          <attribute name="id">
+            <text/>
+          </attribute>
+          <attribute name="text">
+            <text/>
+          </attribute>
+          <zeroOrMore>
+            <element name="ACK">
+              <attribute name="gw">
+                <text/>
+              </attribute>
+              <attribute name="net">
+                <text/>
+              </attribute>
+              <attribute name="time">
+                <text/>
+              </attribute>
+            </element>
+            <element name="DLR">
+              <attribute name="gw">
+                <text/>
+              </attribute>
+              <attribute name="net">
+                <text/>
+              </attribute>
+              <attribute name="time">
+                <text/>
+              </attribute>
+            </element>
+          </zeroOrMore>
+        </element>
+      </zeroOrMore>
+    </element>
+    ....
+    ....
+  </zeroOrMore>
+</element>
+```
+
 __D) Sending List__ contain all other SMS/MMS sendings encapsulated into *&lt;SENDING_LIST&gt;&lt;/SENDING_LIST&gt;* tag. This contain a list of *&lt;CONTENT&gt;* and *&lt;TEXT&gt;* tags.
 
 Below is example of MMS:
@@ -291,6 +967,79 @@ Below is example of MMS:
 </SENDING_LIST>
 ```
 
+```xml
+<element name="SENDING_LIST">
+  <zeroOrMore>
+    <element name="CONTENT">
+      <attribute name="id">
+        <text/>
+      </attribute>
+      <attribute name="carrier">
+        <text/>
+      </attribute>
+      <attribute name="to">
+        <text/>
+      </attribute>
+      <attribute name="delivery">
+        <text/>
+      </attribute>
+      <attribute name="contentid">
+        <text/>
+      </attribute>
+      <attribute name="contentname">
+        <text/>
+      </attribute>
+      <attribute name="from">
+        <text/>
+      </attribute>
+      <zeroOrMore>
+        <element name="MSG_STATUS">
+          <zeroOrMore>
+            <element name="INQUE">
+              <attribute name="time">
+                <text/>
+              </attribute>
+            </element>
+            <element name="INIT">
+              <attribute name="gw">
+                <text/>
+              </attribute>
+              <attribute name="net">
+                <text/>
+              </attribute>
+              <attribute name="time">
+                <text/>
+              </attribute>
+            </element>
+            <element name="ACK">
+              <attribute name="gw">
+                <text/>
+              </attribute>
+              <attribute name="net">
+                <text/>
+              </attribute>
+              <attribute name="time">
+                <text/>
+              </attribute>
+            </element>
+            <element name="ERROR">
+              <attribute name="info">
+                <text/>
+              </attribute>
+              <attribute name="time">
+                <text/>
+              </attribute>
+            </element>
+          </zeroOrMore>
+        </element>
+      </zeroOrMore>
+    </element>
+    ....
+    ....
+  </zeroOrMore>
+</element>
+```
+
 Below is example of SMS:
 ```xml
 <SENDING_LIST>
@@ -301,4 +1050,47 @@ Below is example of SMS:
    ....
    ....
 </SENDING_LIST>
+```
+```xml
+<element name="SENDING_LIST">
+  <zeroOrMore>
+    <element name="TEXT">
+      <attribute name="id">
+        <text/>
+      </attribute>
+      <attribute name="to">
+        <text/>
+      </attribute>
+      <attribute name="text">
+        <text/>
+      </attribute>
+      <zeroOrMore>
+        <element name="ACK">
+          <attribute name="gw">
+            <text/>
+          </attribute>
+          <attribute name="net">
+            <text/>
+          </attribute>
+          <attribute name="time">
+            <text/>
+          </attribute>
+        </element>
+        <element name="DLR">
+          <attribute name="gw">
+            <text/>
+          </attribute>
+          <attribute name="net">
+            <text/>
+          </attribute>
+          <attribute name="time">
+            <text/>
+          </attribute>
+        </element>
+      </zeroOrMore>
+    </element>
+    ....
+    ....
+  </zeroOrMore>
+</element>
 ```
