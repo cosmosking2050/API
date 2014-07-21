@@ -16,7 +16,7 @@ The email address is referenced by 'EMAIL', email template is referenced by 'EMA
 __Request:__
 ```xml
 <REQUEST>
-  <ACTION>sendSavedEmail</ACTION>
+  	<ACTION>sendSavedEmail</ACTION>
     <API_KEY>apiKey</API_KEY>
     <EMAILTEMPLATEID>emailTemplateId</EMAILTEMPLATEID>
     <EMAIL>email</EMAIL>
@@ -28,6 +28,42 @@ __Request:__
         ...
     </DATA>   
 </REQUEST>
+```
+
+```xml
+<element name="REQUEST">
+	<zeroOrMore>
+		<element name="ACTION">
+			</text>
+		</element>
+		<element name="API_KEY">
+			</text>
+		</element>
+		<element name="EMAILTEMPLATEID">
+			</text>
+		</element>
+		<element name="EMAIL">
+			</text>
+		</element>
+		<element name="CAMPAIGNID">
+			</text>
+		</element>
+		<element name="DATA">
+			<zeroOrMore>
+				<element name="FIRST_NAME">
+					</text>
+				</element>
+				<element name="LAST_NAME">
+					</text>
+				</element>
+				<element name="GENDER">
+					</text>
+				</element>
+				...
+			</zeroOrMore>
+		</element>
+	</zeroOrMore>
+</element>
 ```
 
 __Request Parameters:__
@@ -61,6 +97,44 @@ XML:
 </REQUEST>
 ```
 
+```xml
+<element name="REQUEST">
+	<zeroOrMore>
+		<element name="ACTION">
+			</text>
+		</element>
+		<element name="API_KEY">
+			</text>
+		</element>
+		<element name="EMAIL">
+			</text>
+		</element>
+		<element name="EMAILTEMPLATEID">
+			</text>
+		</element>
+		<element name="CAMPAIGNID">
+			</text>
+		</element>
+		<element name="DATA">
+			<zeroOrMore>
+				<element name="FIRST_NAME">
+					</text>
+				</element>
+				<element name="LAST_NAME">
+					</text>
+				</element>
+				<element name="AGE">
+					</text>
+				</element>
+				<element name="PET">
+					</text>
+				</element>
+			</zeroOrMore>
+		</element>
+	</zeroOrMore>
+</element>
+```
+
 GET:
 
     https://secure.skycore.com/API/wxml/1.3/index.php?action=sendsavedemail&api_key=qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ
@@ -78,6 +152,28 @@ __Response Example: Success__
 </RESPONSE>
 ```
 
+```xml
+<element name="RESPONSE">
+	<zeroOrMore>
+		<element name="STATUS">
+			</text>
+		</element>
+		<element name="EMAILTEMPLATEID">
+			</text>
+		</element>
+		<element name="TRACKINGID">
+			</text>
+		</element>
+		<element name="EMAIL">
+			</text>
+		</element>
+		<element name="CAMPAIGNID">
+			</text>
+		</element>
+	</zeroOrMore>
+</element>
+```
+
 __Response Example: Failure__
 ```xml
 <RESPONSE>
@@ -88,4 +184,29 @@ __Response Example: Failure__
          <CAMPAIGNID>5678</CAMPAIGNID>
      <ERRORINFO>There is billing problem on your account</ERRORINFO>
 </RESPONSE>
+```
+
+```xml
+<element name="RESPONSE">
+	<zeroOrMore>
+		<element name="STATUS">
+			</text>
+		</element>
+		<element name="EMAILTEMPLATEID">
+			</text>
+		</element>
+		<element name="ERRORCODE">
+			</text>
+		</element>
+		<element name="ERRORINFO">
+			</text>
+		</element>
+		<element name="EMAIL">
+			</text>
+		</element>
+		<element name="CAMPAIGNID">
+			</text>
+		</element>
+	</zeroOrMore>
+</element>
 ```
