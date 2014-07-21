@@ -13,6 +13,19 @@ __Request: XML__
 </REQUEST>
 ```
 
+```xml
+<element name="REQUEST">
+	<zeroOrMore>
+		<element name="ACTION">
+			</text>
+		</element>
+		<element name="API_KEY">
+			</text>
+		</element>
+	</zeroOrMore>
+</element>
+```
+
 __Request: GET__
 
     API_URL?action=getemailcampaigns&api_key=apiKey
@@ -37,6 +50,19 @@ XML:
     <ACTION>getEmailCampaigns</ACTION>
     <API_KEY>qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ</API_KEY>    
 </REQUEST>
+```
+
+```xml
+<element name="REQUEST">
+	<zeroOrMore>
+		<element name="ACTION">
+			</text>
+		</element>
+		<element name="API_KEY">
+			</text>
+		</element>
+	</zeroOrMore>
+</element>
 ```
 
 GET:
@@ -64,6 +90,32 @@ __Response Example: Success__
 </RESPONSE>
 ```
 
+```xml
+<element name="RESPONSE">
+	<zeroOrMore>
+		<element name="STATUS">
+			</text>
+		</element>
+		<element name="EMAILCAMPAIGNS">
+		    <zeroOrMore>
+		        <element name="CAMPAIGN">
+		            <zeroOrMore>
+		                <element name="ID">
+		                    </text>
+		                </element>
+		                <element name="NAME">
+		                    </text>
+		                </element>
+		            </zeroOrMore>
+		        </element>
+		        ....
+		        ....
+		    </zeroOrMore>
+		</element>
+    </zeroOrMore>
+</element>
+```
+
 __Response Example: Failure__
 ```xml
 <RESPONSE>
@@ -71,4 +123,20 @@ __Response Example: Failure__
     <ERRORCODE>E404</ERRORCODE>
     <ERRORINFO>No Email Campaigns were created in this account</ERRORINFO>
 </RESPONSE>
+```
+
+```xml
+<element name="RESPONSE">
+	<zeroOrMore>
+		<element name="STATUS">
+			</text>
+		</element>
+		<element name="ERRORCODE">
+			</text>
+		</element>
+		<element name="ERRORINFO">
+			</text>
+		</element>
+	</zeroOrMore>
+</element>
 ```
