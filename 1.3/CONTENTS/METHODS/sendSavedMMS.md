@@ -33,7 +33,6 @@ __Request:__
     <DDMTITLE>DDM Title</DDMTITLE>
     <DDMTEXT>DDM Body</DDMTEXT>
     <DDMTIMEOUT>DDM Timeout in minutes</DDMTIMEOUT>
-    <DEVICE>HandsetID</DEVICE>
     <CUSTOMTEXT>
         <VALUE>Custom Text for slide</VALUE>
         <SLIDE>Slide ID</SLIDE>
@@ -48,10 +47,79 @@ __Request:__
 </REQUEST>
 ```
 
+```xml
+<element name="REQUEST">
+    <element name="ACTION">
+        </text>
+    </element>
+    <element name="API_KEY">
+        </text>
+    </element>
+    <element name="MMSID">
+        </text>
+    </element>
+    <element name="TO">
+        </text>
+    </element>
+    <element name="FROM">
+        </text>
+    </element>
+    <optional>
+        <element name="CAMPAIGNREF">
+            </text>
+        </element>
+    </optional>
+    <optional>
+        <element name="DDMTITLE">
+            </text>
+        </element>
+    </optional>
+    <optional>
+        <element name="DDMTEXT">
+            </text>
+        </element>
+    </optional>
+    <optional>
+        <element name="DDMTIMEOUT">
+            </text>
+        </element>
+    </optional>
+    <optional>
+        <element name="CUSTOMTEXT">
+            <element name="VALUE">
+                </text>
+            </element>
+            <element name="SLIDE">
+                </text>
+            </element>
+        </element>
+    </optional>
+    <optional>
+        <element name="CUSTOMSUBJECT">
+            </text>
+        </element>
+    </optional>
+    <optional>
+        <element name="DATA">
+            <element name="FIRST_NAME">
+                </text>
+            </element>
+            <element name="LAST_NAME">
+                </text>
+            </element>
+            <element name="GENDER">
+                </text>
+            </element>
+            ...
+        </element>
+    </optional>
+</element>
+```
+
 __Request Parameters:__
 
     Mandatory: Action, API_KEY, MMSID, To, From
-    Optional: CampaignRef, CustomSubject, CustomText, Data, DDMTitle, DDMText, DDMTimeout, Device
+    Optional: CampaignRef, CustomSubject, CustomText, Data, DDMTitle, DDMText, DDMTimeout
 
 __Response Parameters:__
 
@@ -71,15 +139,14 @@ XML:
     <FROM>60856</FROM>
     <CAMPAIGNREF>12333</CAMPAIGNREF>
     <MMSID>35674</MMSID>
-        <DDMTITLE>We are detecting your handset</DDMTITLE>
-        <DDMTEXT>This message is free of charge and will allow us to deliver your content nice and smooth</DDMTEXT>
-        <DDMTIMEOUT>10</DDMTIMEOUT>
-        <DEVICE>iPhoneOS</DEVICE>
-        <CUSTOMTEXT>
-            <VALUE>My Custom text in first slide</VALUE>
-            <SLIDE>1</SLIDE>
-        </CUSTOMTEXT>
-        <CUSTOMSUBJECT>My Custom Subject</CUSTOMSUBJECT>
+    <DDMTITLE>We are detecting your handset</DDMTITLE>
+    <DDMTEXT>This message is free of charge and will allow us to deliver your content nice and smooth</DDMTEXT>
+    <DDMTIMEOUT>10</DDMTIMEOUT>
+    <CUSTOMTEXT>
+        <VALUE>My Custom text in first slide</VALUE>
+        <SLIDE>1</SLIDE>
+    </CUSTOMTEXT>
+    <CUSTOMSUBJECT>My Custom Subject</CUSTOMSUBJECT>
     <DATA>
         <FIRST_NAME>John</FIRST_NAME>
         <LAST_NAME>Smith</LAST_NAME>
@@ -87,6 +154,77 @@ XML:
         <PET>Dog</PET>
     </DATA>        
 </REQUEST>
+```
+
+```xml
+<element name="REQUEST">
+    <element name="ACTION">
+        </text>
+    </element>
+    <element name="API_KEY">
+        </text>
+    </element>
+    <element name="TO">
+        </text>
+    </element>
+    <element name="FROM">
+        </text>
+    </element>
+    <optional>
+        <element name="CAMPAIGNREF">
+            </text>
+        </element>
+    </optional>
+    <element name="MMSID">
+        </text>
+    </element>
+    <optional>
+        <element name="DDMTITLE">
+            </text>
+        </element>
+    </optional>
+    <optional>
+        <element name="DDMTEXT">
+            </text>
+        </element>
+    </optional>
+    <optional>
+        <element name="DDMTIMEOUT">
+            </text>
+        </element>
+    </optional>
+    <optional>
+        <element name="CUSTOMTEXT">
+            <element name="VALUE">
+                </text>
+            </element>
+            <element name="SLIDE">
+                </text>
+            </element>
+        </element>
+    </optional>
+    <optional>
+        <element name="CUSTOMSUBJECT">
+            </text>
+        </element>
+    </optional>
+    <optional>
+        <element name="DATA">
+            <element name="FIRST_NAME">
+                </text>
+            </element>
+            <element name="LAST_NAME">
+                </text>
+            </element>
+            <element name="AGE">
+                </text>
+            </element>
+            <element name="PET">
+                </text>
+            </element>
+        </element>
+    </optional>
+</element>
 ```
 
 GET:
@@ -109,6 +247,26 @@ __Response Example: Success__
 </RESPONSE>
 ```
 
+```xml
+<element name="RESPONSE">
+    <element name="STATUS">
+        </text>
+    </element>
+    <element name="MMSID">
+        </text>
+    </element>
+    <element name="TRACKINGID">
+        </text>
+    </element>
+    <element name="TO">
+        </text>
+    </element>
+    <element name="FROM">
+        </text>
+    </element>
+</element>
+```
+
 __Response Example: Failure__
 ```xml
 <RESPONSE>
@@ -117,6 +275,23 @@ __Response Example: Failure__
      <TO>16501234123</TO>
      <ERRORINFO>There is billing problem on your account</ERRORINFO>
 </RESPONSE>
+```
+
+```xml
+<element name="RESPONSE">
+    <element name="STATUS">
+        </text>
+    </element>
+    <element name="ERRORCODE">
+        </text>
+    </element>
+    <element name="TO">
+        </text>
+    </element>
+    <element name="ERRORINFO">
+        </text>
+    </element>
+</element>
 ```
 
 __Postback Notifications For SendSavedMMS__  
@@ -137,6 +312,38 @@ xsi:noNamespaceSchemaLocation ="http://www.skycore.com/platform/schema/postback.
 </POSTBACK>
 ```
 
+```xml
+<element name="POSTBACK">
+    <element name="ORIGIN">
+        </text>
+    </element>
+    <element name="CODE">
+        </text>
+    </element>
+    <element name="SENTAS">
+        </text>
+    </element>
+    <element name="STATUS">
+        </text>
+    </element>
+    <element name="MMSID">
+        </text>
+    </element>
+    <element name="TO">
+        </text>
+    </element>
+    <element name="TRACKINGID">
+        </text>
+    </element>
+    <element name="SPID">
+        </text>
+    </element>
+    <element name="TIMESTAMP">
+        </text>
+    </element>
+</element>
+```
+
 When an MMS delivery report is received the system will generate a Postback notification. Not all carriers provide MMS delivery receipts.
 ```xml
 <?xml version='1.0'?>
@@ -154,4 +361,42 @@ xsi:noNamespaceSchemaLocation ="http://www.skycore.com/platform/schema/postback.
     <HANDSET>motol7c</HANDSET>
     <AGGREGATORID>11529-64807-97508-73852-97658</AGGREGATORID>
 </POSTBACK>
+```
+
+```xml
+<element name="POSTBACK">
+    <element name="ORIGIN">
+        </text>
+    </element>
+    <element name="CODE">
+        </text>
+    </element>
+    <element name="SENTAS">
+        </text>
+    </element>
+    <element name="STATUS">
+        </text>
+    </element>
+    <element name="MMSID">
+        </text>
+    </element>
+    <element name="TO">
+        </text>
+    </element>
+    <element name="TRACKINGID">
+        </text>
+    </element>
+    <element name="SPID">
+        </text>
+    </element>
+    <element name="TIMESTAMP">
+        </text>
+    </element>
+    <element name="HANDSET">
+        </text>
+    </element>
+    <element name="AGGREGATORID">
+        </text>
+    </element>
+</element>
 ```
