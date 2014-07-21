@@ -19,20 +19,18 @@ __Request:__
 
 ```xml
 <element name="REQUEST">
-	<zeroOrMore>
-		<element name="ACTION">
-			</text>
-		</element>
-		<element name="API_KEY">
-			</text>
-		</element>
-		<element name="MMSID">
-			</text>
-		</element>
-		<element name="TOCAMPAIGN">
-			</text>
-		</element>
-	</zeroOrMore>
+	<element name="ACTION">
+		</text>
+	</element>
+	<element name="API_KEY">
+		</text>
+	</element>
+	<element name="MMSID">
+		</text>
+	</element>
+	<element name="TOCAMPAIGN">
+		</text>
+	</element>
 </element>
 ```
 
@@ -62,20 +60,18 @@ XML:
 
 ```xml
 <element name="REQUEST">
-	<zeroOrMore>
-		<element name="ACTION">
-			</text>
-		</element>
-		<element name="API_KEY">
-			</text>
-		</element>
-		<element name="TOCAMPAIGN">
-			</text>
-		</element>
-		<element name="MMSID">
-			</text>
-		</element>
-	</zeroOrMore>
+	<element name="ACTION">
+		</text>
+	</element>
+	<element name="API_KEY">
+		</text>
+	</element>
+	<element name="TOCAMPAIGN">
+		</text>
+	</element>
+	<element name="MMSID">
+		</text>
+	</element>
 </element>
 ```
 
@@ -95,17 +91,15 @@ __Response Example: Success__
 
 ```xml
 <element name="RESPONSE">
-	<zeroOrMore>
-		<element name="STATUS">
-			</text>
-		</element>
-		<element name="MMSID">
-			</text>
-		</element>
-		<element name="SCHEDULEDID">
-			</text>
-		</element>
-	</zeroOrMore>
+	<element name="STATUS">
+		</text>
+	</element>
+	<element name="MMSID">
+		</text>
+	</element>
+	<element name="SCHEDULEDID">
+		</text>
+	</element>
 </element>
 ```
 
@@ -120,17 +114,15 @@ __Response Example: Failure__
 
 ```xml
 <element name="RESPONSE">
-	<zeroOrMore>
-		<element name="STATUS">
-			</text>
-		</element>
-		<element name="ERRORCODE">
-			</text>
-		</element>
-		<element name="ERRORINFO">
-			</text>
-		</element>
-	</zeroOrMore>
+	<element name="STATUS">
+		</text>
+	</element>
+	<element name="ERRORCODE">
+		</text>
+	</element>
+	<element name="ERRORINFO">
+		</text>
+	</element>
 </element>
 ```
 
@@ -154,35 +146,33 @@ xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd">
 
 ```xml
 <element name="POSTBACK">
-	<zeroOrMore>
-		<element name="ORIGIN">
-			</text>
-		</element>
-		<element name="CODE">
-			</text>
-		</element>
-		<element name="SENTAS">
-			</text>
-		</element>
-		<element name="STATUS">
-			</text>
-		</element>
-		<element name="MMSID">
-			</text>
-		</element>
-		<element name="TO">
-			</text>
-		</element>
-		<element name="TRACKINGID">
-			</text>
-		</element>
-		<element name="SPID">
-			</text>
-		</element>
-		<element name="TIMESTAMP">
-			</text>
-		</element>
-	</zeroOrMore>
+	<element name="ORIGIN">
+		</text>
+	</element>
+	<element name="CODE">
+		</text>
+	</element>
+	<element name="SENTAS">
+		</text>
+	</element>
+	<element name="STATUS">
+		</text>
+	</element>
+	<element name="MMSID">
+		</text>
+	</element>
+	<element name="TO">
+		</text>
+	</element>
+	<element name="TRACKINGID">
+		</text>
+	</element>
+	<element name="SPID">
+		</text>
+	</element>
+	<element name="TIMESTAMP">
+		</text>
+	</element>
 </element>
 ```
 
@@ -208,40 +198,38 @@ xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd">
 
 ```xml
 <element name="POSTBACK">
-	<zeroOrMore>
-		<element name="ORIGIN">
-			</text>
-		</element>
-		<element name="CODE">
-			</text>
-		</element>
-		<element name="SENTAS">
-			</text>
-		</element>
-		<element name="STATUS">
-			</text>
-		</element>
-		<element name="MMSID">
-			</text>
-		</element>
-		<element name="TO">
-			</text>
-		</element>
-		<element name="TRACKINGID">
-			</text>
-		</element>
-		<element name="SPID">
-			</text>
-		</element>
-		<element name="TIMESTAMP">
-			</text>
-		</element>
-		<element name="HANDSET">
-			</text>
-		</element>
-		<element name="AGGREGATORID">
-			</text>
-		</element>
-	</zeroOrMore>
+	<element name="ORIGIN">
+		</text>
+	</element>
+	<element name="CODE">
+		</text>
+	</element>
+	<element name="SENTAS">
+		</text>
+	</element>
+	<element name="STATUS">
+		</text>
+	</element>
+	<element name="MMSID">
+		</text>
+	</element>
+	<element name="TO">
+		</text>
+	</element>
+	<element name="TRACKINGID">
+		</text>
+	</element>
+	<element name="SPID">
+		</text>
+	</element>
+	<element name="TIMESTAMP">
+		</text>
+	</element>
+	<element name="HANDSET">
+		</text>
+	</element>
+	<element name="AGGREGATORID">
+		</text>
+	</element>
 </element>
 ```
