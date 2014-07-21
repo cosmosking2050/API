@@ -173,11 +173,7 @@ XML:
 	</optional>
 	<optional>
 		<element name="CTA">
-			<optional>
-				<element name="TIMEZONE">
-					</text>
-				</element>
-			</optional>
+			</text>
 		</element>
 	</optional>
 </element>
