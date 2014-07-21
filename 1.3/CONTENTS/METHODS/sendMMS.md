@@ -36,6 +36,89 @@ Prototype:
 </REQUEST>
 ```
 
+```xml
+<element name="REQUEST">
+	<zeroOrMore>
+		<element name="ACTION">
+		    </text>
+		</element>
+        <element name="USER">
+	        </text>
+        </element>
+        <element name="PASS">
+	        </text>
+        </element>
+        <element name="FROM">
+	        </text>
+        </element>
+        <element name="SPID">
+	        </text>
+        </element>
+        <element name="TO">
+	        </text>
+        </element>
+        <optional>
+            <element name="CAMPAIGNREF">
+    	        </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="SUBJECT">
+    	        </text>
+            </element>
+        </optional>
+        <element name="CONTENT">
+	        <zeroOrMore>
+	            <element name="NAME">
+        	        </text>
+                </element>
+                <element name="SEQUENCE">
+                    <zeroOrMore>
+                        <element name="SLIDE">
+                            <optional>
+                                <attribute name="duration">
+                                    </text>
+                                </attribute>
+                            </optional>
+                	        <zeroOrMore>
+                	            <optional>
+                    	            <element name="IMAGE">
+                            	        <zeroOrMore>
+                            	            <optional>
+                                	            <element name="URL">
+                                	                </text>
+                                	            </element>
+                                	        </optional>
+                            	        </zeroOrMore>
+                                    </element>
+                                </optional>
+                                <optional>
+                    	            <element name="AUDIO">
+                            	        <zeroOrMore>
+                            	            <optional>
+                                	            <element name="URL">
+                                	                </text>
+                                	            </element>
+                                	        </optional>
+                            	        </zeroOrMore>
+                                    </element>
+                                </optional>
+                                <optional>
+                    	            <element name="TEXT">
+                    	                </text>
+                                    </element>
+                                </optional>
+                	        </zeroOrMore>
+                        </element>
+                        ...
+                    </zeroOrMore>
+                </element>
+	        </zeroOrMore>
+        </element>
+	</zeroOrMore>
+</element>
+```
+
 __Request Parameters:__
 
     Mandatory: Action, User, Pass, To, SPID, From, Name, Content, Sequence, Slide
@@ -77,6 +160,88 @@ __Request Example:__
 </REQUEST>
 ```
 
+```xml
+<element name="REQUEST">
+	<zeroOrMore>
+		<element name="ACTION">
+		    </text>
+		</element>
+        <element name="USER">
+	        </text>
+        </element>
+        <element name="PASS">
+	        </text>
+        </element>
+        <element name="TO">
+	        </text>
+        </element>
+        <element name="FROM">
+	        </text>
+        </element>
+        <element name="SPID">
+	        </text>
+        </element>
+        <optional>
+            <element name="SUBJECT">
+    	        </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="CAMPAIGNREF">
+    	        </text>
+            </element>
+        </optional>
+        <element name="CONTENT">
+	        <zeroOrMore>
+	            <element name="NAME">
+        	        </text>
+                </element>
+                <element name="SEQUENCE">
+                    <zeroOrMore>
+                        <element name="SLIDE">
+                            <optional>
+                                <attribute name="duration">
+                                    </text>
+                                </attribute>
+                            </optional>
+                	        <zeroOrMore>
+                	            <optional>
+                    	            <element name="IMAGE">
+                            	        <zeroOrMore>
+                            	            <optional>
+                                	            <element name="URL">
+                                	                </text>
+                                	            </element>
+                                	        </optional>
+                            	        </zeroOrMore>
+                                    </element>
+                                </optional>
+                                <optional>
+                    	            <element name="AUDIO">
+                            	        <zeroOrMore>
+                            	            <optional>
+                                	            <element name="URL">
+                                	                </text>
+                                	            </element>
+                                	        </optional>
+                            	        </zeroOrMore>
+                                    </element>
+                                </optional>
+                                <optional>
+                    	            <element name="TEXT">
+                    	                </text>
+                                    </element>
+                                </optional>
+                	        </zeroOrMore>
+                        </element>
+                    </zeroOrMore>
+                </element>
+	        </zeroOrMore>
+        </element>
+	</zeroOrMore>
+</element>
+```
+
 __Response Example: Success__
 ```xml
 <RESPONSE>
@@ -87,6 +252,25 @@ __Response Example: Success__
 </RESPONSE>
 ```
 
+```xml
+<element name="RESPONSE">
+	<zeroOrMore>
+		<element name="STATUS">
+			</text>
+		</element>
+		<element name="TO">
+			</text>
+		</element>
+		<element name="MMSID">
+		    </text>
+		</element>
+		<element name="TRACKINGID">
+			</text>
+		</element>
+    </zeroOrMore>
+</element>
+```
+
 __Response Example: Failure__
 ```xml
 <RESPONSE>
@@ -95,4 +279,23 @@ __Response Example: Failure__
 	<TO>15551234888</TO>
 	<ERRORINFO>Invalid shortcode</ERRORINFO>
 </RESPONSE>
+```
+
+```xml
+<element name="RESPONSE">
+	<zeroOrMore>
+		<element name="STATUS">
+			</text>
+		</element>
+		<element name="ERRORCODE">
+			</text>
+		</element>
+		<element name="TO">
+			</text>
+		</element>
+		<element name="ERRORINFO">
+			</text>
+		</element>
+	</zeroOrMore>
+</element>
 ```
