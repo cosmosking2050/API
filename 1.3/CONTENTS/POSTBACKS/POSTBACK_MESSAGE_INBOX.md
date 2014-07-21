@@ -37,6 +37,32 @@ This postback notifies you when an SMS MO is received.
 </POSTBACK>
 ```
 
+```xml
+<element name="POSTBACK">
+    <element name="ORIGIN">
+        </text>
+    </element>
+    <element name="CODE">
+        </text>
+    </element>
+    <element name="FROM">
+        </text>
+    </element>
+    <element name="TO">
+        </text>
+    </element>
+    <element name="TEXT">
+        </text>
+    </element>
+    <element name="RECEIVED">
+        </text>
+    </element>
+    <element name="TRANSACTIONID">
+        </text>
+    </element>
+</element>
+```
+
 ### The MMS MO
 
 This postback notifies you when an MMS MO is received.
@@ -73,4 +99,42 @@ This postback notifies you when an MMS MO is received.
     </CONTENT>
   </NOTIFICATION>
 </POSTBACK>
+```
+
+```xml
+<element name="POSTBACK">
+	<element name="NOTIFICATION">
+	    <element name="ORIGIN">
+	        </text>
+	    </element>
+	    <element name="CODE">
+	        </text>
+	    </element>
+	    <element name="FROM">
+	        </text>
+	    </element>
+	    <element name="TO">
+	        </text>
+	    </element>
+	    <element name="KEYWORD">
+	        </text>
+	    </element>
+	    <element name="TRACKINGID">
+	        </text>
+	    </element>
+	    <element name="SPID">
+	        </text>
+	    </element>
+	    <element name="TIMESTAMP">
+	        </text>
+	    </element>
+	    <element name="CONTENT">
+	        <oneOrMore>
+	        	<element name="FILE">
+	        		</text>
+        		</element>
+    		</oneOrMore>
+	    </element>
+    </element>
+</element>
 ```
