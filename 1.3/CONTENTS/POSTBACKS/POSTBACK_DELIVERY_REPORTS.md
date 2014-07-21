@@ -49,6 +49,38 @@ _N201 Example:_
 </POSTBACK>
 ```
 
+```xml
+<element name="POSTBACK">
+	<element name="ORIGIN">
+		</text>
+	</element>
+	<element name="CODE">
+		</text>
+	</element>
+	<element name="STATUS">
+		</text>
+	</element>
+	<element name="FROM">
+		</text>
+	</element>
+	<element name="FROM_MASK">
+		</text>
+	</element>
+	<element name="TO">
+		</text>
+	</element>
+	<element name="TRACKINGID">
+		</text>
+	</element>
+	<element name="SPID">
+		</text>
+	</element>
+	<element name="TIMESTAMP">
+		</text>
+	</element>
+</element>
+```
+
 _N202 Example:_
 ```xml
 <?xml version='1.0'?>
@@ -65,6 +97,42 @@ _N202 Example:_
   <AGGREGATORID>11529-64807-97508-73852-97658</AGGREGATORID>
 </POSTBACK>
 ```
+
+```xml
+<element name="POSTBACK">
+	<element name="ORIGIN">
+		</text>
+	</element>
+	<element name="CODE">
+		</text>
+	</element>
+	<element name="STATUS">
+		</text>
+	</element>
+	<element name="FROM">
+		</text>
+	</element>
+	<element name="FROM_MASK">
+		</text>
+	</element>
+	<element name="TO">
+		</text>
+	</element>
+	<element name="TRACKINGID">
+		</text>
+	</element>
+	<element name="SPID">
+		</text>
+	</element>
+	<element name="TIMESTAMP">
+		</text>
+	</element>
+	<element name="AGGREGATORID">
+		</text>
+	</element>
+</element>
+```
+
 [Back To The Top](#DocTop)
 
 
@@ -108,6 +176,41 @@ _N101 Example: (Binary)_
 </POSTBACK>
 ```
 
+```xml
+<element name="POSTBACK">
+	<element name="ORIGIN">
+		</text>
+	</element>
+	<element name="CODE">
+		</text>
+	</element>
+	<element name="SENTAS">
+		</text>
+	</element>
+	<element name="STATUS">
+		</text>
+	</element>
+	<element name="MMSID">
+		</text>
+	</element>
+	<element name="FROM">
+		</text>
+	</element>
+	<element name="TO">
+		</text>
+	</element>
+	<element name="TRACKINGID">
+		</text>
+	</element>
+	<element name="SPID">
+		</text>
+	</element>
+	<element name="TIMESTAMP">
+		</text>
+	</element>
+</element>
+```
+
 _N101 Example: (xHTML)_
 ```xml
 <?xml version='1.0'?>
@@ -124,6 +227,44 @@ _N101 Example: (xHTML)_
   <TIMESTAMP>2012-06-07T07:27:34-05:00</TIMESTAMP>
   <STATUSDETAILS>Handset setting: mms with pass via xHTML</STATUSDETAILS>
 </POSTBACK>
+```
+
+```xml
+<element name="POSTBACK">
+	<element name="ORIGIN">
+		</text>
+	</element>
+	<element name="CODE">
+		</text>
+	</element>
+	<element name="SENTAS">
+		</text>
+	</element>
+	<element name="STATUS">
+		</text>
+	</element>
+	<element name="MMSID">
+		</text>
+	</element>
+	<element name="FROM">
+		</text>
+	</element>
+	<element name="TO">
+		</text>
+	</element>
+	<element name="TRACKINGID">
+		</text>
+	</element>
+	<element name="SPID">
+		</text>
+	</element>
+	<element name="TIMESTAMP">
+		</text>
+	</element>
+	<element name="STATUSDETAILS">
+		</text>
+	</element>
+</element>
 ```
 
 _N102 Example: (Binary)_
@@ -146,6 +287,47 @@ _N102 Example: (Binary)_
 </POSTBACK>
 ```
 
+```xml
+<element name="POSTBACK">
+	<element name="ORIGIN">
+		</text>
+	</element>
+	<element name="CODE">
+		</text>
+	</element>
+	<element name="SENTAS">
+		</text>
+	</element>
+	<element name="STATUS">
+		</text>
+	</element>
+	<element name="MMSID">
+		</text>
+	</element>
+	<element name="FROM">
+		</text>
+	</element>
+	<element name="TO">
+		</text>
+	</element>
+	<element name="TRACKINGID">
+		</text>
+	</element>
+	<element name="SPID">
+		</text>
+	</element>
+	<element name="TIMESTAMP">
+		</text>
+	</element>
+	<element name="HANDSET">
+		</text>
+	</element>
+	<element name="AGGREGATORID">
+		</text>
+	</element>
+</element>
+```
+
 _N102 Example: (xHTML)_
 ```xml
 <?xml version='1.0'?>
@@ -161,6 +343,41 @@ _N102 Example: (xHTML)_
   <TIMESTAMP>2012-06-07T07:28:09-05:00</TIMESTAMP>
   <AGGREGATORID>11529-64807-97508-73852-97658</AGGREGATORID>
 </POSTBACK>
+```
+
+```xml
+<element name="POSTBACK">
+	<element name="ORIGIN">
+		</text>
+	</element>
+	<element name="CODE">
+		</text>
+	</element>
+	<element name="SENTAS">
+		</text>
+	</element>
+	<element name="STATUS">
+		</text>
+	</element>
+	<element name="FROM">
+		</text>
+	</element>
+	<element name="TO">
+		</text>
+	</element>
+	<element name="TRACKINGID">
+		</text>
+	</element>
+	<element name="SPID">
+		</text>
+	</element>
+	<element name="TIMESTAMP">
+		</text>
+	</element>
+	<element name="AGGREGATORID">
+		</text>
+	</element>
+</element>
 ```
 
 When the system is unable to send an MMS we return a postback E101. 
@@ -180,6 +397,39 @@ _E101 Example:_
   <STATUSDETAILS>Error fetching dynamic content</STATUSDETAILS>
 </POSTBACK>
 ```
+
+```xml
+<element name="POSTBACK">
+	<element name="ORIGIN">
+		</text>
+	</element>
+	<element name="CODE">
+		</text>
+	</element>
+	<element name="STATUS">
+		</text>
+	</element>
+	<element name="MMSID">
+		</text>
+	</element>
+	<element name="FROM">
+		</text>
+	</element>
+	<element name="TO">
+		</text>
+	</element>
+	<element name="TRACKINGID">
+		</text>
+	</element>
+	<element name="SPID">
+		</text>
+	</element>
+	<element name="STATUSDETAILS">
+		</text>
+	</element>
+</element>
+```
+
 [Back To The Top](#DocTop)
 
 
@@ -205,6 +455,20 @@ _N003 (Save MMS Successful) Example:_
 </POSTBACK>
 ```
 
+```xml
+<element name="POSTBACK">
+	<element name="ORIGIN">
+		</text>
+	</element>
+	<element name="CODE">
+		</text>
+	</element>
+	<element name="MMSID">
+		</text>
+	</element>
+</element>
+```
+
 _E002 (Save MMS Failure) Example:_
 ```xml
 <?xml version='1.0'?>
@@ -215,6 +479,24 @@ _E002 (Save MMS Failure) Example:_
   <AUDIONAME>sample.mp3</AUDIONAME>
 </POSTBACK>
 ```
+
+```xml
+<element name="POSTBACK">
+	<element name="ORIGIN">
+		</text>
+	</element>
+	<element name="CODE">
+		</text>
+	</element>
+	<element name="MMSID">
+		</text>
+	</element>
+	<element name="AUDIONAME">
+		</text>
+	</element>
+</element>
+```
+
 [Back To The Top](#DocTop)
 
 ## ToDo
