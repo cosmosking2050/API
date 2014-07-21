@@ -39,18 +39,20 @@ __Request: subscribe__
 	<element name="MOBILE">
 		</text>
 	</element>
-	<element name="DATA">
-		<element name="FIRST_NAME">
-			</text>
+	<optional>
+		<element name="DATA">
+			<element name="FIRST_NAME">
+				</text>
+			</element>
+			<element name="LAST_NAME">
+				</text>
+			</element>
+			<element name="GENDER">
+				</text>
+			</element>
+			...
 		</element>
-		<element name="LAST_NAME">
-			</text>
-		</element>
-		<element name="GENDER">
-			</text>
-		</element>
-		...
-	</element>
+	</optional>
 	<optional>
 		<element name="NOTIFY">
 			</text>
@@ -109,7 +111,7 @@ __Request: unsubscribe__
 __Request Parameters:__
 
     Mandatory: Action, API_KEY, CAMPAIGNID, Mobile
-    Optional: CTA, Notify, SPID, TZ
+    Optional: CTA, Notify, SPID, TZ, Data
 
 __Response Parameters:__
 
@@ -152,20 +154,22 @@ XML:
 	<element name="MOBILE">
 		</text>
 	</element>
-	<element name="DATA">
-		<element name="FIRST_NAME">
-			</text>
+	<optional>
+		<element name="DATA">
+			<element name="FIRST_NAME">
+				</text>
+			</element>
+			<element name="LAST_NAME">
+				</text>
+			</element>
+			<element name="AGE">
+				</text>
+			</element>
+			<element name="PET">
+				</text>
+			</element>
 		</element>
-		<element name="LAST_NAME">
-			</text>
-		</element>
-		<element name="AGE">
-			</text>
-		</element>
-		<element name="PET">
-			</text>
-		</element>
-	</element>
+	</optional>
 	<optional>
 		<element name="NOTIFY">
 			</text>
