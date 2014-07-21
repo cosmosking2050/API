@@ -27,9 +27,9 @@ __Request:__
 ```xml
 <element name="REQUEST">
 	<zeroOrMore>
-		<element name="ACTION">
-		    </text>
-		</element>
+    	<element name="ACTION">
+    	    </text>
+    	</element>
         <element name="API_KEY">
 	        </text>
         </element>
@@ -112,9 +112,9 @@ __Request Example:__
 ```xml
 <element name="REQUEST">
 	<zeroOrMore>
-		<element name="ACTION">
-		    </text>
-		</element>
+    	<element name="ACTION">
+    	    </text>
+    	</element>
         <element name="API_KEY">
 	        </text>
         </element>
@@ -126,26 +126,38 @@ __Request Example:__
         </element>
         <element name="SLIDE">
 	        <zeroOrMore>
-	            <element name="IMAGE">
-        	        <zeroOrMore>
-        	            <element name="URL">
-        	                </text>
-        	            </element>
-        	        </zeroOrMore>
-                </element>
-	            <element name="AUDIO">
-        	        <zeroOrMore>
-        	            <element name="URL">
-        	                </text>
-        	            </element>
-        	        </zeroOrMore>
-                </element>
-	            <element name="TEXT">
-	                </text>
-                </element>
-	            <element name="DURATION">
-	                </text>
-                </element>
+	            <optional>
+    	            <element name="IMAGE">
+            	        <zeroOrMore>
+            	            <optional>
+                	            <element name="URL">
+                	                </text>
+                	            </element>
+                	        </optional>
+            	        </zeroOrMore>
+                    </element>
+                </optional>
+                <optional>
+    	            <element name="AUDIO">
+            	        <zeroOrMore>
+            	            <optional>
+                	            <element name="URL">
+                	                </text>
+                	            </element>
+                	        </optional>
+            	        </zeroOrMore>
+                    </element>
+                </optional>
+                <optional>
+    	            <element name="TEXT">
+    	                </text>
+                    </element>
+                </optional>
+                <optional>
+    	            <element name="DURATION">
+    	                </text>
+                    </element>
+                </optional>
 	        </zeroOrMore>
         </element>
 	</zeroOrMore>
