@@ -16,7 +16,7 @@ The email address is referenced by 'EMAIL', email template is referenced by 'EMA
 __Request:__
 ```xml
 <REQUEST>
-  	<ACTION>sendSavedEmail</ACTION>
+	<ACTION>sendSavedEmail</ACTION>
     <API_KEY>apiKey</API_KEY>
     <EMAILTEMPLATEID>emailTemplateId</EMAILTEMPLATEID>
     <EMAIL>email</EMAIL>
