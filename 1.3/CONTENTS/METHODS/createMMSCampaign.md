@@ -9,7 +9,7 @@ Campaign will be created under *campaignname* in our system. *Campaignname* will
 __Request:__
 ```xml
 <REQUEST>
-  <ACTION>createMMSCampaign</ACTION>
+	<ACTION>createMMSCampaign</ACTION>
     <API_KEY>API KEY</API_KEY>
     <CAMPAIGNNAME>Camapign Name</CAMPAIGNNAME>
     <BRANDNAME>Brand</BRANDNAME>
@@ -18,21 +18,17 @@ __Request:__
 
 ```xml
 <element name="REQUEST">
-    <zeroOrMore>
-        <element name="ACTION">
-            <zeroOrMore>
-                <element name="API_KEY">
-                  </text>
-                </element>
-                <element name="CAMPAIGNNAME">
-                    </text>
-                </element>
-                <element name="BRANDNAME">
-                    </text>
-                </element>
-            </zeroOrMore>
-        </element>
-    </zeroOrMore>
+	<element name="ACTION">
+	    <element name="API_KEY">
+	    	</text>
+	    </element>
+	    <element name="CAMPAIGNNAME">
+	        </text>
+	    </element>
+	    <element name="BRANDNAME">
+	        </text>
+	    </element>
+	</element>
 </element>
 ```
 
@@ -62,21 +58,18 @@ XML:
 
 ```xml
 <element name="REQUEST">
-    <zeroOrMore>
-        <element name="ACTION">
-            <zeroOrMore>
-                <element name="API_KEY">
-                  </text>
-                </element>
-                <element name="CAMPAIGNNAME">
-                    </text>
-                </element>
-                <element name="BRANDNAME">
-                    </text>
-                </element>
-            </zeroOrMore>
-        </element>
-    </zeroOrMore>
+	<element name="ACTION">
+		</text>
+	</element>
+	<element name="API_KEY">
+		</text>
+	</element>
+	<element name="CAMPAIGNNAME">
+	    </text>
+	</element>
+	<element name="BRANDNAME">
+	    </text>
+	</element>
 </element>
 ```
 
@@ -97,20 +90,18 @@ __Response Example: Success__
 
 ```xml
 <element name="RESPONSE">
-    <zeroOrMore>
-        <element name="STATUS">
-            </text>
-        </element>
-        <element name="CAMPAIGNID">
-            </text>
-        </element>
-        <element name="CAMPAIGNNAME">
-            </text>
-        </element>
-        <element name="BRANDNAME">
-            </text>
-        </element>
-    </zeroOrMore>
+    <element name="STATUS">
+        </text>
+    </element>
+    <element name="CAMPAIGNID">
+        </text>
+    </element>
+    <element name="CAMPAIGNNAME">
+        </text>
+    </element>
+    <element name="BRANDNAME">
+        </text>
+    </element>
 </element>
 ```
 
@@ -125,16 +116,14 @@ __Response Example: Failure__
 
 ```xml
 <element name="RESPONSE">
-    <zeroOrMore>
-        <element name="STATUS">
-            </text>
-        </element>
-        <element name="ERRORCODE">
-            </text>
-        </element>
-        <element name="ERRORINFO">
-            </text>
-        </element>
-    </zeroOrMore>
+	<element name="STATUS">
+	    </text>
+	</element>
+	<element name="ERRORCODE">
+	    </text>
+	</element>
+	<element name="ERRORINFO">
+	    </text>
+	</element>
 </element>
 ```
