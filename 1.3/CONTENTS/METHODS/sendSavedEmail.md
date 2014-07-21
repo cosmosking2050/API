@@ -112,20 +112,22 @@ XML:
 	<element name="CAMPAIGNID">
 		</text>
 	</element>
-	<element name="DATA">
-		<element name="FIRST_NAME">
-			</text>
+	<optional>
+		<element name="DATA">
+			<element name="FIRST_NAME">
+				</text>
+			</element>
+			<element name="LAST_NAME">
+				</text>
+			</element>
+			<element name="AGE">
+				</text>
+			</element>
+			<element name="PET">
+				</text>
+			</element>
 		</element>
-		<element name="LAST_NAME">
-			</text>
-		</element>
-		<element name="AGE">
-			</text>
-		</element>
-		<element name="PET">
-			</text>
-		</element>
-	</element>
+	</optional>
 </element>
 ```
 
