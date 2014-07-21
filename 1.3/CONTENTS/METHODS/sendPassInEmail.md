@@ -22,12 +22,12 @@ __Request: XML__
     <EMAILTEMPLATEID>emailTemplateId</EMAILTEMPLATEID>
     <EMAIL>email</EMAIL>
     <CAMPAIGNID>campaignId</CAMPAIGNID>
-       <DATA>
-          <FIRST_NAME>First Name</FIRST_NAME>
-          <LAST_NAME>Last Name</LAST_NAME>
-          <GENDER>Gender</GENDER>
-        ...
-       </DATA>    
+    <DATA>
+		<FIRST_NAME>First Name</FIRST_NAME>
+		<LAST_NAME>Last Name</LAST_NAME>
+		<GENDER>Gender</GENDER>
+		...
+	</DATA>
     <PASSDATA>
         <CUSTOMPASSID>customPassId</CUSTOMPASSID>
         <THUMBNAILURL>thumbnailUrl</THUMBNAILURL>
@@ -114,18 +114,20 @@ __Request: XML__
 	<element name="CAMPAIGNID">
 		</text>
 	</element>
-	<element name="DATA">
-		<element name="FIRST_NAME">
-			</text>
+	<optional>
+		<element name="DATA">
+			<element name="FIRST_NAME">
+				</text>
+			</element>
+			<element name="LAST_NAME">
+				</text>
+			</element>
+			<element name="GENDER">
+				</text>
+			</element>
+			...
 		</element>
-		<element name="LAST_NAME">
-			</text>
-		</element>
-		<element name="GENDER">
-			</text>
-		</element>
-		...
-	</element>
+	</optional>
 	<element name="PASSDATA">
 	    <optional>
             <element name="CUSTOMPASSID">
@@ -482,7 +484,7 @@ __Request Parameters:__
 
     Mandatory: action, apiKey, email, emailTemplateId, campaignId,
     barcodeValue (if "Barcode=Allowed" &amp;&amp; "BarcodeType=Dynamic" &amp;&amp; "BarcodeValueSource=Dynamic Value" for Pass Template otherwise IGNORED)
-    Optional: customPassId, thumbnailUrl,
+    Optional: data, customPassId, thumbnailUrl,
     barcodeText (if "Barcode = Allowed" && "Barcode Alternate Text = Dynamic Text" for Pass Template otherwise IGNORED), 
     headerLabel1, headerValue1, 
     primaryLabel1, primaryValue1, 
