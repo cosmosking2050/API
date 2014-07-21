@@ -121,18 +121,16 @@ __Request: XML__
 		</text>
 	</element>
 	<element name="DATA">
-		<zeroOrMore>
-			<element name="FIRST_NAME">
-				</text>
-			</element>
-			<element name="LAST_NAME">
-				</text>
-			</element>
-			<element name="GENDER">
-				</text>
-			</element>
-			...
-		</zeroOrMore>
+		<element name="FIRST_NAME">
+			</text>
+		</element>
+		<element name="LAST_NAME">
+			</text>
+		</element>
+		<element name="GENDER">
+			</text>
+		</element>
+		...
 	</element>
 	<element name="PASSDATA">
 	    <optional>
