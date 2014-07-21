@@ -118,7 +118,7 @@ __Request: XML__
 __Request: GET__
 
     API_URL?action=sendpassinmms&api_key=apiKey&mmsid=mmsId&to=phone
-    &from=shortcode&campaignref=campaignId&ddmtitle=ddmTitle&ddmtext=ddmText&ddmtimeout=ddmTimeout&device=deviceId
+    &from=shortcode&campaignref=campaignId&ddmtitle=ddmTitle&ddmtext=ddmText&ddmtimeout=ddmTimeout
     &customtext_1=customTextSlide1&customsubject=customSubject
     &data_first_name=firstName&data_last_name=lastName&data_age=age&pd_custompassid=customPassId
     &pd_thumbnailurl=thumbnailUrl
@@ -148,7 +148,7 @@ __Request Parameters:__
 
     Mandatory: action, apiKey, mmsid, to, from, 
     barcodevalue (if "Barcode=Allowed" && "BarcodeType=Dynamic" && "Barcode value source=Dynamic Value" for Pass Template otherwise IGNORED)
-    Optional: campaignref, ddmtitle, ddmtext, ddmtimeout, device, customsubject, customText, data, thumbnailUrl,
+    Optional: campaignref, ddmtitle, ddmtext, ddmtimeout, customsubject, customText, data, thumbnailUrl,
     barcodetext (if "Barcode = Allowed" && "Barcode Alternate Text = Dynamic Text" for Pass Template otherwise IGNORED), 
     headerlabel1, headervalue1, 
     primarylabel1, primaryvalue1, 
