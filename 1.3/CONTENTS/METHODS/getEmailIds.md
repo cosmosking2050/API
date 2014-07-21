@@ -15,14 +15,12 @@ __Request: XML__
 
 ```xml
 <element name="REQUEST">
-	<zeroOrMore>
-		<element name="ACTION">
-			</text>
-		</element>
-		<element name="API_KEY">
-			</text>
-		</element>
-	</zeroOrMore>
+	<element name="ACTION">
+		</text>
+	</element>
+	<element name="API_KEY">
+		</text>
+	</element>
 </element>
 ```
 
@@ -54,14 +52,12 @@ XML:
 
 ```xml
 <element name="REQUEST">
-	<zeroOrMore>
-		<element name="ACTION">
-			</text>
-		</element>
-		<element name="API_KEY">
-			</text>
-		</element>
-	</zeroOrMore>
+	<element name="ACTION">
+		</text>
+	</element>
+	<element name="API_KEY">
+		</text>
+	</element>
 </element>
 ```
 
@@ -79,14 +75,12 @@ __Response Example: Success__
 
 ```xml
 <element name="RESPONSE">
-	<zeroOrMore>
-		<element name="STATUS">
-			</text>
-		</element>
-		<element name="EMAILIDS">
-		    </text>
-		</element>
-    </zeroOrMore>
+	<element name="STATUS">
+		</text>
+	</element>
+	<element name="EMAILIDS">
+	    </text>
+	</element>
 </element>
 ```
 
@@ -101,16 +95,14 @@ __Response Example: Failure__
 
 ```xml
 <element name="RESPONSE">
-	<zeroOrMore>
-		<element name="STATUS">
-			</text>
-		</element>
-		<element name="ERRORCODE">
-			</text>
-		</element>
-		<element name="ERRORINFO">
-			</text>
-		</element>
-	</zeroOrMore>
+	<element name="STATUS">
+		</text>
+	</element>
+	<element name="ERRORCODE">
+		</text>
+	</element>
+	<element name="ERRORINFO">
+		</text>
+	</element>
 </element>
 ```
