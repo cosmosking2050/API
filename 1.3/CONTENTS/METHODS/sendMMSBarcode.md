@@ -56,7 +56,7 @@ __Request:__
 __Request Parameters:__
 
     Mandatory: action, api_key, mmsid, to, barcodeid, from
-    Optional: campaignref, ddmtitle, ddmtext, ddmtimeout, device, customsubject, customText, data
+    Optional: campaignref, ddmtitle, ddmtext, ddmtimeout, customsubject, customText, data
 
 __Response Parameters:__
 
@@ -99,7 +99,7 @@ GET:
     https://secure.skycore.com/API/wxml/1.3/index.php?action=sendmmsbarcode&api_key=qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ
     &to=16501234123&from=60856&barcodeid=Ticket_12345&campaignref=12333&mmsid=35674&ddmtitle=We+are+detecting+your+handset
     &ddmtext=This+message+is+free+of+charge+and+will+allow+us+to+deliver+your+content+nice+and+smooth&ddmtimeout=5
-    &device=iPhoneOS&customtext_1=My+Custom+text+in+first+slide&customsubject=My+Custom+Subject&data_first_name=John
+    &customtext_1=My+Custom+text+in+first+slide&customsubject=My+Custom+Subject&data_first_name=John
     &data_last_name=Smith&data_age=30&data_gender=male
 
 __Response Example: Success__
