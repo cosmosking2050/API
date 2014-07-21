@@ -19,6 +19,43 @@ __Request:__
 </REQUEST>
 ```
 
+```xml
+<element name="REQUEST">
+	<zeroOrMore>
+		<element name="ACTION">
+		    </text>
+		</element>
+        <element name="API_KEY">
+	        </text>
+        </element>
+        <optional>
+	        <element name="SPID">
+		        </text>
+	        </element>
+        </optional>
+        <element name="TO">
+	        </text>
+        </element>
+        <element name="FROM">
+	        </text>
+        </element>
+        <optional>
+	        <element name="FROM_MASK">
+		        </text>
+	        </element>
+        </optional>
+        <optional>
+	        <element name="CAMPAIGNREF">
+		        </text>
+	        </element>
+        </optional>
+        <element name="TEXT">
+	        </text>
+        </element>
+    </zeroOrMore>
+</element>
+```
+
 __Request Parameters:__
 
     (If "Enforce Campaign Check" is NOT Enabled)
@@ -49,6 +86,33 @@ XML:
 </REQUEST>
 ```
 
+```xml
+<element name="REQUEST">
+	<zeroOrMore>
+		<element name="ACTION">
+		    </text>
+		</element>
+        <element name="API_KEY">
+	        </text>
+        </element>
+        <element name="TO">
+	        </text>
+        </element>
+        <element name="FROM">
+	        </text>
+        </element>
+        <optional>
+	        <element name="CAMPAIGNREF">
+		        </text>
+	        </element>
+        </optional>
+        <element name="TEXT">
+	        </text>
+        </element>
+    </zeroOrMore>
+</element>
+```
+
 GET:
 
     https://secure.skycore.com/API/wxml/1.3/index.php?action=sendsms&api_key=Y6r74u6Br4hAVgrolveksjEiiu8yJX&to=15551234888&from=60856&text=Hello+Jerry%2C+Greetings+from+Marc
@@ -62,6 +126,22 @@ __Response Example: Success__
  </RESPONSE>
 ```
 
+```xml
+<element name="RESPONSE">
+	<zeroOrMore>
+		<element name="STATUS">
+		    </text>
+		</element>
+        <element name="TRACKINGID">
+	        </text>
+        </element>
+        <element name="TO">
+	        </text>
+        </element>
+    </zeroOrMore>
+</element>
+```
+
 __Response Example: Failure__
 ```xml
 <RESPONSE>
@@ -72,6 +152,25 @@ __Response Example: Failure__
 </RESPONSE>
 ```
 
+```xml
+<element name="RESPONSE">
+	<zeroOrMore>
+		<element name="STATUS">
+		    </text>
+		</element>
+        <element name="ERRORCODE">
+	        </text>
+        </element>
+        <element name="ERRORINFO">
+	        </text>
+        </element>
+        <element name="TO">
+	        </text>
+        </element>
+    </zeroOrMore>
+</element>
+```
+
 __Postback Notification:__  
 When the SMS is sent we will generate a Postback notification.
 ```xml
@@ -79,12 +178,47 @@ When the SMS is sent we will generate a Postback notification.
     <ORIGIN>SMS_MT</ORIGIN>
     <CODE>N201</CODE>
     <BODY>
-    <HISTORYID>236990</HISTORYID>
-    <TO>15551234888</TO>
-    <TRACKINGID>SMS_12345</TRACKINGID>
-    <TIMESTAMP>2011-07-26 10:22:25.262743-04</TIMESTAMP>
+	    <HISTORYID>236990</HISTORYID>
+	    <TO>15551234888</TO>
+	    <TRACKINGID>SMS_12345</TRACKINGID>
+	    <TIMESTAMP>2011-07-26 10:22:25.262743-04</TIMESTAMP>
     </BODY>
 </NOTIFICATION>
+```
+
+```xml
+<element name="NOTIFICATION">
+    <attribute name="ID">
+        </text>
+    </attribute>
+    <attribute name="CREATED">
+        </text>
+    </attribute>
+	<zeroOrMore>
+		<element name="ORIGIN">
+			</text>
+		</element>
+		<element name="CODE">
+			</text>
+		</element>
+		<element name="BODY">
+			<zeroOrMore>
+			    <element name="HISTORYID">
+			        </text>
+		        </element>
+		        <element name="TO">
+			        </text>
+		        </element>
+		        <element name="TRACKINGID">
+			        </text>
+		        </element>
+		        <element name="TIMESTAMP">
+			        </text>
+		        </element>
+			</zeroOrMore>
+		</element>
+	</zeroOrMore>
+</element>
 ```
 
 When we get an SMS delivery receipt we will generate another Postback notification. Not all carriers provide SMS delivery receipts.
@@ -93,11 +227,54 @@ When we get an SMS delivery receipt we will generate another Postback notificati
     <ORIGIN>SMS_MT</ORIGIN>
     <CODE>N201</CODE>
     <BODY>
-    <HISTORYID>236990</HISTORYID>
-    <TO>15551234888</TO>
-    <TRACKINGID>SMS_12345</TRACKINGID>
-    <STATUS PROTOCOL="4" STATUS="0"/>
-    <TIMESTAMP>2011-07-26 10:22:25.262743-04</TIMESTAMP>
+	    <HISTORYID>236990</HISTORYID>
+	    <TO>15551234888</TO>
+	    <TRACKINGID>SMS_12345</TRACKINGID>
+	    <STATUS PROTOCOL="4" STATUS="0"/>
+	    <TIMESTAMP>2011-07-26 10:22:25.262743-04</TIMESTAMP>
     </BODY>
 </NOTIFICATION>
+```
+
+```xml
+<element name="NOTIFICATION">
+    <attribute name="ID">
+        </text>
+    </attribute>
+    <attribute name="CREATED">
+        </text>
+    </attribute>
+	<zeroOrMore>
+		<element name="ORIGIN">
+			</text>
+		</element>
+		<element name="CODE">
+			</text>
+		</element>
+		<element name="BODY">
+			<zeroOrMore>
+			    <element name="HISTORYID">
+			        </text>
+		        </element>
+		        <element name="TO">
+			        </text>
+		        </element>
+		        <element name="TRACKINGID">
+			        </text>
+		        </element>
+		        <element name="STATUS">
+		        	<attribute name="PROTOCOL">
+				        </text>
+				    </attribute>
+				    <attribute name="STATUS">
+				        </text>
+				    </attribute>
+		        </element>
+		        <element name="TIMESTAMP">
+			        </text>
+		        </element>
+			</zeroOrMore>
+		</element>
+	</zeroOrMore>
+</element>
 ```
