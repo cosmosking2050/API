@@ -26,57 +26,50 @@ __Request:__
 
 ```xml
 <element name="REQUEST">
-	<zeroOrMore>
-    	<element name="ACTION">
-    	    </text>
+	<element name="ACTION">
+	    </text>
+	</element>
+    <element name="API_KEY">
+        </text>
+    </element>
+    <element name="SUBJECT">
+        </text>
+    </element>
+    <element name="NAME">
+        </text>
+    </element>
+    <oneOrMore>
+    	<element name="SLIDE">
+            <optional>
+	            <element name="IMAGE">
+    	            <optional>
+        	            <element name="URL">
+        	                </text>
+        	            </element>
+        	        </optional>
+                </element>
+            </optional>
+            <optional>
+	            <element name="AUDIO">
+    	            <optional>
+        	            <element name="URL">
+        	                </text>
+        	            </element>
+        	        </optional>
+                </element>
+            </optional>
+            <optional>
+	            <element name="TEXT">
+	                </text>
+                </element>
+            </optional>
+            <optional>
+	            <element name="DURATION">
+	                </text>
+                </element>
+            </optional>
     	</element>
-        <element name="API_KEY">
-	        </text>
-        </element>
-        <element name="SUBJECT">
-	        </text>
-        </element>
-        <element name="NAME">
-	        </text>
-        </element>
-        <element name="SLIDE">
-	        <zeroOrMore>
-	            <optional>
-    	            <element name="IMAGE">
-            	        <zeroOrMore>
-            	            <optional>
-                	            <element name="URL">
-                	                </text>
-                	            </element>
-                	        </optional>
-            	        </zeroOrMore>
-                    </element>
-                </optional>
-                <optional>
-    	            <element name="AUDIO">
-            	        <zeroOrMore>
-            	            <optional>
-                	            <element name="URL">
-                	                </text>
-                	            </element>
-                	        </optional>
-            	        </zeroOrMore>
-                    </element>
-                </optional>
-                <optional>
-    	            <element name="TEXT">
-    	                </text>
-                    </element>
-                </optional>
-                <optional>
-    	            <element name="DURATION">
-    	                </text>
-                    </element>
-                </optional>
-	        </zeroOrMore>
-        </element>
-        ...
-	</zeroOrMore>
+    </oneOrMore>
 </element>
 ```
 
@@ -111,56 +104,50 @@ __Request Example:__
 
 ```xml
 <element name="REQUEST">
-	<zeroOrMore>
-    	<element name="ACTION">
-    	    </text>
+	<element name="ACTION">
+	    </text>
+	</element>
+    <element name="API_KEY">
+        </text>
+    </element>
+    <element name="SUBJECT">
+        </text>
+    </element>
+    <element name="NAME">
+        </text>
+    </element>
+    <oneOrMore>
+    	<element name="SLIDE">
+            <optional>
+	            <element name="IMAGE">
+    	            <optional>
+        	            <element name="URL">
+        	                </text>
+        	            </element>
+        	        </optional>
+                </element>
+            </optional>
+            <optional>
+	            <element name="AUDIO">
+    	            <optional>
+        	            <element name="URL">
+        	                </text>
+        	            </element>
+        	        </optional>
+                </element>
+            </optional>
+            <optional>
+	            <element name="TEXT">
+	                </text>
+                </element>
+            </optional>
+            <optional>
+	            <element name="DURATION">
+	                </text>
+                </element>
+            </optional>
     	</element>
-        <element name="API_KEY">
-	        </text>
-        </element>
-        <element name="SUBJECT">
-	        </text>
-        </element>
-        <element name="NAME">
-	        </text>
-        </element>
-        <element name="SLIDE">
-	        <zeroOrMore>
-	            <optional>
-    	            <element name="IMAGE">
-            	        <zeroOrMore>
-            	            <optional>
-                	            <element name="URL">
-                	                </text>
-                	            </element>
-                	        </optional>
-            	        </zeroOrMore>
-                    </element>
-                </optional>
-                <optional>
-    	            <element name="AUDIO">
-            	        <zeroOrMore>
-            	            <optional>
-                	            <element name="URL">
-                	                </text>
-                	            </element>
-                	        </optional>
-            	        </zeroOrMore>
-                    </element>
-                </optional>
-                <optional>
-    	            <element name="TEXT">
-    	                </text>
-                    </element>
-                </optional>
-                <optional>
-    	            <element name="DURATION">
-    	                </text>
-                    </element>
-                </optional>
-	        </zeroOrMore>
-        </element>
-	</zeroOrMore>
+    </oneOrMore>
 </element>
 ```
 
@@ -175,14 +162,12 @@ __Response Example: Success__
 
 ```xml
 <element name="RESPONSE">
-	<zeroOrMore>
-		<element name="STATUS">
-			</text>
-		</element>
-		<element name="MMSID">
-		    </text>
-		</element>
-    </zeroOrMore>
+	<element name="STATUS">
+		</text>
+	</element>
+	<element name="MMSID">
+	    </text>
+	</element>
 </element>
 ```
 
@@ -197,17 +182,15 @@ __Response Example: Failure__
 
 ```xml
 <element name="RESPONSE">
-	<zeroOrMore>
-		<element name="STATUS">
-			</text>
-		</element>
-		<element name="ERRORCODE">
-			</text>
-		</element>
-		<element name="ERRORINFO">
-			</text>
-		</element>
-	</zeroOrMore>
+	<element name="STATUS">
+		</text>
+	</element>
+	<element name="ERRORCODE">
+		</text>
+	</element>
+	<element name="ERRORINFO">
+		</text>
+	</element>
 </element>
 ```
 
@@ -232,21 +215,17 @@ When an MMS is saved, the system will generate a Postback notification and unloc
     <attribute name="CREATED">
         </text>
     </attribute>
-	<zeroOrMore>
-		<element name="ORIGIN">
-			</text>
-		</element>
-		<element name="CODE">
-			</text>
-		</element>
-		<element name="BODY">
-			<zeroOrMore>
-			    <element name="MMSID">
-			        </text>
-		        </element>
-			</zeroOrMore>
-		</element>
-	</zeroOrMore>
+	<element name="ORIGIN">
+		</text>
+	</element>
+	<element name="CODE">
+		</text>
+	</element>
+	<element name="BODY">
+	    <element name="MMSID">
+	        </text>
+        </element>
+	</element>
 </element>
 ```
 
@@ -270,24 +249,20 @@ If there was an error encoding the MMS audio/video, the system will generate a n
     <attribute name="CREATED">
         </text>
     </attribute>
-	<zeroOrMore>
-		<element name="ORIGIN">
-			</text>
-		</element>
-		<element name="CODE">
-			</text>
-		</element>
-		<element name="BODY">
-			<zeroOrMore>
-			    <element name="MMSID">
-			        </text>
-		        </element>
-		        <element name="AUDIONAME">
-			        </text>
-		        </element>
-			</zeroOrMore>
-		</element>
-	</zeroOrMore>
+	<element name="ORIGIN">
+		</text>
+	</element>
+	<element name="CODE">
+		</text>
+	</element>
+	<element name="BODY">
+	    <element name="MMSID">
+	        </text>
+        </element>
+        <element name="AUDIONAME">
+	        </text>
+        </element>
+	</element>
 </element>
 ```
 
