@@ -522,12 +522,12 @@ __Request Example:__
     <EMAILTEMPLATEID>45633</EMAILTEMPLATEID>
     <EMAIL>vik.muth@mail.com</EMAIL>
     <CAMPAIGNID>1233</CAMPAIGNID>
-       <DATA>
-          <FIRST_NAME>John</FIRST_NAME>
-          <LAST_NAME>Smith</LAST_NAME>
-          <AGE>29</AGE>
-          <PET>Dog</PET>
-       </DATA>
+    <DATA>
+    	<FIRST_NAME>John</FIRST_NAME>
+    	<LAST_NAME>Smith</LAST_NAME>
+    	<AGE>29</AGE>
+    	<PET>Dog</PET>
+	</DATA>
     <PASSDATA>
         <THUMBNAILURL>http://andreas.com/pixs/steve-jobs.png</THUMBNAILURL>
         <BARCODEVALUE>1234578961A</BARCODEVALUE>
@@ -572,20 +572,22 @@ __Request Example:__
 	<element name="CAMPAIGNID">
 		</text>
 	</element>
-	<element name="DATA">
-		<element name="FIRST_NAME">
-			</text>
+	<optional>
+		<element name="DATA">
+			<element name="FIRST_NAME">
+				</text>
+			</element>
+			<element name="LAST_NAME">
+				</text>
+			</element>
+			<element name="AGE">
+				</text>
+			</element>
+			<element name="PET">
+				</text>
+			</element>
 		</element>
-		<element name="LAST_NAME">
-			</text>
-		</element>
-		<element name="AGE">
-			</text>
-		</element>
-		<element name="PET">
-			</text>
-		</element>
-	</element>
+	</optional>
 	<element name="PASSDATA">
 	    <optional>
             <element name="THUMBNAILURL">
