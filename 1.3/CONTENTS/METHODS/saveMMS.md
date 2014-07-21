@@ -24,6 +24,62 @@ __Request:__
 </REQUEST>
 ```
 
+```xml
+<element name="REQUEST">
+	<zeroOrMore>
+		<element name="ACTION">
+		    </text>
+		</element>
+        <element name="API_KEY">
+	        </text>
+        </element>
+        <element name="SUBJECT">
+	        </text>
+        </element>
+        <element name="NAME">
+	        </text>
+        </element>
+        <element name="SLIDE">
+	        <zeroOrMore>
+	            <optional>
+    	            <element name="IMAGE">
+            	        <zeroOrMore>
+            	            <optional>
+                	            <element name="URL">
+                	                </text>
+                	            </element>
+                	        </optional>
+            	        </zeroOrMore>
+                    </element>
+                </optional>
+                <optional>
+    	            <element name="AUDIO">
+            	        <zeroOrMore>
+            	            <optional>
+                	            <element name="URL">
+                	                </text>
+                	            </element>
+                	        </optional>
+            	        </zeroOrMore>
+                    </element>
+                </optional>
+                <optional>
+    	            <element name="TEXT">
+    	                </text>
+                    </element>
+                </optional>
+                <optional>
+    	            <element name="DURATION">
+    	                </text>
+                    </element>
+                </optional>
+	        </zeroOrMore>
+        </element>
+        ...
+	</zeroOrMore>
+</element>
+```
+
 __Request Parameters:__
 
     Mandatory: Action, API_KEY, Name, Subject, Slide
@@ -53,12 +109,69 @@ __Request Example:__
 </REQUEST>
 ```
 
+```xml
+<element name="REQUEST">
+	<zeroOrMore>
+		<element name="ACTION">
+		    </text>
+		</element>
+        <element name="API_KEY">
+	        </text>
+        </element>
+        <element name="SUBJECT">
+	        </text>
+        </element>
+        <element name="NAME">
+	        </text>
+        </element>
+        <element name="SLIDE">
+	        <zeroOrMore>
+	            <element name="IMAGE">
+        	        <zeroOrMore>
+        	            <element name="URL">
+        	                </text>
+        	            </element>
+        	        </zeroOrMore>
+                </element>
+	            <element name="AUDIO">
+        	        <zeroOrMore>
+        	            <element name="URL">
+        	                </text>
+        	            </element>
+        	        </zeroOrMore>
+                </element>
+	            <element name="TEXT">
+	                </text>
+                </element>
+	            <element name="DURATION">
+	                </text>
+                </element>
+	        </zeroOrMore>
+        </element>
+	</zeroOrMore>
+</element>
+```
+
+
 __Response Example: Success__
 ```xml
 <RESPONSE>
     <STATUS>Success</STATUS>
     <MMSID>35674</MMSID>
 </RESPONSE>
+```
+
+```xml
+<element name="RESPONSE">
+	<zeroOrMore>
+		<element name="STATUS">
+			</text>
+		</element>
+		<element name="MMSID">
+		    </text>
+		</element>
+    </zeroOrMore>
+</element>
 ```
 
 __Response Example: Failure__
@@ -68,6 +181,22 @@ __Response Example: Failure__
     <ERRORCODE>E111</ERRORCODE>
     <ERRORINFO>Invalid shortcode</ERRORINFO>
 </RESPONSE>
+```
+
+```xml
+<element name="RESPONSE">
+	<zeroOrMore>
+		<element name="STATUS">
+			</text>
+		</element>
+		<element name="ERRORCODE">
+			</text>
+		</element>
+		<element name="ERRORINFO">
+			</text>
+		</element>
+	</zeroOrMore>
+</element>
 ```
 
 __Postback Notifications__  
@@ -83,16 +212,71 @@ When an MMS is saved, the system will generate a Postback notification and unloc
 </NOTIFICATION>
 ```
 
+```xml
+<element name="NOTIFICATION">
+    <attribute name="ID">
+        </text>
+    </attribute>
+    <attribute name="CREATED">
+        </text>
+    </attribute>
+	<zeroOrMore>
+		<element name="ORIGIN">
+			</text>
+		</element>
+		<element name="CODE">
+			</text>
+		</element>
+		<element name="BODY">
+			<zeroOrMore>
+			    <element name="MMSID">
+			        </text>
+		        </element>
+			</zeroOrMore>
+		</element>
+	</zeroOrMore>
+</element>
+```
+
 If there was an error encoding the MMS audio/video, the system will generate a notification:
 ```xml
 <NOTIFICATION ID="325" CREATED="2011-01-01 20:09:12.975911-04">
     <ORIGIN>MMS_MT</ORIGIN>
-        <CODE>E002</CODE>
-        <BODY>
-            <MMSID>35674</MMSID>
-            <AUDIONAME>sample.mp3</AUDIONAME>
-        </BODY>
+    <CODE>E002</CODE>
+    <BODY>
+        <MMSID>35674</MMSID>
+        <AUDIONAME>sample.mp3</AUDIONAME>
+    </BODY>
 </NOTIFICATION>
+```
+
+```xml
+<element name="NOTIFICATION">
+    <attribute name="ID">
+        </text>
+    </attribute>
+    <attribute name="CREATED">
+        </text>
+    </attribute>
+	<zeroOrMore>
+		<element name="ORIGIN">
+			</text>
+		</element>
+		<element name="CODE">
+			</text>
+		</element>
+		<element name="BODY">
+			<zeroOrMore>
+			    <element name="MMSID">
+			        </text>
+		        </element>
+		        <element name="AUDIONAME">
+			        </text>
+		        </element>
+			</zeroOrMore>
+		</element>
+	</zeroOrMore>
+</element>
 ```
 
 __Special Considerations for saveMMS:__  
