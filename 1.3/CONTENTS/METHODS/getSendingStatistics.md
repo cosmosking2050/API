@@ -11,8 +11,27 @@ __Request:__
     <ACTION>getSendingStatus</ACTION>
     <API_KEY>API KEY</API_KEY>
     <START_DATE>UTC StartDate</START_DATE>
-    <END_DATE>UTC EndDate</ END_DATE>
+    <END_DATE>UTC EndDate</END_DATE>
 </REQUEST>
+```
+
+```xml
+<element name="REQUEST">
+	<zeroOrMore>
+		<element name="ACTION">
+			</text>
+		</element>
+		<element name="API_KEY">
+			</text>
+		</element>
+		<element name="START_DATE">
+			</text>
+		</element>
+		<element name="END_DATE">
+			</text>
+		</element>
+	</zeroOrMore>
+</element>
 ```
 
 __Request Parameters:__
@@ -37,6 +56,25 @@ XML:
     <START_DATE>2010-10-01 12:00:00</START_DATE>
     <END_DATE>2010-10-02 12:00:00</END_DATE>
 </REQUEST>
+```
+
+```xml
+<element name="REQUEST">
+	<zeroOrMore>
+		<element name="ACTION">
+			</text>
+		</element>
+		<element name="API_KEY">
+			</text>
+		</element>
+		<element name="START_DATE">
+			</text>
+		</element>
+		<element name="END_DATE">
+			</text>
+		</element>
+	</zeroOrMore>
+</element>
 ```
 
 GET:
