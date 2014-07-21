@@ -38,84 +38,73 @@ Prototype:
 
 ```xml
 <element name="REQUEST">
-	<zeroOrMore>
-		<element name="ACTION">
-		    </text>
-		</element>
-        <element name="USER">
+	<element name="ACTION">
+	    </text>
+	</element>
+    <element name="USER">
+        </text>
+    </element>
+    <element name="PASS">
+        </text>
+    </element>
+    <element name="FROM">
+        </text>
+    </element>
+    <element name="SPID">
+        </text>
+    </element>
+    <element name="TO">
+        </text>
+    </element>
+    <optional>
+        <element name="CAMPAIGNREF">
 	        </text>
         </element>
-        <element name="PASS">
+    </optional>
+    <optional>
+        <element name="SUBJECT">
 	        </text>
         </element>
-        <element name="FROM">
+    </optional>
+    <element name="CONTENT">
+        <element name="NAME">
 	        </text>
         </element>
-        <element name="SPID">
-	        </text>
-        </element>
-        <element name="TO">
-	        </text>
-        </element>
-        <optional>
-            <element name="CAMPAIGNREF">
-    	        </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="SUBJECT">
-    	        </text>
-            </element>
-        </optional>
-        <element name="CONTENT">
-	        <zeroOrMore>
-	            <element name="NAME">
-        	        </text>
-                </element>
-                <element name="SEQUENCE">
-                    <zeroOrMore>
-                        <element name="SLIDE">
-                            <optional>
-                                <attribute name="duration">
-                                    </text>
-                                </attribute>
-                            </optional>
-                	        <zeroOrMore>
-                	            <optional>
-                    	            <element name="IMAGE">
-                            	        <zeroOrMore>
-                            	            <optional>
-                                	            <element name="URL">
-                                	                </text>
-                                	            </element>
-                                	        </optional>
-                            	        </zeroOrMore>
-                                    </element>
-                                </optional>
-                                <optional>
-                    	            <element name="AUDIO">
-                            	        <zeroOrMore>
-                            	            <optional>
-                                	            <element name="URL">
-                                	                </text>
-                                	            </element>
-                                	        </optional>
-                            	        </zeroOrMore>
-                                    </element>
-                                </optional>
-                                <optional>
-                    	            <element name="TEXT">
-                    	                </text>
-                                    </element>
-                                </optional>
-                	        </zeroOrMore>
+        <element name="SEQUENCE">
+        	<oneOrMore>
+	            <element name="SLIDE">
+	                <optional>
+	                    <attribute name="duration">
+	                        </text>
+	                    </attribute>
+	                </optional>
+    	            <optional>
+        	            <element name="IMAGE">
+            	            <optional>
+                	            <element name="URL">
+                	                </text>
+                	            </element>
+                	        </optional>
                         </element>
-                        ...
-                    </zeroOrMore>
-                </element>
-	        </zeroOrMore>
+                    </optional>
+                    <optional>
+        	            <element name="AUDIO">
+            	            <optional>
+                	            <element name="URL">
+                	                </text>
+                	            </element>
+                	        </optional>
+                        </element>
+                    </optional>
+                    <optional>
+        	            <element name="TEXT">
+        	                </text>
+                        </element>
+                    </optional>
+	            </element>
+	    	</oneOrMore>
         </element>
-	</zeroOrMore>
+    </element>
 </element>
 ```
 
@@ -162,83 +151,73 @@ __Request Example:__
 
 ```xml
 <element name="REQUEST">
-	<zeroOrMore>
-		<element name="ACTION">
-		    </text>
-		</element>
-        <element name="USER">
+	<element name="ACTION">
+	    </text>
+	</element>
+    <element name="USER">
+        </text>
+    </element>
+    <element name="PASS">
+        </text>
+    </element>
+    <element name="TO">
+        </text>
+    </element>
+    <element name="FROM">
+        </text>
+    </element>
+    <element name="SPID">
+        </text>
+    </element>
+    <optional>
+        <element name="SUBJECT">
 	        </text>
         </element>
-        <element name="PASS">
+    </optional>
+    <optional>
+        <element name="CAMPAIGNREF">
 	        </text>
         </element>
-        <element name="TO">
+    </optional>
+    <element name="CONTENT">
+        <element name="NAME">
 	        </text>
         </element>
-        <element name="FROM">
-	        </text>
-        </element>
-        <element name="SPID">
-	        </text>
-        </element>
-        <optional>
-            <element name="SUBJECT">
-    	        </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="CAMPAIGNREF">
-    	        </text>
-            </element>
-        </optional>
-        <element name="CONTENT">
-	        <zeroOrMore>
-	            <element name="NAME">
-        	        </text>
-                </element>
-                <element name="SEQUENCE">
-                    <zeroOrMore>
-                        <element name="SLIDE">
-                            <optional>
-                                <attribute name="duration">
-                                    </text>
-                                </attribute>
-                            </optional>
-                	        <zeroOrMore>
-                	            <optional>
-                    	            <element name="IMAGE">
-                            	        <zeroOrMore>
-                            	            <optional>
-                                	            <element name="URL">
-                                	                </text>
-                                	            </element>
-                                	        </optional>
-                            	        </zeroOrMore>
-                                    </element>
-                                </optional>
-                                <optional>
-                    	            <element name="AUDIO">
-                            	        <zeroOrMore>
-                            	            <optional>
-                                	            <element name="URL">
-                                	                </text>
-                                	            </element>
-                                	        </optional>
-                            	        </zeroOrMore>
-                                    </element>
-                                </optional>
-                                <optional>
-                    	            <element name="TEXT">
-                    	                </text>
-                                    </element>
-                                </optional>
-                	        </zeroOrMore>
+        <element name="SEQUENCE">
+        	<oneOrMore>
+	            <element name="SLIDE">
+	                <optional>
+	                    <attribute name="duration">
+	                        </text>
+	                    </attribute>
+	                </optional>
+    	            <optional>
+        	            <element name="IMAGE">
+            	            <optional>
+                	            <element name="URL">
+                	                </text>
+                	            </element>
+                	        </optional>
                         </element>
-                    </zeroOrMore>
-                </element>
-	        </zeroOrMore>
+                    </optional>
+                    <optional>
+        	            <element name="AUDIO">
+            	            <optional>
+                	            <element name="URL">
+                	                </text>
+                	            </element>
+                	        </optional>
+                        </element>
+                    </optional>
+                    <optional>
+        	            <element name="TEXT">
+        	                </text>
+                        </element>
+                    </optional>
+	            </element>
+	    	</oneOrMore>
         </element>
-	</zeroOrMore>
+    </element>
 </element>
 ```
 
@@ -254,20 +233,18 @@ __Response Example: Success__
 
 ```xml
 <element name="RESPONSE">
-	<zeroOrMore>
-		<element name="STATUS">
-			</text>
-		</element>
-		<element name="TO">
-			</text>
-		</element>
-		<element name="MMSID">
-		    </text>
-		</element>
-		<element name="TRACKINGID">
-			</text>
-		</element>
-    </zeroOrMore>
+	<element name="STATUS">
+		</text>
+	</element>
+	<element name="TO">
+		</text>
+	</element>
+	<element name="MMSID">
+	    </text>
+	</element>
+	<element name="TRACKINGID">
+		</text>
+	</element>
 </element>
 ```
 
@@ -283,19 +260,17 @@ __Response Example: Failure__
 
 ```xml
 <element name="RESPONSE">
-	<zeroOrMore>
-		<element name="STATUS">
-			</text>
-		</element>
-		<element name="ERRORCODE">
-			</text>
-		</element>
-		<element name="TO">
-			</text>
-		</element>
-		<element name="ERRORINFO">
-			</text>
-		</element>
-	</zeroOrMore>
+	<element name="STATUS">
+		</text>
+	</element>
+	<element name="ERRORCODE">
+		</text>
+	</element>
+	<element name="TO">
+		</text>
+	</element>
+	<element name="ERRORINFO">
+		</text>
+	</element>
 </element>
 ```
