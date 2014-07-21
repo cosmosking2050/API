@@ -176,7 +176,6 @@ xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd">
 </element>
 ```
 
-
 When an MMS delivery report is received the system will generate a Postback notification. Not all carriers provide MMS delivery receipts.
 ```xml
 <?xml version='1.0'?>
