@@ -208,7 +208,6 @@ __Response Example: Success__
 </element>
 ```
 
-
 __Response Example: Failure__
 ```xml
 <RESPONSE>
