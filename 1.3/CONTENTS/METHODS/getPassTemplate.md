@@ -16,17 +16,15 @@ __Request: XML__
 
 ```xml
 <element name="REQUEST">
-	<zeroOrMore>
-		<element name="ACTION">
-			</text>
-		</element>
-		<element name="API_KEY">
-			</text>
-		</element>
-		<element name="PASSTEMPLATEID">
-			</text>
-		</element>
-	</zeroOrMore>
+	<element name="ACTION">
+		</text>
+	</element>
+	<element name="API_KEY">
+		</text>
+	</element>
+	<element name="PASSTEMPLATEID">
+		</text>
+	</element>
 </element>
 ```
 
@@ -40,17 +38,15 @@ __Request: XML__
 
 ```xml
 <element name="REQUEST">
-	<zeroOrMore>
-		<element name="ACTION">
-			</text>
-		</element>
-		<element name="API_KEY">
-			</text>
-		</element>
-		<element name="MMSID">
-			</text>
-		</element>
-	</zeroOrMore>
+	<element name="ACTION">
+		</text>
+	</element>
+	<element name="API_KEY">
+		</text>
+	</element>
+	<element name="MMSID">
+		</text>
+	</element>
 </element>
 ```
 
@@ -64,17 +60,15 @@ __Request: XML__
 
 ```xml
 <element name="REQUEST">
-	<zeroOrMore>
-		<element name="ACTION">
-			</text>
-		</element>
-		<element name="API_KEY">
-			</text>
-		</element>
-		<element name="EMAILID">
-			</text>
-		</element>
-	</zeroOrMore>
+	<element name="ACTION">
+		</text>
+	</element>
+	<element name="API_KEY">
+		</text>
+	</element>
+	<element name="EMAILID">
+		</text>
+	</element>
 </element>
 ```
 
@@ -107,17 +101,15 @@ __Request Example:__
 
 ```xml
 <element name="REQUEST">
-	<zeroOrMore>
-		<element name="ACTION">
-			</text>
-		</element>
-		<element name="API_KEY">
-			</text>
-		</element>
-		<element name="PASSTEMPLATEID">
-			</text>
-		</element>
-	</zeroOrMore>
+	<element name="ACTION">
+		</text>
+	</element>
+	<element name="API_KEY">
+		</text>
+	</element>
+	<element name="PASSTEMPLATEID">
+		</text>
+	</element>
 </element>
 ```
 
@@ -154,81 +146,77 @@ __Response Example: Success__
 
 ```xml
 <element name="RESPONSE">
-	<zeroOrMore>
-		<element name="STATUS">
-			</text>
-		</element>
-		<element name="PASSTEMPLATEID">
-			</text>
-		</element>
-		<element name="PASSTEMPLATE">
-			<zeroOrMore>
-			    <element name="PASSNAME">
-                    </text>
-                </element>
-                <element name="PASSTYPE">
-                    </text>
-                </element>
-                <element name="ORGANIZATION">
-                    </text>
-                </element>
-                <element name="DESCRIPTION">
-                    </text>
-                </element>
-                <element name="BARCODEVALUE">
-                    </text>
-                </element>
-                <element name="BARCODETEXT">
-                    </text>
-                </element>
-                <element name="HEADERFIELDS">
-                    </text>
-                </element>
-                <element name="HEADERLABEL1">
-                    </text>
-                </element>
-                <element name="HEADERVALUE1">
-                    </text>
-                </element>
-                <element name="PRIMARYFIELDS">
-                    </text>
-                </element>
-                <element name="PRIMARYLABEL1">
-                    </text>
-                </element>
-                <element name="PRIMARYVALUE1">
-                    </text>
-                </element>
-                <element name="SECFIELDS">
-                    </text>
-                </element>
-                <element name="SECLABEL1">
-                    </text>
-                </element>
-                <element name="SECVALUE1">
-                    </text>
-                </element>
-                <element name="AUXFIELDS">
-                    </text>
-                </element>
-                <element name="AUXLABEL1">
-                    </text>
-                </element>
-                <element name="AUXVALUE1">
-                    </text>
-                </element>
-                <element name="BACKFIELDS">
-                    </text>
-                </element>
-                <element name="BACKLABEL1">
-                    </text>
-                </element>
-                <element name="BACKVALUE1">
-                    </text>
-                </element>
-            </zeroOrMore>
+	<element name="STATUS">
+		</text>
+	</element>
+	<element name="PASSTEMPLATEID">
+		</text>
+	</element>
+	<element name="PASSTEMPLATE">
+	    <element name="PASSNAME">
+            </text>
         </element>
-	</zeroOrMore>
+        <element name="PASSTYPE">
+            </text>
+        </element>
+        <element name="ORGANIZATION">
+            </text>
+        </element>
+        <element name="DESCRIPTION">
+            </text>
+        </element>
+        <element name="BARCODEVALUE">
+            </text>
+        </element>
+        <element name="BARCODETEXT">
+            </text>
+        </element>
+        <element name="HEADERFIELDS">
+            </text>
+        </element>
+        <element name="HEADERLABEL1">
+            </text>
+        </element>
+        <element name="HEADERVALUE1">
+            </text>
+        </element>
+        <element name="PRIMARYFIELDS">
+            </text>
+        </element>
+        <element name="PRIMARYLABEL1">
+            </text>
+        </element>
+        <element name="PRIMARYVALUE1">
+            </text>
+        </element>
+        <element name="SECFIELDS">
+            </text>
+        </element>
+        <element name="SECLABEL1">
+            </text>
+        </element>
+        <element name="SECVALUE1">
+            </text>
+        </element>
+        <element name="AUXFIELDS">
+            </text>
+        </element>
+        <element name="AUXLABEL1">
+            </text>
+        </element>
+        <element name="AUXVALUE1">
+            </text>
+        </element>
+        <element name="BACKFIELDS">
+            </text>
+        </element>
+        <element name="BACKLABEL1">
+            </text>
+        </element>
+        <element name="BACKVALUE1">
+            </text>
+        </element>
+    </element>
 </element>
 ```
 
@@ -243,17 +231,15 @@ __Response Example: Failure__
 
 ```xml
 <element name="RESPONSE">
-	<zeroOrMore>
-		<element name="STATUS">
-			</text>
-		</element>
-		<element name="ERRORCODE">
-			</text>
-		</element>
-		<element name="ERRORINFO">
-			</text>
-		</element>
-	</zeroOrMore>
+	<element name="STATUS">
+		</text>
+	</element>
+	<element name="ERRORCODE">
+		</text>
+	</element>
+	<element name="ERRORINFO">
+		</text>
+	</element>
 </element>
 ```
 
