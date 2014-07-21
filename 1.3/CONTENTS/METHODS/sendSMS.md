@@ -19,40 +19,40 @@ __Request:__
 </REQUEST>
 ```
 
+If "Enforce Campaign Check" is NOT Enabled, CampaignRef is optional.
+If "Enforce Campaign Check" IS Enabled, CampaignRef is mandatory.
 ```xml
 <element name="REQUEST">
-	<zeroOrMore>
-		<element name="ACTION">
-		    </text>
-		</element>
-        <element name="API_KEY">
+	<element name="ACTION">
+	    </text>
+	</element>
+    <element name="API_KEY">
+        </text>
+    </element>
+    <optional>
+        <element name="SPID">
 	        </text>
         </element>
-        <optional>
-	        <element name="SPID">
-		        </text>
-	        </element>
-        </optional>
-        <element name="TO">
+    </optional>
+    <element name="TO">
+        </text>
+    </element>
+    <element name="FROM">
+        </text>
+    </element>
+    <optional>
+        <element name="FROM_MASK">
 	        </text>
         </element>
-        <element name="FROM">
+    </optional>
+    <optional>
+        <element name="CAMPAIGNREF">
 	        </text>
         </element>
-        <optional>
-	        <element name="FROM_MASK">
-		        </text>
-	        </element>
-        </optional>
-        <optional>
-	        <element name="CAMPAIGNREF">
-		        </text>
-	        </element>
-        </optional>
-        <element name="TEXT">
-	        </text>
-        </element>
-    </zeroOrMore>
+    </optional>
+    <element name="TEXT">
+        </text>
+    </element>
 </element>
 ```
 
@@ -88,28 +88,26 @@ XML:
 
 ```xml
 <element name="REQUEST">
-	<zeroOrMore>
-		<element name="ACTION">
-		    </text>
-		</element>
-        <element name="API_KEY">
+	<element name="ACTION">
+	    </text>
+	</element>
+    <element name="API_KEY">
+        </text>
+    </element>
+    <element name="TO">
+        </text>
+    </element>
+    <element name="FROM">
+        </text>
+    </element>
+    <optional>
+        <element name="CAMPAIGNREF">
 	        </text>
         </element>
-        <element name="TO">
-	        </text>
-        </element>
-        <element name="FROM">
-	        </text>
-        </element>
-        <optional>
-	        <element name="CAMPAIGNREF">
-		        </text>
-	        </element>
-        </optional>
-        <element name="TEXT">
-	        </text>
-        </element>
-    </zeroOrMore>
+    </optional>
+    <element name="TEXT">
+        </text>
+    </element>
 </element>
 ```
 
@@ -128,17 +126,15 @@ __Response Example: Success__
 
 ```xml
 <element name="RESPONSE">
-	<zeroOrMore>
-		<element name="STATUS">
-		    </text>
-		</element>
-        <element name="TRACKINGID">
-	        </text>
-        </element>
-        <element name="TO">
-	        </text>
-        </element>
-    </zeroOrMore>
+	<element name="STATUS">
+	    </text>
+	</element>
+    <element name="TRACKINGID">
+        </text>
+    </element>
+    <element name="TO">
+        </text>
+    </element>
 </element>
 ```
 
@@ -154,20 +150,18 @@ __Response Example: Failure__
 
 ```xml
 <element name="RESPONSE">
-	<zeroOrMore>
-		<element name="STATUS">
-		    </text>
-		</element>
-        <element name="ERRORCODE">
-	        </text>
-        </element>
-        <element name="ERRORINFO">
-	        </text>
-        </element>
-        <element name="TO">
-	        </text>
-        </element>
-    </zeroOrMore>
+	<element name="STATUS">
+	    </text>
+	</element>
+    <element name="ERRORCODE">
+        </text>
+    </element>
+    <element name="ERRORINFO">
+        </text>
+    </element>
+    <element name="TO">
+        </text>
+    </element>
 </element>
 ```
 
@@ -194,30 +188,26 @@ When the SMS is sent we will generate a Postback notification.
     <attribute name="CREATED">
         </text>
     </attribute>
-	<zeroOrMore>
-		<element name="ORIGIN">
-			</text>
-		</element>
-		<element name="CODE">
-			</text>
-		</element>
-		<element name="BODY">
-			<zeroOrMore>
-			    <element name="HISTORYID">
-			        </text>
-		        </element>
-		        <element name="TO">
-			        </text>
-		        </element>
-		        <element name="TRACKINGID">
-			        </text>
-		        </element>
-		        <element name="TIMESTAMP">
-			        </text>
-		        </element>
-			</zeroOrMore>
-		</element>
-	</zeroOrMore>
+	<element name="ORIGIN">
+		</text>
+	</element>
+	<element name="CODE">
+		</text>
+	</element>
+	<element name="BODY">
+	    <element name="HISTORYID">
+	        </text>
+        </element>
+        <element name="TO">
+	        </text>
+        </element>
+        <element name="TRACKINGID">
+	        </text>
+        </element>
+        <element name="TIMESTAMP">
+	        </text>
+        </element>
+	</element>
 </element>
 ```
 
@@ -244,37 +234,33 @@ When we get an SMS delivery receipt we will generate another Postback notificati
     <attribute name="CREATED">
         </text>
     </attribute>
-	<zeroOrMore>
-		<element name="ORIGIN">
-			</text>
-		</element>
-		<element name="CODE">
-			</text>
-		</element>
-		<element name="BODY">
-			<zeroOrMore>
-			    <element name="HISTORYID">
-			        </text>
-		        </element>
-		        <element name="TO">
-			        </text>
-		        </element>
-		        <element name="TRACKINGID">
-			        </text>
-		        </element>
-		        <element name="STATUS">
-		        	<attribute name="PROTOCOL">
-				        </text>
-				    </attribute>
-				    <attribute name="STATUS">
-				        </text>
-				    </attribute>
-		        </element>
-		        <element name="TIMESTAMP">
-			        </text>
-		        </element>
-			</zeroOrMore>
-		</element>
-	</zeroOrMore>
+	<element name="ORIGIN">
+		</text>
+	</element>
+	<element name="CODE">
+		</text>
+	</element>
+	<element name="BODY">
+	    <element name="HISTORYID">
+	        </text>
+        </element>
+        <element name="TO">
+	        </text>
+        </element>
+        <element name="TRACKINGID">
+	        </text>
+        </element>
+        <element name="STATUS">
+	        <attribute name="PROTOCOL">
+		        </text>
+		    </attribute>
+		    <attribute name="STATUS">
+		        </text>
+		    </attribute>
+        </element>
+        <element name="TIMESTAMP">
+	        </text>
+        </element>
+	</element>
 </element>
 ```
