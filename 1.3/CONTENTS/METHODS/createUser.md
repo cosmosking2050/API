@@ -9,7 +9,7 @@ Creates new user with given username and password. The rest of the parameters re
 __Request:__
 ```xml
 <REQUEST>
-  <ACTION>createUser</ACTION>
+	<ACTION>createUser</ACTION>
     <API_KEY>API KEY</API_KEY>
     <NEWUSER>New Username</NEWUSER>
     <NEWPASS>New Password</NEWPASS>
@@ -18,21 +18,18 @@ __Request:__
 
 ```xml
 <element name="REQUEST">
-    <zeroOrMore>
-        <element name="ACTION">
-            <zeroOrMore>
-                <element name="API_KEY">
-                    </text>
-                </element>
-                <element name="NEWUSER">
-                    </text>
-                </element>
-                <element name="NEWPASS">
-                    </text>
-                </element>
-            </zeroOrMore>
-        </element>
-    </zeroOrMore>
+	<element name="ACTION">
+		</text>
+	</element>
+    <element name="API_KEY">
+        </text>
+    </element>
+    <element name="NEWUSER">
+        </text>
+    </element>
+    <element name="NEWPASS">
+        </text>
+    </element>
 </element>
 ```
 
@@ -62,24 +59,20 @@ XML:
 
 ```xml
 <element name="REQUEST">
-    <zeroOrMore>
-        <element name="ACTION">
-            <zeroOrMore>
-                <element name="API_KEY">
-                    </text>
-                </element>
-                <element name="NEWUSER">
-                    </text>
-                </element>
-                <element name="NEWPASS">
-                    </text>
-                </element>
-            </zeroOrMore>
-        </element>
-    </zeroOrMore>
+	<element name="ACTION">
+		</text>
+	</element>
+    <element name="API_KEY">
+        </text>
+    </element>
+    <element name="NEWUSER">
+        </text>
+    </element>
+    <element name="NEWPASS">
+        </text>
+    </element>
 </element>
 ```
-
 
 GET:
 
@@ -98,20 +91,18 @@ __Response Example: Success__
 
 ```xml
 <element name="RESPONSE">
-    <zeroOrMore>
-        <element name="STATUS">
-            </text>
-        </element>
-        <element name="USERNAME">
-            </text>
-        </element>
-        <element name="PASSWORD">
-            </text>
-        </element>
-        <element name="API_KEY">
-            </text>
-        </element>
-    </zeroOrMore>
+    <element name="STATUS">
+        </text>
+    </element>
+    <element name="USERNAME">
+        </text>
+    </element>
+    <element name="PASSWORD">
+        </text>
+    </element>
+    <element name="API_KEY">
+        </text>
+    </element>
 </element>
 ```
 
@@ -126,16 +117,14 @@ __Response Example: Failure__
 
 ```xml
 <element name="RESPONSE">
-    <zeroOrMore>
-        <element name="STATUS">
-            </text>
-        </element>
-        <element name="ERRORCODE">
-            </text>
-        </element>
-        <element name="ERRORINFO">
-            </text>
-        </element>
-    </zeroOrMore>
+    <element name="STATUS">
+        </text>
+    </element>
+    <element name="ERRORCODE">
+        </text>
+    </element>
+    <element name="ERRORINFO">
+        </text>
+    </element>
 </element>
 ```
