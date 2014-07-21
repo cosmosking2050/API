@@ -47,25 +47,27 @@ __Request:__
 	<element name="CAMPAIGNID">
 		</text>
 	</element>
-	<element name="DATA">
-		<element name="FIRST_NAME">
-			</text>
+	<optional>
+		<element name="DATA">
+			<element name="FIRST_NAME">
+				</text>
+			</element>
+			<element name="LAST_NAME">
+				</text>
+			</element>
+			<element name="GENDER">
+				</text>
+			</element>
+			...
 		</element>
-		<element name="LAST_NAME">
-			</text>
-		</element>
-		<element name="GENDER">
-			</text>
-		</element>
-		...
-	</element>
+	</optional>
 </element>
 ```
 
 __Request Parameters:__
 
     Mandatory: ACTION, API_KEY, EMAILTEMPLATEID, EMAIL, CAMPAIGNID
-    Optional: N/A
+    Optional: DATA
 
 __Response Parameters:__
 
