@@ -79,6 +79,335 @@ __Request: XML__
 </REQUEST>
 ```
 
+```xml
+<element name="REQUEST">
+	<element name="ACTION">
+		</text>
+	</element>
+	<element name="API_KEY">
+		</text>
+	</element>
+	<element name="PASSDATAID">
+		</text>
+	</element>
+	<element name="PASSDATA">
+	    <optional>
+            <element name="THUMBNAILURL">
+                </text>
+            </element>
+        </optional>
+        <element name="BARCODEVALUE">
+            </text>
+        </element>
+        <optional>
+            <element name="BARCODETEXT">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="HEADERLABEL1">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="HEADERVALUE1">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="PRIMARYLABEL1">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="PRIMARYVALUE1">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="PRIMARYLABEL2">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="PRIMARYVALUE2">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="SECLABEL1">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="SECVALUE1">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="SECLABEL2">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="SECVALUE2">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="SECLABEL3">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="SECVALUE3">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="SECLABEL4">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="SECVALUE4">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="AUXLABEL1">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="AUXVALUE1">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="AUXLABEL2">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="AUXVALUE2">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="AUXLABEL3">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="AUXVALUE3">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="AUXLABEL4">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="AUXVALUE4">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="BACKLABEL1">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="BACKVALUE1">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="BACKLABEL2">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="BACKVALUE2">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="BACKLABEL3">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="BACKVALUE3">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="BACKLABEL4">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="BACKVALUE4">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="RELLATITUDE1">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="RELLONGITUDE1">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="RELTEXT1">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="RELLATITUDE2">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="RELLONGITUDE2">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="RELTEXT2">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="RELLATITUDE3">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="RELLONGITUDE3">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="RELTEXT3">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="RELLATITUDE4">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="RELLONGITUDE4">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="RELTEXT4">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="RELLATITUDE5">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="RELLONGITUDE5">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="RELTEXT5">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="RELLATITUDE6">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="RELLONGITUDE6">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="RELTEXT6">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="RELLATITUDE7">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="RELLONGITUDE7">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="RELTEXT7">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="RELLATITUDE8">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="RELLONGITUDE8">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="RELTEXT8">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="RELLATITUDE9">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="RELLONGITUDE9">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="RELTEXT9">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="RELLATITUDE10">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="RELLONGITUDE10">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="RELTEXT10">
+                </text>
+            </element>
+        </optional>
+    </element>
+</element>
+```
+
 __Request: GET__
 
     API_URL?action=updatepass&api_key=apiKey&passdataid=passDataId
@@ -154,13 +483,87 @@ __Request Example:__
         <HEADERVALUE1>100C</HEADERVALUE1>
         <SECLABEL1>Date</SECLABEL1>
         <SECVALUE1>3rd July, 2013</SECVALUE1>
-        <BACKVALUE4>Important - Change</BACKVALUE4>
+        <BACKLABEL4>Important - Change</BACKLABEL4>
         <BACKVALUE4>New ticket issued. Schedule preponed by one day.</BACKVALUE4>
         <RELLATITUDE2>42.347888</RELLATITUDE2>
         <RELLONGITUDE2>-71.087903</RELLONGITUDE2>
         <RELTEXT2>Event at HYNES CONVENTION CENTRE</RELTEXT2>
     </PASSDATA>    
 </REQUEST>
+```
+
+```xml
+<element name="REQUEST">
+	<element name="ACTION">
+		</text>
+	</element>
+	<element name="API_KEY">
+		</text>
+	</element>
+	<element name="PASSDATAID">
+		</text>
+	</element>
+	<element name="PASSDATA">
+	    <optional>
+            <element name="THUMBNAILURL">
+                </text>
+            </element>
+        </optional>
+        <element name="BARCODEVALUE">
+            </text>
+        </element>
+        <optional>
+            <element name="BARCODETEXT">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="HEADERLABEL1">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="HEADERVALUE1">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="SECLABEL1">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="SECVALUE1">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="BACKLABEL4">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="BACKVALUE4">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="RELLATITUDE2">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="RELLONGITUDE2">
+                </text>
+            </element>
+        </optional>
+        <optional>
+            <element name="RELTEXT2">
+                </text>
+            </element>
+        </optional>
+    </element>
+</element>
 ```
 
 __Response Example: Success__
@@ -172,6 +575,20 @@ __Response Example: Success__
 </RESPONSE>
 ```
 
+```xml
+<element name="RESPONSE">
+	<element name="STATUS">
+		</text>
+	</element>
+	<element name="PASSDATAID">
+		</text>
+	</element>
+	<element name="UPDATESTATUSID">
+		</text>
+	</element>
+</element>
+```
+
 __Response Example: Failure__
 ```xml
 <RESPONSE>
@@ -179,4 +596,18 @@ __Response Example: Failure__
     <ERRORCODE>E809</ERRORCODE>
     <ERRORINFO>Pass was not updated. Internal error occured.</ERRORINFO>
 </RESPONSE>
+```
+
+```xml
+<element name="RESPONSE">
+	<element name="STATUS">
+		</text>
+	</element>
+	<element name="ERRORCODE">
+		</text>
+	</element>
+	<element name="ERRORINFO">
+		</text>
+	</element>
+</element>
 ```
