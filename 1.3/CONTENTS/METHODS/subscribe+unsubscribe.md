@@ -8,7 +8,7 @@ This API will subscribe or unsubscribe users to a particular campaign. Once a us
 __Request: subscribe__
 ```xml
 <REQUEST>
-  <ACTION>subscribe</ACTION>
+	<ACTION>subscribe</ACTION>
     <API_KEY>API KEY</API_KEY>
     <CAMPAIGNID>Campaign ID</CAMPAIGNID>
     <MOBILE>Number to subscribe</MOBILE>
@@ -25,6 +25,54 @@ __Request: subscribe__
 </REQUEST>
 ```
 
+```xml
+<element name="REQUEST">
+	<element name="ACTION">
+		</text>
+	</element>
+	<element name="API_KEY">
+		</text>
+	</element>
+	<element name="CAMPAIGNID">
+		</text>
+	</element>
+	<element name="MOBILE">
+		</text>
+	</element>
+	<element name="DATA">
+		<element name="FIRST_NAME">
+			</text>
+		</element>
+		<element name="LAST_NAME">
+			</text>
+		</element>
+		<element name="GENDER">
+			</text>
+		</element>
+		...
+	</element>
+	<optional>
+		<element name="NOTIFY">
+			</text>
+		</element>
+	</optional>
+	<optional>
+		<element name="SPID">
+			</text>
+		</element>
+	</optional>
+	<optional>
+		<element name="CTA">
+			<optional>
+				<element name="TIMEZONE">
+					</text>
+				</element>
+			</optional>
+		</element>
+	</optional>
+</element>
+```
+
 __Request: unsubscribe__
 ```xml
 <REQUEST>
@@ -34,6 +82,28 @@ __Request: unsubscribe__
     <MOBILE>Number to unsubscribe</MOBILE>
     <NOTIFY>'yes/no' on whether to notify user on opt-out</NOTIFY>
 </REQUEST>
+```
+
+```xml
+<element name="REQUEST">
+	<element name="ACTION">
+		</text>
+	</element>
+	<element name="API_KEY">
+		</text>
+	</element>
+	<element name="CAMPAIGNID">
+		</text>
+	</element>
+	<element name="MOBILE">
+		</text>
+	</element>
+	<optional>
+		<element name="NOTIFY">
+			</text>
+		</element>
+	</optional>
+</element>
 ```
 
 __Request Parameters:__
@@ -64,8 +134,53 @@ XML:
         <PET>Dog</PET>
     </DATA>   
     <NOTIFY>no</NOTIFY>
-    <CTA>no</ CTA>
+    <CTA>no</CTA>
 </REQUEST>
+```
+
+```xml
+<element name="REQUEST">
+	<element name="ACTION">
+		</text>
+	</element>
+	<element name="API_KEY">
+		</text>
+	</element>
+	<element name="CAMPAIGNID">
+		</text>
+	</element>
+	<element name="MOBILE">
+		</text>
+	</element>
+	<element name="DATA">
+		<element name="FIRST_NAME">
+			</text>
+		</element>
+		<element name="LAST_NAME">
+			</text>
+		</element>
+		<element name="AGE">
+			</text>
+		</element>
+		<element name="PET">
+			</text>
+		</element>
+	</element>
+	<optional>
+		<element name="NOTIFY">
+			</text>
+		</element>
+	</optional>
+	<optional>
+		<element name="CTA">
+			<optional>
+				<element name="TIMEZONE">
+					</text>
+				</element>
+			</optional>
+		</element>
+	</optional>
+</element>
 ```
 
 GET:
@@ -83,6 +198,21 @@ __Response Example: Success__
 </RESPONSE>
 ```
 
+```xml
+<element name="RESPONSE">
+	<element name="STATUS">
+		</text>
+	</element>
+	<element name="CAMPAIGNID">
+		</text>
+	</element>
+	<element name="MOBILE">
+		</text>
+	</element>
+</element>
+```
+
+
 __Response Example: Failure__
 ```xml
 <RESPONSE>
@@ -90,6 +220,20 @@ __Response Example: Failure__
     <ERRORCODE>E903</ERRORCODE>
     <ERRORINFO> Invalid CAMPAIGNID </ERRORINFO>
 </RESPONSE>
+```
+
+```xml
+<element name="RESPONSE">
+	<element name="STATUS">
+		</text>
+	</element>
+	<element name="ERRORCODE">
+		</text>
+	</element>
+	<element name="ERRORINFO">
+		</text>
+	</element>
+</element>
 ```
 
 __Postback Notifications__  
@@ -107,6 +251,31 @@ __On subscribe:__
 </NOTIFICATION>
 ```
 
+```xml
+<element name="NOTIFICATION">
+    <attribute name="ID">
+        </text>
+    </attribute>
+    <attribute name="CREATED">
+        </text>
+    </attribute>
+	<element name="ORIGIN">
+		</text>
+	</element>
+	<element name="CODE">
+		</text>
+	</element>
+	<element name="BODY">
+	    <element name="MOBILE">
+	        </text>
+        </element>
+        <element name="CAMPAIGNID">
+	        </text>
+        </element>
+	</element>
+</element>
+```
+
 __On unsubscribe:__
 ```xml
 <NOTIFICATION id="325" created="2011-01-01 20:09:12.975911-04">
@@ -117,4 +286,29 @@ __On unsubscribe:__
         <CAMPAIGNID>1116</CAMPAIGNID>
     </BODY>
 </NOTIFICATION>
+```
+
+```xml
+<element name="NOTIFICATION">
+    <attribute name="ID">
+        </text>
+    </attribute>
+    <attribute name="CREATED">
+        </text>
+    </attribute>
+	<element name="ORIGIN">
+		</text>
+	</element>
+	<element name="CODE">
+		</text>
+	</element>
+	<element name="BODY">
+	    <element name="MOBILE">
+	        </text>
+        </element>
+        <element name="CAMPAIGNID">
+	        </text>
+        </element>
+	</element>
+</element>
 ```
