@@ -15,6 +15,22 @@ __Request: XML__
 ```
 
 ```xml
+<element name="REQUEST">
+	<zeroOrMore>
+		<element name="ACTION">
+			</text>
+		</element>
+		<element name="API_KEY">
+			</text>
+		</element>
+		<element name="PASSTEMPLATEID">
+			</text>
+		</element>
+	</zeroOrMore>
+</element>
+```
+
+```xml
 <REQUEST>
     <ACTION>getPassTemplate</ACTION>
     <API_KEY>apiKey</API_KEY>
@@ -23,11 +39,43 @@ __Request: XML__
 ```
 
 ```xml
+<element name="REQUEST">
+	<zeroOrMore>
+		<element name="ACTION">
+			</text>
+		</element>
+		<element name="API_KEY">
+			</text>
+		</element>
+		<element name="MMSID">
+			</text>
+		</element>
+	</zeroOrMore>
+</element>
+```
+
+```xml
 <REQUEST>
     <ACTION>getPassTemplate</ACTION>
     <API_KEY>apiKey</API_KEY>
     <EMAILID>emailId</EMAILID>
 </REQUEST>
+```
+
+```xml
+<element name="REQUEST">
+	<zeroOrMore>
+		<element name="ACTION">
+			</text>
+		</element>
+		<element name="API_KEY">
+			</text>
+		</element>
+		<element name="EMAILID">
+			</text>
+		</element>
+	</zeroOrMore>
+</element>
 ```
 
 __Request: GET__
@@ -55,6 +103,22 @@ __Request Example:__
     <API_KEY>qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ</API_KEY>
     <PASSTEMPLATEID>234</PASSTEMPLATEID>
 </REQUEST>
+```
+
+```xml
+<element name="REQUEST">
+	<zeroOrMore>
+		<element name="ACTION">
+			</text>
+		</element>
+		<element name="API_KEY">
+			</text>
+		</element>
+		<element name="PASSTEMPLATEID">
+			</text>
+		</element>
+	</zeroOrMore>
+</element>
 ```
 
 __Response Example: Success__
@@ -88,6 +152,86 @@ __Response Example: Success__
 </RESPONSE>
 ```
 
+```xml
+<element name="RESPONSE">
+	<zeroOrMore>
+		<element name="STATUS">
+			</text>
+		</element>
+		<element name="PASSTEMPLATEID">
+			</text>
+		</element>
+		<element name="PASSTEMPLATE">
+			<zeroOrMore>
+			    <element name="PASSNAME">
+                    </text>
+                </element>
+                <element name="PASSTYPE">
+                    </text>
+                </element>
+                <element name="ORGANIZATION">
+                    </text>
+                </element>
+                <element name="DESCRIPTION">
+                    </text>
+                </element>
+                <element name="BARCODEVALUE">
+                    </text>
+                </element>
+                <element name="BARCODETEXT">
+                    </text>
+                </element>
+                <element name="HEADERFIELDS">
+                    </text>
+                </element>
+                <element name="HEADERLABEL1">
+                    </text>
+                </element>
+                <element name="HEADERVALUE1">
+                    </text>
+                </element>
+                <element name="PRIMARYFIELDS">
+                    </text>
+                </element>
+                <element name="PRIMARYLABEL1">
+                    </text>
+                </element>
+                <element name="PRIMARYVALUE1">
+                    </text>
+                </element>
+                <element name="SECFIELDS">
+                    </text>
+                </element>
+                <element name="SECLABEL1">
+                    </text>
+                </element>
+                <element name="SECVALUE1">
+                    </text>
+                </element>
+                <element name="AUXFIELDS">
+                    </text>
+                </element>
+                <element name="AUXLABEL1">
+                    </text>
+                </element>
+                <element name="AUXVALUE1">
+                    </text>
+                </element>
+                <element name="BACKFIELDS">
+                    </text>
+                </element>
+                <element name="BACKLABEL1">
+                    </text>
+                </element>
+                <element name="BACKVALUE1">
+                    </text>
+                </element>
+            </zeroOrMore>
+        </element>
+	</zeroOrMore>
+</element>
+```
+
 __Response Example: Failure__
 ```xml
 <RESPONSE>
@@ -96,3 +240,20 @@ __Response Example: Failure__
     <ERRORINFO>Invalid 'PassTemplateID'. Pass template is either deleted or do not belong to this user</ERRORINFO>
 </RESPONSE>
 ```
+
+```xml
+<element name="RESPONSE">
+	<zeroOrMore>
+		<element name="STATUS">
+			</text>
+		</element>
+		<element name="ERRORCODE">
+			</text>
+		</element>
+		<element name="ERRORINFO">
+			</text>
+		</element>
+	</zeroOrMore>
+</element>
+```
+
