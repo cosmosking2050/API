@@ -32,37 +32,33 @@ __Request:__
 
 ```xml
 <element name="REQUEST">
-	<zeroOrMore>
-		<element name="ACTION">
+	<element name="ACTION">
+		</text>
+	</element>
+	<element name="API_KEY">
+		</text>
+	</element>
+	<element name="EMAILTEMPLATEID">
+		</text>
+	</element>
+	<element name="EMAIL">
+		</text>
+	</element>
+	<element name="CAMPAIGNID">
+		</text>
+	</element>
+	<element name="DATA">
+		<element name="FIRST_NAME">
 			</text>
 		</element>
-		<element name="API_KEY">
+		<element name="LAST_NAME">
 			</text>
 		</element>
-		<element name="EMAILTEMPLATEID">
+		<element name="GENDER">
 			</text>
 		</element>
-		<element name="EMAIL">
-			</text>
-		</element>
-		<element name="CAMPAIGNID">
-			</text>
-		</element>
-		<element name="DATA">
-			<zeroOrMore>
-				<element name="FIRST_NAME">
-					</text>
-				</element>
-				<element name="LAST_NAME">
-					</text>
-				</element>
-				<element name="GENDER">
-					</text>
-				</element>
-				...
-			</zeroOrMore>
-		</element>
-	</zeroOrMore>
+		...
+	</element>
 </element>
 ```
 
@@ -99,39 +95,35 @@ XML:
 
 ```xml
 <element name="REQUEST">
-	<zeroOrMore>
-		<element name="ACTION">
+	<element name="ACTION">
+		</text>
+	</element>
+	<element name="API_KEY">
+		</text>
+	</element>
+	<element name="EMAIL">
+		</text>
+	</element>
+	<element name="EMAILTEMPLATEID">
+		</text>
+	</element>
+	<element name="CAMPAIGNID">
+		</text>
+	</element>
+	<element name="DATA">
+		<element name="FIRST_NAME">
 			</text>
 		</element>
-		<element name="API_KEY">
+		<element name="LAST_NAME">
 			</text>
 		</element>
-		<element name="EMAIL">
+		<element name="AGE">
 			</text>
 		</element>
-		<element name="EMAILTEMPLATEID">
+		<element name="PET">
 			</text>
 		</element>
-		<element name="CAMPAIGNID">
-			</text>
-		</element>
-		<element name="DATA">
-			<zeroOrMore>
-				<element name="FIRST_NAME">
-					</text>
-				</element>
-				<element name="LAST_NAME">
-					</text>
-				</element>
-				<element name="AGE">
-					</text>
-				</element>
-				<element name="PET">
-					</text>
-				</element>
-			</zeroOrMore>
-		</element>
-	</zeroOrMore>
+	</element>
 </element>
 ```
 
@@ -154,23 +146,21 @@ __Response Example: Success__
 
 ```xml
 <element name="RESPONSE">
-	<zeroOrMore>
-		<element name="STATUS">
-			</text>
-		</element>
-		<element name="EMAILTEMPLATEID">
-			</text>
-		</element>
-		<element name="TRACKINGID">
-			</text>
-		</element>
-		<element name="EMAIL">
-			</text>
-		</element>
-		<element name="CAMPAIGNID">
-			</text>
-		</element>
-	</zeroOrMore>
+	<element name="STATUS">
+		</text>
+	</element>
+	<element name="EMAILTEMPLATEID">
+		</text>
+	</element>
+	<element name="TRACKINGID">
+		</text>
+	</element>
+	<element name="EMAIL">
+		</text>
+	</element>
+	<element name="CAMPAIGNID">
+		</text>
+	</element>
 </element>
 ```
 
@@ -188,25 +178,23 @@ __Response Example: Failure__
 
 ```xml
 <element name="RESPONSE">
-	<zeroOrMore>
-		<element name="STATUS">
-			</text>
-		</element>
-		<element name="EMAILTEMPLATEID">
-			</text>
-		</element>
-		<element name="ERRORCODE">
-			</text>
-		</element>
-		<element name="ERRORINFO">
-			</text>
-		</element>
-		<element name="EMAIL">
-			</text>
-		</element>
-		<element name="CAMPAIGNID">
-			</text>
-		</element>
-	</zeroOrMore>
+	<element name="STATUS">
+		</text>
+	</element>
+	<element name="ERRORCODE">
+		</text>
+	</element>
+	<element name="EMAIL">
+		</text>
+	</element>
+	<element name="EMAILTEMPLATEID">
+		</text>
+	</element>
+	<element name="CAMPAIGNID">
+		</text>
+	</element>
+	<element name="ERRORINFO">
+		</text>
+	</element>
 </element>
 ```
