@@ -120,18 +120,20 @@ __Request: XML__
 	<element name="CAMPAIGNID">
 		</text>
 	</element>
-	<element name="DATA">
-		<element name="FIRST_NAME">
-			</text>
+	<optional>
+		<element name="DATA">
+			<element name="FIRST_NAME">
+				</text>
+			</element>
+			<element name="LAST_NAME">
+				</text>
+			</element>
+			<element name="GENDER">
+				</text>
+			</element>
+			...
 		</element>
-		<element name="LAST_NAME">
-			</text>
-		</element>
-		<element name="GENDER">
-			</text>
-		</element>
-		...
-	</element>
+	</optional>
 	<element name="PASSDATA">
 	    <optional>
 	        <element name="CUSTOMPASSID">
@@ -486,7 +488,7 @@ __Request Parameters:__
 
     Mandatory: action, apiKey, email, emailTemplateId, emailCampaignId,
     barcodeValue (if "Barcode=Allowed" && "BarcodeType=Dynamic" && "BarcodeValueSource=Dynamic Value" for Pass Template otherwise IGNORED)
-    Optional: customPassId, thumbnailUrl,
+    Optional: data, customPassId, thumbnailUrl,
     barcodeText (if "Barcode = Allowed" && "Barcode Alternate Text = Dynamic Text" for Pass Template otherwise IGNORED), 
     headerLabel1, headerValue1, 
     primaryLabel1, primaryValue1, 
