@@ -8,10 +8,26 @@ Immediately removes stored MMS inbox content and text files for the specified me
 __Request:__
 ```xml
 <REQUEST>
-  <ACTION>removeMMSInboxMessage</ACTION>
+    <ACTION>removeMMSInboxMessage</ACTION>
     <API_KEY>API KEY</API_KEY>
     <MMSINBOXID>MMS Inbox ID</MMSINBOXID>
 </REQUEST>
+```
+
+```xml
+<element name="REQUEST">
+	<zeroOrMore>
+		<element name="ACTION">
+		    </text>
+		</element>
+        <element name="API_KEY">
+	        </text>
+        </element>
+        <element name="MMSINBOXID">
+	        </text>
+        </element>
+	</zeroOrMore>
+</element>
 ```
 
 __Request Parameters:__
@@ -37,6 +53,22 @@ XML:
 </REQUEST>
 ```
 
+```xml
+<element name="REQUEST">
+	<zeroOrMore>
+		<element name="ACTION">
+		    </text>
+		</element>
+        <element name="API_KEY">
+	        </text>
+        </element>
+        <element name="MMSINBOXID">
+	        </text>
+        </element>
+	</zeroOrMore>
+</element>
+```
+
 GET:
 
     https://secure.skycore.com/API/wxml/1.3/index.php?action=removemmsinboxmessage&api_key=qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ
@@ -50,6 +82,19 @@ __Response Example: Success__
 </RESPONSE>
 ```
 
+```xml
+<element name="RESPONSE">
+	<zeroOrMore>
+		<element name="STATUS">
+			</text>
+		</element>
+		<element name="MMSINBOXID">
+		    </text>
+		</element>
+    </zeroOrMore>
+</element>
+```
+
 __Response Example: Failure__
 ```xml
 <RESPONSE>
@@ -57,4 +102,20 @@ __Response Example: Failure__
     <ERRORCODE>E641</ERRORCODE>
     <ERRORINFO>Invalid MMS Inbox Message ID</ERRORINFO>
 </RESPONSE>
+```
+
+```xml
+<element name="RESPONSE">
+	<zeroOrMore>
+		<element name="STATUS">
+			</text>
+		</element>
+		<element name="ERRORCODE">
+			</text>
+		</element>
+		<element name="ERRORINFO">
+			</text>
+		</element>
+	</zeroOrMore>
+</element>
 ```
