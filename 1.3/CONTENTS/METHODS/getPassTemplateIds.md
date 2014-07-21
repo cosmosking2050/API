@@ -13,6 +13,19 @@ __Request: XML__
 </REQUEST>
 ```
 
+```xml
+<element name="REQUEST">
+	<zeroOrMore>
+		<element name="ACTION">
+			</text>
+		</element>
+		<element name="API_KEY">
+			</text>
+		</element>
+	</zeroOrMore>
+</element>
+```
+
 __Request: GET__
 
     API_URL?action=getpasstemplateids&api_key=apiKey
@@ -38,12 +51,38 @@ __Request Example:__
 </REQUEST>
 ```
 
+```xml
+<element name="REQUEST">
+	<zeroOrMore>
+		<element name="ACTION">
+			</text>
+		</element>
+		<element name="API_KEY">
+			</text>
+		</element>
+	</zeroOrMore>
+</element>
+```
+
 __Response Example: Success__
 ```xml
 <RESPONSE>
     <STATUS>Success</STATUS>
     <PASSTEMPLATEIDS>30011,30234,30634</PASSTEMPLATEIDS>
 </RESPONSE>
+```
+
+```xml
+<element name="RESPONSE">
+	<zeroOrMore>
+		<element name="STATUS">
+			</text>
+		</element>
+		<element name="PASSTEMPLATEIDS">
+		    </text>
+		</element>
+    </zeroOrMore>
+</element>
 ```
 
 __Response Example: Failure__
@@ -53,4 +92,20 @@ __Response Example: Failure__
     <ERRORCODE>E800</ERRORCODE>
     <ERRORINFO>No Pass Templates were created in this account</ERRORINFO>
 </RESPONSE>
+```
+
+```xml
+<element name="RESPONSE">
+	<zeroOrMore>
+		<element name="STATUS">
+			</text>
+		</element>
+		<element name="ERRORCODE">
+			</text>
+		</element>
+		<element name="ERRORINFO">
+			</text>
+		</element>
+	</zeroOrMore>
+</element>
 ```
