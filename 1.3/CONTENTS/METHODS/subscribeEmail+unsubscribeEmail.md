@@ -8,7 +8,7 @@ __Synopsis:__
 __Request: subscribeEmail__
 ```xml
 <REQUEST>
-  <ACTION>subscribeEmail</ACTION>
+    <ACTION>subscribeEmail</ACTION>
     <API_KEY>apiKey</API_KEY>
     <CAMPAIGNID>Campaign ID</CAMPAIGNID>
     <EMAIL>Email address to subscribe</EMAIL>
@@ -22,6 +22,42 @@ __Request: subscribeEmail__
 </REQUEST>
 ```
 
+```xml
+<element name="REQUEST">
+	<element name="ACTION">
+		</text>
+	</element>
+	<element name="API_KEY">
+		</text>
+	</element>
+	<element name="CAMPAIGNID">
+		</text>
+	</element>
+	<element name="EMAIL">
+		</text>
+	</element>
+	<optional>
+    	<element name="DATA">
+    		<element name="FIRST_NAME">
+    			</text>
+    		</element>
+    		<element name="LAST_NAME">
+    			</text>
+    		</element>
+    		<element name="GENDER">
+    			</text>
+    		</element>
+    		...
+    	</element>
+	</optional>
+	<optional>
+		<element name="NOTIFY">
+			</text>
+		</element>
+	</optional>
+</element>
+```
+
 __Request: unsubscribeEmail__
 ```xml
 <REQUEST>
@@ -30,6 +66,23 @@ __Request: unsubscribeEmail__
     <CAMPAIGNID>Campaign ID</CAMPAIGNID>
     <EMAIL>Email address to subscribe</EMAIL>
 </REQUEST>
+```
+
+```xml
+<element name="REQUEST">
+	<element name="ACTION">
+		</text>
+	</element>
+	<element name="API_KEY">
+		</text>
+	</element>
+	<element name="CAMPAIGNID">
+		</text>
+	</element>
+	<element name="EMAIL">
+		</text>
+	</element>
+</element>
 ```
 
 __Request Parameters:__
@@ -63,6 +116,44 @@ XML:
 </REQUEST>
 ```
 
+```xml
+<element name="REQUEST">
+	<element name="ACTION">
+		</text>
+	</element>
+	<element name="API_KEY">
+		</text>
+	</element>
+	<element name="CAMPAIGNID">
+		</text>
+	</element>
+	<element name="EMAIL">
+		</text>
+	</element>
+	<optional>
+    	<element name="DATA">
+    		<element name="FIRST_NAME">
+    			</text>
+    		</element>
+    		<element name="LAST_NAME">
+    			</text>
+    		</element>
+    		<element name="AGE">
+    			</text>
+    		</element>
+            <element name="PET">
+    			</text>
+    		</element>
+    	</element>
+	</optional>
+	<optional>
+		<element name="NOTIFY">
+			</text>
+		</element>
+	</optional>
+</element>
+```
+
 GET:
 
     https://secure.skycore.com/API/wxml/1.3/index.php?action=subscribeemail&api_key=qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ
@@ -77,6 +168,20 @@ __Response Example: Success__
 </RESPONSE>
 ```
 
+```xml
+<element name="RESPONSE">
+	<element name="STATUS">
+		</text>
+	</element>
+	<element name="CAMPAIGNID">
+		</text>
+	</element>
+	<element name="EMAIL">
+		</text>
+	</element>
+</element>
+```
+
 __Response Example: Failure__
 ```xml
 <RESPONSE>
@@ -84,4 +189,18 @@ __Response Example: Failure__
     <ERRORCODE>E912</ERRORCODE>
     <ERRORINFO>Invalid CAMPAIGNID</ERRORINFO>
 </RESPONSE>
+```
+
+```xml
+<element name="RESPONSE">
+	<element name="STATUS">
+		</text>
+	</element>
+	<element name="ERRORCODE">
+		</text>
+	</element>
+	<element name="ERRORINFO">
+		</text>
+	</element>
+</element>
 ```
