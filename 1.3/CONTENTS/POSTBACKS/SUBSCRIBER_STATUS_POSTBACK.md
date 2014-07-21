@@ -35,6 +35,38 @@ This postback notification triggers when a mobile phone number subscribes to a s
 </POSTBACK>
 ```
 
+```xml
+<element name="POSTBACK">
+    <element name="ORIGIN">
+        </text>
+    </element>
+    <element name="CODE">
+        </text>
+    </element>
+    <element name="MOBILE">
+        </text>
+    </element>
+    <element name="CAMPAIGNID">
+        </text>
+    </element>
+    <element name="TIMESTAMP">
+        </text>
+    </element>
+    <element name="SHORTCODE">
+        </text>
+    </element>
+    <element name="CAMPAIGNTITLE">
+        </text>
+    </element>
+    <element name="BRANDNAME">
+        </text>
+    </element>
+    <element name="SOURCE">
+        </text>
+    </element>
+</element>
+```
+
 ### Mobile Unsubscribe
 
 This postback notification triggers when a mobile phone number unsubscribes to a specific campaign.
@@ -66,6 +98,38 @@ This postback notification triggers when a mobile phone number unsubscribes to a
 </POSTBACK>
 ```
 
+```xml
+<element name="POSTBACK">
+    <element name="ORIGIN">
+        </text>
+    </element>
+    <element name="CODE">
+        </text>
+    </element>
+    <element name="MOBILE">
+        </text>
+    </element>
+    <element name="CAMPAIGNID">
+        </text>
+    </element>
+    <element name="TIMESTAMP">
+        </text>
+    </element>
+    <element name="SHORTCODE">
+        </text>
+    </element>
+    <element name="CAMPAIGNTITLE">
+        </text>
+    </element>
+    <element name="BRANDNAME">
+        </text>
+    </element>
+    <element name="SOURCE">
+        </text>
+    </element>
+</element>
+```
+
 ### Email Subscribe
 
 This postback notification triggers when an email address subscribes to a specific campaign.
@@ -87,6 +151,23 @@ This postback notification triggers when an email address subscribes to a specif
 </POSTBACK>
 ```
 
+```xml
+<element name="POSTBACK">
+    <element name="ORIGIN">
+        </text>
+    </element>
+    <element name="CODE">
+        </text>
+    </element>
+    <element name="EMAIL">
+        </text>
+    </element>
+    <element name="CAMPAIGNID">
+        </text>
+    </element>
+</element>
+```
+
 ### Email Unsubscribe
 
 This postback notification triggers when an email address unsubscribes to a specific campaign.
@@ -106,4 +187,21 @@ This postback notification triggers when an email address unsubscribes to a spec
   <EMAIL>info@skycore.com</EMAIL>
   <CAMPAIGNID>89</CAMPAIGNID>
 </POSTBACK>
+```
+
+```xml
+<element name="POSTBACK">
+    <element name="ORIGIN">
+        </text>
+    </element>
+    <element name="CODE">
+        </text>
+    </element>
+    <element name="EMAIL">
+        </text>
+    </element>
+    <element name="CAMPAIGNID">
+        </text>
+    </element>
+</element>
 ```
