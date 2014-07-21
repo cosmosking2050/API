@@ -35,7 +35,6 @@ __Request: XML__
     <DDMTITLE>DDMTitle</DDMTITLE>
     <DDMTEXT>DDMText</DDMTEXT>
     <DDMTIMEOUT>DDMTimeout (in mins)</DDMTIMEOUT>
-    <DEVICE>handsetId</DEVICE>
     <CUSTOMTEXT>
         <VALUE>customText</VALUE>
         <SLIDE>slideId</SLIDE>
