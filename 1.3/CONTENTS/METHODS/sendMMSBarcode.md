@@ -39,7 +39,6 @@ __Request:__
         <DDMTITLE>DDMTitle</DDMTITLE>
     <DDMTEXT>DDMText</DDMTEXT>
     <DDMTIMEOUT>DDMTimeout (in mins)</DDMTIMEOUT>
-    <DEVICE>handsetId</DEVICE>
     <CUSTOMTEXT>
         <VALUE>customText</VALUE>
         <SLIDE>slideId</SLIDE>
@@ -81,7 +80,6 @@ XML:
     <DDMTITLE>We are detecting your handset</DDMTITLE>
         <DDMTEXT>This message is free of charge and will allow us to deliver your content nice and smooth</DDMTEXT>
         <DDMTIMEOUT>10</DDMTIMEOUT>
-        <DEVICE>iPhoneOS</DEVICE>
         <CUSTOMTEXT>
             <VALUE>Hyes Convention Event Ticket</VALUE>
             <SLIDE>1</SLIDE>
