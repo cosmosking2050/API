@@ -33,7 +33,6 @@ __Request:__
     <DDMTITLE>DDM Title</DDMTITLE>
     <DDMTEXT>DDM Body</DDMTEXT>
     <DDMTIMEOUT>DDM Timeout in minutes</DDMTIMEOUT>
-    <DEVICE>HandsetID</DEVICE>
     <CUSTOMTEXT>
         <VALUE>Custom Text for slide</VALUE>
         <SLIDE>Slide ID</SLIDE>
@@ -74,7 +73,6 @@ XML:
         <DDMTITLE>We are detecting your handset</DDMTITLE>
         <DDMTEXT>This message is free of charge and will allow us to deliver your content nice and smooth</DDMTEXT>
         <DDMTIMEOUT>10</DDMTIMEOUT>
-        <DEVICE>iPhoneOS</DEVICE>
         <CUSTOMTEXT>
             <VALUE>My Custom text in first slide</VALUE>
             <SLIDE>1</SLIDE>
