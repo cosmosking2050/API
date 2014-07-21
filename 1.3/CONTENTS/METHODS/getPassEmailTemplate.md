@@ -583,75 +583,119 @@ __Request Example:__
 		</element>
 		<element name="PASSDATA">
 			<zeroOrMore>
-			    <element name="CUSTOMPASSID">
-                    </text>
-                </element>
-                <element name="THUMBNAILURL">
-                    </text>
-                </element>
+			    <optional>
+                    <element name="CUSTOMPASSID">
+                        </text>
+                    </element>
+                </optional>
+			    <optional>
+                    <element name="THUMBNAILURL">
+                        </text>
+                    </element>
+                </optional>
                 <element name="BARCODEVALUE">
                     </text>
                 </element>
-                <element name="BARCODETEXT">
-                    </text>
-                </element>
-                <element name="HEADERLABEL1">
-                    </text>
-                </element>
-                <element name="HEADERVALUE1">
-                    </text>
-                </element>
-                <element name="PRIMARYLABEL1">
-                    </text>
-                </element>
-                <element name="PRIMARYVALUE1">
-                    </text>
-                </element>
-                <element name="SECLABEL1">
-                    </text>
-                </element>
-                <element name="SECVALUE1">
-                    </text>
-                </element>
-                <element name="SECLABEL2">
-                    </text>
-                </element>
-                <element name="SECVALUE2">
-                    </text>
-                </element>
-                <element name="AUXLABEL1">
-                    </text>
-                </element>
-                <element name="AUXVALUE1">
-                    </text>
-                </element>
-                <element name="BACKLABEL1">
-                    </text>
-                </element>
-                <element name="BACKVALUE1">
-                    </text>
-                </element>
-                <element name="BACKLABEL2">
-                    </text>
-                </element>
-                <element name="BACKVALUE2">
-                    </text>
-                </element>
-                <element name="BACKLABEL3">
-                    </text>
-                </element>
-                <element name="BACKVALUE3">
-                    </text>
-                </element>
-                <element name="RELLATITUDE2">
-                    </text>
-                </element>
-                <element name="RELLONGITUDE2">
-                    </text>
-                </element>
-                <element name="RELTEXT2">
-                    </text>
-                </element>
+                <optional>
+                    <element name="BARCODETEXT">
+                        </text>
+                    </element>
+                </optional>
+                <optional>
+                    <element name="HEADERLABEL1">
+                        </text>
+                    </element>
+                </optional>
+                <optional>
+                    <element name="HEADERVALUE1">
+                        </text>
+                    </element>
+                </optional>
+                <optional>
+                    <element name="PRIMARYLABEL1">
+                        </text>
+                     </element>
+                </optional>
+                <optional>
+                    <element name="PRIMARYVALUE1">
+                        </text>
+                    </element>
+                </optional>
+                <optional>
+                    <element name="SECLABEL1">
+                        </text>
+                    </element>
+                </optional>
+                <optional>
+                    <element name="SECVALUE1">
+                        </text>
+                    </element>
+                </optional>
+                <optional>
+                    <element name="SECLABEL2">
+                        </text>
+                    </element>
+                </optional>
+                <optional>
+                    <element name="SECVALUE2">
+                        </text>
+                    </element>
+                </optional>
+                <optional>
+                    <element name="AUXLABEL1">
+                        </text>
+                    </element>
+                </optional>
+                <optional>
+                    <element name="AUXVALUE1">
+                        </text>
+                    </element>
+                </optional>
+                <optional>
+                    <element name="BACKLABEL1">
+                        </text>
+                    </element>
+                </optional>
+                <optional>
+                    <element name="BACKVALUE1">
+                        </text>
+                    </element>
+                </optional>
+                <optional>
+                    <element name="BACKLABEL2">
+                        </text>
+                    </element>
+                </optional>
+                <optional>
+                    <element name="BACKVALUE2">
+                        </text>
+                    </element>
+                </optional>
+                <optional>
+                    <element name="BACKLABEL3">
+                        </text>
+                    </element>
+                </optional>
+                <optional>
+                    <element name="BACKVALUE3">
+                        </text>
+                    </element>
+                </optional>
+                <optional>
+                    <element name="RELLATITUDE2">
+                        </text>
+                    </element>
+                </optional>
+                <optional>
+                    <element name="RELLONGITUDE2">
+                        </text>
+                    </element>
+                </optional>
+                <optional>
+                    <element name="RELTEXT2">
+                        </text>
+                    </element>
+                </optional>
             </zeroOrMore>
         </element>
     </zeroOrMore>
