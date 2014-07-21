@@ -83,9 +83,9 @@ __Response Example: Failure__
 <RESPONSE>
      <STATUS>Failure</STATUS>
      <ERRORCODE>E713</ERRORCODE>
-         <EMAIL>john@email.com</EMAIL>
-         <EMAILTEMPLATEID>1234</EMAILTEMPLATEID>
-         <CAMPAIGNID>5678</CAMPAIGNID>
+     <EMAIL>john@email.com</EMAIL>
+     <EMAILTEMPLATEID>1234</EMAILTEMPLATEID>
+     <CAMPAIGNID>5678</CAMPAIGNID>
      <ERRORINFO>There is billing problem on your account</ERRORINFO>
 </RESPONSE>
 ```
