@@ -9,7 +9,7 @@ This API function creates new email campaign within the account holders account 
 __Request:__
 ```xml
 <REQUEST>
-  <ACTION>createEmailCampaign</ACTION>
+	<ACTION>createEmailCampaign</ACTION>
     <API_KEY>API KEY</API_KEY>
     <CAMPAIGNNAME>Camapign Name</CAMPAIGNNAME>
     <BRANDNAME>Brand name</BRANDNAME>
@@ -19,25 +19,20 @@ __Request:__
 
 ```xml
 <element name="REQUEST">
-    <zeroOrMore>
-        <element name="ACTION">
-            <zeroOrMore>
-                <element name="API_KEY">
-                  </text>
-                </element>
-                <element name="CAMPAIGNNAME">
-                    </text>
-                </element>
-                <element name="BRANDNAME">
-                    <zeroOrMore>
-                        <element name="MAILINGADDRESS">
-                            </text>
-                        </element>
-                    </zeroOrMore>
-                </element>
-            </zeroOrMore>
-        </element>
-    </zeroOrMore>
+	<element name="ACTION">
+		</text>
+	</element>
+	<element name="API_KEY">
+    	</text>
+   	</element>
+   	<element name="CAMPAIGNNAME">
+    	</text>
+    </element>
+    <element name="BRANDNAME">
+    	<element name="MAILINGADDRESS">
+        	</text>
+    	</element>
+    </element>
 </element>
 ```
 
@@ -70,25 +65,20 @@ XML:
 
 ```xml
 <element name="REQUEST">
-    <zeroOrMore>
-        <element name="ACTION">
-            <zeroOrMore>
-                <element name="API_KEY">
-                  </text>
-                </element>
-                <element name="CAMPAIGNNAME">
-                    </text>
-                </element>
-                <element name="BRANDNAME">
-                    <zeroOrMore>
-                        <element name="MAILINGADDRESS">
-                            </text>
-                        </element>
-                    </zeroOrMore>
-                </element>
-            </zeroOrMore>
-        </element>
-    </zeroOrMore>
+	<element name="ACTION">
+		</text>
+	</element>
+	<element name="API_KEY">
+    	</text>
+   	</element>
+   	<element name="CAMPAIGNNAME">
+    	</text>
+    </element>
+    <element name="BRANDNAME">
+    	<element name="MAILINGADDRESS">
+        	</text>
+    	</element>
+    </element>
 </element>
 ```
 
@@ -113,24 +103,20 @@ __Response Example: Success__
 
 ```xml
 <element name="RESPONSE">
-    <zeroOrMore>
-        <element name="STATUS">
-            </text>
-        </element>
-        <element name="CAMPAIGNID">
-            </text>
-        </element>
-        <element name="CAMPAIGNNAME">
-            </text>
-        </element>
-        <element name="BRANDNAME">
-            <zeroOrMore>
-                <element name="MAILINGADDRESS">
-                    </text>
-                </element>
-            </zeroOrMore>
-        </element>
-    </zeroOrMore>
+	<element name="STATUS">
+    	</text>
+    </element>
+    <element name="CAMPAIGNID">
+    	</text>
+	</element>
+	<element name="CAMPAIGNNAME">
+		</text>
+    </element>
+    <element name="BRANDNAME">
+    	<element name="MAILINGADDRESS">
+			</text>
+		</element>
+	</element>
 </element>
 ```
         
@@ -145,16 +131,14 @@ __Response Example: Failure__
 
 ```xml
 <element name="RESPONSE">
-    <zeroOrMore>
-        <element name="STATUS">
-            </text>
-        </element>
-        <element name="ERRORCODE">
-            </text>
-        </element>
-        <element name="ERRORINFO">
-            </text>
-        </element>
-    </zeroOrMore>
+	<element name="STATUS">
+		</text>
+	</element>
+	<element name="ERRORCODE">
+		</text>
+	</element>
+	<element name="ERRORINFO">
+		</text>
+	</element>
 </element>
 ```
