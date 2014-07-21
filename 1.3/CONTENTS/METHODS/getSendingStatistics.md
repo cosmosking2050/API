@@ -17,20 +17,18 @@ __Request:__
 
 ```xml
 <element name="REQUEST">
-	<zeroOrMore>
-		<element name="ACTION">
-			</text>
-		</element>
-		<element name="API_KEY">
-			</text>
-		</element>
-		<element name="START_DATE">
-			</text>
-		</element>
-		<element name="END_DATE">
-			</text>
-		</element>
-	</zeroOrMore>
+	<element name="ACTION">
+		</text>
+	</element>
+	<element name="API_KEY">
+		</text>
+	</element>
+	<element name="START_DATE">
+		</text>
+	</element>
+	<element name="END_DATE">
+		</text>
+	</element>
 </element>
 ```
 
@@ -51,7 +49,7 @@ __Request Example:__
 XML:
 ```xml
 <REQUEST>
-  <ACTION>getSendingStatus</ACTION>
+	<ACTION>getSendingStatus</ACTION>
     <API_KEY>qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ</API_KEY>
     <START_DATE>2010-10-01 12:00:00</START_DATE>
     <END_DATE>2010-10-02 12:00:00</END_DATE>
@@ -60,20 +58,18 @@ XML:
 
 ```xml
 <element name="REQUEST">
-	<zeroOrMore>
-		<element name="ACTION">
-			</text>
-		</element>
-		<element name="API_KEY">
-			</text>
-		</element>
-		<element name="START_DATE">
-			</text>
-		</element>
-		<element name="END_DATE">
-			</text>
-		</element>
-	</zeroOrMore>
+	<element name="ACTION">
+		</text>
+	</element>
+	<element name="API_KEY">
+		</text>
+	</element>
+	<element name="START_DATE">
+		</text>
+	</element>
+	<element name="END_DATE">
+		</text>
+	</element>
 </element>
 ```
 
