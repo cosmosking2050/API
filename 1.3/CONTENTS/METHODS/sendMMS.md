@@ -15,9 +15,7 @@ Prototype:
     <TO>Receivers number</TO>
     <CAMPAIGNREF>CampaignID</CAMPAIGNREF>
     <SUBJECT>MMS Subject</SUBJECT>
-    <CONTENT>
-	    <NAME>Name in MMBox</NAME>
-	    <SEQUENCE>
+    <NAME>Name in MMBox</NAME>
 		    <SLIDE duration="Duration in seconds"> 
 			    <IMAGE>
 				    <URL>URL</URL>
@@ -30,14 +28,13 @@ Prototype:
 		    <SLIDE>
 		    …
 		    </SLIDE>
-	    </SEQUENCE>
-     </CONTENT> 
+    
 </REQUEST>
 ```
 
 __Request Parameters:__
 
-    Mandatory: Action, User, Pass, To, From, Name, Content, Sequence, Slide
+    Mandatory: Action, api_key, To, From, Name, Content, Slide
     Optional: Subject, SPID, Image, Audio, Video, URL, Text, Duration, CampaignRef
 
 __Response Parameters:__
@@ -58,9 +55,7 @@ __Request Example:__
     <SPID>000189</SPID>
     <SUBJECT>The subject</SUBJECT>
     <CAMPAIGNREF>323</CAMPAIGNREF>
-    <CONTENT>
-        <NAME>my fishtank</NAME>
-        <SEQUENCE>
+    <NAME>my fishtank</NAME>
             <SLIDE duration="5">
                 <IMAGE>
                     <URL>http://www.yoursite.com/images/1.jpg</URL>
@@ -70,8 +65,6 @@ __Request Example:__
                 </AUDIO>
                 <TEXT>Here is some text tralalala....</TEXT>
             </SLIDE>
-        </SEQUENCE>
-    </CONTENT>
 </REQUEST>
 ```
 
