@@ -113,9 +113,9 @@ will be reduced to fit handset message size requirements.
 * Slide duration will be overwritten if the file duration exceeds the xml duration.
 * URLs provided MUST contain the full path to the mime files.
 * Slide Duration SHOULD NOT exceed 30 seconds and SHALL NOT exceeds 60 seconds.
-* MMS is delivered to the handset using title: NAME from ACCOUNT, if SUBJECT is not passed.
+* MMS subject is required. 
 * MMS containing audio/video can be used only when audio/video encoding is completed.
-* After submission you will not be given a successful acknowledgement of audio/video encoding when a message is submitted.
+* After submission you will not be given a successful acknowledgement of audio/video encoding when a message is submitted
 * The HTTP status of audio/video encoding after it has been completed will be sent to your Postback URL.
 * Supported Media: TEXT/PLAIN, GIF/JPG/PNG, MP3/WAV, 3GP, MP4, MPEG, MPG, AVI, WMV.
 * There is a maximum source file size for each supported source file submitted.
