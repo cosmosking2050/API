@@ -8,14 +8,13 @@ Sends an MMS defined in the XML containing slides of embedded with video, audio,
 Prototype:
 ```xml
 <REQUEST>
-	<ACTION>sendMMS</ACTION>
-	<USER>Username</USER>
-	<PASS>ea7966f90de2bf520e3f0042053e6ec3</PASS>
-	<FROM>shortcode/longcode</FROM>
-	<SPID>SPID</SPID>
-	<TO>Receivers number</TO>
-    <CAMPAIGNREF>Alert CampaignID</CAMPAIGNREF>
-    <SUBJECT>Subject</SUBJECT>
+    <ACTION>sendMMS</ACTION>
+    <API_KEY>API KEY</API_KEY>
+    <FROM>shortcode</FROM>
+    <SPID>SPID</SPID>
+    <TO>Receivers number</TO>
+    <CAMPAIGNREF>CampaignID</CAMPAIGNREF>
+    <SUBJECT>MMS Subject</SUBJECT>
     <CONTENT>
 	    <NAME>Name in MMBox</NAME>
 	    <SEQUENCE>
@@ -53,15 +52,14 @@ __Request Example:__
 ```xml
 <REQUEST>
     <ACTION>sendMMS</ACTION>
-    <USER>rakowaty</USER>
-    <PASS>ea7966f90de2bf520e3f0042053e6ec3</PASS>
+    <API_KEY>ea7966f90de2bf520e3f0042053e6ec3</API_KEY>
     <TO>15551234888</TO>
     <FROM>60856</FROM>
     <SPID>000189</SPID>
     <SUBJECT>The subject</SUBJECT>
     <CAMPAIGNREF>323</CAMPAIGNREF>
     <CONTENT>
-        <NAME>fishtank</NAME>
+        <NAME>my fishtank</NAME>
         <SEQUENCE>
             <SLIDE duration="5">
                 <IMAGE>
@@ -82,7 +80,7 @@ __Response Example: Success__
 <RESPONSE>
 	<STATUS>Success</STATUS>
 	<TO>15551234888</TO>
-    <MMSID>35674</MMSID>
+        <MMSID>35674</MMSID>
 	<TRACKINGID>MMS_12345</TRACKINGID>
 </RESPONSE>
 ```
