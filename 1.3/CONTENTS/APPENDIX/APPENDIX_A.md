@@ -27,7 +27,6 @@ __KEY TERM DEFINITIONS__
 | EMAILID | The ID(integer) for an email template. |
 | END_DATE | The end date of the sending statistics used in the 'getSendingStatistics' function. The format should be "YYYY-MM-DD hh:mm:ss" (ignoring quotations). |
 | FROM | A valid shortcode or longcode for the sender address(string). When sending to a list of many numbers using the 'sendSavedContent' function and if the 'FROM' value cannot be used for a certain country, then the system will re-write the sender address to use a valid shortcode for those numbers. |
-| HISTORYID | This is a permanent reference number used to indentify the SMS/MMS message sending in our History. The 'HISTORYID' is used in the API reports. |
 | MAILINGADDRESS | This is the physical address that will appear in your email footers. You are required to provide your physical address in accordance with the "CAN-SPAM Act of 2003". Please make sure to include your company name and country in the address when you create a campaign. This field is used when creating an Email campaign. |
 | MMSID | The ID(integer) of a saved MMS. |
 | MMSINBOXID | The ID(integer) of a saved MMS to be removed inside the 'removeMMSInboxContent' function. |
