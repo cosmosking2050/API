@@ -108,7 +108,6 @@ will be reduced to fit handset message size requirements.
 * Slides with image SHALL NOT support video but SHALL support audio.
 * Slides with audio SHALL NOT support video. Slides with video SHALL only support text.
 * Slides with text SHALL support up to 5000 characters in any slide.
-* URLS within the text MAY be replaced by a link shortening URL depending on the API account settings.
 * All slides MAY contain a duration for playback.
 * Default slide duration is 5 seconds.
 * Slide duration will be overwritten if the file duration exceeds the xml duration.
