@@ -79,7 +79,6 @@ When the SMS is sent we will generate a Postback notification.
     <ORIGIN>SMS_MT</ORIGIN>
     <CODE>N201</CODE>
     <BODY>
-    <HISTORYID>236990</HISTORYID>
     <TO>15551234888</TO>
     <TRACKINGID>SMS_12345</TRACKINGID>
     <TIMESTAMP>2011-07-26 10:22:25.262743-04</TIMESTAMP>
@@ -93,7 +92,6 @@ When we get an SMS delivery receipt we will generate another Postback notificati
     <ORIGIN>SMS_MT</ORIGIN>
     <CODE>N201</CODE>
     <BODY>
-    <HISTORYID>236990</HISTORYID>
     <TO>15551234888</TO>
     <TRACKINGID>SMS_12345</TRACKINGID>
     <STATUS PROTOCOL="4" STATUS="0"/>
