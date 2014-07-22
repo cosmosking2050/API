@@ -39,7 +39,7 @@ __KEY TERM DEFINITIONS__
 | PASSDATA |  All the data that goes on the pass(Array). |
 | PASSDATAID | A valid Pass Data Row ID(integer). |
 | PASSTEMPLATEID | Valid Pass Template ID(integer). |
-| SCHEDULEDID | This is a reference ID(integer) for a sending campaign. It is used for every number belonging to that campaign. When campaign sending is processed, the system will generate postback notifications linking SCHEDULEDID with TRACKINGID and HISTORYID. |
+| SCHEDULEDID | This is a reference ID for a sending campaign. It is used for every number belonging to that campaign. When campaign sending is processed, the system will generate postback notifications linking SCHEDULEDID with TRACKINGID and HISTORYID. |
 | SEQUENCE | This encloses all MMS slide presentation data from one or multiple slides (up to a maximum of 8). |
 | SLIDE | This represents a single slide within the MMS sequence the could include IMAGE/URL/TEXT/PIC etc. (There are special rules for slides within the 'saveMMS' special consideration section). |
 | SPID | The carrier ID(integer). See [Appendix E](/1.3/CONTENTS/APPENDIX/APPENDIX_E.md). |
@@ -47,7 +47,7 @@ __KEY TERM DEFINITIONS__
 | TEXT | The SMS message limit is 160 characters(string). |
 | TO | This is the message recipient's phone number in an international format. |
 | TOCAMPAIGN | The ID(integer) of a campaign for which you want to schedule an MMS using the 'sendSavedMMSCampaign' function. |
-| TRACKINGID | On success, the API returns with the tracking ID(integer) to identify sent messages.  On failure, no tracking ID is returned. This is the internal reference number for SMS/MMS sending, it is a temporary ID and (where possible) HISTORYID should be used. Once the message sending is processed you shall receive a postback containing both TRACKINGID and HISTORYID. |
+| TRACKINGID | On success, the API returns with the tracking ID to identify sent messages.  Upon API call failure, no tracking ID is returned.  Once the message sending is processed you shall receive a postback containing TRACKINGID and the message status. |
 | TRANSACTIONID | The ID(integer) that will be encoded into a delivered barcode(string). |
 | TIMEZONE | A time zone abbreviation associated with the phone number used inside the 'subscribe' function. |
 | USER | A valid account username. |
