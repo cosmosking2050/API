@@ -277,7 +277,7 @@ element BATCHES {
                     attribute time { text }
                 }
             } &
-            element XHTML_HANDSETID { text }
+            element MM7_HANDSETID { text }
         }
     }
 }
