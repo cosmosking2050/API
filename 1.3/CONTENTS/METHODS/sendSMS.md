@@ -76,7 +76,7 @@ __Postback Notification:__
 When the SMS is sent we will generate a Postback notification.
 ```xml
 <?xml version='1.0'?>
-<POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation ="https://www.skycore.com/platform/schema/postback.xsd" >
+<POSTBACK>
     <ORIGIN>SMS_MT</ORIGIN>
     <CODE>N201</CODE>
     <STATUS>Message Sent</STATUS>
@@ -92,7 +92,7 @@ When the SMS is sent we will generate a Postback notification.
 When we get an SMS delivery receipt we will generate another Postback notification. Not all carriers provide SMS delivery receipts.
 ```xml
 <?xml version='1.0'?>
-<POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation ="https://www.skycore.com/platform/schema/postback.xsd" >
+<POSTBACK>
     <ORIGIN>SMS_MT</ORIGIN>
     <CODE>N202</CODE>
     <STATUS>Message Sent/Delivered</STATUS>
