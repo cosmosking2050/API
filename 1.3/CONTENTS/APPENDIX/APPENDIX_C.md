@@ -17,7 +17,7 @@ All data related to sending one SMS are encapsulated inside the *&lt;TEXT&gt;* t
 - *id* - The sending id in our history.
 - *to* - Receiver's phone number.
 - *carrier* - Receiver's carrier.
-- *from* - The shortcode message that was sent from.
+- *from* - The shortcode message that was sent fromerro.
 - *body* - Text sent to the number.
 
 
@@ -620,8 +620,7 @@ element SENDING_LIST {
                 attribute time { text }
             } &
             element ERROR {
-                attribute gw { text } &
-                attribute net { text } &
+                attribute info { text } &
                 attribute time { text }
             }
         }
