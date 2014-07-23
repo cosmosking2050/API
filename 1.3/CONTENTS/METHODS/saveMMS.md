@@ -91,7 +91,7 @@ xsi:noNamespaceSchemaLocation ="http://www.skycore.com/platform/schema/postback.
     <ORIGIN>MMS_MT</ORIGIN>
     <CODE>E002</CODE>
     <MMSID>35674</MMSID>
-    <AUDIONAME>1.mp3</AUDIONAME>
+    <AUDIONAME>http://www.yoursite.com/audio/1.mp3</AUDIONAME>
 </POSTBACK>
 ```
 
