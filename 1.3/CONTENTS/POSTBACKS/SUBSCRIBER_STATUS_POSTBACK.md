@@ -23,48 +23,30 @@ This postback notification triggers when a mobile phone number subscribes to a s
 ```xml
 <?xml version='1.0'?>
 <POSTBACK>
-  <ORIGIN>SUB</ORIGIN>
-  <CODE>N301</CODE>
-  <MOBILE>16501112222</MOBILE>
-  <CAMPAIGNID>1478</CAMPAIGNID>
-  <TIMESTAMP>2014-07-02 14:32:23-04</TIMESTAMP>
-  <SHORTCODE>123456</SHORTCODE>
-  <CAMPAIGNTITLE>My Campaign Name</CAMPAIGNTITLE>
-  <BRANDNAME>My Brand Name</BRANDNAME>
-  <SOURCE>API</SOURCE>
+    <ORIGIN>SUB</ORIGIN>
+    <CODE>N301</CODE>
+    <MOBILE>16501112222</MOBILE>
+    <CAMPAIGNID>1478</CAMPAIGNID>
+    <TIMESTAMP>2014-07-02 14:32:23-04</TIMESTAMP>
+    <SHORTCODE>123456</SHORTCODE>
+    <CAMPAIGNTITLE>My Campaign Name</CAMPAIGNTITLE>
+    <BRANDNAME>My Brand Name</BRANDNAME>
+    <SOURCE>API</SOURCE>
 </POSTBACK>
 ```
 
 ```xml
-<element name="POSTBACK">
-    <element name="ORIGIN">
-        </text>
-    </element>
-    <element name="CODE">
-        </text>
-    </element>
-    <element name="MOBILE">
-        </text>
-    </element>
-    <element name="CAMPAIGNID">
-        </text>
-    </element>
-    <element name="TIMESTAMP">
-        </text>
-    </element>
-    <element name="SHORTCODE">
-        </text>
-    </element>
-    <element name="CAMPAIGNTITLE">
-        </text>
-    </element>
-    <element name="BRANDNAME">
-        </text>
-    </element>
-    <element name="SOURCE">
-        </text>
-    </element>
-</element>
+element POSTBACK {
+    element ORIGIN { text } &
+    element CODE { text } &
+    element MOBILE { text } &
+    element CAMPAIGNID { text } &
+    element TIMESTAMP { text } &
+    element SHORTCODE { text } &
+    element CAMPAIGNTITLE { text } &
+    element BRANDNAME { text } &
+    element SOURCE { text }
+}
 ```
 
 ### Mobile Unsubscribe
@@ -86,48 +68,30 @@ This postback notification triggers when a mobile phone number unsubscribes to a
 ```xml
 <?xml version='1.0'?>
 <POSTBACK>
-  <ORIGIN>SUB</ORIGIN>
-  <CODE>N302</CODE>
-  <MOBILE>16502424956</MOBILE>
-  <CAMPAIGNID>1478</CAMPAIGNID>
-  <TIMESTAMP>2014-07-02 14:32:23-04</TIMESTAMP>
-  <SHORTCODE>123456</SHORTCODE>
-  <CAMPAIGNTITLE>My Campaign Name</CAMPAIGNTITLE>
-  <BRANDNAME>My Brand Name</BRANDNAME>
-  <SOURCE>API</SOURCE>  
+    <ORIGIN>SUB</ORIGIN>
+    <CODE>N302</CODE>
+    <MOBILE>16502424956</MOBILE>
+    <CAMPAIGNID>1478</CAMPAIGNID>
+    <TIMESTAMP>2014-07-02 14:32:23-04</TIMESTAMP>
+    <SHORTCODE>123456</SHORTCODE>
+    <CAMPAIGNTITLE>My Campaign Name</CAMPAIGNTITLE>
+    <BRANDNAME>My Brand Name</BRANDNAME>
+    <SOURCE>API</SOURCE>  
 </POSTBACK>
 ```
 
 ```xml
-<element name="POSTBACK">
-    <element name="ORIGIN">
-        </text>
-    </element>
-    <element name="CODE">
-        </text>
-    </element>
-    <element name="MOBILE">
-        </text>
-    </element>
-    <element name="CAMPAIGNID">
-        </text>
-    </element>
-    <element name="TIMESTAMP">
-        </text>
-    </element>
-    <element name="SHORTCODE">
-        </text>
-    </element>
-    <element name="CAMPAIGNTITLE">
-        </text>
-    </element>
-    <element name="BRANDNAME">
-        </text>
-    </element>
-    <element name="SOURCE">
-        </text>
-    </element>
-</element>
+element POSTBACK {
+    element ORIGIN { text } &
+    element CODE { text } &
+    element MOBILE { text } &
+    element CAMPAIGNID { text } &
+    element TIMESTAMP { text } &
+    element SHORTCODE { text } &
+    element CAMPAIGNTITLE { text } &
+    element BRANDNAME { text } &
+    element SOURCE { text }
+}
 ```
 
 ### Email Subscribe
@@ -152,20 +116,12 @@ This postback notification triggers when an email address subscribes to a specif
 ```
 
 ```xml
-<element name="POSTBACK">
-    <element name="ORIGIN">
-        </text>
-    </element>
-    <element name="CODE">
-        </text>
-    </element>
-    <element name="EMAIL">
-        </text>
-    </element>
-    <element name="CAMPAIGNID">
-        </text>
-    </element>
-</element>
+element POSTBACK {
+    element ORIGIN { text } &
+    element CODE { text } &
+    element EMAIL { text } &
+    element CAMPAIGNID { text }
+}
 ```
 
 ### Email Unsubscribe
@@ -190,18 +146,10 @@ This postback notification triggers when an email address unsubscribes to a spec
 ```
 
 ```xml
-<element name="POSTBACK">
-    <element name="ORIGIN">
-        </text>
-    </element>
-    <element name="CODE">
-        </text>
-    </element>
-    <element name="EMAIL">
-        </text>
-    </element>
-    <element name="CAMPAIGNID">
-        </text>
-    </element>
-</element>
+element POSTBACK {
+    element ORIGIN { text } &
+    element CODE { text } &
+    element EMAIL { text } &
+    element CAMPAIGNID { text }
+}
 ```

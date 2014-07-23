@@ -33,30 +33,14 @@ You can set your pass postback URL seperately from other postback notifications.
 ```
 
 ```xml
-<element name="POSTBACK">
-    <element name="ORIGIN">
-        </text>
-    </element>
-    <element name="STATUSCODE">
-        </text>
-    </element>
-    <element name="REFERENCEDBY">
-        </text>
-    </element>
-    <element name="REFERENCEVALUE">
-        </text>
-    </element>
-    <element name="CUSTOMPASSID">
-        </text>
-    </element>
-    <element name="PASSDATAID">
-        </text>
-    </element>
-    <element name="SERIALNUMBER">
-        </text>
-    </element>
-    <element name="TIMESTAMP">
-        </text>
-    </element>
-</element>
+element POSTBACK {
+    element ORIGIN { text } &
+    element STATUSCODE { text } &
+    element REFERENCEDBY { text } &
+    element REFERENCEVALUE { text } &
+    element CUSTOMPASSID { text } &
+    element PASSDATAID { text } &
+    element SERIALNUMBER { text } &
+    element TIMESTAMP { text }
+}
 ```

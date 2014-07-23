@@ -27,40 +27,26 @@ This postback notifies you when an SMS MO is received.
 
 ```xml
 <POSTBACK>
-  <ORIGIN>SMS_MO</ORIGIN>
-  <CODE>N211</CODE>
-  <FROM>15552312102</FROM>
-  <TO>86717</TO>
-  <TEXT>STOP</TEXT>
-  <RECEIVED>2011-09-28T17:31:02-04:00</RECEIVED>
-  <TRANSACTIONID>511XG-02294-192SA-482H8</TRANSACTIONID>
+    <ORIGIN>SMS_MO</ORIGIN>
+    <CODE>N211</CODE>
+    <FROM>15552312102</FROM>
+    <TO>86717</TO>
+    <TEXT>STOP</TEXT>
+    <RECEIVED>2011-09-28T17:31:02-04:00</RECEIVED>
+    <TRANSACTIONID>511XG-02294-192SA-482H8</TRANSACTIONID>
 </POSTBACK>
 ```
 
 ```xml
-<element name="POSTBACK">
-    <element name="ORIGIN">
-        </text>
-    </element>
-    <element name="CODE">
-        </text>
-    </element>
-    <element name="FROM">
-        </text>
-    </element>
-    <element name="TO">
-        </text>
-    </element>
-    <element name="TEXT">
-        </text>
-    </element>
-    <element name="RECEIVED">
-        </text>
-    </element>
-    <element name="TRANSACTIONID">
-        </text>
-    </element>
-</element>
+element POSTBACK {
+    element ORIGIN { text } &
+    element CODE { text } &
+    element FROM { text } &
+    element TO { text } &
+    element TEXT { text } &
+    element RECEIVED { text } &
+    element TRANSACTIONID { text }
+}
 ```
 
 ### The MMS MO
@@ -91,45 +77,25 @@ This postback notifies you when an MMS MO is received.
     <SPID>0001470</SPID>
     <TIMESTAMP>2014-02-03T11:19:49-05:00</TIMESTAMP>
     <CONTENT>
-      <FILE>URL of Content Here</FILE>
-      <FILE>URL of Content Here</FILE>
-      <FILE>URL of Content Here</FILE>
+        <FILE>URL of Content Here</FILE>
+        <FILE>URL of Content Here</FILE>
+        <FILE>URL of Content Here</FILE>
     </CONTENT>
 </POSTBACK>
 ```
 
 ```xml
-<element name="POSTBACK">
-    <element name="ORIGIN">
-        </text>
-    </element>
-    <element name="CODE">
-        </text>
-    </element>
-    <element name="FROM">
-        </text>
-    </element>
-    <element name="TO">
-        </text>
-    </element>
-    <element name="KEYWORD">
-        </text>
-    </element>
-    <element name="TRACKINGID">
-        </text>
-    </element>
-    <element name="SPID">
-        </text>
-    </element>
-    <element name="TIMESTAMP">
-        </text>
-    </element>
-    <element name="CONTENT">
-        <oneOrMore>
-        	<element name="FILE">
-        		</text>
-      		</element>
-  		</oneOrMore>
-    </element>
-</element>
+element POSTBACK {
+    element ORIGIN { text } &
+    element CODE { text } &
+    element FROM { text } &
+    element TO { text } &
+    element KEYWORD { text } &
+    element TRACKINGID { text } &
+    element SPID { text } &
+    element TIMESTAMP { text } &
+    element CONTENT {
+        element FILE { text }
+    }
+}
 ```
