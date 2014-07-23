@@ -74,25 +74,25 @@ __Postback Notifications__
 When an MMS is saved, the system will generate a Postback notification and unlock MMS for further use. If an MMS contain audio/video, Postback will be sent when the encoding of the MMS audio/video is finished, otherwise Postback notification will be sent instantly. Below is an example of Postback notification when an MMS is saved successfully:
 
 ```xml
-<NOTIFICATION ID="325" CREATED="2011-01-01 20:09:12.975911-04">
+<?xml version='1.0'?>
+<POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation ="http://www.skycore.com/platform/schema/postback.xsd">
     <ORIGIN>MMS_MT</ORIGIN>
     <CODE>N003</CODE>
-    <BODY>
-        <MMSID>35674</MMSID>
-    </BODY>
-</NOTIFICATION>
+    <MMSID>35674</MMSID>
+</POSTBACK>
 ```
 
 If there was an error encoding the MMS audio/video, the system will generate a notification:
 ```xml
-<NOTIFICATION ID="325" CREATED="2011-01-01 20:09:12.975911-04">
+<?xml version='1.0'?>
+<POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation ="http://www.skycore.com/platform/schema/postback.xsd">
     <ORIGIN>MMS_MT</ORIGIN>
-        <CODE>E002</CODE>
-        <BODY>
-            <MMSID>35674</MMSID>
-            <AUDIONAME>sample.mp3</AUDIONAME>
-        </BODY>
-</NOTIFICATION>
+    <CODE>E002</CODE>
+    <MMSID>35674</MMSID>
+    <AUDIONAME>1.mp3</AUDIONAME>
+</POSTBACK>
 ```
 
 __Special Considerations for saveMMS:__  
