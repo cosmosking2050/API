@@ -198,71 +198,53 @@ __Postback Notifications__
 When an MMS is saved, the system will generate a Postback notification and unlock MMS for further use. If an MMS contain audio/video, Postback will be sent when the encoding of the MMS audio/video is finished, otherwise Postback notification will be sent instantly. Below is an example of Postback notification when an MMS is saved successfully:
 
 ```xml
-<NOTIFICATION ID="325" CREATED="2011-01-01 20:09:12.975911-04">
+<?xml version='1.0'?>
+<POSTBACK>
     <ORIGIN>MMS_MT</ORIGIN>
     <CODE>N003</CODE>
-    <BODY>
-        <MMSID>35674</MMSID>
-    </BODY>
-</NOTIFICATION>
+    <MMSID>35674</MMSID>
+</POSTBACK>
 ```
 
 ```xml
-<element name="NOTIFICATION">
-    <attribute name="ID">
+<element name="POSTBACK">
+    <element name="ORIGIN">
         </text>
-    </attribute>
-    <attribute name="CREATED">
+    </element>
+    <element name="CODE">
         </text>
-    </attribute>
-	<element name="ORIGIN">
-		</text>
-	</element>
-	<element name="CODE">
-		</text>
-	</element>
-	<element name="BODY">
-	    <element name="MMSID">
-	        </text>
-        </element>
-	</element>
+    </element>
+    <element name="MMSID">
+        </text>
+    </element>
 </element>
 ```
 
 If there was an error encoding the MMS audio/video, the system will generate a notification:
 ```xml
-<NOTIFICATION ID="325" CREATED="2011-01-01 20:09:12.975911-04">
+<?xml version='1.0'?>
+<POSTBACK>
     <ORIGIN>MMS_MT</ORIGIN>
     <CODE>E002</CODE>
-    <BODY>
-        <MMSID>35674</MMSID>
-        <AUDIONAME>sample.mp3</AUDIONAME>
-    </BODY>
-</NOTIFICATION>
+    <MMSID>35674</MMSID>
+    <AUDIONAME>http://www.yoursite.com/audio/1.mp3</AUDIONAME>
+</POSTBACK>
 ```
 
 ```xml
-<element name="NOTIFICATION">
-    <attribute name="ID">
-        </text>
-    </attribute>
-    <attribute name="CREATED">
-        </text>
-    </attribute>
+<element name="POSTBACK">
 	<element name="ORIGIN">
 		</text>
 	</element>
 	<element name="CODE">
 		</text>
 	</element>
-	<element name="BODY">
-	    <element name="MMSID">
-	        </text>
-        </element>
-        <element name="AUDIONAME">
-	        </text>
-        </element>
-	</element>
+    <element name="MMSID">
+        </text>
+    </element>
+    <element name="AUDIONAME">
+        </text>
+    </element>
 </element>
 ```
 
@@ -279,15 +261,14 @@ will be reduced to fit handset message size requirements.
 * Slides with image SHALL NOT support video but SHALL support audio.
 * Slides with audio SHALL NOT support video. Slides with video SHALL only support text.
 * Slides with text SHALL support up to 5000 characters in any slide.
-* URLS within the text MAY be replaced by a link shortening URL depending on the API account settings.
 * All slides MAY contain a duration for playback.
 * Default slide duration is 5 seconds.
 * Slide duration will be overwritten if the file duration exceeds the xml duration.
 * URLs provided MUST contain the full path to the mime files.
 * Slide Duration SHOULD NOT exceed 30 seconds and SHALL NOT exceeds 60 seconds.
-* MMS is delivered to the handset using title: NAME from ACCOUNT, if SUBJECT is not passed.
+* MMS subject is required. 
 * MMS containing audio/video can be used only when audio/video encoding is completed.
-* After submission you will not be given a successful acknowledgement of audio/video encoding when a message is submitted.
+* After submission you will not be given a successful acknowledgement of audio/video encoding when a message is submitted
 * The HTTP status of audio/video encoding after it has been completed will be sent to your Postback URL.
 * Supported Media: TEXT/PLAIN, GIF/JPG/PNG, MP3/WAV, 3GP, MP4, MPEG, MPG, AVI, WMV.
 * There is a maximum source file size for each supported source file submitted.

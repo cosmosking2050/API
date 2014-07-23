@@ -17,12 +17,6 @@ DDMTITLE - this is the DDM title
 DDMTEXT - this is the DDM body  
 DDMTIMEOUT - when we send DDM we wait for the Delivery Report which contain the handset profile. In some cases we don't receive it or it takes very long (handset turned off or out of range). This variable tells the system how long should it wait for DDM Delivery Report before sending actual content using Default parameters. Default value of this parameter is 5 minutes.
 
-This API allow you to pass DeviceId/HandsetId inside DEVICE parameter. We will store this information and (if HandsetID is recognized by our system) use handset profile to adapt content for current and future MMS delivery.  
-NOTE: Once we receive Delivery Receipt with HandsetId we overwrite current value assigned to that number, we consider HandsetId from Delivery Receipt more up-to-date.  
-DEVICE parameter can be used with DDM as a fallback mechanism. If HandsetId passed in API call is not recognized by our system, it will send DDM (if specified in the request) to the handset to detect it. If there was no DDM specified in the request, system will use generic settings for MMS delivery.
-
-On success, it will return the MMSTrackingID. For more info see below for Mandatory/Optional fields and Error codes.
-
 __Request: XML__
 ```xml
 <REQUEST>

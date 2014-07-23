@@ -71,7 +71,6 @@ This postback notifies you when an MMS MO is received.
 | -------- | ----------- |
 | CODE | N401. |
 | ORIGIN | MMS_MO. |
-| NOTIFICATION | SMS sender mobile number. | 
 | FROM | The phone number, including the country code, of the sender. | 
 | TO | The recipient shortcode or longcode. | 
 | KEYWORD | If a keyword was recognized in the first word of the subject or the first word body of the message and it matched to a MMS Inbox Keyword campaign that keyword will be passed in this node. | 
@@ -83,7 +82,6 @@ This postback notifies you when an MMS MO is received.
 
 ```xml
 <POSTBACK>
-  <NOTIFICATION>
     <ORIGIN>MMS_MO</ORIGIN>
     <CODE>N401</CODE>
     <FROM>13217949521</FROM>
@@ -97,44 +95,41 @@ This postback notifies you when an MMS MO is received.
       <FILE>URL of Content Here</FILE>
       <FILE>URL of Content Here</FILE>
     </CONTENT>
-  </NOTIFICATION>
 </POSTBACK>
 ```
 
 ```xml
 <element name="POSTBACK">
-	<element name="NOTIFICATION">
-	    <element name="ORIGIN">
-	        </text>
-	    </element>
-	    <element name="CODE">
-	        </text>
-	    </element>
-	    <element name="FROM">
-	        </text>
-	    </element>
-	    <element name="TO">
-	        </text>
-	    </element>
-	    <element name="KEYWORD">
-	        </text>
-	    </element>
-	    <element name="TRACKINGID">
-	        </text>
-	    </element>
-	    <element name="SPID">
-	        </text>
-	    </element>
-	    <element name="TIMESTAMP">
-	        </text>
-	    </element>
-	    <element name="CONTENT">
-	        <oneOrMore>
-	        	<element name="FILE">
-	        		</text>
-        		</element>
-    		</oneOrMore>
-	    </element>
+    <element name="ORIGIN">
+        </text>
+    </element>
+    <element name="CODE">
+        </text>
+    </element>
+    <element name="FROM">
+        </text>
+    </element>
+    <element name="TO">
+        </text>
+    </element>
+    <element name="KEYWORD">
+        </text>
+    </element>
+    <element name="TRACKINGID">
+        </text>
+    </element>
+    <element name="SPID">
+        </text>
+    </element>
+    <element name="TIMESTAMP">
+        </text>
+    </element>
+    <element name="CONTENT">
+        <oneOrMore>
+        	<element name="FILE">
+        		</text>
+      		</element>
+  		</oneOrMore>
     </element>
 </element>
 ```

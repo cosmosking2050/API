@@ -16,8 +16,8 @@ __Postback Notification Codes__
 | N002 | Encoding of mobile video successful. |
 | N003 | Content was stored / encoded correctly. |
 | N013 | Content was stored / encoded correctly and sending was triggered. |
-| N101 | When content sending started. |
-| N102 | When we get the Delivery report with either success or error. |
+| N101 | Notification that MMS is sending. |
+| N102 | Notification that MMS delivery status has changed. |
 | N201 | SMS Message Sent. |
 | N202 | SMS Sent/Delivered (or) SMS Sent/Failed. |
 | N211 | SMS MO received. |

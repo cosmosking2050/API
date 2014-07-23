@@ -8,31 +8,26 @@ Sends an MMS defined in the XML containing slides of embedded with video, audio,
 Prototype:
 ```xml
 <REQUEST>
-	<ACTION>sendMMS</ACTION>
-	<USER>Username</USER>
-	<PASS>ea7966f90de2bf520e3f0042053e6ec3</PASS>
-	<FROM>shortcode/longcode</FROM>
-	<SPID>SPID</SPID>
-	<TO>Receivers number</TO>
-    <CAMPAIGNREF>Alert CampaignID</CAMPAIGNREF>
-    <SUBJECT>Subject</SUBJECT>
-    <CONTENT>
-	    <NAME>Name in MMBox</NAME>
-	    <SEQUENCE>
-		    <SLIDE duration="Duration in seconds"> 
-			    <IMAGE>
-				    <URL>URL</URL>
-			    </IMAGE>
-			    <AUDIO >
-				    <URL>URL</URL>
-			    </AUDIO>
-			    <TEXT>Plain Text</TEXT>
-		    </SLIDE>
-		    <SLIDE>
-		    …
-		    </SLIDE>
-	    </SEQUENCE>
-     </CONTENT> 
+    <ACTION>sendMMS</ACTION>
+    <API_KEY>API KEY</API_KEY>
+    <FROM>shortcode</FROM>
+    <SPID>SPID</SPID>
+    <TO>Receivers number</TO>
+    <CAMPAIGNREF>CampaignID</CAMPAIGNREF>
+    <SUBJECT>MMS Subject</SUBJECT>
+    <NAME>Name in MMBox</NAME>
+	    <SLIDE duration="Duration in seconds"> 
+		    <IMAGE>
+			    <URL>URL</URL>
+		    </IMAGE>
+		    <AUDIO >
+			    <URL>URL</URL>
+		    </AUDIO>
+		    <TEXT>Plain Text</TEXT>
+	    </SLIDE>
+	    <SLIDE>
+	    …
+	    </SLIDE>
 </REQUEST>
 ```
 
@@ -41,18 +36,17 @@ Prototype:
 	<element name="ACTION">
 	    </text>
 	</element>
-    <element name="USER">
-        </text>
-    </element>
-    <element name="PASS">
+    <element name="API_KEY">
         </text>
     </element>
     <element name="FROM">
         </text>
     </element>
-    <element name="SPID">
-        </text>
-    </element>
+    <optional>
+        <element name="SPID">
+            </text>
+        </element>
+    </optional>
     <element name="TO">
         </text>
     </element>
@@ -66,51 +60,46 @@ Prototype:
 	        </text>
         </element>
     </optional>
-    <element name="CONTENT">
-        <element name="NAME">
-	        </text>
-        </element>
-        <element name="SEQUENCE">
-        	<oneOrMore>
-	            <element name="SLIDE">
-	                <optional>
-	                    <attribute name="duration">
-	                        </text>
-	                    </attribute>
-	                </optional>
-    	            <optional>
-        	            <element name="IMAGE">
-            	            <optional>
-                	            <element name="URL">
-                	                </text>
-                	            </element>
-                	        </optional>
-                        </element>
-                    </optional>
-                    <optional>
-        	            <element name="AUDIO">
-            	            <optional>
-                	            <element name="URL">
-                	                </text>
-                	            </element>
-                	        </optional>
-                        </element>
-                    </optional>
-                    <optional>
-        	            <element name="TEXT">
-        	                </text>
-                        </element>
-                    </optional>
-	            </element>
-	    	</oneOrMore>
-        </element>
+    <element name="NAME">
+    	<oneOrMore>
+            <element name="SLIDE">
+                <optional>
+                    <attribute name="duration">
+                        </text>
+                    </attribute>
+                </optional>
+                <optional>
+    	            <element name="IMAGE">
+        	            <optional>
+            	            <element name="URL">
+            	                </text>
+            	            </element>
+            	        </optional>
+                    </element>
+                </optional>
+                <optional>
+    	            <element name="AUDIO">
+        	            <optional>
+            	            <element name="URL">
+            	                </text>
+            	            </element>
+            	        </optional>
+                    </element>
+                </optional>
+                <optional>
+    	            <element name="TEXT">
+    	                </text>
+                    </element>
+                </optional>
+            </element>
+    	</oneOrMore>
     </element>
 </element>
 ```
 
 __Request Parameters:__
 
-    Mandatory: Action, User, Pass, To, From, Name, Content, Sequence, Slide
+    Mandatory: Action, api_key, To, From, Name, Content, Slide
     Optional: Subject, SPID, Image, Audio, Video, URL, Text, Duration, CampaignRef
 
 __Response Parameters:__
@@ -125,39 +114,31 @@ __Request Example:__
 ```xml
 <REQUEST>
     <ACTION>sendMMS</ACTION>
-    <USER>rakowaty</USER>
-    <PASS>ea7966f90de2bf520e3f0042053e6ec3</PASS>
+    <API_KEY>ea7966f90de2bf520e3f0042053e6ec3</API_KEY>
     <TO>15551234888</TO>
     <FROM>60856</FROM>
     <SPID>000189</SPID>
     <SUBJECT>The subject</SUBJECT>
     <CAMPAIGNREF>323</CAMPAIGNREF>
-    <CONTENT>
-        <NAME>fishtank</NAME>
-        <SEQUENCE>
-            <SLIDE duration="5">
-                <IMAGE>
-                    <URL>http://www.yoursite.com/images/1.jpg</URL>
-                </IMAGE>
-                <AUDIO>
-                    <URL>http://www.yoursite.com/audio/1.mp3</URL>
-                </AUDIO>
-                <TEXT>Here is some text tralalala....</TEXT>
-            </SLIDE>
-        </SEQUENCE>
-    </CONTENT>
+    <NAME>my fishtank</NAME>
+        <SLIDE duration="5">
+            <IMAGE>
+                <URL>http://www.yoursite.com/images/1.jpg</URL>
+            </IMAGE>
+            <AUDIO>
+                <URL>http://www.yoursite.com/audio/1.mp3</URL>
+            </AUDIO>
+            <TEXT>Here is some text tralalala....</TEXT>
+        </SLIDE>
 </REQUEST>
 ```
 
 ```xml
 <element name="REQUEST">
-	<element name="ACTION">
-	    </text>
-	</element>
-    <element name="USER">
+    <element name="ACTION">
         </text>
     </element>
-    <element name="PASS">
+    <element name="API_KEY">
         </text>
     </element>
     <element name="TO">
@@ -166,57 +147,54 @@ __Request Example:__
     <element name="FROM">
         </text>
     </element>
-    <element name="SPID">
-        </text>
-    </element>
+    <optional>
+        <element name="SPID">
+            </text>
+        </element>
+    </optional>
     <optional>
         <element name="SUBJECT">
-	        </text>
+            </text>
         </element>
     </optional>
     <optional>
         <element name="CAMPAIGNREF">
-	        </text>
+            </text>
         </element>
     </optional>
-    <element name="CONTENT">
-        <element name="NAME">
-	        </text>
-        </element>
-        <element name="SEQUENCE">
-        	<oneOrMore>
-	            <element name="SLIDE">
-	                <optional>
-	                    <attribute name="duration">
-	                        </text>
-	                    </attribute>
-	                </optional>
-    	            <optional>
-        	            <element name="IMAGE">
-            	            <optional>
-                	            <element name="URL">
-                	                </text>
-                	            </element>
-                	        </optional>
-                        </element>
-                    </optional>
-                    <optional>
-        	            <element name="AUDIO">
-            	            <optional>
-                	            <element name="URL">
-                	                </text>
-                	            </element>
-                	        </optional>
-                        </element>
-                    </optional>
-                    <optional>
-        	            <element name="TEXT">
-        	                </text>
-                        </element>
-                    </optional>
-	            </element>
-	    	</oneOrMore>
-        </element>
+    <element name="NAME">
+        <oneOrMore>
+            <element name="SLIDE">
+                <optional>
+                    <attribute name="duration">
+                        </text>
+                    </attribute>
+                </optional>
+                <optional>
+                    <element name="IMAGE">
+                        <optional>
+                            <element name="URL">
+                                </text>
+                            </element>
+                        </optional>
+                    </element>
+                </optional>
+                <optional>
+                    <element name="AUDIO">
+                        <optional>
+                            <element name="URL">
+                                </text>
+                            </element>
+                        </optional>
+                    </element>
+                </optional>
+                <optional>
+                    <element name="TEXT">
+                        </text>
+                    </element>
+                </optional>
+            </element>
+        </oneOrMore>
     </element>
 </element>
 ```

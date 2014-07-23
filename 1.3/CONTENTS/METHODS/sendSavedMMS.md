@@ -17,10 +17,6 @@ DDMTITLE - this is the DDM title (optional, if not set then "Device Discovery" t
 DDMTEXT - this is the DDM body (mandatory)  
 DDMTIMEOUT - (in minutes) when we send DDM we wait for the Delivery Report which contain the handset profile. In some cases we do not receive it or it takes very long (handset turned off or out of range). This variable tells the system how long should it wait for DDM Delivery Report before sending actual content using Default parameters. Default value of this parameter is 5 minutes.
 
-SendSavedMMS allow you to pass HandsetID inside DEVICE parameter. We will store this information and (if HandsetID is recognized by our system) use handset profile to adapt content for current and future MMS delivery.  
-NOTE: Once we receive Delivery Receipt with HandsetID we overwrite current value assigned to that number, we consider HandsetID from Delivery Receipt more up-to-date.  
-DEVICE parameter can be used with DDM as a fallback mechanism. If HandsetID passed in API call is not recognized by our system, it will send DDM (if specified in the request) to the handset to detect it. If there was no DDM specified in the request, system will use generic settings for MMS delivery.
-
 __Request:__
 ```xml
 <REQUEST>
@@ -298,8 +294,7 @@ __Postback Notifications For SendSavedMMS__
 When the MMS delivery is processed successfully the system will generate a Postback notification. For more details please visit [postback doc](https://github.com/SkycoreMobile/API/blob/master/1.3/CONTENTS/POSTBACK_NOTIFICATION_SYSTEM.md).
 ```xml
 <?xml version='1.0'?>
-<POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:noNamespaceSchemaLocation ="http://www.skycore.com/platform/schema/postback.xsd">
+<POSTBACK>
     <ORIGIN>MMS_MT</ORIGIN>
     <CODE>N101</CODE>
     <SENTAS>MMS</SENTAS>
@@ -347,8 +342,7 @@ xsi:noNamespaceSchemaLocation ="http://www.skycore.com/platform/schema/postback.
 When an MMS delivery report is received the system will generate a Postback notification. Not all carriers provide MMS delivery receipts.
 ```xml
 <?xml version='1.0'?>
-<POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:noNamespaceSchemaLocation ="http://www.skycore.com/platform/schema/postback.xsd">
+<POSTBACK>
     <ORIGIN>MMS_MT</ORIGIN>
     <CODE>N102</CODE>
     <SENTAS>MMS</SENTAS>

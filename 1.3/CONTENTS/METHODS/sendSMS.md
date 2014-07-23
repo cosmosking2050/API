@@ -19,8 +19,7 @@ __Request:__
 </REQUEST>
 ```
 
-If "Enforce Campaign Check" is NOT Enabled, CampaignRef is optional.
-If "Enforce Campaign Check" IS Enabled, CampaignRef is mandatory.
+Note: If "Enforce Campaign Check" is NOT Enabled, CampaignRef is optional. If "Enforce Campaign Check" IS Enabled, CampaignRef is mandatory.
 ```xml
 <element name="REQUEST">
 	<element name="ACTION">
@@ -119,7 +118,7 @@ __Response Example: Success__
 ```xml
 <RESPONSE>
     <STATUS>Success</STATUS>
-    <TRACKINGID>SMS_12345</TRACKINGID>
+    <TRACKINGID>U01TXzc2Nzg2Nw==</TRACKINGID>
     <TO>15551234888</TO>
  </RESPONSE>
 ```
@@ -168,99 +167,104 @@ __Response Example: Failure__
 __Postback Notification:__  
 When the SMS is sent we will generate a Postback notification.
 ```xml
-<NOTIFICATION ID="325" CREATED="2011-07-26 10:22:26.975911-04">
+<?xml version='1.0'?>
+<POSTBACK>
     <ORIGIN>SMS_MT</ORIGIN>
     <CODE>N201</CODE>
-    <BODY>
-	    <HISTORYID>236990</HISTORYID>
-	    <TO>15551234888</TO>
-	    <TRACKINGID>SMS_12345</TRACKINGID>
-	    <TIMESTAMP>2011-07-26 10:22:25.262743-04</TIMESTAMP>
-    </BODY>
-</NOTIFICATION>
+    <STATUS>Message Sent</STATUS>
+    <FROM>60856</FROM>
+    <FROM_MASK></FROM_MASK>
+    <TO>15551234888</TO>
+    <TRACKINGID>U01TXzc2Nzg2Nw==</TRACKINGID>
+    <SPID>0001470</SPID>
+    <TIMESTAMP>2014-07-23T09:38:07.123456-04:00</TIMESTAMP>
+</POSTBACK>
 ```
 
 ```xml
-<element name="NOTIFICATION">
-    <attribute name="ID">
-        </text>
-    </attribute>
-    <attribute name="CREATED">
-        </text>
-    </attribute>
+<element name="POSTBACK">
 	<element name="ORIGIN">
 		</text>
 	</element>
 	<element name="CODE">
 		</text>
 	</element>
-	<element name="BODY">
-	    <element name="HISTORYID">
-	        </text>
-        </element>
-        <element name="TO">
-	        </text>
-        </element>
-        <element name="TRACKINGID">
-	        </text>
-        </element>
-        <element name="TIMESTAMP">
-	        </text>
-        </element>
-	</element>
+    <element name="STATUS">
+        </text>
+    </element>
+    <element name="FROM">
+        </text>
+    </element>
+    <element name="FROM_MASK">
+        </text>
+    </element>
+    <element name="TO">
+        </text>
+    </element>
+    <element name="TRACKINGID">
+        </text>
+    </element>
+    <element name="SPID">
+        </text>
+    </element>
+    <element name="TIMESTAMP">
+        </text>
+    </element>
 </element>
 ```
 
 When we get an SMS delivery receipt we will generate another Postback notification. Not all carriers provide SMS delivery receipts.
 ```xml
-<NOTIFICATION ID="326" CREATED="2011-07-26 10:22:27.146582-04">
+<?xml version='1.0'?>
+<POSTBACK>
     <ORIGIN>SMS_MT</ORIGIN>
-    <CODE>N201</CODE>
-    <BODY>
-	    <HISTORYID>236990</HISTORYID>
-	    <TO>15551234888</TO>
-	    <TRACKINGID>SMS_12345</TRACKINGID>
-	    <STATUS PROTOCOL="4" STATUS="0"/>
-	    <TIMESTAMP>2011-07-26 10:22:25.262743-04</TIMESTAMP>
-    </BODY>
-</NOTIFICATION>
+    <CODE>N202</CODE>
+    <STATUS>Message Sent/Delivered</STATUS>
+    <FROM>60856</FROM>
+    <FROM_MASK></FROM_MASK>
+    <TO>16502555296</TO>
+    <TRACKINGID>U01TXzc2Nzg2Nw==</TRACKINGID>
+    <SPID>0001470</SPID>
+    <TIMESTAMP>2014-07-23T09:38:09.765432-04:00</TIMESTAMP>
+    <STATUSDETAILS>?smpp?deliver_sm=4&amp;</STATUSDETAILS>
+    <AGGREGATORID>5114E-07230-09382-0762U</AGGREGATORID>
+</POSTBACK>
 ```
 
 ```xml
-<element name="NOTIFICATION">
-    <attribute name="ID">
+<element name="POSTBACK">
+    <element name="ORIGIN">
         </text>
-    </attribute>
-    <attribute name="CREATED">
+    </element>
+    <element name="CODE">
         </text>
-    </attribute>
-	<element name="ORIGIN">
-		</text>
-	</element>
-	<element name="CODE">
-		</text>
-	</element>
-	<element name="BODY">
-	    <element name="HISTORYID">
-	        </text>
-        </element>
-        <element name="TO">
-	        </text>
-        </element>
-        <element name="TRACKINGID">
-	        </text>
-        </element>
-        <element name="STATUS">
-	        <attribute name="PROTOCOL">
-		        </text>
-		    </attribute>
-		    <attribute name="STATUS">
-		        </text>
-		    </attribute>
-        </element>
-        <element name="TIMESTAMP">
-	        </text>
-        </element>
-	</element>
+    </element>
+    <element name="STATUS">
+        </text>
+    </element>
+    <element name="FROM">
+        </text>
+    </element>
+    <element name="FROM_MASK">
+        </text>
+    </element>
+    <element name="TO">
+        </text>
+    </element>
+    <element name="TRACKINGID">
+        </text>
+    </element>
+    <element name="SPID">
+        </text>
+    </element>
+    <element name="TIMESTAMP">
+        </text>
+    </element>
+    <element name="STATUSDETAILS">
+        </text>
+    </element>
+    <element name="AGGREGATORID">
+        </text>
+    </element>
 </element>
 ```
