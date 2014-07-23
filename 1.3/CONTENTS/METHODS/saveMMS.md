@@ -75,8 +75,7 @@ When an MMS is saved, the system will generate a Postback notification and unloc
 
 ```xml
 <?xml version='1.0'?>
-<POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:noNamespaceSchemaLocation ="http://www.skycore.com/platform/schema/postback.xsd">
+<POSTBACK>
     <ORIGIN>MMS_MT</ORIGIN>
     <CODE>N003</CODE>
     <MMSID>35674</MMSID>
@@ -86,8 +85,7 @@ xsi:noNamespaceSchemaLocation ="http://www.skycore.com/platform/schema/postback.
 If there was an error encoding the MMS audio/video, the system will generate a notification:
 ```xml
 <?xml version='1.0'?>
-<POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:noNamespaceSchemaLocation ="http://www.skycore.com/platform/schema/postback.xsd">
+<POSTBACK>
     <ORIGIN>MMS_MT</ORIGIN>
     <CODE>E002</CODE>
     <MMSID>35674</MMSID>
