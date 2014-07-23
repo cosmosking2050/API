@@ -57,7 +57,7 @@ __Response Example: Success__
 ```xml
 <RESPONSE>
     <STATUS>Success</STATUS>
-    <TRACKINGID>SMS_12345</TRACKINGID>
+    <TRACKINGID>U01TXzc2Nzg2Nw==</TRACKINGID>
     <TO>15551234888</TO>
  </RESPONSE>
 ```
@@ -75,27 +75,34 @@ __Response Example: Failure__
 __Postback Notification:__  
 When the SMS is sent we will generate a Postback notification.
 ```xml
-<NOTIFICATION ID="325" CREATED="2011-07-26 10:22:26.975911-04">
+<?xml version='1.0'?>
+<POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation ="https://www.skycore.com/platform/schema/postback.xsd" >
     <ORIGIN>SMS_MT</ORIGIN>
     <CODE>N201</CODE>
-    <BODY>
+    <STATUS>Message Sent</STATUS>
+    <FROM>60856</FROM>
+    <FROM_MASK></FROM_MASK>
     <TO>15551234888</TO>
-    <TRACKINGID>SMS_12345</TRACKINGID>
-    <TIMESTAMP>2011-07-26 10:22:25.262743-04</TIMESTAMP>
-    </BODY>
-</NOTIFICATION>
+    <TRACKINGID>U01TXzc2Nzg2Nw==</TRACKINGID>
+    <SPID>0001470</SPID>
+    <TIMESTAMP>2014-07-23T09:38:07.123456-04:00</TIMESTAMP>
+</POSTBACK>
 ```
 
 When we get an SMS delivery receipt we will generate another Postback notification. Not all carriers provide SMS delivery receipts.
 ```xml
-<NOTIFICATION ID="326" CREATED="2011-07-26 10:22:27.146582-04">
+<?xml version='1.0'?>
+<POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation ="https://www.skycore.com/platform/schema/postback.xsd" >
     <ORIGIN>SMS_MT</ORIGIN>
-    <CODE>N201</CODE>
-    <BODY>
-    <TO>15551234888</TO>
-    <TRACKINGID>SMS_12345</TRACKINGID>
-    <STATUS PROTOCOL="4" STATUS="0"/>
-    <TIMESTAMP>2011-07-26 10:22:25.262743-04</TIMESTAMP>
-    </BODY>
-</NOTIFICATION>
+    <CODE>N202</CODE>
+    <STATUS>Message Sent/Delivered</STATUS>
+    <FROM>60856</FROM>
+    <FROM_MASK></FROM_MASK>
+    <TO>16502555296</TO>
+    <TRACKINGID>U01TXzc2Nzg2Nw==</TRACKINGID>
+    <SPID>0001470</SPID>
+    <TIMESTAMP>2014-07-23T09:38:09.765432-04:00</TIMESTAMP>
+    <STATUSDETAILS>?smpp?deliver_sm=4&amp;</STATUSDETAILS>
+    <AGGREGATORID>5114E-07230-09382-0762U</AGGREGATORID>
+</POSTBACK>
 ```
