@@ -35,7 +35,6 @@ Here is the example of SMS sending XML:
 </TEXT>
 ```
 
-RELAX NG Compact Syntax
 ```xml
 element TEXT {
     attribute id { text } &
@@ -111,7 +110,6 @@ Here is the example of MMS sending XML (binary delivery):
 </CONTENT>
 ```
 
-RELAX NG Compact Syntax
 ```xml
 element CONTENT {
     attribute id { text } &
@@ -161,7 +159,6 @@ Here is the example of MMS sending XML (xhtml delivery):
 </CONTENT>
 ```
 
-RELAX NG Compact Syntax
 ```xml
 element CONTENT {
     attribute id { text } &
@@ -241,7 +238,6 @@ Here is MMS sending inside Campaign batch:
 </BATCHES>
 ```
 
-RELAX NG Compact Syntax
 ```xml
 element BATCHES {
     element BATCH {
@@ -304,7 +300,6 @@ Here is SMS sending inside alert batch:
 </BATCHES>
 ```
 
-RELAX NG Compact Syntax
 ```xml
 element BATCHES {
     element BATCH {
@@ -367,7 +362,6 @@ Here is MMS Autoresponder example:
 </AUTORESPONDERS>
 ```
 
-RELAX NG Compact Syntax
 ```xml
 element AUTORESPONDERS
 {
@@ -430,7 +424,6 @@ Here is SMS Autoresponder example:
 </AUTORESPONDERS>
 ```
 
-RELAX NG Compact Syntax
 ```xml
 element AUTORESPONDERS {
     element AUTORESPONDER {
@@ -481,7 +474,6 @@ Here is the example of the traffic for the Single Opt-In subscription with SMS C
 </SUBSCRIPTIONS>
 ```
 
-RELAX NG Compact Syntax
 ```xml
 element SUBSCRIPTIONS {
     element SUB {
@@ -529,7 +521,6 @@ Here is the example of the traffic for the Double Opt-In subscription with MMS C
 </SUBSCRIPTIONS>
 ```
 
-RELAX NG Compact Syntax
 ```xml
 element SUBSCRIPTIONS {
     element SUB {
@@ -595,7 +586,6 @@ Below is example of MMS:
 </SENDING_LIST>
 ```
 
-RELAX NG Compact Syntax
 ```xml
 element SENDING_LIST {
     element CONTENT {
@@ -640,7 +630,6 @@ Below is example of SMS:
 </SENDING_LIST>
 ```
 
-RELAX NG Compact Syntax
 ```xml
 element SENDING_LIST {
     element TEXT {

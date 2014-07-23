@@ -16,8 +16,8 @@ This postback notification triggers when a mobile phone number subscribes to a s
 | CAMPAIGNID | ID of the campaign. |
 | TIMESTAMP | Timestamp of the subscription. |
 | SHORTCODE | The shortcode. | 
-| CAMPAIGNTITLE | The title of the campaign |
-| BRANDNAME | The brand name associated with the account or campaign |
+| CAMPAIGNTITLE | The title of the campaign. |
+| BRANDNAME | The brand name associated with the account or campaign. |
 | SOURCE | The source of the subscription: MANAGER, API, MO, WEB. MANAGER indicates the number was imported or manually added in your campaign audience manager. API indicates it came from a subscribe call to our API. MO indicates the phone number opted-in by texting campaign keyword. WEB indicates they subscribed via mobile web landing page. |
 
 ```xml
@@ -61,8 +61,8 @@ This postback notification triggers when a mobile phone number unsubscribes to a
 | CAMPAIGNID | ID of the campaign. |
 | TIMESTAMP | Timestamp of the unsubscription. |
 | SHORTCODE | The shortcode. | 
-| CAMPAIGNTITLE | The title of the campaign |
-| BRANDNAME | The brand name associated with the account or campaign |
+| CAMPAIGNTITLE | The title of the campaign. |
+| BRANDNAME | The brand name associated with the account or campaign. |
 | SOURCE | The source of the unsubscription: MANAGER, API, MO, IMPORTED AS UNSUBSCRIBED. MANAGER indicates the number was deported or manually removed in your campaign audience manager. API indicates it came from a unsubscribe call to our API. MO indicates the phone number opted-out by texting STOP. IMPORTED AS UNSUBSCRIBED indicates the number was attempted to be imported or manually added, but was imported as unsubscribed due to a previous opt-out. |
 
 ```xml
