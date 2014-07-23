@@ -37,100 +37,62 @@ _N201 Example:_
 ```xml
 <?xml version='1.0'?>
 <POSTBACK>
-  <ORIGIN>SMS_MT</ORIGIN>
-  <CODE>N201</CODE>
-  <STATUS>Message Sent</STATUS>
-  <FROM>60856</FROM>
-  <FROM_MASK><FROM_MASK>
-  <TO>16503333058</TO>
-  <TRACKINGID>U01TXzgwNjc4</TRACKINGID>
-  <SPID>0001470</SPID>
-  <TIMESTAMP>2013-11-05T05:41:08-05:00</TIMESTAMP>
+    <ORIGIN>SMS_MT</ORIGIN>
+    <CODE>N201</CODE>
+    <STATUS>Message Sent</STATUS>
+    <FROM>60856</FROM>
+    <FROM_MASK><FROM_MASK>
+    <TO>16503333058</TO>
+    <TRACKINGID>U01TXzgwNjc4</TRACKINGID>
+    <SPID>0001470</SPID>
+    <TIMESTAMP>2013-11-05T05:41:08-05:00</TIMESTAMP>
 </POSTBACK>
 ```
 
 ```xml
-<element name="POSTBACK">
-	<element name="ORIGIN">
-		</text>
-	</element>
-	<element name="CODE">
-		</text>
-	</element>
-	<element name="STATUS">
-		</text>
-	</element>
-	<element name="FROM">
-		</text>
-	</element>
-	<element name="FROM_MASK">
-		</text>
-	</element>
-	<element name="TO">
-		</text>
-	</element>
-	<element name="TRACKINGID">
-		</text>
-	</element>
-	<element name="SPID">
-		</text>
-	</element>
-	<element name="TIMESTAMP">
-		</text>
-	</element>
-</element>
+element POSTBACK {
+    element ORIGIN { text } &
+    element CODE { text } &
+    element STATUS { text } &
+    element FROM { text } &
+    element FROM_MASK { text } &
+    element TO { text } &
+    element TRACKINGID { text } &
+    element SPID { text } &
+    element TIMESTAMP { text }
+}
 ```
 
 _N202 Example:_
 ```xml
 <?xml version='1.0'?>
 <POSTBACK>
-  <ORIGIN>SMS_MT</ORIGIN>
-  <CODE>N202</CODE>
-  <STATUS>Message Sent/Delivered</STATUS>
-  <FROM>60856</FROM>
-  <FROM_MASK></FROM_MASK>
-  <TO>16503333058</TO>
-  <TRACKINGID>U01TXzgwNjc4</TRACKINGID>
-  <SPID>0001470</SPID>
-  <TIMESTAMP>2013-11-05T05:41:15-05:00</TIMESTAMP>
-  <AGGREGATORID>11529-64807-97508-73852-97658</AGGREGATORID>
+    <ORIGIN>SMS_MT</ORIGIN>
+    <CODE>N202</CODE>
+    <STATUS>Message Sent/Delivered</STATUS>
+    <FROM>60856</FROM>
+    <FROM_MASK></FROM_MASK>
+    <TO>16503333058</TO>
+    <TRACKINGID>U01TXzgwNjc4</TRACKINGID>
+    <SPID>0001470</SPID>
+    <TIMESTAMP>2013-11-05T05:41:15-05:00</TIMESTAMP>
+    <AGGREGATORID>11529-64807-97508-73852-97658</AGGREGATORID>
 </POSTBACK>
 ```
 
 ```xml
-<element name="POSTBACK">
-	<element name="ORIGIN">
-		</text>
-	</element>
-	<element name="CODE">
-		</text>
-	</element>
-	<element name="STATUS">
-		</text>
-	</element>
-	<element name="FROM">
-		</text>
-	</element>
-	<element name="FROM_MASK">
-		</text>
-	</element>
-	<element name="TO">
-		</text>
-	</element>
-	<element name="TRACKINGID">
-		</text>
-	</element>
-	<element name="SPID">
-		</text>
-	</element>
-	<element name="TIMESTAMP">
-		</text>
-	</element>
-	<element name="AGGREGATORID">
-		</text>
-	</element>
-</element>
+element POSTBACK {
+    element ORIGIN { text } &
+    element CODE { text } &
+    element STATUS { text } &
+    element FROM { text } &
+    element FROM_MASK { text } &
+    element TO { text } &
+    element TRACKINGID { text } &
+    element SPID { text } &
+    element TIMESTAMP { text } &
+    element AGGREGATORID { text }
+}
 ```
 
 [Back To The Top](#DocTop)
@@ -163,169 +125,104 @@ _N101 Example: (Binary)_
 ```xml
 <?xml version='1.0'?>
 <POSTBACK>
-  <ORIGIN>MMS_MT</ORIGIN>
-  <CODE>N101</CODE>
-  <SENTAS>MMS</SENTAS>
-  <STATUS>Message Sent</STATUS>
-  <MMSID>39597</MMSID>
-  <FROM>60856</FROM>
-  <TO>16501112222</TO>
-  <TRACKINGID>TU1TXzU5Nzg3OQ==</TRACKINGID>
-  <SPID>0001570</SPID>
-  <TIMESTAMP>2012-06-07T07:27:29-05:00</TIMESTAMP>
+    <ORIGIN>MMS_MT</ORIGIN>
+    <CODE>N101</CODE>
+    <SENTAS>MMS</SENTAS>
+    <STATUS>Message Sent</STATUS>
+    <MMSID>39597</MMSID>
+    <FROM>60856</FROM>
+    <TO>16501112222</TO>
+    <TRACKINGID>TU1TXzU5Nzg3OQ==</TRACKINGID>
+    <SPID>0001570</SPID>
+    <TIMESTAMP>2012-06-07T07:27:29-05:00</TIMESTAMP>
 </POSTBACK>
 ```
 
 ```xml
-<element name="POSTBACK">
-	<element name="ORIGIN">
-		</text>
-	</element>
-	<element name="CODE">
-		</text>
-	</element>
-	<element name="SENTAS">
-		</text>
-	</element>
-	<element name="STATUS">
-		</text>
-	</element>
-	<element name="MMSID">
-		</text>
-	</element>
-	<element name="FROM">
-		</text>
-	</element>
-	<element name="TO">
-		</text>
-	</element>
-	<element name="TRACKINGID">
-		</text>
-	</element>
-	<element name="SPID">
-		</text>
-	</element>
-	<element name="TIMESTAMP">
-		</text>
-	</element>
-</element>
+element POSTBACK {
+    element ORIGIN { text } &
+    element CODE { text } &
+    element SENTAS { text } &
+    element STATUS { text } &
+    element MMSID { text } &
+    element FROM { text } &
+    element TO { text } &
+    element TRACKINGID { text } &
+    element SPID { text } &
+    element TIMESTAMP { text }
+}
 ```
 
 _N101 Example: (xHTML)_
 ```xml
 <?xml version='1.0'?>
 <POSTBACK>
-  <ORIGIN>MMS_MT</ORIGIN>
-  <CODE>N101</CODE>
-  <SENTAS>SMS</SENTAS>
-  <STATUS>Message Sent</STATUS>
-  <MMSID>39755</MMSID>
-  <FROM>60856</FROM>
-  <TO>16502424956</TO>
-  <TRACKINGID>TU1TXzU5Nzg3Nw==</TRACKINGID>
-  <SPID>0001140</SPID>
-  <TIMESTAMP>2012-06-07T07:27:34-05:00</TIMESTAMP>
-  <STATUSDETAILS>Handset setting: mms with pass via xHTML</STATUSDETAILS>
+    <ORIGIN>MMS_MT</ORIGIN>
+    <CODE>N101</CODE>
+    <SENTAS>SMS</SENTAS>
+    <STATUS>Message Sent</STATUS>
+    <MMSID>39755</MMSID>
+    <FROM>60856</FROM>
+    <TO>16502424956</TO>
+    <TRACKINGID>TU1TXzU5Nzg3Nw==</TRACKINGID>
+    <SPID>0001140</SPID>
+    <TIMESTAMP>2012-06-07T07:27:34-05:00</TIMESTAMP>
+    <STATUSDETAILS>Handset setting: mms with pass via xHTML</STATUSDETAILS>
 </POSTBACK>
 ```
 
 ```xml
-<element name="POSTBACK">
-	<element name="ORIGIN">
-		</text>
-	</element>
-	<element name="CODE">
-		</text>
-	</element>
-	<element name="SENTAS">
-		</text>
-	</element>
-	<element name="STATUS">
-		</text>
-	</element>
-	<element name="MMSID">
-		</text>
-	</element>
-	<element name="FROM">
-		</text>
-	</element>
-	<element name="TO">
-		</text>
-	</element>
-	<element name="TRACKINGID">
-		</text>
-	</element>
-	<element name="SPID">
-		</text>
-	</element>
-	<element name="TIMESTAMP">
-		</text>
-	</element>
-	<element name="STATUSDETAILS">
-		</text>
-	</element>
-</element>
+element POSTBACK {
+    element ORIGIN { text } &
+    element CODE { text } &
+    element SENTAS { text } &
+    element STATUS { text } &
+    element MMSID { text } &
+    element FROM { text } &
+    element TO { text } &
+    element TRACKINGID { text } &
+    element SPID { text } &
+    element TIMESTAMP { text } &
+    element STATUSDETAILS { text }
+}
 ```
 
 _N102 Example: (Binary)_
 ```xml
 <?xml version='1.0'?>
 <POSTBACK>
-  <ORIGIN>MMS_MT</ORIGIN>
-  <CODE>N102</CODE>
-  <SENTAS>MMS</SENTAS>
-  <STATUS>Message Sent/Delivered</STATUS>
-  <MMSID>39597</MMSID>
-  <FROM>60856</FROM>
-  <TO>16501112222</TO>
-  <TRACKINGID>TU1TXzU5Nzg3OQ==</TRACKINGID>
-  <SPID>0001570</SPID>
-  <TIMESTAMP>2012-06-07T07:27:34-05:00</TIMESTAMP>
-  <HANDSET>motol7c</HANDSET>
-  <AGGREGATORID>11529-64807-97508-73852-97658</AGGREGATORID>
-  <OS>iOS</OS>
+    <ORIGIN>MMS_MT</ORIGIN>
+    <CODE>N102</CODE>
+    <SENTAS>MMS</SENTAS>
+    <STATUS>Message Sent/Delivered</STATUS>
+    <MMSID>39597</MMSID>
+    <FROM>60856</FROM>
+    <TO>16501112222</TO>
+    <TRACKINGID>TU1TXzU5Nzg3OQ==</TRACKINGID>
+    <SPID>0001570</SPID>
+    <TIMESTAMP>2012-06-07T07:27:34-05:00</TIMESTAMP>
+    <HANDSET>motol7c</HANDSET>
+    <AGGREGATORID>11529-64807-97508-73852-97658</AGGREGATORID>
+    <OS>iOS</OS>
 </POSTBACK>
 ```
 
 ```xml
-<element name="POSTBACK">
-	<element name="ORIGIN">
-		</text>
-	</element>
-	<element name="CODE">
-		</text>
-	</element>
-	<element name="SENTAS">
-		</text>
-	</element>
-	<element name="STATUS">
-		</text>
-	</element>
-	<element name="MMSID">
-		</text>
-	</element>
-	<element name="FROM">
-		</text>
-	</element>
-	<element name="TO">
-		</text>
-	</element>
-	<element name="TRACKINGID">
-		</text>
-	</element>
-	<element name="SPID">
-		</text>
-	</element>
-	<element name="TIMESTAMP">
-		</text>
-	</element>
-	<element name="HANDSET">
-		</text>
-	</element>
-	<element name="AGGREGATORID">
-		</text>
-	</element>
-</element>
+element POSTBACK {
+    element ORIGIN { text } &
+    element CODE { text } &
+    element SENTAS { text } &
+    element STATUS { text } &
+    element MMSID { text } &
+    element FROM { text } &
+    element TO { text } &
+    element TRACKINGID { text } &
+    element SPID { text } &
+    element TIMESTAMP { text } &
+    element HANDSET { text } &
+    element AGGREGATORID { text } &
+    element OS { text }
+}
 ```
 
 _N102 Example: (xHTML)_
@@ -346,38 +243,18 @@ _N102 Example: (xHTML)_
 ```
 
 ```xml
-<element name="POSTBACK">
-	<element name="ORIGIN">
-		</text>
-	</element>
-	<element name="CODE">
-		</text>
-	</element>
-	<element name="SENTAS">
-		</text>
-	</element>
-	<element name="STATUS">
-		</text>
-	</element>
-	<element name="FROM">
-		</text>
-	</element>
-	<element name="TO">
-		</text>
-	</element>
-	<element name="TRACKINGID">
-		</text>
-	</element>
-	<element name="SPID">
-		</text>
-	</element>
-	<element name="TIMESTAMP">
-		</text>
-	</element>
-	<element name="AGGREGATORID">
-		</text>
-	</element>
-</element>
+element POSTBACK {
+    element ORIGIN { text } &
+    element CODE { text } &
+    element SENTAS { text } &
+    element STATUS { text } &
+    element FROM { text } &
+    element TO { text } &
+    element TRACKINGID { text } &
+    element SPID { text } &
+    element TIMESTAMP { text } &
+    element AGGREGATORID { text }
+}
 ```
 
 When the system is unable to send an MMS we return a postback E101. 
@@ -386,48 +263,30 @@ _E101 Example:_
 ```xml
 <?xml version='1.0'?>
 <POSTBACK>
-  <ORIGIN>MMS_MT</ORIGIN>
-  <CODE>E101</CODE>
-  <STATUS>Message Failed</STATUS>
-  <MMSID>39755</MMSID>
-  <FROM>60856</FROM>
-  <TO>16502424956</TO>
-  <TRACKINGID>TU1TXzU5Nzg3Nw==</TRACKINGID>
-  <SPID>0001140</SPID>
-  <STATUSDETAILS>Error fetching dynamic content</STATUSDETAILS>
+    <ORIGIN>MMS_MT</ORIGIN>
+    <CODE>E101</CODE>
+    <STATUS>Message Failed</STATUS>
+    <MMSID>39755</MMSID>
+    <FROM>60856</FROM>
+    <TO>16502424956</TO>
+    <TRACKINGID>TU1TXzU5Nzg3Nw==</TRACKINGID>
+    <SPID>0001140</SPID>
+    <STATUSDETAILS>Error fetching dynamic content</STATUSDETAILS>
 </POSTBACK>
 ```
 
 ```xml
-<element name="POSTBACK">
-	<element name="ORIGIN">
-		</text>
-	</element>
-	<element name="CODE">
-		</text>
-	</element>
-	<element name="STATUS">
-		</text>
-	</element>
-	<element name="MMSID">
-		</text>
-	</element>
-	<element name="FROM">
-		</text>
-	</element>
-	<element name="TO">
-		</text>
-	</element>
-	<element name="TRACKINGID">
-		</text>
-	</element>
-	<element name="SPID">
-		</text>
-	</element>
-	<element name="STATUSDETAILS">
-		</text>
-	</element>
-</element>
+element POSTBACK {
+    element ORIGIN { text } &
+    element CODE { text } &
+    element STATUS { text } &
+    element MMSID { text } &
+    element FROM { text } &
+    element TO { text } &
+    element TRACKINGID { text } &
+    element SPID { text } &
+    element STATUSDETAILS { text }
+}
 ```
 
 [Back To The Top](#DocTop)
@@ -449,52 +308,38 @@ _N003 (Save MMS Successful) Example:_
 ```xml
 <?xml version='1.0'?>
 <POSTBACK>
-  <ORIGIN>MMS_MT</ORIGIN>
-  <CODE>N003</CODE>
-  <MMSID>35674</MMSID>
+    <ORIGIN>MMS_MT</ORIGIN>
+    <CODE>N003</CODE>
+    <MMSID>35674</MMSID>
 </POSTBACK>
 ```
 
 ```xml
-<element name="POSTBACK">
-	<element name="ORIGIN">
-		</text>
-	</element>
-	<element name="CODE">
-		</text>
-	</element>
-	<element name="MMSID">
-		</text>
-	</element>
-</element>
+element POSTBACK {
+    element ORIGIN { text } &
+    element CODE { text } &
+    element MMSID { text }
+}
 ```
 
 _E002 (Save MMS Failure) Example:_
 ```xml
 <?xml version='1.0'?>
 <POSTBACK>
-  <ORIGIN>MMS_MT</ORIGIN>
-  <CODE>E002</CODE>
-  <MMSID>35674</MMSID>
-  <AUDIONAME>sample.mp3</AUDIONAME>
+    <ORIGIN>MMS_MT</ORIGIN>
+    <CODE>E002</CODE>
+    <MMSID>35674</MMSID>
+    <AUDIONAME>sample.mp3</AUDIONAME>
 </POSTBACK>
 ```
 
 ```xml
-<element name="POSTBACK">
-	<element name="ORIGIN">
-		</text>
-	</element>
-	<element name="CODE">
-		</text>
-	</element>
-	<element name="MMSID">
-		</text>
-	</element>
-	<element name="AUDIONAME">
-		</text>
-	</element>
-</element>
+element POSTBACK {
+    element ORIGIN { text } &
+    element CODE { text } &
+    element MMSID { text } &
+    element AUDIONAME { text }
+}
 ```
 
 [Back To The Top](#DocTop)
