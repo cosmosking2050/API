@@ -15,7 +15,7 @@ __Request:__
 
 __Request Parameters:__
 
-    Mandatory: action, apiKey
+    Mandatory: action, api_key
     Optional: N/A
 
 ```xml
@@ -32,7 +32,7 @@ __Response Parameters:__
 ```xml
 element RESPONSE {
     element STATUS { text } &
-    element SESSIONID { text }?
+    element SESSIONID { text }
 }
 ```
 
