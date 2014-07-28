@@ -32,7 +32,7 @@ __Response Parameters:__
 ```xml
 element RESPONSE {
     element STATUS { text } &
-    element SESSIONID { text }?
+    element SESSIONID { text }
 }
 ```
 
