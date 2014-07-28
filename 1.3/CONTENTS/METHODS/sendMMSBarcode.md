@@ -52,6 +52,7 @@ __Request Parameters:__
     Mandatory: action, api_key, mmsId, to, from, barcodeId
     Optional: campaignRef, ddmTitle, ddmText, ddmTimeout, customText, customSubject, data
 
+```xml
 element REQUEST {
     element ACTION { ”sendMMSBarcode” } &
     element API_KEY { text } &
@@ -75,6 +76,7 @@ element REQUEST {
         ...
     }?
 }
+```
 
 __Response Parameters:__
 
