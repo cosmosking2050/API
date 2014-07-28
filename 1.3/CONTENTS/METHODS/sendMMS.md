@@ -40,6 +40,7 @@ __Request Parameters:__
     Mandatory: action, api_key, to, from, name, slide
     Optional: spid, campaignRef, subject, image, audio, video, url, text, duration
 
+```xml
 element REQUEST {
     element ACTION { “sendMMS” } &
     element API_KEY { text } &
@@ -63,6 +64,7 @@ element REQUEST {
         element DURATION { xsd:nonNegativeInteger }?    # in seconds
     }+
 }
+```
 
 __Response Parameters:__
 
