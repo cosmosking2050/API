@@ -120,8 +120,7 @@ __Postback Notifications For SendMMSBarcode__
 When the MMS delivery is processed successfully the system will generate a Postback notification. For more details please visit [postback doc](https://github.com/SkycoreMobile/API/blob/master/1.3/CONTENTS/POSTBACK_NOTIFICATION_SYSTEM.md).
 ```xml
 <?xml version='1.0'?>
-<POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:noNamespaceSchemaLocation ="http://www.skycore.com/platform/schema/postback.xsd">
+<POSTBACK>
 	<ORIGIN>MMS_MT</ORIGIN>
 	<CODE>N101</CODE>
 	<SENTAS>MMS</SENTAS>
@@ -137,8 +136,7 @@ xsi:noNamespaceSchemaLocation ="http://www.skycore.com/platform/schema/postback.
 When an MMS delivery report is received the system will generate a Postback notification. Not all carriers provide MMS delivery receipts.
 ```xml
 <?xml version='1.0'?>
-<POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:noNamespaceSchemaLocation ="http://www.skycore.com/platform/schema/postback.xsd">
+<POSTBACK>
 	<ORIGIN>MMS_MT</ORIGIN>
 	<CODE>N102</CODE>
 	<SENTAS>MMS</SENTAS>
