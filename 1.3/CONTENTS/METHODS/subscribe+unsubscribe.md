@@ -9,7 +9,7 @@ __Request: subscribe__
 ```xml
 <REQUEST>
 	<ACTION>subscribe</ACTION>
-    <API_KEY>API KEY</API_KEY>
+    <API_KEY>apiKey</API_KEY>
     <CAMPAIGNID>Campaign ID</CAMPAIGNID>
     <MOBILE>Number to subscribe</MOBILE>
     <DATA>
@@ -19,105 +19,63 @@ __Request: subscribe__
         ...
     </DATA>   
     <NOTIFY>'yes/no' on whether to notify user on successful opt in</NOTIFY>
-    <SPID> the carrier ID </SPID>
+    <SPID>the carrier ID</SPID>
     <CTA>'yes/no' to request double opt in from the user to opt-in</CTA>
         <TIMEZONE>Timezone abbreviation: EST, CST, MST, PST, etc.</TIMEZONE>
 </REQUEST>
-```
-
-```xml
-<element name="REQUEST">
-	<element name="ACTION">
-		</text>
-	</element>
-	<element name="API_KEY">
-		</text>
-	</element>
-	<element name="CAMPAIGNID">
-		</text>
-	</element>
-	<element name="MOBILE">
-		</text>
-	</element>
-	<optional>
-		<element name="DATA">
-			<element name="FIRST_NAME">
-				</text>
-			</element>
-			<element name="LAST_NAME">
-				</text>
-			</element>
-			<element name="GENDER">
-				</text>
-			</element>
-			...
-		</element>
-	</optional>
-	<optional>
-		<element name="NOTIFY">
-			</text>
-		</element>
-	</optional>
-	<optional>
-		<element name="SPID">
-			</text>
-		</element>
-	</optional>
-	<optional>
-		<element name="CTA">
-			<optional>
-				<element name="TIMEZONE">
-					</text>
-				</element>
-			</optional>
-		</element>
-	</optional>
-</element>
 ```
 
 __Request: unsubscribe__
 ```xml
 <REQUEST>
     <ACTION>unsubscribe</ACTION>
-    <API_KEY>API KEY</API_KEY>
+    <API_KEY>apiKey</API_KEY>
     <CAMPAIGNID>Campaign ID</CAMPAIGNID>
     <MOBILE>Number to unsubscribe</MOBILE>
     <NOTIFY>'yes/no' on whether to notify user on opt-out</NOTIFY>
 </REQUEST>
 ```
 
-```xml
-<element name="REQUEST">
-	<element name="ACTION">
-		</text>
-	</element>
-	<element name="API_KEY">
-		</text>
-	</element>
-	<element name="CAMPAIGNID">
-		</text>
-	</element>
-	<element name="MOBILE">
-		</text>
-	</element>
-	<optional>
-		<element name="NOTIFY">
-			</text>
-		</element>
-	</optional>
-</element>
-```
-
 __Request Parameters:__
 
-    Mandatory: Action, API_KEY, CAMPAIGNID, Mobile
-    Optional: CTA, Notify, SPID, TZ, Data
+    Mandatory: action, api_key, campaignId, mobile
+    Optional: data, notify, spid, cta, timezone
+
+```xml
+element REQUEST {
+    element ACTION { text } &
+    element API_KEY { text } &
+    element CAMPAIGNID { text } &
+    element MOBILE { text } &
+    element DATA {
+        element FIRST_NAME { text }? &
+        element LAST_NAME { text }? &
+        element GENDER { text }? &
+        ...
+    }? &
+    element NOTIFY { text }? &
+    element SPID { text }? &
+    element CTA {
+    	element TIMEZONE { text }?
+    }?
+}
+```
 
 __Response Parameters:__
 
-    CAMPAIGNID, Errorcode, Errorinfo, mobile, Status
+    status, campaignId, mobile, errorCode, errorInfo
 
-__Related Errorcodes:__
+```xml
+element RESPONSE {
+    element STATUS { text } &
+    element CAMPAIGNID { text }? &
+    element MOBILE { text }? &
+    element ERRORCODE { text }? &
+    element ERRORINFO { text }?
+}
+```
+
+__Related Error Codes:__
 
     E901, E902, E903, E904, E905
 
@@ -140,49 +98,6 @@ XML:
 </REQUEST>
 ```
 
-```xml
-<element name="REQUEST">
-	<element name="ACTION">
-		</text>
-	</element>
-	<element name="API_KEY">
-		</text>
-	</element>
-	<element name="CAMPAIGNID">
-		</text>
-	</element>
-	<element name="MOBILE">
-		</text>
-	</element>
-	<optional>
-		<element name="DATA">
-			<element name="FIRST_NAME">
-				</text>
-			</element>
-			<element name="LAST_NAME">
-				</text>
-			</element>
-			<element name="AGE">
-				</text>
-			</element>
-			<element name="PET">
-				</text>
-			</element>
-		</element>
-	</optional>
-	<optional>
-		<element name="NOTIFY">
-			</text>
-		</element>
-	</optional>
-	<optional>
-		<element name="CTA">
-			</text>
-		</element>
-	</optional>
-</element>
-```
-
 GET:
 
     https://secure.skycore.com/API/wxml/1.3/index.php?action=subscribe&api_key=qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ
@@ -198,20 +113,6 @@ __Response Example: Success__
 </RESPONSE>
 ```
 
-```xml
-<element name="RESPONSE">
-	<element name="STATUS">
-		</text>
-	</element>
-	<element name="CAMPAIGNID">
-		</text>
-	</element>
-	<element name="MOBILE">
-		</text>
-	</element>
-</element>
-```
-
 __Response Example: Failure__
 ```xml
 <RESPONSE>
@@ -219,20 +120,6 @@ __Response Example: Failure__
     <ERRORCODE>E903</ERRORCODE>
     <ERRORINFO>Invalid CAMPAIGNID</ERRORINFO>
 </RESPONSE>
-```
-
-```xml
-<element name="RESPONSE">
-	<element name="STATUS">
-		</text>
-	</element>
-	<element name="ERRORCODE">
-		</text>
-	</element>
-	<element name="ERRORINFO">
-		</text>
-	</element>
-</element>
 ```
 
 __Postback Notifications__  
@@ -255,28 +142,17 @@ __On subscribe:__
 ```
 
 ```xml
-<element name="NOTIFICATION">
-    <attribute name="ID">
-        </text>
-    </attribute>
-    <attribute name="CREATED">
-        </text>
-    </attribute>
-	<element name="ORIGIN">
-		</text>
-	</element>
-	<element name="CODE">
-		</text>
-	</element>
-	<element name="BODY">
-	    <element name="MOBILE">
-	        </text>
-        </element>
-        <element name="CAMPAIGNID">
-	        </text>
-        </element>
-	</element>
-</element>
+element POSTBACK {
+    element ORIGIN { text } &
+    element CODE { text } &
+    element MOBILE { text } &
+    element CAMPAIGNID { text } &
+    element TIMESTAMP { text } &
+    element SHORTCODE { text } &
+    element CAMPAIGNTITLE { text } &
+    element BRANDNAME { text } &
+    element SOURCE { text }
+}
 ```
 
 __On unsubscribe:__
@@ -296,26 +172,15 @@ __On unsubscribe:__
 ```
 
 ```xml
-<element name="NOTIFICATION">
-    <attribute name="ID">
-        </text>
-    </attribute>
-    <attribute name="CREATED">
-        </text>
-    </attribute>
-	<element name="ORIGIN">
-		</text>
-	</element>
-	<element name="CODE">
-		</text>
-	</element>
-	<element name="BODY">
-	    <element name="MOBILE">
-	        </text>
-        </element>
-        <element name="CAMPAIGNID">
-	        </text>
-        </element>
-	</element>
-</element>
+element POSTBACK {
+    element ORIGIN { text } &
+    element CODE { text } &
+    element MOBILE { text } &
+    element CAMPAIGNID { text } &
+    element TIMESTAMP { text } &
+    element SHORTCODE { text } &
+    element CAMPAIGNTITLE { text } &
+    element BRANDNAME { text } &
+    element SOURCE { text }
+}
 ```

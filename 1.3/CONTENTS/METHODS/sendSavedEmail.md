@@ -30,50 +30,43 @@ __Request:__
 </REQUEST>
 ```
 
-```xml
-<element name="REQUEST">
-	<element name="ACTION">
-		</text>
-	</element>
-	<element name="API_KEY">
-		</text>
-	</element>
-	<element name="EMAILTEMPLATEID">
-		</text>
-	</element>
-	<element name="EMAIL">
-		</text>
-	</element>
-	<element name="CAMPAIGNID">
-		</text>
-	</element>
-	<optional>
-		<element name="DATA">
-			<element name="FIRST_NAME">
-				</text>
-			</element>
-			<element name="LAST_NAME">
-				</text>
-			</element>
-			<element name="GENDER">
-				</text>
-			</element>
-			...
-		</element>
-	</optional>
-</element>
-```
-
 __Request Parameters:__
 
-    Mandatory: ACTION, API_KEY, EMAILTEMPLATEID, EMAIL, CAMPAIGNID
-    Optional: DATA
+    Mandatory: action, api_key, emailTemplateId, email, campaignId
+    Optional: data
+
+```xml
+element REQUEST {
+    element ACTION { "sendSavedEmail" } &
+    element API_KEY { text } &
+    element EMAILTEMPLATEID { text } &
+    element EMAIL { text } &
+    element CAMPAIGNID { text } &
+    element DATA {
+        element FIRST_NAME { text }? &
+        element LAST_NAME { text }? &
+        element GENDER { text }? &
+        ...
+    }?
+}
 
 __Response Parameters:__
 
-    EMAILTEMPLATEID, CAMPAIGNID, EMAIL, STATUS, TRACKINGID, ERRORCODE, ERRORINFO
+    status, emailTemplateId, trackingId, email, campaignId, errorCode, errorInfo
 
-__Related Errorcodes:__
+```xml
+element RESPONSE {
+    element STATUS { text } &
+    element EMAILTEMPLATEID { text }? &
+    element TRACKINGID { text }? &
+    element EMAIL { text }? &
+    element CAMPAIGNID { text }? &
+    element ERRORCODE { text }? &
+    element ERRORINFO { text }?
+}
+```
+
+__Related Error Codes:__
 
     E401, E402, E403, E713, E915, E916, E917
 
@@ -95,42 +88,6 @@ XML:
 </REQUEST>
 ```
 
-```xml
-<element name="REQUEST">
-	<element name="ACTION">
-		</text>
-	</element>
-	<element name="API_KEY">
-		</text>
-	</element>
-	<element name="EMAIL">
-		</text>
-	</element>
-	<element name="EMAILTEMPLATEID">
-		</text>
-	</element>
-	<element name="CAMPAIGNID">
-		</text>
-	</element>
-	<optional>
-		<element name="DATA">
-			<element name="FIRST_NAME">
-				</text>
-			</element>
-			<element name="LAST_NAME">
-				</text>
-			</element>
-			<element name="AGE">
-				</text>
-			</element>
-			<element name="PET">
-				</text>
-			</element>
-		</element>
-	</optional>
-</element>
-```
-
 GET:
 
     https://secure.skycore.com/API/wxml/1.3/index.php?action=sendsavedemail&api_key=qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ
@@ -148,26 +105,6 @@ __Response Example: Success__
 </RESPONSE>
 ```
 
-```xml
-<element name="RESPONSE">
-	<element name="STATUS">
-		</text>
-	</element>
-	<element name="EMAILTEMPLATEID">
-		</text>
-	</element>
-	<element name="TRACKINGID">
-		</text>
-	</element>
-	<element name="EMAIL">
-		</text>
-	</element>
-	<element name="CAMPAIGNID">
-		</text>
-	</element>
-</element>
-```
-
 __Response Example: Failure__
 ```xml
 <RESPONSE>
@@ -178,27 +115,4 @@ __Response Example: Failure__
      <CAMPAIGNID>5678</CAMPAIGNID>
      <ERRORINFO>There is billing problem on your account</ERRORINFO>
 </RESPONSE>
-```
-
-```xml
-<element name="RESPONSE">
-	<element name="STATUS">
-		</text>
-	</element>
-	<element name="ERRORCODE">
-		</text>
-	</element>
-	<element name="EMAIL">
-		</text>
-	</element>
-	<element name="EMAILTEMPLATEID">
-		</text>
-	</element>
-	<element name="CAMPAIGNID">
-		</text>
-	</element>
-	<element name="ERRORINFO">
-		</text>
-	</element>
-</element>
 ```

@@ -2,7 +2,6 @@
 
 ## deletePassData
 
-
 __Synopsis:__  
 This API request deletes the pass data from the pass database. All the delivered passes with this data are not affected but any future requests to deliver/update/generate Passbook pass with this data will result in failure. For more info see below for Mandatory/Optional fields and Error codes.
 
@@ -15,34 +14,36 @@ __Request: XML__
 </REQUEST>
 ```
 
-```xml
-<element name="REQUEST">
-    <element name="ACTION">
-        </text>
-    </element>
-    <element name="API_KEY">
-        </text>
-    </element>
-    <element name="PASSDATAID">
-        </text>
-    </element>
-</element>
-```
-
 __Request: GET__
 
     API_URL?action=deletepassdata&api_key=apiKey&passdataid=passDataId
 
 __Request Parameters:__
 
-    Mandatory: action, apiKey, passDataId
+    Mandatory: action, api_key, passDataId
     Optional: N/A
+
+```xml
+element REQUEST {
+    element ACTION { "deletePassData" } &
+    element API_KEY { text } &
+    element PASSDATAID { text }
+}
+```
 
 __Response Parameters:__
 
-    status, Errorcode, Errorinfo
+    status, errorCode, errorInfo
 
-__Related Errorcodes:__
+```xml
+element RESPONSE {
+    element STATUS { text } &
+    element ERRORCODE { text }? &
+    element ERRORINFO { text }?
+}
+```
+
+__Related Error Codes:__
 
     E807, E808, E821
     
@@ -55,33 +56,11 @@ __Request Example:__
 </REQUEST>
 ```
 
-```xml
-<element name="REQUEST">
-    <element name="ACTION">
-        </text>
-    </element>
-    <element name="API_KEY">
-        </text>
-    </element>
-    <element name="PASSDATAID">
-        </text>
-    </element>
-</element>
-```
-
 __Response Example: Success__
 ```xml
 <RESPONSE>
     <STATUS>Success</STATUS>
 </RESPONSE>
-```
-
-```xml
-<element name="RESPONSE">
-    <element name="STATUS">
-        </text>
-    </element>
-</element>
 ```
 
 __Response Example: Failure__
@@ -91,18 +70,4 @@ __Response Example: Failure__
     <ERRORCODE>E821</ERRORCODE>
     <ERRORINFO>Pass was not deleted. Internal error occured.</ERRORINFO>
 </RESPONSE>
-```
-
-```xml
-<element name="RESPONSE">
-    <element name="STATUS">
-        </text>
-    </element>
-    <element name="ERRORCODE">
-        </text>
-    </element>
-    <element name="ERRORINFO">
-        </text>
-    </element>
-</element>
 ```

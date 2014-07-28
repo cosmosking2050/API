@@ -2,7 +2,6 @@
 
 ## generatePass
 
-
 __Synopsis:__  
 This API request is used to create Passbook Passes dynamically. Passes are created based on the dynamic pass data passed in the request which is used in restriction to the Pass Template Settings. 'CustomPassId' is your system generated unique identifier that will represent this pass data. You can optionally pass it along with the pass data and use this as a reference for any future queries to this pass or pass data. In the case of Relevance, Relevant Text is considered only when Relevance lat,long values are passed in the API otherwise ignored. On success, the API returns important values such as 'passDataId', 'serialNumber', 'customPassId', 'passLink' and 'downloadUrl'. All these values need to be stored along with passData on your side which will come in use for making pass updates in the future. More explanation about these values are given below:
 
@@ -89,340 +88,6 @@ __Request: XML__
 </REQUEST>
 ```
 
-```xml
-<element name="REQUEST">
-	<element name="ACTION">
-		</text>
-	</element>
-	<element name="API_KEY">
-		</text>
-	</element>
-	<element name="PASSTEMPLATEID">
-		</text>
-	</element>
-	<element name="PASSDATA">
-	    <optional>
-	        <element name="CUSTOMPASSID">
-	            </text>
-	        </element>
-	    </optional>
-	    <optional>
-	        <element name="THUMBNAILURL">
-	            </text>
-	        </element>
-	    </optional>
-	    <element name="BARCODEVALUE">
-	        </text>
-	    </element>
-	    <optional>
-	        <element name="BARCODETEXT">
-	            </text>
-	        </element>
-	    </optional>
-	    <optional>
-	        <element name="HEADERLABEL1">
-	            </text>
-	        </element>
-	    </optional>
-	    <optional>
-	        <element name="HEADERVALUE1">
-	            </text>
-	        </element>
-	    </optional>
-	    <optional>
-	        <element name="PRIMARYLABEL1">
-	            </text>
-	        </element>
-	    </optional>
-	    <optional>
-	        <element name="PRIMARYVALUE1">
-	            </text>
-	        </element>
-	    </optional>
-	    <optional>
-	        <element name="PRIMARYLABEL2">
-	            </text>
-	        </element>
-	    </optional>
-	    <optional>
-	        <element name="PRIMARYVALUE2">
-	            </text>
-	        </element>
-	    </optional>
-	    <optional>
-	        <element name="SECLABEL1">
-	            </text>
-	        </element>
-	    </optional>
-	    <optional>
-	        <element name="SECVALUE1">
-	            </text>
-	        </element>
-	    </optional>
-	    <optional>
-	        <element name="SECLABEL2">
-	            </text>
-	        </element>
-	    </optional>
-	    <optional>
-	        <element name="SECVALUE2">
-	            </text>
-	        </element>
-	    </optional>
-	    <optional>
-	        <element name="SECLABEL3">
-	            </text>
-	        </element>
-	    </optional>
-	    <optional>
-	        <element name="SECVALUE3">
-	            </text>
-	        </element>
-	    </optional>
-	    <optional>
-	        <element name="SECLABEL4">
-	            </text>
-	        </element>
-	    </optional>
-	    <optional>
-	        <element name="SECVALUE4">
-	            </text>
-	        </element>
-	    </optional>
-	    <optional>
-	        <element name="AUXLABEL1">
-	            </text>
-	        </element>
-	    </optional>
-	    <optional>
-	        <element name="AUXVALUE1">
-	            </text>
-	        </element>
-	    </optional>
-	    <optional>
-	        <element name="AUXLABEL2">
-	            </text>
-	        </element>
-	    </optional>
-	    <optional>
-	        <element name="AUXVALUE2">
-	            </text>
-	        </element>
-	    </optional>
-	    <optional>
-	        <element name="AUXLABEL3">
-	            </text>
-	        </element>
-	    </optional>
-	    <optional>
-	        <element name="AUXVALUE3">
-	            </text>
-	        </element>
-	    </optional>
-	    <optional>
-	        <element name="AUXLABEL4">
-	            </text>
-	        </element>
-	    </optional>
-	    <optional>
-	        <element name="AUXVALUE4">
-	            </text>
-	        </element>
-	    </optional>
-	    <optional>
-	        <element name="BACKLABEL1">
-	            </text>
-	        </element>
-	    </optional>
-	    <optional>
-	        <element name="BACKVALUE1">
-	            </text>
-	        </element>
-	    </optional>
-	    <optional>
-	        <element name="BACKLABEL2">
-	            </text>
-	        </element>
-	    </optional>
-	    <optional>
-	        <element name="BACKVALUE2">
-	            </text>
-	        </element>
-	    </optional>
-	    <optional>
-	        <element name="BACKLABEL3">
-	            </text>
-	        </element>
-	    </optional>
-	    <optional>
-	        <element name="BACKVALUE3">
-	            </text>
-	        </element>
-	    </optional>
-	    <optional>
-	        <element name="BACKLABEL4">
-	            </text>
-	        </element>
-	    </optional>
-	    <optional>
-	        <element name="BACKVALUE4">
-	            </text>
-	        </element>
-	    </optional>
-	    <optional>
-	        <element name="RELLATITUDE1">
-	            </text>
-	        </element>
-	    </optional>
-	    <optional>
-	        <element name="RELLONGITUDE1">
-	            </text>
-	        </element>
-	    </optional>
-	    <optional>
-	        <element name="RELTEXT1">
-	            </text>
-	        </element>
-	    </optional>
-	    <optional>
-	        <element name="RELLATITUDE2">
-	            </text>
-	        </element>
-	    </optional>
-	    <optional>
-	        <element name="RELLONGITUDE2">
-	            </text>
-	        </element>
-	    </optional>
-	    <optional>
-	        <element name="RELTEXT2">
-	            </text>
-	        </element>
-	    </optional>
-	    <optional>
-	        <element name="RELLATITUDE3">
-	            </text>
-	        </element>
-	    </optional>
-	    <optional>
-	        <element name="RELLONGITUDE3">
-	            </text>
-	        </element>
-	    </optional>
-	    <optional>
-	        <element name="RELTEXT3">
-	            </text>
-	        </element>
-	    </optional>
-	    <optional>
-	        <element name="RELLATITUDE4">
-	            </text>
-	        </element>
-	    </optional>
-	    <optional>
-	        <element name="RELLONGITUDE4">
-	            </text>
-	        </element>
-	    </optional>
-	    <optional>
-	        <element name="RELTEXT4">
-	            </text>
-	        </element>
-	    </optional>
-	    <optional>
-	        <element name="RELLATITUDE5">
-	            </text>
-	        </element>
-	    </optional>
-	    <optional>
-	        <element name="RELLONGITUDE5">
-	            </text>
-	        </element>
-	    </optional>
-	    <optional>
-	        <element name="RELTEXT5">
-	            </text>
-	        </element>
-	    </optional>
-	    <optional>
-	        <element name="RELLATITUDE6">
-	            </text>
-	        </element>
-	    </optional>
-	    <optional>
-	        <element name="RELLONGITUDE6">
-	            </text>
-	        </element>
-	    </optional>
-	    <optional>
-	        <element name="RELTEXT6">
-	            </text>
-	        </element>
-	    </optional>
-	    <optional>
-	        <element name="RELLATITUDE7">
-	            </text>
-	        </element>
-	    </optional>
-	    <optional>
-	        <element name="RELLONGITUDE7">
-	            </text>
-	        </element>
-	    </optional>
-	    <optional>
-	        <element name="RELTEXT7">
-	            </text>
-	        </element>
-	    </optional>
-	    <optional>
-	        <element name="RELLATITUDE8">
-	            </text>
-	        </element>
-	    </optional>
-	    <optional>
-	        <element name="RELLONGITUDE8">
-	            </text>
-	        </element>
-	    </optional>
-	    <optional>
-	        <element name="RELTEXT8">
-	            </text>
-	        </element>
-	    </optional>
-	    <optional>
-	        <element name="RELLATITUDE9">
-	            </text>
-	        </element>
-	    </optional>
-	    <optional>
-	        <element name="RELLONGITUDE9">
-	            </text>
-	        </element>
-	    </optional>
-	    <optional>
-	        <element name="RELTEXT9">
-	            </text>
-	        </element>
-	    </optional>
-	    <optional>
-	        <element name="RELLATITUDE10">
-	            </text>
-	        </element>
-	    </optional>
-	    <optional>
-	        <element name="RELLONGITUDE10">
-	            </text>
-	        </element>
-	    </optional>
-	    <optional>
-	        <element name="RELTEXT10">
-	            </text>
-	        </element>
-	    </optional>
-	</element>
-</element>
-```
-
 __Request: GET__
 
     API_URL?action=generatepass&api_key=apiKey&passtemplateid=passTemplateId
@@ -452,7 +117,7 @@ __Request: GET__
 
 __Request Parameters:__
 
-    Mandatory: action, apikey, passTemplateId, 
+    Mandatory: action, api_key, passTemplateId, 
     barcodeValue (if "Barcode=Allowed" && "BarcodeType=Dynamic" && "BarcodeValueSource=Dynamic Value" for Pass Template otherwise IGNORED)
     Optional: customPassId, thumbnailUrl,
     barcodeText (if "Barcode = Allowed" && "Barcode Alternate Text = Dynamic Text" for Pass Template otherwise IGNORED), 
@@ -473,16 +138,100 @@ __Request Parameters:__
     relLatitude9, relLongitude9, relText9,
     relLatitude10, relLongitude10, relText10
 
+```xml
+element REQUEST {
+    element ACTION { "generatePass" } &
+    element API_KEY { text } &
+    element PASSTEMPLATEID { text } &
+    element PASSDATA {
+        element CUSTOMPASSID { text }? &
+        element THUMBNAILURL { text }? &
+        element BARCODEVALUE { text } &
+        element BARCODETEXT { text }? &
+        element HEADERLABEL1 { text }? &
+        element HEADERVALUE1 { text }? &
+        element PRIMARYLABEL1 { text }? &
+        element PRIMARYVALUE1  { text }? &
+        element PRIMARYLABEL2 { text }? &
+        element PRIMARYVALUE2  { text }? &
+        element SECLABEL1 { text }? &
+        element SECVALUE1 { text }? &
+        element SECLABEL2 { text }? &
+        element SECVALUE2 { text }? &
+        element SECLABEL3 { text }? &
+        element SECVALUE3 { text }? &
+        element SECLABEL4 { text }? &
+        element SECVALUE4 { text }? &
+        element AUXLABEL1 { text }? &
+        element AUXVALUE1 { text }? &
+        element AUXLABEL2 { text }? &
+        element AUXVALUE2 { text }? &
+        element AUXLABEL3 { text }? &
+        element AUXVALUE3 { text }? &
+        element AUXLABEL4 { text }? &
+        element AUXVALUE4 { text }? &
+        element BACKLABEL1 { text }? &
+        element BACKVALUE1 { text }? &
+        element BACKLABEL2 { text }? &
+        element BACKVALUE2 { text }? &
+        element BACKLABEL3 { text }? &
+        element BACKVALUE3 { text }? &
+        element BACKLABEL4 { text }? &
+        element BACKVALUE4 { text }? &
+        element RELLATITUDE1 { text }? &
+        element RELLONGITUDE1 { text }? &
+        element RELTEXT1 { text }? &
+        element RELLATITUDE2 { text }? &
+        element RELLONGITUDE2 { text }? &
+        element RELTEXT2 { text }? &
+        element RELLATITUDE3 { text }? &
+        element RELLONGITUDE3 { text }? &
+        element RELTEXT3 { text }? &
+        element RELLATITUDE4 { text }? &
+        element RELLONGITUDE4 { text }? &
+        element RELTEXT4 { text }? &
+        element RELLATITUDE5 { text }? &
+        element RELLONGITUDE5 { text }? &
+        element RELTEXT5 { text }? &
+        element RELLATITUDE6 { text }? &
+        element RELLONGITUDE6 { text }? &
+        element RELTEXT6 { text }? &
+        element RELLATITUDE7 { text }? &
+        element RELLONGITUDE7 { text }? &
+        element RELTEXT7 { text }? &
+        element RELLATITUDE8 { text }? &
+        element RELLONGITUDE8 { text }? &
+        element RELTEXT8 { text }? &
+        element RELLATITUDE9 { text }? &
+        element RELLONGITUDE9 { text }? &
+        element RELTEXT9 { text }? &
+        element RELLATITUDE10 { text }? &
+        element RELLONGITUDE10 { text }? &
+        element RELTEXT10 { text }?
+    }
+}
+```
+
 __Response Parameters:__
 
-    status, passDataID, passTemplateId, Errorcode, Errorinfo, passDownloadLink
+    status, passDataId, serialNumber, customPassId, passLink, downloadUrl, errorCode, errorInfo
 
-__Related Errorcodes:__
+```xml
+element RESPONSE {
+    element STATUS { text } &
+    element PASSDATAID { text }? &
+    element SERIALNUMBER { text }? &
+    element CUSTOMPASSID { text }? &
+    element PASSLINK { text }? &
+    element DOWNLOADURL { text }? &
+    element ERRORCODE { text }? &
+    element ERRORINFO { text }?
+}
+```
 
-    E801, E802, E803, E806, E830, E831, E840, E841, E842, E843, E844, E845, E846, E847, E848, E849, E850, E851, E852,
-    E853, E854, E855, E856, E857, E858, E859, E860, E861, E862, E863, E864, E865, E866, E867, E868, E869, E870, E871,
-    E872, E873, E874, E875, E876, E877, E878, E879, E880, E881, E882, E883, E884, E885, E886, E887, E888, E889, E890,
-    E891, E892, E893, E894, E895, E896, E897, E898, E899
+__Related Error Codes:__
+
+    E801, E802, E803, E806, E830, E831, E840, E841, E842, E843, E844, E845, E846, E847, E848, E849, E850, E851, E852, E853, E854, E855, E856, E857, E858, E859, E860, E861, E862, E863, E864, E865, E866, E867, E868, E869, E870, E871, E872, E873, E874, E875, E876, E877, E878, E879, E880, E881, E882, E883, E884, E885, E886, E887, E888, E889, E890, E891, E892, E893, E894, E895, E896, E897, E898, E899
 
 __Request Example:__
 ```xml
@@ -518,130 +267,6 @@ __Request Example:__
 </REQUEST>
 ```
 
-```xml
-<element name="REQUEST">
-	<element name="ACTION">
-		</text>
-	</element>
-	<element name="API_KEY">
-		</text>
-	</element>
-	<element name="PASSTEMPLATEID">
-		</text>
-	</element>
-	<element name="PASSDATA">
-        <optional>
-            <element name="THUMBNAILURL">
-                </text>
-            </element>
-        </optional>
-        <element name="BARCODEVALUE">
-            </text>
-        </element>
-        <optional>
-            <element name="BARCODETEXT">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="HEADERLABEL1">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="HEADERVALUE1">
-                </text>
-            </element>
-    	</optional>
-        <optional>
-            <element name="PRIMARYLABEL1">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="PRIMARYVALUE1">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="SECLABEL1">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="SECVALUE1">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="SECLABEL2">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="SECVALUE2">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="AUXLABEL1">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="AUXVALUE1">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="BACKLABEL1">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="BACKVALUE1">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="BACKLABEL2">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="BACKVALUE2">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="BACKLABEL3">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="BACKVALUE3">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="RELLATITUDE2">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="RELLONGITUDE2">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="RELTEXT2">
-                </text>
-            </element>
-        </optional>
-    </element>
-</element>
-```
-
 __Response Example: Success__
 ```xml
 <RESPONSE>
@@ -654,29 +279,6 @@ __Response Example: Success__
 </RESPONSE>
 ```
 
-```xml
-<element name="RESPONSE">
-	<element name="STATUS">
-		</text>
-	</element>
-	<element name="PASSDATAID">
-		</text>
-	</element>
-	<element name="SERIALNUMBER">
-		</text>
-	</element>
-	<element name="CUSTOMPASSID">
-		</text>
-	</element>
-	<element name="PASSLINK">
-		</text>
-	</element>
-	<element name="DOWNLOADURL">
-		</text>
-	</element>
-</element>
-```
-
 __Response Example: Failure__
 ```xml
 <RESPONSE>
@@ -684,18 +286,4 @@ __Response Example: Failure__
     <ERRORCODE>E830</ERRORCODE>
     <ERRORINFO>Passbook Pass was not generated. Internal error occured.</ERRORINFO>
 </RESPONSE>
-```
-
-```xml
-<element name="RESPONSE">
-	<element name="STATUS">
-		</text>
-	</element>
-	<element name="ERRORCODE">
-		</text>
-	</element>
-	<element name="ERRORINFO">
-		</text>
-	</element>
-</element>
 ```

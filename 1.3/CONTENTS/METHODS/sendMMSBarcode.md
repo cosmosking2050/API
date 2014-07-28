@@ -24,7 +24,7 @@ __Request:__
 ```xml
 <REQUEST>
 	<ACTION>sendMMSBarcode</ACTION>
-    <API_KEY>API KEY</API_KEY>
+    <API_KEY>apiKey</API_KEY>
     <MMSID>MMSID</MMSID>
     <TO>Number</TO>
     <FROM>Shortcode</FROM>
@@ -47,88 +47,51 @@ __Request:__
 </REQUEST>
 ```
 
-```xml
-<element name="REQUEST">
-    <element name="ACTION">
-        </text>
-    </element>
-    <element name="API_KEY">
-        </text>
-    </element>
-    <element name="MMSID">
-        </text>
-    </element>
-    <element name="TO">
-        </text>
-    </element>
-    <element name="FROM">
-        </text>
-    </element>
-    <element name="BARCODEID">
-        </text>
-    </element>
-    <optional>
-        <element name="CAMPAIGNREF">
-            </text>
-        </element>
-    </optional>
-    <optional>
-        <element name="DDMTITLE">
-            </text>
-        </element>
-    </optional>
-    <optional>
-        <element name="DDMTEXT">
-            </text>
-        </element>
-    </optional>
-    <optional>
-        <element name="DDMTIMEOUT">
-            </text>
-        </element>
-    </optional>
-    <optional>
-        <element name="CUSTOMTEXT">
-            <element name="VALUE">
-                </text>
-            </element>
-            <element name="SLIDE">
-                </text>
-            </element>
-        </element>
-    </optional>
-    <optional>
-        <element name="CUSTOMSUBJECT">
-            </text>
-        </element>
-    </optional>
-    <optional>
-        <element name="DATA">
-            <element name="FIRST_NAME">
-                </text>
-            </element>
-            <element name="LAST_NAME">
-                </text>
-            </element>
-            <element name="GENDER">
-                </text>
-            </element>
-            ...
-        </element>
-    </optional>
-</element>
-```
-
 __Request Parameters:__
 
-    Mandatory: action, api_key, mmsid, to, barcodeid, from
-    Optional: campaignref, ddmtitle, ddmtext, ddmtimeout, customsubject, customText, data
+    Mandatory: action, api_key, mmsId, to, from, barcodeId
+    Optional: campaignRef, ddmTitle, ddmText, ddmTimeout, customText, customSubject, data
+
+element REQUEST {
+    element ACTION { ”sendMMSBarcode” } &
+    element API_KEY { text } &
+    element MMSID { text } &
+    element TO { text } &
+    element FROM { text } &
+    element BARCODEID { text } &
+    element CAMPAIGNREF { text }? &
+    element DDMTITLE { text }? &
+    element DDMTEXT { text }? &
+    element DDMTIMEOUT { xsd:nonNegativeInteger }? &
+    element CUSTOMTEXT {
+        element VALUE { text } &
+        element SLIDE { xsd:nonNegativeInteger }
+    }? &
+    element CUSTOMSUBJECT { text }? &
+    element DATA {
+        element FIRST_NAME { text }? &
+        element LAST_NAME { text }? &
+        element GENDER { text }?
+        ...
+    }?
+}
 
 __Response Parameters:__
 
-    mmsid, status, to, trackingid, errorcode, errorinfo
+    status, to, mmsId, trackingId, errorCode, errorInfo
 
-__Related Errorcodes:__
+```xml
+element RESPONSE {
+    element STATUS { text } &
+    element TO { text }? &
+    element MMSID { text }? &
+    element TRACKINGID { text }? &
+    element ERRORCODE { text }? &
+    element ERRORINFO { text }?
+}
+```
+
+__Related Error Codes:__
 
     E110, E111, E241, E620, E621, E623, E626, E628, E629, E630, E631, E632, E633, E713, E714, E715
   
@@ -160,80 +123,6 @@ XML:
 </REQUEST>
 ```
 
-```xml
-<element name="REQUEST">
-    <element name="ACTION">
-        </text>
-    </element>
-    <element name="API_KEY">
-        </text>
-    </element>
-    <element name="TO">
-        </text>
-    </element>
-    <element name="FROM">
-        </text>
-    </element>
-    <element name="BARCODEID">
-        </text>
-    </element>
-    <optional>
-        <element name="CAMPAIGNREF">
-            </text>
-        </element>
-    </optional>
-    <element name="MMSID">
-        </text>
-    </element>
-    <optional>
-        <element name="DDMTITLE">
-            </text>
-        </element>
-    </optional>
-    <optional>
-        <element name="DDMTEXT">
-            </text>
-        </element>
-    </optional>
-    <optional>
-        <element name="DDMTIMEOUT">
-            </text>
-        </element>
-    </optional>
-    <optional>
-        <element name="CUSTOMTEXT">
-            <element name="VALUE">
-                </text>
-            </element>
-            <element name="SLIDE">
-                </text>
-            </element>
-        </element>
-    </optional>
-    <optional>
-        <element name="CUSTOMSUBJECT">
-            </text>
-        </element>
-    </optional>
-    <optional>
-        <element name="DATA">
-            <element name="FIRST_NAME">
-                </text>
-            </element>
-            <element name="LAST_NAME">
-                </text>
-            </element>
-            <element name="AGE">
-                </text>
-            </element>
-			<element name="GENDER">
-                </text>
-            </element>
-        </element>
-    </optional>
-</element>
-```
-
 GET:
 
     https://secure.skycore.com/API/wxml/1.3/index.php?action=sendmmsbarcode&api_key=qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ
@@ -246,27 +135,10 @@ __Response Example: Success__
 ```xml
 <RESPONSE>
     <STATUS>Success</STATUS>
+    <TO>16501234123</TO>
     <MMSID>35674</MMSID>
     <TRACKINGID>TU1TXzEyMzQ2</TRACKINGID>
-    <TO>16501234123</TO>
 </RESPONSE>
-```
-
-```xml
-<element name="RESPONSE">
-    <element name="STATUS">
-        </text>
-    </element>
-    <element name="MMSID">
-        </text>
-    </element>
-    <element name="TRACKINGID">
-        </text>
-    </element>
-    <element name="TO">
-        </text>
-    </element>
-</element>
 ```
 
 __Response Example: Failure__
@@ -277,23 +149,6 @@ __Response Example: Failure__
     <TO>16501234123</TO>
     <ERRORINFO>There is billing problem on your account</ERRORINFO>
 </RESPONSE>
-```
-
-```xml
-<element name="RESPONSE">
-    <element name="STATUS">
-        </text>
-    </element>
-    <element name="ERRORCODE">
-        </text>
-    </element>
-    <element name="TO">
-        </text>
-    </element>
-    <element name="ERRORINFO">
-        </text>
-    </element>
-</element>
 ```
 
 __Postback Notifications For SendMMSBarcode__  
@@ -314,35 +169,17 @@ When the MMS delivery is processed successfully the system will generate a Postb
 ```
 
 ```xml
-<element name="POSTBACK">
-    <element name="ORIGIN">
-        </text>
-    </element>
-    <element name="CODE">
-        </text>
-    </element>
-    <element name="SENTAS">
-        </text>
-    </element>
-    <element name="STATUS">
-        </text>
-    </element>
-    <element name="MMSID">
-        </text>
-    </element>
-    <element name="TO">
-        </text>
-    </element>
-    <element name="TRACKINGID">
-        </text>
-    </element>
-    <element name="SPID">
-        </text>
-    </element>
-    <element name="TIMESTAMP">
-        </text>
-    </element>
-</element>
+element POSTBACK {
+    element ORIGIN { text } &
+    element CODE { text } &
+    element SENTAS { text } &
+    element STATUS { text } &
+    element MMSID { text } &
+    element TO { text } &
+    element TRACKINGID { text } &
+    element SPID { text } &
+    element TIMESTAMP { text }
+}
 ```
 
 When an MMS delivery report is received the system will generate a Postback notification. Not all carriers provide MMS delivery receipts.
@@ -364,39 +201,17 @@ When an MMS delivery report is received the system will generate a Postback noti
 ```
 
 ```xml
-<element name="POSTBACK">
-    <element name="ORIGIN">
-        </text>
-    </element>
-    <element name="CODE">
-        </text>
-    </element>
-    <element name="SENTAS">
-        </text>
-    </element>
-    <element name="STATUS">
-        </text>
-    </element>
-    <element name="MMSID">
-        </text>
-    </element>
-    <element name="TO">
-        </text>
-    </element>
-    <element name="TRACKINGID">
-        </text>
-    </element>
-    <element name="SPID">
-        </text>
-    </element>
-    <element name="TIMESTAMP">
-        </text>
-    </element>
-    <element name="HANDSET">
-        </text>
-    </element>
-    <element name="AGGREGATORID">
-        </text>
-    </element>
-</element>
+element POSTBACK {
+    element ORIGIN { text } &
+    element CODE { text } &
+    element SENTAS { text } &
+    element STATUS { text } &
+    element MMSID { text } &
+    element TO { text } &
+    element TRACKINGID { text } &
+    element SPID { text } &
+    element TIMESTAMP { text } &
+    element HANDSET { text } &
+    element AGGREGATORID { text }
+}
 ```

@@ -109,395 +109,6 @@ __Request: XML__
 </REQUEST>
 ```
 
-```xml
-<element name="REQUEST">
-    <element name="ACTION">
-        </text>
-    </element>
-    <element name="API_KEY">
-        </text>
-    </element>
-    <element name="MMSID">
-        </text>
-    </element>
-    <element name="TO">
-        </text>
-    </element>
-    <element name="FROM">
-        </text>
-    </element>
-    <optional>
-        <element name="CAMPAIGNREF">
-            </text>
-        </element>
-    </optional>
-    <optional>
-        <element name="DDMTITLE">
-            </text>
-        </element>
-    </optional>
-    <optional>
-        <element name="DDMTEXT">
-            </text>
-        </element>
-    </optional>
-    <optional>
-        <element name="DDMTIMEOUT">
-            </text>
-        </element>
-    </optional>
-    <optional>
-        <element name="CUSTOMTEXT">
-            <element name="VALUE">
-                </text>
-            </element>
-            <element name="SLIDE">
-                </text>
-            </element>
-        </element>
-    </optional>
-    <optional>
-        <element name="CUSTOMSUBJECT">
-            </text>
-        </element>
-    </optional>
-    <optional>
-        <element name="DATA">
-            <element name="FIRST_NAME">
-                </text>
-            </element>
-            <element name="LAST_NAME">
-                </text>
-            </element>
-            <element name="GENDER">
-                </text>
-            </element>
-            ...
-        </element>
-    </optional>
-    <element name="PASSDATA">
-    	<optional>
-            <element name="CUSTOMPASSID">
-                </text>
-            </element>
-        </optional>
-	    <optional>
-            <element name="THUMBNAILURL">
-                </text>
-            </element>
-        </optional>
-        <element name="BARCODEVALUE">
-            </text>
-        </element>
-        <optional>
-            <element name="BARCODETEXT">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="HEADERLABEL1">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="HEADERVALUE1">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="PRIMARYLABEL1">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="PRIMARYVALUE1">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="PRIMARYLABEL2">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="PRIMARYVALUE2">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="SECLABEL1">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="SECVALUE1">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="SECLABEL2">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="SECVALUE2">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="SECLABEL3">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="SECVALUE3">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="SECLABEL4">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="SECVALUE4">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="AUXLABEL1">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="AUXVALUE1">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="AUXLABEL2">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="AUXVALUE2">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="AUXLABEL3">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="AUXVALUE3">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="AUXLABEL4">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="AUXVALUE4">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="BACKLABEL1">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="BACKVALUE1">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="BACKLABEL2">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="BACKVALUE2">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="BACKLABEL3">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="BACKVALUE3">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="BACKLABEL4">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="BACKVALUE4">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="RELLATITUDE1">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="RELLONGITUDE1">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="RELTEXT1">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="RELLATITUDE2">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="RELLONGITUDE2">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="RELTEXT2">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="RELLATITUDE3">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="RELLONGITUDE3">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="RELTEXT3">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="RELLATITUDE4">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="RELLONGITUDE4">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="RELTEXT4">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="RELLATITUDE5">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="RELLONGITUDE5">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="RELTEXT5">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="RELLATITUDE6">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="RELLONGITUDE6">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="RELTEXT6">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="RELLATITUDE7">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="RELLONGITUDE7">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="RELTEXT7">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="RELLATITUDE8">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="RELLONGITUDE8">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="RELTEXT8">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="RELLATITUDE9">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="RELLONGITUDE9">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="RELTEXT9">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="RELLATITUDE10">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="RELLONGITUDE10">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="RELTEXT10">
-                </text>
-            </element>
-        </optional>
-    </element>
-</element>
-```
-
 __Request: GET__
 
     API_URL?action=sendpassinmms&api_key=apiKey&mmsid=mmsId&to=phone
@@ -529,7 +140,7 @@ __Request: GET__
 	
 __Request Parameters:__
 
-    Mandatory: action, apiKey, mmsid, to, from, 
+    Mandatory: action, api_key, mmsid, to, from, 
     barcodevalue (if "Barcode=Allowed" && "BarcodeType=Dynamic" && "Barcode value source=Dynamic Value" for Pass Template otherwise IGNORED)
     Optional: campaignref, ddmtitle, ddmtext, ddmtimeout, customsubject, customText, data, thumbnailUrl,
     barcodetext (if "Barcode = Allowed" && "Barcode Alternate Text = Dynamic Text" for Pass Template otherwise IGNORED), 
@@ -550,16 +161,116 @@ __Request Parameters:__
     rellatitude9, rellongitude9, reltext9,
     rellatitude10, rellongitude10, reltext10
 
+```xml
+element REQUEST {
+    element ACTION { ”sendPassInMMS” } &
+    element API_KEY { text } &
+    element MMSID { text } &
+    element TO { text } &
+    element FROM { text } &
+    element CAMPAIGNREF { text }? &
+    element DDMTITLE { text }? &
+    element DDMTEXT { text }? &
+    element DDMTIMEOUT { xsd:nonNegativeInteger }? &
+    element CUSTOMTEXT {
+        element VALUE { text } &
+        element SLIDE { xsd:nonNegativeInteger }
+    }? &
+    element CUSTOMSUBJECT { text }? &
+    element DATA {
+        element FIRST_NAME { text }? &
+        element LAST_NAME { text }? &
+        element GENDER { text }?
+        ...
+    }? &
+    element PASSDATA {
+        element CUSTOMPASSID { text }? &
+        element THUMBNAILURL { text }? &
+        element BARCODEVALUE { text } &
+        element BARCODETEXT { text }? &
+        element HEADERLABEL1 { text }? &
+        element HEADERVALUE1 { text }? &
+        element PRIMARYLABEL1 { text }? &
+        element PRIMARYVALUE1  { text }? &
+        element PRIMARYLABEL2 { text }? &
+        element PRIMARYVALUE2  { text }? &
+        element SECLABEL1 { text }? &
+        element SECVALUE1 { text }? &
+        element SECLABEL2 { text }? &
+        element SECVALUE2 { text }? &
+        element SECLABEL3 { text }? &
+        element SECVALUE3 { text }? &
+        element SECLABEL4 { text }? &
+        element SECVALUE4 { text }? &
+        element AUXLABEL1 { text }? &
+        element AUXVALUE1 { text }? &
+        element AUXLABEL2 { text }? &
+        element AUXVALUE2 { text }? &
+        element AUXLABEL3 { text }? &
+        element AUXVALUE3 { text }? &
+        element AUXLABEL4 { text }? &
+        element AUXVALUE4 { text }? &
+        element BACKLABEL1 { text }? &
+        element BACKVALUE1 { text }? &
+        element BACKLABEL2 { text }? &
+        element BACKVALUE2 { text }? &
+        element BACKLABEL3 { text }? &
+        element BACKVALUE3 { text }? &
+        element BACKLABEL4 { text }? &
+        element BACKVALUE4 { text }? &
+        element RELLATITUDE1 { text }? &
+        element RELLONGITUDE1 { text }? &
+        element RELTEXT1 { text }? &
+        element RELLATITUDE2 { text }? &
+        element RELLONGITUDE2 { text }? &
+        element RELTEXT2 { text }? &
+        element RELLATITUDE3 { text }? &
+        element RELLONGITUDE3 { text }? &
+        element RELTEXT3 { text }? &
+        element RELLATITUDE4 { text }? &
+        element RELLONGITUDE4 { text }? &
+        element RELTEXT4 { text }? &
+        element RELLATITUDE5 { text }? &
+        element RELLONGITUDE5 { text }? &
+        element RELTEXT5 { text }? &
+        element RELLATITUDE6 { text }? &
+        element RELLONGITUDE6 { text }? &
+        element RELTEXT6 { text }? &
+        element RELLATITUDE7 { text }? &
+        element RELLONGITUDE7 { text }? &
+        element RELTEXT7 { text }? &
+        element RELLATITUDE8 { text }? &
+        element RELLONGITUDE8 { text }? &
+        element RELTEXT8 { text }? &
+        element RELLATITUDE9 { text }? &
+        element RELLONGITUDE9 { text }? &
+        element RELTEXT9 { text }? &
+        element RELLATITUDE10 { text }? &
+        element RELLONGITUDE10 { text }? &
+        element RELTEXT10 { text }?
+    }
+}
+```
+
 __Response Parameters:__
 
-    status, to, mmsid, trackingid, errorcode, errorinfo
+    status, to, from, mmsId, trackingId, errorCode, errorInfo
 
-__Related Errorcodes:__
+```xml
+element RESPONSE {
+    element STATUS { text } &
+    element TO { text }? &
+    element FROM { text }? &
+    element MMSID { text }? &
+    element TRACKINGID { text }? &
+    element ERRORCODE { text }? &
+    element ERRORINFO { text }?
+}
+```
+
+__Related Error Codes:__
     
-    E110, E111, E241, E620, E621, E626, E628, E629, E713, E714, E715, E802, E803, E806, E822, E840, E841, E842, E843,
-    E844, E845, E846, E847, E848, E849, E850, E851, E852, E853, E854, E855, E856, E857, E858, E859, E860, E861, E862,
-    E863, E864, E865, E866, E867, E868, E869, E870, E871, E872, E873, E874, E875, E876, E877, E878, E879, E880, E881,
-    E882, E883, E884, E885, E886, E887, E888, E889, E890, E891, E892, E893, E894, E895, E896, E897, E898, E899
+    E110, E111, E241, E620, E621, E626, E628, E629, E713, E714, E715, E802, E803, E806, E822, E840, E841, E842, E843, E844, E845, E846, E847, E848, E849, E850, E851, E852, E853, E854, E855, E856, E857, E858, E859, E860, E861, E862, E863, E864, E865, E866, E867, E868, E869, E870, E871, E872, E873, E874, E875, E876, E877, E878, E879, E880, E881, E882, E883, E884, E885, E886, E887, E888, E889, E890, E891, E892, E893, E894, E895, E896, E897, E898, E899
 
 __Request Example:__
 ```xml
@@ -611,187 +322,6 @@ __Request Example:__
 </REQUEST>
 ```
 
-```xml
-<element name="REQUEST">
-    <element name="ACTION">
-        </text>
-    </element>
-    <element name="API_KEY">
-        </text>
-    </element>
-    <element name="MMSID">
-        </text>
-    </element>
-    <element name="TO">
-        </text>
-    </element>
-    <element name="FROM">
-        </text>
-    </element>
-    <optional>
-        <element name="CAMPAIGNREF">
-            </text>
-        </element>
-    </optional>
-    <optional>
-        <element name="DDMTITLE">
-            </text>
-        </element>
-    </optional>
-    <optional>
-        <element name="DDMTEXT">
-            </text>
-        </element>
-    </optional>
-    <optional>
-        <element name="DDMTIMEOUT">
-            </text>
-        </element>
-    </optional>
-    <optional>
-        <element name="CUSTOMTEXT">
-            <element name="VALUE">
-                </text>
-            </element>
-            <element name="SLIDE">
-                </text>
-            </element>
-        </element>
-    </optional>
-    <optional>
-        <element name="CUSTOMSUBJECT">
-            </text>
-        </element>
-    </optional>
-    <optional>
-        <element name="DATA">
-            <element name="FIRST_NAME">
-                </text>
-            </element>
-            <element name="LAST_NAME">
-                </text>
-            </element>
-            <element name="AGE">
-                </text>
-            </element>
-			<element name="GENDER">
-                </text>
-            </element>
-        </element>
-    </optional>
-    <element name="PASSDATA">
-	    <optional>
-            <element name="THUMBNAILURL">
-                </text>
-            </element>
-        </optional>
-        <element name="BARCODEVALUE">
-            </text>
-        </element>
-        <optional>
-            <element name="BARCODETEXT">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="HEADERLABEL1">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="HEADERVALUE1">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="PRIMARYLABEL1">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="PRIMARYVALUE1">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="SECLABEL1">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="SECVALUE1">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="SECLABEL2">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="SECVALUE2">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="AUXLABEL1">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="AUXVALUE1">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="BACKLABEL1">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="BACKVALUE1">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="BACKLABEL2">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="BACKVALUE2">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="BACKLABEL3">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="BACKVALUE3">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="RELLATITUDE2">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="RELLONGITUDE2">
-                </text>
-            </element>
-        </optional>
-        <optional>
-            <element name="RELTEXT2">
-                </text>
-            </element>
-        </optional>
-    </element>
-</element>
-```
-
 __Response Example: Success__
 ```xml
 <RESPONSE>
@@ -803,26 +333,6 @@ __Response Example: Success__
 </RESPONSE>
 ```
 
-```xml
-<element name="RESPONSE">
-    <element name="STATUS">
-        </text>
-    </element>
-    <element name="MMSID">
-        </text>
-    </element>
-    <element name="TRACKINGID">
-        </text>
-    </element>
-    <element name="TO">
-        </text>
-    </element>
-    <element name="FROM">
-        </text>
-    </element>
-</element>
-```
-
 __Response Example: Failure__
 ```xml
 <RESPONSE>
@@ -831,23 +341,6 @@ __Response Example: Failure__
     <TO>16501234123</TO>
     <ERRORINFO>There is billing problem on your account.</ERRORINFO>
 </RESPONSE>
-```
-
-```xml
-<element name="RESPONSE">
-    <element name="STATUS">
-        </text>
-    </element>
-    <element name="ERRORCODE">
-        </text>
-    </element>
-    <element name="TO">
-        </text>
-    </element>
-    <element name="ERRORINFO">
-        </text>
-    </element>
-</element>
 ```
 
 __Postback Notifications For SendPassInMMS__  
@@ -868,35 +361,17 @@ When the MMS delivery is processed successfully the system will generate a Postb
 ```
 
 ```xml
-<element name="POSTBACK">
-    <element name="ORIGIN">
-        </text>
-    </element>
-    <element name="CODE">
-        </text>
-    </element>
-    <element name="SENTAS">
-        </text>
-    </element>
-    <element name="STATUS">
-        </text>
-    </element>
-    <element name="MMSID">
-        </text>
-    </element>
-    <element name="TO">
-        </text>
-    </element>
-    <element name="TRACKINGID">
-        </text>
-    </element>
-    <element name="SPID">
-        </text>
-    </element>
-    <element name="TIMESTAMP">
-        </text>
-    </element>
-</element>
+element POSTBACK {
+    element ORIGIN { text } &
+    element CODE { text } &
+    element SENTAS { text } &
+    element STATUS { text } &
+    element MMSID { text } &
+    element TO { text } &
+    element TRACKINGID { text } &
+    element SPID { text } &
+    element TIMESTAMP { text }
+}
 ```
 
 When an MMS delivery report is received the system will generate a Postback notification. Not all carriers provide MMS delivery receipts.
@@ -918,39 +393,17 @@ When an MMS delivery report is received the system will generate a Postback noti
 ```
 
 ```xml
-<element name="POSTBACK">
-    <element name="ORIGIN">
-        </text>
-    </element>
-    <element name="CODE">
-        </text>
-    </element>
-    <element name="SENTAS">
-        </text>
-    </element>
-    <element name="STATUS">
-        </text>
-    </element>
-    <element name="MMSID">
-        </text>
-    </element>
-    <element name="TO">
-        </text>
-    </element>
-    <element name="TRACKINGID">
-        </text>
-    </element>
-    <element name="SPID">
-        </text>
-    </element>
-    <element name="TIMESTAMP">
-        </text>
-    </element>
-    <element name="HANDSET">
-        </text>
-    </element>
-    <element name="AGGREGATORID">
-        </text>
-    </element>
-</element>
+element POSTBACK {
+    element ORIGIN { text } &
+    element CODE { text } &
+    element SENTAS { text } &
+    element STATUS { text } &
+    element MMSID { text } &
+    element TO { text } &
+    element TRACKINGID { text } &
+    element SPID { text } &
+    element TIMESTAMP { text } &
+    element HANDSET { text } &
+    element AGGREGATORID { text }
+}
 ```

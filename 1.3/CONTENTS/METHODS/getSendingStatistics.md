@@ -9,39 +9,39 @@ __Request:__
 ```xml
 <REQUEST>
     <ACTION>getSendingStatus</ACTION>
-    <API_KEY>API KEY</API_KEY>
+    <API_KEY>apiKey</API_KEY>
     <START_DATE>UTC StartDate</START_DATE>
     <END_DATE>UTC EndDate</END_DATE>
 </REQUEST>
 ```
 
-```xml
-<element name="REQUEST">
-	<element name="ACTION">
-		</text>
-	</element>
-	<element name="API_KEY">
-		</text>
-	</element>
-	<element name="START_DATE">
-		</text>
-	</element>
-	<element name="END_DATE">
-		</text>
-	</element>
-</element>
-```
-
 __Request Parameters:__
 
-    Mandatory: Action, API_KEY, End_Date, Start_Date
+    Mandatory: action, api_key, start_date, end_date
     Optional: N/A
+
+```xml
+element REQUEST {
+    element ACTION { "getSendingStatus" } &
+    element API_KEY { text } &
+    element START_DATE { text } &
+    element END_DATE { text }
+}
 
 __Response Parameters:__
 
-    Errorcode, Errorinfo, MMSID, Status
+    status, mmsId, errorCode, errorInfo
 
-__Related Errorcodes:__
+```xml
+element RESPONSE {
+    element STATUS { text } &
+    element MMSID { text }? &
+    element ERRORCODE { text }? &
+    element ERRORINFO { text }?
+}
+```
+
+__Related Error Codes:__
 
     E506, E507, E508, E509, E510
 
@@ -54,23 +54,6 @@ XML:
     <START_DATE>2010-10-01 12:00:00</START_DATE>
     <END_DATE>2010-10-02 12:00:00</END_DATE>
 </REQUEST>
-```
-
-```xml
-<element name="REQUEST">
-	<element name="ACTION">
-		</text>
-	</element>
-	<element name="API_KEY">
-		</text>
-	</element>
-	<element name="START_DATE">
-		</text>
-	</element>
-	<element name="END_DATE">
-		</text>
-	</element>
-</element>
 ```
 
 GET:

@@ -2,7 +2,6 @@
 
 ## createEmailCampaign
 
-
 __Synopsis:__  
 This API function creates new email campaign within the account holders account and returns a CampaignID. Campaign will be created under _campaignname_ in our system. _Campaignname_ will be sent to users in opt-in/opt-out emails. _Brandname_ will be used in 'from' field of all sent emails. _Mailingadress_ will be inserted into email footer.
 
@@ -10,42 +9,47 @@ __Request:__
 ```xml
 <REQUEST>
 	<ACTION>createEmailCampaign</ACTION>
-    <API_KEY>API KEY</API_KEY>
-    <CAMPAIGNNAME>Camapign Name</CAMPAIGNNAME>
-    <BRANDNAME>Brand name</BRANDNAME>
+    <API_KEY>apiKey</API_KEY>
+    <CAMPAIGNNAME>Campaign Name</CAMPAIGNNAME>
+    <BRANDNAME>Brand Name</BRANDNAME>
         <MAILINGADDRESS>Mailing Address</MAILINGADDRESS>
 </REQUEST>
 ```
 
-```xml
-<element name="REQUEST">
-	<element name="ACTION">
-		</text>
-	</element>
-	<element name="API_KEY">
-    	</text>
-   	</element>
-   	<element name="CAMPAIGNNAME">
-    	</text>
-    </element>
-    <element name="BRANDNAME">
-    	<element name="MAILINGADDRESS">
-        	</text>
-    	</element>
-    </element>
-</element>
-```
-
 __Request Parameters:__
 
-    Mandatory: Action, API_KEY, CampaignName, BrandName, MailingAddress
+    Mandatory: action, api_key, campaignName, brandName, mailingAddress
     Optional: N/A
+
+```xml
+element REQUEST {
+    element ACTION { "createEmailCampaign" } &
+    element API_KEY { text } &
+    element CAMPAIGNNAME { text } &
+    element BRANDNAME {
+        element MAILINGADDRESS { text }
+    }
+}
+```
 
 __Response Parameters:__
 
-    CampaignID, CampaignName, BrandName, MailingAddress, ErrorInfo, Errorcode
+    status, campaignId, campaignName, brandName, mailingAddress, errorCode, errorInfo
 
-__Related Errorcodes:__
+```xml
+element RESPONSE {
+    element STATUS { text } &
+    element CAMPAIGNID { text }? &
+    element CAMPAIGNNAME { text }? &
+    element BRANDNAME {
+        element MAILINGADDRESS { text }?
+    }? &
+    element ERRORCODE { text }? &
+    element ERRORINFO { text }?
+}
+```
+
+__Related Error Codes:__
 
     E170, E171, E172, E173    
 
@@ -61,25 +65,6 @@ XML:
             214 Lincoln Street, Suite 360
             Allston, MA 02134</MAILINGADDRESS>
 </REQUEST>
-```
-
-```xml
-<element name="REQUEST">
-	<element name="ACTION">
-		</text>
-	</element>
-	<element name="API_KEY">
-    	</text>
-   	</element>
-   	<element name="CAMPAIGNNAME">
-    	</text>
-    </element>
-    <element name="BRANDNAME">
-    	<element name="MAILINGADDRESS">
-        	</text>
-    	</element>
-    </element>
-</element>
 ```
 
 GET:
@@ -100,25 +85,6 @@ __Response Example: Success__
             Allston, MA 02134</MAILINGADDRESS>
 </RESPONSE>
 ```
-
-```xml
-<element name="RESPONSE">
-	<element name="STATUS">
-    	</text>
-    </element>
-    <element name="CAMPAIGNID">
-    	</text>
-	</element>
-	<element name="CAMPAIGNNAME">
-		</text>
-    </element>
-    <element name="BRANDNAME">
-    	<element name="MAILINGADDRESS">
-			</text>
-		</element>
-	</element>
-</element>
-```
         
 __Response Example: Failure__
 ```xml
@@ -127,18 +93,4 @@ __Response Example: Failure__
     <ERRORCODE>E173</ERRORCODE>
     <ERRORINFO>mailingaddress is required</ERRORINFO>
 </RESPONSE>
-```
-
-```xml
-<element name="RESPONSE">
-	<element name="STATUS">
-		</text>
-	</element>
-	<element name="ERRORCODE">
-		</text>
-	</element>
-	<element name="ERRORINFO">
-		</text>
-	</element>
-</element>
 ```

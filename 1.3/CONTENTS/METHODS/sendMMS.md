@@ -9,104 +9,77 @@ Prototype:
 ```xml
 <REQUEST>
     <ACTION>sendMMS</ACTION>
-    <API_KEY>API KEY</API_KEY>
+    <API_KEY>apiKey</API_KEY>
+    <TO>Receivers number</TO>
     <FROM>shortcode</FROM>
     <SPID>SPID</SPID>
-    <TO>Receivers number</TO>
     <CAMPAIGNREF>CampaignID</CAMPAIGNREF>
     <SUBJECT>MMS Subject</SUBJECT>
     <NAME>Name in MMBox</NAME>
-	    <SLIDE duration="Duration in seconds"> 
-		    <IMAGE>
-			    <URL>URL</URL>
-		    </IMAGE>
-		    <AUDIO >
-			    <URL>URL</URL>
-		    </AUDIO>
-		    <TEXT>Plain Text</TEXT>
-	    </SLIDE>
-	    <SLIDE>
-	    …
-	    </SLIDE>
+    <SLIDE> 
+        <IMAGE>
+            <URL>URL</URL> 
+        </IMAGE>
+        <AUDIO>
+            <URL>URL</URL>
+        </AUDIO>
+        <VIDEO>
+            <URL>URL</URL>
+        </AUDIO>
+	    <TEXT>Plain Text</TEXT>
+        <DURATION>Duration in seconds</DURATION>
+    </SLIDE>
+    <SLIDE>
+       ...
+    </SLIDE>
 </REQUEST>
-```
-
-```xml
-<element name="REQUEST">
-	<element name="ACTION">
-	    </text>
-	</element>
-    <element name="API_KEY">
-        </text>
-    </element>
-    <element name="FROM">
-        </text>
-    </element>
-    <optional>
-        <element name="SPID">
-            </text>
-        </element>
-    </optional>
-    <element name="TO">
-        </text>
-    </element>
-    <optional>
-        <element name="CAMPAIGNREF">
-	        </text>
-        </element>
-    </optional>
-    <optional>
-        <element name="SUBJECT">
-	        </text>
-        </element>
-    </optional>
-    <element name="NAME">
-    	<oneOrMore>
-            <element name="SLIDE">
-                <optional>
-                    <attribute name="duration">
-                        </text>
-                    </attribute>
-                </optional>
-                <optional>
-    	            <element name="IMAGE">
-        	            <optional>
-            	            <element name="URL">
-            	                </text>
-            	            </element>
-            	        </optional>
-                    </element>
-                </optional>
-                <optional>
-    	            <element name="AUDIO">
-        	            <optional>
-            	            <element name="URL">
-            	                </text>
-            	            </element>
-            	        </optional>
-                    </element>
-                </optional>
-                <optional>
-    	            <element name="TEXT">
-    	                </text>
-                    </element>
-                </optional>
-            </element>
-    	</oneOrMore>
-    </element>
-</element>
 ```
 
 __Request Parameters:__
 
-    Mandatory: Action, api_key, To, From, Name, Content, Slide
-    Optional: Subject, SPID, Image, Audio, Video, URL, Text, Duration, CampaignRef
+    Mandatory: action, api_key, to, from, name, slide
+    Optional: spid, campaignRef, subject, image, audio, video, url, text, duration
+
+element REQUEST {
+    element ACTION { “sendMMS” } &
+    element API_KEY { text } &
+    element TO { text } &
+    element FROM { text } &
+    element SPID { text }? &
+    element CAMPAIGNREF { text }? &
+    element SUBJECT { text }? &
+    element NAME { text } &
+    element SLIDE {
+        element IMAGE {
+            element URL { text }
+        }? &
+        element AUDIO {
+            element URL { text }
+        }? &
+        element VIDEO {
+            element URL { text }
+        }? &
+        element TEXT { text }? &
+        element DURATION { xsd:nonNegativeInteger }?    # in seconds
+    }+
+}
 
 __Response Parameters:__
 
-    Status, To, TrackingID, Errorcode, Errorinfo, MMSID
+    status, to, mmsId, trackingId, errorCode, errorInfo
 
-__Related Errorcodes:__
+```xml
+element RESPONSE {
+    element STATUS { text } &
+    element TO { text }? &
+    element MMSID { text }? &
+    element TRACKINGID { text }? &
+    element ERRORCODE { text }? &
+    element ERRORINFO { text }?
+}
+```
+
+__Related Error Codes:__
 
     All saveMMS Error Codes plus E110, E111, E201, E628
 
@@ -133,72 +106,6 @@ __Request Example:__
 </REQUEST>
 ```
 
-```xml
-<element name="REQUEST">
-    <element name="ACTION">
-        </text>
-    </element>
-    <element name="API_KEY">
-        </text>
-    </element>
-    <element name="TO">
-        </text>
-    </element>
-    <element name="FROM">
-        </text>
-    </element>
-    <optional>
-        <element name="SPID">
-            </text>
-        </element>
-    </optional>
-    <optional>
-        <element name="SUBJECT">
-            </text>
-        </element>
-    </optional>
-    <optional>
-        <element name="CAMPAIGNREF">
-            </text>
-        </element>
-    </optional>
-    <element name="NAME">
-        <oneOrMore>
-            <element name="SLIDE">
-                <optional>
-                    <attribute name="duration">
-                        </text>
-                    </attribute>
-                </optional>
-                <optional>
-                    <element name="IMAGE">
-                        <optional>
-                            <element name="URL">
-                                </text>
-                            </element>
-                        </optional>
-                    </element>
-                </optional>
-                <optional>
-                    <element name="AUDIO">
-                        <optional>
-                            <element name="URL">
-                                </text>
-                            </element>
-                        </optional>
-                    </element>
-                </optional>
-                <optional>
-                    <element name="TEXT">
-                        </text>
-                    </element>
-                </optional>
-            </element>
-        </oneOrMore>
-    </element>
-</element>
-```
-
 __Response Example: Success__
 ```xml
 <RESPONSE>
@@ -209,23 +116,6 @@ __Response Example: Success__
 </RESPONSE>
 ```
 
-```xml
-<element name="RESPONSE">
-	<element name="STATUS">
-		</text>
-	</element>
-	<element name="TO">
-		</text>
-	</element>
-	<element name="MMSID">
-	    </text>
-	</element>
-	<element name="TRACKINGID">
-		</text>
-	</element>
-</element>
-```
-
 __Response Example: Failure__
 ```xml
 <RESPONSE>
@@ -234,21 +124,4 @@ __Response Example: Failure__
 	<TO>15551234888</TO>
 	<ERRORINFO>Invalid shortcode</ERRORINFO>
 </RESPONSE>
-```
-
-```xml
-<element name="RESPONSE">
-	<element name="STATUS">
-		</text>
-	</element>
-	<element name="ERRORCODE">
-		</text>
-	</element>
-	<element name="TO">
-		</text>
-	</element>
-	<element name="ERRORINFO">
-		</text>
-	</element>
-</element>
 ```

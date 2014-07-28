@@ -2,7 +2,6 @@
 
 ## createUser
 
-
 __Synopsis:__  
 Creates new user with given username and password. The rest of the parameters required for account creation are inherited from creator’s account.
 
@@ -10,39 +9,42 @@ __Request:__
 ```xml
 <REQUEST>
 	<ACTION>createUser</ACTION>
-    <API_KEY>API KEY</API_KEY>
+    <API_KEY>apiKey</API_KEY>
     <NEWUSER>New Username</NEWUSER>
     <NEWPASS>New Password</NEWPASS>
 </REQUEST>
 ```
 
-```xml
-<element name="REQUEST">
-	<element name="ACTION">
-		</text>
-	</element>
-    <element name="API_KEY">
-        </text>
-    </element>
-    <element name="NEWUSER">
-        </text>
-    </element>
-    <element name="NEWPASS">
-        </text>
-    </element>
-</element>
-```
-
 __Request Parameters:__
 
-    Mandatory: Action, API_KEY, NewUser, NewPass
+    Mandatory: action, api_key, newUser, newPass
     Optional: N/A
+
+```xml
+element REQUEST {
+    element ACTION { "createUser" } &
+    element API_KEY { text } &
+    element NEWUSER { text } &
+    element NEWPASS { text }
+}
+```
 
 __Response Parameters:__
 
-    Status, Username, Password, API_KEY, Errorcode, Errorinfo
+    status, username, password, api_key, errorCode, errorInfo
 
-__Related Errorcodes:__
+```xml
+element RESPONSE {
+    element STATUS { text } &
+    element USERNAME { text }? &
+    element PASSWORD { text }? &
+    element API_KEY { text }? &
+    element ERRORCODE { text }? &
+    element ERRORINFO { text }?
+}
+```
+
+__Related Error Codes:__
 
     E150, E151, E152, E153, E154
 
@@ -55,23 +57,6 @@ XML:
     <NewUser>john</NewUser>
     <NewPass>john_pass</NewPass>
 </REQUEST>
-```
-
-```xml
-<element name="REQUEST">
-	<element name="ACTION">
-		</text>
-	</element>
-    <element name="API_KEY">
-        </text>
-    </element>
-    <element name="NEWUSER">
-        </text>
-    </element>
-    <element name="NEWPASS">
-        </text>
-    </element>
-</element>
 ```
 
 GET:
@@ -89,23 +74,6 @@ __Response Example: Success__
 </RESPONSE>
 ```
 
-```xml
-<element name="RESPONSE">
-    <element name="STATUS">
-        </text>
-    </element>
-    <element name="USERNAME">
-        </text>
-    </element>
-    <element name="PASSWORD">
-        </text>
-    </element>
-    <element name="API_KEY">
-        </text>
-    </element>
-</element>
-```
-
 __Response Example: Failure__
 ```xml
 <RESPONSE>
@@ -113,18 +81,4 @@ __Response Example: Failure__
     <ERRORCODE>E151</ERRORCODE>
     <ERRORINFO>'username' already exists. Duplicate username</ERRORINFO>
 </RESPONSE>
-```
-
-```xml
-<element name="RESPONSE">
-    <element name="STATUS">
-        </text>
-    </element>
-    <element name="ERRORCODE">
-        </text>
-    </element>
-    <element name="ERRORINFO">
-        </text>
-    </element>
-</element>
 ```

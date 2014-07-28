@@ -22,42 +22,6 @@ __Request: subscribeEmail__
 </REQUEST>
 ```
 
-```xml
-<element name="REQUEST">
-	<element name="ACTION">
-		</text>
-	</element>
-	<element name="API_KEY">
-		</text>
-	</element>
-	<element name="CAMPAIGNID">
-		</text>
-	</element>
-	<element name="EMAIL">
-		</text>
-	</element>
-	<optional>
-    	<element name="DATA">
-    		<element name="FIRST_NAME">
-    			</text>
-    		</element>
-    		<element name="LAST_NAME">
-    			</text>
-    		</element>
-    		<element name="GENDER">
-    			</text>
-    		</element>
-    		...
-    	</element>
-	</optional>
-	<optional>
-		<element name="NOTIFY">
-			</text>
-		</element>
-	</optional>
-</element>
-```
-
 __Request: unsubscribeEmail__
 ```xml
 <REQUEST>
@@ -68,33 +32,42 @@ __Request: unsubscribeEmail__
 </REQUEST>
 ```
 
-```xml
-<element name="REQUEST">
-	<element name="ACTION">
-		</text>
-	</element>
-	<element name="API_KEY">
-		</text>
-	</element>
-	<element name="CAMPAIGNID">
-		</text>
-	</element>
-	<element name="EMAIL">
-		</text>
-	</element>
-</element>
-```
-
 __Request Parameters:__
 
-    Mandatory: Action, API_KEY, CAMPAIGNID, Email
-    Optional: Data, Notify
+    Mandatory: action, api_key, campaignId, email
+    Optional: data, notify
+
+```xml
+element REQUEST {
+    element ACTION { text } &
+    element API_KEY { text } &
+    element CAMPAIGNID { text } &
+    element EMAIL { text } &
+    element DATA {
+        element FIRST_NAME { text }? &
+        element LAST_NAME { text }? &
+        element GENDER { text }? &
+        ...
+    }? &
+    element NOTIFY { text }?
+}
+```
 
 __Response Parameters:__
 
-    CAMPAIGNID, Errorcode, Errorinfo, Email, Status
+    status, campaignId, email, errorCode, errorInfo
 
-__Related Errorcodes:__
+```xml
+element RESPONSE {
+    element STATUS { text } &
+    element CAMPAIGNID { text }? &
+    element EMAIL { text }? &
+    element ERRORCODE { text }? &
+    element ERRORINFO { text }?
+}
+```
+
+__Related Error Codes:__
 
     E911, E912, E913, E914
 
@@ -116,44 +89,6 @@ XML:
 </REQUEST>
 ```
 
-```xml
-<element name="REQUEST">
-	<element name="ACTION">
-		</text>
-	</element>
-	<element name="API_KEY">
-		</text>
-	</element>
-	<element name="CAMPAIGNID">
-		</text>
-	</element>
-	<element name="EMAIL">
-		</text>
-	</element>
-	<optional>
-    	<element name="DATA">
-    		<element name="FIRST_NAME">
-    			</text>
-    		</element>
-    		<element name="LAST_NAME">
-    			</text>
-    		</element>
-    		<element name="AGE">
-    			</text>
-    		</element>
-            <element name="PET">
-    			</text>
-    		</element>
-    	</element>
-	</optional>
-	<optional>
-		<element name="NOTIFY">
-			</text>
-		</element>
-	</optional>
-</element>
-```
-
 GET:
 
     https://secure.skycore.com/API/wxml/1.3/index.php?action=subscribeemail&api_key=qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ
@@ -168,20 +103,6 @@ __Response Example: Success__
 </RESPONSE>
 ```
 
-```xml
-<element name="RESPONSE">
-	<element name="STATUS">
-		</text>
-	</element>
-	<element name="CAMPAIGNID">
-		</text>
-	</element>
-	<element name="EMAIL">
-		</text>
-	</element>
-</element>
-```
-
 __Response Example: Failure__
 ```xml
 <RESPONSE>
@@ -189,18 +110,4 @@ __Response Example: Failure__
     <ERRORCODE>E912</ERRORCODE>
     <ERRORINFO>Invalid CAMPAIGNID</ERRORINFO>
 </RESPONSE>
-```
-
-```xml
-<element name="RESPONSE">
-	<element name="STATUS">
-		</text>
-	</element>
-	<element name="ERRORCODE">
-		</text>
-	</element>
-	<element name="ERRORINFO">
-		</text>
-	</element>
-</element>
 ```

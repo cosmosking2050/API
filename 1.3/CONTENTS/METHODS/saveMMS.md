@@ -9,12 +9,19 @@ __Request:__
 ```xml
 <REQUEST>
     <ACTION>saveMMS</ACTION>
-    <API_KEY>API KEY</API_KEY>
+    <API_KEY>apiKey</API_KEY>
     <SUBJECT>Subject </SUBJECT>
     <NAME>Name to save it as</NAME>
     <SLIDE>
-        <IMAGE><URL>URL</URL></IMAGE>
-        <AUDIO><URL>URL</URL></AUDIO>
+        <IMAGE>
+            <URL>URL</URL> 
+        </IMAGE>
+        <AUDIO>
+            <URL>URL</URL>
+        </AUDIO>
+        <VIDEO>
+            <URL>URL</URL>
+        </AUDIO>
         <TEXT>Plain Text</TEXT>
         <DURATION>Duration in seconds</DURATION>
     </SLIDE>
@@ -24,65 +31,47 @@ __Request:__
 </REQUEST>
 ```
 
-```xml
-<element name="REQUEST">
-	<element name="ACTION">
-	    </text>
-	</element>
-    <element name="API_KEY">
-        </text>
-    </element>
-    <element name="SUBJECT">
-        </text>
-    </element>
-    <element name="NAME">
-        </text>
-    </element>
-    <oneOrMore>
-    	<element name="SLIDE">
-            <optional>
-	            <element name="IMAGE">
-    	            <optional>
-        	            <element name="URL">
-        	                </text>
-        	            </element>
-        	        </optional>
-                </element>
-            </optional>
-            <optional>
-	            <element name="AUDIO">
-    	            <optional>
-        	            <element name="URL">
-        	                </text>
-        	            </element>
-        	        </optional>
-                </element>
-            </optional>
-            <optional>
-	            <element name="TEXT">
-	                </text>
-                </element>
-            </optional>
-            <optional>
-	            <element name="DURATION">
-	                </text>
-                </element>
-            </optional>
-    	</element>
-    </oneOrMore>
-</element>
-```
-
 __Request Parameters:__
 
-    Mandatory: Action, API_KEY, Name, Subject, Slide
-    Optional: Image, Audio, Video, URL, Text, Duration
+    Mandatory: action, api_key, subject, name, slide
+    Optional: image, audio, video, url, text, duration
+
+```xml
+element REQUEST {
+    element ACTION { “saveMMS” } &
+    element API_KEY { text } &
+    element SUBJECT { text } &
+    element NAME { text } &
+    element SLIDE {
+        element IMAGE {
+            element URL { text }
+        }? &
+        element AUDIO {
+            element URL { text }
+        }? &
+        element VIDEO {
+            element url { text }
+        }? &
+        element TEXT { text }? &
+        element DURATION { xsd:nonNegativeInteger }?    # in seconds
+    }+
+}
+```
 
 __Response Parameters:__
 
-    Status, TrackingID, Errorcode, Errorinfo, MMSID
+    status, mmsId, errorCode, errorInfo
 
-__Related Errorcodes:__
+```xml
+element RESPONSE {
+    element STATUS { text } &
+    element MMSID { text }? &
+    element ERRORCODE { text }? &
+    element ERRORINFO { text }?
+}
+```
+
+__Related Error Codes:__
 
     E225, E226, E227, E228, E229, E230, E331, E332, E333, E334, E341, E351
 
@@ -102,73 +91,12 @@ __Request Example:__
 </REQUEST>
 ```
 
-```xml
-<element name="REQUEST">
-	<element name="ACTION">
-	    </text>
-	</element>
-    <element name="API_KEY">
-        </text>
-    </element>
-    <element name="SUBJECT">
-        </text>
-    </element>
-    <element name="NAME">
-        </text>
-    </element>
-    <oneOrMore>
-    	<element name="SLIDE">
-            <optional>
-	            <element name="IMAGE">
-    	            <optional>
-        	            <element name="URL">
-        	                </text>
-        	            </element>
-        	        </optional>
-                </element>
-            </optional>
-            <optional>
-	            <element name="AUDIO">
-    	            <optional>
-        	            <element name="URL">
-        	                </text>
-        	            </element>
-        	        </optional>
-                </element>
-            </optional>
-            <optional>
-	            <element name="TEXT">
-	                </text>
-                </element>
-            </optional>
-            <optional>
-	            <element name="DURATION">
-	                </text>
-                </element>
-            </optional>
-    	</element>
-    </oneOrMore>
-</element>
-```
-
-
 __Response Example: Success__
 ```xml
 <RESPONSE>
     <STATUS>Success</STATUS>
     <MMSID>35674</MMSID>
 </RESPONSE>
-```
-
-```xml
-<element name="RESPONSE">
-	<element name="STATUS">
-		</text>
-	</element>
-	<element name="MMSID">
-	    </text>
-	</element>
-</element>
 ```
 
 __Response Example: Failure__
@@ -178,20 +106,6 @@ __Response Example: Failure__
     <ERRORCODE>E111</ERRORCODE>
     <ERRORINFO>Invalid shortcode</ERRORINFO>
 </RESPONSE>
-```
-
-```xml
-<element name="RESPONSE">
-	<element name="STATUS">
-		</text>
-	</element>
-	<element name="ERRORCODE">
-		</text>
-	</element>
-	<element name="ERRORINFO">
-		</text>
-	</element>
-</element>
 ```
 
 __Postback Notifications__  
@@ -207,17 +121,11 @@ When an MMS is saved, the system will generate a Postback notification and unloc
 ```
 
 ```xml
-<element name="POSTBACK">
-    <element name="ORIGIN">
-        </text>
-    </element>
-    <element name="CODE">
-        </text>
-    </element>
-    <element name="MMSID">
-        </text>
-    </element>
-</element>
+element POSTBACK {
+    element ORIGIN { text } &
+    element CODE { text } &
+    element MMSID { text }
+}
 ```
 
 If there was an error encoding the MMS audio/video, the system will generate a notification:
@@ -232,20 +140,12 @@ If there was an error encoding the MMS audio/video, the system will generate a n
 ```
 
 ```xml
-<element name="POSTBACK">
-	<element name="ORIGIN">
-		</text>
-	</element>
-	<element name="CODE">
-		</text>
-	</element>
-    <element name="MMSID">
-        </text>
-    </element>
-    <element name="AUDIONAME">
-        </text>
-    </element>
-</element>
+element POSTBACK {
+    element ORIGIN { text } &
+    element CODE { text } &
+    element MMSID { text } &
+    element AUDIONAME { text }
+}
 ```
 
 __Special Considerations for saveMMS:__  

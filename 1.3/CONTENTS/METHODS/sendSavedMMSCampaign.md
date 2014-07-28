@@ -11,39 +11,41 @@ __Request:__
 ```xml
 <REQUEST>
 	<ACTION>sendSavedMMSCampaign</ACTION>
-    <API_KEY>API KEY</API_KEY>
+    <API_KEY>apiKey</API_KEY>
     <MMSID>MMSID</MMSID>
     <TOCAMPAIGN>CampaignID</TOCAMPAIGN>
 </REQUEST>
 ```
 
-```xml
-<element name="REQUEST">
-	<element name="ACTION">
-		</text>
-	</element>
-	<element name="API_KEY">
-		</text>
-	</element>
-	<element name="MMSID">
-		</text>
-	</element>
-	<element name="TOCAMPAIGN">
-		</text>
-	</element>
-</element>
-```
-
 __Request Parameters:__
 
-    Mandatory: Action, API_KEY, MMSID, ToCampaign
+    Mandatory: action, api_key, mmsId, toCampaign
     Optional: N/A
+
+```xml
+element REQUEST {
+    element ACTION { "sendSavedMMSCampaign" } &
+    element API_KEY { text } &
+    element MMSID { text } &
+    element TOCAMPAIGN { text }
+}
+```
 
 __Response Parameters:__
 
-    MMSID, Status, To, ScheduledID, Errorcode, Errorinfo
+    status, mmsId, scheduledId, errorCode, errorInfo
 
-__Related Errorcodes:__
+```xml
+element RESPONSE {
+    element STATUS { text } &
+    element MMSID { text }? &
+    element SCHEDULEDID { text }? &
+    element ERRORCODE { text }? &
+    element ERRORINFO { text }?
+}
+```
+
+__Related Error Codes:__
 
     E241, E620, E624, E626, E629, E714
 
@@ -51,28 +53,11 @@ __Request Example:__
 XML:
 ```xml
 <REQUEST>
-    <ACTION> sendSavedMMSCampaign</ACTION>
+    <ACTION>sendSavedMMSCampaign</ACTION>
     <API_KEY>qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ</API_KEY>
     <TOCAMPAIGN>332</TOCAMPAIGN>
     <MMSID>35674</MMSID>
 </REQUEST>
-```
-
-```xml
-<element name="REQUEST">
-	<element name="ACTION">
-		</text>
-	</element>
-	<element name="API_KEY">
-		</text>
-	</element>
-	<element name="TOCAMPAIGN">
-		</text>
-	</element>
-	<element name="MMSID">
-		</text>
-	</element>
-</element>
 ```
 
 GET:
@@ -89,20 +74,6 @@ __Response Example: Success__
 </RESPONSE>
 ```
 
-```xml
-<element name="RESPONSE">
-	<element name="STATUS">
-		</text>
-	</element>
-	<element name="MMSID">
-		</text>
-	</element>
-	<element name="SCHEDULEDID">
-		</text>
-	</element>
-</element>
-```
-
 __Response Example: Failure__
 ```xml
 <RESPONSE>
@@ -110,20 +81,6 @@ __Response Example: Failure__
     <ERRORCODE>E714</ERRORCODE>
     <ERRORINFO>Missing/Invalid CampaignID</ERRORINFO>
 </RESPONSE>
-```
-
-```xml
-<element name="RESPONSE">
-	<element name="STATUS">
-		</text>
-	</element>
-	<element name="ERRORCODE">
-		</text>
-	</element>
-	<element name="ERRORINFO">
-		</text>
-	</element>
-</element>
 ```
 
 __Postback Notifications For SendSavedMMS, SendSavedMMSCampaign__  
@@ -144,35 +101,17 @@ When the MMS delivery is processed successfully the system will generate a Postb
 ```
 
 ```xml
-<element name="POSTBACK">
-	<element name="ORIGIN">
-		</text>
-	</element>
-	<element name="CODE">
-		</text>
-	</element>
-	<element name="SENTAS">
-		</text>
-	</element>
-	<element name="STATUS">
-		</text>
-	</element>
-	<element name="MMSID">
-		</text>
-	</element>
-	<element name="TO">
-		</text>
-	</element>
-	<element name="TRACKINGID">
-		</text>
-	</element>
-	<element name="SPID">
-		</text>
-	</element>
-	<element name="TIMESTAMP">
-		</text>
-	</element>
-</element>
+element POSTBACK {
+    element ORIGIN { text } &
+    element CODE { text } &
+    element SENTAS { text } &
+    element STATUS { text } &
+    element MMSID { text } &
+    element TO { text } &
+    element TRACKINGID { text } &
+    element SPID { text } &
+    element TIMESTAMP { text }
+}
 ```
 
 When an MMS delivery report is received the system will generate a Postback notification. Not all carriers provide MMS delivery receipts.
@@ -194,39 +133,17 @@ When an MMS delivery report is received the system will generate a Postback noti
 ```
 
 ```xml
-<element name="POSTBACK">
-	<element name="ORIGIN">
-		</text>
-	</element>
-	<element name="CODE">
-		</text>
-	</element>
-	<element name="SENTAS">
-		</text>
-	</element>
-	<element name="STATUS">
-		</text>
-	</element>
-	<element name="MMSID">
-		</text>
-	</element>
-	<element name="TO">
-		</text>
-	</element>
-	<element name="TRACKINGID">
-		</text>
-	</element>
-	<element name="SPID">
-		</text>
-	</element>
-	<element name="TIMESTAMP">
-		</text>
-	</element>
-	<element name="HANDSET">
-		</text>
-	</element>
-	<element name="AGGREGATORID">
-		</text>
-	</element>
-</element>
+element POSTBACK {
+    element ORIGIN { text } &
+    element CODE { text } &
+    element SENTAS { text } &
+    element STATUS { text } &
+    element MMSID { text } &
+    element TO { text } &
+    element TRACKINGID { text } &
+    element SPID { text } &
+    element TIMESTAMP { text } &
+    element HANDSET { text } &
+    element AGGREGATORID { text }
+}
 ```

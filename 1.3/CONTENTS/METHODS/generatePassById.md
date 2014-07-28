@@ -2,7 +2,6 @@
 
 ## generatePassById
 
-
 __Synopsis:__  
 This API function triggers the passbook pass generation for the given 'passDataID'. 'passDataID' is generated whenever pass data is added to the pass database using the addPassData () API request. On success, the API returns important values such as 'passDataId', 'serialNumber', 'customPassId', 'passLink' and 'downloadUrl'. All these values need to be stored along with passData on your side which will come in use for making pass updates in the future. More explanation about these values are given below:
 
@@ -22,30 +21,37 @@ __Request:__
 </REQUEST>
 ```
 
-```xml
-<element name="REQUEST">
-	<element name="ACTION">
-		</text>
-	</element>
-	<element name="API_KEY">
-		</text>
-	</element>
-	<element name="PASSDATAID">
-		</text>
-	</element>
-</element>
-```
-
 __Request Parameters:__
 
-    Mandatory: action, apiKey, passDataId
+    Mandatory: action, api_key, passDataId
     Optional: N/A
+
+```xml
+element REQUEST {
+    element ACTION { "generatePassById" } &
+    element API_KEY { text } &
+    element PASSDATAID { text }
+}
+```
 
 __Response Parameters:__
 
-    status, Errorcode, Errorinfo, passDownloadLink
+    status, passDataId, serialNumber, customPassId, passLink, downloadUrl, errorCode, errorInfo
 
-__Related Errorcodes:__
+```xml
+element RESPONSE {
+    element STATUS { text } &
+    element PASSDATAID { text }? &
+    element SERIALNUMBER { text }? &
+    element CUSTOMPASSID { text }? &
+    element PASSLINK { text }? &
+    element DOWNLOADURL { text }? &
+    element ERRORCODE { text }? &
+    element ERRORINFO { text }?
+}
+```
+
+__Related Error Codes:__
 
     E807, E808, E830, E831
     
@@ -56,20 +62,6 @@ __Request Example:__
     <API_KEY>qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ</API_KEY>
     <PASSDATAID>63202e8e947626dae377ab2463ca31dhwtdjdien</PASSDATAID>
 </REQUEST>
-```
-
-```xml
-<element name="REQUEST">
-	<element name="ACTION">
-		</text>
-	</element>
-	<element name="API_KEY">
-		</text>
-	</element>
-	<element name="PASSDATAID">
-		</text>
-	</element>
-</element>
 ```
 
 __Response Example: Success__
@@ -84,29 +76,6 @@ __Response Example: Success__
 </RESPONSE>
 ```
 
-```xml
-<element name="RESPONSE">
-	<element name="STATUS">
-		</text>
-	</element>
-	<element name="PASSDATAID">
-		</text>
-	</element>
-	<element name="SERIALNUMBER">
-		</text>
-	</element>
-	<element name="CUSTOMPASSID">
-		</text>
-	</element>
-	<element name="PASSLINK">
-		</text>
-	</element>
-	<element name="DOWNLOADURL">
-		</text>
-	</element>
-</element>
-```
-
 __Response Example: Failure__
 ```xml
 <RESPONSE>
@@ -114,18 +83,4 @@ __Response Example: Failure__
     <ERRORCODE>E830</ERRORCODE>
     <ERRORINFO>Passbook Pass was not generated. Internal error occured.</ERRORINFO>
 </RESPONSE>
-```
-
-```xml
-<element name="RESPONSE">
-	<element name="STATUS">
-		</text>
-	</element>
-	<element name="ERRORCODE">
-		</text>
-	</element>
-	<element name="ERRORINFO">
-		</text>
-	</element>
-</element>
 ```

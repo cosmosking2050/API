@@ -10,38 +10,42 @@ __Request:__
 ```xml
 <REQUEST>
 	<ACTION>createMMSCampaign</ACTION>
-    <API_KEY>API KEY</API_KEY>
+    <API_KEY>apiKey</API_KEY>
     <CAMPAIGNNAME>Camapign Name</CAMPAIGNNAME>
-    <BRANDNAME>Brand</BRANDNAME>
+    <BRANDNAME>Brand Name</BRANDNAME>
 </REQUEST>
-```
-
-```xml
-<element name="REQUEST">
-	<element name="ACTION">
-	    <element name="API_KEY">
-	    	</text>
-	    </element>
-	    <element name="CAMPAIGNNAME">
-	        </text>
-	    </element>
-	    <element name="BRANDNAME">
-	        </text>
-	    </element>
-	</element>
-</element>
 ```
 
 __Request Parameters:__
 
-    Mandatory: Action, API_KEY, CampaignName, BrandName
+    Mandatory: action, api_key, campaignName, brandName
     Optional: N/A
+
+```xml
+element REQUEST {
+    element ACTION { "createMMSCampaign" } &
+    element API_KEY { text } &
+    element CAMPAIGNNAME { text } &
+    element BRANDNAME { text }
+}
+```
 
 __Response Parameters:__
 
-    CampaignID, CampaignName, BrandName, ErrorInfo, Errorcode
+    status, campaignId, campaignName, brandName, errorCode, errorInfo
 
-__Related Error codes:__
+```xml
+element RESPONSE {
+    element STATUS { text } &
+    element CAMPAIGNID { text }? &
+    element CAMPAIGNNAME { text }? &
+    element BRANDNAME { text }? &
+    element ERRORCODE { text }? &
+    element ERRORINFO { text }?
+}
+```
+
+__Related Error Codes:__
 
     E170, E171, E172
 
@@ -54,23 +58,6 @@ XML:
     <CAMPAIGNNAME>Winter Sale</CAMPAIGNNAME>
     <BRANDNAME>Gap</BRANDNAME>
 </REQUEST>
-```
-
-```xml
-<element name="REQUEST">
-	<element name="ACTION">
-		</text>
-	</element>
-	<element name="API_KEY">
-		</text>
-	</element>
-	<element name="CAMPAIGNNAME">
-	    </text>
-	</element>
-	<element name="BRANDNAME">
-	    </text>
-	</element>
-</element>
 ```
 
 GET:
@@ -88,23 +75,6 @@ __Response Example: Success__
 </RESPONSE>
 ```
 
-```xml
-<element name="RESPONSE">
-    <element name="STATUS">
-        </text>
-    </element>
-    <element name="CAMPAIGNID">
-        </text>
-    </element>
-    <element name="CAMPAIGNNAME">
-        </text>
-    </element>
-    <element name="BRANDNAME">
-        </text>
-    </element>
-</element>
-```
-
 __Response Example: Failure__
 ```xml
 <RESPONSE>
@@ -112,18 +82,4 @@ __Response Example: Failure__
     <ERRORCODE>E170</ERRORCODE>
     <ERRORINFO>campaignname is required</ERRORINFO>
 </RESPONSE>
-```
-
-```xml
-<element name="RESPONSE">
-	<element name="STATUS">
-	    </text>
-	</element>
-	<element name="ERRORCODE">
-	    </text>
-	</element>
-	<element name="ERRORINFO">
-	    </text>
-	</element>
-</element>
 ```

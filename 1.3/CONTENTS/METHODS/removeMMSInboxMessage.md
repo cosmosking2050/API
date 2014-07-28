@@ -9,35 +9,38 @@ __Request:__
 ```xml
 <REQUEST>
     <ACTION>removeMMSInboxMessage</ACTION>
-    <API_KEY>API KEY</API_KEY>
+    <API_KEY>apiKey</API_KEY>
     <MMSINBOXID>MMS Inbox ID</MMSINBOXID>
 </REQUEST>
 ```
 
-```xml
-<element name="REQUEST">
-	<element name="ACTION">
-		</text>
-	</element>
-	<element name="API_KEY">
-		</text>
-	</element>
-	<element name="MMSINBOXID">
-		</text>
-	</element>
-</element>
-```
-
 __Request Parameters:__
 
-    Mandatory: Action, API_KEY, MMSInboxID
+    Mandatory: action, api_key, mmsInboxId
     Optional: N/A
+
+```xml
+element REQUEST {
+    element ACTION { "removeMMSInboxMessage" } &
+    element API_KEY { text } &
+    element MMSINBOXID { text }
+}
+```
 
 __Response Parameters:__
 
-    Status, MMSInboxID, Errorcode, Errorinfo
+    status, mmsInboxId, errorCode, errorInfo
 
-__Related Error codes:__
+```xml
+element RESPONSE {
+    element STATUS { text } &
+    element MMSINBOXID { text }? &
+    element ERRORCODE { text }? &
+    element ERRORINFO { text }?
+}
+```
+
+__Related Error Codes:__
 
     E640, E641, E642, E643
 
@@ -49,20 +52,6 @@ XML:
     <API_KEY>qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ</API_KEY>
     <MMSINBOXID>MMS_MO_iG7Ksa31</MMSINBOXID>
 </REQUEST>
-```
-
-```xml
-<element name="REQUEST">
-	<element name="ACTION">
-		</text>
-	</element>
-	<element name="API_KEY">
-		</text>
-	</element>
-	<element name="MMSINBOXID">
-		</text>
-	</element>
-</element>
 ```
 
 GET:
@@ -78,17 +67,6 @@ __Response Example: Success__
 </RESPONSE>
 ```
 
-```xml
-<element name="RESPONSE">
-	<element name="STATUS">
-		</text>
-	</element>
-	<element name="MMSINBOXID">
-	    </text>
-	</element>
-</element>
-```
-
 __Response Example: Failure__
 ```xml
 <RESPONSE>
@@ -96,18 +74,4 @@ __Response Example: Failure__
     <ERRORCODE>E641</ERRORCODE>
     <ERRORINFO>Invalid MMS Inbox Message ID</ERRORINFO>
 </RESPONSE>
-```
-
-```xml
-<element name="RESPONSE">
-	<element name="STATUS">
-		</text>
-	</element>
-	<element name="ERRORCODE">
-		</text>
-	</element>
-	<element name="ERRORINFO">
-		</text>
-	</element>
-</element>
 ```

@@ -15,39 +15,11 @@ __Request: XML__
 ```
 
 ```xml
-<element name="REQUEST">
-	<element name="ACTION">
-		</text>
-	</element>
-	<element name="API_KEY">
-		</text>
-	</element>
-	<element name="PASSTEMPLATEID">
-		</text>
-	</element>
-</element>
-```
-
-```xml
 <REQUEST>
     <ACTION>getPassTemplate</ACTION>
     <API_KEY>apiKey</API_KEY>
     <MMSID>mmsId</MMSID>
 </REQUEST>
-```
-
-```xml
-<element name="REQUEST">
-	<element name="ACTION">
-		</text>
-	</element>
-	<element name="API_KEY">
-		</text>
-	</element>
-	<element name="MMSID">
-		</text>
-	</element>
-</element>
 ```
 
 ```xml
@@ -58,20 +30,6 @@ __Request: XML__
 </REQUEST>
 ```
 
-```xml
-<element name="REQUEST">
-	<element name="ACTION">
-		</text>
-	</element>
-	<element name="API_KEY">
-		</text>
-	</element>
-	<element name="EMAILID">
-		</text>
-	</element>
-</element>
-```
-
 __Request: GET__
 <pre>API_URL?action=getpasstemplate&amp;api_key=apiKey&amp;passtemplateid=passTemplateId</pre>
 <pre>API_URL?action=getpasstemplate&amp;api_key=apiKey&amp;emailid=emailId</pre>
@@ -79,14 +37,36 @@ __Request: GET__
 
 __Request Parameters:__
 
-    Mandatory: action, apikey, mmsid, emailid, passtemplateid
+    Mandatory: action, api_key, passTemplateId, mmsId, emailId
     Optional: N/A
+
+```xml
+element REQUEST {
+    element ACTION { "getPassTemplate" } &
+    element API_KEY { text } &
+    element PASSTEMPLATEID { text }? &
+    element MMSID { text }? &
+    element EMAILID { text }?
+}
+```
 
 __Response Parameters:__
 
-    status, Errorcode, Errorinfo, passTemplateId, passTemplate
+    status, passTemplateId, passTemplate, errorCode, errorInfo
 
-__Related Errorcodes:__
+```xml
+element RESPONSE {
+    element STATUS { text } &
+    element PASSTEMPLATEID { text }? &
+    element PASSTEMPLATE {
+        ...
+    }? &
+    element ERRORCODE { text }? &
+    element ERRORINFO { text }?
+}
+```
+
+__Related Error Codes:__
 
     E174, E402, E802, E822, E823, E828, E827
 
@@ -97,20 +77,6 @@ __Request Example:__
     <API_KEY>qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ</API_KEY>
     <PASSTEMPLATEID>234</PASSTEMPLATEID>
 </REQUEST>
-```
-
-```xml
-<element name="REQUEST">
-	<element name="ACTION">
-		</text>
-	</element>
-	<element name="API_KEY">
-		</text>
-	</element>
-	<element name="PASSTEMPLATEID">
-		</text>
-	</element>
-</element>
 ```
 
 __Response Example: Success__
@@ -144,82 +110,6 @@ __Response Example: Success__
 </RESPONSE>
 ```
 
-```xml
-<element name="RESPONSE">
-	<element name="STATUS">
-		</text>
-	</element>
-	<element name="PASSTEMPLATEID">
-		</text>
-	</element>
-	<element name="PASSTEMPLATE">
-	    <element name="PASSNAME">
-            </text>
-        </element>
-        <element name="PASSTYPE">
-            </text>
-        </element>
-        <element name="ORGANIZATION">
-            </text>
-        </element>
-        <element name="DESCRIPTION">
-            </text>
-        </element>
-        <element name="BARCODEVALUE">
-            </text>
-        </element>
-        <element name="BARCODETEXT">
-            </text>
-        </element>
-        <element name="HEADERFIELDS">
-            </text>
-        </element>
-        <element name="HEADERLABEL1">
-            </text>
-        </element>
-        <element name="HEADERVALUE1">
-            </text>
-        </element>
-        <element name="PRIMARYFIELDS">
-            </text>
-        </element>
-        <element name="PRIMARYLABEL1">
-            </text>
-        </element>
-        <element name="PRIMARYVALUE1">
-            </text>
-        </element>
-        <element name="SECFIELDS">
-            </text>
-        </element>
-        <element name="SECLABEL1">
-            </text>
-        </element>
-        <element name="SECVALUE1">
-            </text>
-        </element>
-        <element name="AUXFIELDS">
-            </text>
-        </element>
-        <element name="AUXLABEL1">
-            </text>
-        </element>
-        <element name="AUXVALUE1">
-            </text>
-        </element>
-        <element name="BACKFIELDS">
-            </text>
-        </element>
-        <element name="BACKLABEL1">
-            </text>
-        </element>
-        <element name="BACKVALUE1">
-            </text>
-        </element>
-    </element>
-</element>
-```
-
 __Response Example: Failure__
 ```xml
 <RESPONSE>
@@ -228,18 +118,3 @@ __Response Example: Failure__
     <ERRORINFO>Invalid 'PassTemplateID'. Pass template is either deleted or do not belong to this user</ERRORINFO>
 </RESPONSE>
 ```
-
-```xml
-<element name="RESPONSE">
-	<element name="STATUS">
-		</text>
-	</element>
-	<element name="ERRORCODE">
-		</text>
-	</element>
-	<element name="ERRORINFO">
-		</text>
-	</element>
-</element>
-```
-

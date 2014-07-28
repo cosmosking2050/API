@@ -13,31 +13,41 @@ __Request: XML__
 </REQUEST>
 ```
 
-```xml
-<element name="REQUEST">
-	<element name="ACTION">
-		</text>
-	</element>
-	<element name="API_KEY">
-		</text>
-	</element>
-</element>
-```
-
 __Request: GET__
 
     API_URL?action=getemailcampaigns&api_key=apiKey
 
 __Request Parameters:__
 
-    Mandatory: action, apikey
+    Mandatory: action, api_key
     Optional: N/A
+
+```xml
+element REQUEST {
+    element ACTION { "getEmailCampaigns" } &
+    element API_KEY { text }
+}
+```
 
 __Response Parameters:__
 
-    status, campaign, id, name, Errorcode, Errorinfo
+    status, emailCampaigns, campaign, id, name, errorCode, errorInfo
 
-__Related Errorcodes:__
+```xml
+element RESPONSE {
+    element STATUS { text } &
+    element EMAILCAMPAIGNS {
+        element CAMPAIGN {
+            element ID { text } &
+            element NAME { text }
+        }+
+    }? &
+    element ERRORCODE { text }? &
+    element ERRORINFO { text }?
+}
+```
+
+__Related Error Codes:__
 
     E404
 
@@ -48,17 +58,6 @@ XML:
     <ACTION>getEmailCampaigns</ACTION>
     <API_KEY>qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ</API_KEY>    
 </REQUEST>
-```
-
-```xml
-<element name="REQUEST">
-	<element name="ACTION">
-		</text>
-	</element>
-	<element name="API_KEY">
-		</text>
-	</element>
-</element>
 ```
 
 GET:
@@ -86,26 +85,6 @@ __Response Example: Success__
 </RESPONSE>
 ```
 
-```xml
-<element name="RESPONSE">
-	<element name="STATUS">
-		</text>
-	</element>
-	<element name="EMAILCAMPAIGNS">
-	    <oneOrMore>
-	        <element name="CAMPAIGN">
-                <element name="ID">
-                    </text>
-                </element>
-                <element name="NAME">
-                    </text>
-                </element>
-	        </element>
-	    </oneOrMore>
-	</element>
-</element>
-```
-
 __Response Example: Failure__
 ```xml
 <RESPONSE>
@@ -113,18 +92,4 @@ __Response Example: Failure__
     <ERRORCODE>E404</ERRORCODE>
     <ERRORINFO>No Email Campaigns were created in this account</ERRORINFO>
 </RESPONSE>
-```
-
-```xml
-<element name="RESPONSE">
-	<element name="STATUS">
-		</text>
-	</element>
-	<element name="ERRORCODE">
-		</text>
-	</element>
-	<element name="ERRORINFO">
-		</text>
-	</element>
-</element>
 ```
