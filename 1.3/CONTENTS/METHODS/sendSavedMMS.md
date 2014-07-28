@@ -48,6 +48,7 @@ __Request Parameters:__
     Mandatory: action, api_key, mmsId, to, from
     Optional: campaignRef, ddmTitle, ddmText, ddmTimeout, customText, customSubject, data
 
+```xml
 element REQUEST {
     element ACTION { ”sendSavedMMS” } &
     element API_KEY { text } &
@@ -70,6 +71,7 @@ element REQUEST {
         ...
     }?
 }
+```
 
 __Response Parameters:__
 
