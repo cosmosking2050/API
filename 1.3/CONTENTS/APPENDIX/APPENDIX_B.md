@@ -41,6 +41,7 @@ __Error Code Reference__
 | E301 | The 'name' is required. |
 | E302 | No slides. |
 | E303 | Slide X is empty. |
+| E304 | The 'subject' is required. |
 | E331 | Image in slide X is too big. |
 | E332 | Audio in slide X is too big. |
 | E333 | Video in slide X is too big. |
