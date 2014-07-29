@@ -27,7 +27,7 @@ This postback notification triggers when a mobile phone number subscribes to a s
     <CODE>N301</CODE>
     <MOBILE>16501112222</MOBILE>
     <CAMPAIGNID>1478</CAMPAIGNID>
-    <TIMESTAMP>2014-07-02 14:32:23-04</TIMESTAMP>
+    <TIMESTAMP>2014-07-02T14:32:23-04</TIMESTAMP>
     <SHORTCODE>123456</SHORTCODE>
     <CAMPAIGNTITLE>My Campaign Name</CAMPAIGNTITLE>
     <BRANDNAME>My Brand Name</BRANDNAME>
@@ -72,7 +72,7 @@ This postback notification triggers when a mobile phone number unsubscribes to a
     <CODE>N302</CODE>
     <MOBILE>16502424956</MOBILE>
     <CAMPAIGNID>1478</CAMPAIGNID>
-    <TIMESTAMP>2014-07-02 14:32:23-04</TIMESTAMP>
+    <TIMESTAMP>2014-07-02T14:32:23-04</TIMESTAMP>
     <SHORTCODE>123456</SHORTCODE>
     <CAMPAIGNTITLE>My Campaign Name</CAMPAIGNTITLE>
     <BRANDNAME>My Brand Name</BRANDNAME>
