@@ -17,7 +17,7 @@ All data related to sending one SMS are encapsulated inside the *&lt;TEXT&gt;* t
 - *id* - The sending id in our history.
 - *to* - Receiver's phone number.
 - *carrier* - Receiver's carrier.
-- *from* - The shortcode message that was sent fromerro.
+- *from* - The shortcode message that was sent from.
 - *body* - Text sent to the number.
 
 
