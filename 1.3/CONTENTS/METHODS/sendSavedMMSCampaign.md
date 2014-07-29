@@ -10,7 +10,7 @@ This API function sends stored MMS from a specified account using a MMSID to a l
 __Request:__
 ```xml
 <REQUEST>
-	<ACTION>sendSavedMMSCampaign</ACTION>
+    <ACTION>sendSavedMMSCampaign</ACTION>
     <API_KEY>apiKey</API_KEY>
     <MMSID>MMSID</MMSID>
     <TOCAMPAIGN>CampaignID</TOCAMPAIGN>
@@ -22,28 +22,9 @@ __Request Parameters:__
     Mandatory: action, api_key, mmsId, toCampaign
     Optional: N/A
 
-```xml
-element REQUEST {
-    element ACTION { "sendSavedMMSCampaign" } &
-    element API_KEY { text } &
-    element MMSID { text } &
-    element TOCAMPAIGN { text }
-}
-```
-
 __Response Parameters:__
 
     status, mmsId, scheduledId, errorCode, errorInfo
-
-```xml
-element RESPONSE {
-    element STATUS { text } &
-    element MMSID { text }? &
-    element SCHEDULEDID { text }? &
-    element ERRORCODE { text }? &
-    element ERRORINFO { text }?
-}
-```
 
 __Related Error Codes:__
 
@@ -88,62 +69,32 @@ When the MMS delivery is processed successfully the system will generate a Postb
 ```xml
 <?xml version='1.0'?>
 <POSTBACK>
-	<ORIGIN>MMS_MT</ORIGIN>
-	<CODE>N101</CODE>
-	<SENTAS>MMS</SENTAS>
-	<STATUS>Message Sent</STATUS>
-	<MMSID>35674</MMSID>
-	<TO>16501234123</TO>
-	<TRACKINGID>TU1TXzEyMzQ2</TRACKINGID>
-	<SPID>0001890</SPID>
-	<TIMESTAMP>2011-08-02T07:20:44-04:00</TIMESTAMP>
+    <ORIGIN>MMS_MT</ORIGIN>
+    <CODE>N101</CODE>
+    <SENTAS>MMS</SENTAS>
+    <STATUS>Message Sent</STATUS>
+    <MMSID>35674</MMSID>
+    <TO>16501234123</TO>
+    <TRACKINGID>TU1TXzEyMzQ2</TRACKINGID>
+    <SPID>0001890</SPID>
+    <TIMESTAMP>2011-08-02T07:20:44-04:00</TIMESTAMP>
 </POSTBACK>
-```
-
-```xml
-element POSTBACK {
-    element ORIGIN { text } &
-    element CODE { text } &
-    element SENTAS { text } &
-    element STATUS { text } &
-    element MMSID { text } &
-    element TO { text } &
-    element TRACKINGID { text } &
-    element SPID { text } &
-    element TIMESTAMP { text }
-}
 ```
 
 When an MMS delivery report is received the system will generate a Postback notification. Not all carriers provide MMS delivery receipts.
 ```xml
 <?xml version='1.0'?>
 <POSTBACK>
-	<ORIGIN>MMS_MT</ORIGIN>
-	<CODE>N102</CODE>
-	<SENTAS>MMS</SENTAS>
-	<STATUS>Message Sent/Delivered</STATUS>
-	<MMSID>35674</MMSID>
-	<TO>16501234123</TO>
-	<TRACKINGID>TU1TXzEyMzQ2</TRACKINGID>
-	<SPID>0001890</SPID>
-	<TIMESTAMP>2011-08-02T07:20:49-04:00</TIMESTAMP>
-	<HANDSET>motol7c</HANDSET>
-	<AGGREGATORID>11529-64807-97508-73852-97658</AGGREGATORID>
+    <ORIGIN>MMS_MT</ORIGIN>
+    <CODE>N102</CODE>
+    <SENTAS>MMS</SENTAS>
+    <STATUS>Message Sent/Delivered</STATUS>
+    <MMSID>35674</MMSID>
+    <TO>16501234123</TO>
+    <TRACKINGID>TU1TXzEyMzQ2</TRACKINGID>
+    <SPID>0001890</SPID>
+    <TIMESTAMP>2011-08-02T07:20:49-04:00</TIMESTAMP>
+    <HANDSET>motol7c</HANDSET>
+    <AGGREGATORID>11529-64807-97508-73852-97658</AGGREGATORID>
 </POSTBACK>
-```
-
-```xml
-element POSTBACK {
-    element ORIGIN { text } &
-    element CODE { text } &
-    element SENTAS { text } &
-    element STATUS { text } &
-    element MMSID { text } &
-    element TO { text } &
-    element TRACKINGID { text } &
-    element SPID { text } &
-    element TIMESTAMP { text } &
-    element HANDSET { text } &
-    element AGGREGATORID { text }
-}
 ```

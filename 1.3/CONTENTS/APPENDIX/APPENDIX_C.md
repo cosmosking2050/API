@@ -35,26 +35,6 @@ Here is the example of SMS sending XML:
 </TEXT>
 ```
 
-```xml
-element TEXT {
-    attribute id { text } &
-    attribute to { text } &
-    attribute carrier { text } &
-    attribute from { text } &
-    attribute body { text } &
-    element ACK {
-        attribute gw { text } &
-        attribute net { text } &
-        attribute time { text }
-    } &
-    element DLR {
-        attribute gw { text } &
-        attribute net { text } &
-        attribute time { text }
-    }
-}
-```
-
 __MMS sending XML__
 
 All data related to sending one MMS are encapsulated inside the _&lt;CONTENT&gt;_ tag which contain few attributes:
@@ -110,39 +90,6 @@ Here is the example of MMS sending XML (binary delivery):
 </CONTENT>
 ```
 
-```xml
-element CONTENT {
-    attribute id { text } &
-    attribute carrier { text } &
-    attribute to { text } &
-    attribute delivery { text } &
-    attribute contentid { text } &
-    attribute contentname { text } &
-    attribute from { text } &
-    element MSG_STATUS {
-        element INQUE {
-            attribute time { text }
-        } &
-        element INIT {
-            attribute gw { text } &
-            attribute net { text } &
-            attribute time { text }
-        } &
-        element ACK {
-            attribute gw { text } &
-            attribute net { text } &
-            attribute time { text }
-        } &
-        element DLR {
-            attribute gw { text } &
-            attribute net { text } &
-            attribute time { text }
-        }
-    } &
-    element MM7_HANDSETID { text }
-}
-```
-
 Here is the example of MMS sending XML (xhtml delivery):
 ```xml
 <CONTENT id="455119" to="48111222333" carrier="All Carriers" delivery="xhtml" 
@@ -157,44 +104,6 @@ Here is the example of MMS sending XML (xhtml delivery):
     <XHTML_HANDSETID>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 
      (KHTML, like Gecko) Chrome/18.0.1025.162 Safari/535.19</XHTML_HANDSETID>
 </CONTENT>
-```
-
-```xml
-element CONTENT {
-    attribute id { text } &
-    attribute to { text } &
-    attribute carrier { text } &
-    attribute delivery { text } &
-    attribute contentid { text } &
-    attribute contentname { text } &
-    attribute from { text } &
-    element MSG_STATUS {
-        element INQUE {
-            attribute time { text }
-        } &
-        element INIT {
-            attribute gw { text } &
-            attribute net { text } &
-            attribute time { text }
-        } &
-        element ACK {
-            attribute gw { text } &
-            attribute net { text } &
-            attribute time { text }
-        } &
-        element OPENED {
-            attribute gw { text } &
-            attribute net { text } &
-            attribute time { text }
-        } &
-        element DLR {
-            attribute gw { text } &
-            attribute net { text } &
-            attribute time { text }
-        }
-    } &
-    element XHTML_HANDSETID { text }
-}
 ```
 
 ### Report
@@ -238,47 +147,6 @@ Here is MMS sending inside Campaign batch:
 </BATCHES>
 ```
 
-```xml
-element BATCHES {
-    element BATCH {
-        attribute id { text } &
-        attribute from { text } &
-        attribute campaignid { text } &
-        attribute campaignname { text } &
-        attribute scheduled_date { text } &
-        attribute contentid { text } &
-        attribute contentname { text } &
-        element CONTENT {
-            attribute id { text } &
-            attribute carrier { text } &
-            attribute to { text } &
-            attribute delivery { text } &
-            element MSG_STATUS {
-                element INQUE {
-                    attribute time { text }
-                } &
-                element INIT {
-                    attribute gw { text } &
-                    attribute net { text } &
-                    attribute time { text }
-                } &
-                element ACK {
-                    attribute gw { text } &
-                    attribute net { text } &
-                    attribute time { text }
-                } &
-                element DLR {
-                    attribute gw { text } &
-                    attribute net { text } &
-                    attribute time { text }
-                }
-            } &
-            element MM7_HANDSETID { text }
-        }
-    }
-}
-```
-
 Here is SMS sending inside alert batch:
 ```xml
 <BATCHES>
@@ -298,33 +166,6 @@ Here is SMS sending inside alert batch:
     ....
     ....
 </BATCHES>
-```
-
-```xml
-element BATCHES {
-    element BATCH {
-        attribute id { text } &
-        attribute from { text } &
-        attribute scheduled_date { text } &
-        attribute campaignid { text } &
-        attribute campaignname { text } &
-        attribute body { text } &
-        element TEXT {
-            attribute id { text } &
-            attribute to { text } &
-            element ACK {
-                attribute gw { text } &
-                attribute net { text } &
-                attribute time { text }
-            } &
-            element DLR {
-                attribute gw { text } &
-                attribute net { text } &
-                attribute time { text }
-            }
-        }
-    }
-}
 ```
 
 __B) Campaign autoresponder__ are encapsulated inside *&lt;AUTORESPONDERS&gt;&lt;/AUTORESPONDERS&gt;*. Each MMS/SMS autoresponder contain a list of SMS/MMS XML that is encalpsulated inside *&lt;AUTORESPONDER&gt;&lt;/AUTORESPONDER&gt;* tag. Autoresponders represent all MMS/SMS sendings of one Campaign autoresponder. Each *&lt;AUTORESPONDER&gt;* tag contain attributes:
@@ -362,92 +203,25 @@ Here is MMS Autoresponder example:
 </AUTORESPONDERS>
 ```
 
-```xml
-element AUTORESPONDERS
-{
-    element AUTORESPONDER {
-        attribute id { text } &
-        attribute from { text } &
-        attribute campaignid { text } &
-        attribute campaignname { text } &
-        attribute contentid { text } &
-        attribute contentname { text } &
-        element CONTENT {
-            attribute id { text } &
-            attribute carrier { text } &
-            attribute to { text } &
-            attribute delivery { text } &
-            element MSG_STATUS {
-                element INQUE {
-                    attribute time { text }
-                } &
-                element INIT {
-                    attribute gw { text } &
-                    attribute net { text } &
-                    attribute time { text }
-                } &
-                element ACK {
-                    attribute gw { text } &
-                    attribute net { text } &
-                    attribute time { text }
-                } &
-                element DLR {
-                    attribute gw { text } &
-                    attribute net { text } &
-                    attribute time { text }
-                }
-            } &
-            element MM7_HANDSETID { text }
-        }
-    }
-}
-
-
 Here is SMS Autoresponder example:
 ```xml
 <AUTORESPONDERS>
-   <AUTORESPONDER id="352" from="60856" campaignid="1442" campaignname="MyCampaign" 
-    body="text autoresponder"/>
-      <TEXT id="455078" to="11112233444">
-         <ACK gw="10" net="0" time="2012-04-24T04:45:48.133354Z">
-         <DLR gw="20" net="0" time="2012-04-24T04:45:48.133354Z">
-      </TEXT>
-      <TEXT id="455077" to="11112233444">
-         <ACK gw="10" net="0" time="2012-04-24T04:45:17.278337Z">
-         <DLR gw="20" net="0" time="2012-04-24T04:45:17.278337Z">
-      </TEXT>
-      .... 
-      .... 
-   </AUTORESPONDER>
-   ....
-   ....
+    <AUTORESPONDER id="352" from="60856" campaignid="1442" campaignname="MyCampaign" 
+     body="text autoresponder"/>
+        <TEXT id="455078" to="11112233444">
+            <ACK gw="10" net="0" time="2012-04-24T04:45:48.133354Z">
+            <DLR gw="20" net="0" time="2012-04-24T04:45:48.133354Z">
+        </TEXT>
+        <TEXT id="455077" to="11112233444">
+            <ACK gw="10" net="0" time="2012-04-24T04:45:17.278337Z">
+            <DLR gw="20" net="0" time="2012-04-24T04:45:17.278337Z">
+        </TEXT>
+        .... 
+        .... 
+    </AUTORESPONDER>
+    ....
+    ....
 </AUTORESPONDERS>
-```
-
-```xml
-element AUTORESPONDERS {
-    element AUTORESPONDER {
-        attribute id { text } &
-        attribute from { text } &
-        attribute campaignid { text } &
-        attribute campaignname { text } &
-        attribute body { text } &
-        element TEXT {
-            attribute id { text } &
-            attribute to { text } &
-            element ACK {
-                attribute gw { text } &
-                attribute net { text } &
-                attribute time { text }
-            } &
-            element DLR {
-                attribute gw { text } &
-                attribute net { text } &
-                attribute time { text }
-            }
-        }
-    }
-}
 ```
 
 __C) Campaign Subscriptions__ are encapsulated inside *&lt;SUBSCRIPTIONS&gt;&lt;/SUBSCRIPTIONS&gt;*. Traffic generated for each subscription contain a list of SMS/MMS XML that is encalpsulated inside *&lt;SUB&gt;&lt;/SUB&gt;* tag. Each *&lt;SUB&gt;* tag contain attributes:
@@ -474,30 +248,6 @@ Here is the example of the traffic for the Single Opt-In subscription with SMS C
 </SUBSCRIPTIONS>
 ```
 
-```xml
-element SUBSCRIPTIONS {
-    element SUB {
-        attribute to { text } &
-        attribute carrier { text } &
-        attribute from { text } &
-        element TEXT {
-            attribute id { text } &
-            attribute text { text } &
-            element ACK {
-                attribute gw { text } &
-                attribute net { text } &
-                attribute time { text }
-            } &
-            element DLR {
-                attribute gw { text } &
-                attribute net { text } &
-                attribute time { text }
-            }
-        }
-    }
-}
-```
-
 Here is the example of the traffic for the Double Opt-In subscription with MMS Confirmation:
 ```xml
 <SUBSCRIPTIONS>
@@ -521,52 +271,6 @@ Here is the example of the traffic for the Double Opt-In subscription with MMS C
 </SUBSCRIPTIONS>
 ```
 
-```xml
-element SUBSCRIPTIONS {
-    element SUB {
-        attribute to { text } &
-        attribute carrier { text } &
-        attribute from { text } &
-        element CONTENT {
-            attribute id { text } &
-            attribute contentid { text } &
-            attribute contentname { text } &
-            attribute delivery { text } &
-            element MSG_STATUS {
-                element INQUE {
-                    attribute time { text }
-                } &
-                element INIT {
-                    attribute gw { text } &
-                    attribute net { text } &
-                    attribute time { text }
-                } &
-                element ACK {
-                    attribute gw { text } &
-                    attribute net { text } &
-                    attribute time { text }
-                }
-            } &
-            element MM7_HANDSETID { text }
-        } &
-        element TEXT {
-            attribute id { text } &
-            attribute text { text } &
-            element ACK {
-                attribute gw { text } &
-                attribute net { text } &
-                attribute time { text }
-            } &
-            element DLR {
-                attribute gw { text } &
-                attribute net { text } &
-                attribute time { text }
-            }
-        }
-    }
-}
-```
-
 __D) Sending List__ contain all other SMS/MMS sendings encapsulated into *&lt;SENDING_LIST&gt;&lt;/SENDING_LIST&gt;* tag. This contain a list of *&lt;CONTENT&gt;* and *&lt;TEXT&gt;* tags.
 
 Below is example of MMS:
@@ -574,77 +278,26 @@ Below is example of MMS:
 <SENDING_LIST>
    <CONTENT id="455043" carrier="All Carriers" to="48111222333" delivery="xhtml" 
     contentid="39755" contentname="Flowers" from="+447624805892">
-      <MSG_STATUS>
-         <INQUE time="2012-04-23T09:04:57.353055Z"/>
-         <INIT gw="0" net="0" time="2012-04-23T09:04:58.048795Z"/>
-         <ACK gw="10" net="0" time="2012-04-23T09:05:03.516081Z"/>
-         <ERROR info="delivery failure" time="2012-04-23T09:05:02.982315Z">       
-      </MSG_STATUS>
-   </CONTENT>
-   ....
-   ....
+        <MSG_STATUS>
+            <INQUE time="2012-04-23T09:04:57.353055Z"/>
+            <INIT gw="0" net="0" time="2012-04-23T09:04:58.048795Z"/>
+            <ACK gw="10" net="0" time="2012-04-23T09:05:03.516081Z"/>
+            <ERROR info="delivery failure" time="2012-04-23T09:05:02.982315Z">       
+        </MSG_STATUS>
+    </CONTENT>
+    ....
+    ....
 </SENDING_LIST>
-```
-
-```xml
-element SENDING_LIST {
-    element CONTENT {
-        attribute id { text } &
-        attribute carrier { text } &
-        attribute to { text } &
-        attribute delivery { text } &
-        attribute contentid { text } &
-        attribute contentname { text } &
-        attribute from { text } &
-        element MSG_STATUS {
-            element INQUE {
-                attribute time { text }
-            } &
-            element INIT {
-                attribute gw { text } &
-                attribute net { text } &
-                attribute time { text }
-            } &
-            element ACK {
-                attribute info { text } &
-                attribute time { text }
-            } &
-            element ERROR {
-                attribute info { text } &
-                attribute time { text }
-            }
-        }
-    }
-}
 ```
 
 Below is example of SMS:
 ```xml
 <SENDING_LIST>
-   <TEXT id="150283" to="11112233444" text="Hello my friend. Where do you want to go today?">
-      <ACK gw="10" net="0" time="2010-10-05T12:21:40.947088Z">
-      <DLR gw="20" net="0" time="2010-10-05T12:21:40.947088Z">
-   </TEXT>
-   ....
-   ....
+    <TEXT id="150283" to="11112233444" text="Hello my friend. Where do you want to go today?">
+        <ACK gw="10" net="0" time="2010-10-05T12:21:40.947088Z">
+        <DLR gw="20" net="0" time="2010-10-05T12:21:40.947088Z">
+    </TEXT>
+    ....
+    ....
 </SENDING_LIST>
 ```
-
-```xml
-element SENDING_LIST {
-    element TEXT {
-        attribute id { text } &
-        attribute to { text } &
-        attribute text { text } &
-        element ACK {
-            attribute gw { text } &
-            attribute net { text } &
-            attribute time { text }
-        } &
-        element DLR {
-            attribute gw { text } &
-            attribute net { text } &
-            attribute time { text }
-        }
-    }
-}

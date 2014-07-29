@@ -137,7 +137,7 @@ __Request: GET__
     &pd_rellatitude8=relLatitude8&pd_rellongitude8=relLongitude8&pd_reltext8=relText8
     &pd_rellatitude9=relLatitude9&pd_rellongitude9=relLongitude9&pd_reltext9=relText9
     &pd_rellatitude10=relLatitude10&pd_rellongitude10=relLongitude10&pd_reltext10=relText10
-	
+
 __Request Parameters:__
 
     Mandatory: action, api_key, mmsid, to, from, 

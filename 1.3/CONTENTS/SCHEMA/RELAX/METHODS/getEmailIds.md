@@ -58,7 +58,7 @@ XML:
 GET:
 
     https://secure.skycore.com/API/wxml/1.3/index.php?action=getemailids&api_key=qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ
-    
+
 __Response Example: Success__
 ```xml
 <RESPONSE>

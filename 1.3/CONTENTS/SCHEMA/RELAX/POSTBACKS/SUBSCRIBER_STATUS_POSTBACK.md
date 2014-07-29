@@ -108,10 +108,10 @@ This postback notification triggers when an email address subscribes to a specif
 ```xml
 <?xml version='1.0'?>
 <POSTBACK>
-  <ORIGIN>EMAIL_SUB</ORIGIN>
-  <CODE>N303</CODE>
-  <EMAIL>info@skycore.com</EMAIL>
-  <CAMPAIGNID>89</CAMPAIGNID>
+    <ORIGIN>EMAIL_SUB</ORIGIN>
+    <CODE>N303</CODE>
+    <EMAIL>info@skycore.com</EMAIL>
+    <CAMPAIGNID>89</CAMPAIGNID>
 </POSTBACK>
 ```
 
@@ -138,10 +138,10 @@ This postback notification triggers when an email address unsubscribes to a spec
 ```xml
 <?xml version='1.0'?>
 <POSTBACK>
-  <ORIGIN>EMAIL_SUB</ORIGIN>
-  <CODE>N304</CODE>
-  <EMAIL>info@skycore.com</EMAIL>
-  <CAMPAIGNID>89</CAMPAIGNID>
+    <ORIGIN>EMAIL_SUB</ORIGIN>
+    <CODE>N304</CODE>
+    <EMAIL>info@skycore.com</EMAIL>
+    <CAMPAIGNID>89</CAMPAIGNID>
 </POSTBACK>
 ```
 

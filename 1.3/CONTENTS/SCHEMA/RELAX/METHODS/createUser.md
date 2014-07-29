@@ -8,7 +8,7 @@ Creates new user with given username and password. The rest of the parameters re
 __Request:__
 ```xml
 <REQUEST>
-	<ACTION>createUser</ACTION>
+    <ACTION>createUser</ACTION>
     <API_KEY>apiKey</API_KEY>
     <NEWUSER>New Username</NEWUSER>
     <NEWPASS>New Password</NEWPASS>
@@ -63,7 +63,7 @@ GET:
 
     https://secure.skycore.com/API/wxml/1.3/index.php?action=createuser&api_key=qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ
     &newuser=john&newpass=john_pass
-    
+
 __Response Example: Success__
 ```xml
 <RESPONSE>

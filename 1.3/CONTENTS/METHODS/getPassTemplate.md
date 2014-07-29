@@ -40,31 +40,9 @@ __Request Parameters:__
     Mandatory: action, api_key, passTemplateId, mmsId, emailId
     Optional: N/A
 
-```xml
-element REQUEST {
-    element ACTION { "getPassTemplate" } &
-    element API_KEY { text } &
-    element PASSTEMPLATEID { text }? &
-    element MMSID { text }? &
-    element EMAILID { text }?
-}
-```
-
 __Response Parameters:__
 
     status, passTemplateId, passTemplate, errorCode, errorInfo
-
-```xml
-element RESPONSE {
-    element STATUS { text } &
-    element PASSTEMPLATEID { text }? &
-    element PASSTEMPLATE {
-        ...
-    }? &
-    element ERRORCODE { text }? &
-    element ERRORINFO { text }?
-}
-```
 
 __Related Error Codes:__
 

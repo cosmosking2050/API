@@ -54,7 +54,7 @@ element RESPONSE {
 __Related Error Codes:__
 
     E807, E808, E830, E831
-    
+
 __Request Example:__
 ```xml
 <REQUEST>

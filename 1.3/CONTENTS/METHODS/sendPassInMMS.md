@@ -137,7 +137,7 @@ __Request: GET__
     &pd_rellatitude8=relLatitude8&pd_rellongitude8=relLongitude8&pd_reltext8=relText8
     &pd_rellatitude9=relLatitude9&pd_rellongitude9=relLongitude9&pd_reltext9=relText9
     &pd_rellatitude10=relLatitude10&pd_rellongitude10=relLongitude10&pd_reltext10=relText10
-	
+    
 __Request Parameters:__
 
     Mandatory: action, api_key, mmsid, to, from, 
@@ -161,112 +161,9 @@ __Request Parameters:__
     rellatitude9, rellongitude9, reltext9,
     rellatitude10, rellongitude10, reltext10
 
-```xml
-element REQUEST {
-    element ACTION { ”sendPassInMMS” } &
-    element API_KEY { text } &
-    element MMSID { text } &
-    element TO { text } &
-    element FROM { text } &
-    element CAMPAIGNREF { text }? &
-    element DDMTITLE { text }? &
-    element DDMTEXT { text }? &
-    element DDMTIMEOUT { xsd:nonNegativeInteger }? &
-    element CUSTOMTEXT {
-        element VALUE { text } &
-        element SLIDE { xsd:nonNegativeInteger }
-    }? &
-    element CUSTOMSUBJECT { text }? &
-    element DATA {
-        element FIRST_NAME { text }? &
-        element LAST_NAME { text }? &
-        element GENDER { text }?
-        ...
-    }? &
-    element PASSDATA {
-        element CUSTOMPASSID { text }? &
-        element THUMBNAILURL { text }? &
-        element BARCODEVALUE { text } &
-        element BARCODETEXT { text }? &
-        element HEADERLABEL1 { text }? &
-        element HEADERVALUE1 { text }? &
-        element PRIMARYLABEL1 { text }? &
-        element PRIMARYVALUE1  { text }? &
-        element PRIMARYLABEL2 { text }? &
-        element PRIMARYVALUE2  { text }? &
-        element SECLABEL1 { text }? &
-        element SECVALUE1 { text }? &
-        element SECLABEL2 { text }? &
-        element SECVALUE2 { text }? &
-        element SECLABEL3 { text }? &
-        element SECVALUE3 { text }? &
-        element SECLABEL4 { text }? &
-        element SECVALUE4 { text }? &
-        element AUXLABEL1 { text }? &
-        element AUXVALUE1 { text }? &
-        element AUXLABEL2 { text }? &
-        element AUXVALUE2 { text }? &
-        element AUXLABEL3 { text }? &
-        element AUXVALUE3 { text }? &
-        element AUXLABEL4 { text }? &
-        element AUXVALUE4 { text }? &
-        element BACKLABEL1 { text }? &
-        element BACKVALUE1 { text }? &
-        element BACKLABEL2 { text }? &
-        element BACKVALUE2 { text }? &
-        element BACKLABEL3 { text }? &
-        element BACKVALUE3 { text }? &
-        element BACKLABEL4 { text }? &
-        element BACKVALUE4 { text }? &
-        element RELLATITUDE1 { text }? &
-        element RELLONGITUDE1 { text }? &
-        element RELTEXT1 { text }? &
-        element RELLATITUDE2 { text }? &
-        element RELLONGITUDE2 { text }? &
-        element RELTEXT2 { text }? &
-        element RELLATITUDE3 { text }? &
-        element RELLONGITUDE3 { text }? &
-        element RELTEXT3 { text }? &
-        element RELLATITUDE4 { text }? &
-        element RELLONGITUDE4 { text }? &
-        element RELTEXT4 { text }? &
-        element RELLATITUDE5 { text }? &
-        element RELLONGITUDE5 { text }? &
-        element RELTEXT5 { text }? &
-        element RELLATITUDE6 { text }? &
-        element RELLONGITUDE6 { text }? &
-        element RELTEXT6 { text }? &
-        element RELLATITUDE7 { text }? &
-        element RELLONGITUDE7 { text }? &
-        element RELTEXT7 { text }? &
-        element RELLATITUDE8 { text }? &
-        element RELLONGITUDE8 { text }? &
-        element RELTEXT8 { text }? &
-        element RELLATITUDE9 { text }? &
-        element RELLONGITUDE9 { text }? &
-        element RELTEXT9 { text }? &
-        element RELLATITUDE10 { text }? &
-        element RELLONGITUDE10 { text }? &
-        element RELTEXT10 { text }?
-    }
-}
-```
-
 __Response Parameters:__
 
     status, to, from, mmsId, trackingId, errorCode, errorInfo
-
-```xml
-element RESPONSE {
-    element STATUS { text } &
-    element TO { text }? &
-    element FROM { text }? &
-    element MMSID { text }? &
-    element TRACKINGID { text }? &
-    element ERRORCODE { text }? &
-    element ERRORINFO { text }?
-}
-```
 
 __Related Error Codes:__
     
@@ -360,20 +257,6 @@ When the MMS delivery is processed successfully the system will generate a Postb
 </POSTBACK>
 ```
 
-```xml
-element POSTBACK {
-    element ORIGIN { text } &
-    element CODE { text } &
-    element SENTAS { text } &
-    element STATUS { text } &
-    element MMSID { text } &
-    element TO { text } &
-    element TRACKINGID { text } &
-    element SPID { text } &
-    element TIMESTAMP { text }
-}
-```
-
 When an MMS delivery report is received the system will generate a Postback notification. Not all carriers provide MMS delivery receipts.
 ```xml
 <?xml version='1.0'?>
@@ -390,20 +273,4 @@ When an MMS delivery report is received the system will generate a Postback noti
     <HANDSET>motol7c</HANDSET>
     <AGGREGATORID>11529-64807-97508-73852-97658</AGGREGATORID>
 </POSTBACK>
-```
-
-```xml
-element POSTBACK {
-    element ORIGIN { text } &
-    element CODE { text } &
-    element SENTAS { text } &
-    element STATUS { text } &
-    element MMSID { text } &
-    element TO { text } &
-    element TRACKINGID { text } &
-    element SPID { text } &
-    element TIMESTAMP { text } &
-    element HANDSET { text } &
-    element AGGREGATORID { text }
-}
 ```

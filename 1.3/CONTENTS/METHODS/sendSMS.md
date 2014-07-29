@@ -27,38 +27,15 @@ __Request Parameters:__
     (If "Enforce Campaign Check" IS Enabled)
     Mandatory: Action, api_key, to, from, campaignRef, text
     Optional: spid, from_mask
-
-```xml
-element REQUEST {
-    element ACTION { "sendSMS" } &
-    element API_KEY { text } &
-    element SPID { text }? &
-    element TO { text } &
-    element FROM { text } &
-    element FROM_MASK { text }? &
-    element CAMPAIGNREF { text } &
-    element TEXT { text }
-}
-```
-	
+    
 __Response Parameters:__
 
     status, trackingId, to, errorCode, errorInfo
 
-```xml
-element RESPONSE {
-    element STATUS { text } &
-    element TRACKINGID { text }? &
-    element TO { text }? &
-    element ERRORCODE { text }? &
-    element ERRORINFO { text }?
-}
-```
-
 __Related Error Codes:__
 
     E712, E201, E713, E110, E628, E111
-	
+    
 __Request Examples__  
 XML:
 ```xml
@@ -112,20 +89,6 @@ When the SMS is sent we will generate a Postback notification.
 </POSTBACK>
 ```
 
-```xml
-element POSTBACK {
-    element ORIGIN { text } &
-    element CODE { text } &
-    element STATUS { text } &
-    element FROM { text } &
-    element FROM_MASK { text } &
-    element TO { text } &
-    element TRACKINGID { text } &
-    element SPID { text } &
-    element TIMESTAMP { text }
-}
-```
-
 When we get an SMS delivery receipt we will generate another Postback notification. Not all carriers provide SMS delivery receipts.
 ```xml
 <?xml version='1.0'?>
@@ -142,20 +105,4 @@ When we get an SMS delivery receipt we will generate another Postback notificati
     <STATUSDETAILS>?smpp?deliver_sm=4&amp;</STATUSDETAILS>
     <AGGREGATORID>5114E-07230-09382-0762U</AGGREGATORID>
 </POSTBACK>
-```
-
-```xml
-element POSTBACK {
-    element ORIGIN { text } &
-    element CODE { text } &
-    element STATUS { text } &
-    element FROM { text } &
-    element FROM_MASK { text } &
-    element TO { text } &
-    element TRACKINGID { text } &
-    element SPID { text } &
-    element TIMESTAMP { text } &
-    element STATUSDETAILS { text } &
-    element AGGREGATORID { text }
-}
 ```

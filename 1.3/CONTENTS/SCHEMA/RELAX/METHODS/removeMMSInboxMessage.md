@@ -58,7 +58,7 @@ GET:
 
     https://secure.skycore.com/API/wxml/1.3/index.php?action=removemmsinboxmessage&api_key=qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ
     &mmsinboxid=MMS_MO_iG7Ksa31
-    
+
 __Response Example: Success__
 ```xml
 <RESPONSE>

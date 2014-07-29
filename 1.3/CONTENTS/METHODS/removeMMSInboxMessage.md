@@ -19,26 +19,9 @@ __Request Parameters:__
     Mandatory: action, api_key, mmsInboxId
     Optional: N/A
 
-```xml
-element REQUEST {
-    element ACTION { "removeMMSInboxMessage" } &
-    element API_KEY { text } &
-    element MMSINBOXID { text }
-}
-```
-
 __Response Parameters:__
 
     status, mmsInboxId, errorCode, errorInfo
-
-```xml
-element RESPONSE {
-    element STATUS { text } &
-    element MMSINBOXID { text }? &
-    element ERRORCODE { text }? &
-    element ERRORINFO { text }?
-}
-```
 
 __Related Error Codes:__
 

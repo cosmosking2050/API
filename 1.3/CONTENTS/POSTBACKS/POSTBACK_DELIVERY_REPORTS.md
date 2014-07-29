@@ -49,20 +49,6 @@ _N201 Example:_
 </POSTBACK>
 ```
 
-```xml
-element POSTBACK {
-    element ORIGIN { text } &
-    element CODE { text } &
-    element STATUS { text } &
-    element FROM { text } &
-    element FROM_MASK { text } &
-    element TO { text } &
-    element TRACKINGID { text } &
-    element SPID { text } &
-    element TIMESTAMP { text }
-}
-```
-
 _N202 Example:_
 ```xml
 <?xml version='1.0'?>
@@ -78,21 +64,6 @@ _N202 Example:_
     <TIMESTAMP>2013-11-05T05:41:15-05:00</TIMESTAMP>
     <AGGREGATORID>11529-64807-97508-73852-97658</AGGREGATORID>
 </POSTBACK>
-```
-
-```xml
-element POSTBACK {
-    element ORIGIN { text } &
-    element CODE { text } &
-    element STATUS { text } &
-    element FROM { text } &
-    element FROM_MASK { text } &
-    element TO { text } &
-    element TRACKINGID { text } &
-    element SPID { text } &
-    element TIMESTAMP { text } &
-    element AGGREGATORID { text }
-}
 ```
 
 [Back To The Top](#DocTop)
@@ -138,21 +109,6 @@ _N101 Example: (Binary)_
 </POSTBACK>
 ```
 
-```xml
-element POSTBACK {
-    element ORIGIN { text } &
-    element CODE { text } &
-    element SENTAS { text } &
-    element STATUS { text } &
-    element MMSID { text } &
-    element FROM { text } &
-    element TO { text } &
-    element TRACKINGID { text } &
-    element SPID { text } &
-    element TIMESTAMP { text }
-}
-```
-
 _N101 Example: (xHTML)_
 ```xml
 <?xml version='1.0'?>
@@ -169,22 +125,6 @@ _N101 Example: (xHTML)_
     <TIMESTAMP>2012-06-07T07:27:34-05:00</TIMESTAMP>
     <STATUSDETAILS>Handset setting: mms with pass via xHTML</STATUSDETAILS>
 </POSTBACK>
-```
-
-```xml
-element POSTBACK {
-    element ORIGIN { text } &
-    element CODE { text } &
-    element SENTAS { text } &
-    element STATUS { text } &
-    element MMSID { text } &
-    element FROM { text } &
-    element TO { text } &
-    element TRACKINGID { text } &
-    element SPID { text } &
-    element TIMESTAMP { text } &
-    element STATUSDETAILS { text }
-}
 ```
 
 _N102 Example: (Binary)_
@@ -207,24 +147,6 @@ _N102 Example: (Binary)_
 </POSTBACK>
 ```
 
-```xml
-element POSTBACK {
-    element ORIGIN { text } &
-    element CODE { text } &
-    element SENTAS { text } &
-    element STATUS { text } &
-    element MMSID { text } &
-    element FROM { text } &
-    element TO { text } &
-    element TRACKINGID { text } &
-    element SPID { text } &
-    element TIMESTAMP { text } &
-    element HANDSET { text } &
-    element AGGREGATORID { text } &
-    element OS { text }
-}
-```
-
 _N102 Example: (xHTML)_
 ```xml
 <?xml version='1.0'?>
@@ -240,21 +162,6 @@ _N102 Example: (xHTML)_
     <TIMESTAMP>2012-06-07T07:28:09-05:00</TIMESTAMP>
     <AGGREGATORID>11529-64807-97508-73852-97658</AGGREGATORID>
 </POSTBACK>
-```
-
-```xml
-element POSTBACK {
-    element ORIGIN { text } &
-    element CODE { text } &
-    element SENTAS { text } &
-    element STATUS { text } &
-    element FROM { text } &
-    element TO { text } &
-    element TRACKINGID { text } &
-    element SPID { text } &
-    element TIMESTAMP { text } &
-    element AGGREGATORID { text }
-}
 ```
 
 When the system is unable to send an MMS we return a postback E101. 
@@ -273,20 +180,6 @@ _E101 Example:_
     <SPID>0001140</SPID>
     <STATUSDETAILS>Error fetching dynamic content</STATUSDETAILS>
 </POSTBACK>
-```
-
-```xml
-element POSTBACK {
-    element ORIGIN { text } &
-    element CODE { text } &
-    element STATUS { text } &
-    element MMSID { text } &
-    element FROM { text } &
-    element TO { text } &
-    element TRACKINGID { text } &
-    element SPID { text } &
-    element STATUSDETAILS { text }
-}
 ```
 
 [Back To The Top](#DocTop)
@@ -314,14 +207,6 @@ _N003 (Save MMS Successful) Example:_
 </POSTBACK>
 ```
 
-```xml
-element POSTBACK {
-    element ORIGIN { text } &
-    element CODE { text } &
-    element MMSID { text }
-}
-```
-
 _E002 (Save MMS Failure) Example:_
 ```xml
 <?xml version='1.0'?>
@@ -331,15 +216,6 @@ _E002 (Save MMS Failure) Example:_
     <MMSID>35674</MMSID>
     <AUDIONAME>sample.mp3</AUDIONAME>
 </POSTBACK>
-```
-
-```xml
-element POSTBACK {
-    element ORIGIN { text } &
-    element CODE { text } &
-    element MMSID { text } &
-    element AUDIONAME { text }
-}
 ```
 
 [Back To The Top](#DocTop)

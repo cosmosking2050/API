@@ -40,7 +40,7 @@ element REQUEST {
     element TEXT { text }
 }
 ```
-	
+
 __Response Parameters:__
 
     status, trackingId, to, errorCode, errorInfo
@@ -58,7 +58,7 @@ element RESPONSE {
 __Related Error Codes:__
 
     E712, E201, E713, E110, E628, E111
-	
+
 __Request Examples__  
 XML:
 ```xml

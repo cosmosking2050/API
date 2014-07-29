@@ -18,23 +18,9 @@ __Request Parameters:__
     Mandatory: action, api_key
     Optional: N/A
 
-```xml
-element REQUEST {
-    element ACTION { "loginUser" } &
-    element API_KEY { text }
-}
-```
-
 __Response Parameters:__
 
     status, sessionID
-
-```xml
-element RESPONSE {
-    element STATUS { text } &
-    element SESSIONID { text }
-}
-```
 
 __Related Error Codes:__
 

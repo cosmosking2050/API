@@ -20,27 +20,9 @@ __Request Parameters:__
     Mandatory: action, api_key, start_date, end_date
     Optional: N/A
 
-```xml
-element REQUEST {
-    element ACTION { "getSendingStatus" } &
-    element API_KEY { text } &
-    element START_DATE { text } &
-    element END_DATE { text }
-}
-```
-
 __Response Parameters:__
 
     status, mmsId, errorCode, errorInfo
-
-```xml
-element RESPONSE {
-    element STATUS { text } &
-    element MMSID { text }? &
-    element ERRORCODE { text }? &
-    element ERRORINFO { text }?
-}
-```
 
 __Related Error Codes:__
 
@@ -50,7 +32,7 @@ __Request Example:__
 XML:
 ```xml
 <REQUEST>
-	<ACTION>getSendingStatus</ACTION>
+    <ACTION>getSendingStatus</ACTION>
     <API_KEY>qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ</API_KEY>
     <START_DATE>2010-10-01 12:00:00</START_DATE>
     <END_DATE>2010-10-02 12:00:00</END_DATE>

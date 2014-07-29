@@ -37,18 +37,6 @@ This postback notifies you when an SMS MO is received.
 </POSTBACK>
 ```
 
-```xml
-element POSTBACK {
-    element ORIGIN { text } &
-    element CODE { text } &
-    element FROM { text } &
-    element TO { text } &
-    element TEXT { text } &
-    element RECEIVED { text } &
-    element TRANSACTIONID { text }
-}
-```
-
 ### The MMS MO
 
 This postback notifies you when an MMS MO is received.
@@ -82,20 +70,4 @@ This postback notifies you when an MMS MO is received.
         <FILE>URL of Content Here</FILE>
     </CONTENT>
 </POSTBACK>
-```
-
-```xml
-element POSTBACK {
-    element ORIGIN { text } &
-    element CODE { text } &
-    element FROM { text } &
-    element TO { text } &
-    element KEYWORD { text } &
-    element TRACKINGID { text } &
-    element SPID { text } &
-    element TIMESTAMP { text } &
-    element CONTENT {
-        element FILE { text }
-    }
-}
 ```

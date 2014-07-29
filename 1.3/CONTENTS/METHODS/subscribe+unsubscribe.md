@@ -8,7 +8,7 @@ This API will subscribe or unsubscribe users to a particular campaign. Once a us
 __Request: subscribe__
 ```xml
 <REQUEST>
-	<ACTION>subscribe</ACTION>
+    <ACTION>subscribe</ACTION>
     <API_KEY>apiKey</API_KEY>
     <CAMPAIGNID>Campaign ID</CAMPAIGNID>
     <MOBILE>Number to subscribe</MOBILE>
@@ -41,39 +41,9 @@ __Request Parameters:__
     Mandatory: action, api_key, campaignId, mobile
     Optional: data, notify, spid, cta, timezone
 
-```xml
-element REQUEST {
-    element ACTION { text } &
-    element API_KEY { text } &
-    element CAMPAIGNID { text } &
-    element MOBILE { text } &
-    element DATA {
-        element FIRST_NAME { text }? &
-        element LAST_NAME { text }? &
-        element GENDER { text }? &
-        ...
-    }? &
-    element NOTIFY { text }? &
-    element SPID { text }? &
-    element CTA {
-    	element TIMEZONE { text }?
-    }?
-}
-```
-
 __Response Parameters:__
 
     status, campaignId, mobile, errorCode, errorInfo
-
-```xml
-element RESPONSE {
-    element STATUS { text } &
-    element CAMPAIGNID { text }? &
-    element MOBILE { text }? &
-    element ERRORCODE { text }? &
-    element ERRORINFO { text }?
-}
-```
 
 __Related Error Codes:__
 
@@ -141,20 +111,6 @@ __On subscribe:__
 </POSTBACK>
 ```
 
-```xml
-element POSTBACK {
-    element ORIGIN { text } &
-    element CODE { text } &
-    element MOBILE { text } &
-    element CAMPAIGNID { text } &
-    element TIMESTAMP { text } &
-    element SHORTCODE { text } &
-    element CAMPAIGNTITLE { text } &
-    element BRANDNAME { text } &
-    element SOURCE { text }
-}
-```
-
 __On unsubscribe:__
 ```xml
 <?xml version='1.0'?>
@@ -169,18 +125,4 @@ __On unsubscribe:__
     <BRANDNAME>My Brand Name</BRANDNAME>
     <SOURCE>API</SOURCE>
 </POSTBACK>
-```
-
-```xml
-element POSTBACK {
-    element ORIGIN { text } &
-    element CODE { text } &
-    element MOBILE { text } &
-    element CAMPAIGNID { text } &
-    element TIMESTAMP { text } &
-    element SHORTCODE { text } &
-    element CAMPAIGNTITLE { text } &
-    element BRANDNAME { text } &
-    element SOURCE { text }
-}
 ```

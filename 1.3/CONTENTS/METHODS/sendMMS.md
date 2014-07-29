@@ -26,11 +26,11 @@ Prototype:
         <VIDEO>
             <URL>URL</URL>
         </AUDIO>
-	    <TEXT>Plain Text</TEXT>
+        <TEXT>Plain Text</TEXT>
         <DURATION>Duration in seconds</DURATION>
     </SLIDE>
     <SLIDE>
-       ...
+        ...
     </SLIDE>
 </REQUEST>
 ```
@@ -40,46 +40,9 @@ __Request Parameters:__
     Mandatory: action, api_key, to, from, name, slide
     Optional: spid, campaignRef, subject, image, audio, video, url, text, duration
 
-```xml
-element REQUEST {
-    element ACTION { “sendMMS” } &
-    element API_KEY { text } &
-    element TO { text } &
-    element FROM { text } &
-    element SPID { text }? &
-    element CAMPAIGNREF { text }? &
-    element SUBJECT { text }? &
-    element NAME { text } &
-    element SLIDE {
-        element IMAGE {
-            element URL { text }
-        }? &
-        element AUDIO {
-            element URL { text }
-        }? &
-        element VIDEO {
-            element URL { text }
-        }? &
-        element TEXT { text }? &
-        element DURATION { xsd:nonNegativeInteger }?    # in seconds
-    }+
-}
-```
-
 __Response Parameters:__
 
     status, to, mmsId, trackingId, errorCode, errorInfo
-
-```xml
-element RESPONSE {
-    element STATUS { text } &
-    element TO { text }? &
-    element MMSID { text }? &
-    element TRACKINGID { text }? &
-    element ERRORCODE { text }? &
-    element ERRORINFO { text }?
-}
-```
 
 __Related Error Codes:__
 
@@ -111,19 +74,19 @@ __Request Example:__
 __Response Example: Success__
 ```xml
 <RESPONSE>
-	<STATUS>Success</STATUS>
-	<TO>15551234888</TO>
+    <STATUS>Success</STATUS>
+    <TO>15551234888</TO>
     <MMSID>35674</MMSID>
-	<TRACKINGID>MMS_12345</TRACKINGID>
+    <TRACKINGID>MMS_12345</TRACKINGID>
 </RESPONSE>
 ```
 
 __Response Example: Failure__
 ```xml
 <RESPONSE>
-	<STATUS>Failure</STATUS>
-	<ERRORCODE>E111</ERRORCODE>
-	<TO>15551234888</TO>
-	<ERRORINFO>Invalid shortcode</ERRORINFO>
+    <STATUS>Failure</STATUS>
+    <ERRORCODE>E111</ERRORCODE>
+    <TO>15551234888</TO>
+    <ERRORINFO>Invalid shortcode</ERRORINFO>
 </RESPONSE>
 ```

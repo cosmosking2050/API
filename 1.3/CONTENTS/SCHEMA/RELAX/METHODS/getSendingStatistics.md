@@ -50,7 +50,7 @@ __Request Example:__
 XML:
 ```xml
 <REQUEST>
-	<ACTION>getSendingStatus</ACTION>
+    <ACTION>getSendingStatus</ACTION>
     <API_KEY>qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ</API_KEY>
     <START_DATE>2010-10-01 12:00:00</START_DATE>
     <END_DATE>2010-10-02 12:00:00</END_DATE>

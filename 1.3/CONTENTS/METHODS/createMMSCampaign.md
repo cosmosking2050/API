@@ -9,7 +9,7 @@ Campaign will be created under *campaignname* in our system. *Campaignname* will
 __Request:__
 ```xml
 <REQUEST>
-	<ACTION>createMMSCampaign</ACTION>
+    <ACTION>createMMSCampaign</ACTION>
     <API_KEY>apiKey</API_KEY>
     <CAMPAIGNNAME>Camapign Name</CAMPAIGNNAME>
     <BRANDNAME>Brand Name</BRANDNAME>
@@ -21,29 +21,9 @@ __Request Parameters:__
     Mandatory: action, api_key, campaignName, brandName
     Optional: N/A
 
-```xml
-element REQUEST {
-    element ACTION { "createMMSCampaign" } &
-    element API_KEY { text } &
-    element CAMPAIGNNAME { text } &
-    element BRANDNAME { text }
-}
-```
-
 __Response Parameters:__
 
     status, campaignId, campaignName, brandName, errorCode, errorInfo
-
-```xml
-element RESPONSE {
-    element STATUS { text } &
-    element CAMPAIGNID { text }? &
-    element CAMPAIGNNAME { text }? &
-    element BRANDNAME { text }? &
-    element ERRORCODE { text }? &
-    element ERRORINFO { text }?
-}
-```
 
 __Related Error Codes:__
 

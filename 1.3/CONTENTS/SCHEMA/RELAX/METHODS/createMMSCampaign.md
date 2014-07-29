@@ -9,7 +9,7 @@ Campaign will be created under *campaignname* in our system. *Campaignname* will
 __Request:__
 ```xml
 <REQUEST>
-	<ACTION>createMMSCampaign</ACTION>
+    <ACTION>createMMSCampaign</ACTION>
     <API_KEY>apiKey</API_KEY>
     <CAMPAIGNNAME>Camapign Name</CAMPAIGNNAME>
     <BRANDNAME>Brand Name</BRANDNAME>
@@ -64,7 +64,7 @@ GET:
 
     https://secure.skycore.com/API/wxml/1.3/index.php?action=createmmscampaign&api_key=qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ
     &campaignname=Winter+Sale&brandname=Gap
-    
+
 __Response Example: Success__
 ```xml
 <RESPONSE>

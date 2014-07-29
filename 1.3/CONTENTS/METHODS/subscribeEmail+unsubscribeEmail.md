@@ -37,35 +37,9 @@ __Request Parameters:__
     Mandatory: action, api_key, campaignId, email
     Optional: data, notify
 
-```xml
-element REQUEST {
-    element ACTION { text } &
-    element API_KEY { text } &
-    element CAMPAIGNID { text } &
-    element EMAIL { text } &
-    element DATA {
-        element FIRST_NAME { text }? &
-        element LAST_NAME { text }? &
-        element GENDER { text }? &
-        ...
-    }? &
-    element NOTIFY { text }?
-}
-```
-
 __Response Parameters:__
 
     status, campaignId, email, errorCode, errorInfo
-
-```xml
-element RESPONSE {
-    element STATUS { text } &
-    element CAMPAIGNID { text }? &
-    element EMAIL { text }? &
-    element ERRORCODE { text }? &
-    element ERRORINFO { text }?
-}
-```
 
 __Related Error Codes:__
 

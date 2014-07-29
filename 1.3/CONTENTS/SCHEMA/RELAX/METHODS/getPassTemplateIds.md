@@ -16,7 +16,7 @@ __Request: XML__
 __Request: GET__
 
     API_URL?action=getpasstemplateids&api_key=apiKey
-    
+
 __Request Parameters:__
 
     Mandatory: action, api_key

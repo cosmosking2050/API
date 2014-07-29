@@ -23,11 +23,11 @@ __Request: XML__
     <EMAIL>email</EMAIL>
     <CAMPAIGNID>campaignId</CAMPAIGNID>
     <DATA>
-		<FIRST_NAME>First Name</FIRST_NAME>
-		<LAST_NAME>Last Name</LAST_NAME>
-		<GENDER>Gender</GENDER>
-		...
-	</DATA>
+        <FIRST_NAME>First Name</FIRST_NAME>
+        <LAST_NAME>Last Name</LAST_NAME>
+        <GENDER>Gender</GENDER>
+        ...
+    </DATA>
     <PASSDATA>
         <CUSTOMPASSID>customPassId</CUSTOMPASSID>
         <THUMBNAILURL>thumbnailUrl</THUMBNAILURL>
@@ -260,11 +260,11 @@ __Request Example:__
     <EMAIL>vik.muth@mail.com</EMAIL>
     <CAMPAIGNID>1233</CAMPAIGNID>
     <DATA>
-    	<FIRST_NAME>John</FIRST_NAME>
-    	<LAST_NAME>Smith</LAST_NAME>
-    	<AGE>29</AGE>
-    	<PET>Dog</PET>
-	</DATA>
+        <FIRST_NAME>John</FIRST_NAME>
+        <LAST_NAME>Smith</LAST_NAME>
+        <AGE>29</AGE>
+        <PET>Dog</PET>
+    </DATA>
     <PASSDATA>
         <THUMBNAILURL>http://andreas.com/pixs/steve-jobs.png</THUMBNAILURL>
         <BARCODEVALUE>1234578961A</BARCODEVALUE>

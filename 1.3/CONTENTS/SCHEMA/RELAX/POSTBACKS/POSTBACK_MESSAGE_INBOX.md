@@ -95,7 +95,7 @@ element POSTBACK {
     element SPID { text } &
     element TIMESTAMP { text } &
     element CONTENT {
-        element FILE { text }
+        element FILE { text }+
     }
 }
 ```

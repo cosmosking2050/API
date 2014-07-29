@@ -36,40 +36,9 @@ __Request Parameters:__
     Mandatory: action, api_key, subject, name, slide
     Optional: image, audio, video, url, text, duration
 
-```xml
-element REQUEST {
-    element ACTION { “saveMMS” } &
-    element API_KEY { text } &
-    element SUBJECT { text } &
-    element NAME { text } &
-    element SLIDE {
-        element IMAGE {
-            element URL { text }
-        }? &
-        element AUDIO {
-            element URL { text }
-        }? &
-        element VIDEO {
-            element url { text }
-        }? &
-        element TEXT { text }? &
-        element DURATION { xsd:nonNegativeInteger }?    # in seconds
-    }+
-}
-```
-
 __Response Parameters:__
 
     status, mmsId, errorCode, errorInfo
-
-```xml
-element RESPONSE {
-    element STATUS { text } &
-    element MMSID { text }? &
-    element ERRORCODE { text }? &
-    element ERRORINFO { text }?
-}
-```
 
 __Related Error Codes:__
 
@@ -120,14 +89,6 @@ When an MMS is saved, the system will generate a Postback notification and unloc
 </POSTBACK>
 ```
 
-```xml
-element POSTBACK {
-    element ORIGIN { text } &
-    element CODE { text } &
-    element MMSID { text }
-}
-```
-
 If there was an error encoding the MMS audio/video, the system will generate a notification:
 ```xml
 <?xml version='1.0'?>
@@ -137,15 +98,6 @@ If there was an error encoding the MMS audio/video, the system will generate a n
     <MMSID>35674</MMSID>
     <AUDIONAME>http://www.yoursite.com/audio/1.mp3</AUDIONAME>
 </POSTBACK>
-```
-
-```xml
-element POSTBACK {
-    element ORIGIN { text } &
-    element CODE { text } &
-    element MMSID { text } &
-    element AUDIONAME { text }
-}
 ```
 
 __Special Considerations for saveMMS:__  

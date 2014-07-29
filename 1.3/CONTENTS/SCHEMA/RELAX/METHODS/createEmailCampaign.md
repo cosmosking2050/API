@@ -8,7 +8,7 @@ This API function creates new email campaign within the account holders account 
 __Request:__
 ```xml
 <REQUEST>
-	<ACTION>createEmailCampaign</ACTION>
+    <ACTION>createEmailCampaign</ACTION>
     <API_KEY>apiKey</API_KEY>
     <CAMPAIGNNAME>Campaign Name</CAMPAIGNNAME>
     <BRANDNAME>Brand Name</BRANDNAME>

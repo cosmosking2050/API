@@ -8,7 +8,7 @@ This API function creates new email campaign within the account holders account 
 __Request:__
 ```xml
 <REQUEST>
-	<ACTION>createEmailCampaign</ACTION>
+    <ACTION>createEmailCampaign</ACTION>
     <API_KEY>apiKey</API_KEY>
     <CAMPAIGNNAME>Campaign Name</CAMPAIGNNAME>
     <BRANDNAME>Brand Name</BRANDNAME>
@@ -21,33 +21,9 @@ __Request Parameters:__
     Mandatory: action, api_key, campaignName, brandName, mailingAddress
     Optional: N/A
 
-```xml
-element REQUEST {
-    element ACTION { "createEmailCampaign" } &
-    element API_KEY { text } &
-    element CAMPAIGNNAME { text } &
-    element BRANDNAME {
-        element MAILINGADDRESS { text }
-    }
-}
-```
-
 __Response Parameters:__
 
     status, campaignId, campaignName, brandName, mailingAddress, errorCode, errorInfo
-
-```xml
-element RESPONSE {
-    element STATUS { text } &
-    element CAMPAIGNID { text }? &
-    element CAMPAIGNNAME { text }? &
-    element BRANDNAME {
-        element MAILINGADDRESS { text }?
-    }? &
-    element ERRORCODE { text }? &
-    element ERRORINFO { text }?
-}
-```
 
 __Related Error Codes:__
 

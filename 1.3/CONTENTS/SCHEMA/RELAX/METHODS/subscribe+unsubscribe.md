@@ -8,7 +8,7 @@ This API will subscribe or unsubscribe users to a particular campaign. Once a us
 __Request: subscribe__
 ```xml
 <REQUEST>
-	<ACTION>subscribe</ACTION>
+    <ACTION>subscribe</ACTION>
     <API_KEY>apiKey</API_KEY>
     <CAMPAIGNID>Campaign ID</CAMPAIGNID>
     <MOBILE>Number to subscribe</MOBILE>
@@ -56,7 +56,7 @@ element REQUEST {
     element NOTIFY { text }? &
     element SPID { text }? &
     element CTA {
-    	element TIMEZONE { text }?
+        element TIMEZONE { text }?
     }?
 }
 ```

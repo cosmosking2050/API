@@ -26,11 +26,11 @@ Prototype:
         <VIDEO>
             <URL>URL</URL>
         </AUDIO>
-	    <TEXT>Plain Text</TEXT>
+        <TEXT>Plain Text</TEXT>
         <DURATION>Duration in seconds</DURATION>
     </SLIDE>
     <SLIDE>
-       ...
+        ...
     </SLIDE>
 </REQUEST>
 ```
@@ -111,19 +111,19 @@ __Request Example:__
 __Response Example: Success__
 ```xml
 <RESPONSE>
-	<STATUS>Success</STATUS>
-	<TO>15551234888</TO>
+    <STATUS>Success</STATUS>
+    <TO>15551234888</TO>
     <MMSID>35674</MMSID>
-	<TRACKINGID>MMS_12345</TRACKINGID>
+    <TRACKINGID>MMS_12345</TRACKINGID>
 </RESPONSE>
 ```
 
 __Response Example: Failure__
 ```xml
 <RESPONSE>
-	<STATUS>Failure</STATUS>
-	<ERRORCODE>E111</ERRORCODE>
-	<TO>15551234888</TO>
-	<ERRORINFO>Invalid shortcode</ERRORINFO>
+    <STATUS>Failure</STATUS>
+    <ERRORCODE>E111</ERRORCODE>
+    <TO>15551234888</TO>
+    <ERRORINFO>Invalid shortcode</ERRORINFO>
 </RESPONSE>
 ```

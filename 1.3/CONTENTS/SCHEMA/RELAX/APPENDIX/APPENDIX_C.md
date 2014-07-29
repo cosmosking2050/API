@@ -274,8 +274,8 @@ element BATCHES {
                 }
             } &
             element MM7_HANDSETID { text }
-        }
-    }
+        }+
+    }+
 }
 ```
 
@@ -322,8 +322,8 @@ element BATCHES {
                 attribute net { text } &
                 attribute time { text }
             }
-        }
-    }
+        }+
+    }+
 }
 ```
 
@@ -398,8 +398,8 @@ element AUTORESPONDERS
                 }
             } &
             element MM7_HANDSETID { text }
-        }
-    }
+        }+
+    }+
 }
 
 
@@ -445,8 +445,8 @@ element AUTORESPONDERS {
                 attribute net { text } &
                 attribute time { text }
             }
-        }
-    }
+        }+
+    }+
 }
 ```
 
@@ -494,7 +494,7 @@ element SUBSCRIPTIONS {
                 attribute time { text }
             }
         }
-    }
+    }+
 }
 ```
 
@@ -563,7 +563,7 @@ element SUBSCRIPTIONS {
                 attribute time { text }
             }
         }
-    }
+    }+
 }
 ```
 
@@ -574,15 +574,15 @@ Below is example of MMS:
 <SENDING_LIST>
    <CONTENT id="455043" carrier="All Carriers" to="48111222333" delivery="xhtml" 
     contentid="39755" contentname="Flowers" from="+447624805892">
-      <MSG_STATUS>
-         <INQUE time="2012-04-23T09:04:57.353055Z"/>
-         <INIT gw="0" net="0" time="2012-04-23T09:04:58.048795Z"/>
-         <ACK gw="10" net="0" time="2012-04-23T09:05:03.516081Z"/>
-         <ERROR info="delivery failure" time="2012-04-23T09:05:02.982315Z">       
-      </MSG_STATUS>
-   </CONTENT>
-   ....
-   ....
+        <MSG_STATUS>
+            <INQUE time="2012-04-23T09:04:57.353055Z"/>
+            <INIT gw="0" net="0" time="2012-04-23T09:04:58.048795Z"/>
+            <ACK gw="10" net="0" time="2012-04-23T09:05:03.516081Z"/>
+            <ERROR info="delivery failure" time="2012-04-23T09:05:02.982315Z">       
+        </MSG_STATUS>
+    </CONTENT>
+    ....
+    ....
 </SENDING_LIST>
 ```
 
@@ -614,19 +614,19 @@ element SENDING_LIST {
                 attribute time { text }
             }
         }
-    }
+    }+
 }
 ```
 
 Below is example of SMS:
 ```xml
 <SENDING_LIST>
-   <TEXT id="150283" to="11112233444" text="Hello my friend. Where do you want to go today?">
-      <ACK gw="10" net="0" time="2010-10-05T12:21:40.947088Z">
-      <DLR gw="20" net="0" time="2010-10-05T12:21:40.947088Z">
-   </TEXT>
-   ....
-   ....
+    <TEXT id="150283" to="11112233444" text="Hello my friend. Where do you want to go today?">
+        <ACK gw="10" net="0" time="2010-10-05T12:21:40.947088Z">
+        <DLR gw="20" net="0" time="2010-10-05T12:21:40.947088Z">
+    </TEXT>
+    ....
+    ....
 </SENDING_LIST>
 ```
 
@@ -646,5 +646,5 @@ element SENDING_LIST {
             attribute net { text } &
             attribute time { text }
         }
-    }
+    }+
 }

@@ -26,35 +26,14 @@ __Request Parameters:__
     Mandatory: action, api_key, passDataId
     Optional: N/A
 
-```xml
-element REQUEST {
-    element ACTION { "generatePassById" } &
-    element API_KEY { text } &
-    element PASSDATAID { text }
-}
-```
-
 __Response Parameters:__
 
     status, passDataId, serialNumber, customPassId, passLink, downloadUrl, errorCode, errorInfo
 
-```xml
-element RESPONSE {
-    element STATUS { text } &
-    element PASSDATAID { text }? &
-    element SERIALNUMBER { text }? &
-    element CUSTOMPASSID { text }? &
-    element PASSLINK { text }? &
-    element DOWNLOADURL { text }? &
-    element ERRORCODE { text }? &
-    element ERRORINFO { text }?
-}
-```
-
 __Related Error Codes:__
 
     E807, E808, E830, E831
-    
+
 __Request Example:__
 ```xml
 <REQUEST>

@@ -31,16 +31,3 @@ You can set your pass postback URL seperately from other postback notifications.
     <TIMESTAMP>2013-11-26T11:37:11-05:00</TIMESTAMP>
 </POSTBACK>
 ```
-
-```xml
-element POSTBACK {
-    element ORIGIN { text } &
-    element STATUSCODE { text } &
-    element REFERENCEDBY { text } &
-    element REFERENCEVALUE { text } &
-    element CUSTOMPASSID { text } &
-    element PASSDATAID { text } &
-    element SERIALNUMBER { text } &
-    element TIMESTAMP { text }
-}
-```

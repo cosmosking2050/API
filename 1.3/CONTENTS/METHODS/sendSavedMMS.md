@@ -48,46 +48,9 @@ __Request Parameters:__
     Mandatory: action, api_key, mmsId, to, from
     Optional: campaignRef, ddmTitle, ddmText, ddmTimeout, customText, customSubject, data
 
-```xml
-element REQUEST {
-    element ACTION { ”sendSavedMMS” } &
-    element API_KEY { text } &
-    element MMSID { text } &
-    element TO { text } &
-    element FROM { text } &
-    element CAMPAIGNREF { text }? &
-    element DDMTITLE { text }? &
-    element DDMTEXT { text }? &
-    element DDMTIMEOUT { xsd:nonNegativeInteger }? &
-    element CUSTOMTEXT {
-        element VALUE { text } &
-        element SLIDE { xsd:nonNegativeInteger }
-    }? &
-    element CUSTOMSUBJECT { text }? &
-    element DATA {
-        element FIRST_NAME { text }? &
-        element LAST_NAME { text }? &
-        element GENDER { text }?
-        ...
-    }?
-}
-```
-
 __Response Parameters:__
 
     status, to, from, mmsId, trackingId, errorCode, errorInfo
-
-```xml
-element RESPONSE {
-    element STATUS { text } &
-    element TO { text }? &
-    element FROM { text }? &
-    element MMSID { text }? &
-    element TRACKINGID { text }? &
-    element ERRORCODE { text }? &
-    element ERRORINFO { text }?
-}
-```
 
 __Related Error Codes:__
 
@@ -143,10 +106,10 @@ __Response Example: Success__
 __Response Example: Failure__
 ```xml
 <RESPONSE>
-     <STATUS>Failure</STATUS>
-     <ERRORCODE>E713</ERRORCODE>
-     <TO>16501234123</TO>
-     <ERRORINFO>There is billing problem on your account</ERRORINFO>
+    <STATUS>Failure</STATUS>
+    <ERRORCODE>E713</ERRORCODE>
+    <TO>16501234123</TO>
+    <ERRORINFO>There is billing problem on your account</ERRORINFO>
 </RESPONSE>
 ```
 
@@ -167,20 +130,6 @@ When the MMS delivery is processed successfully the system will generate a Postb
 </POSTBACK>
 ```
 
-```xml
-element POSTBACK {
-    element ORIGIN { text } &
-    element CODE { text } &
-    element SENTAS { text } &
-    element STATUS { text } &
-    element MMSID { text } &
-    element TO { text } &
-    element TRACKINGID { text } &
-    element SPID { text } &
-    element TIMESTAMP { text }
-}
-```
-
 When an MMS delivery report is received the system will generate a Postback notification. Not all carriers provide MMS delivery receipts.
 ```xml
 <?xml version='1.0'?>
@@ -197,20 +146,4 @@ When an MMS delivery report is received the system will generate a Postback noti
     <HANDSET>motol7c</HANDSET>
     <AGGREGATORID>11529-64807-97508-73852-97658</AGGREGATORID>
 </POSTBACK>
-```
-
-```xml
-element POSTBACK {
-    element ORIGIN { text } &
-    element CODE { text } &
-    element SENTAS { text } &
-    element STATUS { text } &
-    element MMSID { text } &
-    element TO { text } &
-    element TRACKINGID { text } &
-    element SPID { text } &
-    element TIMESTAMP { text } &
-    element HANDSET { text } &
-    element AGGREGATORID { text }
-}
 ```

@@ -22,30 +22,9 @@ __Request Parameters:__
     Mandatory: action, api_key
     Optional: N/A
 
-```xml
-element REQUEST {
-    element ACTION { "getMmsCampaigns" } &
-    element API_KEY { text }
-}
-```
-
 __Response Parameters:__
 
     status, mmsCampaigns, campaign, id, name, errorCode, errorInfo
-
-```xml
-element RESPONSE {
-    element STATUS { text } &
-    element MMSCAMPAIGNS {
-        element CAMPAIGN {
-            element ID { text } &
-            element NAME { text }
-        }+
-    }? &
-    element ERRORCODE { text }? &
-    element ERRORINFO { text }?
-}
-```
 
 __Related Error Codes:__
 
