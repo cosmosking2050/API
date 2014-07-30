@@ -141,7 +141,7 @@ __Request: GET__
 __Request Parameters:__
 
     Mandatory: action, api_key, mmsid, to, from, 
-    barcodevalue (if "Barcode=Allowed" && "BarcodeType=Dynamic" && "Barcode value source=Dynamic Value" for Pass Template otherwise IGNORED)
+    barcodevalue (if "Barcode = Allowed" && "Barcode Type = Dynamic" && "Barcode Value Source = Dynamic Value" for Pass Template otherwise IGNORED)
     Optional: campaignref, ddmtitle, ddmtext, ddmtimeout, customsubject, customText, data, thumbnailUrl,
     barcodetext (if "Barcode = Allowed" && "Barcode Alternate Text = Dynamic Text" for Pass Template otherwise IGNORED), 
     headerlabel1, headervalue1, 

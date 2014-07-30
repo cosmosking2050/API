@@ -129,7 +129,7 @@ __Request: GET__
 __Request Parameters:__
 
     Mandatory: action, api_key, email, emailTemplateId, campaignId,
-    barcodeValue (if "Barcode=Allowed" && "BarcodeType=Dynamic" && "BarcodeValueSource=Dynamic Value" for Pass Template otherwise IGNORED)
+    barcodeValue (if "Barcode = Allowed" && "Barcode Type = Dynamic" && "Barcode Value Source = Dynamic Value" for Pass Template otherwise IGNORED)
     Optional: data, customPassId, thumbnailUrl,
     barcodeText (if "Barcode = Allowed" && "Barcode Alternate Text = Dynamic Text" for Pass Template otherwise IGNORED), 
     headerLabel1, headerValue1, 
