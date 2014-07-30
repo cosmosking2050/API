@@ -9,12 +9,19 @@ __Request:__
 ```xml
 <REQUEST>
     <ACTION>saveMMS</ACTION>
-    <API_KEY>API KEY</API_KEY>
+    <API_KEY>apiKey</API_KEY>
     <SUBJECT>Subject </SUBJECT>
     <NAME>Name to save it as</NAME>
     <SLIDE>
-        <IMAGE><URL>URL</URL></IMAGE>
-        <AUDIO><URL>URL</URL></AUDIO>
+        <IMAGE>
+            <URL>URL</URL> 
+        </IMAGE>
+        <AUDIO>
+            <URL>URL</URL>
+        </AUDIO>
+        <VIDEO>
+            <URL>URL</URL>
+        </AUDIO>
         <TEXT>Plain Text</TEXT>
         <DURATION>Duration in seconds</DURATION>
     </SLIDE>
@@ -26,14 +33,14 @@ __Request:__
 
 __Request Parameters:__
 
-    Mandatory: Action, API_KEY, Name, Subject, Slide
-    Optional: Image, Audio, Video, URL, Text, Duration
+    Mandatory: action, api_key, subject, name, slide
+    Optional: image, audio, video, url, text, duration
 
 __Response Parameters:__
 
-    Status, TrackingID, Errorcode, Errorinfo, MMSID
+    status, mmsId, errorCode, errorInfo
 
-__Related Errorcodes:__
+__Related Error Codes:__
 
     E225, E226, E227, E228, E229, E230, E301, E302, E303, E304, E331, E332, E333, E334, E341, E351
 

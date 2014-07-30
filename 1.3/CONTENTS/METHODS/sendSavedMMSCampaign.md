@@ -10,8 +10,8 @@ This API function sends stored MMS from a specified account using a MMSID to a l
 __Request:__
 ```xml
 <REQUEST>
-  <ACTION>sendSavedMMSCampaign</ACTION>
-    <API_KEY>API KEY</API_KEY>
+    <ACTION>sendSavedMMSCampaign</ACTION>
+    <API_KEY>apiKey</API_KEY>
     <MMSID>MMSID</MMSID>
     <TOCAMPAIGN>CampaignID</TOCAMPAIGN>
 </REQUEST>
@@ -19,14 +19,14 @@ __Request:__
 
 __Request Parameters:__
 
-    Mandatory: Action, API_KEY, MMSID, ToCampaign
+    Mandatory: action, api_key, mmsId, toCampaign
     Optional: N/A
 
 __Response Parameters:__
 
-    MMSID, Status, To, ScheduledID, Errorcode, Errorinfo
+    status, mmsId, scheduledId, errorCode, errorInfo
 
-__Related Errorcodes:__
+__Related Error Codes:__
 
     E241, E620, E624, E626, E629, E714
 
@@ -34,7 +34,7 @@ __Request Example:__
 XML:
 ```xml
 <REQUEST>
-    <ACTION> sendSavedMMSCampaign</ACTION>
+    <ACTION>sendSavedMMSCampaign</ACTION>
     <API_KEY>qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ</API_KEY>
     <TOCAMPAIGN>332</TOCAMPAIGN>
     <MMSID>35674</MMSID>
@@ -69,15 +69,15 @@ When the MMS delivery is processed successfully the system will generate a Postb
 ```xml
 <?xml version='1.0'?>
 <POSTBACK>
-	<ORIGIN>MMS_MT</ORIGIN>
-	<CODE>N101</CODE>
-	<SENTAS>MMS</SENTAS>
-	<STATUS>Message Sent</STATUS>
-	<MMSID>35674</MMSID>
-	<TO>16501234123</TO>
-	<TRACKINGID>TU1TXzEyMzQ2</TRACKINGID>
-	<SPID>0001890</SPID>
-	<TIMESTAMP>2011-08-02T07:20:44-04:00</TIMESTAMP>
+    <ORIGIN>MMS_MT</ORIGIN>
+    <CODE>N101</CODE>
+    <SENTAS>MMS</SENTAS>
+    <STATUS>Message Sent</STATUS>
+    <MMSID>35674</MMSID>
+    <TO>16501234123</TO>
+    <TRACKINGID>TU1TXzEyMzQ2</TRACKINGID>
+    <SPID>0001890</SPID>
+    <TIMESTAMP>2011-08-02T07:20:44-04:00</TIMESTAMP>
 </POSTBACK>
 ```
 
@@ -85,16 +85,16 @@ When an MMS delivery report is received the system will generate a Postback noti
 ```xml
 <?xml version='1.0'?>
 <POSTBACK>
-	<ORIGIN>MMS_MT</ORIGIN>
-	<CODE>N102</CODE>
-	<SENTAS>MMS</SENTAS>
-	<STATUS>Message Sent/Delivered</STATUS>
-	<MMSID>35674</MMSID>
-	<TO>16501234123</TO>
-	<TRACKINGID>TU1TXzEyMzQ2</TRACKINGID>
-	<SPID>0001890</SPID>
-	<TIMESTAMP>2011-08-02T07:20:49-04:00</TIMESTAMP>
-	<HANDSET>motol7c</HANDSET>
-	<AGGREGATORID>11529-64807-97508-73852-97658</AGGREGATORID>
+    <ORIGIN>MMS_MT</ORIGIN>
+    <CODE>N102</CODE>
+    <SENTAS>MMS</SENTAS>
+    <STATUS>Message Sent/Delivered</STATUS>
+    <MMSID>35674</MMSID>
+    <TO>16501234123</TO>
+    <TRACKINGID>TU1TXzEyMzQ2</TRACKINGID>
+    <SPID>0001890</SPID>
+    <TIMESTAMP>2011-08-02T07:20:49-04:00</TIMESTAMP>
+    <HANDSET>motol7c</HANDSET>
+    <AGGREGATORID>11529-64807-97508-73852-97658</AGGREGATORID>
 </POSTBACK>
 ```

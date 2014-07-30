@@ -33,7 +33,7 @@ __Request: XML__
         <VALUE>customText</VALUE>
         <SLIDE>slideId</SLIDE>
     </CUSTOMTEXT>
-    </CUSTOMSUBJECT>MMSCustomSubject</CUSTOMSUBJECT>
+    <CUSTOMSUBJECT>MMSCustomSubject</CUSTOMSUBJECT>
     <DATA>
         <FIRST_NAME>firstName</FIRST_NAME>
         <LAST_NAME>lastName</LAST_NAME>
@@ -137,10 +137,10 @@ __Request: GET__
     &pd_rellatitude8=relLatitude8&pd_rellongitude8=relLongitude8&pd_reltext8=relText8
     &pd_rellatitude9=relLatitude9&pd_rellongitude9=relLongitude9&pd_reltext9=relText9
     &pd_rellatitude10=relLatitude10&pd_rellongitude10=relLongitude10&pd_reltext10=relText10
-	
+    
 __Request Parameters:__
 
-    Mandatory: action, apiKey, mmsid, to, from, 
+    Mandatory: action, api_key, mmsid, to, from, 
     barcodevalue (if "Barcode=Allowed" && "BarcodeType=Dynamic" && "Barcode value source=Dynamic Value" for Pass Template otherwise IGNORED)
     Optional: campaignref, ddmtitle, ddmtext, ddmtimeout, customsubject, customText, data, thumbnailUrl,
     barcodetext (if "Barcode = Allowed" && "Barcode Alternate Text = Dynamic Text" for Pass Template otherwise IGNORED), 
@@ -163,14 +163,11 @@ __Request Parameters:__
 
 __Response Parameters:__
 
-    status, to, mmsid, trackingid, errorcode, errorinfo
+    status, to, from, mmsId, trackingId, errorCode, errorInfo
 
-__Related Errorcodes:__
+__Related Error Codes:__
     
-    E110, E111, E241, E620, E621, E626, E628, E629, E713, E714, E715, E802, E803, E806, E822, E840, E841, E842, E843,
-    E844, E845, E846, E847, E848, E849, E850, E851, E852, E853, E854, E855, E856, E857, E858, E859, E860, E861, E862,
-    E863, E864, E865, E866, E867, E868, E869, E870, E871, E872, E873, E874, E875, E876, E877, E878, E879, E880, E881,
-    E882, E883, E884, E885, E886, E887, E888, E889, E890, E891, E892, E893, E894, E895, E896, E897, E898, E899
+    E110, E111, E241, E620, E621, E626, E628, E629, E713, E714, E715, E802, E803, E806, E822, E840, E841, E842, E843, E844, E845, E846, E847, E848, E849, E850, E851, E852, E853, E854, E855, E856, E857, E858, E859, E860, E861, E862, E863, E864, E865, E866, E867, E868, E869, E870, E871, E872, E873, E874, E875, E876, E877, E878, E879, E880, E881, E882, E883, E884, E885, E886, E887, E888, E889, E890, E891, E892, E893, E894, E895, E896, E897, E898, E899
 
 __Request Example:__
 ```xml
@@ -182,13 +179,13 @@ __Request Example:__
     <FROM>11111</FROM>
     <CAMPAIGNREF>12333</CAMPAIGNREF>
     <DDMTITLE>We are detecting your handset</DDMTITLE>
-        <DDMTEXT>This message is free of charge and will allow us to deliver your content nice and smooth</DDMTEXT>
-        <DDMTIMEOUT>10</DDMTIMEOUT>
-        <CUSTOMTEXT>
-            <VALUE>Hyes Convention Event Ticket</VALUE>
-            <SLIDE>1</SLIDE>
-        </CUSTOMTEXT>
-        <CUSTOMSUBJECT>Your Event Ticket</CUSTOMSUBJECT>
+    <DDMTEXT>This message is free of charge and will allow us to deliver your content nice and smooth</DDMTEXT>
+    <DDMTIMEOUT>10</DDMTIMEOUT>
+    <CUSTOMTEXT>
+        <VALUE>Hyes Convention Event Ticket</VALUE>
+        <SLIDE>1</SLIDE>
+    </CUSTOMTEXT>
+    <CUSTOMSUBJECT>Your Event Ticket</CUSTOMSUBJECT>
     <DATA>
         <FIRST_NAME>John</FIRST_NAME>
         <LAST_NAME>Smith</LAST_NAME>

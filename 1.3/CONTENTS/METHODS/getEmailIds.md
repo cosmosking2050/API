@@ -19,14 +19,14 @@ __Request: GET__
 
 __Request Parameters:__
 
-    Mandatory: action, apikey
+    Mandatory: action, api_key
     Optional: N/A
 
 __Response Parameters:__
 
-    status, emailids, Errorcode, Errorinfo
+    status, emailIds, errorCode, errorInfo
 
-__Related Errorcodes:__
+__Related Error Codes:__
 
     E400
 

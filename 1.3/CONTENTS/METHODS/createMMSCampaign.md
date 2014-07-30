@@ -9,23 +9,23 @@ Campaign will be created under *campaignname* in our system. *Campaignname* will
 __Request:__
 ```xml
 <REQUEST>
-  <ACTION>createMMSCampaign</ACTION>
-    <API_KEY>API KEY</API_KEY>
+    <ACTION>createMMSCampaign</ACTION>
+    <API_KEY>apiKey</API_KEY>
     <CAMPAIGNNAME>Camapign Name</CAMPAIGNNAME>
-    <BRANDNAME>Brand</BRANDNAME>
+    <BRANDNAME>Brand Name</BRANDNAME>
 </REQUEST>
 ```
 
 __Request Parameters:__
 
-    Mandatory: Action, API_KEY, CampaignName, BrandName
+    Mandatory: action, api_key, campaignName, brandName
     Optional: N/A
 
 __Response Parameters:__
 
-    CampaignID, CampaignName, BrandName, ErrorInfo, Errorcode
+    status, campaignId, campaignName, brandName, errorCode, errorInfo
 
-__Related Error codes:__
+__Related Error Codes:__
 
     E170, E171, E172
 

@@ -2,15 +2,14 @@
 
 ## createUser
 
-
 __Synopsis:__  
 Creates new user with given username and password. The rest of the parameters required for account creation are inherited from creator’s account.
 
 __Request:__
 ```xml
 <REQUEST>
-  <ACTION>createUser</ACTION>
-    <API_KEY>API KEY</API_KEY>
+    <ACTION>createUser</ACTION>
+    <API_KEY>apiKey</API_KEY>
     <NEWUSER>New Username</NEWUSER>
     <NEWPASS>New Password</NEWPASS>
 </REQUEST>
@@ -18,14 +17,14 @@ __Request:__
 
 __Request Parameters:__
 
-    Mandatory: Action, API_KEY, NewUser, NewPass
+    Mandatory: action, api_key, newUser, newPass
     Optional: N/A
 
 __Response Parameters:__
 
-    Status, Username, Password, API_KEY, Errorcode, Errorinfo
+    status, username, password, api_key, errorCode, errorInfo
 
-__Related Errorcodes:__
+__Related Error Codes:__
 
     E150, E151, E152, E153, E154
 
@@ -44,7 +43,7 @@ GET:
 
     https://secure.skycore.com/API/wxml/1.3/index.php?action=createuser&api_key=qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ
     &newuser=john&newpass=john_pass
-    
+
 __Response Example: Success__
 ```xml
 <RESPONSE>

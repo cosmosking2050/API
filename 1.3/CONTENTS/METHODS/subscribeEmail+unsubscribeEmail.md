@@ -8,7 +8,7 @@ __Synopsis:__
 __Request: subscribeEmail__
 ```xml
 <REQUEST>
-  <ACTION>subscribeEmail</ACTION>
+    <ACTION>subscribeEmail</ACTION>
     <API_KEY>apiKey</API_KEY>
     <CAMPAIGNID>Campaign ID</CAMPAIGNID>
     <EMAIL>Email address to subscribe</EMAIL>
@@ -34,14 +34,14 @@ __Request: unsubscribeEmail__
 
 __Request Parameters:__
 
-    Mandatory: Action, API_KEY, CAMPAIGNID, Email
-    Optional: Data, Notify
+    Mandatory: action, api_key, campaignId, email
+    Optional: data, notify
 
 __Response Parameters:__
 
-    CAMPAIGNID, Errorcode, Errorinfo, Email, Status
+    status, campaignId, email, errorCode, errorInfo
 
-__Related Errorcodes:__
+__Related Error Codes:__
 
     E911, E912, E913, E914
 

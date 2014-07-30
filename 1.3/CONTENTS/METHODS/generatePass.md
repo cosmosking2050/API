@@ -2,7 +2,6 @@
 
 ## generatePass
 
-
 __Synopsis:__  
 This API request is used to create Passbook Passes dynamically. Passes are created based on the dynamic pass data passed in the request which is used in restriction to the Pass Template Settings. 'CustomPassId' is your system generated unique identifier that will represent this pass data. You can optionally pass it along with the pass data and use this as a reference for any future queries to this pass or pass data. In the case of Relevance, Relevant Text is considered only when Relevance lat,long values are passed in the API otherwise ignored. On success, the API returns important values such as 'passDataId', 'serialNumber', 'customPassId', 'passLink' and 'downloadUrl'. All these values need to be stored along with passData on your side which will come in use for making pass updates in the future. More explanation about these values are given below:
 
@@ -118,7 +117,7 @@ __Request: GET__
 
 __Request Parameters:__
 
-    Mandatory: action, apikey, passTemplateId, 
+    Mandatory: action, api_key, passTemplateId, 
     barcodeValue (if "Barcode=Allowed" && "BarcodeType=Dynamic" && "BarcodeValueSource=Dynamic Value" for Pass Template otherwise IGNORED)
     Optional: customPassId, thumbnailUrl,
     barcodeText (if "Barcode = Allowed" && "Barcode Alternate Text = Dynamic Text" for Pass Template otherwise IGNORED), 
@@ -141,14 +140,11 @@ __Request Parameters:__
 
 __Response Parameters:__
 
-    status, passDataID, passTemplateId, Errorcode, Errorinfo, passDownloadLink
+    status, passDataId, serialNumber, customPassId, passLink, downloadUrl, errorCode, errorInfo
 
-__Related Errorcodes:__
+__Related Error Codes:__
 
-    E801, E802, E803, E806, E830, E831, E840, E841, E842, E843, E844, E845, E846, E847, E848, E849, E850, E851, E852,
-    E853, E854, E855, E856, E857, E858, E859, E860, E861, E862, E863, E864, E865, E866, E867, E868, E869, E870, E871,
-    E872, E873, E874, E875, E876, E877, E878, E879, E880, E881, E882, E883, E884, E885, E886, E887, E888, E889, E890,
-    E891, E892, E893, E894, E895, E896, E897, E898, E899
+    E801, E802, E803, E806, E830, E831, E840, E841, E842, E843, E844, E845, E846, E847, E848, E849, E850, E851, E852, E853, E854, E855, E856, E857, E858, E859, E860, E861, E862, E863, E864, E865, E866, E867, E868, E869, E870, E871, E872, E873, E874, E875, E876, E877, E878, E879, E880, E881, E882, E883, E884, E885, E886, E887, E888, E889, E890, E891, E892, E893, E894, E895, E896, E897, E898, E899
 
 __Request Example:__
 ```xml

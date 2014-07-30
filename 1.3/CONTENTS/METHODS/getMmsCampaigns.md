@@ -19,14 +19,14 @@ __Request: GET__
 
 __Request Parameters:__
 
-    Mandatory: action, apikey
+    Mandatory: action, api_key
     Optional: N/A
 
 __Response Parameters:__
 
-    status, campaign, id, name, Errorcode, Errorinfo
+    status, mmsCampaigns, campaign, id, name, errorCode, errorInfo
 
-__Related Errorcodes:__
+__Related Error Codes:__
 
     E405
 

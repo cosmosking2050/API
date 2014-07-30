@@ -12,21 +12,20 @@ __Request: XML__
     <API_KEY>apiKey</API_KEY>
 </REQUEST>
 ```
-
 __Request: GET__  
 
     API_URL?action=getmmsids&api_key=apiKey
     
 __Request Parameters:__
 
-    Mandatory: action, apikey
+    Mandatory: action, api_key
     Optional: N/A
 
 __Response Parameters:__
 
-    status, mmsids, Errorcode, Errorinfo
+    status, mmsIds, errorCode, errorInfo
 
-__Related Errorcodes:__
+__Related Error Codes:__
 
     E200
 

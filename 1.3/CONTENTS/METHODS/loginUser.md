@@ -9,20 +9,20 @@ __Request:__
 ```xml
 <REQUEST>
     <ACTION>loginUser</ACTION>
-    <API_KEY>API KEY</API_KEY>
+    <API_KEY>apiKey</API_KEY>
 </REQUEST>
 ```
 
 __Request Parameters:__
 
-    Mandatory: Action, API_KEY
+    Mandatory: action, api_key
     Optional: N/A
 
 __Response Parameters:__
 
-    Status, SessionID
+    status, sessionID
 
-__Related Error codes:__
+__Related Error Codes:__
 
     N/A
 

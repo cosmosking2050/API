@@ -132,9 +132,9 @@ __Request: GET__
 
 __Request Parameters:__
 
-    Mandatory: action, apiKey, email, emailTemplateId, emailCampaignId,
+    Mandatory: action, api_key, email, emailTemplateId, emailCampaignId,
     barcodeValue (if "Barcode=Allowed" && "BarcodeType=Dynamic" && "BarcodeValueSource=Dynamic Value" for Pass Template otherwise IGNORED)
-    Optional: customPassId, thumbnailUrl,
+    Optional: data, customPassId, thumbnailUrl,
     barcodeText (if "Barcode = Allowed" && "Barcode Alternate Text = Dynamic Text" for Pass Template otherwise IGNORED), 
     headerLabel1, headerValue1, 
     primaryLabel1, primaryValue1, 
@@ -155,18 +155,15 @@ __Request Parameters:__
 
 __Response Parameters:__
 
-    status, email, emailTemplateId, passDataId, serialNumber, customPassId, warningCode, warningInfo, emailSubject,
-    emailHtml, errorCode, errorInfo
+    status, emailTemplateId, email, campaignID, passDataId, serialNumber, customPassId, warningCode, warningInfo, emailSubject, emailHtml, errorCode, errorInfo
 
-__Related Errorcodes:__
+__Related Error Codes:__
 
-    E401, E402, E713, E714, E802, E803, E806, E823, E840, E841, E842, E843, E844, E845, E846, E847, E848, E849, E850,
-    E851, E852, E853, E854, E855, E856, E857, E858, E859, E860, E861, E862, E863, E864, E865, E866, E867, E868, E869,
-    E870, E871, E872, E873, E874, E875, E876, E877, E878, E879, E880, E881, E882, E883, E884, E885, E886, E887, E888,
-    E889, E890, E891, E892, E893, E894, E895, E896, E897, E898, E899
+    E401, E402, E713, E714, E802, E803, E806, E823, E840, E841, E842, E843, E844, E845, E846, E847, E848, E849, E850, E851, E852, E853, E854, E855, E856, E857, E858, E859, E860, E861, E862, E863, E864, E865, E866, E867, E868, E869, E870, E871, E872, E873, E874, E875, E876, E877, E878, E879, E880, E881, E882, E883, E884, E885, E886, E887, E888, E889, E890, E891, E892, E893, E894, E895, E896, E897, E898, E899
 
-__Related Warningcodes:__  
-E915, E916, E917, E918
+__Related Warning Codes:__
+
+    E915, E916, E917, E918
 
 __Request Example:__
 ```xml
@@ -218,7 +215,7 @@ __Response Example: Success__
     <WARNINGINFO>E915</WARNINGINFO>
     <EMAILSUBJECT>Get Your Pass</EMAILSUBJECT>
     <EMAILHTML>
-       <!DOCTYPE html ..... </html>
+        <!DOCTYPE html ..... </html>
     </EMAILHTML>
 </RESPONSE>
 ```
@@ -228,9 +225,9 @@ __Response Example: Failure__
 <RESPONSE>
     <STATUS>Failure</STATUS>
     <EMAILTEMPLATEID>35674</EMAILTEMPLATEID>
-    <ERRORCODE>E713</ERRORCODE>
-    <ERRORINFO>There is billing problem on your account.</ERRORINFO>
     <EMAIL>vik.muth@mail.com</EMAIL>
     <CAMPAIGNID>1233</CAMPAIGNID>
+    <ERRORCODE>E713</ERRORCODE>
+    <ERRORINFO>There is billing problem on your account.</ERRORINFO>
 </RESPONSE>
 ```

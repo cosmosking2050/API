@@ -23,14 +23,14 @@ __NOTE:__ BarcodeID passed in an API call will always be used even for Databases
 __Request:__
 ```xml
 <REQUEST>
-  <ACTION>sendMMSBarcode</ACTION>
-    <API_KEY>API KEY</API_KEY>
+    <ACTION>sendMMSBarcode</ACTION>
+    <API_KEY>apiKey</API_KEY>
     <MMSID>MMSID</MMSID>
     <TO>Number</TO>
-        <FROM>Shortcode</FROM>
-        <BARCODEID>BarcodeID</BARCODEID>
-        <CAMPAIGNREF>CampaignID</CAMPAIGNREF>
-        <DDMTITLE>DDMTitle</DDMTITLE>
+    <FROM>Shortcode</FROM>
+    <BARCODEID>BarcodeID</BARCODEID>
+    <CAMPAIGNREF>CampaignID</CAMPAIGNREF>
+    <DDMTITLE>DDMTitle</DDMTITLE>
     <DDMTEXT>DDMText</DDMTEXT>
     <DDMTIMEOUT>DDMTimeout (in mins)</DDMTIMEOUT>
     <CUSTOMTEXT>
@@ -49,14 +49,14 @@ __Request:__
 
 __Request Parameters:__
 
-    Mandatory: action, api_key, mmsid, to, barcodeid, from
-    Optional: campaignref, ddmtitle, ddmtext, ddmtimeout, customsubject, customText, data
+    Mandatory: action, api_key, mmsId, to, from, barcodeId
+    Optional: campaignRef, ddmTitle, ddmText, ddmTimeout, customText, customSubject, data
 
 __Response Parameters:__
 
-    mmsid, status, to, trackingid, errorcode, errorinfo
+    status, to, mmsId, trackingId, errorCode, errorInfo
 
-__Related Errorcodes:__
+__Related Error Codes:__
 
     E110, E111, E241, E620, E621, E623, E626, E628, E629, E630, E631, E632, E633, E713, E714, E715
   
@@ -67,18 +67,18 @@ XML:
     <ACTION>sendMMSBarcode</ACTION>
     <API_KEY>qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ</API_KEY>
     <TO>16501234123</TO>
-        <FROM>60856</FROM>
-        <BARCODEID>Ticket_12345</BARCODEID>
-        <CAMPAIGNREF>12333</CAMPAIGNREF>
+    <FROM>60856</FROM>
+    <BARCODEID>Ticket_12345</BARCODEID>
+    <CAMPAIGNREF>12333</CAMPAIGNREF>
     <MMSID>35674</MMSID>
     <DDMTITLE>We are detecting your handset</DDMTITLE>
-        <DDMTEXT>This message is free of charge and will allow us to deliver your content nice and smooth</DDMTEXT>
-        <DDMTIMEOUT>10</DDMTIMEOUT>
-        <CUSTOMTEXT>
-            <VALUE>Hyes Convention Event Ticket</VALUE>
-            <SLIDE>1</SLIDE>
-        </CUSTOMTEXT>
-        <CUSTOMSUBJECT>Your Event Ticket</CUSTOMSUBJECT>
+    <DDMTEXT>This message is free of charge and will allow us to deliver your content nice and smooth</DDMTEXT>
+    <DDMTIMEOUT>10</DDMTIMEOUT>
+    <CUSTOMTEXT>
+        <VALUE>Hyes Convention Event Ticket</VALUE>
+        <SLIDE>1</SLIDE>
+    </CUSTOMTEXT>
+    <CUSTOMSUBJECT>Your Event Ticket</CUSTOMSUBJECT>
     <DATA>
         <FIRST_NAME>John</FIRST_NAME>
         <LAST_NAME>Smith</LAST_NAME>
@@ -100,9 +100,9 @@ __Response Example: Success__
 ```xml
 <RESPONSE>
     <STATUS>Success</STATUS>
+    <TO>16501234123</TO>
     <MMSID>35674</MMSID>
     <TRACKINGID>TU1TXzEyMzQ2</TRACKINGID>
-    <TO>16501234123</TO>
 </RESPONSE>
 ```
 
@@ -121,15 +121,15 @@ When the MMS delivery is processed successfully the system will generate a Postb
 ```xml
 <?xml version='1.0'?>
 <POSTBACK>
-	<ORIGIN>MMS_MT</ORIGIN>
-	<CODE>N101</CODE>
-	<SENTAS>MMS</SENTAS>
-	<STATUS>Message Sent</STATUS>
-	<MMSID>35674</MMSID>
-	<TO>16501234123</TO>
-	<TRACKINGID>TU1TXzEyMzQ2</TRACKINGID>
-	<SPID>0001890</SPID>
-	<TIMESTAMP>2011-08-02T07:20:44-04:00</TIMESTAMP>
+    <ORIGIN>MMS_MT</ORIGIN>
+    <CODE>N101</CODE>
+    <SENTAS>MMS</SENTAS>
+    <STATUS>Message Sent</STATUS>
+    <MMSID>35674</MMSID>
+    <TO>16501234123</TO>
+    <TRACKINGID>TU1TXzEyMzQ2</TRACKINGID>
+    <SPID>0001890</SPID>
+    <TIMESTAMP>2011-08-02T07:20:44-04:00</TIMESTAMP>
 </POSTBACK>
 ```
 
@@ -137,16 +137,16 @@ When an MMS delivery report is received the system will generate a Postback noti
 ```xml
 <?xml version='1.0'?>
 <POSTBACK>
-	<ORIGIN>MMS_MT</ORIGIN>
-	<CODE>N102</CODE>
-	<SENTAS>MMS</SENTAS>
-	<STATUS>Message Sent/Delivered</STATUS>
-	<MMSID>35674</MMSID>
-	<TO>16501234123</TO>
-	<TRACKINGID>TU1TXzEyMzQ2</TRACKINGID>
-	<SPID>0001890</SPID>
-	<TIMESTAMP>2011-08-02T07:21:04-04:00</TIMESTAMP>
-	<HANDSET>motol7c</HANDSET>
-	<AGGREGATORID>11529-64807-97508-73852-97658</AGGREGATORID>
+    <ORIGIN>MMS_MT</ORIGIN>
+    <CODE>N102</CODE>
+    <SENTAS>MMS</SENTAS>
+    <STATUS>Message Sent/Delivered</STATUS>
+    <MMSID>35674</MMSID>
+    <TO>16501234123</TO>
+    <TRACKINGID>TU1TXzEyMzQ2</TRACKINGID>
+    <SPID>0001890</SPID>
+    <TIMESTAMP>2011-08-02T07:21:04-04:00</TIMESTAMP>
+    <HANDSET>motol7c</HANDSET>
+    <AGGREGATORID>11529-64807-97508-73852-97658</AGGREGATORID>
 </POSTBACK>
 ```

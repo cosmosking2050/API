@@ -37,14 +37,14 @@ __Request: GET__
 
 __Request Parameters:__
 
-    Mandatory: action, apikey, mmsid, emailid, passtemplateid
+    Mandatory: action, api_key, passTemplateId, mmsId, emailId
     Optional: N/A
 
 __Response Parameters:__
 
-    status, Errorcode, Errorinfo, passTemplateId, passTemplate
+    status, passTemplateId, passTemplate, errorCode, errorInfo
 
-__Related Errorcodes:__
+__Related Error Codes:__
 
     E174, E402, E802, E822, E823, E828, E827
 

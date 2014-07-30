@@ -8,22 +8,22 @@ Immediately removes stored MMS inbox content and text files for the specified me
 __Request:__
 ```xml
 <REQUEST>
-  <ACTION>removeMMSInboxMessage</ACTION>
-    <API_KEY>API KEY</API_KEY>
+    <ACTION>removeMMSInboxMessage</ACTION>
+    <API_KEY>apiKey</API_KEY>
     <MMSINBOXID>MMS Inbox ID</MMSINBOXID>
 </REQUEST>
 ```
 
 __Request Parameters:__
 
-    Mandatory: Action, API_KEY, MMSInboxID
+    Mandatory: action, api_key, mmsInboxId
     Optional: N/A
 
 __Response Parameters:__
 
-    Status, MMSInboxID, Errorcode, Errorinfo
+    status, mmsInboxId, errorCode, errorInfo
 
-__Related Error codes:__
+__Related Error Codes:__
 
     E640, E641, E642, E643
 

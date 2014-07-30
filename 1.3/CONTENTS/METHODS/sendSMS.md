@@ -9,7 +9,7 @@ __Request:__
 ```xml
 <REQUEST>
     <ACTION>sendSMS</ACTION>
-    <API_KEY>API KEY</API_KEY>
+    <API_KEY>apiKey</API_KEY>
     <SPID>SPID</SPID>
     <TO>Recipient Number</TO>
     <FROM>shortcode</FROM>
@@ -22,20 +22,20 @@ __Request:__
 __Request Parameters:__
 
     (If "Enforce Campaign Check" is NOT Enabled)
-    Mandatory: Action, API_KEY, To, Text, From
-    Optional: SPID, CampaignRef, From_Mask
+    Mandatory: action, api_key, to, from, text
+    Optional: spid, from_mask, campaignRef
     (If "Enforce Campaign Check" IS Enabled)
-    Mandatory: Action, API_KEY, To, Text, From, CampaignRef
-    Optional: SPID, From_Mask
-	
+    Mandatory: Action, api_key, to, from, campaignRef, text
+    Optional: spid, from_mask
+    
 __Response Parameters:__
 
-    Status, TrackingID, To, Errorcode, Errorinfo
-	
-__Related Error codes:__
+    status, trackingId, to, errorCode, errorInfo
+
+__Related Error Codes:__
 
     E712, E201, E713, E110, E628, E111
-	
+    
 __Request Examples__  
 XML:
 ```xml

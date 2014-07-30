@@ -108,10 +108,10 @@ __Request: GET__
 
 __Request Parameters:__  
 
-    Mandatory: action, apiKey, passDataId
+    Mandatory: action, api_key, passDataId
     Optional: thumbnailUrl,
-    barcodeText (if "Barcode = Allowed" &amp;&amp; "Barcode Alternate Text = Dynamic Text" for Pass Template otherwise IGNORED), 
-    barcodeValue (if "Barcode=Allowed" &amp; "BarcodeType=Dynamic" &amp; "BarcodeValueSource=Dynamic Value" for Pass Template otherwise IGNORED),
+    barcodeText (if "Barcode = Allowed" && "Barcode Alternate Text = Dynamic Text" for Pass Template otherwise IGNORED), 
+    barcodeValue (if "Barcode=Allowed" && "BarcodeType=Dynamic" && "BarcodeValueSource=Dynamic Value" for Pass Template otherwise IGNORED),
     headerLabel1, headerValue1, 
     primaryLabel1, primaryValue1, 
     primaryLabel2, primaryValue2 - if "Pass Template Type = Boarding Pass" otherwise IGNORED, 
@@ -131,14 +131,11 @@ __Request Parameters:__
 
 __Response Parameters:__
 
-    status, passDataId, updateStatusID, Errorcode, Errorinfo
+    status, passDataId, updateStatusID, errorCode, errorInfo
 
-__Related Errorcodes:__
+__Related Error Codes:__
 
-    E802, E803, E807, E808, E809, E840, E841, E842, E843, E844, E845, E846, E847, E848, E849, E850, E851, E852, E853,
-    E854, E855, E856, E857, E858, E859, E860, E861, E862, E863, E864, E865, E866, E867, E868, E869, E870, E871, E872,
-    E873, E874, E875, E876, E877, E878, E879, E880, E881, E882, E883, E884, E885, E886, E887, E888, E889, E890, E891,
-    E892, E893, E894, E895, E896, E897, E898, E899
+    E802, E803, E807, E808, E809, E840, E841, E842, E843, E844, E845, E846, E847, E848, E849, E850, E851, E852, E853, E854, E855, E856, E857, E858, E859, E860, E861, E862, E863, E864, E865, E866, E867, E868, E869, E870, E871, E872, E873, E874, E875, E876, E877, E878, E879, E880, E881, E882, E883, E884, E885, E886, E887, E888, E889, E890, E891, E892, E893, E894, E895, E896, E897, E898, E899
 
 __Request Example:__
 ```xml
@@ -154,7 +151,7 @@ __Request Example:__
         <HEADERVALUE1>100C</HEADERVALUE1>
         <SECLABEL1>Date</SECLABEL1>
         <SECVALUE1>3rd July, 2013</SECVALUE1>
-        <BACKVALUE4>Important - Change</BACKVALUE4>
+        <BACKLABEL4>Important - Change</BACKLABEL4>
         <BACKVALUE4>New ticket issued. Schedule preponed by one day.</BACKVALUE4>
         <RELLATITUDE2>42.347888</RELLATITUDE2>
         <RELLONGITUDE2>-71.087903</RELLONGITUDE2>

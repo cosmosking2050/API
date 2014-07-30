@@ -9,22 +9,22 @@ __Request:__
 ```xml
 <REQUEST>
     <ACTION>getSendingStatus</ACTION>
-    <API_KEY>API KEY</API_KEY>
+    <API_KEY>apiKey</API_KEY>
     <START_DATE>UTC StartDate</START_DATE>
-    <END_DATE>UTC EndDate</ END_DATE>
+    <END_DATE>UTC EndDate</END_DATE>
 </REQUEST>
 ```
 
 __Request Parameters:__
 
-    Mandatory: Action, API_KEY, End_Date, Start_Date
+    Mandatory: action, api_key, start_date, end_date
     Optional: N/A
 
 __Response Parameters:__
 
-    Errorcode, Errorinfo, MMSID, Status
+    status, mmsId, errorCode, errorInfo
 
-__Related Errorcodes:__
+__Related Error Codes:__
 
     E506, E507, E508, E509, E510
 
@@ -32,7 +32,7 @@ __Request Example:__
 XML:
 ```xml
 <REQUEST>
-  <ACTION>getSendingStatus</ACTION>
+    <ACTION>getSendingStatus</ACTION>
     <API_KEY>qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ</API_KEY>
     <START_DATE>2010-10-01 12:00:00</START_DATE>
     <END_DATE>2010-10-02 12:00:00</END_DATE>

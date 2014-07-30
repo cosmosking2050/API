@@ -16,7 +16,7 @@ The email address is referenced by 'EMAIL', email template is referenced by 'EMA
 __Request:__
 ```xml
 <REQUEST>
-  <ACTION>sendSavedEmail</ACTION>
+    <ACTION>sendSavedEmail</ACTION>
     <API_KEY>apiKey</API_KEY>
     <EMAILTEMPLATEID>emailTemplateId</EMAILTEMPLATEID>
     <EMAIL>email</EMAIL>
@@ -32,14 +32,14 @@ __Request:__
 
 __Request Parameters:__
 
-    Mandatory: ACTION, API_KEY, EMAILTEMPLATEID, EMAIL, CAMPAIGNID
-    Optional: N/A
+    Mandatory: action, api_key, emailTemplateId, email, campaignId
+    Optional: data
 
 __Response Parameters:__
 
-    EMAILTEMPLATEID, CAMPAIGNID, EMAIL, STATUS, TRACKINGID, ERRORCODE, ERRORINFO
+    status, emailTemplateId, trackingId, email, campaignId, errorCode, errorInfo
 
-__Related Errorcodes:__
+__Related Error Codes:__
 
     E401, E402, E403, E713, E915, E916, E917
 
@@ -81,11 +81,11 @@ __Response Example: Success__
 __Response Example: Failure__
 ```xml
 <RESPONSE>
-     <STATUS>Failure</STATUS>
-     <ERRORCODE>E713</ERRORCODE>
-     <EMAIL>john@email.com</EMAIL>
-     <EMAILTEMPLATEID>1234</EMAILTEMPLATEID>
-     <CAMPAIGNID>5678</CAMPAIGNID>
-     <ERRORINFO>There is billing problem on your account</ERRORINFO>
+    <STATUS>Failure</STATUS>
+    <ERRORCODE>E713</ERRORCODE>
+    <EMAIL>john@email.com</EMAIL>
+    <EMAILTEMPLATEID>1234</EMAILTEMPLATEID>
+    <CAMPAIGNID>5678</CAMPAIGNID>
+    <ERRORINFO>There is billing problem on your account</ERRORINFO>
 </RESPONSE>
 ```

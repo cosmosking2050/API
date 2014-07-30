@@ -19,12 +19,12 @@ __Request: GET__
     
 __Request Parameters:__
 
-    Mandatory: action, apikey
+    Mandatory: action, api_key
     Optional: N/A
 
 __Response Parameters:__
 
-    status, passtemplateids, Errorcode, Errorinfo
+    status, passTemplateIds, errorCode, errorInfo
 
 __Related Errorcodes:__
 

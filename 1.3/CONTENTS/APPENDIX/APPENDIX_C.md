@@ -30,8 +30,8 @@ Here is the example of SMS sending XML:
 ```xml
 <TEXT id="455118" to="11112233444" carrier="Verizon Wireless" from="60856" 
  body="Jack: Hello My friend!">
-   <ACK gw="10" net="0" time="2012-04-30T08:30:12.327558Z">
-   <DLR gw="20" net="0" time="2012-04-30T08:30:12.327558Z">
+    <ACK gw="10" net="0" time="2012-04-30T08:30:12.327558Z">
+    <DLR gw="20" net="0" time="2012-04-30T08:30:12.327558Z">
 </TEXT>
 ```
 
@@ -79,33 +79,32 @@ For XHTML MMS we also have in chronological order:
 Here is the example of MMS sending XML (binary delivery):
 ```xml
 <CONTENT id="455076" carrier="T-Mobile" to="11112233444" delivery="binary" 
- contentid="40301" contentname="Flowers" from="60856"> 
-   <MSG_STATUS> 
-      <INQUE time="2012-04-24T04:45:15.655766Z" /> 
-      <INIT gw="0" net="0" time="2012-04-24T04:45:16.831756Z"/> 
-      <ACK gw="9" net="0" time="2012-04-24T04:45:18.80118Z"/> 
-      <DLR gw="20" net="1000" time="2012-04-24T04:45:23.953745Z"/> 
-   </MSG_STATUS> 
-   <MM7_HANDSETID>motol7c</MM7_HANDSETID> 
+ contentid="40301" contentname="Flowers" from="60856">
+    <MSG_STATUS>
+        <INQUE time="2012-04-24T04:45:15.655766Z"/>
+        <INIT gw="0" net="0" time="2012-04-24T04:45:16.831756Z"/>
+        <ACK gw="9" net="0" time="2012-04-24T04:45:18.80118Z"/>
+        <DLR gw="20" net="1000" time="2012-04-24T04:45:23.953745Z"/>
+    </MSG_STATUS>
+    <MM7_HANDSETID>motol7c</MM7_HANDSETID>
 </CONTENT>
 ```
 
 Here is the example of MMS sending XML (xhtml delivery):
 ```xml
 <CONTENT id="455119" to="48111222333" carrier="All Carriers" delivery="xhtml" 
- contentid="39755" contentname="Flowers" from="+447624805892" >
-   <MSG_STATUS>
-      <INQUE time="2012-04-30T09:06:07.5649Z" />
-      <INIT gw="0" net="0" time="2012-04-30T09:06:08.338719Z"/>
-      <ACK gw="10" net="0" time="2012-04-30T09:06:08.918484Z"/>
-      <OPENED gw="11" net="0" time="2012-04-30T09:06:39.258603Z"/>
-      <DLR gw="20" net="0" time="2012-04-30T09:06:08.783382Z">
-   </MSG_STATUS>
-   <XHTML_HANDSETID>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 
-    (KHTML, like Gecko) Chrome/18.0.1025.162 Safari/535.19</XHTML_HANDSETID>
+ contentid="39755" contentname="Flowers" from="+447624805892">
+    <MSG_STATUS>
+        <INQUE time="2012-04-30T09:06:07.5649Z"/>
+        <INIT gw="0" net="0" time="2012-04-30T09:06:08.338719Z"/>
+        <ACK gw="10" net="0" time="2012-04-30T09:06:08.918484Z"/>
+        <OPENED gw="11" net="0" time="2012-04-30T09:06:39.258603Z"/>
+        <DLR gw="20" net="0" time="2012-04-30T09:06:08.783382Z">
+    </MSG_STATUS>
+    <XHTML_HANDSETID>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 
+     (KHTML, like Gecko) Chrome/18.0.1025.162 Safari/535.19</XHTML_HANDSETID>
 </CONTENT>
 ```
-
 
 ### Report
 
@@ -128,44 +127,44 @@ Because some attributes are common across whole campaign scheduled sending we do
 Here is MMS sending inside Campaign batch:
 ```xml
 <BATCHES>
-   <BATCH id="12418" from="60856" campaignid="1136" campaignname="MyCampaign" 
-    scheduled_date="2010-10-12 06:32:46.620197-04@server localtime" contentid="35080" 
-    contentname="Flowers" />
-      <CONTENT id="150838" carrier="Verizon Wireless" to="11112233444" delivery="binary">
-         <MSG_STATUS>
-            <INQUE time="2010-10-12T06:32:46.620197Z" />
-            <INIT gw="0" net="0" time="2010-10-12T06:33:12.115367Z"/>
-            <ACK gw="9" net="1000" time="2010-10-12T06:33:12.508827Z"/>
-            <DLR gw="20" net="1000" time="2010-10-12T06:33:19.579773Z"/>
-         </MSG_STATUS>
-         <MM7_HANDSETID>VX8000v1</MM7_HANDSETID>
-      </CONTENT>
-      ....
-      ....
-   </BATCH>
-   ....
-   ....
+    <BATCH id="12418" from="60856" campaignid="1136" campaignname="MyCampaign" 
+     scheduled_date="2010-10-12 06:32:46.620197-04@server localtime" contentid="35080" 
+     contentname="Flowers"/>
+        <CONTENT id="150838" carrier="Verizon Wireless" to="11112233444" delivery="binary">
+            <MSG_STATUS>
+                <INQUE time="2010-10-12T06:32:46.620197Z"/>
+                <INIT gw="0" net="0" time="2010-10-12T06:33:12.115367Z"/>
+                <ACK gw="9" net="1000" time="2010-10-12T06:33:12.508827Z"/>
+                <DLR gw="20" net="1000" time="2010-10-12T06:33:19.579773Z"/>
+            </MSG_STATUS>
+            <MM7_HANDSETID>VX8000v1</MM7_HANDSETID>
+        </CONTENT>
+        ....
+        ....
+    </BATCH>
+    ....
+    ....
 </BATCHES>
 ```
 
 Here is SMS sending inside alert batch:
 ```xml
 <BATCHES>
-   <BATCH id="21896" from="60856" scheduled_date="2012-04-27T13:00:00Z@server localtime" 
-    campaignid="1442" campaignname="MyCampaign" body="Sample SMS for Campaign" /> 
-      <TEXT id="455110" to="11112233444">
-         <ACK gw="10" net="0" time="2012-04-27T13:05:05.89278Z">
-         <DLR gw="20" net="0" time="2012-04-27T13:05:05.89278Z"> 
-      </TEXT>
-      <TEXT id="455109" to="11112233444">
-         <ACK gw="10" net="0" time="2012-04-27T13:05:05.881257Z">
-         <DLR gw="20" net="0" time="2012-04-27T13:05:05.881257Z">
-      </TEXT> 
-      ....
-      ....
-   </BATCH>
-   ....
-   ....
+    <BATCH id="21896" from="60856" scheduled_date="2012-04-27T13:00:00Z@server localtime" 
+     campaignid="1442" campaignname="MyCampaign" body="Sample SMS for Campaign"/> 
+        <TEXT id="455110" to="11112233444">
+            <ACK gw="10" net="0" time="2012-04-27T13:05:05.89278Z">
+            <DLR gw="20" net="0" time="2012-04-27T13:05:05.89278Z"> 
+        </TEXT>
+        <TEXT id="455109" to="11112233444">
+            <ACK gw="10" net="0" time="2012-04-27T13:05:05.881257Z">
+            <DLR gw="20" net="0" time="2012-04-27T13:05:05.881257Z">
+        </TEXT> 
+        ....
+        ....
+    </BATCH>
+    ....
+    ....
 </BATCHES>
 ```
 
@@ -185,43 +184,43 @@ Because some attributes are common across whole campaign autoresponder sending w
 Here is MMS Autoresponder example:
 ```xml
 <AUTORESPONDERS>
-   <AUTORESPONDER id="351" from="60856" campaignid="1442" campaignname="MyCampaign" 
-    contentid="40301" contentname="Flowers" /> 
-      <CONTENT id="455076" carrier="T-Mobile" to="11112233444" delivery="binary"> 
-         <MSG_STATUS> 
-            <INQUE time="2012-04-24T04:45:15.655766Z" /> 
-            <INIT gw="0" net="0" time="2012-04-24T04:45:16.831756Z"/> 
-            <ACK gw="9" net="0" time="2012-04-24T04:45:18.80118Z"/> 
-            <DLR gw="20" net="1000" time="2012-04-24T04:45:23.953745Z"/> 
-         </MSG_STATUS> 
-         <MM7_HANDSETID>motol7c</MM7_HANDSETID> 
-      </CONTENT>
-      ....
-      ....
-   </AUTORESPONDER>
-   ....
-   ....
+    <AUTORESPONDER id="351" from="60856" campaignid="1442" campaignname="MyCampaign" 
+     contentid="40301" contentname="Flowers"/> 
+        <CONTENT id="455076" carrier="T-Mobile" to="11112233444" delivery="binary"> 
+            <MSG_STATUS> 
+                <INQUE time="2012-04-24T04:45:15.655766Z"/> 
+                <INIT gw="0" net="0" time="2012-04-24T04:45:16.831756Z"/> 
+                <ACK gw="9" net="0" time="2012-04-24T04:45:18.80118Z"/> 
+                <DLR gw="20" net="1000" time="2012-04-24T04:45:23.953745Z"/> 
+            </MSG_STATUS> 
+            <MM7_HANDSETID>motol7c</MM7_HANDSETID> 
+        </CONTENT>
+        ....
+        ....
+    </AUTORESPONDER>
+    ....
+    ....
 </AUTORESPONDERS>
 ```
 
 Here is SMS Autoresponder example:
 ```xml
 <AUTORESPONDERS>
-   <AUTORESPONDER id="352" from="60856" campaignid="1442" campaignname="MyCampaign" 
-    body="text autoresponder" />
-      <TEXT id="455078" to="11112233444">
-         <ACK gw="10" net="0" time="2012-04-24T04:45:48.133354Z">
-         <DLR gw="20" net="0" time="2012-04-24T04:45:48.133354Z">
-      </TEXT>
-      <TEXT id="455077" to="11112233444">
-         <ACK gw="10" net="0" time="2012-04-24T04:45:17.278337Z">
-         <DLR gw="20" net="0" time="2012-04-24T04:45:17.278337Z">
-      </TEXT>
-      .... 
-      .... 
-   </AUTORESPONDER>
-   ....
-   ....
+    <AUTORESPONDER id="352" from="60856" campaignid="1442" campaignname="MyCampaign" 
+     body="text autoresponder"/>
+        <TEXT id="455078" to="11112233444">
+            <ACK gw="10" net="0" time="2012-04-24T04:45:48.133354Z">
+            <DLR gw="20" net="0" time="2012-04-24T04:45:48.133354Z">
+        </TEXT>
+        <TEXT id="455077" to="11112233444">
+            <ACK gw="10" net="0" time="2012-04-24T04:45:17.278337Z">
+            <DLR gw="20" net="0" time="2012-04-24T04:45:17.278337Z">
+        </TEXT>
+        .... 
+        .... 
+    </AUTORESPONDER>
+    ....
+    ....
 </AUTORESPONDERS>
 ```
 
@@ -237,38 +236,38 @@ All above mentioned attributes are common across whole subscription traffic and 
 Here is the example of the traffic for the Single Opt-In subscription with SMS Confirmation:
 ```xml
 <SUBSCRIPTIONS>
-   <SUB to="11112233444" carrier="AT&T" from="60856"> 
-      <TEXT id="455037" text="MyBrand: Confirmed to MyCampaign, msg/. Msg&Data rates may 
-       apply. Reply STOP to cancel, HELP for help. Enterprisem.ms" >
-         <ACK gw="10" net="0" time="2012-04-10T06:38:56.090705Z">
-         <DLR gw="20" net="0" time="2012-04-10T06:38:56.090705Z">
-      </TEXT> 
-   </SUB>
-   ....
-   ....
+    <SUB to="11112233444" carrier="AT&T" from="60856"> 
+        <TEXT id="455037" text="MyBrand: Confirmed to MyCampaign, msg/. Msg&Data rates may 
+         apply. Reply STOP to cancel, HELP for help. Enterprisem.ms">
+            <ACK gw="10" net="0" time="2012-04-10T06:38:56.090705Z">
+            <DLR gw="20" net="0" time="2012-04-10T06:38:56.090705Z">
+        </TEXT> 
+    </SUB>
+    ....
+    ....
 </SUBSCRIPTIONS>
 ```
 
 Here is the example of the traffic for the Double Opt-In subscription with MMS Confirmation:
 ```xml
 <SUBSCRIPTIONS>
-   <SUB to="11112233444" carrier="T-Mobile" from="60856">
-      <CONTENT id="455112" contentid="39755" contentname="Flowers" delivery="binary">
-         <MSG_STATUS>
-            <INQUE time="2012-04-27T13:32:21.798528Z" />
-      <INIT gw="0" net="0" time="2012-04-27T13:32:22.204127Z"/>
-        <ACK gw="9" net="0" time="2012-04-27T13:32:24.200166Z"/>      
-         </MSG_STATUS>
-         <MM7_HANDSETID>Default</MM7_HANDSETID>
-      </CONTENT>
-      <TEXT id="455111" text="MyBrand: To follow MyCampaign,  msg/, reply YES. 
-       Msg&Data rates may apply. Reply HELP for help. Enterprisem.ms." >
-         <ACK gw="10" net="0" time="2012-04-27T13:32:12.892155Z">
-         <DLR gw="20" net="0" time="2012-04-27T13:32:12.892155Z">
-      </TEXT>
-   </SUB>
-   ....
-   ....
+    <SUB to="11112233444" carrier="T-Mobile" from="60856">
+        <CONTENT id="455112" contentid="39755" contentname="Flowers" delivery="binary">
+            <MSG_STATUS>
+                <INQUE time="2012-04-27T13:32:21.798528Z"/>
+                <INIT gw="0" net="0" time="2012-04-27T13:32:22.204127Z"/>
+                <ACK gw="9" net="0" time="2012-04-27T13:32:24.200166Z"/>      
+            </MSG_STATUS>
+            <MM7_HANDSETID>Default</MM7_HANDSETID>
+        </CONTENT>
+        <TEXT id="455111" text="MyBrand: To follow MyCampaign,  msg/, reply YES. 
+         Msg&Data rates may apply. Reply HELP for help. Enterprisem.ms.">
+            <ACK gw="10" net="0" time="2012-04-27T13:32:12.892155Z">
+            <DLR gw="20" net="0" time="2012-04-27T13:32:12.892155Z">
+        </TEXT>
+    </SUB>
+    ....
+    ....
 </SUBSCRIPTIONS>
 ```
 
@@ -278,27 +277,27 @@ Below is example of MMS:
 ```xml
 <SENDING_LIST>
    <CONTENT id="455043" carrier="All Carriers" to="48111222333" delivery="xhtml" 
-    contentid="39755" contentname="Flowers" from="+447624805892" >
-      <MSG_STATUS>
-         <INQUE time="2012-04-23T09:04:57.353055Z" />
-         <INIT gw="0" net="0" time="2012-04-23T09:04:58.048795Z"/>
-         <ACK gw="10" net="0" time="2012-04-23T09:05:03.516081Z"/>
-         <ERROR info="delivery failure" time="2012-04-23T09:05:02.982315Z">       
-      </MSG_STATUS>
-   </CONTENT>
-   ....
-   ....
+    contentid="39755" contentname="Flowers" from="+447624805892">
+        <MSG_STATUS>
+            <INQUE time="2012-04-23T09:04:57.353055Z"/>
+            <INIT gw="0" net="0" time="2012-04-23T09:04:58.048795Z"/>
+            <ACK gw="10" net="0" time="2012-04-23T09:05:03.516081Z"/>
+            <ERROR info="delivery failure" time="2012-04-23T09:05:02.982315Z">       
+        </MSG_STATUS>
+    </CONTENT>
+    ....
+    ....
 </SENDING_LIST>
 ```
 
 Below is example of SMS:
 ```xml
 <SENDING_LIST>
-   <TEXT id="150283" to="11112233444" text="Hello my friend. Where do you want to go today?">
-      <ACK gw="10" net="0" time="2010-10-05T12:21:40.947088Z">
-      <DLR gw="20" net="0" time="2010-10-05T12:21:40.947088Z">
-   </TEXT>
-   ....
-   ....
+    <TEXT id="150283" to="11112233444" text="Hello my friend. Where do you want to go today?">
+        <ACK gw="10" net="0" time="2010-10-05T12:21:40.947088Z">
+        <DLR gw="20" net="0" time="2010-10-05T12:21:40.947088Z">
+    </TEXT>
+    ....
+    ....
 </SENDING_LIST>
 ```

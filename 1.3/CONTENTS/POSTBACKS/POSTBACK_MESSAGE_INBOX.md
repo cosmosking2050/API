@@ -27,13 +27,13 @@ This postback notifies you when an SMS MO is received.
 
 ```xml
 <POSTBACK>
-  <ORIGIN>SMS_MO</ORIGIN>
-  <CODE>N211</CODE>
-  <FROM>15552312102</FROM>
-  <TO>86717</TO>
-  <TEXT>STOP</TEXT>
-  <RECEIVED>2011-09-28T17:31:02-04:00</RECEIVED>
-  <TRANSACTIONID>511XG-02294-192SA-482H8</TRANSACTIONID>
+    <ORIGIN>SMS_MO</ORIGIN>
+    <CODE>N211</CODE>
+    <FROM>15552312102</FROM>
+    <TO>86717</TO>
+    <TEXT>STOP</TEXT>
+    <RECEIVED>2011-09-28T17:31:02-04:00</RECEIVED>
+    <TRANSACTIONID>511XG-02294-192SA-482H8</TRANSACTIONID>
 </POSTBACK>
 ```
 
@@ -65,9 +65,9 @@ This postback notifies you when an MMS MO is received.
     <SPID>0001470</SPID>
     <TIMESTAMP>2014-02-03T11:19:49-05:00</TIMESTAMP>
     <CONTENT>
-      <FILE>URL of Content Here</FILE>
-      <FILE>URL of Content Here</FILE>
-      <FILE>URL of Content Here</FILE>
+        <FILE>URL of Content Here</FILE>
+        <FILE>URL of Content Here</FILE>
+        <FILE>URL of Content Here</FILE>
     </CONTENT>
 </POSTBACK>
 ```

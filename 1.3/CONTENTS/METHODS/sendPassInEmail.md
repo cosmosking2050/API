@@ -22,12 +22,12 @@ __Request: XML__
     <EMAILTEMPLATEID>emailTemplateId</EMAILTEMPLATEID>
     <EMAIL>email</EMAIL>
     <CAMPAIGNID>campaignId</CAMPAIGNID>
-       <DATA>
-          <FIRST_NAME>First Name</FIRST_NAME>
-          <LAST_NAME>Last Name</LAST_NAME>
-          <GENDER>Gender</GENDER>
+    <DATA>
+        <FIRST_NAME>First Name</FIRST_NAME>
+        <LAST_NAME>Last Name</LAST_NAME>
+        <GENDER>Gender</GENDER>
         ...
-       </DATA>    
+    </DATA>
     <PASSDATA>
         <CUSTOMPASSID>customPassId</CUSTOMPASSID>
         <THUMBNAILURL>thumbnailUrl</THUMBNAILURL>
@@ -128,9 +128,9 @@ __Request: GET__
 
 __Request Parameters:__
 
-    Mandatory: action, apiKey, email, emailTemplateId, campaignId,
+    Mandatory: action, api_key, email, emailTemplateId, campaignId,
     barcodeValue (if "Barcode=Allowed" &amp;&amp; "BarcodeType=Dynamic" &amp;&amp; "BarcodeValueSource=Dynamic Value" for Pass Template otherwise IGNORED)
-    Optional: customPassId, thumbnailUrl,
+    Optional: data, customPassId, thumbnailUrl,
     barcodeText (if "Barcode = Allowed" && "Barcode Alternate Text = Dynamic Text" for Pass Template otherwise IGNORED), 
     headerLabel1, headerValue1, 
     primaryLabel1, primaryValue1, 
@@ -151,14 +151,11 @@ __Request Parameters:__
 
 __Response Parameters:__
 
-    status, email, emailtemplateid, trackingID, Errorcode, Errorinfo
+    status, emailTemplateId, trackingId, email, campaignId, errorCode, errorInfo
 
-__Related Errorcodes:__
+__Related Error Codes:__
 
-    E401, E402, E713, E714, E802, E803, E806, E823, E840, E841, E842, E843, E844, E845, E846, E847, E848, E849, E850, E851, 
-    E852, E853, E854, E855, E856, E857, E858, E859, E860, E861, E862, E863, E864, E865, E866, E867, E868, E869, E870, E871, 
-    E872, E873, E874, E875, E876, E877, E878, E879, E880, E881, E882, E883, E884, E885, E886, E887, E888, E889, E890, E891, 
-    E892, E893, E894, E895, E896, E897, E898, E899, E915, E916, E917
+    E401, E402, E713, E714, E802, E803, E806, E823, E840, E841, E842, E843, E844, E845, E846, E847, E848, E849, E850, E851, E852, E853, E854, E855, E856, E857, E858, E859, E860, E861, E862, E863, E864, E865, E866, E867, E868, E869, E870, E871, E872, E873, E874, E875, E876, E877, E878, E879, E880, E881, E882, E883, E884, E885, E886, E887, E888, E889, E890, E891, E892, E893, E894, E895, E896, E897, E898, E899, E915, E916, E917
 
 __Request Example:__
 ```xml
@@ -168,12 +165,12 @@ __Request Example:__
     <EMAILTEMPLATEID>45633</EMAILTEMPLATEID>
     <EMAIL>vik.muth@mail.com</EMAIL>
     <CAMPAIGNID>1233</CAMPAIGNID>
-       <DATA>
-          <FIRST_NAME>John</FIRST_NAME>
-          <LAST_NAME>Smith</LAST_NAME>
-          <AGE>29</AGE>
-          <PET>Dog</PET>
-       </DATA>
+    <DATA>
+        <FIRST_NAME>John</FIRST_NAME>
+        <LAST_NAME>Smith</LAST_NAME>
+        <AGE>29</AGE>
+        <PET>Dog</PET>
+    </DATA>
     <PASSDATA>
         <THUMBNAILURL>http://andreas.com/pixs/steve-jobs.png</THUMBNAILURL>
         <BARCODEVALUE>1234578961A</BARCODEVALUE>
@@ -200,6 +197,7 @@ __Request Example:__
     </PASSDATA>    
 </REQUEST>
 ```
+
 __Response Example: Success__
 ```xml
 <RESPONSE>
@@ -210,6 +208,7 @@ __Response Example: Success__
     <CAMPAIGNID>1233</CAMPAIGNID>
 </RESPONSE>
 ```
+
 __Response Example: Failure__
 ```xml
 <RESPONSE>

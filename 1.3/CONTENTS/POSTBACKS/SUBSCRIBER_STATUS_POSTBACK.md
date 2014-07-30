@@ -16,22 +16,22 @@ This postback notification triggers when a mobile phone number subscribes to a s
 | CAMPAIGNID | ID of the campaign. |
 | TIMESTAMP | Timestamp of the subscription. |
 | SHORTCODE | The shortcode. | 
-| CAMPAIGNTITLE | The title of the campaign |
-| BRANDNAME | The brand name associated with the account or campaign |
+| CAMPAIGNTITLE | The title of the campaign. |
+| BRANDNAME | The brand name associated with the account or campaign. |
 | SOURCE | The source of the subscription: MANAGER, API, MO, WEB. MANAGER indicates the number was imported or manually added in your campaign audience manager. API indicates it came from a subscribe call to our API. MO indicates the phone number opted-in by texting campaign keyword. WEB indicates they subscribed via mobile web landing page. |
 
 ```xml
 <?xml version='1.0'?>
 <POSTBACK>
-  <ORIGIN>SUB</ORIGIN>
-  <CODE>N301</CODE>
-  <MOBILE>16501112222</MOBILE>
-  <CAMPAIGNID>1478</CAMPAIGNID>
-  <TIMESTAMP>2014-07-02T14:32:23-04</TIMESTAMP>
-  <SHORTCODE>123456</SHORTCODE>
-  <CAMPAIGNTITLE>My Campaign Name</CAMPAIGNTITLE>
-  <BRANDNAME>My Brand Name</BRANDNAME>
-  <SOURCE>API</SOURCE>
+    <ORIGIN>SUB</ORIGIN>
+    <CODE>N301</CODE>
+    <MOBILE>16501112222</MOBILE>
+    <CAMPAIGNID>1478</CAMPAIGNID>
+    <TIMESTAMP>2014-07-02T14:32:23-04</TIMESTAMP>
+    <SHORTCODE>123456</SHORTCODE>
+    <CAMPAIGNTITLE>My Campaign Name</CAMPAIGNTITLE>
+    <BRANDNAME>My Brand Name</BRANDNAME>
+    <SOURCE>API</SOURCE>
 </POSTBACK>
 ```
 
@@ -47,22 +47,22 @@ This postback notification triggers when a mobile phone number unsubscribes to a
 | CAMPAIGNID | ID of the campaign. |
 | TIMESTAMP | Timestamp of the unsubscription. |
 | SHORTCODE | The shortcode. | 
-| CAMPAIGNTITLE | The title of the campaign |
-| BRANDNAME | The brand name associated with the account or campaign |
+| CAMPAIGNTITLE | The title of the campaign. |
+| BRANDNAME | The brand name associated with the account or campaign. |
 | SOURCE | The source of the unsubscription: MANAGER, API, MO, IMPORTED AS UNSUBSCRIBED. MANAGER indicates the number was deported or manually removed in your campaign audience manager. API indicates it came from a unsubscribe call to our API. MO indicates the phone number opted-out by texting STOP. IMPORTED AS UNSUBSCRIBED indicates the number was attempted to be imported or manually added, but was imported as unsubscribed due to a previous opt-out. |
 
 ```xml
 <?xml version='1.0'?>
 <POSTBACK>
-  <ORIGIN>SUB</ORIGIN>
-  <CODE>N302</CODE>
-  <MOBILE>16502424956</MOBILE>
-  <CAMPAIGNID>1478</CAMPAIGNID>
-  <TIMESTAMP>2014-07-02T14:32:23-04</TIMESTAMP>
-  <SHORTCODE>123456</SHORTCODE>
-  <CAMPAIGNTITLE>My Campaign Name</CAMPAIGNTITLE>
-  <BRANDNAME>My Brand Name</BRANDNAME>
-  <SOURCE>API</SOURCE>  
+    <ORIGIN>SUB</ORIGIN>
+    <CODE>N302</CODE>
+    <MOBILE>16502424956</MOBILE>
+    <CAMPAIGNID>1478</CAMPAIGNID>
+    <TIMESTAMP>2014-07-02T14:32:23-04</TIMESTAMP>
+    <SHORTCODE>123456</SHORTCODE>
+    <CAMPAIGNTITLE>My Campaign Name</CAMPAIGNTITLE>
+    <BRANDNAME>My Brand Name</BRANDNAME>
+    <SOURCE>API</SOURCE>  
 </POSTBACK>
 ```
 
@@ -80,10 +80,10 @@ This postback notification triggers when an email address subscribes to a specif
 ```xml
 <?xml version='1.0'?>
 <POSTBACK>
-  <ORIGIN>EMAIL_SUB</ORIGIN>
-  <CODE>N303</CODE>
-  <EMAIL>info@skycore.com</EMAIL>
-  <CAMPAIGNID>89</CAMPAIGNID>
+    <ORIGIN>EMAIL_SUB</ORIGIN>
+    <CODE>N303</CODE>
+    <EMAIL>info@skycore.com</EMAIL>
+    <CAMPAIGNID>89</CAMPAIGNID>
 </POSTBACK>
 ```
 
@@ -101,9 +101,9 @@ This postback notification triggers when an email address unsubscribes to a spec
 ```xml
 <?xml version='1.0'?>
 <POSTBACK>
-  <ORIGIN>EMAIL_SUB</ORIGIN>
-  <CODE>N304</CODE>
-  <EMAIL>info@skycore.com</EMAIL>
-  <CAMPAIGNID>89</CAMPAIGNID>
+    <ORIGIN>EMAIL_SUB</ORIGIN>
+    <CODE>N304</CODE>
+    <EMAIL>info@skycore.com</EMAIL>
+    <CAMPAIGNID>89</CAMPAIGNID>
 </POSTBACK>
 ```

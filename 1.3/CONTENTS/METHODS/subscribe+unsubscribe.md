@@ -8,8 +8,8 @@ This API will subscribe or unsubscribe users to a particular campaign. Once a us
 __Request: subscribe__
 ```xml
 <REQUEST>
-  <ACTION>subscribe</ACTION>
-    <API_KEY>API KEY</API_KEY>
+    <ACTION>subscribe</ACTION>
+    <API_KEY>apiKey</API_KEY>
     <CAMPAIGNID>Campaign ID</CAMPAIGNID>
     <MOBILE>Number to subscribe</MOBILE>
     <DATA>
@@ -19,7 +19,7 @@ __Request: subscribe__
         ...
     </DATA>   
     <NOTIFY>'yes/no' on whether to notify user on successful opt in</NOTIFY>
-    <SPID> the carrier ID </SPID>
+    <SPID>the carrier ID</SPID>
     <CTA>'yes/no' to request double opt in from the user to opt-in</CTA>
         <TIMEZONE>Timezone abbreviation: EST, CST, MST, PST, etc.</TIMEZONE>
 </REQUEST>
@@ -29,7 +29,7 @@ __Request: unsubscribe__
 ```xml
 <REQUEST>
     <ACTION>unsubscribe</ACTION>
-    <API_KEY>API KEY</API_KEY>
+    <API_KEY>apiKey</API_KEY>
     <CAMPAIGNID>Campaign ID</CAMPAIGNID>
     <MOBILE>Number to unsubscribe</MOBILE>
     <NOTIFY>'yes/no' on whether to notify user on opt-out</NOTIFY>
@@ -38,14 +38,14 @@ __Request: unsubscribe__
 
 __Request Parameters:__
 
-    Mandatory: Action, API_KEY, CAMPAIGNID, Mobile
-    Optional: CTA, Notify, SPID, TZ
+    Mandatory: action, api_key, campaignId, mobile
+    Optional: data, notify, spid, cta, timezone
 
 __Response Parameters:__
 
-    CAMPAIGNID, Errorcode, Errorinfo, mobile, Status
+    status, campaignId, mobile, errorCode, errorInfo
 
-__Related Errorcodes:__
+__Related Error Codes:__
 
     E901, E902, E903, E904, E905
 
@@ -64,7 +64,7 @@ XML:
         <PET>Dog</PET>
     </DATA>   
     <NOTIFY>no</NOTIFY>
-    <CTA>no</ CTA>
+    <CTA>no</CTA>
 </REQUEST>
 ```
 

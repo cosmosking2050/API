@@ -21,7 +21,7 @@ __Request:__
 ```xml
 <REQUEST>
     <ACTION>sendSavedMMS</ACTION>
-    <API_KEY>API KEY</API_KEY>
+    <API_KEY>apiKey</API_KEY>
     <MMSID>MMSID</MMSID>
     <TO>Number</TO>
     <FROM>Shortcode</FROM>
@@ -45,14 +45,14 @@ __Request:__
 
 __Request Parameters:__
 
-    Mandatory: Action, API_KEY, MMSID, To, From
-    Optional: CampaignRef, CustomSubject, CustomText, Data, DDMTitle, DDMText, DDMTimeout
+    Mandatory: action, api_key, mmsId, to, from
+    Optional: campaignRef, ddmTitle, ddmText, ddmTimeout, customText, customSubject, data
 
 __Response Parameters:__
 
-    MMSID, Status, To, TrackingID, Errorcode, Errorinfo
+    status, to, from, mmsId, trackingId, errorCode, errorInfo
 
-__Related Errorcodes:__
+__Related Error Codes:__
 
     E110, E111, E241, E620, E621, E623, E626, E628, E629, E713, E714, E715
 
@@ -66,14 +66,14 @@ XML:
     <FROM>60856</FROM>
     <CAMPAIGNREF>12333</CAMPAIGNREF>
     <MMSID>35674</MMSID>
-        <DDMTITLE>We are detecting your handset</DDMTITLE>
-        <DDMTEXT>This message is free of charge and will allow us to deliver your content nice and smooth</DDMTEXT>
-        <DDMTIMEOUT>10</DDMTIMEOUT>
-        <CUSTOMTEXT>
-            <VALUE>My Custom text in first slide</VALUE>
-            <SLIDE>1</SLIDE>
-        </CUSTOMTEXT>
-        <CUSTOMSUBJECT>My Custom Subject</CUSTOMSUBJECT>
+    <DDMTITLE>We are detecting your handset</DDMTITLE>
+    <DDMTEXT>This message is free of charge and will allow us to deliver your content nice and smooth</DDMTEXT>
+    <DDMTIMEOUT>10</DDMTIMEOUT>
+    <CUSTOMTEXT>
+        <VALUE>My Custom text in first slide</VALUE>
+        <SLIDE>1</SLIDE>
+    </CUSTOMTEXT>
+    <CUSTOMSUBJECT>My Custom Subject</CUSTOMSUBJECT>
     <DATA>
         <FIRST_NAME>John</FIRST_NAME>
         <LAST_NAME>Smith</LAST_NAME>
@@ -106,10 +106,10 @@ __Response Example: Success__
 __Response Example: Failure__
 ```xml
 <RESPONSE>
-     <STATUS>Failure</STATUS>
-     <ERRORCODE>E713</ERRORCODE>
-     <TO>16501234123</TO>
-     <ERRORINFO>There is billing problem on your account</ERRORINFO>
+    <STATUS>Failure</STATUS>
+    <ERRORCODE>E713</ERRORCODE>
+    <TO>16501234123</TO>
+    <ERRORINFO>There is billing problem on your account</ERRORINFO>
 </RESPONSE>
 ```
 
