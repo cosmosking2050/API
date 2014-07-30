@@ -75,6 +75,8 @@ __Error Code Reference__
 | E641 | Invalid MMS Inbox Message ID. |
 | E642 | MMS Inbox message has no content. |
 | E643 | Could not clean up MMS Inbox message content. |
+| E650 | The 'spid' is required. |
+| E651 | The 'spid' passed was not found on our system. |
 | E712 | The 'text' is required. |
 | E713 | There is billing problem on your account. |
 | E714 | Missing/Invalid 'campaignid'. |
@@ -97,7 +99,7 @@ __Error Code Reference__
 | E829 | 'custom identifier value' is invalid. Only Alphabet, Numbers or a Space is allowed. |
 | E830 | Pass was not generated. Internal error occured. |
 | E831 | Pass was not generated. It reached its download limit. |
-| E833 | This Pass Template is set to send Personalized Passes. Atleast 'email' or 'phone' or 'custom identifier' is required with the Pass Data. |
+| E833 | This Pass Template is set to send Personalized Passes. At least 'email' or 'phone' or 'custom identifier' is required with the Pass Data. |
 | E840 | 'headerlabel1' is not accepted. It has to be set as Dynamic in the Pass Template. |
 | E841 | 'headervalue1' is not accepted. It has to be set as Dynamic in the Pass Template. |
 | E842 | 'primarylabel1' is not accepted. It has to be set as Dynamic in the Pass Template. |

@@ -13,9 +13,9 @@ Our API allows you to dynamically change each slide text by setting up CUSTOMTEX
 A Device Discovery Message (DDM) is a short textual MMS message that is sent to the number to discover what handset the end user is using. We store this handset information in our system and reuse it, so a DDM is sent only to new numbers. If the DDM settings are not included within your API call and the number is not in the handset cache we will deliver the MMS with generic settings. If the handset is in the handset cache the DDM will not be sent and the MMS message will be transcoded and delivered immediately.
 
 Our API allows you to customize DDM by setting 3 parameters:  
-DDMTITLE - this is the DDM title  
-DDMTEXT - this is the DDM body  
-DDMTIMEOUT - when we send DDM we wait for the Delivery Report which contain the handset profile. In some cases we don't receive it or it takes very long (handset turned off or out of range). This variable tells the system how long should it wait for DDM Delivery Report before sending actual content using Default parameters. Default value of this parameter is 5 minutes.
+DDMTITLE - This is the DDM title.  
+DDMTEXT - This is the DDM body.  
+DDMTIMEOUT - When we send DDM we wait for the Delivery Report which contain the handset profile. In some cases we don't receive it or it takes very long (handset turned off or out of range). This variable tells the system how long should it wait for DDM Delivery Report before sending actual content using Default parameters. Default value of this parameter is 5 minutes.
 
 __Request: XML__
 ```xml

@@ -24,7 +24,7 @@ All data related to sending one SMS are encapsulated inside the *&lt;TEXT&gt;* t
 Inside *&lt;TEXT&gt;* we list all status updates for that message. There are two statuses updates:
 
 - ACK - Message has been processed on our side and left our server (status 10).
-- DLR or ERROR - We received delivery report stating the delivery was successfull DLR (status 20) or failed (ERROR).
+- DLR or ERROR - We received delivery report stating the delivery was successful DLR (status 20) or failed (ERROR).
 
 Here is the example of SMS sending XML:
 ```xml
@@ -83,7 +83,7 @@ For BINARY MMS sending, our statuses are in chronological order:
 Based on the sendings we do sent binary Device Discovery Message (DDM) that preceed sending real MMS, statuses for DDM are as follows:
 
 - INQUE - Message inserted into processing que.
-- ACK - Message has been processed on our side and left our server (ACK - status 80)
+- ACK - Message has been processed on our side and left our server (ACK - status 80).
 - DLR or EXPIRED or REJECTED - We received DDM delivery report, meaning phone has received the message (DLR - status 81) or carrier rejected MMS (REJECTED - status 35) or carrier could not deliver MMS to handset (EXPIRED - status 30). When we receive DLR status for DDM sending of real MMS is triggered instantly.
 
 For XHTML MMS we also have in chronological order:
@@ -453,7 +453,7 @@ element AUTORESPONDERS {
 __C) Campaign Subscriptions__ are encapsulated inside *&lt;SUBSCRIPTIONS&gt;&lt;/SUBSCRIPTIONS&gt;*. Traffic generated for each subscription contain a list of SMS/MMS XML that is encalpsulated inside *&lt;SUB&gt;&lt;/SUB&gt;* tag. Each *&lt;SUB&gt;* tag contain attributes:
 
 - *to* - Subscriber's phone number.
-- *carrier*- Subscriber's carrier.
+- *carrier* - Subscriber's carrier.
 - *from* - The shortcode messages that were sent from.
 
 

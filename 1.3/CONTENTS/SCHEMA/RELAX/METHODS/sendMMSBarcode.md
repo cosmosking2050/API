@@ -14,9 +14,9 @@ A Device Discovery Message (DDM) is a short textual MMS message that is sent to 
 If the DDM settings are not included within your API call and the number is not in the handset cache we will deliver the MMS with generic settings. If the handset is in the handset cache the DDM will not be sent and the MMS message will be transcoded and delivered immediately.
 
 Our API allows you to customize DDM by setting 3 parameters:  
-DDMTITLE - this is the DDM title  
-DDMTEXT - this is the DDM body  
-DDMTIMEOUT - when we send DDM we wait for the Delivery Report which contain the handset profile. In some cases we don't receive it or it takes very long (handset turned off or out of range). This variable tells the system how long should it wait for DDM Delivery Report before sending actual content using Default parameters. Default value of this parameter is 5 minutes.
+DDMTITLE - This is the DDM title.  
+DDMTEXT - This is the DDM body.  
+DDMTIMEOUT - When we send DDM we wait for the Delivery Report which contain the handset profile. In some cases we don't receive it or it takes very long (handset turned off or out of range). This variable tells the system how long should it wait for DDM Delivery Report before sending actual content using Default parameters. Default value of this parameter is 5 minutes.
 
 __NOTE:__ BarcodeID passed in an API call will always be used even for Databases with 'Always generate new IDs' switch set to 'Yes'  
 
