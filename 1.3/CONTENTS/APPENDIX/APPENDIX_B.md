@@ -75,8 +75,8 @@ __Error Code Reference__
 | E641 | Invalid MMS Inbox Message ID. |
 | E642 | MMS Inbox message has no content. |
 | E643 | Could not clean up MMS Inbox message content. |
-| E650 | The 'spid' is required. |
-| E651 | The 'spid' passed was not found on our system. |
+| E650 | The 'operator id' is required. |
+| E651 | The 'operator id' passed was not found on our system. |
 | E712 | The 'text' is required. |
 | E713 | There is billing problem on your account. |
 | E714 | Missing/Invalid 'campaignid'. |
