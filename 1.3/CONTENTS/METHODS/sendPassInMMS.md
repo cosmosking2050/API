@@ -141,7 +141,7 @@ __Request: GET__
 __Request Parameters:__
 
     Mandatory: action, api_key, mmsid, to, from, 
-    barcodevalue (if "Barcode=Allowed" && "BarcodeType=Dynamic" && "Barcode value source=Dynamic Value" for Pass Template otherwise IGNORED)
+    barcodevalue (if "Barcode = Allowed" && "Barcode Type = Dynamic" && "Barcode Value Source = Dynamic Value" for Pass Template otherwise IGNORED)
     Optional: campaignref, ddmtitle, ddmtext, ddmtimeout, customsubject, customText, data, thumbnailUrl,
     barcodetext (if "Barcode = Allowed" && "Barcode Alternate Text = Dynamic Text" for Pass Template otherwise IGNORED), 
     headerlabel1, headervalue1, 
@@ -244,7 +244,7 @@ __Response Example: Failure__
 ```
 
 __Postback Notifications For SendPassInMMS__  
-When the MMS delivery is processed successfully the system will generate a Postback notification. For more details please visit [postback doc](https://github.com/SkycoreMobile/API/blob/master/1.3/CONTENTS/POSTBACK_NOTIFICATION_SYSTEM.md).
+When the MMS delivery is processed successfully the system will generate a Postback notification. For more details please visit [postback doc](https://github.com/SkycoreMobile/API/blob/master/1.3/CONTENTS/POSTBACKS/POSTBACK_DELIVERY_REPORTS.md).
 ```xml
 <?xml version='1.0'?>
 <POSTBACK>
