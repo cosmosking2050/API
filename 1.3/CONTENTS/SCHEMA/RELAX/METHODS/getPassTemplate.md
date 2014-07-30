@@ -1,5 +1,4 @@
 REQUEST
-
 ```xml
 element REQUEST {
     element ACTION { "getPassTemplate" } &
@@ -11,7 +10,6 @@ element REQUEST {
 ```
 
 RESPONSE
-
 ```xml
 element RESPONSE {
     element STATUS { text } &

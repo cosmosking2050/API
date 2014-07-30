@@ -1,5 +1,4 @@
 REQUEST
-
 ```xml
 element REQUEST {
     element ACTION { “saveMMS” } &
@@ -23,7 +22,6 @@ element REQUEST {
 ```
 
 RESPONSE
-
 ```xml
 element RESPONSE {
     element STATUS { text } &
@@ -35,18 +33,20 @@ element RESPONSE {
 
 POSTBACK
 
+N003
 ```xml
 element POSTBACK {
-    element ORIGIN { text } &
+    element ORIGIN { "MMS_MT" } &
     element CODE { "N003" } &
     element MMSID { text } &
 
 }
 ```
 
+E002
 ```xml
 element POSTBACK {
-    element ORIGIN { text } &
+    element ORIGIN { "MMS_MT" } &
     element CODE { "E002" } &
     element MMSID { text } &
     element AUDIONAME { text }

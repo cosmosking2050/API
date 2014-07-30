@@ -1,5 +1,4 @@
 REQUEST
-
 ```xml
 element REQUEST {
     element ACTION { "getSendingStatus" } &
@@ -10,7 +9,6 @@ element REQUEST {
 ```
 
 RESPONSE
-
 ```xml
 element RESPONSE {
     element STATUS { text } &

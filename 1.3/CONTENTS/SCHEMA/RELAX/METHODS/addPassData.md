@@ -1,5 +1,4 @@
 REQUEST
-
 ```xml
 element REQUEST {
     element ACTION { "addPassData" } &
@@ -78,7 +77,6 @@ element REQUEST {
 ```
 
 RESPONSE
-
 ```xml
 element RESPONSE {
     element STATUS { text } &

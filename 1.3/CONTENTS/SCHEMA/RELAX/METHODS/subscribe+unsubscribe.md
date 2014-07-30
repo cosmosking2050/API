@@ -1,5 +1,4 @@
 REQUEST
-
 ```xml
 element REQUEST {
     element ACTION { text } &
@@ -21,7 +20,6 @@ element REQUEST {
 ```
 
 RESPONSE
-
 ```xml
 element RESPONSE {
     element STATUS { text } &
@@ -34,9 +32,10 @@ element RESPONSE {
 
 POSTBACK
 
+N301
 ```xml
 element POSTBACK {
-    element ORIGIN { text } &
+    element ORIGIN { "SUB" } &
     element CODE { "N301" } &
     element MOBILE { text } &
     element CAMPAIGNID { text } &
@@ -48,9 +47,10 @@ element POSTBACK {
 }
 ```
 
+N302
 ```xml
 element POSTBACK {
-    element ORIGIN { text } &
+    element ORIGIN { "SUB" } &
     element CODE { "N302" } &
     element MOBILE { text } &
     element CAMPAIGNID { text } &

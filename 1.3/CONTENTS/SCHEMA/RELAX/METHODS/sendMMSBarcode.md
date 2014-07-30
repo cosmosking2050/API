@@ -1,5 +1,4 @@
 REQUEST
-
 ```xml
 element REQUEST {
     element ACTION { ”sendMMSBarcode” } &
@@ -27,7 +26,6 @@ element REQUEST {
 ```
 
 RESPONSE
-
 ```xml
 element RESPONSE {
     element STATUS { text } &
@@ -41,6 +39,7 @@ element RESPONSE {
 
 POSTBACK
 
+N101
 ```xml
 element POSTBACK {
     element ORIGIN { text } &
@@ -55,6 +54,7 @@ element POSTBACK {
 }
 ```
 
+N102
 ```xml
 element POSTBACK {
     element ORIGIN { text } &

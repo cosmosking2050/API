@@ -1,5 +1,4 @@
 REQUEST
-
 ```xml
 element REQUEST {
     element ACTION { ”sendPassInMMS” } &
@@ -92,7 +91,6 @@ element REQUEST {
 ```
 
 RESPONSE
-
 ```xml
 element RESPONSE {
     element STATUS { text } &
@@ -107,9 +105,10 @@ element RESPONSE {
 
 POSTBACK
 
+N101
 ```xml
 element POSTBACK {
-    element ORIGIN { text } &
+    element ORIGIN { "MMS_MT" } &
     element CODE { "N101" } &
     element SENTAS { text } &
     element STATUS { text } &
@@ -121,9 +120,10 @@ element POSTBACK {
 }
 ```
 
+N102
 ```xml
 element POSTBACK {
-    element ORIGIN { text } &
+    element ORIGIN { "MMS_MT" } &
     element CODE { "N102" } &
     element SENTAS { text } &
     element STATUS { text } &

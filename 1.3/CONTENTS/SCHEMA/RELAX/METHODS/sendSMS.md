@@ -1,5 +1,4 @@
 REQUEST
-
 ```xml
 element REQUEST {
     element ACTION { "sendSMS" } &
@@ -14,7 +13,6 @@ element REQUEST {
 ```
 
 RESPONSE
-
 ```xml
 element RESPONSE {
     element STATUS { text } &
@@ -27,9 +25,10 @@ element RESPONSE {
 
 POSTBACK
 
+N201
 ```xml
 element POSTBACK {
-    element ORIGIN { text } &
+    element ORIGIN { "SMS_MT" } &
     element CODE { "N201" } &
     element STATUS { text } &
     element FROM { text } &
@@ -41,9 +40,10 @@ element POSTBACK {
 }
 ```
 
+N202
 ```xml
 element POSTBACK {
-    element ORIGIN { text } &
+    element ORIGIN { "SMS_MT" } &
     element CODE { "N202" } &
     element STATUS { text } &
     element FROM { text } &
