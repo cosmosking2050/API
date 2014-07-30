@@ -128,7 +128,7 @@ __SMS Protocol Reference__
 | 2 | 803 | no | Invalid service ID since it was null |
 | 2 | 810 | no | Failed message delivery |
 | 2 | 811 | no | Message Delivery Error: Message expired by carrier |
-| 2 | 815 | no | Message Delivery Error - Message submitted to but not acknowledged by carrier |
+| 2 | 815 | no | Message Delivery Error: Message submitted to but not acknowledged by carrier |
 | 2 | 1000 | no | System error: General error occurred while processing request |
 | 2 | 1001 | no | System error: Duplicate Ticket ID |
 | 2 | 1010 | no | Temporary system error |
@@ -174,7 +174,7 @@ __SMS Protocol Reference__
 | 2 | 2044 | no | Invalid URL |
 | 2 | 2045 | no | Carrier not supported |
 | 2 | 2046 | no | Invalid sessionId |
-| 2 | 2047 | no | Invalid ticketid |
+| 2 | 2047 | no | Invalid ticketId |
 | 2 | 2048 | no | Validation Error |
 | 2 | 2049 | no | Transaction failed: Request with no associated charge; failed by OpenMarket |
 | 2 | 2050 | no | Transaction failed: The transaction has been denied by the carrier's billing system |
@@ -204,12 +204,12 @@ __SMS Protocol Reference__
 | 2 | 4013 | no | Transaction failed: Unable to process request; previous billing request is pending consumer response |
 | 2 | 4020 | no | Transaction failed: Subscription not found |
 | 2 | 4021 | no | Transaction failed: Subscription already expired |
-| 2 | 4030 | no | Renewal error: subscription already billed for this period |
+| 2 | 4030 | no | Renewal error: Subscription already billed for this period |
 | 2 | 4031 | no | Renewal error: Subscription renewal status cannot be determined |
 | 2 | 4032 | no | Renewal error: Subscription already expired |
 | 2 | 4033 | no | Subscription successfully cancelled, message delivery failed. |
 | 2 | 4035 | no | Renewal Error: Subscription renewal failed by carrier |
-| 2 | 4050 | no | Conclude error: subscription already concluded. |
+| 2 | 4050 | no | Conclude error: Subscription already concluded. |
 | 2 | 4051 | no | Conclude error: Subscription cannot be concluded while in indeterminate state. |
 | 2 | 4052 | no | Transaction failed: Received notification of account deactivation; failed by OpenMarket |
 | 2 | 4054 | no | Renewal error: Subscription already revoked |

@@ -13,9 +13,9 @@ Our API allows you to dynamically change the text of each slide by setting up op
 A Device Discovery Message (DDM) is a short textual MMS message that is sent to the number to discover what handset the end user is using. We store this handset information in our system and reuse it, so a DDM is sent only to new numbers. If the DDM settings are not included within your API call and the number is not in the handset cache we will deliver the MMS with generic settings. If the handset is in the handset cache the DDM will not be sent and the MMS message will be transcoded and delivered immediately. You can force sending of DDM (regardless if number is cached) by setting DDMFORCE to 'true'
 
 Our API allows you to customize DDM by setting 3 parameters:  
-DDMTITLE - this is the DDM title (optional, if not set then "Device Discovery" text will be used)  
-DDMTEXT - this is the DDM body (mandatory)  
-DDMTIMEOUT - (in minutes) when we send DDM we wait for the Delivery Report which contain the handset profile. In some cases we do not receive it or it takes very long (handset turned off or out of range). This variable tells the system how long should it wait for DDM Delivery Report before sending actual content using Default parameters. Default value of this parameter is 5 minutes.
+DDMTITLE - This is the DDM title (optional, if not set then "Device Discovery" text will be used).  
+DDMTEXT - This is the DDM body (mandatory).  
+DDMTIMEOUT - (in minutes) When we send DDM we wait for the Delivery Report which contain the handset profile. In some cases we do not receive it or it takes very long (handset turned off or out of range). This variable tells the system how long should it wait for DDM Delivery Report before sending actual content using Default parameters. Default value of this parameter is 5 minutes.
 
 __Request:__
 ```xml
@@ -151,7 +151,7 @@ __Response Example: Failure__
 ```
 
 __Postback Notifications For SendSavedMMS__  
-When the MMS delivery is processed successfully the system will generate a Postback notification. For more details please visit [postback doc](https://github.com/SkycoreMobile/API/blob/master/1.3/CONTENTS/POSTBACK_NOTIFICATION_SYSTEM.md).
+When the MMS delivery is processed successfully the system will generate a Postback notification. For more details please visit [postback doc](https://github.com/SkycoreMobile/API/blob/master/1.3/CONTENTS/POSTBACKS/POSTBACK_DELIVERY_REPORTS.md).
 ```xml
 <?xml version='1.0'?>
 <POSTBACK>
