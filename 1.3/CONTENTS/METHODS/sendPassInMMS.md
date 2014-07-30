@@ -244,7 +244,7 @@ __Response Example: Failure__
 ```
 
 __Postback Notifications For SendPassInMMS__  
-When the MMS delivery is processed successfully the system will generate a Postback notification. For more details please visit [postback doc](https://github.com/SkycoreMobile/API/blob/master/1.3/CONTENTS/POSTBACK_NOTIFICATION_SYSTEM.md).
+When the MMS delivery is processed successfully the system will generate a Postback notification. For more details please visit [postback doc](https://github.com/SkycoreMobile/API/blob/master/1.3/CONTENTS/POSTBACKS/POSTBACK_DELIVERY_REPORTS.md).
 ```xml
 <?xml version='1.0'?>
 <POSTBACK>
