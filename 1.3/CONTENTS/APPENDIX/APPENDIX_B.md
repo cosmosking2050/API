@@ -48,6 +48,8 @@ __Error Code Reference__
 | E334 | Text in slide X is too long. |
 | E341 | Image file in slide X is corrupted. |
 | E351 | Could not copy Image in slide X. |
+| E352 | Could not copy Audio in slide X. |
+| E353 | Could not copy Video in slide X. |
 | E400 | No Email Templates were created in this account. |
 | E401 | Invalid email. |
 | E402 | Invalid 'emailid' (or) 'emailtemplateid'. |
