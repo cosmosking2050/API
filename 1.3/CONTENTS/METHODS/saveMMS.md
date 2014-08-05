@@ -42,7 +42,7 @@ __Response Parameters:__
 
 __Related Error Codes:__
 
-    E225, E226, E227, E228, E229, E230, E301, E302, E303, E304, E331, E332, E333, E334, E341, E351
+    E225, E226, E227, E228, E229, E230, E301, E302, E303, E304, E331, E332, E333, E334, E341, E351, E352, E353
 
 __Request Example:__
 ```xml
