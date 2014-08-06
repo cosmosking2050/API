@@ -82,6 +82,7 @@ See <a href="CONTENTS/APPENDIX/APPENDIX_B.md">APPENDIX B [API Error Codes]</a>
     <li><a href="CONTENTS/METHODS/sendSavedEmail.md">sendSavedEmail</a></li>
     <li><a href="CONTENTS/METHODS/subscribeEmail+unsubscribeEmail.md">subscribeEmail + unsubscribeEmail</a></li>
     </ul>
+<a name="passbook" id="passbook"></a>
 <li><b>Passbook</b></li>
     <ul>
     <li><a href="CONTENTS/METHODS/getPassTemplate.md">getPassTemplate</a></li>
