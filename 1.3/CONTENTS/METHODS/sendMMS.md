@@ -25,7 +25,7 @@ Prototype:
         </AUDIO>
         <VIDEO>
             <URL>URL</URL>
-        </AUDIO>
+        </VIDEO>
         <TEXT>Plain Text</TEXT>
         <DURATION>Duration in seconds</DURATION>
     </SLIDE>
