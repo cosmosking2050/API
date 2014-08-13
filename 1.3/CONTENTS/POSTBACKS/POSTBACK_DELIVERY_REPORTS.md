@@ -90,7 +90,6 @@ When the mobile network operator does not suport MMS or the destination handset 
 | TIMESTAMP | The timestamp the MMS was sent (N101) or when MMS was delivered (N102). |
 | AGGREGATORID | SMS aggregator or carrier transaction ID. |
 | STATUSDETAILS | Any additional information passed back from the aggregator/carrier. |
-| OS | Only in N102 notification for binary sending, contains detected operating system of the handset. |
 
 _N101 Example: (Binary)_
 ```xml
