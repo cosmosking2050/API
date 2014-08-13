@@ -59,15 +59,16 @@ __Request Example:__
     <SUBJECT>The subject</SUBJECT>
     <CAMPAIGNREF>323</CAMPAIGNREF>
     <NAME>my fishtank</NAME>
-        <SLIDE duration="5">
-            <IMAGE>
-                <URL>http://www.yoursite.com/images/1.jpg</URL>
-            </IMAGE>
-            <AUDIO>
-                <URL>http://www.yoursite.com/audio/1.mp3</URL>
-            </AUDIO>
-            <TEXT>Here is some text tralalala....</TEXT>
-        </SLIDE>
+    <SLIDE>
+        <IMAGE>
+            <URL>http://www.yoursite.com/images/1.jpg</URL>
+        </IMAGE>
+        <AUDIO>
+            <URL>http://www.yoursite.com/audio/1.mp3</URL>
+        </AUDIO>
+        <TEXT>Here is some text tralalala....</TEXT>
+        <DURATION>5</DURATION>
+    </SLIDE>
 </REQUEST>
 ```
 
