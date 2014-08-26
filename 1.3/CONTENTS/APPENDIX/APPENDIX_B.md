@@ -66,6 +66,7 @@ __Error Code Reference__
 | E621 | The 'to' is required. |
 | E623 | The 'to' field can contain up to 100 numbers. |
 | E624 | The 'tocampaign' is required. |
+| E625 | The 'mmsid' provided was invalid. |
 | E626 | Content unavailable. Encoding in progress, try again later. |
 | E628 | Operator Not supported. |
 | E629 | Unrecognized content type. |
