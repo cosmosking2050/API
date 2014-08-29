@@ -26,6 +26,8 @@ __Postback Notification Codes__
 | N303 | Email subscribed. |
 | N304 | Email unsubscribed. |
 | N401 | MMS MO received successfully. |
+| N501 | Notification that Device Discovery Message is sending. |
+| N502 | Notification that Device Discovery Message delivery status has changed. |
 | N801 | Pass was generated succesfully. |
 | N802 | Some error occurred. Pass generation failed. |
 | N803 | Maximum limit for pass generation reached. |
