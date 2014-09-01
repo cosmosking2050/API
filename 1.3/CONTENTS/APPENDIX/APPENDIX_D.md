@@ -13,6 +13,9 @@ __Postback Notification Codes__
 | E012 | Encoding of MMS audio failed. |
 | E013 | Encoding of MMS video failed. |
 | E101 | Error occured. Impossible to send MMS. |
+| E102 | Error occured. MMS Delivery was not successful. |
+| E501 | Error occured. Impossible to send DDM Message. |
+| E502 | Error occured. DDM Delivery was not successful. |
 | N002 | Encoding of mobile video successful. |
 | N003 | Content was stored / encoded correctly. |
 | N013 | Content was stored / encoded correctly and sending was triggered. |
