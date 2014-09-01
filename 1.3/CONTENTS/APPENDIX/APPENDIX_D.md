@@ -16,6 +16,7 @@ __Postback Notification Codes__
 | E102 | Error occured. MMS Delivery was not successful. |
 | E501 | Error occured. Impossible to send DDM Message. |
 | E502 | Error occured. DDM Delivery was not successful. |
+| E999 | Post Message Sending Que Processing Errors. |
 | N002 | Encoding of mobile video successful. |
 | N003 | Content was stored / encoded correctly. |
 | N013 | Content was stored / encoded correctly and sending was triggered. |
