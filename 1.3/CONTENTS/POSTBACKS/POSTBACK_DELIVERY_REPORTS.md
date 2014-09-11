@@ -31,7 +31,6 @@ Postback notification when an SMS is sent to the mobile network operator.
 | SPID | Carrier Identification - please refer to [APPENDIX E](/1.3/CONTENTS/APPENDIX/APPENDIX_E.md). |
 | TIMESTAMP | The timestamp the message sent (N201) or when MMS was delivered (N202). |
 | AGGREGATORID | SMS aggregator or carrier transaction ID. |
-| STATUSDETAILS | Any additional information passed back from the aggregator/carrier. |
 
 _N201 Example:_
 ```xml
