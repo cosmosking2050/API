@@ -50,6 +50,10 @@ __Error Code Reference__
 | E351 | Could not copy Image in slide X. |
 | E352 | Could not copy Audio in slide X. |
 | E353 | Could not copy Video in slide X. |
+| E355 | Could not copy vCard in slide X. |
+| E356 | Could not copy iCal in slide X. |
+| E357 | Could not copy PDF in slide X. |
+| E358 | Could not copy wallet file in slide X. |
 | E400 | No Email Templates were created in this account. |
 | E401 | Invalid email. |
 | E402 | Invalid 'emailid' (or) 'emailtemplateid'. |
