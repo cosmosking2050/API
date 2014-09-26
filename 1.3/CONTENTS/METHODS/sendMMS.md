@@ -28,6 +28,18 @@ Prototype:
         </VIDEO>
         <TEXT>Plain Text</TEXT>
         <DURATION>Duration in seconds</DURATION>
+        <OBJECT>
+            <VCARD>.vcf URL</VCARD>
+        </OBJECT>
+        <OBJECT>
+            <ICAL>.ics URL</ICAL>
+        </OBJECT>
+        <OBJECT>
+            <PDF>.pdf URL</PDF>
+        </OBJECT>
+        <OBJECT>
+            <WALLET>.pkpass URL</WALLET>
+        </OBJECT>
     </SLIDE>
     <SLIDE>
         ...
@@ -38,7 +50,7 @@ Prototype:
 __Request Parameters:__
 
     Mandatory: action, api_key, to, from, name, slide
-    Optional: spid, campaignRef, subject, image, audio, video, url, text, duration
+    Optional: spid, campaignRef, subject, image, audio, video, url, text, duration, object (vcard|ical|pdf|wallet)
 
 __Response Parameters:__
 
@@ -67,6 +79,11 @@ __Request Example:__
             <URL>http://www.yoursite.com/audio/1.mp3</URL>
         </AUDIO>
         <TEXT>Here is some text tralalala....</TEXT>
+        <DURATION>5</DURATION>
+    </SLIDE>
+    <SLIDE>
+        <TEXT>This is my contact</TEXT>
+        <OBJECT><VCARD>http://www.yoursite.com/vcard/2.vcf</VCARD></OBJECT>
         <DURATION>5</DURATION>
     </SLIDE>
 </REQUEST>
