@@ -31,6 +31,8 @@ __Error Code Reference__
 | E172 | Campaign was not created. Internal error occured. Please try again later. |
 | E173 | 'mailingaddress' is required. |
 | E201 | The receiver number is required. |
+| E223 | More than one object is not allowed in the same slide. |
+| E224 | MMS audio/video/image are not allowed with object in the same slide. |
 | E225 | Too many Slides. |
 | E226 | Audio and Video not allowed in same slide. |
 | E227 | Video and Image not allowed in same slide. |
