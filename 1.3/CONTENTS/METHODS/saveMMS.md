@@ -21,7 +21,19 @@ __Request:__
         </AUDIO>
         <VIDEO>
             <URL>URL</URL>
-        </AUDIO>
+        </VIDEO>
+        <OBJECT>
+            <VCARD>.vcf URL</VCARD>
+        </OBJECT>
+        <OBJECT>
+            <ICAL>.ics URL</ICAL>
+        </OBJECT>
+        <OBJECT>
+            <PDF>.pdf URL</PDF>
+        </OBJECT>
+        <OBJECT>
+            <WALLET>.pkpass URL</WALLET>
+        </OBJECT>    
         <TEXT>Plain Text</TEXT>
         <DURATION>Duration in seconds</DURATION>
     </SLIDE>
@@ -34,7 +46,7 @@ __Request:__
 __Request Parameters:__
 
     Mandatory: action, api_key, subject, name, slide
-    Optional: image, audio, video, url, text, duration
+    Optional: image, audio, video, url, text, duration, object (vcard|ical|pdf|wallet)
 
 __Response Parameters:__
 
@@ -42,7 +54,7 @@ __Response Parameters:__
 
 __Related Error Codes:__
 
-    E225, E226, E227, E228, E229, E230, E301, E302, E303, E304, E331, E332, E333, E334, E341, E351, E352, E353
+    E223, E224, E225, E226, E227, E228, E229, E230, E301, E302, E303, E304, E331, E332, E333, E334, E341, E351, E352, E353, E355, E356, E357, E358
 
 __Request Example:__
 ```xml
@@ -55,6 +67,11 @@ __Request Example:__
         <IMAGE><URL>http://www.yoursite.com/images/1.jpg</URL></IMAGE>
         <AUDIO><URL>http://www.yoursite.com/audio/1.mp3</URL></AUDIO>
         <TEXT>Here is some text</TEXT>
+        <DURATION>5</DURATION>
+    </SLIDE>
+    <SLIDE>
+        <TEXT>This is my contact</TEXT>
+        <OBJECT><VCARD>http://www.yoursite.com/vcard/2.vcf</VCARD></OBJECT>
         <DURATION>5</DURATION>
     </SLIDE>
 </REQUEST>
@@ -113,6 +130,8 @@ will be reduced to fit handset message size requirements.
 * Slides with image SHALL NOT support video but SHALL support audio.
 * Slides with audio SHALL NOT support video. Slides with video SHALL only support text.
 * Slides with text SHALL support up to 5000 characters in any slide.
+* Slides with object (vcard|ical|pdf|wallet) SHALL NOT support audio/video/image/any other object. 
+* Only ONE object (vcard|ical|pdf|wallet) per slide is allowed.
 * All slides MAY contain a duration for playback.
 * Default slide duration is 10 seconds.
 * Slide duration will be overwritten with the audio/video file duration after encoding is completed.
