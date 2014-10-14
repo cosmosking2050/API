@@ -26,20 +26,20 @@ Prototype:
         <VIDEO>
             <URL>URL</URL>
         </VIDEO>
+        <VCARD>
+            <URL>URL</URL>
+        </VCARD>
+        <ICAL>
+            <URL>URL</URL>
+        </ICAL>
+        <PDF>
+            <URL>URL</URL>
+        </PDF>
+        <PASSBOOK>
+            <URL>URL</URL>
+        </PASSBOOK>
         <TEXT>Plain Text</TEXT>
         <DURATION>Duration in seconds</DURATION>
-        <OBJECT>
-            <VCARD>.vcf URL</VCARD>
-        </OBJECT>
-        <OBJECT>
-            <ICAL>.ics URL</ICAL>
-        </OBJECT>
-        <OBJECT>
-            <PDF>.pdf URL</PDF>
-        </OBJECT>
-        <OBJECT>
-            <WALLET>.pkpass URL</WALLET>
-        </OBJECT>
     </SLIDE>
     <SLIDE>
         ...
@@ -50,7 +50,7 @@ Prototype:
 __Request Parameters:__
 
     Mandatory: action, api_key, to, from, name, slide
-    Optional: spid, campaignRef, subject, image, audio, video, url, text, duration, object (vcard|ical|pdf|wallet)
+    Optional: spid, campaignRef, subject, image, audio, video, url, text, duration, vcard, ical, pdf, passbook
 
 __Response Parameters:__
 
@@ -83,7 +83,7 @@ __Request Example:__
     </SLIDE>
     <SLIDE>
         <TEXT>This is my contact</TEXT>
-        <OBJECT><VCARD>http://www.yoursite.com/vcard/2.vcf</VCARD></OBJECT>
+        <VCARD><URL>http://www.yoursite.com/vcard/2.vcf</URL></VCARD>
         <DURATION>5</DURATION>
     </SLIDE>
 </REQUEST>
