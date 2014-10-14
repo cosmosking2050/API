@@ -22,18 +22,18 @@ __Request:__
         <VIDEO>
             <URL>URL</URL>
         </VIDEO>
-        <OBJECT>
-            <VCARD>.vcf URL</VCARD>
-        </OBJECT>
-        <OBJECT>
-            <ICAL>.ics URL</ICAL>
-        </OBJECT>
-        <OBJECT>
-            <PDF>.pdf URL</PDF>
-        </OBJECT>
-        <OBJECT>
-            <WALLET>.pkpass URL</WALLET>
-        </OBJECT>    
+        <VCARD>
+            <URL>URL</URL>
+        </VCARD>
+        <ICAL>
+            <URL>URL</URL>
+        </ICAL>
+        <PDF>
+            <URL>URL</URL>
+        </PDF>
+        <PASSBOOK>
+            <URL>URL</URL>
+        </PASSBOOK>    
         <TEXT>Plain Text</TEXT>
         <DURATION>Duration in seconds</DURATION>
     </SLIDE>
@@ -46,7 +46,7 @@ __Request:__
 __Request Parameters:__
 
     Mandatory: action, api_key, subject, name, slide
-    Optional: image, audio, video, url, text, duration, object (vcard|ical|pdf|wallet)
+    Optional: image, audio, video, url, text, duration, vcard, ical, pdf, passbook
 
 __Response Parameters:__
 
@@ -71,7 +71,7 @@ __Request Example:__
     </SLIDE>
     <SLIDE>
         <TEXT>This is my contact</TEXT>
-        <OBJECT><VCARD>http://www.yoursite.com/vcard/2.vcf</VCARD></OBJECT>
+        <VCARD><URL>http://www.yoursite.com/vcard/2.vcf</URL></VCARD>
         <DURATION>5</DURATION>
     </SLIDE>
 </REQUEST>
@@ -123,15 +123,14 @@ possible way.
 * Delivery success takes precedence over audio and video content quality and occasionally the picture quality
 will be reduced to fit handset message size requirements.
 * Video SHALL be reduced in quality to fit delivery limitations and if it still does not fit it will be delivered as XHTML/SMS.
-* Each request MUST contain at least one slide which MAY contain text and/or image and/or video and/or sound.
+* Each request MUST contain at least one slide which MAY contain text and/or image and/or video and/or audio and/or objects (vcard/ical/pdf/passbook).
 * The API SHALL support up to 80 characters in the MMS subject.
 * The API SHALL support up to 8 slides for each MMS submission.
 * The API SHALL NOT support multiple files of the same MIME type on the same slide.
 * Slides with image SHALL NOT support video but SHALL support audio.
 * Slides with audio SHALL NOT support video. Slides with video SHALL only support text.
 * Slides with text SHALL support up to 5000 characters in any slide.
-* Slides with object (vcard|ical|pdf|wallet) SHALL NOT support audio/video/image/any other object. 
-* Only ONE object (vcard|ical|pdf|wallet) per slide is allowed.
+* Slide with vcard/ical/pdf/passbook object SHALL NOT support media type audio/video/image and vice-versa.
 * All slides MAY contain a duration for playback.
 * Default slide duration is 10 seconds.
 * Slide duration will be overwritten with the audio/video file duration after encoding is completed.
