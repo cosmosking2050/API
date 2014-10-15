@@ -16,21 +16,45 @@ __Request:__
         <IMAGE>
             <URL>URL</URL> 
         </IMAGE>
+        <TEXT>Plain Text</TEXT>
+        <DURATION>Duration in seconds</DURATION>
+    <SLIDE>
+    </SLIDE>
         <AUDIO>
             <URL>URL</URL>
         </AUDIO>
+        <TEXT>Plain Text</TEXT>
+        <DURATION>Duration in seconds</DURATION>
+    <SLIDE>
+    </SLIDE>
         <VIDEO>
             <URL>URL</URL>
         </VIDEO>
+        <TEXT>Plain Text</TEXT>
+        <DURATION>Duration in seconds</DURATION>
+    <SLIDE>
+    </SLIDE>
         <VCARD>
             <URL>URL</URL>
         </VCARD>
+        <TEXT>Plain Text</TEXT>
+        <DURATION>Duration in seconds</DURATION>
+    <SLIDE>
+    </SLIDE>
         <ICAL>
             <URL>URL</URL>
         </ICAL>
+        <TEXT>Plain Text</TEXT>
+        <DURATION>Duration in seconds</DURATION>
+        <SLIDE>
+    </SLIDE>
         <PDF>
             <URL>URL</URL>
         </PDF>
+        <TEXT>Plain Text</TEXT>
+        <DURATION>Duration in seconds</DURATION>
+    <SLIDE>
+    </SLIDE>
         <PASSBOOK>
             <URL>URL</URL>
         </PASSBOOK>    
