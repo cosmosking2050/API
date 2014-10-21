@@ -183,7 +183,7 @@ _E101 Example:_
 </POSTBACK>
 ```
 
-When the MMS was not delivery fails because of various reasons we return a postback E102
+When the MMS delivery fails due to various reasons we return a postback E102
 
 _E102 Example:_
 ```xml
