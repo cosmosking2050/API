@@ -74,9 +74,19 @@ A postback notification called `N101` is immediately sent after we begin to proc
 
 When the mobile network operator does not suport MMS or the destination handset does not support the size of the content within the MMS we fall back to SMS/xHTML to deliver the message. In this method we deliver the MMS as an SMS containing a link to an xHTML page with the content. The subject text of the MMS is included in the SMS message text. 
 
-Status Codes: N101, N102, E101, E102
+MMS Status Codes: N101, N102, E101, E102
 
-Status: Message Sent, Message Failed, Message Sent/Delivered, Message Sent/Failed, Message Sent/Expired, Message Sent/NotSupported
+DDM Status Codes: N501, N502, E501, E502
+
+
+
+N101/N501 - Message Sent
+
+E101/E501 - Message Failed 
+
+N102/N502 - Message Sent/Delivered 
+
+E102/E502 - Message Sent/Failed, Message Sent/Expired or Message Sent/NotSupported
 
 | Variable | Description |
 | -------- | ----------- |
