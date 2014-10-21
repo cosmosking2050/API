@@ -80,7 +80,7 @@ When the mobile network operator does not suport MMS or the destination handset 
 | CODE | Code 201 means the SMS was submitted to the carrier. |
 | SENTAS | Indicates if the MMS was delivered as MMS (binary) or SMS (xHTML).|
 | MMSID | ID of the MMS Template. |
-| STATUS | For N101 notification status can be "Message Sent". For N102 notification status can be "Message Sent/Delivered", "Message Sent/Expired", "Message Sent/Rejected", "Message Sent/Failed" or "Message Sent/NotSupported" |
+| STATUS | For N101 notification status can be "Message Sent". For N102 notification status can be "Message Sent/Delivered". For E102 notification status can be "Message Sent/Expired", "Message Sent/Rejected", "Message Sent/Failed" or "Message Sent/NotSupported" |
 | FROM | The shortcode the message is sent from. |
 | HANDSET | Handset profile returned inside Delivery Receipt. This is present only in N102 notification. |
 | TO | The recipient of the message. |
@@ -193,6 +193,8 @@ _E102 Example:_
     <TO>16502424956</TO>
     <TRACKINGID>TU1TXzU5Nzg3Nw==</TRACKINGID>
     <SPID>0001140</SPID>
+    <TIMESTAMP>2012-06-07T07:28:09-05:00</TIMESTAMP>
+    <AGGREGATORID>11529-64807-97508-73852-97658</AGGREGATORID>
     <STATUSDETAILS>Recipient blocked by mobile operator</STATUSDETAILS>
 </POSTBACK>
 ```
