@@ -80,7 +80,7 @@ When the mobile network operator does not suport MMS or the destination handset 
 | CODE | Code 201 means the SMS was submitted to the carrier. |
 | SENTAS | Indicates if the MMS was delivered as MMS (binary) or SMS (xHTML).|
 | MMSID | ID of the MMS Template. |
-| STATUS | For N101 notification status can be "Message Sent". For N102 notification status can be "Message Sent/Delivered", "Message Sent/Expired" or "Message Sent/Rejected". |
+| STATUS | For N101 notification status can be "Message Sent". For N102 notification status can be "Message Sent/Delivered", "Message Sent/Expired", "Message Sent/Rejected", "Message Sent/Failed" or "Message Sent/NotSupported" |
 | FROM | The shortcode the message is sent from. |
 | HANDSET | Handset profile returned inside Delivery Receipt. This is present only in N102 notification. |
 | TO | The recipient of the message. |
@@ -88,7 +88,7 @@ When the mobile network operator does not suport MMS or the destination handset 
 | SPID | Carrier Identification - please refer to [APPENDIX E](/1.3/CONTENTS/APPENDIX/APPENDIX_E.md). |
 | TIMESTAMP | The timestamp the MMS was sent (N101) or when MMS was delivered (N102). |
 | AGGREGATORID | SMS aggregator or carrier transaction ID. |
-| STATUSDETAILS | Any additional information passed back from the aggregator/carrier. |
+| STATUSDETAILS | Any additional information passed back from the aggregator/carrier in the case of MMS delivery failed |
 
 _N101 Example: (Binary)_
 ```xml
@@ -179,6 +179,23 @@ _E101 Example:_
 </POSTBACK>
 ```
 
+When the MMS was not delivered because it was rejected by the carrier.
+
+_E102 Example:_
+```xml
+<?xml version='1.0'?>
+<POSTBACK>
+    <ORIGIN>MMS_MT</ORIGIN>
+    <CODE>E102</CODE>
+    <STATUS>Message Sent/Rejected</STATUS>
+    <MMSID>39755</MMSID>
+    <FROM>60856</FROM>
+    <TO>16502424956</TO>
+    <TRACKINGID>TU1TXzU5Nzg3Nw==</TRACKINGID>
+    <SPID>0001140</SPID>
+    <STATUSDETAILS>Recipient blocked by mobile operator</STATUSDETAILS>
+</POSTBACK>
+```
 [Back To The Top](#DocTop)
 
 
