@@ -152,11 +152,11 @@ For example:
     <API_KEY>*********************************************</API_KEY>
         <SUBJECT>Text with the dynamic variables</SUBJECT>
         <NAME>MMS with DynVars</NAME>
-            <SLIDE duration="5">
-                <IMAGE duration="5">
+            <SLIDE>
+                <IMAGE>
                     <URL>http://www.destination360.com/caribbean/bahamas/images/s/bahamas-boat-rental.jpg</URL>
                 </IMAGE>
-                <TEXT duration="5" >
+                <TEXT >
                     Hello {$firstname|Sir}, your gender is {$gender|unknown}.
                 </TEXT>
             </SLIDE>
@@ -169,7 +169,7 @@ Then inside sendsavedMMS we do call this:
 
 <REQUEST>
     <ACTION>sendsavedMMS</ACTION>
-    <API_KEY>tAEW8nPsMeWDQxuhi9jy6WnRXpFBtaHn</API_KEY>
+    <API_KEY>*********************************************</API_KEY>
     <MMSID>43615</MMSID>
     <FROM>66666</FROM>
     <TO>16502426058</TO>
