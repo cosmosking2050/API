@@ -141,6 +141,48 @@ If there was an error encoding the MMS audio/video, the system will generate a n
 </POSTBACK>
 ```
 
+__Merge Tags:__
+
+You can save an MMS Template with merge tags and those tags will be replaced during delivery of the MMS as long as you pass the variables in the SendSavedMMS request. 
+
+For example:
+```
+<REQUEST>
+    <ACTION>saveMMS</ACTION>
+    <API_KEY>*********************************************</API_KEY>
+        <SUBJECT>Text with the dynamic variables</SUBJECT>
+        <NAME>MMS with DynVars</NAME>
+            <SLIDE duration="5">
+                <IMAGE duration="5">
+                    <URL>http://www.destination360.com/caribbean/bahamas/images/s/bahamas-boat-rental.jpg</URL>
+                </IMAGE>
+                <TEXT duration="5" >
+                    Hello {$firstname|Sir}, your gender is {$gender|unknown}.
+                </TEXT>
+            </SLIDE>
+    </REQUEST>
+```
+
+Then inside sendsavedMMS we do call this:
+
+```
+
+<REQUEST>
+    <ACTION>sendsavedMMS</ACTION>
+    <API_KEY>tAEW8nPsMeWDQxuhi9jy6WnRXpFBtaHn</API_KEY>
+    <MMSID>43615</MMSID>
+    <FROM>66666</FROM>
+    <TO>16502426058</TO>
+    <CAMPAIGNREF>1807</CAMPAIGNREF>
+    <DATA>
+        <FIRSTNAME>Bill</FIRSTNAME>
+        <GENDER>Male</GENDER>
+    </DATA>
+</REQUEST>
+```
+and within the delivered MMS we will have this:
+"Hello Bill, your gender is male."
+
 __Special Considerations for saveMMS:__  
 * The API SHALL reformat the content when necessary so that it can be delivered to the end users handset in the best 
 possible way.
