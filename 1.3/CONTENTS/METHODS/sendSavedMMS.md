@@ -100,6 +100,7 @@ __Response Example: Success__
     <TRACKINGID>TU1TXzU5Nzg3OQ==</TRACKINGID>
     <TO>16501234123</TO>
     <FROM>60586</FROM>
+    <STATUSDETAILS>MMS request accepted and queued for delivery</STATUSDETAILS>
 </RESPONSE>
 ```
 
