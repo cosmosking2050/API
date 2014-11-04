@@ -96,6 +96,7 @@ __Response Example: Success__
     <TO>15551234888</TO>
     <MMSID>35674</MMSID>
     <TRACKINGID>MMS_12345</TRACKINGID>
+    <STATUSDETAILS>MMS request accepted and queued for delivery</STATUSDETAILS>
 </RESPONSE>
 ```
 
