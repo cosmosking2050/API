@@ -559,12 +559,12 @@ Note Filesizes are in Binary >>> The actual message sizes submitted to carrier a
 | United States | Verizon | 2.5MB | 1.2MB |
 | United States | AT&T | 2.5MB | 1.2MB |
 | United States | T-Mobile | 2.5MB | 1.2MB |
-| United States | Alltel-Allied | 1.2MB | 1.2MB |
+| United States | Alltel-Allied* | 1.2MB | 1.2MB |
 | United States | Cricket | 1.2MB | 1.2MB |
-| United States | MetroPCS | 0.6MB | 0.6MB |
-| United States | USCellular | 0.6MB | 0.6MB |
+| United States | MetroPCS* | 0.6MB | 0.6MB |
+| United States | USCellular* | 0.6MB | 0.6MB |
 
-* Alltel/MetroPCS/USCellular not provisioned for MMS all campaigns
+* Not provisioned for MMS all campaigns
 
 
 
