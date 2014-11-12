@@ -554,16 +554,17 @@ __Carrier Max MMS Filesize Reference Table__
 Note>>> The Actual message sizes submitted to carrier are up to 1.37x larger due to encoding and additional message payloads
 
 | Country | Carrier | Max Binary MMS Size | Max Default MMS Size |
-| ------- | ------- | ---- | 
+| ------- | ------- | ---- | ---- |
 | United States | Sprint | 1.2MB | 1.2MB |
 | United States | Verizon | 1.2MB | 1.2MB |
 | United States | AT&T | 1.5MB | 1.2MB |
 | United States | T-Mobile | 1.5MB | 1.2MB |
-| United States | Alltel-Allied* | 1.2MB | 1.2MB |
+| United States | Alltel-Allied | 1.2MB | 1.2MB |
 | United States | Cricket | 1.2MB | 1.2MB |
-| United States | MetroPCS* | 0.6MB | 0.6MB |
-| United States | USCellular* | 0.6MB | 0.6MB |
-* Not provisioned for MMS all campaigns
+| United States | MetroPCS | 0.6MB | 0.6MB |
+| United States | USCellular | 0.6MB | 0.6MB |
+
+* Alltel/MetroPCS/USCellular not provisioned for MMS all campaigns
 
 
 
