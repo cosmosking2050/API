@@ -553,7 +553,7 @@ __Carrier Max MMS Filesize Reference Table__
 
 Note>>> The Actual message sizes submitted to carrier are up to 1.37x larger due to encoding and additional message payloads
 
-| Country | Carrier | Max Binary MMS Size | Max Default MMS Size
+| Country | Carrier | Max Binary MMS Size | Max Default MMS Size |
 | ------- | ------- | ---- | 
 | United States | Sprint | 1.2MB | 1.2MB |
 | United States | Verizon | 1.2MB | 1.2MB |
