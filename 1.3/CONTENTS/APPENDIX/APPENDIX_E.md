@@ -2,7 +2,7 @@
 
 ## APPENDIX E
 
-__SPID Reference Table__
+__Carrier Reference Table__
 
 | Country | Carrier | SPID |
 | ------- | ------- | ---- |
