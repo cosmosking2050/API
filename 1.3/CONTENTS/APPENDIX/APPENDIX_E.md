@@ -556,9 +556,9 @@ Note>>> The Actual message sizes submitted to carrier are up to 1.37x larger due
 | Country | Carrier | Max Binary MMS Size | Max Default MMS Size |
 | ------- | ------- | ---- | ---- |
 | United States | Sprint | 1.2MB | 1.2MB |
-| United States | Verizon | 1.2MB | 1.2MB |
-| United States | AT&T | 1.5MB | 1.2MB |
-| United States | T-Mobile | 1.5MB | 1.2MB |
+| United States | Verizon | 2.5MB | 1.2MB |
+| United States | AT&T | 2.5MB | 1.2MB |
+| United States | T-Mobile | 2.5MB | 1.2MB |
 | United States | Alltel-Allied | 1.2MB | 1.2MB |
 | United States | Cricket | 1.2MB | 1.2MB |
 | United States | MetroPCS | 0.6MB | 0.6MB |
