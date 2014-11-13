@@ -555,16 +555,17 @@ Note Filesizes are in Binary >>> The actual message sizes submitted to carrier a
 
 | Country | Carrier | Max Detected MMS Size | Max Default Handset MMS Size |
 | ------- | ------- | ---- | ---- |
-| United States | Sprint | 1.2MB | 1.2MB |
-| United States | Verizon | 2MB | 1.2MB |
-| United States | AT&T | 2MB | 1.2MB |
-| United States | T-Mobile | 2MB | 1.2MB |
+| United States | Sprint | 0.6 - 1.2MB** | 1.2MB |
+| United States | Verizon | 1.2MB - 3MB** | 1.2MB |
+| United States | AT&T | 1MB-2MB** | 1.2MB |
+| United States | T-Mobile | 1MB-2MB** | 1.2MB |
 | United States | Alltel-Allied* | 1.2MB | 1.2MB |
 | United States | Cricket | 1.2MB | 1.2MB |
 | United States | MetroPCS* | 0.6MB | 0.6MB |
 | United States | USCellular* | 0.6MB | 0.6MB |
 
-* Not provisioned for MMS all campaigns
+*Not provisioned for MMS all campaigns
+**Depending on Aggregator
 
 
 
