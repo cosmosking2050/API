@@ -565,6 +565,7 @@ Note Filesizes are in Binary >>> The actual message sizes submitted to carrier a
 | United States | USCellular* | 0.6MB | 0.6MB |
 
 *Not provisioned for MMS all campaigns
+
 **Depending on Aggregator
 
 
