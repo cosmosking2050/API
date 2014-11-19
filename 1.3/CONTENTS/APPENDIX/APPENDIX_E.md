@@ -182,7 +182,7 @@ __Carrier ID Reference Table__
 | Germany | E Plus | 0049180 |
 | Germany | Mobilcom | 0049550 |
 | Germany | All Carriers | 0049000 |
-| Germany | O20 || 0049980 |
+| Germany | O2 | 0049980  |
 | Germany | T-Mobile | 0049540 |
 | Ghana | Mobitel | 0233730 |
 | Ghana | All Carriers | 0233000 |
@@ -249,7 +249,7 @@ __Carrier ID Reference Table__
 | Ireland | Meteor | 0353780 |
 | Ireland | Vodafone | 0353360 |
 | Ireland | All Carriers | 0035000 |
-| Ireland | O20 || 0353750 |
+| Ireland | O2 | 0353750 |
 | Israel | Palestine Cellular (Jawwal) | 0972520 |
 | Israel | Orange (Partner Communications) | 0972940 |
 | Israel | Cellcom | 0972580 |
@@ -281,7 +281,7 @@ __Carrier ID Reference Table__
 | Laos | All Carriers | 0856000 |
 | Latvia | All Carriers | 0371000 |
 | Latvia | Latvian Mobile | 0371550 |
-| Latvia | Tele 20 || 0371730 |
+| Latvia | Tele 2 | 0371730 |
 | Lebanon | All Carriers | 0961000 |
 | Lebanon | FTML | 0961800 |
 | Lebanon | LibanCell | 0961200 |
@@ -289,11 +289,11 @@ __Carrier ID Reference Table__
 | Liberia | All Carriers | 0231000 |
 | Libya | All Carriers | 0218000 |
 | Liechtenstein | Mobilkom | 0423650 |
-| Liechtenstein | Tele 20 || 0423740 |
+| Liechtenstein | Tele 2 | 0423740 |
 | Liechtenstein | Telecom FL | 0423310 |
 | Liechtenstein | All Carriers | 0423000 |
 | Lithuania | Omnitel | 0370540 |
-| Lithuania | Tele 20 || 0370390 |
+| Lithuania | Tele 2 | 0370390 |
 | Lithuania | Bite (Vilnius) | 0370890 |
 | Lithuania | All Carriers | 0370000 |
 | Luxembourg | All Carriers | 0352000 |
@@ -351,7 +351,7 @@ __Carrier ID Reference Table__
 | Netherlands | Vodafone | 0031960 |
 | Netherlands | KPN Telecom BV | 0031980 |
 | Netherlands | T-Mobile | 0031950 |
-| Netherlands | O20 || 0031300 |
+| Netherlands | O2 | 0031300 |
 | Netherlands Antilles | All Carriers | 0599000 |
 | New Caledonia | All Carriers | 0687000 |
 | New Zealand | All Carriers | 0064000 |
@@ -453,7 +453,7 @@ __Carrier ID Reference Table__
 | Sweden | All Carriers | 0046000 |
 | Sweden | Vodafone | 0046290 |
 | Sweden | Telia | 0046710 |
-| Sweden | Tele 20 || 0046780 |
+| Sweden | Tele 2 | 0046780 |
 | Switzerland | Swisscom | 0041220 |
 | Switzerland | All Carriers | 0041000 |
 | Switzerland | Orange | 0041100 |
@@ -493,7 +493,7 @@ __Carrier ID Reference Table__
 | United Kingdom | Vodafone | 0044640 |
 | United Kingdom | Orange | 0044730 |
 | United Kingdom | Virgin Mobile | 0044270 |
-| United Kingdom | O20 || 0044170 |
+| United Kingdom | O2 | 0044170 |
 | United Kingdom | T-Mobile | 0044220 |
 | United Kingdom | All Carriers | 0044000 |
 | United Kingdom | Three | 0044880 |
@@ -523,7 +523,7 @@ __Carrier ID Reference Table__
 | United States | Iowa Wireless | 0001830 |
 | United States | Alltel | 0001280 |
 | United States | Verizon Wireless | 0001890 |
-| United States | T-MobileÂŽ | 0001570 |
+| United States | T-Mobile | 0001570 |
 | United States | US Cellular | 0001840 |
 | United States | All Carriers | 0000010 |
 | Uruguay | All Carriers | 0598000 |
@@ -557,8 +557,8 @@ Note Filesizes are in Binary >>> The actual message sizes submitted to carrier a
 | ------- | ------- | ---- | ---- |
 | United States | Sprint | 0.6MB - 1.2MB** | 1.2MB |
 | United States | Verizon | 1.2MB - 3MB** | 1.2MB |
-| United States | AT&T | 1MB-2MB** | 1.2MB |
-| United States | T-Mobile | 1MB-2MB** | 1.2MB |
+| United States | AT&T | 1MB - 2MB** | 1.2MB |
+| United States | T-Mobile | 1MB - 2MB** | 1.2MB |
 | United States | Alltel-Allied* | 1.2MB | 1.2MB |
 | United States | Cricket | 1.2MB | 1.2MB |
 | United States | MetroPCS* | 0.6MB | 0.6MB |
