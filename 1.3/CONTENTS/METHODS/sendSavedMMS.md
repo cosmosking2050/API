@@ -25,7 +25,7 @@ __Request:__
     <MMSID>MMSID</MMSID>
     <TO>Number</TO>
     <FROM>Shortcode</FROM>
-    <SPID>SPID</SPID>
+    <OPERATORID>OPERATORID</OPERATORID>
     <CAMPAIGNREF>CampaignID</CAMPAIGNREF>
     <DDMTITLE>DDM Title</DDMTITLE>
     <DDMTEXT>DDM Body</DDMTEXT>
@@ -47,7 +47,7 @@ __Request:__
 __Request Parameters:__
 
     Mandatory: action, api_key, mmsId, to, from
-    Optional: campaignRef, ddmTitle, ddmText, ddmTimeout, customText, customSubject, data, spid
+    Optional: campaignRef, ddmTitle, ddmText, ddmTimeout, customText, customSubject, data, operatorid
 
 __Response Parameters:__
 
