@@ -50,7 +50,7 @@ Prototype:
 __Request Parameters:__
 
     Mandatory: action, api_key, to, from, name, slide
-    Optional: spid, campaignRef, subject, image, audio, video, url, text, duration, vcard, ical, pdf, passbook
+    Optional: operatorid, campaignRef, subject, image, audio, video, url, text, duration, vcard, ical, pdf, passbook
 
 __Response Parameters:__
 
@@ -67,7 +67,7 @@ __Request Example:__
     <API_KEY>ea7966f90de2bf520e3f0042053e6ec3</API_KEY>
     <TO>15551234888</TO>
     <FROM>60856</FROM>
-    <SPID>000189</SPID>
+    <OPERATORID>000189</OPERATORID>
     <SUBJECT>The subject</SUBJECT>
     <CAMPAIGNREF>323</CAMPAIGNREF>
     <NAME>my fishtank</NAME>
