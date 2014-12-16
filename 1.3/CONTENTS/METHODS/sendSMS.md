@@ -23,10 +23,10 @@ __Request Parameters:__
 
     (If "Enforce Campaign Check" is NOT Enabled)
     Mandatory: action, api_key, to, from, text
-    Optional: spid, from_mask, campaignRef
+    Optional: operatorid, from_mask, campaignRef
     (If "Enforce Campaign Check" IS Enabled)
     Mandatory: Action, api_key, to, from, campaignRef, text
-    Optional: spid, from_mask
+    Optional: operatorid, from_mask
     
 __Response Parameters:__
 
