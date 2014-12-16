@@ -25,6 +25,7 @@ __Request:__
     <MMSID>MMSID</MMSID>
     <TO>Number</TO>
     <FROM>Shortcode</FROM>
+    <SPID>SPID</SPID>
     <CAMPAIGNREF>CampaignID</CAMPAIGNREF>
     <DDMTITLE>DDM Title</DDMTITLE>
     <DDMTEXT>DDM Body</DDMTEXT>
