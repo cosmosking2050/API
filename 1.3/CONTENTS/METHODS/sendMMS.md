@@ -12,7 +12,7 @@ Prototype:
     <API_KEY>apiKey</API_KEY>
     <TO>Receivers number</TO>
     <FROM>shortcode</FROM>
-    <SPID>SPID</SPID>
+    <OPERATORID>OPERATORID</OPERATORID>
     <CAMPAIGNREF>CampaignID</CAMPAIGNREF>
     <SUBJECT>MMS Subject</SUBJECT>
     <NAME>Name in MMBox</NAME>
