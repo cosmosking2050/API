@@ -10,7 +10,7 @@ __Request:__
 <REQUEST>
     <ACTION>sendSMS</ACTION>
     <API_KEY>apiKey</API_KEY>
-    <SPID>SPID</SPID>
+    <OPERATORID>OPERATORID</OPERATORID>
     <TO>Recipient Number</TO>
     <FROM>shortcode</FROM>
     <FROM_MASK>senderName</FROM_MASK>
