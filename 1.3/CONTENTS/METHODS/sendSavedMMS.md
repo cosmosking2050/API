@@ -47,7 +47,7 @@ __Request:__
 __Request Parameters:__
 
     Mandatory: action, api_key, mmsId, to, from
-    Optional: campaignRef, ddmTitle, ddmText, ddmTimeout, customText, customSubject, data
+    Optional: campaignRef, ddmTitle, ddmText, ddmTimeout, customText, customSubject, data, spid
 
 __Response Parameters:__
 
