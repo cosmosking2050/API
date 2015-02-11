@@ -6,6 +6,11 @@ __Carrier ID Reference Table__
 
 | Country | Carrier | SPID |
 | ------- | ------- | ---- |
+| Afghanistan | All Carriers | 0093000 |
+| Afghanistan | Roshan | 0093110 |
+| Afghanistan | AWCC | 0093120 |
+| Afghanistan | MTN | 0093130 |
+| Afghanistan | Etisalat | 0093140 |
 | Albania | Albanian Mobile Communications | 0355920 |
 | Albania | All Carriers | 0355000 |
 | Albania | Vodafone | 0355620 |
@@ -101,7 +106,7 @@ __Carrier ID Reference Table__
 | Canada | Aliant | 0001640 |
 | Canada | Telus | 0001220 |
 | Canada | Rogers AT&T (TDMA) | 0001880 |
-| Canada | All Carriers | 0001000 |
+| Canada | All Carriers | 0001100 |
 | Canada | Rogers AT&T (GSM) | 0001290 |
 | Canada | MTS | 0001440 |
 | Canada | NorthernTel | 0001760 |
@@ -111,6 +116,11 @@ __Carrier ID Reference Table__
 | Cape Verde | Cabo Verde Telecom | 0238130 |
 | Cape Verde | All Carriers | 0238000 |
 | Cayman Islands | All Carriers | 1345000 |
+| Central African Republic | All Carriers | 0236000 |
+| Central African Republic | Orange | 0236110 |
+| Central African Republic | Nationlink | 0236120 |
+| Central African Republic | Moov | 0236130 |
+| Central African Republic | Telecel | 0236140 |
 | Chad | All Carriers | 0235000 |
 | Chad | Celtel | 0235620 |
 | Chile | Entel Telefonia Movil | 0056770 |
@@ -142,6 +152,9 @@ __Carrier ID Reference Table__
 | Dominica Islands | All Carriers | 1767000 |
 | Dominican Republic | All Carriers | 1809000 |
 | Dominican Republic | Orange | 1809510 |
+| East Timor | All Carriers | 0670000 |
+| East Timor | Telkomcel | 0670110 |
+| East Timor | Timor Telecom | 0670120 |
 | Ecuador | All Carriers | 0593000 |
 | Egypt | Vodafone | 0020160 |
 | Egypt | ECMS MoBiNil | 0020920 |
@@ -262,6 +275,10 @@ __Carrier ID Reference Table__
 | Jamaica | Digicel (Mossel) | 1876310 |
 | Jamaica | All Carriers | 1876000 |
 | Japan | All Carriers | 0081000 |
+| Jersey | All Carriers | 0044100 |
+| Jersey | Jersey Telecom | 0044110 |
+| Jersey | C&W Jersey | 0044120 |
+| Jersey | Airtel Jersey | 0044130 |
 | Jordan | MobileCom | 0962800 |
 | Jordan | All Carriers | 0962000 |
 | Jordan | Jordan Mobile Telephone | 0962870 |
@@ -335,6 +352,10 @@ __Carrier ID Reference Table__
 | Monaco | All Carriers | 0377000 |
 | Mongolia | Mobicom | 0976750 |
 | Mongolia | All Carriers | 0976000 |
+| Montenegro | All Carriers | 0382000 |
+| Montenegro | Telenor | 0382110 |
+| Montenegro | T-Mobile | 0382120 |
+| Montenegro | m:tel | 0382130 |
 | Montserrat | All Carriers | 1664000 |
 | Morocco | All Carriers | 0212000 |
 | Morocco | Meditelecom | 0212200 |
@@ -406,7 +427,9 @@ __Carrier ID Reference Table__
 | Russia | All Carriers | 0007000 |
 | Rwanda | MTN Rwandacell | 0250350 |
 | Rwanda | All Carriers | 0250000 |
-| Saint Vincent and  Grenadines | All Carriers | 1784000 |
+| Saint Pierre and Miquelon | All Carriers | 0508000 |
+| Saint Pierre and Miquelon | Ameris | 0508110 |
+| Saint Vincent and Grenadines | All Carriers | 1784000 |
 | Samoa (American) | All Carriers | 1684000 |
 | Samoa (Western) | All Carriers | 0685000 |
 | San Marino | All Carriers | 0378000 |
@@ -434,6 +457,8 @@ __Carrier ID Reference Table__
 | South Africa | Vodacom | 0027950 |
 | South Africa | Cell C | 0027510 |
 | South Africa | All Carriers | 0027000 |
+| South Sudan | All Carriers | 0211000 |
+| South Sudan | Vivacell | 0211110 |
 | Spain | All Carriers | 0034000 |
 | Spain | Xfera | 0034650 |
 | Spain | Amena (Retevision Movil) | 0034640 |
@@ -525,7 +550,7 @@ __Carrier ID Reference Table__
 | United States | Verizon Wireless | 0001890 |
 | United States | T-Mobile | 0001570 |
 | United States | US Cellular | 0001840 |
-| United States | All Carriers | 0000010 |
+| United States | All Carriers | 0001000 |
 | Uruguay | All Carriers | 0598000 |
 | Uzbekistan | Coscom | 0998760 |
 | Uzbekistan | All Carriers | 0998000 |
