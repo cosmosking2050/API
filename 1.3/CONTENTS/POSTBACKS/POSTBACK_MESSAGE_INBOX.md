@@ -48,6 +48,7 @@ This postback notifies you when an MMS MO is received.
 | FROM | The phone number, including the country code, of the sender. | 
 | TO | The recipient shortcode or longcode. | 
 | KEYWORD | If a keyword was recognized in the first word of the subject or the first word body of the message and it matched to a MMS Inbox Keyword campaign that keyword will be passed in this node. | 
+| SUBJECT | The subject field of the MMS if it exists. Subjects are optional |
 | TRACKINGID | A tracking ID, skycore has assigned this message. | 
 | SPID | The SPID of the sender's carrier. | 
 | TIMESTAMP | The timestamp that our system received the MMS MO. | 
