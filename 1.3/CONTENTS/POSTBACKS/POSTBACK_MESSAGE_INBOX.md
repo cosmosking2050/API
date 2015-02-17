@@ -61,6 +61,7 @@ This postback notifies you when an MMS MO is received.
     <FROM>13217949521</FROM>
     <TO>74700</TO>
     <KEYWORD>all</KEYWORD>
+    <SUBJECT>Hello there</SUBJECT> 
     <TRACKINGID>MMS_MO_iLnCRrL6</TRACKINGID>
     <SPID>0001470</SPID>
     <TIMESTAMP>2014-02-03T11:19:49-05:00</TIMESTAMP>
