@@ -57,6 +57,7 @@ __Error Code Reference__
 | E337 | PDF in slide X is too big. |
 | E338 | Passbook file in slide X is too big. |
 | E341 | Image file in slide X is corrupted. |
+| E343 | Video in slide X has missing codecs
 | E351 | Could not copy Image in slide X. |
 | E352 | Could not copy Audio in slide X. |
 | E353 | Could not copy Video in slide X. |
