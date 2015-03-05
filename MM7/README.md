@@ -12,7 +12,7 @@ MMS APIs are currently offered via an implementation of the MM7 protocol. MM7 is
 
 The use of our MM7 API is only available for accounts with a paid plan. We support submitting MMS messages with MM7 version 5.3.0 to 6.8.0. Your VASPID will be your API Key. We will issue you a VASID to submit with your message. We do not require basic authentication but we do support IP Whitelisting your IP address to your account credentials. 
 
-<h3>Finding your API Key (VASPID)</h3>
+<h3>Finding your VASPID (API Key)</h3>
 
 You must first request access to the API from your Skycore account manager. Once the API is turned on, you can find your API Key in the API Settings page under your 'Account' dropdown. 
 
