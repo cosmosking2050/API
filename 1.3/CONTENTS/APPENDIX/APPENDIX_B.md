@@ -6,7 +6,7 @@ __Error Code Reference__
 
 | Code | Description |
 | -------- | ----------- |
-| E100 | Invalid request. Make request via GET method or send valid XML inside 'xml' field via POST. |
+| E100 | Invalid request. Make a valid request via GET/POST/XML with all the required variables. |
 | E101 | 'action' required/Invalid Action. |
 | E102 | 'user' or 'api_key' required. |
 | E103 | 'pass' md5(password) required. |
