@@ -66,11 +66,11 @@ __Error Code Reference__
 | E357 | Could not copy PDF in slide X. |
 | E358 | Could not copy Passbook file in slide X. |
 | E400 | No Email Templates were created in this account. |
-| E401 | Invalid email. |
 | E402 | Invalid 'emailid' (or) 'emailtemplateid'. |
 | E403 | Could not send email due to missing dataset entry. |
 | E404 | No Email Campaigns were created in this account. |
 | E405 | No MMS Campaigns were created in this account. |
+| E406 | Invalid email. |
 | E503 | Internal error. |
 | E506 | 'start_date'/'end_date' is required. |
 | E507 | Invalid 'start_date'/'end_date' format. |
