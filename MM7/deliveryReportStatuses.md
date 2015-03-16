@@ -2,6 +2,8 @@
 
 ## Delivery Report Statuses
 
+The following table lists the responses returned with delivery reports.
+
 |Status|Status text|Description|
 | --------------- | ---------------- | --------------------- |
 |Deferred|Deferred|The end user's handset has retrieved the MMS header, but has not downloaded the full message from the mobile operator. The end user may still download the message at a later time.|
