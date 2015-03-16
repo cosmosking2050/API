@@ -1,4 +1,4 @@
-[Back to the Table of Contents](/MM7/README.md)
+[Back to the Table of Contents](/MM7/)
 
 ##  Submitting an MT MMS message
 
