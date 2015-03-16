@@ -1,5 +1,5 @@
 
-<h3>Unsupported elements for SubmitReq</h3>
+##Unsupported elements for SubmitReq
 
 The following MM7 request elements are not supported. These elements are ignored and never validated. Future version releases may respond with an error if unsupported element are used in SubmitReq.
 
