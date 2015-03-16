@@ -1,4 +1,4 @@
-<h3>MMS Status Codes</h3>
+##MMS Status Codes
 
 | StatusCode | StatusText | Details |
 | --------- | ------------- | ---------------------- |
