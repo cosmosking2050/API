@@ -1,7 +1,7 @@
 
 <h3>Unsupported elements for SubmitReq</h3>
 
-The following MM7 request elements are not supported by Skycore. Skycore does not validate these elements. In a future release, transactions that include such elements may be rejected with an error.
+The following MM7 request elements are not supported. These elements are ignored and never validated. Future version releases may respond with an error if unsupported element are used in SubmitReq.
 
 The elements are:
 <ul>
