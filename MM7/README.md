@@ -6,8 +6,9 @@
 
 MMS APIs are currently offered via an implementation of the MM7 protocol. MM7 is the standard protocol used by the carriers to send and receive MMS messages. It is a SOAP based protocol sent over HTTP. MM7 supports the following API actions:
 <ul>
-  <li>SubmitReq - used to send an MT Message to a device </li>
-  <li>DeliverReq - used to receive an MO message from the device </li>
+  <li>SubmitReq - used to send an MT Message to a device</li>
+  <li>DeliverReq - used to receive an MO message from the device</li>
+  <li>DeliverReq - used to receive a Delivery report for a previously submitted MT MMS Message</li>
 </ul>
 
 The use of our MM7 API is only available for accounts with a paid plan. We support submitting MMS messages with MM7 version 5.3.0 to 6.8.0. Your VASPID will be your API Key. We will issue you a VASID to submit with your message. We do not require basic authentication but we do support IP Whitelisting your IP address to your account credentials. 
@@ -24,7 +25,7 @@ Your account manager will provide you with a VASID for each shortcode. If you us
 
 The Delivery Report URL and MO URL is configured in your Account's API Settings page. You can update it at any time.  SOAP requests will be forwarded to your server every second and require an HTTP STATUS 200 response. You can also turn off the SOAP notifications to your server and download a CSV of final message statues from the User Interface.
 
-> We expect your server to accept our postback within 10 seconds by responding with a stanard HTTP STATUS 200 header (success). If establishing a connection to your Postback URL takes longer than 10 seconds, the connection will time out and be dropped.  If the connection times out or the HTTP code is not 200 we will retry the notification again five minutes later for a maximum of 5 retries per notification.
+> We expect your server to accept our postback within 10 seconds by responding with a standard HTTP STATUS 200 header (success) and proper SOAP Response with matching TransactionID. If establishing a connection to your Postback URL takes longer than 10 seconds, the connection will time out and be dropped.  If the connection times out or the HTTP code is not 200 we will retry the notification again five minutes later for a maximum of 5 retries per notification.
 
 <h4>API Limitations</h4>
 
@@ -32,7 +33,7 @@ You may have a throughput limit on your account. If your API requests exceed the
 
 <h3>Authentication</h3>
 
-Authenticating your API call can be done via a combination of the IPWhielist, VASPID and Shortcode. For shared shortcodes we will also authenticate the VASID. 
+Authenticating your API call can be done via a combination of the IP Whitelist, VASPID and Shortcode. For shared shortcodes, we will also authenticate the VASID.
 
 <h3>Special Considerations</h3>
 
