@@ -12,11 +12,11 @@ MMS APIs are currently offered via an implementation of the MM7 protocol. MM7 is
 | [DeliverReq & DeliverRsp] (/MM7/mm7DeliverMO.md) | Receive an MO message from the device. |
 | [DeliveryReportReq & DeliveryReportRsp] (/MM7/mm7DeliveryReport.md) | Receive a Delivery report for a previously submitted MT MMS Message. |
 
-The use of our MM7 API is only available for accounts with a paid plan. We support submitting MMS messages with MM7 version 5.3.0 to 6.8.0. Your VASPID will be your API Key. We will issue you a VASID to submit with your message. We do not require basic authentication but we do support IP Whitelisting your IP address to your account credentials. 
+The use of our MM7 API is only available for accounts with a paid plan. We support submitting MMS messages with MM7 version 5.3.0 to 6.8.0. Your VASPID will be your API Key. We will issue you a VASID to submit with your message. The VASID will be unique on each short code. All traffic is encrypted in transit via SSL/TLS. We authenticate using the VASPID, Shortcode and typically VASID. We support, but do not require basic authentication. For added security we can also authenticate your accounts IP address (IP Whitelisting) along with your other credentials. 
 
 __Finding your VASPID (API Key)__
 
-You must first request access to the API from your Skycore account manager. Once the API is turned on, you can find your API Key in the API Settings page under your 'Account' dropdown. 
+You must first request access to the API from your account manager. Once the API is turned on, you can find your API Key in the API Settings page under your 'Account' dropdown. Alternatively your account manager will provide you with the Key. You can reset the Key at any time to revoke access. Your username and password for your account are seperate from your API key so you do not have to worry about a account password reset affecting your services. 
 
 __Finding your VASID__
 
@@ -24,9 +24,9 @@ Your account manager will provide you with a VASID for each shortcode. If you us
 
 __Receiving Delivery Reports and MO's__
 
-The Delivery Report URL and MO URL is configured in your Account's API Settings page. You can update it at any time.  SOAP requests will be forwarded to your server every second and require an HTTP STATUS 200 response. You can also turn off the SOAP notifications to your server and download a CSV of final message statues from the User Interface.
+Your Delivery Report URL and MO URL is configured in your Account's API Settings page. You can update it at any time.  SOAP requests will be forwarded to your server every second and require an HTTP STATUS 200 and a proper MM7 SOAP Response or else we will retry. You can also turn off the SOAP notifications to your server and download a CSV of final message statues from the User Interface.
 
-> We expect your server to accept our postback within 10 seconds by responding with a standard HTTP STATUS 200 header (success) and proper SOAP Response with matching TransactionID. If establishing a connection to your Postback URL takes longer than 10 seconds, the connection will time out and be dropped.  If the connection times out or the HTTP code is not 200 we will retry the notification again five minutes later for a maximum of 5 retries per notification.
+> We expect your server to accept our postback within 10 seconds by responding with a standard HTTP STATUS 200 header (success) and proper SOAP Response with matching MM7 TransactionID and Status 1000. If establishing a connection to your Postback URL takes longer than 10 seconds, the connection will time out and be dropped.  If the connection times out or the HTTP code is not 200 we will retry the notification again five minutes later for a maximum of 5 retries per notification.
 
 __API Limitations__
 
