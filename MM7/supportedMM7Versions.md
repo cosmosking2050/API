@@ -6,8 +6,6 @@ In the submit request MT, the namespace you supply must match a supported namesp
 If the namespace is supported, ensure that the request is valid per the specification for that version.
 If the request is valid, then Skycore responds with a submit response. The submit response will use the version specified within the MM7Version parameter. The MM7 Version per account can be configured while provisioning your MM7 API account.
 
-<h3>MM7 Namespaces</h3>
-
 __Version 5.3.0__
 <ul>
     <li>http://www.3gpp.org/ftp/Specs/archive/23_series/23.140/schema/REL-5-MM7-1-0</li>
