@@ -6,11 +6,11 @@ __Overview__
 
 MMS APIs are currently offered via an implementation of the MM7 protocol. MM7 is the standard protocol used by the carriers to send and receive MMS messages. It is a SOAP based protocol sent over HTTP. MM7 supports the following API actions:
 
-<ul>
-    <li> [SubmitReq|SubmitRsp](/MM7/mm7SubmitMT.md) - send an MT Message to a device. </li>
-    <li> [DeliverReq|DeliverRsp](/MM7/mm7DeliverMO.md) - receive an MO message from the device. </li>
-    <li> [DeliveryReportReq|DeliveryReportRsp](/MM7/mm7DeliveryReport.md) - receive a Delivery report for a previously submitted MT MMS Message. </li>
-</ul>
+| Action | Functionality |
+|------------------------|----------------------------------------------------|
+| [SubmitReq & SubmitRsp] (/MM7/mm7SubmitMT.md) | Send an MT Message to a device. |
+| [DeliverReq & DeliverRsp] (/MM7/mm7DeliverMO.md) | Receive an MO message from the device. |
+| [DeliveryReportReq & DeliveryReportRsp] (/MM7/mm7DeliveryReport.md) | Receive a Delivery report for a previously submitted MT MMS Message. |
 
 The use of our MM7 API is only available for accounts with a paid plan. We support submitting MMS messages with MM7 version 5.3.0 to 6.8.0. Your VASPID will be your API Key. We will issue you a VASID to submit with your message. We do not require basic authentication but we do support IP Whitelisting your IP address to your account credentials. 
 
