@@ -74,7 +74,7 @@ __Supported MM7 SOAP envelope response elements__
 | TransactionID | The identification of the MM7 SubmitReq/SubmitRsp pair. It is located in the SOAP header. You supply this in the MM7 SubmitReq and Skycore returns it in the corresponding SubmitRsp. |
 | SubmitRsp | Identifies the message as a MM7 Submit Response. This is the message type for an MT response. |
 | MM7Version | Identifies the MM7 Version.<br/>[See all supported MM7 Versions] (/MM7/supportedMM7Versions.md) |
-| StatusCode | MT message submit acception/rejection is based on Success/Failure status code. "Success" response does not mean the message was delivered to the handset.<br/>[See all Status Codes] (/MM7/mmsStatusCodes.md) |
+| StatusCode | MT message submit acception/rejection is based on Success/Failure status code. "Success" response does not mean the message was delivered to the handset.<br/>[See all Status Codes] (/MM7/Statuses/MmsStatuses.md) |
 | StatusText | Description of the status code. |
 | MessageId | If the MT message submit is successful then this contains the Skycore generated ID of the submitted message. This ID is expected in the delivery reports relating to this message. |
 
