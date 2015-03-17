@@ -25,7 +25,7 @@ __Example__
 ```xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/" xmlns=
-"http://www.3gpp.org/ftp/Specs/archive/23_series/23.140/schema/REL-5-MM7-1-3">
+"http://www.3gpp.org/ftp/Specs/archive/23_series/23.140/schema/REL-6-MM7-1-4">
 <soap-env:Header>
    <TransactionID soap-env:mustUnderstand="1">10000001</TransactionID>
 </soap-env:Header>
@@ -98,7 +98,7 @@ Connection: Keep-Alive
 
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/" xmlns=
-"http://www.3gpp.org/ftp/Specs/archive/23_series/23.140/schema/REL-5-MM7-1-3">
+"http://www.3gpp.org/ftp/Specs/archive/23_series/23.140/schema/REL-6-MM7-1-4">
 <soap-env:Header>
    <TransactionID soap-env:mustUnderstand="1">10000001</TransactionID>
 </soap-env:Header>
