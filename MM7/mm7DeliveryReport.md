@@ -2,7 +2,7 @@
 
 ## Receiving Delivery Reports
 
-Skycore sends delivery reports using the MM7 Delivery Report message type i.e., "DeliveryReportReq". The delivery report indicates the current state of the original submit request message. We will send a delivery report to your platform only when the appropriate information is available. If the delivery report message is accepted or rejected then respond with an "DeliveryReportRsp", including a status that indicates why the delivery report was accepted/rejected. For information about the status codes returned for Delivery Reports, please [See Delivery report status] (/MM7/deliveryReportStatuses.md)
+Skycore sends delivery reports using the MM7 Delivery Report message type i.e., "DeliveryReportReq". The delivery report indicates the current state of the original submit request message. We will send a delivery report to your platform only when the appropriate information is available. If the delivery report message is accepted or rejected then respond with an "DeliveryReportRsp", including a status that indicates why the delivery report was accepted/rejected. For information about the status codes returned for Delivery Reports, please [See Delivery report status] (/MM7/Statuses/DeliveryReportStatuses.md)
 
 <h3>DeliveryReportReq</h3>
 
@@ -17,7 +17,7 @@ __MM7 delivery report request elements__
 | Sender | Your shortcode. This should match the same information that is linked in the MT configuration, and generally to the service you are providing.| Always | 
 | MessageID | Skycore generated ID linked to the submitted message. This ID was returned to your system in the initial response (SubmitRsp) to your MT MMS request. | Always |
 | Date | The date and time of the submission of the multimedia message (timestamp). Value is in UTC. | Always |
-| MMStatus | A code that indicates whether the MT message was delivered successful or failed. For information about the status codes returned for Delivery Reports, please [See Delivery report status] (/MM7/deliveryReportStatuses.md). | Always |
+| MMStatus | A code that indicates whether the MT message was delivered successful or failed. For information about the status codes returned for Delivery Reports, please [See Delivery report status] (/MM7/Statuses/DeliveryReportStatuses.md). | Always |
 | UACapabilities | Also known as MMS User Agent capabilities. This describes the capabilities of the MMS User agent of the mobile handset. | Only when provided by mobile operator |
 
 __Example__
@@ -59,7 +59,7 @@ Your system should respond to the delivery report request with a delivery report
 | TransactionID | Identifies the DeliveryReportReq/DeliveryReportRsp pair. It is part of the SOAP header. The value that was provided with the deliveryReportReq is returned. |
 | DeliveryReportRsp | Identifies the message as an MM7 Delivery Report Response. |
 | MM7Version | Identifies the MM7 Version.<br/>[See all supported MM7 Versions] (/MM7/supportedMM7Versions.md) |
-| StatusCode | A code that indicates whether you recieved the MO message request successfully. The status code for successful deliver is 1000.<br/>[See all Status Codes] (/MM7/mmsStatusCodes.md) |
+| StatusCode | A code that indicates whether you recieved the MO message request successfully. The status code for successful deliver is 1000.<br/>[See all Status Codes] (/MM7/Statuses/MmsStatuses.md) |
 | StatusText | Description of the status code. |
 
 __Example__
