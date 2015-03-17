@@ -68,7 +68,7 @@ Your system should respond to the deliver request with a deliver response contai
 | TransactionID | Identifies the DeliverReq/DeliverRsp pair. It is part of the SOAP header. The value returned is the one provided in the request. |
 | DeliverRsp | Identifies the message as a MM7 Deliver Response. |
 | MM7Version | Identifies the MM7 Version.<br/>[See all supported MM7 Versions] (/MM7/supportedMM7Versions.md) |
-| StatusCode | A code that indicates whether you recieved the MO message request successfully. The status code for successful deliver is 1000.<br/>[See all Status Codes] (/MM7/mmsStatusCodes.md) |
+| StatusCode | A code that indicates whether you recieved the MO message request successfully. The status code for successful deliver is 1000.<br/>[See all Status Codes] (/MM7/Statuses/MmsStatuses.md) |
 | StatusText | Description of the status code. |
 
 __Example__
