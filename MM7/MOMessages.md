@@ -7,7 +7,7 @@ Skycore delivers messages from end users to your platform by supplying the MMS a
 <h3>DeliverReq</h3>
 __MM7 MO deliver request elements__
 
-__ 1. HTTP header elements__
+__1. HTTP header elements__
 
 | Header Name | Description | Mandatory |
 | -------------- | ------------------- | -------- |
