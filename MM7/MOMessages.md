@@ -102,8 +102,7 @@ POST / HTTP/1.1
 SOAPAction: "http://www.3gpp.org/ftp/Specs/archive/23_series/23.140/schema/REL-6-MM7-1-4"
 Content-Type: multipart/related; start="soap-start"; type="text/xml"; 
         boundary="----=_Part_139078_1411587550.1397492135426"
-User-Agent: OpenMarket
-Host: 198.51.100.5
+Host: api.skycore.com
 Content-Length: 2546
 X-Skycore-Carrier-Id: 0001890
 Connection: Keep-Alive
