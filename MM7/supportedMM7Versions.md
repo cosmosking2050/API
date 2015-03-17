@@ -1,12 +1,12 @@
 [Back to the Table of Contents](/MM7/)
 
-##Supported MM7 Versions
+##Supported MM7 Versions & Namespaces
 
 In the submit request MT, the namespace you supply must match a supported namespace for that MM7 Version.
 If the namespace is supported, ensure that the request is valid per the specification for that version.
 If the request is valid, then Skycore responds with a submit response. The submit response will use the version specified within the MM7Version parameter. The MM7 Version per account can be configured while provisioning your MM7 API account.
 
-<h3>Supported MM7 namespaces</h3>
+<h3>MM7 Namespaces</h3>
 
 __Version 5.3.0__
 <ul>
