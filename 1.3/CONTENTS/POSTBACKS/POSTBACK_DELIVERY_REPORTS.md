@@ -19,10 +19,14 @@ https://www.skycore.com/platform/schema/postback.xsd
 
 Postback notification when an SMS is sent to the mobile network operator.
 
+SMS Success Status Codes: N201, N202
+
+SMS Failure Status Codes: E201, E202
+
 | Variable | Description |
 | -------- | ----------- |
 | ORIGIN | SMS_MT means an SMS terminated on a mobile. |
-| CODE | Code 201 means the SMS was submitted to the carrier. |
+| CODE | Code N201 means the SMS was submitted to the carrier successfully. E201 is submission failed. |
 | STATUS | Whether the message was forwarded successfully - "Message Sent" or "Message Failed". Whether the message was delivered successfully - "Message Sent/Delivered" or "Message Sent/Failed". |
 | FROM | The shortcode the message is sent from. |
 | FROM_MASK | If Alpha-Numeric Sender ID was passed. |
@@ -55,6 +59,39 @@ _N202 Example:_
     <ORIGIN>SMS_MT</ORIGIN>
     <CODE>N202</CODE>
     <STATUS>Message Sent/Delivered</STATUS>
+    <FROM>60856</FROM>
+    <FROM_MASK></FROM_MASK>
+    <TO>16503333058</TO>
+    <TRACKINGID>U01TXzgwNjc4</TRACKINGID>
+    <SPID>0001470</SPID>
+    <TIMESTAMP>2013-11-05T05:41:15-05:00</TIMESTAMP>
+    <AGGREGATORID>11529-64807-97508-73852-97658</AGGREGATORID>
+</POSTBACK>
+```
+
+_E201 Example:_
+```xml
+<?xml version='1.0'?>
+<POSTBACK>
+    <ORIGIN>SMS_MT</ORIGIN>
+    <CODE>E201</CODE>
+    <STATUS>Message Failed</STATUS>
+    <FROM>60856</FROM>
+    <FROM_MASK><FROM_MASK>
+    <TO>16503333058</TO>
+    <TRACKINGID>U01TXzgwNjc4</TRACKINGID>
+    <SPID>0001470</SPID>
+    <TIMESTAMP>2013-11-05T05:41:08-05:00</TIMESTAMP>
+</POSTBACK>
+```
+
+_E202 Example:_
+```xml
+<?xml version='1.0'?>
+<POSTBACK>
+    <ORIGIN>SMS_MT</ORIGIN>
+    <CODE>E202</CODE>
+    <STATUS>Message Sent/Failed</STATUS>
     <FROM>60856</FROM>
     <FROM_MASK></FROM_MASK>
     <TO>16503333058</TO>
@@ -217,7 +254,7 @@ _E102 Example:_
 
 ### <a name="SaveMMSStatus">SaveMMS Encoding Status</a>
 
-When MMS is saved (using API or the MMS Composer) we generate postback notification. When saving and encoding of the content is successful we generate N003. If encoding of the content failed we generate postback E002 containgin MMSID and AUDIONAME/VIDEONAME pointing to the content that failed to encode properly. When E002 is returned the MMSID should be considered corrupted.
+When MMS is saved (using API or the MMS Composer) we generate postback notification. When saving and encoding of the content is successful we generate N003. If encoding of the content failed we generate postback E002 containing MMSID and AUDIONAME/VIDEONAME pointing to the content that failed to encode properly. When E002 is returned the MMSID should be considered corrupted.
 
 | Variable | Description |
 | -------- | ----------- |
