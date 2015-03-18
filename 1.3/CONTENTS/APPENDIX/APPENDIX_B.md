@@ -7,10 +7,7 @@ __Error Code Reference__
 | Code | Description |
 | -------- | ----------- |
 | E100 | Invalid request. Make a valid request via GET/POST/XML with all the required variables. |
-| E101 | 'action' required/Invalid Action. |
-| E102 | 'user' or 'api_key' required. |
-| E103 | 'pass' md5(password) required. |
-| E104 | User Authentication FAILED. |
+| E104 | User Authentication Failed. |
 | E105 | This account has no API rights. |
 | E106 | You can call API every X seconds. |
 | E107 | This account has no rights to use this action. |
@@ -31,7 +28,6 @@ __Error Code Reference__
 | E171 | 'brandname' is required. |
 | E172 | Campaign was not created. Internal error occured. Please try again later. |
 | E173 | 'mailingaddress' is required. |
-| E201 | The receiver number is required. |
 | E212 | pagenumber is invalid. (RESERVED)|
 | E213 | itemsperpage is invalid. (RESERVED) |
 | E214 | startdate is invalid. (RESERVED) |
@@ -44,10 +40,10 @@ __Error Code Reference__
 | E229 | Content not allowed. |
 | E230 | Bad X slide duration. |
 | E241 | This content does not exist. |
-| E301 | The 'name' is required. |
-| E302 | No slides. |
-| E303 | Slide X is empty. |
-| E304 | The 'subject' is required. |
+| E311 | The 'name' is required. |
+| E312 | No slides. |
+| E313 | Slide X is empty. |
+| E314 | The 'subject' is required. |
 | E331 | Image in slide X is too big. |
 | E332 | Audio in slide X is too big. |
 | E333 | Video in slide X is too big. |
