@@ -23,7 +23,7 @@ __Postback Notification Codes__
 | N101 | Notification that MMS is sending. |
 | N102 | Notification that MMS delivery status has changed. |
 | N201 | SMS Message Sent. |
-| N202 | SMS Sent/Delivered (or) SMS Sent/Failed. |
+| N202 | SMS Delivered Successfully. |
 | N211 | SMS MO received. |
 | N301 | Number subscribed. |
 | N302 | Number unsubscribed. |
