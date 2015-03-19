@@ -1,4 +1,4 @@
-[Back to the Table of Contents](../)
+[Back to the Table of Contents](/API/)
 
 ##Skycore MM7 v1.0
 
