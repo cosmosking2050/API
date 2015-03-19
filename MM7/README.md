@@ -1,4 +1,4 @@
-[Back to the Table of Contents](../../../)
+[Back to Root](../../../)
 
 ##Skycore MM7 v1.0
 
