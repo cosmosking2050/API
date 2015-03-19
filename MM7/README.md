@@ -1,4 +1,4 @@
-[Back to the Table of Contents](/MM7/)
+[Back to the Table of Contents](../)
 
 ##Skycore MM7 v1.0
 
