@@ -14,7 +14,7 @@ __MM7 delivery report request elements__
 | ------------ | ------------------ | ------------------ |
 | TransactionID | This identifies the DeliveryReportReq/DeliveryReportRsp pair. It is Skycore generated ID. | Always |
 | DeliveryReportReq | Identifies the message as an MM7 Delivery Report. | Always |
-| MM7Version | Identifies the MM7 Version.<br/>[See all supported MM7 Versions] (/MM7/supportedMM7Versions.md) | Always |
+| MM7Version | Identifies the MM7 Version.<br/>[See all supported MM7 Versions & Namespaces] (/MM7/NAMESPACES/) | Always |
 | Recipient | The mobile phone number of the end user. This must be a valid mobile number in international format without a leading + symbol; for example: 12515550123 (US) and 447700900750 (UK). | Always |
 | Sender | Your shortcode. This should match the same information that is linked in the MT configuration, and generally to the service you are providing.| Always | 
 | MessageID | Skycore generated ID linked to the submitted message. This ID was returned to your system in the initial response (SubmitRsp) to your MT MMS request. | Always |
@@ -62,7 +62,7 @@ Your system should respond to the delivery report request with a delivery report
 | ------------- | ------------------------ |
 | TransactionID | Identifies the DeliveryReportReq/DeliveryReportRsp pair. It is part of the SOAP header. The value that was provided with the deliveryReportReq is returned. |
 | DeliveryReportRsp | Identifies the message as an MM7 Delivery Report Response. |
-| MM7Version | Identifies the MM7 Version.<br/>[See all supported MM7 Versions] (/MM7/supportedMM7Versions.md) |
+| MM7Version | Identifies the MM7 Version.<br/>[See all supported MM7 Versions & Namespaces] (/MM7/NAMESPACES/) |
 | StatusCode | A code that indicates whether you recieved the MO message request successfully. The status code for successful deliver is 1000.<br/>[See all Status Codes] (/MM7/Statuses/MmsStatuses.md) |
 | StatusText | Description of the status code. |
 
