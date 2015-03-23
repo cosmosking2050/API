@@ -25,7 +25,7 @@ The elements are:
 |ReadReply| A request for confirmation via a read report to be delivered. Boolean true/false value. Set it 'true' to receive MM7 Read Replies. |
 |ReplyApplicID| Source Application id of an application to which reply-MMs, delivery reports and read-reply reports are addressed |
 |ReplyCharging| A request for reply-charging. No value. Presence implies true |
-|replyChargingSize| In case of reply-charging the maximum size for reply-MM(s) granted to the recipient(s). Optional attribute of ReplyCharging element. Positive integer value |
-|replyDeadline| In case of reply-charging the latest time of submission of replies granted to the recipient(s) (time stamp). Optional attribute of ReplyCharging element. Date format is absolute or relative | 
+|<i>replyChargingSize</i>| In case of reply-charging the maximum size for reply-MM(s) granted to the recipient(s). Optional attribute of ReplyCharging element. Positive integer value |
+|<i>replyDeadline</i>| In case of reply-charging the latest time of submission of replies granted to the recipient(s) (time stamp). Optional attribute of ReplyCharging element. Date format is absolute or relative | 
 |ServiceCode| Information supplied by the VASP which may be included in charging/billing information. The syntax and semantics of the content of this information are out of the scope of this specification. |
 |TimeStamp|The time and date of the submission of the MM (time stamp) |
