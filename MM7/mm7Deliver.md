@@ -13,7 +13,7 @@ __1. HTTP header elements__
 
 | Header Name | Description | Mandatory |
 | -------------- | ------------------- | -------- |
-| X-Skycore-Carrier-Id | Skycore Mobile Operator ID.<br/>Examples: AT&T=0001470, Verizon=0001890.<br/>[See all Skycore Operator IDs] (/MM7/skycoreOperatorIDs.md).  | No |
+| X-Skycore-Carrier-Id | Skycore Mobile Operator ID.<br/>Examples: AT&T=0001470, Verizon=0001890.<br/>[See all Skycore Operator IDs] (/MM7/OPERATOR-IDS/skycoreOperatorIds.md).  | No |
 
 __2. Elements in the SOAP header and body__
 
