@@ -8,9 +8,9 @@ MMS APIs are currently offered via an implementation of the MM7 protocol. MM7 is
 
 | Action | Functionality |
 |------------------------|----------------------------------------------------|
-| [SubmitReq & SubmitRsp] (/MM7/mm7SubmitMT.md) | Send an MT Message to a device. |
-| [DeliverReq & DeliverRsp] (/MM7/mm7DeliverMO.md) | Receive an MO message from the device. |
-| [DeliveryReportReq & DeliveryReportRsp] (/MM7/mm7DeliveryReport.md) | Receive a Delivery report for a previously submitted MT MMS Message. |
+| [MM7_Submit] (/MM7/mm7Submit.md) | Send an MT Message to a device. |
+| [MM7_Deliver] (/MM7/mm7Deliver.md) | Receive an MO message from the device. |
+| [MM7_Delivery] (/MM7/mm7DeliveryReport.md) | Receive a Delivery report for a previously submitted MT MMS Message. |
 
 The use of our MM7 API is only available for accounts with a paid plan. We support submitting MMS messages with MM7 version 5.3.0 to 6.8.0. Your VASPID will be your API Key. We will issue you a VASID to submit with your message. The VASID will be unique on each short code. All traffic is encrypted in transit via SSL/TLS. We authenticate using the VASPID, Shortcode and typically VASID. We support, but do not require basic authentication. For added security we can also authenticate your accounts IP address (IP Whitelisting) along with your other credentials. 
 
