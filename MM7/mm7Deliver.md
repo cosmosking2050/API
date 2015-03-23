@@ -31,7 +31,7 @@ __2. Elements in the SOAP header and body__
 | Content | A reference to the content of the MM7 message. Contains an "href:cid" attribute that links to the content ID of the first attachment in the MM7 message. | Only when provided by mobile operator |
 | UACapabilities | Information about the capabilities of the MMS user agent that originated the multimedia message. In this context, the associated timestamp is not populated. | Only when provided by mobile operator |
 
-[See Unsupported elements] (/MM7/UNSUPPORTED-SOAP-ELEMENTS/MM7DeliverUnsupported.md)
+[See Unsupported elements] (/MM7/UNSUPPORTED-SOAP-ELEMENTS/mm7DeliverUnsupported.md)
 
 __Example__
 
