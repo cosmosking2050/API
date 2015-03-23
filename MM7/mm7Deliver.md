@@ -21,7 +21,7 @@ __2. Elements in the SOAP header and body__
 | ------------ | ------------------ | ------------------ |
 | TransactionID | It is a Skycore generated transaction ID.Identifies the DeliverReq/DeliverRsp pair. | Always |
 | DeliverReq | Identifies the message as an MM7 deliver request. | Always |
-| MM7Version | Identifies the MM7 Version.<br/>[See all supported MM7 Versions] (/MM7/supportedMM7Versions.md) | Always |
+| MM7Version | Identifies the MM7 Version.<br/>[See all supported MM7 Versions & Namespaces] (/MM7/NAMESPACES/) | Always |
 | Sender | The mobile phone number of the end user. This must be a valid mobile number in international format without a leading + symbol; for example: 12515550123 (US) and 447700900750 (UK). | Always |
 | Recipients | The address of the message recipients i.e., Shortcode/Longcode | Always | 
 | LinkedID | Identifier for the MO message. This is a Skycore generated ID. | Always |
@@ -71,7 +71,7 @@ Your system should respond to the deliver request with a deliver response contai
 | ------------- | ------------------------ |
 | TransactionID | Identifies the DeliverReq/DeliverRsp pair. It is part of the SOAP header. The value returned is the one provided in the request. |
 | DeliverRsp | Identifies the message as a MM7 Deliver Response. |
-| MM7Version | Identifies the MM7 Version.<br/>[See all supported MM7 Versions] (/MM7/supportedMM7Versions.md) |
+| MM7Version | Identifies the MM7 Version.<br/>[See all supported MM7 Versions & Namespaces] (/MM7/NAMESPACES/) |
 | StatusCode | A code that indicates whether you recieved the MO message request successfully. The status code for successful deliver is 1000.<br/>[See all Status Codes] (/MM7/Statuses/MmsStatuses.md) |
 | StatusText | Description of the status code. |
 
