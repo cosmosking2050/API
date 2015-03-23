@@ -11,8 +11,8 @@ The following table lists the responses returned with delivery reports.
 |Expired|Expired|The mobile operator could not contact the handset before reaching the expiry time. Each mobile operator has their own expiry times after which they will stop trying to send messages such as an MMS.|
 |Forwarded|Forwarded|The end user forwarded the MMS to another address without retrieving it.|
 |Indeterminate|Indeterminate|The mobile operator could not determine if the message was delivered correctly. This occurs when the handset cannot return an MMS delivery report.|
-|NotSupported|NotSupported|NotSupported|
-|Rejected|Rejected|Other errors. Technical issues. System/Server errors. Content blocked by Mobile Operator. Exceeded MMS Size. etc|
+|NotSupported|NotSupported|Request is not supported|
+|Rejected|Rejected|Technical issues/System or Server errors/Content blocked by Mobile Operator/Exceeded MMS Size/ Other errors |
 |Retrieved|Success|The message was successfully sent to the handset.|
-|Unreachable|Unreachable|Unreachable|
+|Unreachable|Unreachable|Server/Endpoint is Unreachable|
 |Unrecognized|Unrecognized|The end user's handset cannot download the MMS.|
