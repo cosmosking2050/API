@@ -30,6 +30,7 @@ __MM7_Submit.REQ__
 |ServiceCode| Information supplied by the VASP which may be included in charging/billing information. The syntax and semantics of the content of this information are out of the scope of this specification. |
 |TimeStamp|The time and date of the submission of the MM (time stamp) |
 
+
 __MM7_Deliver.REQ__
 
 | Element | Description |
@@ -41,3 +42,14 @@ __MM7_Deliver.REQ__
 |ReplyApplicID| If present, this information element indicates a “reply path”, i.e. the identifier of the application to which delivery reports, read-reply reports and reply-MMs are addressed if any |
 |ReplyChargingID| In case of reply-charging when the reply-MM is submitted within the MM7_deliver.REQ this is the identification of the original MM that is replied to. |
 |SenderSPI| The SPI of the MM originator |
+
+__MM7_DeliveryReport.REQ__
+
+| Element | Description |
+| ---------- | -------------------------- |
+|ApplicID| The presence of this information element indicates that this abstract message shall be provided to an application residing on an MMS User Agent. It contains the identification of the destination application|
+|AuxApplicInfo| If present, this information element indicates additional application/implementation specific control information |
+|MMSRelayServerID|Identifier of the MMS Relay/Server|
+|ReplyApplicID| If present, this information element indicates a “reply path”, i.e. the identifier of the application to which delivery reports, read-reply reports and reply-MMs are addressed if any |
+
+
