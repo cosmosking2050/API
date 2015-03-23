@@ -22,7 +22,7 @@ __MM7 delivery report request elements__
 | MMStatus | A code that indicates whether the MT message was delivered successful or failed. For information about the status codes returned for Delivery Reports, please [See Delivery report status] (/MM7/Statuses/DeliveryReportStatuses.md). | Always |
 | UACapabilities | Also known as MMS User Agent capabilities. This describes the capabilities of the MMS User agent of the mobile handset. | Only when provided by mobile operator |
 
-[See Unsupported elements] (/MM7/UNSUPPORTED-SOAP-ELEMENTS/mm7DeliveryReportUnsupported.md)
+[See Unsupported elements] (/MM7/UNSUPPORTED-ELEMENTS/mm7DeliveryReportUnsupported.md)
 
 __Example__
 
