@@ -1,4 +1,6 @@
-The following MM7 request elements are not supported. These elements are ignored and never validated. Future version releases may respond with an error if unsupported element are used in SubmitReq.
+[Back to the Table of Contents](/MM7/UNSUPPORTED-SOAP-ELEMENTS/)
+
+##Unsupported MM7 SOAP Elements
 
 __MM7_Submit.REQ__
 
