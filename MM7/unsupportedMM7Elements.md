@@ -4,12 +4,12 @@
 
 The following MM7 request elements are not supported. These elements are ignored and never validated. Future version releases may respond with an error if unsupported element are used in SubmitReq.
 
-The elements are:
+__MM7_Submit.REQ__
 
 | Element | Description |
 | ----------- | -------------------------------- |
-|ApplicID| Application id of the destination application |
-|AuxApplicInfo| Auxiliary application addressing information |
+|ApplicID| This information element contains the identification of the destination application. Upon reception, the recipient MMS VAS Application shall provide this MM7_retrieve.REQ to the specified destination application |
+|AuxApplicInfo| If present, this information element indicates additional application/implementation specific control information |
 |ChargedParty| An indication which party is expected to be charged for an MM submitted by the VASP, e.g. the sending, receiving, both parties third party or neither. Possible values are "Sender", "Recipient", "Both", "Neither" |
 |ChargedPartyID| The address/id of the third party which is expected to pay for the MM |
 |ContentClass| Classifies the content of the MM to the smallest content class to which the MM belongs. Possible values are "text", "image-basic", "image-rich", "video-basic", "video-rich", "megapixel", "content-basic", "content-rich" |
@@ -23,9 +23,21 @@ The elements are:
 |MessageClass| Class of the MM (e.g. "Informational", "Advertisement", "Auto") |
 |Priority| The priority (importance) of the message. Possible values are "High", "Normal", "Low" |
 |ReadReply| A request for confirmation via a read report to be delivered. Boolean true/false value. Set it 'true' to receive MM7 Read Replies. |
-|ReplyApplicID| Source Application id of an application to which reply-MMs, delivery reports and read-reply reports are addressed |
+|ReplyApplicID| If present, this information element indicates a "reply path". It contains the application identifier which shall be used by the recipient MMS VAS Application when a reply-MM or a read-reply report is created |
 |ReplyCharging| A request for reply-charging. No value. Presence implies true |
 |<i>replyChargingSize</i>| In case of reply-charging the maximum size for reply-MM(s) granted to the recipient(s). Optional attribute of ReplyCharging element. Positive integer value |
 |<i>replyDeadline</i>| In case of reply-charging the latest time of submission of replies granted to the recipient(s) (time stamp). Optional attribute of ReplyCharging element. Date format is absolute or relative | 
 |ServiceCode| Information supplied by the VASP which may be included in charging/billing information. The syntax and semantics of the content of this information are out of the scope of this specification. |
 |TimeStamp|The time and date of the submission of the MM (time stamp) |
+
+__MM7_Deliver.REQ__
+
+| Element | Description |
+| ---------- | -------------------------- |
+|ApplicID| The presence of this information element indicates that this abstract message shall be provided to an application residing on an MMS User Agent. It contains the identification of the destination application|
+|AuxApplicInfo| If present, this information element indicates additional application/implementation specific control information |
+|MMSRelayServerID|Identifier of the MMS Relay/Server|
+|RecipientSPI| The SPI of the intended MM recipient, in case the MM was delivered to VASP based on the recipient address |
+|ReplyApplicID| If present, this information element indicates a “reply path”, i.e. the identifier of the application to which delivery reports, read-reply reports and reply-MMs are addressed if any |
+|ReplyChargingID| In case of reply-charging when the reply-MM is submitted within the MM7_deliver.REQ this is the identification of the original MM that is replied to. |
+|SenderSPI| The SPI of the MM originator |
