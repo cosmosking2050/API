@@ -1,6 +1,6 @@
 [Back to the Table of Contents](/MM7/)
 
-## Receiving Delivery Reports
+## MM7_DeliveryReport (Receive Delivery Reports for previously submitted MT)
 
 Skycore sends delivery reports using the MM7 Delivery Report message type i.e., "DeliveryReportReq". The delivery report indicates the current state of the original submit request message. We will send a delivery report to your platform only when the appropriate information is available. If the delivery report message is accepted or rejected then respond with an "DeliveryReportRsp", including a status that indicates why the delivery report was accepted/rejected. For information about the status codes returned for Delivery Reports, please [See Delivery report status] (/MM7/Statuses/DeliveryReportStatuses.md)
 
