@@ -5,25 +5,27 @@
 The following MM7 request elements are not supported. These elements are ignored and never validated. Future version releases may respond with an error if unsupported element are used in SubmitReq.
 
 The elements are:
-<ul>
-    <li>ApplicID</li>
-    <li>AuxApplicInfo</li>
-    <li>ChargedPartyId</li>
-    <li>ContentClass</li>
-    <li>DeliveryCondition</li>
-    <li>DeliveryReport</li>
-    <li>DistributionIndicator</li>
-    <li>DRMContent</li>
-    <li>EarliestDeliveryTime</li>
-    <li>ExpiryDate</li>
-    <li>LinkedID (for MT message delivery and delivery reports; MO MMS deliveries will contain this element)</li>
-    <li>MessageClass</li>
-    <li>Priority</li>
-    <li>ReadCharging</li>
-    <li>ReadReply</li>
-    <li>ReplyApplicID</li>
-    <li>replyChargingSize (attribute of ReplyCharging element)</li>
-    <li>replyDeadline</li>
-    <li>ServiceCode</li>
-    <li>TimeStamp</li>
-</ul>
+
+| Element | Description |
+| ----------- | -------------------------------- |
+|ApplicID| Application id of the destination application |
+|AuxApplicInfo| Auxiliary application addressing information |
+|ChargedParty| An indication which party is expected to be charged for an MM submitted by the VASP, e.g. the sending, receiving, both parties third party or neither. Possible values are "Sender", "Recipient", "Both", "Neither" |
+|ChargedPartyID| The address/id of the third party which is expected to pay for the MM |
+|ContentClass| Classifies the content of the MM to the smallest content class to which the MM belongs. Possible values are "text", "image-basic", "image-rich", "video-basic", "video-rich", "megapixel", "content-basic", "content-rich" |
+|DeliveryCondition| If the condition is met the MM shall be delivered to the recipient MMS User Agent, otherwise the MM shall be discarded. The initial values are: MMS capable only; HPLMN only; any other values can be added based on bilateral agreements between the MMS Relay/Server operator and the VASP. |
+|DeliveryReport| A request for delivery report. Boolean value true/false. |
+|DistributionIndicator| If set to 'false' the VASP has indicated that content of the MM is not intended for redistribution. If set to 'true' the VASP has indicated that content of the MM can be redistributed. Boolean value true/false |
+|DRMContent| Indicates if the MM contains DRM-protected content. Boolean value true/false |
+|EarliestDeliveryTime| The earliest desired time of delivery of the MM to the recipient (time stamp). Date format is absolute or relative |
+|ExpiryDate| The desired time of expiry for the MM (time stamp). Date format is absolute or relative |
+|LinkedID| This identifies a correspondence to a previous valid message delivered to the VASP.  |
+|MessageClass| Class of the MM (e.g. "Informational", "Advertisement", "Auto") |
+|Priority| The priority (importance) of the message. Possible values are "High", "Normal", "Low" |
+|ReadReply| A request for confirmation via a read report to be delivered. Boolean true/false value. Set it 'true' to receive MM7 Read Replies. |
+|ReplyApplicID| Source Application id of an application to which reply-MMs, delivery reports and read-reply reports are addressed |
+|ReplyCharging| A request for reply-charging. No value. Presence implies true |
+|replyChargingSize| In case of reply-charging the maximum size for reply-MM(s) granted to the recipient(s). Optional attribute of ReplyCharging element. Positive integer value |
+|replyDeadline| In case of reply-charging the latest time of submission of replies granted to the recipient(s) (time stamp). Optional attribute of ReplyCharging element. Date format is absolute or relative | 
+|ServiceCode| Information supplied by the VASP which may be included in charging/billing information. The syntax and semantics of the content of this information are out of the scope of this specification. |
+|TimeStamp|The time and date of the submission of the MM (time stamp) |
