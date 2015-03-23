@@ -19,7 +19,7 @@ For the best throughput performance, you should include the mobile operator ID i
 
 | Header Name | Description | Mandatory |
 | -------------- | ------------------- | -------- |
-| X-Skycore-Carrier-Id | Skycore Mobile Operator ID.<br/>Examples: AT&T=0001470, Verizon=0001890.<br/>[See all Skycore Operator IDs] (/MM7/skycoreOperatorIDs.md).  | No |
+| X-Skycore-Carrier-Id | Skycore Mobile Operator ID.<br/>Examples: AT&T=0001470, Verizon=0001890.<br/>[See all Skycore Operator IDs] (/MM7/OPERATOR-IDS/skycoreOperatorIds.md).  | No |
 
 <h3>MM7_Submit.REQ</h3>
 __Supported MM7 SOAP envelope request elements__
