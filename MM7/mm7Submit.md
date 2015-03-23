@@ -1,6 +1,6 @@
 [Back to the Table of Contents](/MM7/)
 
-## MM7_Submit ( Submitting an MT MMS message )
+## MM7_Submit (Submit MMS MT)
 
 To send a multimedia message, you send an MT message as a submit request to Skycore and supply the multimedia message as the payload. 
 When Skycore accepts your MT message, we respond to you with a success status using "SubmitRsp" response. 
