@@ -1,5 +1,5 @@
 
-[Back to the Table of Contents](/MM7/)
+[Back to the Table of Contents](/MM7/NAMESPACES/)
 
 ##Version 5.3.0 - Supported Namespaces
 
