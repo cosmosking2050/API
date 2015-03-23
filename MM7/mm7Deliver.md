@@ -6,7 +6,7 @@ __Receive MMS MO submitted by end users to your platform__
 
 Skycore delivers messages from end users to your platform by supplying the MMS as the payload of the request message. The deliver request is made using MM7 SOAP "DeliverReq". Message include identification of the request that is used by your platform to correlate a response to the message. Your platform must reply with a SOAP response "DeliverRsp", indicating that the message was successfully received and will be processed. If you cannot identify the requested content or if the delivered content does not fulfill the conditions you'd expect, then your platform should indicate a failure in the "DeliverRsp" status field.
 
-<h3>DeliverReq</h3>
+<h3>MM7_Deliver.REQ</h3>
 __MM7 MO deliver request elements__
 
 __1. HTTP header elements__
@@ -62,7 +62,7 @@ __Example__
 </soap-env:Envelope>
 ```
 
-<h3>DeliverRsp</h3>
+<h3>MM7_Deliver.RES</h3>
 __MM7 MO deliver response elements__
 
 Your system should respond to the deliver request with a deliver response containing the elements described in the following table.
