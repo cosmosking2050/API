@@ -5,7 +5,7 @@
 __MM7_Submit.REQ__
 
 | Element | Behavior | Description |
-| ----------- | -------------------------------- |
+| ------- | ---- | ----------------|
 | ApplicID | Ignored | This information element contains the identification of the destination application. Upon reception, the recipient MMS VAS Application shall provide this MM7_retrieve.REQ to the specified destination application |
 | AuxApplicInfo | Ignored | If present, this information element indicates additional application/implementation specific control information |
 | ChargedParty | Stripped | An indication which party is expected to be charged for an MM submitted by the VASP, e.g. the sending, receiving, both parties third party or neither. Possible values are "Sender", "Recipient", "Both", "Neither" |
@@ -26,4 +26,3 @@ __MM7_Submit.REQ__
 | <i>replyChargingSize</i> | Stripped | In case of reply-charging the maximum size for reply-MM(s) granted to the recipient(s). Optional attribute of ReplyCharging element. Positive integer value |
 | <i>replyDeadline</i> | Stripped | In case of reply-charging the latest time of submission of replies granted to the recipient(s) (time stamp). Optional attribute of ReplyCharging element. Date format is absolute or relative | 
 | ServiceCode | Ignored | Information supplied by the VASP which may be included in charging/billing information. The syntax and semantics of the content of this information are out of the scope of this specification. |
-|
