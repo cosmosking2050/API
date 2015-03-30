@@ -16,7 +16,7 @@ __MM7_Submit.REQ__
 | DistributionIndicator | Ignored | If set to 'false' the VASP has indicated that content of the MM is not intended for redistribution. If set to 'true' the VASP has indicated that content of the MM can be redistributed. Boolean value true/false |
 | DRMContent | Stripped | Indicates if the MM contains DRM-protected content. Boolean value true/false |
 | EarliestDeliveryTime | Ignored | The earliest desired time of delivery of the MM to the recipient (time stamp). Date format is absolute or relative |
-| ExpiryDate | Rewritten | The desired time of expiry for the MM (time stamp). Date format is absolute or relative |
+| ExpiryDate | Defaulted 3 days | The desired time of expiry for the MM (time stamp). Date format is absolute or relative |
 | LinkedID | Stripped | This identifies a correspondence to a previous valid message delivered to the VASP.  |
 | MessageClass | Ignored | Class of the MM (e.g. "Informational", "Advertisement", "Auto") |
 | Priority | Ignored | The priority (importance) of the message. Possible values are "High", "Normal", "Low" |
