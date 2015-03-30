@@ -36,6 +36,7 @@ __Supported MM7 SOAP envelope request elements__
 | Subject | Title of the whole multimedia message. Recommended size is 80 characters. | No |
 | Content | Content of the multimedia message. href:cid attribute links to attachment. | Yes |
 | allowAdaptations | Indicates if you wish to allow the mobile operator to re-encode (transcode) the content to make the content more suitable to the target handset. Each mobile operator may choose to obey or ignore this field; for example, some mobile operators assume or require by default the option to transcode content. AllowAdaptations is an attribute of Content element. The value must be Boolean (either true or false). The default is true. | No |
+|TimeStamp|The time and date of the submission of the MM (time stamp) |
 
 [See Unsupported elements] (/MM7/UNSUPPORTED-ELEMENTS/mm7SubmitUnsupported.md)
 
