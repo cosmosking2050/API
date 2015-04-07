@@ -26,3 +26,4 @@ __MM7_Submit.REQ__
 | <i>replyChargingSize</i> | Stripped | In case of reply-charging the maximum size for reply-MM(s) granted to the recipient(s). Optional attribute of ReplyCharging element. Positive integer value |
 | <i>replyDeadline</i> | Stripped | In case of reply-charging the latest time of submission of replies granted to the recipient(s) (time stamp). Optional attribute of ReplyCharging element. Date format is absolute or relative | 
 | ServiceCode | Pass Through | Information supplied by the VASP which may be included in charging/billing information. The syntax and semantics of the content of this information are out of the scope of this specification. |
+| TimeStamp | Defaul to Submit time | The time and date of the submission of the MM (time stamp) | 
