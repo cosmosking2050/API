@@ -12,11 +12,11 @@ __MM7_Submit.REQ__
 | ChargedPartyID | Stripped | The address/id of the third party which is expected to pay for the MM |
 | ContentClass | Stripped | Classifies the content of the MM to the smallest content class to which the MM belongs. Possible values are "text", "image-basic", "image-rich", "video-basic", "video-rich", "megapixel", "content-basic", "content-rich" |
 | DeliveryCondition | Stripped | If the condition is met the MM shall be delivered to the recipient MMS User Agent, otherwise the MM shall be discarded. The initial values are: MMS capable only; HPLMN only; any other values can be added based on bilateral agreements between the MMS Relay/Server operator and the VASP. |
-| DeliveryReport | Default true | A request for delivery report. Boolean value true/false. Ask your account manager to turn off delivery reports. |
+| DeliveryReport | Default to true | A request for delivery report. Boolean value true/false. Ask your account manager to turn off delivery reports. |
 | DistributionIndicator | Stripped | If set to 'false' the VASP has indicated that content of the MM is not intended for redistribution. If set to 'true' the VASP has indicated that content of the MM can be redistributed. Boolean value true/false |
 | DRMContent | Stripped | Indicates if the MM contains DRM-protected content. Boolean value true/false |
 | EarliestDeliveryTime | Stripped | The earliest desired time of delivery of the MM to the recipient (time stamp). Date format is absolute or relative |
-| ExpiryDate | Defaulted 3 days | The desired time of expiry for the MM (time stamp). Date format is absolute or relative |
+| ExpiryDate | Default to 3 days | The desired time of expiry for the MM (time stamp). Date format is absolute or relative |
 | LinkedID | Stripped | This identifies a correspondence to a previous valid message delivered to the VASP.  |
 | MessageClass | Pass Through | Class of the MM (e.g. "Informational", "Advertisement", "Auto") |
 | Priority | Pass Through | The priority (importance) of the message. Possible values are "High", "Normal", "Low" |
