@@ -10,17 +10,17 @@
 |2002|Address Error|Invalid Address|
 |2004|Multimedia refused|Carrier refuses content|
 |2007|Unable to parse request|Message format corrupt|
-|2300|Account disabled|Your account is no longer provisioned for MMS|
-|2301|Account not Provisioned for MM7|Your account is not provisioned for MM7 API|
-|2400|Content length exceeded maximum supported request size|Reduce the size of the content you are sending.|
-|2401|Invalid sender identification|Sender identification invalid or missing.|
-|2402|Invalid VASID|The VASID is your ServiceID|
-|2403|Invalid source address|The Shortcode may be incorrect or not provisioned|
-|2404|Invalid VASPID|The VASPID is your API Key|
-|2405|Message rejected, reply charging not supported|Message rejected, reply charging not supported|
-|2406|Invalid carrier|Invalid carrier ID.|
-|2407|Missing carrier ID|Carrier ID is required to be passed|
-|2408|Unable to authenticate|Ensure the HTTP username and password you have specified are correct and formatted properly within the Authorization header.|
+|2550|Account disabled|Your account is no longer provisioned for MMS|
+|2551|Account not Provisioned for MM7|Your account is not provisioned for MM7 API|
+|2560|Content length exceeded maximum supported request size|Reduce the size of the content you are sending.|
+|2561|Invalid sender identification|Sender identification invalid or missing.|
+|2562|Invalid VASID|The VASID is your ServiceID|
+|2563|Invalid source address|The Shortcode may be incorrect or not provisioned|
+|2564|Invalid VASPID|The VASPID is your API Key|
+|2565|Message rejected, reply charging not supported|Message rejected, reply charging not supported|
+|2566|Invalid carrier|Invalid carrier ID.|
+|2567|Missing carrier ID|Carrier ID is required to be passed|
+|2568|Unable to authenticate|Ensure the HTTP username and password you have specified are correct and formatted properly within the Authorization header.|
 |2500|Missing or Invalid HTTP header Content-Length or Content-Type|Ensure the HTTP Content-Length and Content Type header are included and valid.|
 |2502|Missing destination address|Ensure the recipient is specified correctly for the MM7 version that is used.|
 |2503|Multiple destination addresses not supported|Multiple recipients not supported. Instead, create multiple messages|
@@ -38,8 +38,8 @@
 |3001|Number blacklisted|Phone number is blacklisted for receiving messages do not retry|
 |3002|Charged party not supported|Charged Party not supported|
 |3003|Multimedia download failed|Using URLs in the MM7 the fetch of content failed or took too long|
-|3100|Throughput exceeded|Throughput exceeded please retry later|
-|3200|Provisioning issue|Provisioning problem, please contact your account manager|
+|3510|Throughput exceeded|Throughput exceeded please retry later|
+|3520|Provisioning issue|Provisioning problem, please contact your account manager|
 |3500|Timeout|Carrier gateway timeout|
 |4000|General service error|Carrier rejects the message due to a general service error|
 |4002|Unsuported MM7 version|The carrier does not support this MM7 version|
