@@ -25,6 +25,7 @@ __Request: XML__
     <MMSID>mmsId</MMSID>
     <TO>phone</TO>
     <FROM>shortcode</FROM>
+   *<FROM_MASK>shortcodeMask</FROM_MASK>
     <CAMPAIGNREF>campaignId</CAMPAIGNREF>
     <DDMTITLE>DDMTitle</DDMTITLE>
     <DDMTEXT>DDMText</DDMTEXT>
@@ -107,6 +108,8 @@ __Request: XML__
         <RELTEXT10>relText10</RELTEXT10>
     </PASSDATA>    
 </REQUEST>
+
+*ShortcodeMask (Alphanumeric sender) is allowed only in few countries. Not supported in United States.
 ```
 
 __Request: GET__
