@@ -12,6 +12,7 @@ Prototype:
     <API_KEY>apiKey</API_KEY>
     <TO>Receivers number</TO>
     <FROM>shortcode</FROM>
+   *<FROM_MASK>shortcodeMask</FROM_MASK>
     <OPERATORID>OPERATORID</OPERATORID>
     <CAMPAIGNREF>CampaignID</CAMPAIGNREF>
     <SUBJECT>MMS Subject</SUBJECT>
@@ -45,6 +46,8 @@ Prototype:
         ...
     </SLIDE>
 </REQUEST>
+
+* ShortcodeMask: Alphanumeric sender is allowed only in few countries. Not supported with in United States.
 ```
 
 __Request Parameters:__
