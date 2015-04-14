@@ -47,7 +47,7 @@ Prototype:
     </SLIDE>
 </REQUEST>
 
-* ShortcodeMask: Alphanumeric sender is allowed only in few countries. Not supported with in United States.
+*ShortcodeMask (Alphanumeric sender) is allowed only in few countries. Not supported in United States.
 ```
 
 __Request Parameters:__
