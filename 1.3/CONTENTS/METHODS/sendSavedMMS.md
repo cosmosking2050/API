@@ -25,6 +25,7 @@ __Request:__
     <MMSID>MMSID</MMSID>
     <TO>Number</TO>
     <FROM>Shortcode</FROM>
+   *<FROM_MASK>shortcodeMask</FROM_MASK>
     <OPERATORID>OPERATORID</OPERATORID>
     <CAMPAIGNREF>CampaignID</CAMPAIGNREF>
     <DDMTITLE>DDM Title</DDMTITLE>
@@ -42,6 +43,8 @@ __Request:__
         ...
     </DATA>        
 </REQUEST>
+
+*ShortcodeMask (Alphanumeric sender) is allowed only in few countries. Not supported in United States.
 ```
 
 __Request Parameters:__
