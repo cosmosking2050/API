@@ -12,7 +12,7 @@ MMS APIs are currently offered via an implementation of the MM7 protocol. MM7 is
 | [MM7_Deliver] (/MM7/mm7Deliver.md) | Receive an MO message from the device. |
 | [MM7_Delivery] (/MM7/mm7DeliveryReport.md) | Receive a Delivery report for a previously submitted MT MMS Message. |
 
-The use of our MM7 API is only available for accounts with a paid plan. We support submitting MMS messages with MM7 version 5.3.0 to 6.8.0. Your VASPID will be your API Key. We will issue you a VASID to submit with your message. The VASID will be unique on each short code. All traffic is encrypted in transit via SSL/TLS. We authenticate using the VASPID, Shortcode and typically VASID. We support, but do not require basic authentication. For added security we can also authenticate your accounts IP address (IP Whitelisting) along with your other credentials. 
+The use of our MM7 API is only available for accounts with a paid plan. We support submitting MMS messages with MM7 version 5.3.0 to 6.8.0. Your VASPID will be your API Key. We will also issue you a VASID to submit with your message. The VASID will be unique on each short code. All traffic is encrypted in transit via SSL/TLS. 
 
 __Finding your VASPID (API Key)__
 
@@ -34,7 +34,7 @@ You may have a throughput limit on your account. If your API requests exceed the
 
 __Authentication__
 
-We authenticate your "account" with your VASPID. Then we use the VASID to authenticates access to a short code on a particular carrier. We can optionally whitelist your IP or apply a "basic authorization" username and password requirement to your request which adds an additional level of security to your request. 
+We authenticate your account with your VASPID and we authenticate your short code, service and carrier reach with the VASID.  We can optionally whitelist your IP Address or apply a "basic authorization" username and password requirement to your account which adds an additional level of security to your request. 
 
 __Special Considerations__
 
