@@ -34,7 +34,7 @@ You may have a throughput limit on your account. If your API requests exceed the
 
 __Authentication__
 
-Authenticating your API call can be done via a combination of the IP Whitelist, VASPID and Shortcode. For shared shortcodes, we will also authenticate the VASID.
+We authenticate your "account" with your VASPID. Then we use the VASID to authenticates access to a short code on a particular carrier. We can optionally whitelist your IP or apply a "basic authorization" username and password requirement to your request which adds an additional level of security to your request. 
 
 __Special Considerations__
 
