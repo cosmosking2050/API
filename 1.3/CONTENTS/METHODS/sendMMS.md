@@ -45,6 +45,7 @@ Prototype:
     <SLIDE>
         ...
     </SLIDE>
+    <FALLBACKSMSTEXT>This text replaces mms subject when MMS is sent as SMS link</FALLBACKSMSTEXT>
 </REQUEST>
 
 *ShortcodeMask (Alphanumeric sender) is allowed only in few countries. Not supported in United States.
