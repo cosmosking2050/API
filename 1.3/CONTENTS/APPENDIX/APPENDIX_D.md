@@ -32,7 +32,7 @@ __Postback Notification Codes__
 | N401 | MMS MO received successfully. |
 | N501 | Notification that Device Discovery Message is sending. |
 | N502 | Notification that Device Discovery Message delivery status has changed. |
-| N801 | Pass was generated succesfully. |
+| N801 | Pass was generated successfully. |
 | N802 | Some error occurred. Pass generation failed. |
 | N803 | Maximum limit for pass generation reached. |
 | N811 | User Account do not have enough credits to generate the pass. |
