@@ -54,7 +54,7 @@ __Example__
                 <VASPID>skfdjslkjfdslkfj434das</VASPID>
                 <VASID>126273</VASID>
                 <SenderAddress>
-                    <Number>111122</Number>
+                    <ShortCode>111122</ShortCode>
                 </SenderAddress>
             </SenderIdentification>
             <Recipients>
@@ -160,7 +160,7 @@ Content-ID: <mm7-start>
                 <VASPID>skfdjslkjfdslkfj434das</VASPID>
                 <VASID>126273</VASID>
                 <SenderAddress>
-                    <Number>111122</Number>
+                    <ShortCode>111122</ShortCode>
                 </SenderAddress>
             </SenderIdentification>
             <Recipients>
