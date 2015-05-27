@@ -145,53 +145,53 @@ X-Skycore-Carrier-Id: 0001890
 Expect: 100-continue
 
 --mainBoundary
-Content-Type: text/xml
+Content-Type: text/xml; charset=utf-8
 Content-ID: <mm7-start>
 
-<?xml version="1.0" encoding="UTF-8"?>
-<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/">
-    <soap-env:Header>
-        <TransactionID xmlns="http://www.3gpp.org/ftp/Specs/archive/23_series/23.140/schema/REL-6-MM7-1-4" soap-env:mustUnderstand="1">1000001</TransactionID>
-    </soap-env:Header>
-    <soap-env:Body>
-        <SubmitReq xmlns="http://www.3gpp.org/ftp/Specs/archive/23_series/23.140/schema/REL-6-MM7-1-4">
+<?xml version="1.0" encoding="utf-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+    <SOAP-ENV:Header>
+        <TransactionID xmlns="http://www.3gpp.org/ftp/Specs/archive/23_series/23.140/schema/REL-6-MM7-1-4" SOAP-ENV:mustUnderstand="1">555e29f8879be</TransactionID>
+    </SOAP-ENV:Header>
+    <SOAP-ENV:Body>
+        <SubmitReq>
             <MM7Version>6.8.0</MM7Version>
+            <DeliveryReport>true</DeliveryReport>
             <SenderIdentification>
-                <VASPID>skfdjslkjfdslkfj434das</VASPID>
-                <VASID>126273</VASID>
+                <VASPID>spUsdstW2u6GbvnMOsdseXrBa7NNLwTdKL</VASPID>
+                <VASID>61295</VASID>
                 <SenderAddress>
                     <ShortCode>111122</ShortCode>
                 </SenderAddress>
             </SenderIdentification>
             <Recipients>
                 <To>
-                    <Number>16172383232</Number>
+                    <Number>16179593069</Number>
                 </To>
             </Recipients>
             <Subject>My first MM7 Message</Subject>
-            <Content allowAdaptations="false" href="cid:generic" />
+            <ExpiryDate>2015-05-24T18:54:48+00:00</ExpiryDate>
+            <TimeStamp>2015-05-21T18:54:48+00:00</TimeStamp>
+            <Content allowAdaptations="false" href="cid:generic_content_id"/>
         </SubmitReq>
-    </soap-env:Body>
-</soap-env:Envelope>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
 
 --mainBoundary
-Content-Type: multipart/mixed; boundary="subBoundary"
-Content-ID: <mm7Content>
+Content-Type: multipart/related; start="<mms.smil>";
+         boundary="subBoundary"; type="text/xml"
+Content-ID: <generic_content_id>
 
 --subBoundary
-Content-Type: text/plain
-Content-Transfer-Encoding: binary
-Content-ID: text.txt
-Hi! This is my first MMS MT message.
+Content-Type: text/plain; charset=utf-8
+Content-ID: <132c4ca56a209475>
 
+MM7 Test Text
 --subBoundary
-Content-Type: image/png
-Content-Transfer-Encoding: base64
-Content-ID: image.png
-iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0
-U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFUSURBVDjLrZM/SAJxGIZdWwuDlnCplkAE
-m1zkaIiGFFpyMIwGK5KGoK2lphDKkMDg3LLUSIJs...
+Content-Type: application/smil; charset=utf-8
+Content-ID: <mms.smil>
 
+<?xml version="1.0" encoding="UTF-8"?><smil><head><layout><root-layout width="100%" height="100%"/><region id="Text" top="50%" left="0" height="50%" width="100%" fit="hidden"/></layout></head><body><par><text src="cid:132c4ca56a209475" region="Text"/></par></body></smil>
 --subBoundary--
 
 --mainBoundary--
