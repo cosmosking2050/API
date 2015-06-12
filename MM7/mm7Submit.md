@@ -17,6 +17,11 @@ If you do not supply the mobile operator, Skycore would look it up (this may be 
 The same mobile operator ID is returned in the HTTP header of delivery reports and MO requests. 
 For the best throughput performance, you should include the mobile operator ID in each request, otherwise an operator lookup is needed before we can forward the message to the mobile operator.
 
+__SMIL is Required__
+
+SMIL is required in all the SubmitReq MM7 Requests. Its an XML based language to write interactive multimedia presentations. 
+More information about SMIL can be found here: http://www.w3.org/TR/SMIL/
+
 | Header Name | Description | Mandatory |
 | -------------- | ------------------- | -------- |
 | X-Skycore-Carrier-Id | Skycore Mobile Operator ID.<br/>Examples: AT&T=0001470, Verizon=0001890.<br/>[See all Skycore Operator IDs] (/MM7/OPERATOR-IDS/skycoreOperatorIds.md).  | No |
