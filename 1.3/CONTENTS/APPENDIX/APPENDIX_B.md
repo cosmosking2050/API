@@ -189,3 +189,53 @@ __Error Code Reference__
 | E916 | Sending to this 'email' was previously a bounce-back. |
 | E917 | This 'email' has filed a SPAM complaint on one or more email campaigns owned by this account/user. |
 | E918 | This 'email' was previously opted out by this account/user. |
+| E950 | 'ibeaconuuid1', 'ibeaconmajor1', 'ibeaconminor1' and 'ibeacontext1' values are not accepted. iBeacon1 field has to be set as dynamic in the Pass Template. |
+| E951 | 'ibeaconuuid2', 'ibeaconmajor2', 'ibeaconminor2' and 'ibeacontext2' values are not accepted. iBeacon2 field has to be set as dynamic in the Pass Template. |
+| E952 | 'ibeaconuuid3', 'ibeaconmajor3', 'ibeaconminor3' and 'ibeacontext3' values are not accepted. iBeacon3 field has to be set as dynamic in the Pass Template. |
+| E953 | 'ibeaconuuid4', 'ibeaconmajor4', 'ibeaconminor4' and 'ibeacontext4' values are not accepted. iBeacon4 field has to be set as dynamic in the Pass Template. |
+| E954 | 'ibeaconuuid5', 'ibeaconmajor5', 'ibeaconminor5' and 'ibeacontext5' values are not accepted. iBeacon5 field has to be set as dynamic in the Pass Template. |
+| E955 | 'ibeaconuuid6', 'ibeaconmajor6', 'ibeaconminor6' and 'ibeacontext6' values are not accepted. iBeacon6 field has to be set as dynamic in the Pass Template. |
+| E956 | 'ibeaconuuid7', 'ibeaconmajor7', 'ibeaconminor7' and 'ibeacontext7' values are not accepted. iBeacon7 field has to be set as dynamic in the Pass Template. |
+| E957 | 'ibeaconuuid8', 'ibeaconmajor8', 'ibeaconminor8' and 'ibeacontext8' values are not accepted. iBeacon8 field has to be set as dynamic in the Pass Template. |
+| E958 | 'ibeaconuuid9', 'ibeaconmajor9', 'ibeaconminor9' and 'ibeacontext9' values are not accepted. iBeacon9 field has to be set as dynamic in the Pass Template. |
+| E959 | 'ibeaconuuid10', 'ibeaconmajor10', 'ibeaconminor10' and 'ibeacontext10' values are not accepted. iBeacon10 field has to be set as dynamic in the Pass Template. |
+| E960 | 'ibeaconuuid1' value is invalid. | 
+| E961 | 'ibeaconuuid2' value is invalid. |
+| E962 | 'ibeaconuuid3' value is invalid. |
+| E963 | 'ibeaconuuid4' value is invalid. |
+| E964 | 'ibeaconuuid5' value is invalid. |
+| E965 | 'ibeaconuuid6' value is invalid. |
+| E966 | 'ibeaconuuid7' value is invalid. |
+| E967 | 'ibeaconuuid8' value is invalid. |
+| E968 | 'ibeaconuuid9' value is invalid. |
+| E969 |'ibeaconuuid10' value is invalid. |
+| E970 | 'ibeaconmajor1' value is invalid. | 
+| E971 | 'ibeaconmajor2' value is invalid. |
+| E972 | 'ibeaconmajor3' value is invalid. |
+| E973 | 'ibeaconmajor4' value is invalid. |
+| E974 | 'ibeaconmajor5' value is invalid. |
+| E975 | 'ibeaconmajor6' value is invalid. |
+| E976 | 'ibeaconmajor7' value is invalid. |
+| E977 | 'ibeaconmajor8' value is invalid. |
+| E978 | 'ibeaconmajor9' value is invalid. |
+| E979 |'ibeaconmajor10' value is invalid. |
+| E980 | 'ibeaconminor1' value is invalid. | 
+| E981 | 'ibeaconminor2' value is invalid. |
+| E982 | 'ibeaconminor3' value is invalid. |
+| E983 | 'ibeaconminor4' value is invalid. |
+| E984 | 'ibeaconminor5' value is invalid. |
+| E985 | 'ibeaconminor6' value is invalid. |
+| E986 | 'ibeaconminor7' value is invalid. |
+| E987 | 'ibeaconminor8' value is invalid. |
+| E988 | 'ibeaconminor9' value is invalid. |
+| E989 |'ibeaconminor10' value is invalid. |
+| E990 | 'ibeaconuuid1' value is required. | 
+| E991 | 'ibeaconuuid2' value is required. |
+| E992 | 'ibeaconuuid3' value is required. |
+| E993 | 'ibeaconuuid4' value is required. |
+| E994 | 'ibeaconuuid5' value is required. |
+| E995 | 'ibeaconuuid6' value is required. |
+| E996 | 'ibeaconuuid7' value is required. |
+| E997 | 'ibeaconuuid8' value is required. |
+| E998 | 'ibeaconuuid9' value is required. |
+| E999 |'ibeaconuuid10' value is required. |
