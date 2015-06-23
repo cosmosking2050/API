@@ -93,6 +93,46 @@ __Request: XML__
         <RELLATITUDE10>relLatitude10</RELLATITUDE10>
         <RELLONGITUDE10>relLongitude10</RELLONGITUDE10>
         <RELTEXT10>relText10</RELTEXT10>
+        <IBEACONUUID1>iBeaconUUID1</IBEACONUUID1>
+        <IBEACONMAJOR1>iBeaconMajor1</IBEACONMAJOR1>
+        <IBEACONMINOR1>iBeaconMinor1</IBEACONMINOR1>
+        <IBEACONTEXT1>iBeaconText1</IBEACONTEXT1>
+        <IBEACONUUID2>iBeaconUUID2</IBEACONUUID2>
+        <IBEACONMAJOR2>iBeaconMajor2</IBEACONMAJOR2>
+        <IBEACONMINOR2>iBeaconMinor2</IBEACONMINOR2>
+        <IBEACONTEXT2>iBeaconText2</IBEACONTEXT2>
+        <IBEACONUUID3>iBeaconUUID3</IBEACONUUID3>
+        <IBEACONMAJOR3>iBeaconMajor3</IBEACONMAJOR3>
+        <IBEACONMINOR3>iBeaconMinor3</IBEACONMINOR3>
+        <IBEACONTEXT3>iBeaconText3</IBEACONTEXT3>
+        <IBEACONUUID4>iBeaconUUID4</IBEACONUUID4>
+        <IBEACONMAJOR4>iBeaconMajor4</IBEACONMAJOR4>
+        <IBEACONMINOR4>iBeaconMinor4</IBEACONMINOR4>
+        <IBEACONTEXT4>iBeaconText4</IBEACONTEXT4>
+        <IBEACONUUID5>iBeaconUUID5</IBEACONUUID5>
+        <IBEACONMAJOR5>iBeaconMajor5</IBEACONMAJOR5>
+        <IBEACONMINOR5>iBeaconMinor5</IBEACONMINOR5>
+        <IBEACONTEXT5>iBeaconText5</IBEACONTEXT5>
+        <IBEACONUUID6>iBeaconUUID6</IBEACONUUID6>
+        <IBEACONMAJOR6>iBeaconMajor6</IBEACONMAJOR6>
+        <IBEACONMINOR6>iBeaconMinor6</IBEACONMINOR6>
+        <IBEACONTEXT6>iBeaconText6</IBEACONTEXT6>
+        <IBEACONUUID7>iBeaconUUID7</IBEACONUUID7>
+        <IBEACONMAJOR7>iBeaconMajor7</IBEACONMAJOR7>
+        <IBEACONMINOR7>iBeaconMinor7</IBEACONMINOR7>
+        <IBEACONTEXT7>iBeaconText7</IBEACONTEXT7>
+        <IBEACONUUID8>iBeaconUUID8</IBEACONUUID8>
+        <IBEACONMAJOR8>iBeaconMajor8</IBEACONMAJOR8>
+        <IBEACONMINOR8>iBeaconMinor8</IBEACONMINOR8>
+        <IBEACONTEXT8>iBeaconText8</IBEACONTEXT8>
+        <IBEACONUUID9>iBeaconUUID9</IBEACONUUID9>
+        <IBEACONMAJOR9>iBeaconMajor9</IBEACONMAJOR9>
+        <IBEACONMINOR9>iBeaconMinor9</IBEACONMINOR9>
+        <IBEACONTEXT9>iBeaconText9</IBEACONTEXT9>
+        <IBEACONUUID10>iBeaconUUID10</IBEACONUUID10>
+        <IBEACONMAJOR10>iBeaconMajor10</IBEACONMAJOR10>
+        <IBEACONMINOR10>iBeaconMinor10</IBEACONMINOR10>
+        <IBEACONTEXT10>iBeaconText10</IBEACONTEXT10>
     </PASSDATA>    
 </REQUEST>
 ```
@@ -125,6 +165,17 @@ __Request: GET__
     &pd_rellatitude8=relLatitude8&pd_rellongitude8=relLongitude8&pd_reltext8=relText8
     &pd_rellatitude9=relLatitude9&pd_rellongitude9=relLongitude9&pd_reltext9=relText9
     &pd_rellatitude10=relLatitude10&pd_rellongitude10=relLongitude10&pd_reltext10=relText10
+    &pd_ibeaconuuid1=ibeaconUUID1&pd_ibeaconmajor1=ibeaconMajor1&pd_ibeaconminor1=ibeaconMinor1&pd_ibeacontext1=ibeaconText1
+    &pd_ibeaconuuid2=ibeaconUUID2&pd_ibeaconmajor2=ibeaconMajor2&pd_ibeaconminor2=ibeaconMinor2&pd_ibeacontext2=ibeaconText2
+    &pd_ibeaconuuid3=ibeaconUUID3&pd_ibeaconmajor3=ibeaconMajor3&pd_ibeaconminor3=ibeaconMinor3&pd_ibeacontext3=ibeaconText3
+    &pd_ibeaconuuid4=ibeaconUUID4&pd_ibeaconmajor4=ibeaconMajor4&pd_ibeaconminor4=ibeaconMinor4&pd_ibeacontext4=ibeaconText4
+    &pd_ibeaconuuid5=ibeaconUUID5&pd_ibeaconmajor5=ibeaconMajor5&pd_ibeaconminor5=ibeaconMinor5&pd_ibeacontext5=ibeaconText5
+    &pd_ibeaconuuid6=ibeaconUUID6&pd_ibeaconmajor6=ibeaconMajor6&pd_ibeaconminor6=ibeaconMinor6&pd_ibeacontext6=ibeaconText6
+    &pd_ibeaconuuid7=ibeaconUUID7&pd_ibeaconmajor7=ibeaconMajor7&pd_ibeaconminor7=ibeaconMinor7&pd_ibeacontext7=ibeaconText7
+    &pd_ibeaconuuid8=ibeaconUUID8&pd_ibeaconmajor8=ibeaconMajor8&pd_ibeaconminor8=ibeaconMinor8&pd_ibeacontext8=ibeaconText8
+    &pd_ibeaconuuid9=ibeaconUUID9&pd_ibeaconmajor9=ibeaconMajor9&pd_ibeaconminor9=ibeaconMinor9&pd_ibeacontext9=ibeaconText9
+    &pd_ibeaconuuid10=ibeaconUUID10&pd_ibeaconmajor10=ibeaconMajor10&pd_ibeaconminor10=ibeaconMinor10
+    &pd_ibeacontext10=ibeaconText10
 
 __Request Parameters:__
 
@@ -147,7 +198,17 @@ __Request Parameters:__
     relLatitude7, relLongitude7, relText7,
     relLatitude8, relLongitude8, relText8,
     relLatitude9, relLongitude9, relText9,
-    relLatitude10, relLongitude10, relText10
+    relLatitude10, relLongitude10, relText10,
+    ibeaconUUID1, ibeaconMajor1, ibeaconMinor1, ibeaconText1,
+    ibeaconUUID2, ibeaconMajor2, ibeaconMinor2, ibeaconText2,
+    ibeaconUUID3, ibeaconMajor3, ibeaconMinor3, ibeaconText3,
+    ibeaconUUID4, ibeaconMajor4, ibeaconMinor4, ibeaconText4,
+    ibeaconUUID5, ibeaconMajor5, ibeaconMinor5, ibeaconText5,
+    ibeaconUUID6, ibeaconMajor6, ibeaconMinor6, ibeaconText6,
+    ibeaconUUID7, ibeaconMajor7, ibeaconMinor7, ibeaconText7,
+    ibeaconUUID8, ibeaconMajor8, ibeaconMinor8, ibeaconText8,
+    ibeaconUUID9, ibeaconMajor9, ibeaconMinor9, ibeaconText9,
+    ibeaconUUID10, ibeaconMajor10, ibeaconMinor10, ibeaconText10
 
 __Response Parameters:__
 
@@ -158,7 +219,10 @@ __Related Error Codes:__
     E401, E402, E713, E714, E802, E803, E806, E823, E840, E841, E842, E843, E844, E845, E846, E847, E848, E849, E850,
     E851, E852, E853, E854, E855, E856, E857, E858, E859, E860, E861, E862, E863, E864, E865, E866, E867, E868, E869,
     E870, E871, E872, E873, E874, E875, E876, E877, E878, E879, E880, E881, E882, E883, E884, E885, E886, E887, E888,
-    E889, E890, E891, E892, E893, E894, E895, E896, E897, E898, E899, E915, E916, E917
+    E889, E890, E891, E892, E893, E894, E895, E896, E897, E898, E899, E915, E916, E917, E950, E951, E952, E953, E954, 
+    E955, E956, E957, E958, E959, E960, E961, E962, E963, E964, E965, E966, E967, E968, E969, E970, E971, E972, E973, 
+    E974, E975, E976, E977, E978, E979, E980, E981, E982, E983, E984, E985, E986, E987, E988, E989, E990, E991, E992, 
+    E993, E994, E995, E996, E997, E998, E999
 
 __Request Example:__
 ```xml
